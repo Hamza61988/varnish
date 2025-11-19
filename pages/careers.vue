@@ -1,0 +1,746 @@
+<template>
+  <div
+    class="min-h-screen relative overflow-hidden"
+    style="background: #ffffff"
+  >
+    <!-- Page Background - BGline.svg -->
+    <div
+      class="absolute inset-0 pointer-events-none hidden md:block"
+      style="
+        background-image: url('/images/about/BGline.svg');
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        background-size: auto;
+        opacity: 1;
+        z-index: 0;
+      "
+    ></div>
+
+    <!-- Main Content -->
+    <main
+      class="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 py-12 sm:py-16 md:py-20 lg:py-24 relative z-10"
+    >
+      <!-- Careers Section -->
+      <section
+        class="w-full md:w-3/4 lg:w-2/3 xl:w-3/4 mx-auto px-4 sm:px-6 md:px-0"
+      >
+        <!-- Section Label -->
+        <div class="flex items-center justify-center mb-4 sm:mb-6">
+          <div
+            class="flex items-center"
+            style="
+              height: 24px;
+              gap: 2px;
+              border-radius: 999px;
+              padding-top: 4px;
+              padding-right: 8px;
+              padding-bottom: 4px;
+              padding-left: 8px;
+              background: #ffffffe5;
+              box-shadow: 0px 0.5px 0.5px 0px rgba(7, 1, 19, 0.03),
+                0px 1px 1px -0.5px rgba(7, 1, 19, 0.03),
+                0px 2px 2px -1px rgba(7, 1, 19, 0.03),
+                0px 3px 3px -1.5px rgba(7, 1, 19, 0.03);
+            "
+          >
+            <!-- Lightning Bolt Icon -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4 w-4 fill-[#A3A3AE] stroke-[#A3A3AE]"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#A3A3AE"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              style="min-width: 16px; min-height: 16px"
+            >
+              <path
+                d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"
+              />
+            </svg>
+            <span
+              style="
+                font-family: 'Bricolage Grotesque', sans-serif;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 16px;
+                letter-spacing: 0%;
+                text-align: center;
+                color: #1a1925;
+              "
+            >
+              Careers
+            </span>
+          </div>
+        </div>
+
+        <!-- Title -->
+        <h1
+          class="text-center mb-4 sm:mb-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
+          style="
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            text-align: center;
+            vertical-align: middle;
+            color: #1a1925;
+          "
+        >
+          Careers
+        </h1>
+
+        <!-- Subtitle -->
+        <p
+          class="text-center mb-8 sm:mb-10 md:mb-12"
+          style="
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: -0.011em;
+            text-align: center;
+            color: #51515e;
+          "
+        >
+          We are looking for smart and enthusiastic people to help us build a
+          world-class CDN.
+        </p>
+
+        <!-- Company Overview & Key Values Section -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 md:gap-12 mb-12 sm:mb-16 md:mb-20"
+        >
+          <!-- Left Column - Company Description -->
+          <div class="w-full m-auto">
+            <p
+              style="
+                font-family: 'Inter', sans-serif;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                letter-spacing: -0.006em;
+                text-align: justify;
+                color: #73737f;
+              "
+            >
+              KeyCDN is a content delivery network headquartered in Switzerland.
+              We are a privately funded company that has engineered our
+              infrastructure from the ground up. There are no investors to
+              please, allowing our primary focus to remain where it should be,
+              making our network as fast and reliable as possible.
+            </p>
+          </div>
+
+          <!-- Right Column - Key Values Cards -->
+          <div class="w-full space-y-4 sm:space-y-6" style="display: flex; flex-direction: column; align-items: flex-end;">
+            <!-- Outcome-oriented culture -->
+            <div
+              class="flex gap-4 p-4 sm:p-5 md:p-6 mb-4"
+              style="
+                border-radius: 20px;
+                border: 1px solid #eeeef0;
+                background: #ffffff;
+                width: 80%;
+              "
+            >
+              <div
+                class="flex-shrink-0 flex items-center justify-center rounded-full"
+                style="width: 48px; height: 48px"
+              >
+                <img
+                  src="/images/about/IconCareer.svg"
+                  alt="Icon"
+                  class="w-6 h-6"
+                />
+              </div>
+              <div>
+                <h3
+                  class="mb-2"
+                  style="
+                    font-family: 'Bricolage Grotesque', sans-serif;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 24px;
+                    letter-spacing: -0.02em;
+                    color: #1a1925;
+                  "
+                >
+                  Outcome-oriented culture
+                </h3>
+                <p
+                  style="
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 20px;
+                    letter-spacing: -0.006em;
+                    color: #51515e;
+                  "
+                >
+                  We strongly value a positive working environment where talent
+                  can thrive.
+                </p>
+              </div>
+            </div>
+
+            <!-- International team -->
+            <div
+              class="flex gap-4 p-4 sm:p-5 md:p-6"
+              style="
+                border-radius: 20px;
+                border: 1px solid #eeeef0;
+                background: #ffffff;
+                width: 80%;
+              "
+            >
+              <div
+                class="flex-shrink-0 flex items-center justify-center rounded-full"
+                style="width: 48px; height: 48px"
+              >
+                <img
+                  src="/images/about/IconCareer.svg"
+                  alt="Icon"
+                  class="w-6 h-6"
+                />
+              </div>
+              <div>
+                <h3
+                  class="mb-2"
+                  style="
+                    font-family: 'Bricolage Grotesque', sans-serif;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 24px;
+                    letter-spacing: -0.02em;
+                    color: #1a1925;
+                  "
+                >
+                  International team
+                </h3>
+                <p
+                  style="
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 20px;
+                    letter-spacing: -0.006em;
+                    color: #51515e;
+                  "
+                >
+                  Diverse origins with team members based out of many different
+                  countries.
+                </p>
+              </div>
+            </div>
+
+            <!-- Pride in your craft -->
+            <div
+              class="flex gap-4 p-4 sm:p-5 md:p-6"
+              style="
+                border-radius: 20px;
+                border: 1px solid #eeeef0;
+                background: #ffffff;
+                width: 80%;
+              "
+            >
+              <div
+                class="flex-shrink-0 flex items-center justify-center rounded-full"
+                style="width: 48px; height: 48px"
+              >
+                <img
+                  src="/images/about/IconCareer.svg"
+                  alt="Icon"
+                  class="w-6 h-6"
+                />
+              </div>
+              <div>
+                <h3
+                  class="mb-2"
+                  style="
+                    font-family: 'Bricolage Grotesque', sans-serif;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 24px;
+                    letter-spacing: -0.02em;
+                    color: #1a1925;
+                  "
+                >
+                  Pride in your craft
+                </h3>
+                <p
+                  style="
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 20px;
+                    letter-spacing: -0.006em;
+                    color: #51515e;
+                  "
+                >
+                  Enjoy the work that you do and be proud of the impact that
+                  your skills have.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second Row - More Values & Global Footprint -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 md:gap-12 mb-12 sm:mb-16 md:mb-20"
+        >
+          <!-- Left Column - More Value Cards -->
+          <div class="w-full space-y-4 sm:space-y-6">
+            <!-- Remote first company -->
+            <div
+              class="flex gap-4 p-4 sm:p-5 md:p-6"
+              style="
+                border-radius: 20px;
+                border: 1px solid #eeeef0;
+                background: #ffffff;
+
+                width: 80%;
+              "
+            >
+              <div
+                class="flex-shrink-0 flex items-center justify-center rounded-full"
+                style="width: 48px; height: 48px"
+              >
+                <img
+                  src="/images/about/IconCareer.svg"
+                  alt="Icon"
+                  class="w-6 h-6"
+                />
+              </div>
+              <div>
+                <h3
+                  class="mb-2"
+                  style="
+                    font-family: 'Bricolage Grotesque', sans-serif;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 24px;
+                    letter-spacing: -0.02em;
+                    color: #1a1925;
+                  "
+                >
+                  Remote first company
+                </h3>
+                <p
+                  style="
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 20px;
+                    letter-spacing: -0.006em;
+                    color: #51515e;
+                  "
+                >
+                  Geographical restraints are a problem of the past allowing you
+                  to work from any location.
+                </p>
+              </div>
+            </div>
+
+            <!-- Flexible vacation time -->
+            <div
+              class="flex gap-4 p-4 sm:p-5 md:p-6"
+              style="
+                border-radius: 20px;
+                border: 1px solid #eeeef0;
+                background: #ffffff;
+
+                width: 80%;
+              "
+            >
+              <div
+                class="flex-shrink-0 flex items-center justify-center rounded-full"
+                style="width: 48px; height: 48px"
+              >
+                <img
+                  src="/images/about/IconCareer.svg"
+                  alt="Icon"
+                  class="w-6 h-6"
+                />
+              </div>
+              <div>
+                <h3
+                  class="mb-2"
+                  style="
+                    font-family: 'Bricolage Grotesque', sans-serif;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 24px;
+                    letter-spacing: -0.02em;
+                    color: #1a1925;
+                  "
+                >
+                  Flexible vacation time
+                </h3>
+                <p
+                  style="
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 20px;
+                    letter-spacing: -0.006em;
+                    color: #51515e;
+                  "
+                >
+                  Take time off when needed as we highly value a healthy
+                  work-life balance.
+                </p>
+              </div>
+            </div>
+
+            <!-- Continued learning -->
+            <div
+              class="flex gap-4 p-4 sm:p-5 md:p-6"
+              style="
+                border-radius: 20px;
+                border: 1px solid #eeeef0;
+                background: #ffffff;
+
+                width: 80%;
+              "
+            >
+              <div
+                class="flex-shrink-0 flex items-center justify-center rounded-full"
+                style="width: 48px; height: 48px"
+              >
+                <img
+                  src="/images/about/IconCareer.svg"
+                  alt="Icon"
+                  class="w-6 h-6"
+                />
+              </div>
+              <div>
+                <h3
+                  class="mb-2"
+                  style="
+                    font-family: 'Bricolage Grotesque', sans-serif;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 24px;
+                    letter-spacing: -0.02em;
+                    color: #1a1925;
+                  "
+                >
+                  Continued learning
+                </h3>
+                <p
+                  style="
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 20px;
+                    letter-spacing: -0.006em;
+                    color: #51515e;
+                  "
+                >
+                  We invest in your education in the constantly changing IT
+                  landscape.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column - Global Footprint -->
+          <div class="w-full m-auto">
+            <p
+              style="
+                font-family: 'Inter', sans-serif;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                letter-spacing: -0.006em;
+                text-align: justify;
+                color: #73737f;
+              "
+            >
+              Our global footprint is vast with 60+ data centers spread across 6
+              continents. It is imperative that we expand our network where true
+              value can be added and performance can be enhanced. We are looking
+              for talented individuals that have the passion and initiative to
+              help us improve and grow our network.
+            </p>
+          </div>
+        </div>
+
+        <!-- Job Listing Section -->
+        <div class="mb-12 sm:mb-16 md:mb-20">
+          <!-- Job Content - Single Box -->
+          <div
+            style="
+              border-radius: 20px;
+              border: 1px solid #eeeef0;
+              background: #ffffff;
+            "
+          >
+            <!-- Job Title Header -->
+            <button
+              @click="toggleJobListing"
+              class="w-full flex items-center justify-between pb-4 mb-4 cursor-pointer bg-transparent border-none text-left"
+              style="border-bottom: 1px solid #eeeef0; padding: 24px"
+            >
+              <h2
+                style="
+                  font-family: 'Inter', sans-serif;
+                  font-weight: 400;
+                  font-size: 16px;
+                  line-height: 26px;
+                  letter-spacing: -0.006em;
+                  color: #73737f;
+                "
+              >
+                Customer support specialist (remote)
+              </h2>
+              <svg
+                class="w-5 h-5 transition-transform duration-200"
+                :class="{ 'rotate-180': isJobListingOpen }"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                style="color: #73737f"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+
+            <!-- Job Content -->
+            <div
+              v-show="isJobListingOpen"
+              class="space-y-6"
+              style="padding: 24px"
+            >
+              <!-- Introductory Paragraph -->
+              <p
+                style="
+                  font-family: 'Inter', sans-serif;
+                  font-weight: 400;
+                  font-size: 16px;
+                  line-height: 26px;
+                  letter-spacing: -0.006em;
+                  color: #000000;
+                "
+              >
+                If you're passionate about technology and customer support, can
+                back our content strategy, and execute with a minimal amount of
+                hand holding then we'd love to have a conversation with you.
+                We're looking for a customer support specialist that loves
+                interacting with our customers.
+              </p>
+
+              <!-- The job -->
+              <div>
+                <h3
+                  class="mb-3"
+                  style="
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 26px;
+                    letter-spacing: -0.006em;
+                    color: #000000;
+                  "
+                >
+                  The job
+                </h3>
+                <p
+                  style="
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 26px;
+                    letter-spacing: -0.006em;
+                    color: #000000;
+                  "
+                >
+                  Solve customer issues by developing expertise in relevant
+                  product areas and by learning to troubleshoot a diverse range
+                  of customer issues. The ideal candidate will be comfortable
+                  working in a rapid changing startup environment and is willing
+                  to be evaluated based on objective performance measures.
+                </p>
+              </div>
+
+              <!-- You'll own and be responsible for -->
+              <div>
+                <h3
+                  class="mb-3"
+                  style="
+                    font-family: 'Inter', sans-serif;
+                    font-size: 16px;
+                    line-height: 26px;
+                    letter-spacing: -0.006em;
+                    color: #000000;
+                  "
+                >
+                  You'll own and be responsible for:
+                </h3>
+                <ul
+                  class="space-y-2"
+                  style="list-style-type: disc; padding-left: 20px"
+                >
+                  <li
+                    v-for="item in responsibilities"
+                    :key="item"
+                    style="
+                      font-family: 'Inter', sans-serif;
+                      font-weight: 400;
+                      font-size: 16px;
+                      line-height: 26px;
+                      letter-spacing: -0.006em;
+                      color: #000000;
+                      margin-bottom: 4px;
+                    "
+                  >
+                    {{ item }}
+                  </li>
+                </ul>
+              </div>
+
+              <!-- What skills and experience we're looking for -->
+              <div>
+                <h3
+                  class="mb-3"
+                  style="
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 26px;
+                    letter-spacing: -0.006em;
+                    color: #000000;
+                  "
+                >
+                  What skills and experience we're looking for
+                </h3>
+                <ul
+                  class="space-y-2"
+                  style="list-style-type: disc; padding-left: 20px"
+                >
+                  <li
+                    v-for="item in skills"
+                    :key="item"
+                    style="
+                      font-family: 'Inter', sans-serif;
+                      font-weight: 400;
+                      font-size: 16px;
+                      line-height: 26px;
+                      letter-spacing: -0.006em;
+                      color: #000000;
+                      margin-bottom: 4px;
+                    "
+                  >
+                    {{ item }}
+                  </li>
+                </ul>
+              </div>
+
+              <!-- What we absolutely need in a candidate -->
+              <div>
+                <h3
+                  class="mb-3"
+                  style="
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 26px;
+                    letter-spacing: -0.006em;
+                    color: #000000;
+                  "
+                >
+                  What we absolutely need in a candidate
+                </h3>
+                <ul
+                  class="space-y-2"
+                  style="list-style-type: disc; padding-left: 20px"
+                >
+                  <li
+                    v-for="item in candidateTraits"
+                    :key="item"
+                    style="
+                      font-family: 'Inter', sans-serif;
+                      font-weight: 400;
+                      font-size: 16px;
+                      line-height: 26px;
+                      letter-spacing: -0.006em;
+                      color: #000000;
+                      margin-bottom: 4px;
+                    "
+                  >
+                    {{ item }}
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Application Instructions -->
+              <div class="pt-4">
+                <p
+                  class="mb-2"
+                  style="
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 26px;
+                    letter-spacing: -0.006em;
+                    color: #000000;
+                  "
+                >
+                  Please apply by emailing us at jobs [at] keycdn [dot] com.
+                </p>
+                <p
+                  style="
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 26px;
+                    letter-spacing: -0.006em;
+                    color: #000000;
+                  "
+                >
+                  No recruiters or agencies.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</template>
+
+<script setup lang="ts">
+const isJobListingOpen = ref(true);
+
+const toggleJobListing = () => {
+  isJobListingOpen.value = !isJobListingOpen.value;
+};
+
+const responsibilities = [
+  "Support and engage with KeyCDN users.",
+  "Provide fast, accurate and personalized communication to our customers.",
+  "Primarily focused on content, customer success, community relations, and sponsoring.",
+  "Maintain our knowledge base to improve the accuracy of the support we provide to customers.",
+];
+
+const skills = [
+  "Bachelor's degree or higher, ideally in information technology, communication, or marketing.",
+  "A strong practical understanding of web technologies (e.g. HTML, WordPress, and web frameworks).",
+  "The experience and ability to create high quality content for multiple channels.",
+  "Native English speaking (preferably located in North America or Europe).",
+];
+
+const candidateTraits = [
+  "Willingness to roll up your sleeves - We have a small (but rapidly growing) operation, so this isn't a role for professional managers.",
+  "Passion for learning new things - We hit a relatively broad base of skillsets in our work, so if you just want to focus on the one thing you do well then this may not be the position for you. Ideally you'll be able to teach us things as well.",
+  "Value Evidence over opinion - At KeyCDN it's far less important to be right than it is to get it right.",
+  "Genuine enthusiasm for the problems we're solving - Life is too short to do anything that you're not excited about.",
+];
+</script>
