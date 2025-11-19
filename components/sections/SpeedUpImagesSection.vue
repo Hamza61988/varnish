@@ -59,11 +59,16 @@
 
         <!-- Title -->
         <h2
-          class="mb-3 sm:mb-4 text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
+          class="mb-3 sm:mb-4"
           style="
             font-family: 'Bricolage Grotesque', sans-serif;
-            font-weight: 500;
-            letter-spacing: -0.02em;
+            font-weight: 600;
+            font-style: SemiBold;
+            font-size: 48px;
+            line-height: 56px;
+            letter-spacing: -0.04em;
+            vertical-align: middle;
+            text-transform: capitalize;
             color: #1a1925;
           "
         >
@@ -76,6 +81,7 @@
           style="
             font-family: 'Inter', sans-serif;
             font-weight: 400;
+            font-style: Regular;
             font-size: 16px;
             line-height: 24px;
             letter-spacing: -0.011em;
@@ -87,21 +93,28 @@
       </div>
 
       <!-- Main Content: Two Column Layout -->
-      <div class="flex flex-row gap-8 sm:gap-10 md:gap-12 lg:gap-16">
+      <div class="flex flex-row gap-8">
         <!-- Left Section: Image Card -->
         <div class="flex flex-col">
           <div
-            class="w-full rounded-lg mb-4 sm:mb-6 overflow-hidden bg-white flex items-center justify-center"
+            class="mb-4 sm:mb-6 overflow-hidden flex items-center justify-center"
+            style="
+              width: 573px;
+              height: 269px;
+              border-radius: 20px;
+              border: 1px solid #cfcfcf;
+              background: #f9fbfb;
+            "
           >
             <img
               src="/images/home_image.svg"
               alt="Plant Image"
               class="w-full h-auto"
-              style="display: block; max-width: 100%"
+              style="display: block; max-width: 100%; border-radius: 20px"
             />
           </div>
           <div
-            class="bg-white rounded-xl p-4 sm:p-6 md:p-8 shadow-sm"
+            class=""
             style="
               border-radius: 16px;
               box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
@@ -125,46 +138,41 @@
                   outline: none;
                   flex: 1;
                   min-width: 0;
+                  border:none
                 "
               />
-              <button
-                class="px-4 sm:px-6 py-2 sm:py-3 rounded-lg text-white font-medium whitespace-nowrap flex-shrink-0"
-                style="
-                  background: #1a1925;
-                  font-family: 'Inter', sans-serif;
-                  font-weight: 500;
-                  font-size: 14px;
-                  border-radius: 8px;
-                  flex-shrink: 0;
-                "
-              >
-                API Documentaiton
-              </button>
             </div>
           </div>
         </div>
 
         <!-- Right Section: Feature Blocks -->
-        <div class="flex flex-col justify-center gap-6 sm:gap-8 md:gap-10">
+        <div class="flex flex-col" style="justify-content: space-between;">
           <!-- Transform Block -->
           <div>
             <h3
-              class="mb-2 sm:mb-3 text-xl sm:text-2xl md:text-3xl"
+              class="mb-2 sm:mb-3"
               style="
                 font-family: 'Bricolage Grotesque', sans-serif;
                 font-weight: 600;
+                font-style: SemiBold;
+                font-size: 18px;
+                line-height: 24px;
+                letter-spacing: -0.02em;
                 color: #1a1925;
               "
             >
               Transform
             </h3>
             <p
-              class="text-sm sm:text-base"
+              class=""
               style="
                 font-family: 'Inter', sans-serif;
                 font-weight: 400;
-                line-height: 24px;
-                color: #51515e;
+                font-style: Regular;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: -0.006em;
+                color: #73737f;
               "
             >
               Serve properly scaled images by dynamically updating the width and
@@ -175,22 +183,29 @@
           <!-- Optimize Block -->
           <div>
             <h3
-              class="mb-2 sm:mb-3 text-xl sm:text-2xl md:text-3xl"
+              class="mb-2 sm:mb-3"
               style="
                 font-family: 'Bricolage Grotesque', sans-serif;
                 font-weight: 600;
+                font-style: SemiBold;
+                font-size: 18px;
+                line-height: 24px;
+                letter-spacing: -0.02em;
                 color: #1a1925;
               "
             >
               Optimize
             </h3>
             <p
-              class="text-sm sm:text-base"
+              class=""
               style="
                 font-family: 'Inter', sans-serif;
                 font-weight: 400;
-                line-height: 24px;
-                color: #51515e;
+                font-style: Regular;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: -0.006em;
+                color: #73737f;
               "
             >
               Improve image performance by reducing the overall size and using
@@ -201,28 +216,75 @@
           <!-- Deliver Block -->
           <div>
             <h3
-              class="mb-2 sm:mb-3 text-xl sm:text-2xl md:text-3xl"
+              class="mb-2 sm:mb-3"
               style="
                 font-family: 'Bricolage Grotesque', sans-serif;
                 font-weight: 600;
+                font-style: SemiBold;
+                font-size: 18px;
+                line-height: 24px;
+                letter-spacing: -0.02em;
                 color: #1a1925;
               "
             >
               Deliver
             </h3>
             <p
-              class="text-sm sm:text-base"
+              class=""
               style="
                 font-family: 'Inter', sans-serif;
                 font-weight: 400;
-                line-height: 24px;
-                color: #51515e;
+                font-style: Regular;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: -0.006em;
+                color: #73737f;
               "
             >
               Increase image speed by being distributed globally through our
               premium edge locations.
             </p>
           </div>
+          <div
+              class="flex flex-row items-center gap-2 sm:gap-3"
+              style="display: flex; flex-direction: row; align-items: center"
+            >
+              <button
+                class="flex items-center justify-center whitespace-nowrap flex-shrink-0"
+                style="
+                  width: 175px;
+                  height: 40px;
+                  border-radius: 6px;
+                  padding-top: 10px;
+                  padding-right: 6px;
+                  padding-bottom: 10px;
+                  padding-left: 6px;
+                  background: linear-gradient(0deg, #1a1925, #1a1925),
+                    linear-gradient(180deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0) 100%);
+                  box-shadow: 0px 0.25px 0.25px 0px rgba(255, 255, 255, 0.12) inset,
+                    0px 0.75px 0.75px 0px rgba(255, 255, 255, 0.08) inset,
+                    0px 1px 3px 0px rgba(255, 255, 255, 0.08) inset,
+                    0px 0.25px 0.25px 0px rgba(26, 25, 37, 0.24),
+                    0px 0.75px 0.75px 0px rgba(26, 25, 37, 0.12),
+                    0px 1px 1.5px -0.5px rgba(26, 25, 37, 0.12),
+                    0px 2px 4px -1px rgba(26, 25, 37, 0.12),
+                    0px 4px 8px -4px rgba(26, 25, 37, 0.12),
+                    0px 8px 12px -4px rgba(26, 25, 37, 0.06),
+                    0px -8px 20px 0px rgba(26, 25, 37, 0.08) inset;
+                  font-family: 'Bricolage Grotesque', sans-serif;
+                  font-weight: 500;
+                  font-style: Medium;
+                  font-size: 17px;
+                  line-height: 20px;
+                  letter-spacing: -0.02em;
+                  text-align: center;
+                  text-transform: capitalize;
+                  color: #ffffff;
+                "
+              >
+                API Documentaiton
+              </button>
+            </div>
         </div>
       </div>
     </div>

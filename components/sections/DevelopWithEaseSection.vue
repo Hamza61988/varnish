@@ -59,11 +59,16 @@
 
         <!-- Title -->
         <h2
-          class="mb-3 sm:mb-4 text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
+          class="mb-3 sm:mb-4"
           style="
             font-family: 'Bricolage Grotesque', sans-serif;
-            font-weight: 500;
-            letter-spacing: -0.02em;
+            font-weight: 600;
+            font-style: SemiBold;
+            font-size: 48px;
+            line-height: 56px;
+            letter-spacing: -0.04em;
+            vertical-align: middle;
+            text-transform: capitalize;
             color: #1a1925;
           "
         >
@@ -76,6 +81,7 @@
           style="
             font-family: 'Inter', sans-serif;
             font-weight: 400;
+            font-style: Regular;
             font-size: 16px;
             line-height: 24px;
             letter-spacing: -0.011em;
@@ -87,11 +93,9 @@
       </div>
 
       <!-- Main Content: Two Column Layout -->
-      <div
-        class="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 lg:gap-16 items-stretch"
-      >
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 items-stretch">
         <!-- Left Section: Feature Cards -->
-        <div class="flex flex-col gap-6 sm:gap-8 justify-between">
+        <div class="flex flex-col gap-2 sm:gap-4 justify-between">
           <!-- Zone management Card -->
           <div
             class="bg-white rounded-xl p-6 sm:p-8 shadow-sm"
@@ -99,40 +103,63 @@
               border-radius: 16px;
               border: 1px solid #e0e7ff;
               box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
-              min-height: 140px;
+              height: 124px;
             "
           >
             <div class="flex items-start gap-4">
-              <div class="flex-shrink-0">
-                <img
-                  src="/images/about/IconCareer.svg"
-                  alt="Zone management icon"
-                  class="w-8 h-8 sm:w-10 sm:h-10"
+              <div class="flex-shrink-0 relative">
+                <div
                   style="
-                    filter: brightness(0) saturate(100%) invert(37%) sepia(96%)
-                      saturate(2000%) hue-rotate(220deg) brightness(1)
-                      contrast(1);
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 4px;
+                    box-shadow: 0px 0.5px 0.5px 0px rgba(255, 255, 255, 0.12)
+                        inset,
+                      0px 1px 1px 0px rgba(255, 255, 255, 0.08) inset,
+                      0px 1px 3px 0px rgba(255, 255, 255, 0.08) inset,
+                      0px -8px 20px 0px rgba(26, 25, 37, 0.08) inset;
+                    position: relative;
+                    top: 2px;
+                    left: 2px;
                   "
-                />
+                >
+                  <img
+                    src="/images/about/IconCareer.svg"
+                    alt="Zone management icon"
+                    style="
+                      width: 20px;
+                      height: 20px;
+                      opacity: 1;
+                      display: block;
+                    "
+                  />
+                </div>
               </div>
               <div class="flex-1">
                 <h3
-                  class="mb-2 text-xl sm:text-2xl"
+                  class=""
                   style="
                     font-family: 'Bricolage Grotesque', sans-serif;
                     font-weight: 600;
+                    font-style: SemiBold;
+                    font-size: 18px;
+                    line-height: 24px;
+                    letter-spacing: -0.02em;
                     color: #1a1925;
                   "
                 >
                   Zone management
                 </h3>
                 <p
-                  class="text-sm sm:text-base"
+                  class=""
                   style="
                     font-family: 'Inter', sans-serif;
                     font-weight: 400;
-                    line-height: 24px;
-                    color: #51515e;
+                    font-style: Regular;
+                    font-size: 14px;
+                    line-height: 20px;
+                    letter-spacing: -0.006em;
+                    color: #73737f;
                   "
                 >
                   Add, edit, and delete Zones. Configure each Zone for optimal
@@ -150,36 +177,63 @@
               border-radius: 16px;
               background: #f3f4f6;
               box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
-              min-height: 140px;
+              height: 124px;
             "
           >
             <div class="flex items-start gap-4">
-              <div class="flex-shrink-0">
-                <img
-                  src="/images/about/IconCareer.svg"
-                  alt="Instant purge icon"
-                  class="w-8 h-8 sm:w-10 sm:h-10"
-                  style="opacity: 0.4; filter: grayscale(100%)"
-                />
+              <div class="flex-shrink-0 relative">
+                <div
+                  style="
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 4px;
+                    box-shadow: 0px 0.5px 0.5px 0px rgba(255, 255, 255, 0.12)
+                        inset,
+                      0px 1px 1px 0px rgba(255, 255, 255, 0.08) inset,
+                      0px 1px 3px 0px rgba(255, 255, 255, 0.08) inset,
+                      0px -8px 20px 0px rgba(26, 25, 37, 0.08) inset;
+                    position: relative;
+                    top: 2px;
+                    left: 2px;
+                  "
+                >
+                  <img
+                    src="/images/about/IconCareer.svg"
+                    alt="Instant purge icon"
+                    style="
+                      width: 20px;
+                      height: 20px;
+                      opacity: 1;
+                      display: block;
+                    "
+                  />
+                </div>
               </div>
               <div class="flex-1">
                 <h3
-                  class="mb-2 text-xl sm:text-2xl"
+                  class=""
                   style="
                     font-family: 'Bricolage Grotesque', sans-serif;
                     font-weight: 600;
+                    font-style: SemiBold;
+                    font-size: 18px;
+                    line-height: 24px;
+                    letter-spacing: -0.02em;
                     color: #1a1925;
                   "
                 >
                   Instant purge
                 </h3>
                 <p
-                  class="text-sm sm:text-base"
+                  class=""
                   style="
                     font-family: 'Inter', sans-serif;
                     font-weight: 400;
-                    line-height: 24px;
-                    color: #51515e;
+                    font-style: Regular;
+                    font-size: 14px;
+                    line-height: 20px;
+                    letter-spacing: -0.006em;
+                    color: #73737f;
                   "
                 >
                   Never serve stale content again. Purge all data centers in the
@@ -196,36 +250,63 @@
               border-radius: 16px;
               background: #f3f4f6;
               box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
-              min-height: 140px;
+              height: 124px;
             "
           >
             <div class="flex items-start gap-4">
-              <div class="flex-shrink-0">
-                <img
-                  src="/images/about/IconCareer.svg"
-                  alt="Detailed reports icon"
-                  class="w-8 h-8 sm:w-10 sm:h-10"
-                  style="opacity: 0.4; filter: grayscale(100%)"
-                />
+              <div class="flex-shrink-0 relative">
+                <div
+                  style="
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 4px;
+                    box-shadow: 0px 0.5px 0.5px 0px rgba(255, 255, 255, 0.12)
+                        inset,
+                      0px 1px 1px 0px rgba(255, 255, 255, 0.08) inset,
+                      0px 1px 3px 0px rgba(255, 255, 255, 0.08) inset,
+                      0px -8px 20px 0px rgba(26, 25, 37, 0.08) inset;
+                    position: relative;
+                    top: 2px;
+                    left: 2px;
+                  "
+                >
+                  <img
+                    src="/images/about/IconCareer.svg"
+                    alt="Detailed reports icon"
+                    style="
+                      width: 20px;
+                      height: 20px;
+                      opacity: 1;
+                      display: block;
+                    "
+                  />
+                </div>
               </div>
               <div class="flex-1">
                 <h3
-                  class="mb-2 text-xl sm:text-2xl"
+                  class=""
                   style="
                     font-family: 'Bricolage Grotesque', sans-serif;
                     font-weight: 600;
+                    font-style: SemiBold;
+                    font-size: 18px;
+                    line-height: 24px;
+                    letter-spacing: -0.02em;
                     color: #1a1925;
                   "
                 >
                   Detailed reports
                 </h3>
                 <p
-                  class="text-sm sm:text-base"
+                  class=""
                   style="
                     font-family: 'Inter', sans-serif;
                     font-weight: 400;
-                    line-height: 24px;
-                    color: #51515e;
+                    font-style: Regular;
+                    font-size: 14px;
+                    line-height: 20px;
+                    letter-spacing: -0.006em;
+                    color: #73737f;
                   "
                 >
                   Statistics are reported in near real time. Access account and
@@ -238,13 +319,40 @@
 
           <!-- API Documentation Button -->
           <button
-            class="w-full px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-white font-medium transition-colors mt-4"
+            class="flex items-center justify-center"
             style="
-              background: #1a1925;
-              font-family: 'Inter', sans-serif;
+              width: 175px;
+              height: 40px;
+              border-radius: 6px;
+              padding-top: 10px;
+              padding-right: 6px;
+              padding-bottom: 10px;
+              padding-left: 6px;
+              background: linear-gradient(0deg, #1a1925, #1a1925),
+                linear-gradient(
+                  180deg,
+                  rgba(255, 255, 255, 0.12) 0%,
+                  rgba(255, 255, 255, 0) 100%
+                );
+              box-shadow: 0px 0.25px 0.25px 0px rgba(255, 255, 255, 0.12) inset,
+                0px 0.75px 0.75px 0px rgba(255, 255, 255, 0.08) inset,
+                0px 1px 3px 0px rgba(255, 255, 255, 0.08) inset,
+                0px 0.25px 0.25px 0px rgba(26, 25, 37, 0.24),
+                0px 0.75px 0.75px 0px rgba(26, 25, 37, 0.12),
+                0px 1px 1.5px -0.5px rgba(26, 25, 37, 0.12),
+                0px 2px 4px -1px rgba(26, 25, 37, 0.12),
+                0px 4px 8px -4px rgba(26, 25, 37, 0.12),
+                0px 8px 12px -4px rgba(26, 25, 37, 0.06),
+                0px -8px 20px 0px rgba(26, 25, 37, 0.08) inset;
+              font-family: 'Bricolage Grotesque', sans-serif;
               font-weight: 500;
-              font-size: 14px;
-              border-radius: 12px;
+              font-style: Medium;
+              font-size: 17px;
+              line-height: 20px;
+              letter-spacing: -0.02em;
+              text-align: center;
+              text-transform: capitalize;
+              color: #ffffff;
             "
           >
             API Documentaiton

@@ -32,13 +32,13 @@
               viewBox="0 0 24 24"
               fill="none"
               stroke="#A3A3AE"
-              stroke-width="2"
+              stroke-width="2.5"
               stroke-linecap="round"
               stroke-linejoin="round"
               style="min-width: 16px; min-height: 16px"
             >
               <path
-                d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"
+                d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"
               />
             </svg>
             <span
@@ -59,12 +59,17 @@
 
         <!-- Title -->
         <h2
-          class="text-center mb-4 sm:mb-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
+          class="text-center mb-4 sm:mb-6"
           style="
             font-family: 'Bricolage Grotesque', sans-serif;
-            font-weight: 500;
-            letter-spacing: -0.02em;
+            font-weight: 600;
+            font-style: SemiBold;
+            font-size: 48px;
+            line-height: 56px;
+            letter-spacing: -0.04em;
             text-align: center;
+            vertical-align: middle;
+            text-transform: capitalize;
             color: #1a1925;
           "
         >
@@ -77,6 +82,7 @@
           style="
             font-family: 'Inter', sans-serif;
             font-weight: 400;
+            font-style: Regular;
             font-size: 16px;
             line-height: 24px;
             letter-spacing: -0.011em;

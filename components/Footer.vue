@@ -11,14 +11,14 @@
       <div class="grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-12 gap-4 sm:gap-6 lg:gap-8 mb-8 sm:mb-10 md:mb-12">
         <!-- Column 1: Company Info - Full width on mobile/tablet, 6 columns on desktop -->
         <div class="space-y-3 sm:space-y-4 lg:col-span-6 col-span-3 sm:col-span-3 text-center sm:text-left">
-          <div class="flex items-center justify-center sm:justify-start space-x-2">
+          <NuxtLink to="/" class="flex items-center justify-center sm:justify-start space-x-2">
             <img
               src="/icons/Company logo.svg"
               alt="Varnish Logo"
               class="h-7 w-7 sm:h-8 sm:w-8"
             />
             <span class="text-lg sm:text-xl font-bold text-gray-900">Varnish</span>
-          </div>
+          </NuxtLink>
           <p
             class="leading-relaxed text-sm sm:text-base"
             style="
@@ -58,8 +58,8 @@
           </h3>
           <ul class="space-y-2 sm:space-y-3">
             <li>
-              <a
-                href="#"
+              <NuxtLink
+                to="/features"
                 class="hover:opacity-80 transition-opacity text-xs sm:text-sm"
                 style="
                   font-family: 'Bricolage Grotesque', sans-serif;
@@ -70,11 +70,11 @@
                 "
               >
                 Features
-              </a>
+              </NuxtLink>
             </li>
             <li>
-              <a
-                href="#"
+              <NuxtLink
+                to="/"
                 class="hover:opacity-80 transition-opacity text-xs sm:text-sm"
                 style="
                   font-family: 'Bricolage Grotesque', sans-serif;
@@ -85,11 +85,11 @@
                 "
               >
                 Network
-              </a>
+              </NuxtLink>
             </li>
             <li>
-              <a
-                href="#"
+              <NuxtLink
+                to="/pricing"
                 class="hover:opacity-80 transition-opacity text-xs sm:text-sm"
                 style="
                   font-family: 'Bricolage Grotesque', sans-serif;
@@ -100,11 +100,11 @@
                 "
               >
                 Pricing
-              </a>
+              </NuxtLink>
             </li>
             <li>
-              <a
-                href="#"
+              <NuxtLink
+                to="/tools"
                 class="hover:opacity-80 transition-opacity text-xs sm:text-sm"
                 style="
                   font-family: 'Bricolage Grotesque', sans-serif;
@@ -115,7 +115,7 @@
                 "
               >
                 API
-              </a>
+              </NuxtLink>
             </li>
           </ul>
         </div>
@@ -136,8 +136,8 @@
           </h3>
           <ul class="space-y-2 sm:space-y-3">
             <li>
-              <a
-                href="#"
+              <NuxtLink
+                to="/about"
                 class="hover:opacity-80 transition-opacity text-xs sm:text-sm"
                 style="
                   font-family: 'Bricolage Grotesque', sans-serif;
@@ -148,11 +148,11 @@
                 "
               >
                 About
-              </a>
+              </NuxtLink>
             </li>
             <li>
-              <a
-                href="#"
+              <NuxtLink
+                to="#"
                 class="hover:opacity-80 transition-opacity text-xs sm:text-sm"
                 style="
                   font-family: 'Bricolage Grotesque', sans-serif;
@@ -163,11 +163,11 @@
                 "
               >
                 Blog
-              </a>
+              </NuxtLink>
             </li>
             <li>
-              <a
-                href="#"
+              <NuxtLink
+                to="/contact"
                 class="hover:opacity-80 transition-opacity text-xs sm:text-sm"
                 style="
                   font-family: 'Bricolage Grotesque', sans-serif;
@@ -178,11 +178,11 @@
                 "
               >
                 Contact
-              </a>
+              </NuxtLink>
             </li>
             <li>
-              <a
-                href="#"
+              <NuxtLink
+                to="/referral"
                 class="hover:opacity-80 transition-opacity text-xs sm:text-sm"
                 style="
                   font-family: 'Bricolage Grotesque', sans-serif;
@@ -193,11 +193,11 @@
                 "
               >
                 Referral
-              </a>
+              </NuxtLink>
             </li>
             <li>
-              <a
-                href="#"
+              <NuxtLink
+                to="/careers"
                 class="hover:opacity-80 transition-opacity text-xs sm:text-sm"
                 style="
                   font-family: 'Bricolage Grotesque', sans-serif;
@@ -208,7 +208,7 @@
                 "
               >
                 Careers
-              </a>
+              </NuxtLink>
             </li>
           </ul>
         </div>
@@ -229,8 +229,8 @@
           </h3>
           <ul class="space-y-2 sm:space-y-3">
             <li>
-              <a
-                href="#"
+              <NuxtLink
+                to="/support"
                 class="hover:opacity-80 transition-opacity text-xs sm:text-sm"
                 style="
                   font-family: 'Bricolage Grotesque', sans-serif;
@@ -241,11 +241,11 @@
                 "
               >
                 Knowledge Base
-              </a>
+              </NuxtLink>
             </li>
             <li>
-              <a
-                href="#"
+              <NuxtLink
+                to="#"
                 class="hover:opacity-80 transition-opacity text-xs sm:text-sm"
                 style="
                   font-family: 'Bricolage Grotesque', sans-serif;
@@ -256,11 +256,11 @@
                 "
               >
                 Network Status
-              </a>
+              </NuxtLink>
             </li>
             <li>
-              <a
-                href="#"
+              <NuxtLink
+                to="#"
                 class="hover:opacity-80 transition-opacity text-xs sm:text-sm"
                 style="
                   font-family: 'Bricolage Grotesque', sans-serif;
@@ -271,11 +271,11 @@
                 "
               >
                 Open Source
-              </a>
+              </NuxtLink>
             </li>
             <li>
-              <a
-                href="#"
+              <NuxtLink
+                to="/faq"
                 class="hover:opacity-80 transition-opacity text-xs sm:text-sm"
                 style="
                   font-family: 'Bricolage Grotesque', sans-serif;
@@ -286,7 +286,7 @@
                 "
               >
                 FAQ
-              </a>
+              </NuxtLink>
             </li>
           </ul>
         </div>

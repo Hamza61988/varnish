@@ -7,21 +7,23 @@
       <div class="flex items-center justify-between h-14 sm:h-16 md:h-16">
         <!-- Logo Section -->
         <div class="flex items-center flex-shrink-0">
-          <img
-            src="/icons/Company logo.svg"
-            alt="Varnish Logo"
-            class="h-7 w-7 sm:h-8 sm:w-8 md:h-8 md:w-8 flex-shrink-0"
-          />
-          <span class="text-lg sm:text-xl md:text-xl font-bold text-gray-900 whitespace-nowrap ml-1.5 sm:ml-2 md:ml-2"
-            >Varnish</span
-          >
+          <NuxtLink to="/" class="flex items-center">
+            <img
+              src="/icons/Company logo.svg"
+              alt="Varnish Logo"
+              class="h-7 w-7 sm:h-8 sm:w-8 md:h-8 md:w-8 flex-shrink-0"
+            />
+            <span class="text-lg sm:text-xl md:text-xl font-bold text-gray-900 whitespace-nowrap ml-1.5 sm:ml-2 md:ml-2"
+              >Varnish</span
+            >
+          </NuxtLink>
           <!-- Navigation Links - Hidden below 800px, visible on 800px+ -->
           <div class="hidden tablet:flex items-center space-x-3 tablet:space-x-4 lg:space-x-6 xl:space-x-8 ml-3 tablet:ml-4 lg:ml-6 xl:ml-10 flex-1 min-w-0">
             <template v-for="link in navigationLinks" :key="link.name">
               <!-- Regular Links -->
-              <a
+              <NuxtLink
                 v-if="!link.hasDropdown"
-                href="#"
+                :to="link.route || '#'"
                 class="text-gray-700 hover:text-gray-900 transition-colors text-xs tablet:text-[13px] whitespace-nowrap"
                 style="
                   font-family: 'Bricolage Grotesque', sans-serif;
@@ -32,7 +34,7 @@
                 "
               >
                 {{ link.name }}
-              </a>
+              </NuxtLink>
 
               <!-- Solutions Dropdown -->
               <UiDropdownMenu v-else>
@@ -225,7 +227,7 @@
       <div class="flex flex-col h-full">
         <!-- Sidebar Header -->
         <div class="flex items-center justify-between p-4 border-b border-gray-200">
-          <div class="flex items-center">
+          <NuxtLink to="/" class="flex items-center">
             <img
               src="/icons/Company logo.svg"
               alt="Varnish Logo"
@@ -234,7 +236,7 @@
             <span class="text-xl font-bold text-gray-900 whitespace-nowrap ml-2"
               >Varnish</span
             >
-          </div>
+          </NuxtLink>
           <button
             @click="closeMobileMenu"
             class="p-2 text-gray-700 hover:text-gray-900 transition-colors"
@@ -260,9 +262,9 @@
         <!-- Sidebar Content -->
         <div class="flex-1 overflow-y-auto px-4 py-6 space-y-1">
           <template v-for="link in navigationLinks" :key="link.name">
-            <a
+            <NuxtLink
               v-if="!link.hasDropdown"
-              href="#"
+              :to="link.route || '#'"
               class="block py-3 px-4 text-gray-700 hover:text-gray-900 hover:bg-gray-50 rounded-lg transition-colors"
               style="
                 font-family: 'Bricolage Grotesque', sans-serif;
@@ -274,7 +276,7 @@
               @click="closeMobileMenu"
             >
               {{ link.name }}
-            </a>
+            </NuxtLink>
             <div v-else>
               <button
                 @click="toggleDropdown(link.name)"
@@ -385,11 +387,11 @@ const isMobileMenuOpen = ref(false);
 const openDropdown = ref<string | null>(null);
 
 const navigationLinks = [
-  { name: "Features", hasDropdown: false },
+  { name: "Features", hasDropdown: false, route: "/features" },
   { name: "Solutions", hasDropdown: true },
-  { name: "Network", hasDropdown: false },
-  { name: "Pricing", hasDropdown: false },
-  { name: "Support", hasDropdown: false },
+  { name: "Network", hasDropdown: false, route: "/" },
+  { name: "Pricing", hasDropdown: false, route: "/pricing" },
+  { name: "Support", hasDropdown: false, route: "/support" },
 ];
 
 const toggleMobileMenu = () => {

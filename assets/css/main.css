@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Funnel Display Font */
+/* Note: Funnel Display is not available on Google Fonts */
+/* To use Funnel Display font, add font files to /public/fonts/ and uncomment below: */
+/*
+@font-face {
+  font-family: 'Funnel Display';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/FunnelDisplay-Medium.woff2') format('woff2'),
+       url('/fonts/FunnelDisplay-Medium.woff') format('woff');
+}
+*/
+/* Currently using 'Funnel Display' with sans-serif fallback */
+
 @layer base {
   :root {
     --background: 0 0% 100%;
