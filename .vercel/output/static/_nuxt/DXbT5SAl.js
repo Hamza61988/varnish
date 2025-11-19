@@ -1,1 +1,0 @@
-import{m as e}from"./C3gy2iHx.js";var t=e(`/images/about/Group.svg`);export{t};

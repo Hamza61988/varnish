@@ -1,11 +1,10 @@
 import { createRenderer, getRequestDependencies, getPreloadLinks, getPrefetchLinks } from 'vue-bundle-renderer/runtime';
-import { j as joinRelativeURL, u as useRuntimeConfig, g as getResponseStatusText, a as getResponseStatus, d as defineRenderHandler, b as getQuery, c as createError, e as getRouteRules, f as useNitroApp } from '../nitro/nitro.mjs';
+import { j as joinRelativeURL, u as useRuntimeConfig, g as getResponseStatusText, a as getResponseStatus, d as defineRenderHandler, b as getQuery, c as createError, e as destr, f as getRouteRules, h as useNitroApp } from '../nitro/nitro.mjs';
 import { renderToString } from 'vue/server-renderer';
 import { createHead as createHead$1, propsToString, renderSSRHead } from 'unhead/server';
 import { stringify, uneval } from 'devalue';
 import { walkResolver } from 'unhead/utils';
 import { toValue, isRef, hasInjectionContext, inject, ref, watchEffect, getCurrentInstance, onBeforeUnmount, onDeactivated, onActivated } from 'vue';
-import { DeprecationsPlugin, PromisesPlugin, TemplateParamsPlugin, AliasSortingPlugin } from 'unhead/plugins';
 
 const VueResolver = (_, value) => {
   return isRef(value) ? toValue(value) : value;
@@ -85,6 +84,10 @@ const appTeleportTag = "div";
 
 const appTeleportAttrs = {"id":"teleports"};
 
+const appSpaLoaderTag = "div";
+
+const appSpaLoaderAttrs = {"id":"__nuxt-loader"};
+
 const appId = "nuxt-app";
 
 function baseURL() {
@@ -128,7 +131,11 @@ const getSPARenderer = lazyCachedFunction(async () => {
   const precomputed = await getPrecomputedDependencies();
   const spaTemplate = await import('../virtual/_virtual_spa-template.mjs').then((r) => r.template).catch(() => "").then((r) => {
     {
-      return APP_ROOT_OPEN_TAG + r + APP_ROOT_CLOSE_TAG;
+      const APP_SPA_LOADER_OPEN_TAG = `<${appSpaLoaderTag}${propsToString(appSpaLoaderAttrs)}>`;
+      const APP_SPA_LOADER_CLOSE_TAG = `</${appSpaLoaderTag}>`;
+      const appTemplate = APP_ROOT_OPEN_TAG + APP_ROOT_CLOSE_TAG;
+      const loaderTemplate = r ? APP_SPA_LOADER_OPEN_TAG + r + APP_SPA_LOADER_CLOSE_TAG : "";
+      return appTemplate + loaderTemplate;
     }
   });
   const renderer = createRenderer(() => () => {
@@ -214,8 +221,6 @@ function splitPayload(ssrContext) {
 
 const unheadOptions = {
   disableDefaults: true,
-  disableCapoSorting: false,
-  plugins: [DeprecationsPlugin, PromisesPlugin, TemplateParamsPlugin, AliasSortingPlugin],
 };
 
 function createSSRContext(event) {
@@ -253,9 +258,9 @@ async function renderInlineStyles(usedModules) {
   return Array.from(inlinedStyles).map((style) => ({ innerHTML: style }));
 }
 
-const renderSSRHeadOptions = {"omitLineBreaks":false};
+const renderSSRHeadOptions = {"omitLineBreaks":true};
 
-const entryIds = ["node_modules/nuxt/dist/app/entry.js"];
+const entryIds = [];
 
 globalThis.__buildAssetsURL = buildAssetsURL;
 globalThis.__publicAssetsURL = publicAssetsURL;
@@ -277,6 +282,12 @@ const renderer = defineRenderHandler(async (event) => {
   ssrContext.head.push(appHead, headEntryOptions);
   if (ssrError) {
     ssrError.statusCode &&= Number.parseInt(ssrError.statusCode);
+    if (typeof ssrError.data === "string") {
+      try {
+        ssrError.data = destr(ssrError.data);
+      } catch {
+      }
+    }
     setSSRError(ssrContext, ssrError);
   }
   const isRenderingPayload = PAYLOAD_URL_RE.test(ssrContext.url);

@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: "2025-11-04",
   devtools: { enabled: true },
-  modules: ["@nuxtjs/tailwindcss", "@vueuse/nuxt"],
+  modules: ["@nuxtjs/tailwindcss"],
   nitro: {
     preset: "vercel",
   },

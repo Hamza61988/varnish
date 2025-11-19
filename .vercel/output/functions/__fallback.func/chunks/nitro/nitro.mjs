@@ -3999,7 +3999,7 @@ function _expandFromEnv(value) {
 const _inlineRuntimeConfig = {
   "app": {
     "baseURL": "/",
-    "buildId": "4144be2d-114d-438f-8d5f-90754214c35f",
+    "buildId": "96d387e8-bb76-4cf0-8fd7-02673e3116b8",
     "buildAssetsDir": "/_nuxt/",
     "cdnURL": ""
   },
@@ -4432,12 +4432,12 @@ const plugins = [
 
 const _SxA8c9 = defineEventHandler(() => {});
 
-const _lazy_fscBob = () => import('../routes/renderer.mjs').then(function (n) { return n.r; });
+const _lazy_Ntwnte = () => import('../routes/renderer.mjs').then(function (n) { return n.r; });
 
 const handlers = [
-  { route: '/__nuxt_error', handler: _lazy_fscBob, lazy: true, middleware: false, method: undefined },
+  { route: '/__nuxt_error', handler: _lazy_Ntwnte, lazy: true, middleware: false, method: undefined },
   { route: '/__nuxt_island/**', handler: _SxA8c9, lazy: false, middleware: false, method: undefined },
-  { route: '/**', handler: _lazy_fscBob, lazy: true, middleware: false, method: undefined }
+  { route: '/**', handler: _lazy_Ntwnte, lazy: true, middleware: false, method: undefined }
 ];
 
 function createNitroApp() {
@@ -4633,5 +4633,5 @@ const listener = function(req, res) {
   return handler(req, res);
 };
 
-export { $fetch as $, getResponseStatus as a, getQuery as b, createError$1 as c, defineRenderHandler as d, getRouteRules as e, useNitroApp as f, getResponseStatusText as g, hasProtocol as h, isScriptProtocol as i, joinRelativeURL as j, joinURL as k, createHooks as l, executeAsync as m, defu as n, createRouter$1 as o, getContext as p, parseQuery as q, withTrailingSlash as r, sanitizeStatusCode as s, toRouteMatcher as t, useRuntimeConfig as u, withoutTrailingSlash as v, withQuery as w, listener as x };
+export { $fetch as $, getResponseStatus as a, getQuery as b, createError$1 as c, defineRenderHandler as d, destr as e, getRouteRules as f, getResponseStatusText as g, useNitroApp as h, hasProtocol as i, joinRelativeURL as j, isScriptProtocol as k, joinURL as l, getContext as m, createHooks as n, executeAsync as o, createRouter$1 as p, defu as q, parseQuery as r, sanitizeStatusCode as s, toRouteMatcher as t, useRuntimeConfig as u, withTrailingSlash as v, withQuery as w, withoutTrailingSlash as x, listener as y };
 //# sourceMappingURL=nitro.mjs.map
