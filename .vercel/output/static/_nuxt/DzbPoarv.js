@@ -1,0 +1,1 @@
+import{m as e}from"./C3gy2iHx.js";var t=e(`/images/about/Icon.svg`),n=e(`/images/about/Icon3rd.svg`);export{t as n,n as t};

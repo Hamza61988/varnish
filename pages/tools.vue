@@ -173,7 +173,6 @@
             </div>
           </div>
 
-          <!-- Integrity Card -->
           <div
             class="relative overflow-hidden min-h-[210px] md:h-[210px]"
             style="
@@ -255,7 +254,6 @@
             </div>
           </div>
 
-          <!-- Reliability Card -->
           <div
             class="relative overflow-hidden min-h-[210px] md:h-[210px]"
             style="

@@ -1,0 +1,1 @@
+import{m as e}from"./C3gy2iHx.js";var t=e(`/images/about/IconCareer.svg`);export{t};

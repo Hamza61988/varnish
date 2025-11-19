@@ -2,7 +2,13 @@
   <div class="" style="background-color: #f7f7f8">
     <SectionsHeroSection />
     <SectionsFeaturesSection />
-    <SectionsPricingTableSection :headings="headings" :table-data="tableData" />
+    <SectionsGetStartedInMinutesSection />
+    <SectionsSpeedUpImagesSection />
+    <SectionsDevelopWithEaseSection />
+    <SectionsTestimonialsSection />
+    <SectionsCTASection />
+
+    <!-- <SectionsPricingTableSection :headings="headings" :table-data="tableData" />
     <SectionsEnterpriseSection />
     <SectionsConfigurationOptionsSection />
     <SectionsAccessAllFeaturesSection />
@@ -12,6 +18,16 @@
     />
     <SectionsFAQSection :open-faqs="openFAQs" @toggle-faq="toggleFAQ" />
     <SectionsCTASection />
+    <SectionsPricingTableSection :headings="headings" :table-data="tableData" />
+      <SectionsEnterpriseSection />
+      <SectionsFeaturesSection />
+      <SectionsConfigurationOptionsSection />
+      <SectionsAccessAllFeaturesSection />
+      <SectionsCostCalculatorSection
+        v-model:bandwidth="bandwidth"
+        :total-cost="totalCost"
+      />
+      <SectionsFAQSection :open-faqs="openFAQs" @toggle-faq="toggleFAQ" /> -->
   </div>
 </template>
 
