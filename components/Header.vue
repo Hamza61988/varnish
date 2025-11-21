@@ -1,10 +1,10 @@
 <template>
   <header
-    class="bg-white shadow-sm sticky top-0 z-50"
-    style="background-color: #f7f7f8"
+    class="flex justify-center items-center bg-white top-0 z-50"
+    style="background-color: #ffffff; height: 80px; "
   >
     <nav class="container mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-14 sm:h-16 md:h-16">
+      <div class="flex items-center justify-between" style="height: 32px;">
         <!-- Logo Section -->
         <div class="flex items-center flex-shrink-0">
           <NuxtLink to="/" class="flex items-center">
@@ -18,7 +18,7 @@
             >
           </NuxtLink>
           <!-- Navigation Links - Hidden below 800px, visible on 800px+ -->
-          <div class="hidden tablet:flex items-center space-x-3 tablet:space-x-4 lg:space-x-6 xl:space-x-8 ml-3 tablet:ml-4 lg:ml-6 xl:ml-10 flex-1 min-w-0">
+          <div class="hidden tablet:flex items-center flex-1 min-w-0" style="margin-left: 40px; gap: 32px;">
             <template v-for="link in navigationLinks" :key="link.name">
               <!-- Regular Links -->
               <NuxtLink
@@ -91,7 +91,7 @@
         </div>
 
         <!-- Action Buttons - Hidden below 800px, visible on 800px+ -->
-        <div class="hidden tablet:flex items-center space-x-2 tablet:space-x-3 lg:space-x-4 flex-shrink-0">
+        <div class="hidden tablet:flex items-center flex-shrink-0" style="gap: 12px;">
           <!-- Login Button -->
           <button
             class="flex items-center justify-center text-gray-700"

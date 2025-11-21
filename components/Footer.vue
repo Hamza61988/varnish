@@ -8,10 +8,10 @@
       style="margin-top: 20px; margin-bottom: 20px"
     >
       <!-- Top Section: Custom Grid -->
-      <div class="grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-12 gap-4 sm:gap-6 lg:gap-8 mb-8 sm:mb-10 md:mb-12">
+      <div class="flex flex-col sm:grid sm:grid-cols-3 lg:grid lg:grid-cols-12 gap-4 sm:gap-6 lg:gap-8 mb-8 sm:mb-10 md:mb-12">
         <!-- Column 1: Company Info - Full width on mobile/tablet, 6 columns on desktop -->
-        <div class="space-y-3 sm:space-y-4 lg:col-span-6 col-span-3 sm:col-span-3 text-center sm:text-left">
-          <NuxtLink to="/" class="flex items-center justify-center sm:justify-start space-x-2">
+        <div class="space-y-3 sm:space-y-4 lg:col-span-6 sm:col-span-3 text-left">
+          <NuxtLink to="/" class="flex items-center space-x-2">
             <img
               src="/icons/Company logo.svg"
               alt="Varnish Logo"
@@ -33,7 +33,7 @@
             tristique risus. Suspendisse semper.
           </p>
           <!-- Award Badge -->
-          <div class="flex items-center justify-center sm:justify-start space-x-2 pt-1">
+          <div class="flex items-center justify-start space-x-2 pt-1">
             <img
               src="/images/Frame 2147225686.svg"
               alt="BEST CDN AWARD"
@@ -42,8 +42,8 @@
           </div>
         </div>
 
-        <!-- Column 2: Product - 1 column on mobile/tablet (in line with Company & Support), 2 columns on desktop -->
-        <div class="lg:col-span-2 col-span-1 text-center sm:text-left">
+        <!-- Column 2: Product - Full width on mobile, 1 column on tablet, 2 columns on desktop -->
+        <div class="lg:col-span-2 sm:col-span-1 text-left">
           <h3
             class="mb-3 sm:mb-4 text-sm sm:text-base"
             style="
@@ -120,8 +120,8 @@
           </ul>
         </div>
 
-        <!-- Column 3: Company - 1 column on mobile/tablet (in line with Product & Support), 2 columns on desktop -->
-        <div class="lg:col-span-2 col-span-1 text-center sm:text-left">
+        <!-- Column 3: Company - Full width on mobile, 1 column on tablet, 2 columns on desktop -->
+        <div class="lg:col-span-2 sm:col-span-1 text-left">
           <h3
             class="mb-3 sm:mb-4 text-sm sm:text-base"
             style="
@@ -213,8 +213,8 @@
           </ul>
         </div>
 
-        <!-- Column 4: Support - 1 column on mobile/tablet (in line with Product & Company), 2 columns on desktop -->
-        <div class="lg:col-span-2 col-span-1 text-center sm:text-left">
+        <!-- Column 4: Support - Full width on mobile, 1 column on tablet, 2 columns on desktop -->
+        <div class="lg:col-span-2 sm:col-span-1 text-left">
           <h3
             class="mb-3 sm:mb-4 text-sm sm:text-base"
             style="
@@ -294,10 +294,10 @@
 
       <!-- Bottom Section: System Status & Copyright -->
       <div
-        class="flex flex-col sm:flex-row items-center justify-between pt-4 sm:pt-6 border-t border-gray-200 gap-4 sm:gap-0"
+        class="flex flex-col sm:flex-row items-start sm:items-center justify-between pt-4 sm:pt-6 border-t border-gray-200 gap-4 sm:gap-0"
       >
         <!-- System Status -->
-        <div class="flex items-center order-2 sm:order-1">
+        <div class="flex items-center order-1">
           <div
             class="flex items-center space-x-2 px-2.5 sm:px-3 py-1 sm:py-1.5 bg-white border border-gray-300 rounded-full"
           >
@@ -312,7 +312,7 @@
 
         <!-- Copyright & Legal Links -->
         <div
-          class="flex flex-wrap items-center justify-center sm:justify-end gap-3 sm:gap-4 order-1 sm:order-2"
+          class="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 order-2"
         >
           <span
             class="text-xs sm:text-sm"
