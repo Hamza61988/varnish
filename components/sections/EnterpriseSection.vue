@@ -1,11 +1,11 @@
 <template>
-  <section class="container mx-auto px-4 pb-12 md:pb-16">
-    <div class="max-w-6xl mx-auto">
+  <section class="mx-auto pb-8 sm:pb-10 md:pb-12 lg:pb-16 px-4 sm:px-6 md:px-0">
+    <div>
       <div
-        class="bg-white rounded-lg shadow-lg p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-6" style="border-radius: 20px;"
+        class="bg-white rounded-lg shadow-lg p-4 sm:p-5 md:p-6 lg:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 sm:gap-5 md:gap-6" style="border-radius: 20px;"
       >
-        <div class="flex items-center space-x-4">
-          <div class="thumb-icon-container">
+        <div class="flex items-center space-x-3 sm:space-x-4 w-full md:w-auto">
+          <div class="thumb-icon-container flex-shrink-0">
             <div class="thumb-blob"></div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -22,7 +22,7 @@
               />
             </svg>
           </div>
-          <div>
+          <div class="flex-1 min-w-0">
             <h3 class="enterprise-heading">
               Enterprise
             </h3>
@@ -31,7 +31,7 @@
             </p>
           </div>
         </div>
-        <button class="contact-us-button">
+        <button class="contact-us-button w-full md:w-auto mt-4 md:mt-0">
           Contact Us
         </button>
       </div>

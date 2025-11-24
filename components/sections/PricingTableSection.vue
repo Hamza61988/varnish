@@ -1,11 +1,11 @@
 <template>
-  <section class="container mx-auto px-3 sm:px-4 md:px-6 lg:px-4 py-8 sm:py-10 md:py-12 lg:py-16 bg-[#F7F7F8]">
-    <div class="max-w-6xl mx-auto">
+  <section class="mx-auto py-2 sm:py-4 md:py-6 lg:py-8 bg-[#F7F7F8]">
+    <div>
       <!-- Pricing Header -->
-      <div class="mb-6 sm:mb-8 md:mb-10 lg:mb-12">
-        <div class="mb-3 sm:mb-4 text-center flex justify-start items-start ">
+      <div class="mb-6 sm:mb-8 md:mb-10 lg:mb-12 px-4 sm:px-0">
+        <div class="mb-3 sm:mb-4 flex justify-center sm:justify-start items-start">
           <button
-            class="inline-flex justify-start items-start space-x-2 px-3 sm:px-4 py-1.5 sm:py-2 bg-[white] rounded-full text-xs sm:text-sm font-medium text-gray-700 border border-gray-200"
+            class="inline-flex items-center space-x-2 px-3 sm:px-4 py-1.5 sm:py-2 bg-[white] rounded-full text-xs sm:text-sm font-medium text-gray-700 border border-gray-200"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -27,9 +27,9 @@
         <div
           class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 sm:gap-6 mb-6 sm:mb-8"
         >
-          <div class="text-center md:text-left">
+          <div class="text-center md:text-left w-full">
             <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-2 sm:mb-3">
-              Pricing Plans
+              Pricing
             </h2>
             <p class="text-sm sm:text-base md:text-lg text-gray-600 max-w-2xl mx-auto md:mx-0">
               Get access to our entire content delivery network without
@@ -53,10 +53,10 @@
 
       <!-- Two Separate Tables: Region Table and Pricing Table -->
       <div
-        class="flex flex-col lg:flex-row overflow-x-auto -mx-3 sm:-mx-4 md:-mx-6 lg:mx-0 px-3 sm:px-4 md:px-6 lg:px-0 pricing-table-container"
+        class="flex flex-col lg:flex-row overflow-x-auto -mx-4 sm:-mx-4 md:-mx-6 lg:mx-0 px-4 sm:px-4 md:px-6 lg:px-0 pricing-table-container"
         style="background-color: #f3f4f6;"
       >
-        <div class="flex w-full min-w-0" style="padding: 2% 3%;">
+        <div class="flex w-full min-w-0" style="padding: 4% 2%;">
           <div class="w-full sm:w-2/5 md:w-1/3 lg:w-1/4 flex-shrink-0">
             <div class="bg-[#F3F4F6] rounded-lg p-0.5 sm:p-1">
               <div class="bg-white rounded-lg overflow-hidden">

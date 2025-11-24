@@ -1,6 +1,6 @@
 <template>
-  <section id="faq" class="container mx-auto px-4 pb-12 md:pb-16">
-    <div class="max-w-6xl mx-auto">
+  <section id="faq" class="mx-auto" style="margin: 15% 0%;">
+    <div>
       <!-- FAQ Header -->
       <div class="text-center mb-8 md:mb-12">
         <div class="flex justify-center mb-2">
@@ -35,7 +35,7 @@
         <!-- Left Column -->
         <div class="space-y-4">
           <!-- FAQ Item 1 -->
-          <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+          <div class="bg-white shadow-sm border border-gray-200" style="border-radius: 20px;">
             <button
               type="button"
               @click="toggleFAQ(0)"
@@ -88,7 +88,7 @@
           </div>
 
           <!-- FAQ Item 2 -->
-          <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+          <div class="bg-white shadow-sm border border-gray-200" style="border-radius: 20px;">
             <button
               type="button"
               @click="toggleFAQ(1)"
@@ -139,7 +139,7 @@
           </div>
 
           <!-- FAQ Item 3 -->
-          <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+          <div class="bg-white shadow-sm border border-gray-200" style="border-radius: 20px;">
             <button
               type="button"
               @click="toggleFAQ(2)"
@@ -194,7 +194,7 @@
         <!-- Right Column -->
         <div class="space-y-4">
           <!-- FAQ Item 4 -->
-          <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+          <div class="bg-white shadow-sm border border-gray-200" style="border-radius: 20px;">
             <button
               type="button"
               @click="toggleFAQ(3)"
@@ -246,7 +246,7 @@
           </div>
 
           <!-- FAQ Item 5 -->
-          <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+          <div class="bg-white shadow-sm border border-gray-200" style="border-radius: 20px;">
             <button
               type="button"
               @click="toggleFAQ(4)"
@@ -298,7 +298,7 @@
           </div>
 
           <!-- FAQ Item 6 -->
-          <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+          <div class="bg-white shadow-sm border border-gray-200" style="border-radius: 20px;">
             <button
               type="button"
               @click="toggleFAQ(5)"

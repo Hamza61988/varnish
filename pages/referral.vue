@@ -3,14 +3,16 @@
     class="min-h-screen relative overflow-hidden"
     style="background: #ffffff"
   >
-    <!-- Main Content -->
     <main>
       <section
         class="w-full md:w-3/4 lg:w-2/3 xl:w-3/4 mx-auto px-4 sm:px-6 md:px-0"
         style="padding: 4%"
       >
         <!-- Section Label -->
-        <div class="flex items-center justify-start lg:justify-center" style="margin-bottom: 24px;">
+        <div
+          class="flex items-center justify-start lg:justify-center"
+          style="margin-bottom: 24px"
+        >
           <div
             class="flex items-center"
             style="
@@ -136,7 +138,7 @@
           <!-- Right Column - Key Values Cards -->
           <div
             class="w-full mt-8 mb-8 lg:mt-0 lg:mb-0 flex flex-col items-start lg:items-center"
-            style="gap: 16px;"
+            style="gap: 16px"
           >
             <!-- Outcome-oriented culture -->
             <div
@@ -145,8 +147,8 @@
                 width: 100%;
                 height: 141px;
                 border-radius: 20px;
-                border: 1px solid #EEEEF0;
-                background: #FFFFFF;
+                border: 1px solid #eeeef0;
+                background: #ffffff;
                 padding-top: 17px;
                 padding-right: 24px;
                 padding-bottom: 17px;
@@ -156,7 +158,11 @@
               <div
                 class="flex-shrink-0 flex items-center justify-center rounded-full"
               >
-                <img src="/images/referrelVectore1.svg" alt="Icon" style="width: 52px; height: 52px;" />
+                <img
+                  src="/images/referrelVectore1.svg"
+                  alt="Icon"
+                  style="width: 52px; height: 52px"
+                />
               </div>
               <div>
                 <h3
@@ -195,8 +201,8 @@
                 width: 100%;
                 height: 141px;
                 border-radius: 20px;
-                border: 1px solid #EEEEF0;
-                background: #FFFFFF;
+                border: 1px solid #eeeef0;
+                background: #ffffff;
                 padding-top: 17px;
                 padding-right: 24px;
                 padding-bottom: 17px;
@@ -206,7 +212,11 @@
               <div
                 class="flex-shrink-0 flex items-center justify-center rounded-full"
               >
-                <img src="/images/referrelVectore2.svg" alt="Icon" style="width: 52px; height: 52px;" />
+                <img
+                  src="/images/referrelVectore2.svg"
+                  alt="Icon"
+                  style="width: 52px; height: 52px"
+                />
               </div>
               <div>
                 <h3
@@ -245,8 +255,8 @@
                 width: 100%;
                 height: 141px;
                 border-radius: 20px;
-                border: 1px solid #EEEEF0;
-                background: #FFFFFF;
+                border: 1px solid #eeeef0;
+                background: #ffffff;
                 padding-top: 17px;
                 padding-right: 24px;
                 padding-bottom: 17px;
@@ -256,7 +266,11 @@
               <div
                 class="flex-shrink-0 flex items-center justify-center rounded-full"
               >
-                <img src="/images/referrelVectore3.svg" alt="Icon" style="width: 52px; height: 52px;" />
+                <img
+                  src="/images/referrelVectore3.svg"
+                  alt="Icon"
+                  style="width: 52px; height: 52px"
+                />
               </div>
               <div>
                 <h3
@@ -290,26 +304,21 @@
           </div>
         </div>
       </section>
-
-      <!-- Access All Features Section -->
       <SectionsAccessAllFeaturesSection />
     </main>
   </div>
 </template>
 
 <script setup lang="ts">
-import SectionsAccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSection.vue'
+import SectionsAccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSection.vue";
 </script>
 
 <style scoped>
-/* Tablet/Pad responsive styles - single column with full width */
 @media (min-width: 768px) and (max-width: 1023px) {
   .referral-card {
     width: 100% !important;
   }
 }
-
-/* Desktop - cards back to 90% width */
 @media (min-width: 1024px) {
   .referral-card {
     width: 90% !important;

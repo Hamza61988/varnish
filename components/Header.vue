@@ -1,7 +1,7 @@
 <template>
   <header
     class="flex justify-center items-center bg-white top-0 z-50"
-    style="background-color: #ffffff; height: 80px; "
+    style="background-color: transparent; height: 80px; "
   >
     <nav class="container mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
       <div class="flex items-center justify-between" style="height: 32px;">

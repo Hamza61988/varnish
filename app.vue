@@ -4,6 +4,7 @@
     style="
       font-family: 'Bricolage Grotesque', sans-serif;
       border-radius: 6px;
+      background-color: #f7f7f8;
     "
   >
     <CookieBanner />

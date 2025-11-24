@@ -6,7 +6,10 @@
     <SectionsSpeedUpImagesSection />
     <SectionsDevelopWithEaseSection />
     <SectionsTestimonialsSection />
-    <SectionsCTASection />
+    <!-- <SectionsCTASection /> -->
+    <div class="mb-12 sm:mb-8 md:mb-0">
+        <SectionsAccessAllFeaturesSection />
+      </div>
   </div>
 </template>
 

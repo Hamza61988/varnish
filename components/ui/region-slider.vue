@@ -2,17 +2,17 @@
   <div class="">
     <div class="">
       <!-- North America / Europe -->
-      <div class="mb-6">
+      <div class="mb-4 sm:mb-5 md:mb-6">
         <div class="flex justify-between items-center mb-2">
           <label class="region-label"
             >North America / Europe</label
           >
           <span class="value-display">{{
-            formatGB(bandwidth.naEurope)
+            formatGB(localBandwidth.naEurope)
           }}</span>
         </div>
         <input
-          v-model.number="bandwidth.naEurope"
+          v-model.number="localBandwidth.naEurope"
           type="range"
           min="0"
           max="2000"
@@ -20,24 +20,24 @@
           class="w-full accent-indigo-600 cursor-pointer rounded-lg h-2 bg-gray-100"
           :style="{
             background: `linear-gradient(to right, #1F62FF ${
-              bandwidth.naEurope / 20
-            }%, #e5e7eb ${bandwidth.naEurope / 20}%)`,
+              localBandwidth.naEurope / 20
+            }%, #e5e7eb ${localBandwidth.naEurope / 20}%)`,
           }"
         />
       </div>
 
       <!-- Asia / Oceania -->
-      <div class="mb-6">
+      <div class="mb-4 sm:mb-5 md:mb-6">
         <div class="flex justify-between items-center mb-2">
           <label class="region-label"
             >Asia / Oceania</label
           >
           <span class="value-display">{{
-            formatGB(bandwidth.asiaOceania)
+            formatGB(localBandwidth.asiaOceania)
           }}</span>
         </div>
         <input
-          v-model.number="bandwidth.asiaOceania"
+          v-model.number="localBandwidth.asiaOceania"
           type="range"
           min="0"
           max="2000"
@@ -45,24 +45,24 @@
           class="w-full accent-indigo-600 cursor-pointer rounded-lg h-2 bg-gray-100"
           :style="{
             background: `linear-gradient(to right, #1F62FF ${
-              bandwidth.asiaOceania / 20
-            }%, #e5e7eb ${bandwidth.asiaOceania / 20}%)`,
+              localBandwidth.asiaOceania / 20
+            }%, #e5e7eb ${localBandwidth.asiaOceania / 20}%)`,
           }"
         />
       </div>
 
       <!-- Africa / Latin America -->
-      <div class="mb-6">
+      <div class="mb-4 sm:mb-5 md:mb-6">
         <div class="flex justify-between items-center mb-2">
           <label class="region-label"
             >Africa / Latin America</label
           >
           <span class="value-display">{{
-            formatGB(bandwidth.africaLatin)
+            formatGB(localBandwidth.africaLatin)
           }}</span>
         </div>
         <input
-          v-model.number="bandwidth.africaLatin"
+          v-model.number="localBandwidth.africaLatin"
           type="range"
           min="0"
           max="2000"
@@ -70,8 +70,8 @@
           class="w-full accent-indigo-600 cursor-pointer rounded-lg h-2 bg-gray-100"
           :style="{
             background: `linear-gradient(to right, #1F62FF ${
-              bandwidth.africaLatin / 20
-            }%, #e5e7eb ${bandwidth.africaLatin / 20}%)`,
+              localBandwidth.africaLatin / 20
+            }%, #e5e7eb ${localBandwidth.africaLatin / 20}%)`,
           }"
         />
       </div>
@@ -80,11 +80,38 @@
 </template>
 
 <script setup lang="ts">
-const bandwidth = ref({
-  naEurope: 0,
-  asiaOceania: 0,
-  africaLatin: 0,
-});
+import { ref, watch } from "vue";
+
+interface Props {
+  modelValue: {
+    naEurope: number;
+    asiaOceania: number;
+    africaLatin: number;
+  };
+}
+
+const props = defineProps<Props>();
+const emit = defineEmits<{
+  "update:modelValue": [value: typeof props.modelValue];
+}>();
+
+const localBandwidth = ref({ ...props.modelValue });
+
+watch(
+  () => props.modelValue,
+  (newVal) => {
+    localBandwidth.value = { ...newVal };
+  },
+  { deep: true }
+);
+
+watch(
+  localBandwidth,
+  (newVal) => {
+    emit("update:modelValue", { ...newVal });
+  },
+  { deep: true }
+);
 
 const formatGB = (val: number) => `${val} GB`;
 </script>
@@ -93,25 +120,51 @@ const formatGB = (val: number) => `${val} GB`;
 .region-label {
   font-family: 'Bricolage Grotesque', sans-serif;
   font-weight: 600;
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 16px;
+  line-height: 22px;
   letter-spacing: -0.02em;
   color: #1A1925;
   vertical-align: middle;
 }
 
+@media (min-width: 640px) {
+  .region-label {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@media (min-width: 768px) {
+  .region-label {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
 .value-display {
   border: 1px solid #EEEEF0;
-  width: 50px;
-  height: 28px;
-  border-radius: 10px;
-  padding: 4px 10px;
+  min-width: 45px;
+  width: auto;
+  height: 24px;
+  border-radius: 8px;
+  padding: 2px 8px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 12px;
+  font-size: 11px;
   color: #6B7280;
   box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+@media (min-width: 640px) {
+  .value-display {
+    min-width: 50px;
+    height: 28px;
+    border-radius: 10px;
+    padding: 4px 10px;
+    font-size: 12px;
+  }
 }
 
 input[type="range"]::-webkit-slider-thumb {

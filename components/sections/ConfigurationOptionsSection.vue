@@ -107,6 +107,70 @@
             </svg>
           </div>
         </div>
+
+        <!-- Access All Features Section -->
+        <div class="mt-12 md:mt-16 text-center">
+          <h2 class="font-['Bricolage_Grotesque'] font-medium text-xs leading-4 tracking-[0.1em] text-center text-[#1a1925] mb-6 md:mb-8">
+            ACCESS ALL FEATURES
+          </h2>
+          
+          <!-- Features Tags -->
+          <div class="flex flex-wrap justify-between">
+            <!-- Instant Purge -->
+            <div class="flex items-center gap-2 px-4 py-2 bg-white rounded-full border border-[#eeeef0] shadow-sm">
+              <div class="relative flex items-center justify-center">
+                <div class="absolute w-4 h-4 rounded-full bg-blue-600 opacity-20 blur-sm"></div>
+                <div class="relative w-2 h-2 rounded-full bg-blue-600"></div>
+              </div>
+              <span class="font-['Bricolage_Grotesque'] font-medium text-[13px] leading-4 tracking-0 text-[#1a1925]">Instant Purge</span>
+            </div>
+
+            <!-- HTTP/2 -->
+            <div class="flex items-center gap-2 px-4 py-2 bg-white rounded-full border border-[#eeeef0] shadow-sm">
+              <div class="relative flex items-center justify-center">
+                <div class="absolute w-4 h-4 rounded-full bg-blue-600 opacity-20 blur-sm"></div>
+                <div class="relative w-2 h-2 rounded-full bg-blue-600"></div>
+              </div>
+              <span class="font-['Bricolage_Grotesque'] font-medium text-[13px] leading-4 tracking-0 text-[#1a1925]">HTTP/2</span>
+            </div>
+
+            <!-- TLS Certificate -->
+            <div class="flex items-center gap-2 px-4 py-2 bg-white rounded-full border border-[#eeeef0] shadow-sm">
+              <div class="relative flex items-center justify-center">
+                <div class="absolute w-4 h-4 rounded-full bg-blue-600 opacity-20 blur-sm"></div>
+                <div class="relative w-2 h-2 rounded-full bg-blue-600"></div>
+              </div>
+              <span class="font-['Bricolage_Grotesque'] font-medium text-[13px] leading-4 tracking-0 text-[#1a1925]">TLS Certificate</span>
+            </div>
+
+            <!-- Origin Shield -->
+            <div class="flex items-center gap-2 px-4 py-2 bg-white rounded-full border border-[#eeeef0] shadow-sm">
+              <div class="relative flex items-center justify-center">
+                <div class="absolute w-4 h-4 rounded-full bg-blue-600 opacity-20 blur-sm"></div>
+                <div class="relative w-2 h-2 rounded-full bg-blue-600"></div>
+              </div>
+              <span class="font-['Bricolage_Grotesque'] font-medium text-[13px] leading-4 tracking-0 text-[#1a1925]">Origin Shield</span>
+            </div>
+
+            <!-- Secure Token -->
+            <div class="flex items-center gap-2 px-4 py-2 bg-white rounded-full border border-[#eeeef0] shadow-sm">
+              <div class="relative flex items-center justify-center">
+                <div class="absolute w-4 h-4 rounded-full bg-blue-600 opacity-20 blur-sm"></div>
+                <div class="relative w-2 h-2 rounded-full bg-blue-600"></div>
+              </div>
+              <span class="font-['Bricolage_Grotesque'] font-medium text-[13px] leading-4 tracking-0 text-[#1a1925]">Secure Token</span>
+            </div>
+
+            <!-- DDoS Protection -->
+            <div class="flex items-center gap-2 px-4 py-2 bg-white rounded-full border border-[#eeeef0] shadow-sm">
+              <div class="relative flex items-center justify-center">
+                <div class="absolute w-4 h-4 rounded-full bg-blue-600 opacity-20 blur-sm"></div>
+                <div class="relative w-2 h-2 rounded-full bg-blue-600"></div>
+              </div>
+              <span class="font-['Bricolage_Grotesque'] font-medium text-[13px] leading-4 tracking-0 text-[#1a1925]">DDoS Protection</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>

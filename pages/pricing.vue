@@ -1,12 +1,15 @@
 <template>
-  <div class="" style="background-color: #f7f7f8">
+  <div
+    class="w-full px-4 sm:px-6 md:px-8"
+    style="background-color: #f7f7f8; max-width: 900px; margin: auto"
+  >
     <!-- <SectionsHeroSection /> -->
     <SectionsPricingTableSection :headings="headings" :table-data="tableData" />
     <SectionsEnterpriseSection />
     <!-- Features Section -->
-    <section class="container mx-auto px-4 py-12 md:py-16 bg-[#F7F7F8]">
-      <div class="max-w-6xl mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+    <section class="mx-auto py-8 sm:py-10 md:py-12 lg:py-16 bg-[#F7F7F8] px-4 sm:px-0">
+      <div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-5 md:gap-6 lg:gap-8">
           <!-- Agility Card -->
           <div
             class="relative overflow-hidden min-h-[210px] md:h-[210px]"
@@ -62,26 +65,12 @@
                 />
               </div>
               <h3
-                class="mb-2 sm:mb-3 text-base sm:text-lg"
-                style="
-                  font-family: 'Inter', sans-serif;
-                  font-weight: 500;
-                  line-height: 24px;
-                  letter-spacing: -0.011em;
-                  color: #1a1925;
-                "
+                class="mb-2 sm:mb-3 font-['Bricolage_Grotesque'] font-semibold text-lg leading-6 tracking-[-0.02em] text-[#1a1925]"
               >
                 Secure and Flexible Sharing Tools
               </h3>
               <p
-                class="text-sm sm:text-base"
-                style="
-                  font-family: 'Inter', sans-serif;
-                  font-weight: 400;
-                  line-height: 20px;
-                  letter-spacing: -0.006em;
-                  color: #51515e;
-                "
+                class="font-['Inter'] font-normal text-sm leading-5 tracking-[-0.006em] text-[#73737f]"
               >
                 Our pricing includes unlimited HTTP and HTTPS requests to keep
                 costs low and affordable from the very beginning.
@@ -153,26 +142,12 @@
                 </div>
               </div>
               <h3
-                class="mb-2 sm:mb-3 text-base sm:text-lg"
-                style="
-                  font-family: 'Inter', sans-serif;
-                  font-weight: 500;
-                  line-height: 24px;
-                  letter-spacing: -0.011em;
-                  color: #1a1925;
-                "
+                class="mb-2 sm:mb-3 font-['Bricolage_Grotesque'] font-semibold text-lg leading-6 tracking-[-0.02em] text-[#1a1925]"
               >
                 Low minimum usage
               </h3>
               <p
-                class="text-sm sm:text-base"
-                style="
-                  font-family: 'Inter', sans-serif;
-                  font-weight: 400;
-                  line-height: 20px;
-                  letter-spacing: -0.006em;
-                  color: #51515e;
-                "
+                class="font-['Inter'] font-normal text-sm leading-5 tracking-[-0.006em] text-[#73737f]"
               >
                 Our minimum charge is $4 per month based on the combined total
                 account traffic volume and other services used.
@@ -258,26 +233,12 @@
                 </div>
               </div>
               <h3
-                class="mb-2 sm:mb-3 text-base sm:text-lg"
-                style="
-                  font-family: 'Inter', sans-serif;
-                  font-weight: 500;
-                  line-height: 24px;
-                  letter-spacing: -0.011em;
-                  color: #1a1925;
-                "
+                class="mb-2 sm:mb-3 font-['Bricolage_Grotesque'] font-semibold text-lg leading-6 tracking-[-0.02em] text-[#1a1925]"
               >
                 24/7 support
               </h3>
               <p
-                class="text-sm sm:text-base"
-                style="
-                  font-family: 'Inter', sans-serif;
-                  font-weight: 400;
-                  line-height: 20px;
-                  letter-spacing: -0.006em;
-                  color: #51515e;
-                "
+                class="font-['Inter'] font-normal text-sm leading-5 tracking-[-0.006em] text-[#73737f]"
               >
                 Our professional technical support team is available 24 hours a
                 day, 7 days a week for all customers at no additional cost.
@@ -288,7 +249,6 @@
       </div>
     </section>
     <SectionsConfigurationOptionsSection />
-    <SectionsAccessAllFeaturesSection />
     <SectionsCostCalculatorSection
       v-model:bandwidth="bandwidth"
       :total-cost="totalCost"
@@ -298,6 +258,8 @@
 </template>
 
 <script setup lang="ts">
+import { ref, computed } from "vue";
+
 // Pricing table data
 const headings = [
   { title: "First 10 TB" },

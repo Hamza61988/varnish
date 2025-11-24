@@ -30,9 +30,8 @@
         </p>
       </div>
   <div
-    class="bg-white rounded-lg shadow-lg p-6 md:p-8 bg-white w-[60%] mx-auto"
-    style="border-radius: 20px"
-  >
+    class="bg-white mx-auto px-4 py-12 md:py-16 bg-white"
+    style="border-radius: 20px">
    
       <!-- Sliders -->
       <UiRegionSlider

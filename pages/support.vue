@@ -18,14 +18,14 @@
 
     <!-- Main Content -->
     <main
-      class="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 py-12 sm:py-16 md:py-20 lg:py-24 relative z-10"
+      class="w-full mx-auto px-4 sm:px-6 md:px-8 lg:px-12 py-12 sm:py-16 md:py-20 lg:py-24 relative z-10"
     >
       <!-- Support Section -->
-      <section
-        class="w-full md:w-3/4 lg:w-2/3 xl:w-3/4 mx-auto px-4 sm:px-6 md:px-0"
-      >
+      <section class="w-full max-w-6xl mx-auto px-0">
         <!-- Section Label -->
-        <div class="flex items-center justify-center mb-4 sm:mb-6">
+        <div
+          class="flex items-center justify-start sm:justify-center mb-4 sm:mb-6"
+        >
           <div
             class="flex items-center"
             style="
@@ -53,7 +53,7 @@
               stroke-width="2.5"
               stroke-linecap="round"
               stroke-linejoin="round"
-              style="min-width: 16px; min-height: 16px;"
+              style="min-width: 16px; min-height: 16px"
             >
               <path
                 d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"
@@ -77,12 +77,11 @@
 
         <!-- Title -->
         <h1
-          class="text-center mb-4 sm:mb-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
+          class="text-left sm:text-center mb-4 sm:mb-6 text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl"
           style="
             font-family: 'Bricolage Grotesque', sans-serif;
             font-weight: 500;
             letter-spacing: -0.02em;
-            text-align: center;
             vertical-align: middle;
             color: #1a1925;
           "
@@ -92,14 +91,13 @@
 
         <!-- Subtitle -->
         <p
-          class="text-center mb-8 sm:mb-10 md:mb-12"
+          class="text-left sm:text-center mb-8 sm:mb-10 md:mb-12"
           style="
             font-family: 'Inter', sans-serif;
             font-weight: 400;
             font-size: 16px;
             line-height: 24px;
             letter-spacing: -0.011em;
-            text-align: center;
             color: #51515e;
           "
         >
@@ -109,20 +107,15 @@
 
         <!-- Support Categories - Three Columns -->
         <div
-          class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 mb-12 sm:mb-16 md:mb-20"
-          style="gap: 10px"
+          class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-5 md:gap-6 lg:gap-8 mb-12 sm:mb-16 md:mb-20 w-full"
         >
           <!-- Zones Column -->
           <div
-            class="bg-white rounded-lg"
+            class="bg-white rounded-lg p-5 sm:p-6 w-full"
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
               background: #ffffff;
-              padding-top: 23px;
-              padding-right: 24px;
-              padding-bottom: 24px;
-              padding-left: 24px;
             "
           >
             <div class="flex items-center gap-2 mb-4">
@@ -153,15 +146,7 @@
                 />
               </svg>
             </div>
-            <ul
-              class="space-y-2"
-              style="
-                height: 300px;
-                display: flex;
-                flex-direction: column;
-                gap: 10px;
-              "
-            >
+            <ul class="flex flex-col" style="min-height: 300px; gap: 20px">
               <li
                 v-for="link in zonesLinks"
                 :key="link"
@@ -186,15 +171,11 @@
 
           <!-- Integrations Column -->
           <div
-            class="bg-white rounded-lg"
+            class="bg-white rounded-lg p-5 sm:p-6 w-full"
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
               background: #ffffff;
-              padding-top: 23px;
-              padding-right: 24px;
-              padding-bottom: 24px;
-              padding-left: 24px;
             "
           >
             <div class="flex items-center gap-2 mb-4">
@@ -225,15 +206,7 @@
                 />
               </svg>
             </div>
-            <ul
-              class="space-y-2"
-              style="
-                height: 300px;
-                display: flex;
-                flex-direction: column;
-                gap: 10px;
-              "
-            >
+            <ul class="flex flex-col" style="min-height: 300px; gap: 20px">
               <li
                 v-for="link in integrationsLinks"
                 :key="link"
@@ -258,15 +231,11 @@
 
           <!-- Troubleshooting Column -->
           <div
-            class="bg-white rounded-lg"
+            class="bg-white rounded-lg p-5 sm:p-6 w-full"
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
               background: #ffffff;
-              padding-top: 23px;
-              padding-right: 24px;
-              padding-bottom: 24px;
-              padding-left: 24px;
             "
           >
             <div class="flex items-center gap-2 mb-4">
@@ -297,15 +266,7 @@
                 />
               </svg>
             </div>
-            <ul
-              class="space-y-2"
-              style="
-                height: 300px;
-                display: flex;
-                flex-direction: column;
-                gap: 10px;
-              "
-            >
+            <ul class="flex flex-col" style="min-height: 300px; gap: 20px">
               <li
                 v-for="link in troubleshootingLinks"
                 :key="link"
@@ -340,12 +301,11 @@
         ></div>
         <!-- Information Cards -->
         <div
-          class="flex flex-col md:flex-row gap-4 sm:gap-6 mb-8 sm:mb-12 md:mb-16 lg:mb-20"
-          style="justify-content: space-between"
+          class="flex flex-col md:flex-row gap-4 sm:gap-5 md:gap-6 lg:gap-8 mb-8 sm:mb-12 md:mb-16 lg:mb-20"
         >
           <!-- Getting Started Card -->
           <div
-            class="relative overflow-hidden w-full md:w-[200.67px] md:flex-1"
+            class="relative overflow-hidden w-full md:flex-1"
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
@@ -431,7 +391,7 @@
 
           <!-- Knowledge Base Card -->
           <div
-            class="relative overflow-hidden w-full md:w-[200.67px] md:flex-1"
+            class="relative overflow-hidden w-full md:flex-1"
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
@@ -518,7 +478,7 @@
 
           <!-- Support Request Card -->
           <div
-            class="relative overflow-hidden w-full md:w-[200.67px] md:flex-1"
+            class="relative overflow-hidden w-full md:flex-1"
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
