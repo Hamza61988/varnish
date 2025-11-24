@@ -1,7 +1,7 @@
 <template>
   <div class="mt-[4.25rem] mx-auto max-w-3xl">
     <div class="w-full">
-      <button class="support-btn">Support</button>
+      <button class="support-btn shadow-md">Support</button>
 
       <h1 class="text-5xl font-medium mt-4">Purge CDN Cache</h1>
 
@@ -26,7 +26,7 @@
     <div class="mt-4">
       <h2 class="text-[2rem] font-semibold mt-4">Purge Cache</h2>
 
-      <div class="pl-4">
+      <div class="pl-8">
         <ol class="text-[#73737F]">
           <li class="mt-3">Log in to the KeyCDN dashboard.</li>
           <li class="mt-3">In the left navigation sidebar click Zones.</li>
@@ -41,7 +41,7 @@
     <div class="mt-[2.3125rem]">
       <h2 class="text-[2rem] font-semibold mt-4">Purge URL</h2>
 
-      <div class="pl-4 mb-4">
+      <div class="pl-8 mb-4">
         <ol class="text-[#73737F]">
           <li class="mt-3">Log in to the KeyCDN dashboard.</li>
           <li class="mt-3">In the left navigation sidebar click Zones.</li>
@@ -64,7 +64,7 @@
   font-size: 16px;
   font-weight: 500;
   background: #ffffff;
-  border: 1px solid #ddd;
+
   border-radius: 10px;
   padding: 1px 20px;
   cursor: pointer;

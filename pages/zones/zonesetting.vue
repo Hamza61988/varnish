@@ -3,7 +3,7 @@
 
         <div class="w-full">
 
-            <button class="support-btn">
+            <button class="support-btn shadow-md">
                 Support
             </button>
 
@@ -137,7 +137,7 @@
     font-size: 16px;
     font-weight: 500;
     background: #ffffff;
-    border: 1px solid #ddd;
+    
     border-radius: 10px;
     padding: 1px 20px;
     cursor: pointer;

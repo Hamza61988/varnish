@@ -1,7 +1,7 @@
 <template>
   <div class="mt-[4.25rem] mx-auto max-w-3xl">
     <div class="w-full">
-      <button class="support-btn">Support</button>
+      <button class="support-btn shadow-md">Support</button>
 
       <h1 class="text-5xl font-medium mt-4">Create a Pull Zone</h1>
 
@@ -11,7 +11,7 @@
     </div>
 
     <div class="mt-[2.3125rem] mb-[8.1875rem]">
-      <div class="pl-4">
+      <div class="pl-8">
         <ol class="text-[#73737F]">
           <li class="mt-3">Log in to the KeyCDN dashboard.</li>
           <li class="mt-3">In the left navigation sidebar click Zones.</li>
@@ -41,7 +41,7 @@
   font-size: 16px;
   font-weight: 500;
   background: #ffffff;
-  border: 1px solid #ddd;
+
   border-radius: 10px;
   padding: 1px 20px;
   cursor: pointer;

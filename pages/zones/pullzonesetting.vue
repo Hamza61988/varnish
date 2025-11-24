@@ -1,7 +1,7 @@
 <template>
   <div class="mt-[4.25rem] mx-auto max-w-3xl">
     <div class="w-full">
-      <button class="support-btn">Support</button>
+      <button class="support-btn shadow-md">Support</button>
 
       <h1 class="text-5xl font-medium mt-4">Pull Zone Settings</h1>
 
@@ -214,7 +214,7 @@
   font-size: 16px;
   font-weight: 500;
   background: #ffffff;
-  border: 1px solid #ddd;
+
   border-radius: 10px;
   padding: 1px 20px;
   cursor: pointer;
