@@ -43,12 +43,12 @@
         </li>
         <li class="">Go to System > Configuration.</li>
 
-        <img src="/images/integeration/magento.svg" alt="magento 1st" />
+        <img src="/images/Integeration/magento.svg" alt="magento 1st" />
         <li class="">
           Once in "Configuration", go to "General" and click on "Web".
         </li>
 
-        <img src="/images/integeration/magento2.svg" alt="magento 2nd" />
+        <img src="/images/Integeration/magento2.svg" alt="magento 2nd" />
 
         <li>
           Select the Unsecure section and enter the following information.
@@ -135,7 +135,7 @@
           </ul>
         </ul>
 
-        <img src="/images/integeration/magento3.svg" alt="magento 3rd" />
+        <img src="/images/Integeration/magento3.svg" alt="magento 3rd" />
 
         <li class="">
           Save all the settings. The Magento CDN integration is completed.
@@ -178,7 +178,7 @@
           protocol if using HTTPS).
         </li>
 
-        <img src="/images/integeration/magento4.svg" alt="magento 4th" />
+        <img src="/images/Integeration/magento4.svg" alt="magento 4th" />
 
         <li>Once this is complete save the config.</li>
         <li>
@@ -186,13 +186,13 @@
           Magento Cache.
         </li>
 
-        <img src="/images/integeration/magento5.svg" alt="magento 5th" />
+        <img src="/images/Integeration/magento5.svg" alt="magento 5th" />
         <li class="my-4">
           Verify your HTML page source to ensure that you are properly
           delivering static content via the CDN.
         </li>
 
-        <img src="/images/integeration/magento6.svg" alt="magento 6th" />
+        <img src="/images/Integeration/magento6.svg" alt="magento 6th" />
 
         <p class="text-[#73737F]">
           That's it! Now your Magento installation is integrated with KeyCDN.

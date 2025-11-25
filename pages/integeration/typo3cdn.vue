@@ -39,15 +39,15 @@
           extension from content_replacer.
         </li>
 
-        <img src="/images/integeration/typo.svg" alt="typo 1st" />
+        <img src="/images/Integeration/typo.svg" alt="typo 1st" />
 
-        <img src="/images/integeration/typo2.svg" alt="typo 2nd" />
+        <img src="/images/Integeration/typo2.svg" alt="typo 2nd" />
         <li class="">
           Navigate to the template page and edit the template located at the
           root level
         </li>
 
-        <img src="/images/integeration/typo3.svg" alt="typo 3rd" />
+        <img src="/images/Integeration/typo3.svg" alt="typo 3rd" />
 
         <li class="">
           Scroll down to Setup and enter the following code (be sure to replace
@@ -71,7 +71,7 @@ config.tx_ja_replacer {
   </code></pre>
 </div>
 
-        <img src="/images/integeration/typo4.svg" alt="typo 4rd" />
+        <img src="/images/Integeration/typo4.svg" alt="typo 4rd" />
 
         <li class="">
           Save your template, flush the frontend and general caches and verify
@@ -80,7 +80,7 @@ config.tx_ja_replacer {
         </li>
       </ol>
 
-      <img src="/images/integeration/typo5.svg" alt="typo 5th" />
+      <img src="/images/Integeration/typo5.svg" alt="typo 5th" />
 
       <p class="text-[#73737F]">
         Another Typo3 CDN integration option is to use the cs_cdn extension

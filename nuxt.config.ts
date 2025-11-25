@@ -5,6 +5,12 @@ export default defineNuxtConfig({
   modules: ["@nuxtjs/tailwindcss"],
   nitro: {
     preset: "vercel",
+    sourceMap: false,
+  },
+  vite: {
+    build: {
+      sourcemap: false,
+    },
   },
   css: ["~/assets/css/main.css"],
   app: {

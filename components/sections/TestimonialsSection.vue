@@ -1,6 +1,6 @@
 <template>
   <section
-    class="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 py-12 sm:py-16 md:py-20 lg:py-24"
+    class="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 py-8 md:py-12 lg:py-20 xl:py-24"
     style="background: #f7f7f8"
   >
     <div class="max-w-6xl mx-auto">
@@ -59,13 +59,11 @@
 
         <!-- Title -->
         <h2
-          class="text-center mb-4 sm:mb-6"
+          class="text-center mb-4 sm:mb-6 text-3xl md:text-[48px] leading-[40px] md:leading-[56px]"
           style="
             font-family: 'Bricolage Grotesque', sans-serif;
             font-weight: 600;
             font-style: SemiBold;
-            font-size: 48px;
-            line-height: 56px;
             letter-spacing: -0.04em;
             text-align: center;
             vertical-align: middle;
@@ -78,12 +76,10 @@
 
         <!-- Subtitle -->
         <p
-          class="text-center mb-8 sm:mb-10 md:mb-12 text-sm md:text-base max-w-2xl mx-auto"
+          class="text-center mb-6 md:mb-8 lg:mb-10 xl:mb-12 text-sm md:text-base max-w-2xl mx-auto leading-5 md:leading-6"
           style="
             font-family: 'Inter', sans-serif;
             font-weight: 400;
-            font-size: 16px;
-            line-height: 24px;
             letter-spacing: -0.011em;
             text-align: center;
             color: #51515e;
@@ -95,31 +91,24 @@
 
       <!-- Testimonial Card -->
       <div
-        class="flex flex-col md:flex-row gap-4 sm:gap-6 mb-8 sm:mb-10 md:mb-12"
+        class="flex flex-col md:flex-row gap-4 md:gap-6 mb-6 md:mb-8 lg:mb-10 xl:mb-12"
       >
         <!-- Left: Image -->
         <div
-          class="flex items-center justify-center overflow-hidden mx-auto md:mx-0"
-          style="
-            width: 50%;
-            border-radius: 28px;
-            background: rgba(0, 0, 0, 0.12);
-          "
+          class="flex items-center justify-center overflow-hidden mx-auto md:mx-0 w-full md:w-1/2 rounded-[20px] md:rounded-[28px]"
+          style="background: rgba(0, 0, 0, 0.12)"
         >
           <img
             src="/images/Video_image.svg"
             alt="Angela Moss"
-            class="w-full h-full object-cover"
-            style="border-radius: 28px"
+            class="w-full h-auto object-cover md:h-full rounded-[20px] md:rounded-[28px]"
           />
         </div>
 
         <!-- Right: Quote and Navigation -->
         <div
-          class="flex flex-col p-6 sm:p-8 md:p-10 lg:p-12 mx-auto md:mx-0 relative overflow-hidden"
+          class="flex flex-col p-4 md:p-6 lg:p-8 xl:p-10 2xl:p-12 mx-auto md:mx-0 relative overflow-hidden w-full md:w-1/2 rounded-[20px] md:rounded-[28px]"
           style="
-            width: 100%;
-            border-radius: 28px;
             background: #eeeef0;
             box-shadow: 0px 0.5px 0.5px 0px rgba(26, 25, 37, 0.08),
               0px 1px 1px 0px rgba(26, 25, 37, 0.08),
@@ -128,7 +117,7 @@
         >
           <!-- Background Decorative Image -->
           <div
-            class="absolute"
+            class="absolute hidden lg:block"
             style="
               width: 238.78px;
               height: 235.45px;
@@ -222,12 +211,10 @@
           <!-- Quote -->
           <div class="relative flex-1 z-10">
             <p
-              class=""
+              class="text-lg md:text-xl lg:text-[28px] leading-[26px] md:leading-[30px] lg:leading-[36px]"
               style="
                 font-family: 'Bricolage Grotesque', sans-serif;
                 font-weight: 500;
-                font-size: 28px;
-                line-height: 36px;
                 letter-spacing: -0.02em;
                 vertical-align: middle;
                 color: #51515e;
@@ -242,14 +229,12 @@
       </div>
 
       <!-- Statistics and Ratings -->
-      <div class="flex" style="justify-content: space-between; width: 100%">
-        <!-- Statistics Box 1 -->
-        <div class="flex flex-row gap-2 sm:gap-3" style="gap: 10px">
+      <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-4 md:gap-0 w-full">
+        <!-- Statistics Boxes -->
+        <div class="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
           <div
-            class="flex items-center justify-center"
+            class="flex items-center justify-center w-full md:w-[227px] h-12 md:h-[52px]"
             style="
-              width: 227px;
-              height: 52px;
               gap: 10px;
               border-radius: 10px;
               padding-top: 10px;
@@ -263,12 +248,11 @@
             "
           >
             <p
+              class="text-xl md:text-2xl leading-7 md:leading-8"
               style="
                 font-family: 'Funnel Display', sans-serif;
                 font-weight: 500;
                 font-style: Medium;
-                font-size: 24px;
-                line-height: 32px;
                 letter-spacing: -0.02em;
                 text-align: center;
                 vertical-align: middle;
@@ -282,10 +266,8 @@
 
           <!-- Statistics Box 2 -->
           <div
-            class="flex items-center justify-center"
+            class="flex items-center justify-center w-full md:w-[227px] h-12 md:h-[52px]"
             style="
-              width: 227px;
-              height: 52px;
               gap: 10px;
               border-radius: 10px;
               padding-top: 10px;
@@ -299,12 +281,11 @@
             "
           >
             <p
+              class="text-xl md:text-2xl leading-7 md:leading-8"
               style="
                 font-family: 'Funnel Display', sans-serif;
                 font-weight: 500;
                 font-style: Medium;
-                font-size: 24px;
-                line-height: 32px;
                 letter-spacing: -0.02em;
                 text-align: center;
                 vertical-align: middle;
@@ -316,7 +297,8 @@
             </p>
           </div>
         </div>
-        <div class="flex flex-row gap-2 sm:gap-3">
+        <!-- Ratings -->
+        <div class="flex flex-row justify-center md:justify-end gap-4 md:gap-3 w-full md:w-auto">
           <!-- Google Rating Box -->
           <div
             class=""

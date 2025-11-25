@@ -120,7 +120,7 @@ return [
 
   <p class="text-[#73737F]">Example</p>
 
-  <img alt="larvel" src="/images/integeration/larvel.svg"></img>
+  <img alt="larvel" src="/images/Integeration/larvel.svg"></img>
 
           <li>Use the global helper function in your views:</li>
 
@@ -136,7 +136,7 @@ return [
       </div>
 
       <div class="my-4">
-          <img alt="larvel2" src="/images/integeration/larvel2.svg"></img>
+          <img alt="larvel2" src="/images/Integeration/larvel2.svg"></img>
       </div>
     </div>
 

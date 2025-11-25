@@ -39,14 +39,14 @@
         <li class="">Log in to the admin panel of PrestaShop.</li>
         <li class="">Go to "Advanced Parameters" and click "Performance"</li>
 
-        <img src="/images/integeration/prestashop.svg" alt="presta 1st" />
+        <img src="/images/Integeration/prestashop.svg" alt="presta 1st" />
 
         <li class="">
           Scroll down to the "CCC (Combine, Compress and Cache)" section and
           select the following choices as shown in this screenshot.
         </li>
 
-        <img src="/images/integeration/presta3.svg" alt="presta 2nd" />
+        <img src="/images/Integeration/presta3.svg" alt="presta 2nd" />
 
         <li class="">
           Scroll down to the next section called "Media servers (use only with
@@ -55,7 +55,7 @@
           alternatively you can use a CNAME/Zone Alias (e.g. cdn.domain.com).
         </li>
 
-        <img src="/images/integeration/presta2.svg" alt="presta 3rd" />
+        <img src="/images/Integeration/presta2.svg" alt="presta 3rd" />
 
         <li class="">Save all settings</li>
 

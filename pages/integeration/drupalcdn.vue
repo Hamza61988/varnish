@@ -63,13 +63,13 @@
           click "Install".
         </li>
 
-        <img src="/images/integeration/drupalcdn.svg" alt="drupals 1st" />
+        <img src="/images/Integeration/drupalcdn.svg" alt="drupals 1st" />
         <li class="">
           Go to the Extend page and under Web Services select both "CDN" and
           "CDN UI" then click Install.
         </li>
 
-        <img src="/images/integeration/drupalcdn2.svg" alt="drupals 2nd" />
+        <img src="/images/Integeration/drupalcdn2.svg" alt="drupals 2nd" />
 
         <li class="">
           Navigate to Configure > Web Services > CDN Integration. Set the CDN
@@ -78,7 +78,7 @@
           your Zone Alias (e.g. http://cdn.yoursite.com). Save the changes.
         </li>
 
-        <img src="/images/integeration/drupalcdn3.svg" alt="drupals 3rd" />
+        <img src="/images/Integeration/drupalcdn3.svg" alt="drupals 3rd" />
 
         <p class="text-[#73737F]">
           The setting "Far Future expiration" will define higher caching values
@@ -98,7 +98,7 @@
           configuration.
         </li>
 
-        <img src="/images/integeration/drupalcdn4.svg" alt="drupals 4rth" />
+        <img src="/images/Integeration/drupalcdn4.svg" alt="drupals 4rth" />
 
         <li class="">
           We always recommend checking the changes in the HTML code. Make sure
