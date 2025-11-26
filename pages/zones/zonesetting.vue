@@ -157,6 +157,7 @@
     background-repeat: no-repeat;
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' fill='%23888'><path d='M7 0L1 8h4l-1 6 6-8H7z'/></svg>");
 }
+
 .btn2 {
     width: 100%;
     display: flex;               
@@ -166,7 +167,7 @@
     font-size: 16px;
     font-weight: 500;
     background: #ffffff;
-    border: 1px solid #eaeaea;
+    border: 2px solid #eaeaea;
     border-radius: 6px;
     padding: 15px 20px;
     cursor: pointer;
