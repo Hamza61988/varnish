@@ -7,11 +7,16 @@
       background-color: #f7f7f8;
     "
   >
-    <CookieBanner />
-    <Header />
+    <CookieBanner v-if="!isAuthPage" />
+    <Header v-if="!isAuthPage" />
     <main class="flex-1">
       <NuxtPage />
     </main>
-    <Footer />
+    <Footer v-if="!isAuthPage" />
   </div>
 </template>
+
+<script setup lang="ts">
+const route = useRoute()
+const isAuthPage = computed(() => route.path === '/login' || route.path === '/signup')
+</script>

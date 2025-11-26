@@ -93,7 +93,8 @@
         <!-- Action Buttons - Hidden below 800px, visible on 800px+ -->
         <div class="hidden tablet:flex items-center flex-shrink-0" style="gap: 12px;">
           <!-- Login Button -->
-          <button
+          <NuxtLink
+            to="/login"
             class="flex items-center justify-center text-gray-700"
             style="
               width: 75px;
@@ -122,9 +123,10 @@
             "
           >
             Login
-          </button>
+          </NuxtLink>
           <!-- Sign Up Button -->
-          <button
+          <NuxtLink
+            to="/signup"
             class="flex items-center justify-center text-white"
             style="
               width: 75px;
@@ -157,7 +159,7 @@
             "
           >
             Sign Up
-          </button>
+          </NuxtLink>
         </div>
 
         <!-- Hamburger Menu Button - Visible below 800px, hidden on 800px+ -->
@@ -338,7 +340,8 @@
 
         <!-- Sidebar Footer - Action Buttons -->
         <div class="p-4 border-t border-gray-200 space-y-3">
-          <button
+          <NuxtLink
+            to="/login"
             class="w-full flex items-center justify-center text-gray-700 py-2"
             style="
               height: 32px;
@@ -356,8 +359,9 @@
             @click="closeMobileMenu"
           >
             Login
-          </button>
-          <button
+          </NuxtLink>
+          <NuxtLink
+            to="/signup"
             class="w-full flex items-center justify-center text-white py-2"
             style="
               height: 32px;
@@ -374,7 +378,7 @@
             @click="closeMobileMenu"
           >
             Sign Up
-          </button>
+          </NuxtLink>
         </div>
       </div>
       </div>
