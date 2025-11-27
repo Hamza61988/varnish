@@ -95,15 +95,14 @@
       <!-- Main Content: Two Column Layout -->
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 items-stretch">
         <!-- Left Section: Feature Cards -->
-        <div class="flex flex-col gap-2 sm:gap-4 justify-between">
+        <div class="flex flex-col gap-4 justify-between order-2 lg:order-1">
           <!-- Zone management Card -->
           <div
-            class="bg-white rounded-xl p-6 sm:p-8 shadow-sm"
+            class="bg-white rounded-xl p-4 sm:p-8 shadow-sm h-[190px] lg:h-[124px]"
             style="
               border-radius: 16px;
               border: 1px solid #e0e7ff;
               box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
-              height: 124px;
             "
           >
             <div class="flex items-start gap-4">
@@ -172,12 +171,11 @@
 
           <!-- Instant purge Card -->
           <div
-            class="rounded-xl p-6 sm:p-8 shadow-sm"
+            class="rounded-xl p-4 sm:p-8 shadow-sm h-[190px] lg:h-[124px]"
             style="
               border-radius: 16px;
               background: #f3f4f6;
               box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
-              height: 124px;
             "
           >
             <div class="flex items-start gap-4">
@@ -245,12 +243,11 @@
 
           <!-- Detailed reports Card -->
           <div
-            class="rounded-xl p-6 sm:p-8 shadow-sm"
+            class="rounded-xl p-4 sm:p-8 shadow-sm h-[190px] lg:h-[124px]"
             style="
               border-radius: 16px;
               background: #f3f4f6;
               box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
-              height: 124px;
             "
           >
             <div class="flex items-start gap-4">
@@ -360,7 +357,7 @@
         </div>
 
         <!-- Right Section: Code Block -->
-        <div class="flex flex-col h-full">
+        <div class="flex flex-col h-full order-1 lg:order-2">
           <div
             class="bg-[#2E3234] rounded-xl relative"
             style="border-radius: 16px"

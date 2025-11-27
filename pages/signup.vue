@@ -1,11 +1,11 @@
 <template>
-  <div class="min-h-screen flex flex-col items-center justify-center relative" style="background-color: #FFFFFF; font-family: 'Bricolage Grotesque', sans-serif;">
+  <div class="fixed inset-0 overflow-y-auto flex items-center justify-center px-4 py-2" style="background-color: #FFFFFF; font-family: 'Bricolage Grotesque', sans-serif;">
     <!-- Background decorative shapes -->
     <div class="fixed inset-0 pointer-events-none overflow-hidden">
       <div class="absolute top-0 right-0 w-96 h-96 opacity-20"></div>
       <div class="absolute bottom-0 left-0 w-96 h-96 opacity-20" style="background: linear-gradient(315deg, #E5E5E5 0%, transparent 100%); border-radius: 50%; transform: translate(-30%, 30%);"></div>
       <!-- BG_Line_landing.svg in top right -->
-      <div class="absolute top-0 right-0">
+      <div class="absolute top-0 right-0 hidden sm:block">
         <img 
           src="/images/BG_Line_landing.svg" 
           alt="Background line decoration top right" 
@@ -14,7 +14,7 @@
         />
       </div>
       <!-- BGline.svg in bottom left -->
-      <div class="absolute bottom-0 left-0">
+      <div class="absolute bottom-0 left-0 hidden sm:block">
         <img 
           src="/images/about/BGline.svg" 
           alt="Background line decoration" 
@@ -26,36 +26,27 @@
 
     <!-- Signup Card Container -->
     <div 
-      class="relative z-10 flex flex-col"
+      class="relative z-10 flex flex-col w-full max-w-[589px] mx-auto px-4 py-6 sm:px-6 sm:py-8 sm:gap-8 sm:rounded-[25px] md:px-8 md:py-10 md:gap-10 lg:px-[102px] lg:py-11 lg:gap-[60px] my-4"
       style="
-        width: 589px;
-        min-height: 576px;
-        gap: 60px;
-        border-radius: 25px;
-        padding-top: 44px;
-        padding-right: 102px;
-        padding-bottom: 44px;
-        padding-left: 102px;
+        gap: 24px;
+        border-radius: 20px;
         background: #1A1925;
       "
     >
       <!-- Header Section with Logo and Title -->
       <div class="flex items-center justify-center">
-        <div class="flex items-center gap-3">
+        <div class="flex items-center gap-1.5 sm:gap-2 md:gap-3">
           <img
             src="/icons/Company logo.svg"
             alt="Varnish Logo"
-            class="rounded-lg"
-            style="width: 72px; height: 72px;"
+            class="rounded-lg w-8 h-8 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-[72px] lg:h-[72px]"
           />
           <h1 
-            class="text-white"
+            class="text-white text-xl sm:text-2xl md:text-3xl lg:text-[57.58px] lg:leading-[47.5px]"
             style="
               font-family: 'Bricolage Grotesque', sans-serif;
               font-weight: 700;
               font-style: bold;
-              font-size: 57.58px;
-              line-height: 47.5px;
               letter-spacing: -0.03em;
               vertical-align: bottom;
               color: #FFFFFF;
@@ -67,22 +58,20 @@
       </div>
 
       <!-- Form Section -->
-      <div class="flex flex-col gap-4" style="gap: 30px;">
+      <div class="flex flex-col gap-3 sm:gap-4" style="gap: 16px;">
         <!-- Your Website Input -->
         <input
           v-model="formData.website"
           type="text"
           placeholder="Your Website"
-          class="w-full border border-transparent focus:outline-none"
+          class="w-full border border-transparent focus:outline-none h-11 sm:h-12 text-sm sm:text-base sm:px-4 sm:py-2.5"
           style="
-            height: 48px;
-            padding: 10px;
+            padding: 8px 12px;
             border-radius: 6px;
             background: #FFFFFF;
             color: #1A192599;
             font-family: 'Bricolage Grotesque', sans-serif;
             font-weight: 700;
-            font-size: 16px;
             line-height: 16px;
             letter-spacing: 0%;
           "
@@ -93,16 +82,14 @@
           v-model="formData.name"
           type="text"
           placeholder="Your Name"
-          class="w-full border border-transparent focus:outline-none"
+          class="w-full border border-transparent focus:outline-none h-11 sm:h-12 text-sm sm:text-base sm:px-4 sm:py-2.5"
           style="
-            height: 48px;
-            padding: 10px;
+            padding: 8px 12px;
             border-radius: 6px;
             background: #FFFFFF;
             color: #1A192599;
             font-family: 'Bricolage Grotesque', sans-serif;
             font-weight: 700;
-            font-size: 16px;
             line-height: 16px;
             letter-spacing: 0%;
           "
@@ -113,16 +100,14 @@
           v-model="formData.username"
           type="text"
           placeholder="Your Username (Alphanumeric)"
-          class="w-full border border-transparent focus:outline-none"
+          class="w-full border border-transparent focus:outline-none h-11 sm:h-12 text-sm sm:text-base sm:px-4 sm:py-2.5"
           style="
-            height: 48px;
-            padding: 10px;
+            padding: 8px 12px;
             border-radius: 6px;
             background: #FFFFFF;
             color: #1A192599;
             font-family: 'Bricolage Grotesque', sans-serif;
             font-weight: 700;
-            font-size: 16px;
             line-height: 16px;
             letter-spacing: 0%;
           "
@@ -133,16 +118,14 @@
           v-model="formData.password"
           type="password"
           placeholder="Your Password"
-          class="w-full border border-transparent focus:outline-none"
+          class="w-full border border-transparent focus:outline-none h-11 sm:h-12 text-sm sm:text-base sm:px-4 sm:py-2.5"
           style="
-            height: 48px;
-            padding: 10px;
+            padding: 8px 12px;
             border-radius: 6px;
             background: #FFFFFF;
             color: #1A192599;
             font-family: 'Bricolage Grotesque', sans-serif;
             font-weight: 700;
-            font-size: 16px;
             line-height: 16px;
             letter-spacing: 0%;
           "
@@ -153,40 +136,38 @@
           v-model="formData.confirmPassword"
           type="password"
           placeholder="Confirm Password"
-          class="w-full border border-transparent focus:outline-none"
+          class="w-full border border-transparent focus:outline-none h-11 sm:h-12 text-sm sm:text-base sm:px-4 sm:py-2.5"
           style="
-            height: 48px;
-            padding: 10px;
+            padding: 8px 12px;
             border-radius: 6px;
             background: #FFFFFF;
             color: #1A192599;
             font-family: 'Bricolage Grotesque', sans-serif;
             font-weight: 700;
-            font-size: 16px;
             line-height: 16px;
             letter-spacing: 0%;
           "
         />
 
         <!-- Checkboxes Section -->
-        <div class="flex flex-col gap-4" style="gap: 16px;">
+        <div class="flex flex-col gap-2 sm:gap-3" style="gap: 12px;">
           <!-- Terms and Privacy Policy Checkbox -->
-          <label class="flex items-center gap-2 cursor-pointer">
+          <label class="flex items-start gap-2 cursor-pointer">
             <input
               v-model="formData.acceptTerms"
               type="checkbox"
-              class="w-5 h-5 rounded border-2 border-white bg-transparent checked:bg-white focus:outline-none"
+              class="w-4 h-4 sm:w-5 sm:h-5 rounded border-2 border-white bg-transparent checked:bg-white focus:outline-none mt-0.5 sm:mt-0"
               style="
                 accent-color: #FFFFFF;
                 cursor: pointer;
+                flex-shrink: 0;
               "
             />
             <span 
-              class="text-white"
+              class="text-white text-xs sm:text-sm md:text-base"
               style="
                 font-family: 'Bricolage Grotesque', sans-serif;
                 font-weight: 700;
-                font-size: 16px;
                 line-height: 16px;
                 letter-spacing: 0%;
               "
@@ -206,22 +187,22 @@
           </label>
 
           <!-- Email Contact Checkbox -->
-          <label class="flex items-center gap-2 cursor-pointer">
+          <label class="flex items-start gap-2 cursor-pointer">
             <input
               v-model="formData.agreeToContact"
               type="checkbox"
-              class="w-5 h-5 rounded border-2 border-white bg-transparent checked:bg-white focus:outline-none"
+              class="w-4 h-4 sm:w-5 sm:h-5 rounded border-2 border-white bg-transparent checked:bg-white focus:outline-none mt-0.5 sm:mt-0"
               style="
                 accent-color: #FFFFFF;
                 cursor: pointer;
+                flex-shrink: 0;
               "
             />
             <span 
-              class="text-white"
+              class="text-white text-xs sm:text-sm md:text-base"
               style="
                 font-family: 'Bricolage Grotesque', sans-serif;
                 font-weight: 700;
-                font-size: 16px;
                 line-height: 16px;
                 letter-spacing: 0%;
               "
@@ -234,15 +215,13 @@
         <!-- Create Account Button -->
         <button
           @click="handleSignup"
-          class="w-full text-white font-bold transition-opacity hover:opacity-90 focus:outline-none"
+          class="w-full text-white font-bold transition-opacity hover:opacity-90 focus:outline-none h-11 sm:h-12 text-sm sm:text-base sm:px-4 sm:py-2.5"
           style="
-            height: 48px;
-            padding: 10px;
+            padding: 8px 12px;
             border-radius: 6px;
             background: #1F62FF;
             font-family: 'Bricolage Grotesque', sans-serif;
             font-weight: 700;
-            font-size: 16px;
             line-height: 16px;
             letter-spacing: 0%;
           "
@@ -257,6 +236,21 @@
 <script setup lang="ts">
 definePageMeta({
   layout: 'blank'
+})
+
+// Prevent body scrolling but allow card scrolling if needed
+onMounted(() => {
+  if (typeof window !== 'undefined') {
+    document.body.style.overflow = 'hidden'
+    document.documentElement.style.overflow = 'hidden'
+  }
+})
+
+onUnmounted(() => {
+  if (typeof window !== 'undefined') {
+    document.body.style.overflow = ''
+    document.documentElement.style.overflow = ''
+  }
 })
 
 const formData = ref({
@@ -293,13 +287,20 @@ input[type="checkbox"] {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   border: 2px solid #FFFFFF;
   border-radius: 4px;
   background: transparent;
   cursor: pointer;
   position: relative;
+}
+
+@media (min-width: 640px) {
+  input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 input[type="checkbox"]:checked {
@@ -313,8 +314,23 @@ input[type="checkbox"]:checked::after {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #1A1925;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
+}
+
+@media (min-width: 640px) {
+  input[type="checkbox"]:checked::after {
+    font-size: 14px;
+  }
+}
+
+/* Prevent body scrolling */
+:deep(body),
+:deep(html) {
+  overflow: hidden !important;
+  height: 100% !important;
+  position: fixed;
+  width: 100%;
 }
 </style>
 

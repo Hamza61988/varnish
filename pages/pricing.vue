@@ -1,25 +1,26 @@
 <template>
   <div
-    class="w-full px-4 sm:px-6 md:px-8"
+    class="w-full"
     style="background-color: #f7f7f8; max-width: 900px; margin: auto"
   >
-    <!-- <SectionsHeroSection /> -->
     <SectionsPricingTableSection :headings="headings" :table-data="tableData" />
     <SectionsEnterpriseSection />
-    <!-- Features Section -->
-    <section class="mx-auto py-8 sm:py-10 md:py-12 lg:py-16 bg-[#F7F7F8] px-4 sm:px-0">
+    <section
+      class="mx-auto py-8 sm:py-10 md:py-12 lg:py-16 bg-[#F7F7F8] px-4 sm:px-0"
+    >
       <div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-5 md:gap-6 lg:gap-8">
-          <!-- Agility Card -->
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-5 md:gap-6 lg:gap-8"
+        >
           <div
-            class="relative overflow-hidden min-h-[210px] md:h-[210px]"
+            class="flex relative overflow-hidden min-h-[210px] md:h-[210px]"
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
               background: #ffffff;
+              height: 287px;
             "
           >
-            <!-- Card Background - bgcard.svg -->
             <div
               class="absolute hidden sm:block"
               style="
@@ -41,12 +42,11 @@
                 border: none;
               "
             ></div>
-            <div class="relative z-10 p-4 sm:p-5 md:p-6">
+            <div class="flex flex-col m-auto relative z-10 p-4 sm:p-5 md:p-6">
               <div
                 class="mb-4 relative"
                 style="padding-top: 4.67px; padding-left: 2.33px"
               >
-                <!-- Icon Background - bgcardicon.svg -->
                 <div
                   class="absolute -top-2 -left-2 w-8 h-8"
                   style="
@@ -56,7 +56,6 @@
                     z-index: 0;
                   "
                 ></div>
-                <!-- Integrity Icon -->
                 <img
                   src="/images/about/Group.svg"
                   alt="Integrity Icon"
@@ -78,16 +77,15 @@
             </div>
           </div>
 
-          <!-- Integrity Card -->
           <div
-            class="relative overflow-hidden min-h-[210px] md:h-[210px]"
+            class="flex relative overflow-hidden min-h-[210px] md:h-[210px]"
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
               background: #ffffff;
+              height: 287px;
             "
           >
-            <!-- Card Background - bgcard.svg -->
             <div
               class="absolute hidden sm:block"
               style="
@@ -109,10 +107,9 @@
                 border: none;
               "
             ></div>
-            <div class="relative z-10 p-4 sm:p-5 md:p-6">
+            <div class="flex flex-col m-auto relative z-10 p-4 sm:p-5 md:p-6">
               <div class="mb-4">
                 <div class="relative">
-                  <!-- Icon Background -->
                   <div
                     class="absolute -top-2 -left-2 w-8 h-8"
                     style="
@@ -122,7 +119,6 @@
                       z-index: 0;
                     "
                   ></div>
-                  <!-- Dollar Sign Icon -->
                   <svg
                     width="24"
                     height="24"
@@ -155,16 +151,15 @@
             </div>
           </div>
 
-          <!-- Reliability Card -->
           <div
-            class="relative overflow-hidden min-h-[210px] md:h-[210px]"
+            class="flex relative overflow-hidden min-h-[210px] md:h-[210px]"
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
               background: #ffffff;
+              height: 287px;
             "
           >
-            <!-- Card Background - bgcard.svg -->
             <div
               class="absolute hidden sm:block"
               style="
@@ -186,10 +181,9 @@
                 border: none;
               "
             ></div>
-            <div class="relative z-10 p-4 sm:p-5 md:p-6">
+            <div class="flex flex-col m-auto relative z-10 p-4 sm:p-5 md:p-6">
               <div class="mb-4">
                 <div class="relative">
-                  <!-- Icon Background -->
                   <div
                     class="absolute -top-2 -left-2 w-8 h-8"
                     style="
@@ -199,7 +193,6 @@
                       z-index: 0;
                     "
                   ></div>
-                  <!-- Headphone Icon -->
                   <svg
                     width="24"
                     height="24"

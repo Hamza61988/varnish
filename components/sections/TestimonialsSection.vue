@@ -92,22 +92,21 @@
       <!-- Testimonial Card -->
       <div
         class="flex flex-col md:flex-row gap-4 md:gap-6 mb-6 md:mb-8 lg:mb-10 xl:mb-12"
+        style="width: 100%"
       >
-        <!-- Left: Image -->
-        <div
-          class="flex items-center justify-center overflow-hidden mx-auto md:mx-0 w-full md:w-1/2 rounded-[20px] md:rounded-[28px]"
-          style="background: rgba(0, 0, 0, 0.12)"
-        >
+        <!-- Left: Image - Visible on all screens -->
+        <div class="flex items-center justify-center w-full md:w-[30%]">
           <img
             src="/images/Video_image.svg"
             alt="Angela Moss"
-            class="w-full h-auto object-cover md:h-full rounded-[20px] md:rounded-[28px]"
+            class="w-full h-auto object-cover rounded-[20px] md:rounded-[28px] md:h-full"
+            style="max-height: 400px; object-fit: cover;"
           />
         </div>
 
         <!-- Right: Quote and Navigation -->
         <div
-          class="flex flex-col p-4 md:p-6 lg:p-8 xl:p-10 2xl:p-12 mx-auto md:mx-0 relative overflow-hidden w-full md:w-1/2 rounded-[20px] md:rounded-[28px]"
+          class="flex flex-col p-4 md:p-6 lg:p-8 xl:p-10 2xl:p-12 mx-auto md:mx-0 relative overflow-hidden w-full md:w-[70%] rounded-[20px] md:rounded-[28px]"
           style="
             background: #eeeef0;
             box-shadow: 0px 0.5px 0.5px 0px rgba(26, 25, 37, 0.08),
@@ -115,15 +114,12 @@
               0px 1px 2px -1px rgba(26, 25, 37, 0.06);
           "
         >
-          <!-- Background Decorative Image -->
+          <!-- Background Decorative Image - Visible on all screens -->
           <div
-            class="absolute hidden lg:block"
+            class="absolute bottom-5 right-5 opacity-10 md:bottom-auto md:right-auto md:top-[300px] md:left-[530px] md:opacity-100"
             style="
               width: 238.78px;
               height: 235.45px;
-              top: 300px;
-              left: 530px;
-              opacity: 1;
             "
           >
             <img
@@ -133,17 +129,47 @@
               style="width: 100%; height: 100%; display: block"
             />
           </div>
-          <!-- Name and Navigation -->
+          
+          <!-- Name - Only on mobile/tablet, desktop has it with arrows -->
           <div
-            class="flex items-start justify-between mb-4 sm:mb-6 relative z-10"
+            class="mb-4 sm:mb-6 relative z-10 md:hidden"
           >
-            <div>
+            <h3
+              class="mb-1 text-base sm:text-lg"
+              style="
+                font-family: 'Inter', sans-serif;
+                font-weight: 500;
+                line-height: 24px;
+                letter-spacing: -0.015em;
+                color: #1a1925;
+              "
+            >
+              Angela Moss
+            </h3>
+            <p
+              class="text-xs sm:text-sm"
+              style="
+                font-family: 'Inter', sans-serif;
+                font-weight: 400;
+                line-height: 20px;
+                letter-spacing: -0.006em;
+                color: #73737f;
+              "
+            >
+              CTO at Meteor
+            </p>
+          </div>
+
+          <!-- Name and Navigation - Desktop only -->
+          <div
+            class="hidden md:flex items-start justify-between mb-4 sm:mb-6 relative z-10"
+          >
+            <div class="flex-1 min-w-0">
               <h3
-                class="mb-1"
+                class="mb-1 text-base sm:text-lg"
                 style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 500;
-                  font-size: 18px;
                   line-height: 24px;
                   letter-spacing: -0.015em;
                   color: #1a1925;
@@ -152,11 +178,10 @@
                 Angela Moss
               </h3>
               <p
-                class=""
+                class="text-xs sm:text-sm"
                 style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 400;
-                  font-size: 14px;
                   line-height: 20px;
                   letter-spacing: -0.006em;
                   color: #73737f;
@@ -165,15 +190,15 @@
                 CTO at Meteor
               </p>
             </div>
-            <!-- Navigation Arrows -->
-            <div class="flex items-center gap-2">
+            <!-- Navigation Arrows - Desktop -->
+            <div class="flex items-center gap-2 flex-shrink-0 ml-2">
               <button
-                class="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center"
+                class="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center rounded-lg hover:bg-gray-200 transition-colors"
                 style="color: #73737f"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
+                  class="h-4 w-4 sm:h-5 sm:w-5"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -192,7 +217,7 @@
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
+                  class="h-4 w-4 sm:h-5 sm:w-5"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -209,9 +234,9 @@
           </div>
 
           <!-- Quote -->
-          <div class="relative flex-1 z-10">
+          <div class="relative flex-1 z-10 mb-4 md:mb-0">
             <p
-              class="text-lg md:text-xl lg:text-[28px] leading-[26px] md:leading-[30px] lg:leading-[36px]"
+              class="text-base sm:text-lg md:text-xl lg:text-[28px] leading-[22px] sm:leading-[26px] md:leading-[30px] lg:leading-[36px]"
               style="
                 font-family: 'Bricolage Grotesque', sans-serif;
                 font-weight: 500;
@@ -225,15 +250,59 @@
               painless.
             </p>
           </div>
+
+          <!-- Navigation Arrows - Mobile/Tablet at bottom center -->
+          <div class="flex items-center justify-center gap-2 relative z-10 md:hidden mt-4">
+            <button
+              class="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center rounded-lg transition-colors"
+              style="color: #73737f"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4 sm:h-5 sm:w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 19l-7-7 7-7"
+                />
+              </svg>
+            </button>
+            <button
+              class="w-8 h-8 sm:w-10 sm:h-10 rounded-lg flex items-center justify-center transition-colors"
+              style="background: #1a1925; color: #ffffff; border-radius: 8px"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4 sm:h-5 sm:w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
 
       <!-- Statistics and Ratings -->
-      <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-4 md:gap-0 w-full">
+      <div
+        class="flex flex-col md:flex-row md:justify-between md:items-center gap-4 md:gap-0 w-full"
+      >
         <!-- Statistics Boxes -->
-        <div class="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
+        <div class="flex flex-row gap-3 w-full md:w-auto justify-center md:justify-start">
           <div
-            class="flex items-center justify-center w-full md:w-[227px] h-12 md:h-[52px]"
+            class="flex items-center justify-center flex-1 md:flex-none md:w-[227px] h-12 md:h-[52px]"
             style="
               gap: 10px;
               border-radius: 10px;
@@ -248,7 +317,7 @@
             "
           >
             <p
-              class="text-xl md:text-2xl leading-7 md:leading-8"
+              class="text-lg sm:text-xl md:text-2xl leading-6 sm:leading-7 md:leading-8 whitespace-nowrap"
               style="
                 font-family: 'Funnel Display', sans-serif;
                 font-weight: 500;
@@ -266,7 +335,7 @@
 
           <!-- Statistics Box 2 -->
           <div
-            class="flex items-center justify-center w-full md:w-[227px] h-12 md:h-[52px]"
+            class="flex items-center justify-center flex-1 md:flex-none md:w-[227px] h-12 md:h-[52px]"
             style="
               gap: 10px;
               border-radius: 10px;
@@ -281,7 +350,7 @@
             "
           >
             <p
-              class="text-xl md:text-2xl leading-7 md:leading-8"
+              class="text-lg sm:text-xl md:text-2xl leading-6 sm:leading-7 md:leading-8 whitespace-nowrap"
               style="
                 font-family: 'Funnel Display', sans-serif;
                 font-weight: 500;
@@ -298,7 +367,9 @@
           </div>
         </div>
         <!-- Ratings -->
-        <div class="flex flex-row justify-center md:justify-end gap-4 md:gap-3 w-full md:w-auto">
+        <div
+          class="flex flex-row justify-center md:justify-end gap-3 sm:gap-4 w-full md:w-auto"
+        >
           <!-- Google Rating Box -->
           <div
             class=""
@@ -309,12 +380,11 @@
             "
           >
             <div
-              class="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center flex-shrink-0"
+              class="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 flex items-center justify-center flex-shrink-0"
             >
               <!-- Google G Logo -->
               <svg
-                width="24"
-                height="24"
+                class="w-full h-full"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -337,16 +407,17 @@
               </svg>
             </div>
             <p
+              class="text-xs sm:text-sm"
               style="
                 font-family: 'Inter', sans-serif;
                 font-weight: 500;
                 font-style: Medium;
-                font-size: 12px;
                 line-height: 16px;
                 letter-spacing: 0%;
                 vertical-align: middle;
                 color: #73737f;
                 margin: 0;
+                margin-left: 6px;
               "
             >
               <span
@@ -354,7 +425,6 @@
                   font-family: 'Inter', sans-serif;
                   font-weight: 500;
                   font-style: Medium;
-                  font-size: 12px;
                   line-height: 16px;
                   letter-spacing: 0%;
                   vertical-align: middle;
@@ -362,7 +432,7 @@
                 "
                 >4.8</span
               >
-              Google
+              <span class="ml-1"> Google</span>
             </p>
           </div>
 
@@ -378,7 +448,7 @@
             <div class="flex items-center flex-shrink-0">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5 sm:h-6 sm:w-6 text-green-500"
+                class="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 text-green-500"
                 viewBox="0 0 20 20"
                 fill="currentColor"
               >
@@ -388,16 +458,17 @@
               </svg>
             </div>
             <p
+              class="text-xs sm:text-sm"
               style="
                 font-family: 'Inter', sans-serif;
                 font-weight: 500;
                 font-style: Medium;
-                font-size: 12px;
                 line-height: 16px;
                 letter-spacing: 0%;
                 vertical-align: middle;
                 color: #73737f;
                 margin: 0;
+                margin-left: 6px;
               "
             >
               <span
@@ -405,7 +476,6 @@
                   font-family: 'Inter', sans-serif;
                   font-weight: 500;
                   font-style: Medium;
-                  font-size: 12px;
                   line-height: 16px;
                   letter-spacing: 0%;
                   vertical-align: middle;
@@ -413,7 +483,7 @@
                 "
                 >4.9</span
               >
-              Trustpilot
+              <span class="ml-1"> Trustpilot</span>
             </p>
           </div>
         </div>

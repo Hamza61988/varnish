@@ -1,6 +1,7 @@
 <template>
   <div
     v-if="showBanner"
+    data-cookie-banner
     class="bg-[#1a1a2e] text-white py-2 px-3 sm:py-2.5 sm:px-4 md:py-3 md:px-4 w-full relative"
     style="border-radius: 6px ; width: 98%; margin: auto;"
   >

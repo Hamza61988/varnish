@@ -1,15 +1,11 @@
 <template>
   <div
     class="flex flex-col min-h-screen"
-    style="
-      font-family: 'Bricolage Grotesque', sans-serif;
-      border-radius: 6px;
-      background-color: #f7f7f8;
-    "
+    :style="isAuthPage ? 'font-family: Bricolage Grotesque, sans-serif; background-color: #FFFFFF;' : 'font-family: Bricolage Grotesque, sans-serif; background-color: #f7f7f8;'"
   >
-    <CookieBanner v-if="!isAuthPage" />
+    <!-- <CookieBanner v-if="!isAuthPage" /> -->
     <Header v-if="!isAuthPage" />
-    <main class="flex-1">
+    <main class="flex-1" :style="isAuthPage ? 'margin-top: 0; padding-top: 0;' : 'margin-top: 80px; padding-top: 0;'">
       <NuxtPage />
     </main>
     <Footer v-if="!isAuthPage" />

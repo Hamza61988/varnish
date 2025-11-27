@@ -93,13 +93,12 @@
       </div>
 
       <!-- Main Content: Two Column Layout -->
-      <div class="flex flex-row gap-8">
+      <div class="flex flex-col lg:flex-row gap-4" style="width: 100%">
         <!-- Left Section: Image Card -->
-        <div class="flex flex-col">
+        <div class="flex flex-col w-full lg:w-[60%]">
           <div
             class="mb-4 sm:mb-6 overflow-hidden flex items-center justify-center"
             style="
-              width: 573px;
               height: 269px;
               border-radius: 20px;
               border: 1px solid #cfcfcf;
@@ -114,39 +113,93 @@
             />
           </div>
           <div
-            class=""
+            class="mb-4 lg:mb-0 w-full"
             style="
               border-radius: 16px;
               box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
             "
           >
-            <!-- Plant Image -->
-
             <!-- URL Field -->
             <div
-              class="flex flex-row items-center gap-2 sm:gap-3"
-              style="display: flex; flex-direction: row; align-items: center"
+              class="flex flex-row items-center gap-2 sm:gap-3 w-full"
+              style="
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                width: 100%;
+              "
             >
               <input
                 type="text"
                 readonly
                 value="https://ip.keycdn.com/example.jpg?format=webp"
-                class="flex-1 px-3 sm:px-4 py-2 sm:py-3 bg-white rounded-lg border border-gray-200 text-xs sm:text-sm font-mono"
+                class="w-full px-3 sm:px-4 py-2 sm:py-3 bg-white rounded-lg border border-gray-200 text-xs sm:text-sm font-mono"
                 style="
                   font-family: 'Monaco', 'Courier New', monospace;
                   color: #51515e;
                   outline: none;
-                  flex: 1;
+                  width: 100%;
                   min-width: 0;
-                  border:none
+                  border: none;
+                  border-radius: 20px;
+                  text-align: center;
                 "
               />
             </div>
           </div>
+
+          <!-- Button for Mobile/Tablet - Hidden on Desktop -->
+          <div class="flex flex-row items-center justify-center lg:hidden">
+            <button
+              class="flex items-center justify-center whitespace-nowrap flex-shrink-0"
+              style="
+                width: 175px;
+                height: 40px;
+                border-radius: 6px;
+                padding-top: 10px;
+                padding-right: 6px;
+                padding-bottom: 10px;
+                padding-left: 6px;
+                background: linear-gradient(0deg, #1a1925, #1a1925),
+                  linear-gradient(
+                    180deg,
+                    rgba(255, 255, 255, 0.12) 0%,
+                    rgba(255, 255, 255, 0) 100%
+                  );
+                box-shadow: 0px 0.25px 0.25px 0px rgba(255, 255, 255, 0.12)
+                    inset,
+                  0px 0.75px 0.75px 0px rgba(255, 255, 255, 0.08) inset,
+                  0px 1px 3px 0px rgba(255, 255, 255, 0.08) inset,
+                  0px 0.25px 0.25px 0px rgba(26, 25, 37, 0.24),
+                  0px 0.75px 0.75px 0px rgba(26, 25, 37, 0.12),
+                  0px 1px 1.5px -0.5px rgba(26, 25, 37, 0.12),
+                  0px 2px 4px -1px rgba(26, 25, 37, 0.12),
+                  0px 4px 8px -4px rgba(26, 25, 37, 0.12),
+                  0px 8px 12px -4px rgba(26, 25, 37, 0.06),
+                  0px -8px 20px 0px rgba(26, 25, 37, 0.08) inset;
+                font-family: 'Bricolage Grotesque', sans-serif;
+                font-weight: 500;
+                font-style: Medium;
+                font-size: 17px;
+                line-height: 20px;
+                letter-spacing: -0.02em;
+                text-align: center;
+                text-transform: capitalize;
+                color: #ffffff;
+
+                width: 100%;
+              "
+            >
+              API Documentaiton
+            </button>
+          </div>
         </div>
 
-        <!-- Right Section: Feature Blocks -->
-        <div class="flex flex-col" style="justify-content: space-between;">
+        <!-- Right Section: Feature Blocks - Hidden on Mobile/Tablet -->
+        <div
+          class="hidden lg:flex flex-col"
+          style="justify-content: space-between; width: 40%"
+        >
           <!-- Transform Block -->
           <div>
             <h3
@@ -246,45 +299,50 @@
             </p>
           </div>
           <div
-              class="flex flex-row items-center gap-2 sm:gap-3"
-              style="display: flex; flex-direction: row; align-items: center"
+            class="flex flex-row items-center gap-2 sm:gap-3"
+            style="display: flex; flex-direction: row; align-items: center"
+          >
+            <button
+              class="flex items-center justify-center whitespace-nowrap flex-shrink-0"
+              style="
+                width: 175px;
+                height: 40px;
+                border-radius: 6px;
+                padding-top: 10px;
+                padding-right: 6px;
+                padding-bottom: 10px;
+                padding-left: 6px;
+                background: linear-gradient(0deg, #1a1925, #1a1925),
+                  linear-gradient(
+                    180deg,
+                    rgba(255, 255, 255, 0.12) 0%,
+                    rgba(255, 255, 255, 0) 100%
+                  );
+                box-shadow: 0px 0.25px 0.25px 0px rgba(255, 255, 255, 0.12)
+                    inset,
+                  0px 0.75px 0.75px 0px rgba(255, 255, 255, 0.08) inset,
+                  0px 1px 3px 0px rgba(255, 255, 255, 0.08) inset,
+                  0px 0.25px 0.25px 0px rgba(26, 25, 37, 0.24),
+                  0px 0.75px 0.75px 0px rgba(26, 25, 37, 0.12),
+                  0px 1px 1.5px -0.5px rgba(26, 25, 37, 0.12),
+                  0px 2px 4px -1px rgba(26, 25, 37, 0.12),
+                  0px 4px 8px -4px rgba(26, 25, 37, 0.12),
+                  0px 8px 12px -4px rgba(26, 25, 37, 0.06),
+                  0px -8px 20px 0px rgba(26, 25, 37, 0.08) inset;
+                font-family: 'Bricolage Grotesque', sans-serif;
+                font-weight: 500;
+                font-style: Medium;
+                font-size: 17px;
+                line-height: 20px;
+                letter-spacing: -0.02em;
+                text-align: center;
+                text-transform: capitalize;
+                color: #ffffff;
+              "
             >
-              <button
-                class="flex items-center justify-center whitespace-nowrap flex-shrink-0"
-                style="
-                  width: 175px;
-                  height: 40px;
-                  border-radius: 6px;
-                  padding-top: 10px;
-                  padding-right: 6px;
-                  padding-bottom: 10px;
-                  padding-left: 6px;
-                  background: linear-gradient(0deg, #1a1925, #1a1925),
-                    linear-gradient(180deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0) 100%);
-                  box-shadow: 0px 0.25px 0.25px 0px rgba(255, 255, 255, 0.12) inset,
-                    0px 0.75px 0.75px 0px rgba(255, 255, 255, 0.08) inset,
-                    0px 1px 3px 0px rgba(255, 255, 255, 0.08) inset,
-                    0px 0.25px 0.25px 0px rgba(26, 25, 37, 0.24),
-                    0px 0.75px 0.75px 0px rgba(26, 25, 37, 0.12),
-                    0px 1px 1.5px -0.5px rgba(26, 25, 37, 0.12),
-                    0px 2px 4px -1px rgba(26, 25, 37, 0.12),
-                    0px 4px 8px -4px rgba(26, 25, 37, 0.12),
-                    0px 8px 12px -4px rgba(26, 25, 37, 0.06),
-                    0px -8px 20px 0px rgba(26, 25, 37, 0.08) inset;
-                  font-family: 'Bricolage Grotesque', sans-serif;
-                  font-weight: 500;
-                  font-style: Medium;
-                  font-size: 17px;
-                  line-height: 20px;
-                  letter-spacing: -0.02em;
-                  text-align: center;
-                  text-transform: capitalize;
-                  color: #ffffff;
-                "
-              >
-                API Documentaiton
-              </button>
-            </div>
+              API Documentaiton
+            </button>
+          </div>
         </div>
       </div>
     </div>

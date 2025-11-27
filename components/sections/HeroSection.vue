@@ -3,7 +3,7 @@
     <!-- Split Layout: Landing Page (Left) + Dashboard Preview (Right) -->
     <div class="flex flex-col lg:flex-row hero-container">
       <!-- Left Section: Landing Page -->
-      <div class="flex-1 justify-center items-center hero-left-section">
+      <div class="flex-1 justify-center items-center hero-left-section order-2 lg:order-1">
         <div class="max-w-2xl mx-auto">
           <!-- Top Badge -->
           <div class="mb-4 sm:mb-5 md:mb-6">
@@ -13,6 +13,7 @@
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-3 w-3 sm:h-4 sm:w-4"
+                style="color: #a3a3ae; fill: #a3a3ae"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="#A3A3AE"
@@ -36,30 +37,11 @@
               <span>Content Delivery,</span>
               <span class="block hero-headline-line-2">
                 Simplified.
-                <span class="hero-logo-icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    class="logo-icon-svg"
-                  >
-                    <rect
-                      x="2"
-                      y="2"
-                      width="20"
-                      height="20"
-                      rx="4"
-                      fill="#1A1925"
-                    />
-                    <path
-                      d="M8 16L16 8M16 8H10M16 8V14"
-                      stroke="white"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </span>
+                <img
+                  src="/images/Company_logo.svg"
+                  alt="BEST CDN AWARD"
+                  class="w-full h-auto lg:h-full object-cover"
+                />
               </span>
             </h1>
           </div>
@@ -76,7 +58,9 @@
             <div class="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <!-- Email Input -->
               <div class="flex-1 relative">
-                <div class="absolute left-3 sm:left-4 top-[18px] -translate-y-1/2">
+                <div
+                  class="absolute left-3 sm:left-4 top-[18px] -translate-y-1/2"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="h-4 w-4 sm:h-5 sm:w-5 text-gray-400"
@@ -96,35 +80,44 @@
                   type="email"
                   placeholder="Your email address.."
                   class="hero-input w-full pl-10 sm:pl-12 pr-3 sm:pr-4 border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none bg-white"
+                  style="
+                    box-shadow: 0px 0.5px 0.5px 0px #07011308,
+                      0px 1px 1px -0.5px #07011308, 0px 2px 2px -1px #07011308,
+                      0px 3px 3px -1.5px #07011308, 0px 0px 0px 1px #1a192514;
+                  "
                 />
               </div>
               <!-- Website Input -->
               <div class="flex-1 relative">
-                <div class="absolute left-3 sm:left-4 top-[18px] -translate-y-1/2">
+                <div
+                  class="absolute left-3 sm:left-4 top-[18px] -translate-y-1/2"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="h-4 w-4 sm:h-5 sm:w-5 text-gray-400"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
+                    stroke-width="2"
                   >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
-                    />
+                    <rect x="2" y="3" width="20" height="18" rx="2" />
+                    <rect x="4" y="6" width="16" height="12" rx="1" />
                   </svg>
                 </div>
                 <input
                   type="text"
                   placeholder="Website url"
                   class="hero-input w-full pl-10 sm:pl-12 pr-3 sm:pr-4 border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none bg-white"
+                  style="
+                    box-shadow: 0px 0.5px 0.5px 0px #07011308,
+                      0px 1px 1px -0.5px #07011308, 0px 2px 2px -1px #07011308,
+                      0px 3px 3px -1.5px #07011308, 0px 0px 0px 1px #1a192514;
+                  "
                 />
               </div>
               <!-- Get Started Button -->
               <button
-                class="hero-button px-6 sm:px-8 py-1 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium whitespace-nowrap w-full sm:w-auto"
+                class="hero-button px-6 sm:px-8 py-1 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium whitespace-nowrap w-[40%] lg:w-auto"
               >
                 Get Started
               </button>
@@ -133,51 +126,68 @@
           </div>
 
           <!-- Statistics Section -->
-          <div class="flex flex-wrap items-center gap-3 sm:gap-4 md:gap-6 mt-8 sm:mt-10 md:mt-12">
+          <div
+            class="flex flex-wrap items-center gap-3 sm:gap-4 md:gap-6 mt-8 sm:mt-10 md:mt-12"
+          >
             <div class="flex items-center space-x-2">
               <span class="stat-value">2.400</span>
               <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="star-icon"
+                width="20"
+                height="20"
                 viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <defs>
-                  <filter id="starGlow">
-                    <feGaussianBlur stdDeviation="1" result="coloredBlur" />
-                    <feMerge>
-                      <feMergeNode in="coloredBlur" />
-                      <feMergeNode in="SourceGraphic" />
-                    </feMerge>
-                  </filter>
-                </defs>
                 <path
-                  d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z"
+                  d="M12 2
+       L13.76 7.2
+       L19.51 4.49
+       L16.2 9.24
+       L21 12
+       L16.2 14.76
+       L19.51 19.51
+       L13.76 16.8
+       L12 22
+       L10.24 16.8
+       L4.49 19.51
+       L7.8 14.76
+       L3 12
+       L7.8 9.24
+       L4.49 4.49
+       L10.24 7.2
+       Z"
                   fill="#1F62FF"
-                  filter="url(#starGlow)"
                 />
               </svg>
+
               <span class="stat-label">Active Users</span>
             </div>
             <div class="flex items-center space-x-2">
               <span class="stat-value">135,949</span>
               <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="star-icon"
+                width="20"
+                height="20"
                 viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <defs>
-                  <filter id="starGlow">
-                    <feGaussianBlur stdDeviation="1" result="coloredBlur" />
-                    <feMerge>
-                      <feMergeNode in="coloredBlur" />
-                      <feMergeNode in="SourceGraphic" />
-                    </feMerge>
-                  </filter>
-                </defs>
                 <path
-                  d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z"
+                  d="M12 2
+       L13.76 7.2
+       L19.51 4.49
+       L16.2 9.24
+       L21 12
+       L16.2 14.76
+       L19.51 19.51
+       L13.76 16.8
+       L12 22
+       L10.24 16.8
+       L4.49 19.51
+       L7.8 14.76
+       L3 12
+       L7.8 9.24
+       L4.49 4.49
+       L10.24 7.2
+       Z"
                   fill="#1F62FF"
-                  filter="url(#starGlow)"
                 />
               </svg>
               <span class="stat-label">Zones Deployed</span>
@@ -185,23 +195,30 @@
             <div class="flex items-center space-x-2">
               <span class="stat-value">98%</span>
               <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="star-icon"
+                width="20"
+                height="20"
                 viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <defs>
-                  <filter id="starGlow">
-                    <feGaussianBlur stdDeviation="1" result="coloredBlur" />
-                    <feMerge>
-                      <feMergeNode in="coloredBlur" />
-                      <feMergeNode in="SourceGraphic" />
-                    </feMerge>
-                  </filter>
-                </defs>
                 <path
-                  d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z"
+                  d="M12 2
+       L13.76 7.2
+       L19.51 4.49
+       L16.2 9.24
+       L21 12
+       L16.2 14.76
+       L19.51 19.51
+       L13.76 16.8
+       L12 22
+       L10.24 16.8
+       L4.49 19.51
+       L7.8 14.76
+       L3 12
+       L7.8 9.24
+       L4.49 4.49
+       L10.24 7.2
+       Z"
                   fill="#1F62FF"
-                  filter="url(#starGlow)"
                 />
               </svg>
               <span class="stat-label">Hit Ratio</span>
@@ -211,7 +228,7 @@
       </div>
 
       <!-- Right Section: Dashboard Preview Panel -->
-      <div class="w-full lg:w-[40%] mt-6 sm:mt-8 lg:mt-0 hero-image-section">
+      <div class="w-full lg:w-[40%] mt-6 sm:mt-8 lg:mt-0 hero-image-section order-1 lg:order-2">
         <img
           src="/images/Varnish.svg"
           alt="BEST CDN AWARD"

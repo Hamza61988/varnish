@@ -3,10 +3,10 @@
     <div class="">
       <!-- North America / Europe -->
       <div class="mb-4 sm:mb-5 md:mb-6">
-        <div class="flex justify-between items-center mb-2">
-          <label class="region-label"
-            >North America / Europe</label
-          >
+        <div
+          class="flex flex-col lg:flex-row lg:justify-between lg:items-center items-start justify-start gap-[10px] lg:gap-0 mb-2 text-left"
+        >
+          <label class="region-label">North America / Europe</label>
           <span class="value-display">{{
             formatGB(localBandwidth.naEurope)
           }}</span>
@@ -28,10 +28,10 @@
 
       <!-- Asia / Oceania -->
       <div class="mb-4 sm:mb-5 md:mb-6">
-        <div class="flex justify-between items-center mb-2">
-          <label class="region-label"
-            >Asia / Oceania</label
-          >
+        <div
+          class="flex flex-col lg:flex-row lg:justify-between lg:items-center items-start justify-start gap-[10px] lg:gap-0 mb-2 text-left"
+        >
+          <label class="region-label">Asia / Oceania</label>
           <span class="value-display">{{
             formatGB(localBandwidth.asiaOceania)
           }}</span>
@@ -53,10 +53,10 @@
 
       <!-- Africa / Latin America -->
       <div class="mb-4 sm:mb-5 md:mb-6">
-        <div class="flex justify-between items-center mb-2">
-          <label class="region-label"
-            >Africa / Latin America</label
-          >
+        <div
+          class="flex flex-col lg:flex-row lg:justify-between lg:items-center items-start justify-start gap-[10px] lg:gap-0 mb-2 text-left"
+        >
+          <label class="region-label">Africa / Latin America</label>
           <span class="value-display">{{
             formatGB(localBandwidth.africaLatin)
           }}</span>
@@ -118,12 +118,12 @@ const formatGB = (val: number) => `${val} GB`;
 
 <style scoped>
 .region-label {
-  font-family: 'Bricolage Grotesque', sans-serif;
+  font-family: "Bricolage Grotesque", sans-serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
   letter-spacing: -0.02em;
-  color: #1A1925;
+  color: #1a1925;
   vertical-align: middle;
 }
 
@@ -142,7 +142,7 @@ const formatGB = (val: number) => `${val} GB`;
 }
 
 .value-display {
-  border: 1px solid #EEEEF0;
+  border: 1px solid #eeeef0;
   min-width: 45px;
   width: auto;
   height: 24px;
@@ -152,7 +152,7 @@ const formatGB = (val: number) => `${val} GB`;
   align-items: center;
   justify-content: center;
   font-size: 11px;
-  color: #6B7280;
+  color: #6b7280;
   box-sizing: border-box;
   flex-shrink: 0;
 }
@@ -171,7 +171,7 @@ input[type="range"]::-webkit-slider-thumb {
   appearance: none;
   width: 16px;
   height: 16px;
-  background: #1F62FF;
+  background: #1f62ff;
   border-radius: 50%;
   cursor: pointer;
   box-shadow: 0 2px 4px rgba(31, 98, 255, 0.3);
@@ -185,7 +185,7 @@ input[type="range"]::-webkit-slider-thumb:hover {
 input[type="range"]::-moz-range-thumb {
   width: 16px;
   height: 16px;
-  background: #1F62FF;
+  background: #1f62ff;
   border-radius: 50%;
   border: none;
   cursor: pointer;

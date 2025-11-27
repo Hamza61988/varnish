@@ -39,6 +39,31 @@ export default defineNuxtConfig({
         { charset: "utf-8" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
       ],
+      script: [
+        {
+          innerHTML: `
+            (function() {
+              function initMobileMenu() {
+                const button = document.getElementById('mobile-menu-toggle');
+                const menu = document.getElementById('mobile-menu');
+                if (button && menu) {
+                  button.addEventListener('click', function(e) {
+                    const currentDisplay = menu.style.display || window.getComputedStyle(menu).display;
+                    menu.style.display = currentDisplay === 'none' ? 'block' : 'none';
+                  });
+                }
+              }
+              if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', initMobileMenu);
+              } else {
+                initMobileMenu();
+              }
+              setTimeout(initMobileMenu, 300);
+            })();
+          `,
+          type: 'text/javascript'
+        }
+      ],
     },
   },
   alias: {

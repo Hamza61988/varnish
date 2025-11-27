@@ -1,18 +1,26 @@
 <template>
-  <section id="faq" class="mx-auto" style="margin: 15% 0%;">
-    <div>
+  <section id="faq" class="mx-auto" style="margin: 15% 0%">
+    <div class="px-[5%] lg:px-0">
       <!-- FAQ Header -->
       <div class="text-center mb-8 md:mb-12">
         <div class="flex justify-center mb-2">
           <div
-            class="inline-flex items-center space-x-2 px-4 py-2 bg-white rounded-full border border-gray-200 shadow-sm"
+            class="inline-flex items-center space-x-2 px-4 py-2 rounded-full"
+            style="
+              background: #FFFFFFE5;
+              box-shadow: 0px 0.5px 0.5px 0px #07011308,
+                0px 1px 1px -0.5px #07011308,
+                0px 2px 2px -1px #07011308,
+                0px 3px 3px -1.5px #07011308;
+            "
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-4 w-4 text-gray-500 fill-[#A3A3AE]"
+              class="h-3 w-3 sm:h-4 sm:w-4"
+              style="color: #a3a3ae; fill: #a3a3ae"
               fill="none"
               viewBox="0 0 24 24"
-              stroke="currentColor"
+              stroke="#A3A3AE"
             >
               <path
                 stroke-linecap="round"
@@ -35,7 +43,10 @@
         <!-- Left Column -->
         <div class="space-y-4">
           <!-- FAQ Item 1 -->
-          <div class="bg-white shadow-sm border border-gray-200" style="border-radius: 20px;">
+          <div
+            class="bg-white shadow-sm border border-gray-200"
+            style="border-radius: 20px"
+          >
             <button
               type="button"
               @click="toggleFAQ(0)"
@@ -88,7 +99,10 @@
           </div>
 
           <!-- FAQ Item 2 -->
-          <div class="bg-white shadow-sm border border-gray-200" style="border-radius: 20px;">
+          <div
+            class="bg-white shadow-sm border border-gray-200"
+            style="border-radius: 20px"
+          >
             <button
               type="button"
               @click="toggleFAQ(1)"
@@ -139,7 +153,10 @@
           </div>
 
           <!-- FAQ Item 3 -->
-          <div class="bg-white shadow-sm border border-gray-200" style="border-radius: 20px;">
+          <div
+            class="bg-white shadow-sm border border-gray-200"
+            style="border-radius: 20px"
+          >
             <button
               type="button"
               @click="toggleFAQ(2)"
@@ -194,7 +211,10 @@
         <!-- Right Column -->
         <div class="space-y-4">
           <!-- FAQ Item 4 -->
-          <div class="bg-white shadow-sm border border-gray-200" style="border-radius: 20px;">
+          <div
+            class="bg-white shadow-sm border border-gray-200"
+            style="border-radius: 20px"
+          >
             <button
               type="button"
               @click="toggleFAQ(3)"
@@ -246,7 +266,10 @@
           </div>
 
           <!-- FAQ Item 5 -->
-          <div class="bg-white shadow-sm border border-gray-200" style="border-radius: 20px;">
+          <div
+            class="bg-white shadow-sm border border-gray-200"
+            style="border-radius: 20px"
+          >
             <button
               type="button"
               @click="toggleFAQ(4)"
@@ -298,7 +321,10 @@
           </div>
 
           <!-- FAQ Item 6 -->
-          <div class="bg-white shadow-sm border border-gray-200" style="border-radius: 20px;">
+          <div
+            class="bg-white shadow-sm border border-gray-200"
+            style="border-radius: 20px"
+          >
             <button
               type="button"
               @click="toggleFAQ(5)"
