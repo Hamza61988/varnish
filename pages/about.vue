@@ -228,7 +228,7 @@
 
         <!-- Values Cards -->
         <div
-          class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 lg:gap-10 max-w-6xl mx-auto mb-12 sm:mb-16 md:mb-20 lg:mb-24 xl:mb-32"
+          class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 lg:gap-10 max-w-6xl mx-auto"
         >
           <!-- Agility Card -->
           <div
@@ -258,9 +258,10 @@
                 background-image: url('/images/about/bgcard.svg');
                 background-repeat: no-repeat;
                 background-size: contain;
+                border: none;
               "
             ></div>
-            <div class="relative z-10 p-4 sm:p-5 md:p-6">
+            <div class="relative z-10 p-4 sm:p-5 md:p-6" style="width: 80%">
               <div
                 class="mb-4 relative"
                 style="padding-top: 4.67px; padding-left: 2.33px"
@@ -338,9 +339,10 @@
                 background-image: url('/images/about/bgcard.svg');
                 background-repeat: no-repeat;
                 background-size: contain;
+                border: none;
               "
             ></div>
-            <div class="relative z-10 p-4 sm:p-5 md:p-6">
+            <div class="relative z-10 p-4 sm:p-5 md:p-6" style="width: 80%">
               <div
                 class="mb-4 relative"
                 style="padding-top: 4.67px; padding-left: 2.33px"
@@ -418,9 +420,10 @@
                 background-image: url('/images/about/bgcard.svg');
                 background-repeat: no-repeat;
                 background-size: contain;
+                border: none;
               "
             ></div>
-            <div class="relative z-10 p-4 sm:p-5 md:p-6">
+            <div class="relative z-10 p-4 sm:p-5 md:p-6" style="width: 80%">
               <div
                 class="mb-4 relative"
                 style="padding-top: 4.67px; padding-left: 2.33px"

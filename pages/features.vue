@@ -4,11 +4,9 @@
     style="background: #f7f7f8"
   >
     <!-- Main Content -->
-    <main
-      class="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 py-12 sm:py-16 md:py-20 lg:py-24 relative z-10"
-    >
+    <main class="mx-auto" style="max-width: 940px" ;>
       <!-- Features Section -->
-      <section>
+      <section class="px-[5%] lg:px-0 " style="margin: 10% 0%;">
         <div class="flex flex-col" style="align-items: flex-start">
           <!-- Section Label -->
           <div class="flex items-center justify-center mb-4 sm:mb-6">
@@ -78,14 +76,13 @@
 
           <!-- Subtitle -->
           <p
-            class="text-center mb-8 sm:mb-10 md:mb-12 text-sm md:text-base"
+            class="text-left lg:text-center mb-8 sm:mb-10 md:mb-12 text-sm md:text-base"
             style="
               font-family: 'Inter', sans-serif;
               font-weight: 400;
               font-size: 16px;
               line-height: 24px;
               letter-spacing: -0.011em;
-              text-align: center;
               color: #51515e;
             "
           >
@@ -378,12 +375,10 @@
       </section>
 
       <!-- General Section -->
-      <section
-        class="w-full mx-auto px-4 sm:px-6 md:px-0 mb-12 sm:mb-16 md:mb-20"
-      >
-        <div class="flex flex-col md:flex-row gap-8 sm:gap-10 px-9">
-          <!-- Left - Feature List -->
-          <div class="w-1/3">
+      <section class="w-full mx-auto px-[5%] lg:px-0 " style="margin: 10% 0%;">
+        <div class="flex flex-col lg:flex-row gap-8 sm:gap-10">
+          <!-- Mobile/Tablet: Content First, Desktop: Feature List First -->
+          <div class="w-full lg:w-1/3 order-2 lg:order-1">
             <div
               class="rounded-[20px] border border-[#eeeef0] bg-white p-6"
               style="box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05)"
@@ -431,11 +426,11 @@
             </div>
           </div>
 
-          <!-- Right - Content -->
-          <div class="w-full flex flex-1 items-center">
+          <!-- Mobile/Tablet: Content Second, Desktop: Content Second -->
+          <div class="w-full lg:flex-1 flex items-center order-1 lg:order-2">
             <div>
               <h2
-                class="mb-4 text-3xl sm:text-4xl md:text-5xl"
+                class="mb-4 text-3xl sm:text-4xl md:text-5xl text-left"
                 style="
                   font-family: 'Bricolage Grotesque', sans-serif;
                   font-weight: 500;
@@ -446,6 +441,7 @@
                 General
               </h2>
               <p
+                class="text-left"
                 style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 400;
@@ -467,15 +463,13 @@
       </section>
 
       <!-- Security Section -->
-      <section
-        class="w-full mx-auto px-4 sm:px-6 md:px-0 mb-12 sm:mb-16 md:mb-20"
-      >
-        <div class="flex flex-col md:flex-row gap-8 sm:gap-10 px-9">
-          <!-- Left - Content -->
-          <div class="w-full flex flex-1 items-center">
+      <section class="w-full mx-auto px-[5%] lg:px-0 mt-12" style="margin: 10% 0%;">
+        <div class="flex flex-col lg:flex-row gap-8 sm:gap-10">
+          <!-- Mobile/Tablet: Content First, Desktop: Content First -->
+          <div class="w-full lg:flex-1 flex items-center order-1">
             <div>
               <h2
-                class="mb-4 text-3xl sm:text-4xl md:text-5xl"
+                class="mb-4 text-3xl sm:text-4xl md:text-5xl text-left"
                 style="
                   font-family: 'Bricolage Grotesque', sans-serif;
                   font-weight: 500;
@@ -486,6 +480,7 @@
                 Security
               </h2>
               <p
+                class="text-left"
                 style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 400;
@@ -504,8 +499,8 @@
             </div>
           </div>
 
-          <!-- Right - Feature List -->
-          <div class="w-1/3">
+          <!-- Mobile/Tablet: Feature List Second, Desktop: Feature List Second -->
+          <div class="w-full lg:w-1/3 order-2">
             <div
               class="rounded-[20px] border border-[#eeeef0] bg-white p-6"
               style="box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05)"
@@ -569,12 +564,10 @@
       </section>
 
       <!-- Zones Section -->
-      <section
-        class="w-full mx-auto px-4 sm:px-6 md:px-0 mb-12 sm:mb-16 md:mb-20"
-      >
-        <div class="flex flex-col md:flex-row gap-8 sm:gap-10 px-9">
-          <!-- Left - Feature List -->
-          <div class="w-1/3">
+      <section class="w-full mx-auto px-[5%] lg:px-0" style="margin: 10% 0%;">
+        <div class="flex flex-col lg:flex-row gap-8 sm:gap-10">
+          <!-- Mobile/Tablet: Feature List First, Desktop: Feature List First -->
+          <div class="w-full lg:w-1/3 order-1">
             <div
               class="rounded-[20px] border border-[#eeeef0] bg-white p-6"
               style="box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05)"
@@ -635,11 +628,11 @@
             </div>
           </div>
 
-          <!-- Right - Content -->
-          <div class="w-full flex flex-1 items-center">
+          <!-- Mobile/Tablet: Content Second, Desktop: Content Second -->
+          <div class="w-full lg:flex-1 flex items-center order-2">
             <div>
               <h2
-                class="mb-4 text-3xl sm:text-4xl md:text-5xl"
+                class="mb-4 text-3xl sm:text-4xl md:text-5xl text-left"
                 style="
                   font-family: 'Bricolage Grotesque', sans-serif;
                   font-weight: 500;
@@ -650,6 +643,7 @@
                 Zones
               </h2>
               <p
+                class="text-left"
                 style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 400;
@@ -670,9 +664,7 @@
       </section>
 
       <!-- Powerful Platform Section -->
-      <section
-        class="w-full mx-auto px-4 sm:px-6 md:px-0 mb-12 sm:mb-16 md:mb-20"
-      >
+      <section class="w-full mx-auto px-[5%] lg:px-0" style="margin: 10% 0%;">
         <!-- Section Label -->
         <div class="flex items-center justify-center mb-4 sm:mb-6">
           <div
@@ -774,6 +766,27 @@
                   0px 1px 2px -1px rgba(26, 25, 37, 0.04);
               "
             >
+            <div
+              class="absolute hidden sm:block"
+              style="
+                width: 148px;
+                height: 148px;
+                top: 0px;
+                right: 0px;
+                opacity: 1;
+                border: 0.8px solid;
+                border-image-source: radial-gradient(
+                  81.86% 81.86% at 100% 100%,
+                  rgba(26, 25, 37, 0.12) 0%,
+                  rgba(26, 25, 37, 0) 77.02%
+                );
+                border-image-slice: 1;
+                background-image: url('/images/about/bgcard.svg');
+                background-repeat: no-repeat;
+                background-size: contain;
+                border: none;
+              "
+            ></div>
               <!-- Card Background - bgcard.svg -->
               <div
                 class="absolute top-0 right-0 w-1/2 h-1/2 pointer-events-none opacity-30"
@@ -786,17 +799,13 @@
               ></div>
               <!-- Icon -->
               <div class="relative flex items-center justify-center h-full">
-                <div class="relative" style="top: 11px; left: 45.5px;">
+                <div class="relative">
                   <!-- Icon Background -->
                   <div
                     class="absolute"
                     style="
-                      width: 143px;
-                      height: 143px;
-                      border-radius: 5.33px;
-                      top: -39px;
-                      left: -17.5px;
-                      opacity: 1;
+                      width: 75px;
+                      height: 75px;
                       background-image: url('/images/about/bgcardicon.svg');
                       background-repeat: no-repeat;
                       background-size: cover;
@@ -809,7 +818,7 @@
                     src="/images/feature_icon_1.svg"
                     alt="Flexible"
                     class="relative z-10"
-                    style="width: 144px; height: 145px; opacity: 1;"
+                    style="width: 105px; height: 105px; opacity: 1"
                   />
                 </div>
               </div>
@@ -824,6 +833,7 @@
                 line-height: 24px;
                 letter-spacing: -0.02em;
                 color: #1a1925;
+                text-align: center;
               "
             >
               Flexible
@@ -838,19 +848,24 @@
                 line-height: 20px;
                 letter-spacing: -0.006em;
                 color: #51515e;
+                text-align: center;
               "
             >
-              Wide range of settings make sure content is delivered in the
-              exact way needed.
+              Wide range of settings make sure content is delivered in the exact
+              way needed.
             </p>
             <!-- Button -->
             <button
-              class="w-full py-2 px-4 rounded-lg text-white font-medium transition-colors"
+              class="w-full py-2 px-4 text-white font-medium transition-colors"
               style="
                 background: #1a1925;
+                border: 1px solid var(--Border-Primary, #e7e7ea);
+                border-radius: 6px;
+                border-width: 1px;
                 font-family: 'Inter', sans-serif;
                 font-weight: 500;
                 font-size: 14px;
+                width: 50%;
               "
             >
               Get Started
@@ -872,6 +887,27 @@
                   0px 1px 2px -1px rgba(26, 25, 37, 0.04);
               "
             >
+            <div
+              class="absolute hidden sm:block"
+              style="
+                width: 148px;
+                height: 148px;
+                top: 0px;
+                right: 0px;
+                opacity: 1;
+                border: 0.8px solid;
+                border-image-source: radial-gradient(
+                  81.86% 81.86% at 100% 100%,
+                  rgba(26, 25, 37, 0.12) 0%,
+                  rgba(26, 25, 37, 0) 77.02%
+                );
+                border-image-slice: 1;
+                background-image: url('/images/about/bgcard.svg');
+                background-repeat: no-repeat;
+                background-size: contain;
+                border: none;
+              "
+            ></div>
               <!-- Card Background - bgcard.svg -->
               <div
                 class="absolute top-0 right-0 w-1/2 h-1/2 pointer-events-none opacity-30"
@@ -884,17 +920,13 @@
               ></div>
               <!-- Icon -->
               <div class="relative flex items-center justify-center h-full">
-                <div class="relative" style="top: 11px; left: 45.5px;">
+                <div class="relative">
                   <!-- Icon Background -->
                   <div
                     class="absolute"
                     style="
-                      width: 143px;
-                      height: 143px;
-                      border-radius: 5.33px;
-                      top: -39px;
-                      left: -17.5px;
-                      opacity: 1;
+                      width: 75px;
+                      height: 75px;
                       background-image: url('/images/about/bgcardicon.svg');
                       background-repeat: no-repeat;
                       background-size: cover;
@@ -907,7 +939,7 @@
                     src="/images/feature_icon_2.svg"
                     alt="Programmatic"
                     class="relative z-10"
-                    style="width: 144px; height: 145px; opacity: 1;"
+                    style="width: 105px; height: 105px; opacity: 1"
                   />
                 </div>
               </div>
@@ -922,6 +954,7 @@
                 line-height: 24px;
                 letter-spacing: -0.02em;
                 color: #1a1925;
+                text-align: center;
               "
             >
               Programmatic
@@ -936,6 +969,7 @@
                 line-height: 20px;
                 letter-spacing: -0.006em;
                 color: #51515e;
+                text-align: center;
               "
             >
               RESTful API allows complete account control from any application
@@ -943,14 +977,17 @@
             </p>
             <!-- Button -->
             <button
-              class="w-full py-2 px-4 rounded-lg font-medium transition-colors border-2"
+              class="py-2 px-4 font-medium transition-colors"
               style="
                 background: #ffffff;
-                border-color: #1a1925;
+                border: 1px solid var(--Border-Primary, #e7e7ea);
+                border-radius: 6px;
+                border-width: 1px;
                 color: #1a1925;
                 font-family: 'Inter', sans-serif;
                 font-weight: 500;
                 font-size: 14px;
+                width: 50%;
               "
             >
               Learn More
@@ -972,6 +1009,27 @@
                   0px 1px 2px -1px rgba(26, 25, 37, 0.04);
               "
             >
+            <div
+              class="absolute hidden sm:block"
+              style="
+                width: 148px;
+                height: 148px;
+                top: 0px;
+                right: 0px;
+                opacity: 1;
+                border: 0.8px solid;
+                border-image-source: radial-gradient(
+                  81.86% 81.86% at 100% 100%,
+                  rgba(26, 25, 37, 0.12) 0%,
+                  rgba(26, 25, 37, 0) 77.02%
+                );
+                border-image-slice: 1;
+                background-image: url('/images/about/bgcard.svg');
+                background-repeat: no-repeat;
+                background-size: contain;
+                border: none;
+              "
+            ></div>
               <!-- Card Background - bgcard.svg -->
               <div
                 class="absolute top-0 right-0 w-1/2 h-1/2 pointer-events-none opacity-30"
@@ -984,17 +1042,13 @@
               ></div>
               <!-- Icon -->
               <div class="relative flex items-center justify-center h-full">
-                <div class="relative" style="top: 11px; left: 45.5px;">
+                <div class="relative">
                   <!-- Icon Background -->
                   <div
                     class="absolute"
                     style="
-                      width: 143px;
-                      height: 143px;
-                      border-radius: 5.33px;
-                      top: -39px;
-                      left: -17.5px;
-                      opacity: 1;
+                      width: 75px;
+                      height: 75px;
                       background-image: url('/images/about/bgcardicon.svg');
                       background-repeat: no-repeat;
                       background-size: cover;
@@ -1007,7 +1061,7 @@
                     src="/images/feature_icon_3.svg"
                     alt="Accurate"
                     class="relative z-10"
-                    style="width: 144px; height: 145px; opacity: 1;"
+                    style="width: 105px; height: 105px; opacity: 1"
                   />
                 </div>
               </div>
@@ -1022,6 +1076,7 @@
                 line-height: 24px;
                 letter-spacing: -0.02em;
                 color: #1a1925;
+                text-align: center;
               "
             >
               Accurate
@@ -1036,21 +1091,25 @@
                 line-height: 20px;
                 letter-spacing: -0.006em;
                 color: #51515e;
+                text-align: center;
               "
             >
-              Detailed reports give a deep understanding of how content is
-              being delivered.
+              Detailed reports give a deep understanding of how content is being
+              delivered.
             </p>
             <!-- Button -->
             <button
-              class="w-full py-2 px-4 rounded-lg font-medium transition-colors border-2"
+              class="w-full py-2 px-4 font-medium transition-colors"
               style="
                 background: #ffffff;
-                border-color: #1a1925;
+                border: 1px solid var(--Border-Primary, #e7e7ea);
+                border-radius: 6px;
+                border-width: 1px;
                 color: #1a1925;
                 font-family: 'Inter', sans-serif;
                 font-weight: 500;
                 font-size: 14px;
+                width: 50%;
               "
             >
               Learn More
@@ -1060,12 +1119,12 @@
       </section>
 
       <!-- Easy Integration Section -->
-      <section
-        class="w-full mx-auto px-4 sm:px-6 md:px-0 mb-12 sm:mb-16 md:mb-20"
-      >
+      <section class="w-full mx-auto px-[5%] lg:px-0" style="margin: 10% 0%;">
         <!-- Section Label -->
         <div class="flex flex-col" style="align-items: flex-start">
-          <div class="flex items-center justify-center mb-4 sm:mb-6">
+          <div
+            class="flex items-center justify-start lg:justify-center mb-4 sm:mb-6"
+          >
             <div
               class="flex items-center"
               style="
@@ -1117,12 +1176,11 @@
 
           <!-- Title -->
           <h2
-            class="text-center mb-4 sm:mb-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
+            class="text-left lg:text-center mb-4 sm:mb-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
             style="
               font-family: 'Bricolage Grotesque', sans-serif;
               font-weight: 500;
               letter-spacing: -0.02em;
-              text-align: center;
               vertical-align: middle;
               color: #1a1925;
             "
@@ -1132,14 +1190,13 @@
 
           <!-- Subtitle -->
           <p
-            class="text-center mb-8 sm:mb-10 md:mb-12 text-sm md:text-base"
+            class="text-left lg:text-center mb-8 sm:mb-10 md:mb-12 text-sm md:text-base"
             style="
               font-family: 'Inter', sans-serif;
               font-weight: 400;
               font-size: 16px;
               line-height: 24px;
               letter-spacing: -0.011em;
-              text-align: center;
               color: #51515e;
             "
           >
@@ -1147,9 +1204,9 @@
           </p>
         </div>
         <!-- Integration Content -->
-        <div class="flex flex-col md:flex-row gap-8 sm:gap-10 px-9">
+        <div class="flex flex-col lg:flex-row gap-8 sm:gap-10">
           <!-- Left - Feature List -->
-          <div class="w-1/3">
+          <div class="w-full lg:w-1/3">
             <div
               class="rounded-[20px] border border-[#eeeef0] bg-white p-6"
               style="box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05)"
@@ -1220,8 +1277,20 @@
           </div>
 
           <!-- Right - Integration Logos -->
-          <div class="w-full flex flex-1 items-center">
-            <div class="w-full">
+          <div
+            class="w-full lg:flex-1 flex items-center justify-center lg:items-start lg:justify-start"
+          >
+            <!-- Mobile/Tablet: Vertical Image -->
+            <div class="w-full flex justify-center lg:hidden">
+              <img
+                src="/images/feature_lang_img.svg"
+                alt="Integration Logos"
+                class="h-auto opacity-60"
+                style="max-width: 100%; width: auto"
+              />
+            </div>
+            <!-- Desktop: Image -->
+            <div class="hidden lg:flex w-full justify-start">
               <img
                 src="/images/feature_lang_img.svg"
                 alt="Integration Logos"
@@ -1233,144 +1302,9 @@
         </div>
       </section>
     </main>
-    <section
-      class="relative overflow-hidden bg-white h-[450px] sm:h-[550px] md:h-[620px] lg:h-[676px] w-full"
-      style="background-color: #f7f7f8"
-    >
-      <div
-        class="absolute inset-0 pointer-events-none overflow-hidden"
-        style="z-index: 0"
-      >
-        <!-- Bottom Right Background Image -->
-        <img
-          src="/images/2ndlast_section2.svg"
-          alt=""
-          class="absolute opacity-30 bottom-0 right-0 w-[280px] sm:w-[380px] md:w-[480px] lg:w-[600px] h-auto"
-        />
-      </div>
-
-      <div
-        class="m-auto relative z-10 w-[85%] sm:w-[75%] md:w-[65%] lg:w-[60%]"
-      >
-        <div
-          class="bg-[#1A1925] text-center relative h-[240px] sm:h-[280px] md:h-[320px] lg:h-[356px] rounded-[24px] sm:rounded-[28px] md:rounded-[32px] lg:rounded-[35px]"
-        >
-          <!-- CTA Badge -->
-          <div
-            class="relative mb-3 sm:mb-4 md:mb-5 lg:mb-6 pt-3 sm:pt-4 md:pt-5 lg:pt-[5%]"
-          >
-            <div
-              class="inline-flex items-center px-2.5 sm:px-3 md:px-3.5 lg:px-4 py-0.5 sm:py-0.75 md:py-1 bg-[#FFFFFFE5] rounded-full text-xs sm:text-xs md:text-sm font-medium text-gray-300"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-3 w-3 sm:h-3.5 sm:w-3.5 md:h-4 md:w-4 color-[#A3A3AE] fill-[#A3A3AE]"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M13 10V3L4 14h7v7l9-11h-7z"
-                />
-              </svg>
-              <span class="text-[#1A1925] ml-1">Lets Get Started</span>
-            </div>
-          </div>
-
-          <!-- Main Heading -->
-          <h2
-            class="relative text-white mb-2 sm:mb-3 md:mb-4 cta-heading"
-            style="
-              font-family: 'Bricolage Grotesque', sans-serif;
-              font-weight: 600;
-              letter-spacing: -0.04em;
-              text-align: center;
-              text-transform: capitalize;
-              color: #ffffff;
-            "
-          >
-            Access All Features
-          </h2>
-
-          <!-- Subtitle -->
-          <p
-            class="relative mb-4 sm:mb-5 md:mb-6 lg:mb-8 cta-subtitle"
-            style="
-              font-family: 'Inter', sans-serif;
-              font-weight: 400;
-              letter-spacing: -0.011em;
-              text-align: center;
-              color: #51515e;
-            "
-          >
-            Get started with a free 14 day trial, no credit card required.
-          </p>
-
-          <!-- Company Metrics -->
-          <div
-            class="relative flex flex-wrap items-center justify-center gap-2 sm:gap-3 md:gap-4 lg:gap-6 mb-3 sm:mb-4 md:mb-5 cta-metrics"
-          >
-            <span
-              class="cta-metric-text"
-              style="
-                font-family: 'Funnel Display', sans-serif;
-                font-weight: 500;
-                letter-spacing: -0.02em;
-                text-align: center;
-                color: #ffffff;
-              "
-              >120 Employes</span
-            >
-            <span class="text-gray-600 text-xs sm:text-sm md:text-base">•</span>
-            <span
-              class="cta-metric-text"
-              style="
-                font-family: 'Funnel Display', sans-serif;
-                font-weight: 500;
-                letter-spacing: -0.02em;
-                text-align: center;
-                color: #ffffff;
-              "
-              >$31.5M Raised</span
-            >
-            <span class="text-gray-600 text-xs sm:text-sm md:text-base">•</span>
-            <span
-              class="cta-metric-text"
-              style="
-                font-family: 'Funnel Display', sans-serif;
-                font-weight: 500;
-                letter-spacing: -0.02em;
-                text-align: center;
-                color: #ffffff;
-              "
-              >7 Years old</span
-            >
-          </div>
-
-          <!-- CTA Button -->
-          <div class="relative pb-4 sm:pb-5 md:pb-6 lg:pb-[15%]">
-            <button
-              class="bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors shadow-lg hover:shadow-xl w-[125px] sm:w-[135px] md:w-[145px] lg:w-[153px] h-[30px] sm:h-[32px] md:h-[34px] lg:h-[36px] opacity-100"
-              style="
-                font-family: 'Funnel Display', sans-serif;
-                font-weight: 500;
-                letter-spacing: -0.02em;
-                text-align: center;
-                color: #ffffff;
-              "
-            >
-              <span
-                class="text-[10px] sm:text-[11px] md:text-[12px] lg:text-[13px] leading-tight"
-                >Get Started ~ Free</span
-              >
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
+    <div class="mb-12 sm:mb-8 md:mb-0">
+      <SectionsAccessAllFeaturesSection />
+    </div>
   </div>
 </template>
 
@@ -1388,11 +1322,11 @@ const featuresList = [
 
 // Integration logos/platforms
 const integrationLogos = [
-  "WORDPRESS",
-  "Joomla!",
-  "Drupal",
+  "WordPress",
   "Magento",
+  "Joomla!",
   "TYPO3",
+  "Drupal",
   "PrestaShop",
 ];
 </script>
