@@ -1,7 +1,7 @@
 <template>
   <footer
     class="bg-white border-t border-gray-200 mt-auto"
-    style="background-color: #ffffff"
+    style="background-color: #ffffff; border:none"
   >
     <div
       class="container mx-auto px-4 sm:px-6 md:px-8 py-8 sm:py-10 md:py-12"
