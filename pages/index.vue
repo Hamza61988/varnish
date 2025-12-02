@@ -13,6 +13,7 @@
 </template>
 
 <script setup lang="ts">
+
 // Index page - same content as home page
 // Using same sections directly to avoid redirect
 </script>

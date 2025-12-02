@@ -74,8 +74,8 @@
           />
          
         </div>
-         <div class="mt-6 bg-white border rounded px-3 py-2 text-sm text-gray-400 font-mono text-center">
-            https://ip.keycdn.com/example.jpg?format=webp <span class="animate-pulse">|</span>
+         <div class="mt-6 bg-white border rounded px-3 py-2 text-sm text-[#73737F] text-center">
+            https://ip.keycdn.com/example.jpg?format=webp <span class=" text-black">|</span>
           </div>
       </div>
 
@@ -327,4 +327,5 @@
   background-size: contain;
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%23888'><path fill-rule='evenodd' d='M10 6l6 6H4l6-6z' clip-rule='evenodd'/></svg>");
 }
+
 </style>
