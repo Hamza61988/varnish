@@ -61,55 +61,340 @@
               </NuxtLink>
 
               <!-- Solutions Dropdown -->
-              <UiDropdownMenu v-else>
-                <template #trigger>
-                  <a
-                    href="#"
-                    class="text-gray-700 hover:text-gray-900 transition-colors flex items-center space-x-1 cursor-pointer text-xs tablet:text-[13px] whitespace-nowrap"
-                    style="
-                      font-family: 'Bricolage Grotesque', sans-serif;
-                      font-weight: 500;
-                      line-height: 20px;
-                      letter-spacing: -0.006em;
-                      text-align: center;
-                    "
+              <div v-else class="relative solutions-dropdown-container" id="solutions-dropdown-container">
+                <button
+                  type="button"
+                  id="solutions-dropdown-button"
+                  onclick="var menu=document.getElementById('solutions-dropdown-menu');var arrow=document.getElementById('solutions-dropdown-arrow');if(menu){var isOpen=menu.style.display==='block';menu.style.display=isOpen?'none':'block';if(arrow){arrow.style.transform=isOpen?'rotate(0deg)':'rotate(180deg)';}}return false;"
+                  class="text-gray-700 hover:text-gray-900 transition-colors flex items-center space-x-1 cursor-pointer text-xs tablet:text-[13px] whitespace-nowrap bg-transparent border-none outline-none"
+                  style="
+                    font-family: 'Bricolage Grotesque', sans-serif;
+                    font-weight: 500;
+                    line-height: 20px;
+                    letter-spacing: -0.006em;
+                    text-align: center;
+                    padding: 0;
+                  "
+                >
+                  <span>{{ link.name }}</span>
+                  <svg
+                    id="solutions-dropdown-arrow"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 transition-transform"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
                   >
-                    <span>{{ link.name }}</span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-4 w-4"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </button>
+                
+                <!-- Dropdown Content -->
+                <div
+                  id="solutions-dropdown-menu"
+                  class="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[800px] rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5"
+                  style="z-index: 9999; display: none;"
+                >
+                  <!-- Multi-column dropdown content -->
+                  <div class="grid grid-cols-4 gap-8 mb-6 p-6">
+                    <!-- Column 1: Features -->
+                    <div>
+                      <h3 class="font-bold text-sm text-gray-900 mb-4" style="font-family: 'Bricolage Grotesque', sans-serif;">
+                        FEATURES
+                      </h3>
+                      <ul class="space-y-3">
+                        <li>
+                          <NuxtLink
+                            to="/solutions/solution1"
+                            class="text-sm text-gray-700 hover:text-gray-900 transition-colors block"
+                            style="font-family: 'Bricolage Grotesque', sans-serif;"
+                          >
+                            Predictive Analytics
+                          </NuxtLink>
+                        </li>
+                        <li>
+                          <NuxtLink
+                            to="/solutions/solution2"
+                            class="text-sm text-gray-700 hover:text-gray-900 transition-colors block"
+                            style="font-family: 'Bricolage Grotesque', sans-serif;"
+                          >
+                            AI-Driven Automation
+                          </NuxtLink>
+                        </li>
+                        <li>
+                          <NuxtLink
+                            to="/solutions/solution3"
+                            class="text-sm text-gray-700 hover:text-gray-900 transition-colors block"
+                            style="font-family: 'Bricolage Grotesque', sans-serif;"
+                          >
+                            Real-Time Insights
+                          </NuxtLink>
+                        </li>
+                        <li>
+                          <NuxtLink
+                            to="/solutions/solution4"
+                            class="text-sm text-gray-700 hover:text-gray-900 transition-colors block"
+                            style="font-family: 'Bricolage Grotesque', sans-serif;"
+                          >
+                            Workflow Optimization
+                          </NuxtLink>
+                        </li>
+                        <li>
+                          <NuxtLink
+                            to="/features"
+                            class="text-sm text-gray-700 hover:text-gray-900 transition-colors block"
+                            style="font-family: 'Bricolage Grotesque', sans-serif;"
+                          >
+                            Multi-Channel Campaigns
+                          </NuxtLink>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <!-- Column 2: Use Cases -->
+                    <div>
+                      <h3 class="font-bold text-sm text-gray-900 mb-4" style="font-family: 'Bricolage Grotesque', sans-serif;">
+                        USE CASES
+                      </h3>
+                      <ul class="space-y-3">
+                        <li>
+                          <NuxtLink
+                            to="/solutions/solution1"
+                            class="text-sm text-gray-700 hover:text-gray-900 transition-colors block"
+                            style="font-family: 'Bricolage Grotesque', sans-serif;"
+                          >
+                            Creative Agencies
+                          </NuxtLink>
+                        </li>
+                        <li>
+                          <NuxtLink
+                            to="/solutions/solution2"
+                            class="text-sm text-gray-700 hover:text-gray-900 transition-colors block"
+                            style="font-family: 'Bricolage Grotesque', sans-serif;"
+                          >
+                            Startup Teams
+                          </NuxtLink>
+                        </li>
+                        <li>
+                          <NuxtLink
+                            to="/solutions/solution3"
+                            class="text-sm text-gray-700 hover:text-gray-900 transition-colors block"
+                            style="font-family: 'Bricolage Grotesque', sans-serif;"
+                          >
+                            Sales Departments
+                          </NuxtLink>
+                        </li>
+                        <li>
+                          <NuxtLink
+                            to="/solutions/solution4"
+                            class="text-sm text-gray-700 hover:text-gray-900 transition-colors block"
+                            style="font-family: 'Bricolage Grotesque', sans-serif;"
+                          >
+                            Product Developers
+                          </NuxtLink>
+                        </li>
+                        <li>
+                          <NuxtLink
+                            to="/solutions/solution1"
+                            class="text-sm text-gray-700 hover:text-gray-900 transition-colors block"
+                            style="font-family: 'Bricolage Grotesque', sans-serif;"
+                          >
+                            HR Specialists
+                          </NuxtLink>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <!-- Column 3: Resources -->
+                    <div>
+                      <h3 class="font-bold text-sm text-gray-900 mb-4" style="font-family: 'Bricolage Grotesque', sans-serif;">
+                        RESOURCES
+                      </h3>
+                      <ul class="space-y-3">
+                        <li>
+                          <NuxtLink
+                            to="/features"
+                            class="text-sm text-gray-700 hover:text-gray-900 transition-colors block"
+                            style="font-family: 'Bricolage Grotesque', sans-serif;"
+                          >
+                            Predictive Analytics
+                          </NuxtLink>
+                        </li>
+                        <li>
+                          <NuxtLink
+                            to="/features"
+                            class="text-sm text-gray-700 hover:text-gray-900 transition-colors block"
+                            style="font-family: 'Bricolage Grotesque', sans-serif;"
+                          >
+                            AI-Driven Automation
+                          </NuxtLink>
+                        </li>
+                        <li>
+                          <NuxtLink
+                            to="/features"
+                            class="text-sm text-gray-700 hover:text-gray-900 transition-colors block"
+                            style="font-family: 'Bricolage Grotesque', sans-serif;"
+                          >
+                            Real-Time Insights
+                          </NuxtLink>
+                        </li>
+                        <li>
+                          <NuxtLink
+                            to="/features"
+                            class="text-sm text-gray-700 hover:text-gray-900 transition-colors block"
+                            style="font-family: 'Bricolage Grotesque', sans-serif;"
+                          >
+                            Workflow Optimization
+                          </NuxtLink>
+                        </li>
+                        <li>
+                          <NuxtLink
+                            to="/features"
+                            class="text-sm text-gray-700 hover:text-gray-900 transition-colors block"
+                            style="font-family: 'Bricolage Grotesque', sans-serif;"
+                          >
+                            Multi-Channel Campaigns
+                          </NuxtLink>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <!-- Column 4: About -->
+                    <div>
+                      <h3 class="font-bold text-sm text-gray-900 mb-4" style="font-family: 'Bricolage Grotesque', sans-serif;">
+                        ABOUT VARNISH
+                      </h3>
+                      <ul class="space-y-3">
+                        <li>
+                          <NuxtLink
+                            to="/about"
+                            class="text-sm text-gray-700 hover:text-gray-900 transition-colors block"
+                            style="font-family: 'Bricolage Grotesque', sans-serif;"
+                          >
+                            Meet the Team
+                          </NuxtLink>
+                        </li>
+                        <li>
+                          <NuxtLink
+                            to="/about"
+                            class="text-sm text-gray-700 hover:text-gray-900 transition-colors block"
+                            style="font-family: 'Bricolage Grotesque', sans-serif;"
+                          >
+                            Corporate Values
+                          </NuxtLink>
+                        </li>
+                        <li>
+                          <NuxtLink
+                            to="/about"
+                            class="text-sm text-gray-700 hover:text-gray-900 transition-colors block"
+                            style="font-family: 'Bricolage Grotesque', sans-serif;"
+                          >
+                            Global Offices
+                          </NuxtLink>
+                        </li>
+                        <li>
+                          <NuxtLink
+                            to="/about"
+                            class="text-sm text-gray-700 hover:text-gray-900 transition-colors block"
+                            style="font-family: 'Bricolage Grotesque', sans-serif;"
+                          >
+                            Our Mission
+                          </NuxtLink>
+                        </li>
+                        <li>
+                          <NuxtLink
+                            to="/about"
+                            class="text-sm text-gray-700 hover:text-gray-900 transition-colors block"
+                            style="font-family: 'Bricolage Grotesque', sans-serif;"
+                          >
+                            Press & Media
+                          </NuxtLink>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <!-- Cards Section -->
+                  <div class="grid grid-cols-4 gap-4 pt-6 border-t border-gray-200 px-6 pb-6">
+                    <!-- Card 1: Features -->
+                    <NuxtLink
+                      to="/features"
+                      class="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition-colors group"
                     >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M19 9l-7 7-7-7"
-                      />
-                    </svg>
-                  </a>
-                </template>
-                <a
-                  href="#"
-                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                >
-                  Solution 1
-                </a>
-                <a
-                  href="#"
-                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                >
-                  Solution 2
-                </a>
-                <a
-                  href="#"
-                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                >
-                  Solution 3
-                </a>
-              </UiDropdownMenu>
+                      <div class="w-10 h-10 bg-gray-200 rounded flex items-center justify-center mb-3 group-hover:bg-gray-300 transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                        </svg>
+                      </div>
+                      <h4 class="font-bold text-sm text-gray-900 mb-1" style="font-family: 'Bricolage Grotesque', sans-serif;">
+                        Features
+                      </h4>
+                      <p class="text-xs text-gray-500" style="font-family: 'Bricolage Grotesque', sans-serif;">
+                        Lorem ipsum dolor
+                      </p>
+                    </NuxtLink>
+
+                    <!-- Card 2: Use Cases -->
+                    <NuxtLink
+                      to="/solutions/solution1"
+                      class="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition-colors group"
+                    >
+                      <div class="w-10 h-10 bg-gray-200 rounded flex items-center justify-center mb-3 group-hover:bg-gray-300 transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                        </svg>
+                      </div>
+                      <h4 class="font-bold text-sm text-gray-900 mb-1" style="font-family: 'Bricolage Grotesque', sans-serif;">
+                        Use Cases
+                      </h4>
+                      <p class="text-xs text-gray-500" style="font-family: 'Bricolage Grotesque', sans-serif;">
+                        Lorem ipsum dolor
+                      </p>
+                    </NuxtLink>
+
+                    <!-- Card 3: Resources -->
+                    <NuxtLink
+                      to="/features"
+                      class="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition-colors group"
+                    >
+                      <div class="w-10 h-10 bg-gray-200 rounded flex items-center justify-center mb-3 group-hover:bg-gray-300 transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5" />
+                        </svg>
+                      </div>
+                      <h4 class="font-bold text-sm text-gray-900 mb-1" style="font-family: 'Bricolage Grotesque', sans-serif;">
+                        Resources
+                      </h4>
+                      <p class="text-xs text-gray-500" style="font-family: 'Bricolage Grotesque', sans-serif;">
+                        Lorem ipsum dolor
+                      </p>
+                    </NuxtLink>
+
+                    <!-- Card 4: About -->
+                    <NuxtLink
+                      to="/about"
+                      class="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition-colors group"
+                    >
+                      <div class="w-10 h-10 bg-gray-200 rounded flex items-center justify-center mb-3 group-hover:bg-gray-300 transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                        </svg>
+                      </div>
+                      <h4 class="font-bold text-sm text-gray-900 mb-1" style="font-family: 'Bricolage Grotesque', sans-serif;">
+                        About Varnish
+                      </h4>
+                      <p class="text-xs text-gray-500" style="font-family: 'Bricolage Grotesque', sans-serif;">
+                        Lorem ipsum dolor
+                      </p>
+                    </NuxtLink>
+                  </div>
+                </div>
+              </div>
             </template>
           </div>
         </div>
