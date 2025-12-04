@@ -16,12 +16,13 @@
           type="range"
           min="0"
           max="2000"
-          step="10"
-          class="w-full accent-indigo-600 cursor-pointer rounded-lg h-2 bg-gray-100"
+          step="1"
+          class="w-full cursor-pointer rounded-lg h-2 bg-gray-100 slider-input"
+          style="accent-color: #1F62FF;"
           :style="{
             background: `linear-gradient(to right, #1F62FF ${
-              localBandwidth.naEurope / 20
-            }%, #e5e7eb ${localBandwidth.naEurope / 20}%)`,
+              (localBandwidth.naEurope / 2000) * 100
+            }%, #e5e7eb ${(localBandwidth.naEurope / 2000) * 100}%)`,
           }"
         />
       </div>
@@ -41,12 +42,13 @@
           type="range"
           min="0"
           max="2000"
-          step="10"
-          class="w-full accent-indigo-600 cursor-pointer rounded-lg h-2 bg-gray-100"
+          step="1"
+          class="w-full cursor-pointer rounded-lg h-2 bg-gray-100 slider-input"
+          style="accent-color: #1F62FF;"
           :style="{
             background: `linear-gradient(to right, #1F62FF ${
-              localBandwidth.asiaOceania / 20
-            }%, #e5e7eb ${localBandwidth.asiaOceania / 20}%)`,
+              (localBandwidth.asiaOceania / 2000) * 100
+            }%, #e5e7eb ${(localBandwidth.asiaOceania / 2000) * 100}%)`,
           }"
         />
       </div>
@@ -66,12 +68,13 @@
           type="range"
           min="0"
           max="2000"
-          step="10"
-          class="w-full accent-indigo-600 cursor-pointer rounded-lg h-2 bg-gray-100"
+          step="1"
+          class="w-full cursor-pointer rounded-lg h-2 bg-gray-100 slider-input"
+          style="accent-color: #1F62FF;"
           :style="{
             background: `linear-gradient(to right, #1F62FF ${
-              localBandwidth.africaLatin / 20
-            }%, #e5e7eb ${localBandwidth.africaLatin / 20}%)`,
+              (localBandwidth.africaLatin / 2000) * 100
+            }%, #e5e7eb ${(localBandwidth.africaLatin / 2000) * 100}%)`,
           }"
         />
       </div>
@@ -167,11 +170,15 @@ const formatGB = (val: number) => `${val} GB`;
   }
 }
 
+.slider-input {
+  accent-color: #1F62FF;
+}
+
 input[type="range"]::-webkit-slider-thumb {
   appearance: none;
   width: 16px;
   height: 16px;
-  background: #1f62ff;
+  background: #1F62FF;
   border-radius: 50%;
   cursor: pointer;
   box-shadow: 0 2px 4px rgba(31, 98, 255, 0.3);
@@ -185,7 +192,7 @@ input[type="range"]::-webkit-slider-thumb:hover {
 input[type="range"]::-moz-range-thumb {
   width: 16px;
   height: 16px;
-  background: #1f62ff;
+  background: #1F62FF;
   border-radius: 50%;
   border: none;
   cursor: pointer;
