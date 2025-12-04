@@ -3,12 +3,14 @@
     <!-- Split Layout: Landing Page (Left) + Dashboard Preview (Right) -->
     <div class="flex flex-col lg:flex-row hero-container">
       <!-- Left Section: Landing Page -->
-      <div class="flex-1 justify-center items-center hero-left-section order-2 lg:order-1">
+      <div
+        class="flex-1 justify-center items-center hero-left-section order-1 lg:order-1"
+      >
         <div class="max-w-2xl mx-auto">
           <!-- Top Badge -->
           <div class="mb-4 sm:mb-5 md:mb-6">
-            <button
-              class="inline-flex items-center space-x-2 px-3 sm:px-4 py-1.5 sm:py-2 bg-white rounded-full text-xs sm:text-sm font-medium text-gray-700 hover:bg-gray-50 transition-colors"
+            <div
+              class="no-pointer inline-flex items-center space-x-2 px-3 sm:px-4 py-1.5 sm:py-2 bg-white rounded-full text-xs sm:text-sm font-medium text-gray-700 shadow-md transition-colors"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -26,29 +28,33 @@
                 />
               </svg>
               <span>Empower Innovation!</span>
-            </button>
+            </div>
           </div>
 
           <!-- Headline Section -->
           <div class="mb-6 sm:mb-7 md:mb-8">
-            <h1
-              class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-3 sm:mb-4"
-            >
-              <span>Content Delivery,</span>
-              <span class="block hero-headline-line-2">
-                Simplified.
-                <img
-                  src="/images/Company_logo.svg"
-                  alt="BEST CDN AWARD"
-                  class="w-full h-auto lg:h-full object-cover"
-                />
-              </span>
-            </h1>
+          <h1
+  style="font-family: 'Funnel Display', sans-serif;
+  font-weight: 500; line-height: 1.2
+;"
+  class="text-[56px] sm:text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-3 sm:mb-4"
+>
+  <span>Content Delivery,</span>
+  <span class="block hero-headline-line-2">
+    Simplified.
+    <img
+      src="/images/Company_logo.svg"
+      alt="BEST CDN AWARD"
+      class="w-full h-auto lg:h-full object-cover"
+    />
+  </span>
+</h1>
+
           </div>
 
           <!-- Description -->
           <p class="hero-description mb-6 sm:mb-7 md:mb-8">
-            KeyCDN is a high performance content delivery network that has been
+            Varnish is a high performance content delivery network that has been
             built for the future. It only takes a few minutes to start
             delivering content to your users at a blazing fast speed.
           </p>
@@ -116,119 +122,62 @@
                 />
               </div>
               <!-- Get Started Button -->
-              <button
-                class="hero-button px-6 sm:px-8 py-1 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium whitespace-nowrap w-[40%] lg:w-auto"
-              >
-                Get Started
-              </button>
+              <button class="fancy-button">Get Started</button>
             </div>
-            <p class="flex no-credits-text mt-2 sm:mt-3">No Credits Required</p>
+            <p class="flex no-credits-text mt-2 sm:mt-3">
+              No Credit Card Required
+            </p>
           </div>
 
-          <!-- Statistics Section -->
-          <div
-            class="flex flex-wrap items-center gap-3 sm:gap-4 md:gap-6 mt-8 sm:mt-10 md:mt-12"
-          >
-            <div class="flex items-center space-x-2">
-              <span class="stat-value">2.400</span>
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12 2
-       L13.76 7.2
-       L19.51 4.49
-       L16.2 9.24
-       L21 12
-       L16.2 14.76
-       L19.51 19.51
-       L13.76 16.8
-       L12 22
-       L10.24 16.8
-       L4.49 19.51
-       L7.8 14.76
-       L3 12
-       L7.8 9.24
-       L4.49 4.49
-       L10.24 7.2
-       Z"
-                  fill="#1F62FF"
-                />
-              </svg>
+       <!-- Statistics Section -->
+        <div class="flex flex-wrap items-center md:justify-start justify-between gap-3 sm:gap-4 md:gap-6 mt-8 sm:mt-10 md:mt-12">
+  
+  <!-- Active Users -->
+  <div class="flex flex-col items-center sm:flex-row sm:items-center sm:space-x-2">
+    <span class="stat-value text-lg sm:text-base md:text-lg">2.400</span>
+    <svg
+      class="hidden md:block w-5 h-5 mt-1 sm:mt-0"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M12 2 L13.76 7.2 L19.51 4.49 L16.2 9.24 L21 12 L16.2 14.76 L19.51 19.51 L13.76 16.8 L12 22 L10.24 16.8 L4.49 19.51 L7.8 14.76 L3 12 L7.8 9.24 L4.49 4.49 L10.24 7.2 Z" fill="#1F62FF"/>
+    </svg>
+    <span class="stat-label text-sm mt-1 sm:mt-0 sm:ml-2 text-center sm:text-left">Active Users</span>
+  </div>
 
-              <span class="stat-label">Active Users</span>
-            </div>
-            <div class="flex items-center space-x-2">
-              <span class="stat-value">135,949</span>
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12 2
-       L13.76 7.2
-       L19.51 4.49
-       L16.2 9.24
-       L21 12
-       L16.2 14.76
-       L19.51 19.51
-       L13.76 16.8
-       L12 22
-       L10.24 16.8
-       L4.49 19.51
-       L7.8 14.76
-       L3 12
-       L7.8 9.24
-       L4.49 4.49
-       L10.24 7.2
-       Z"
-                  fill="#1F62FF"
-                />
-              </svg>
-              <span class="stat-label">Zones Deployed</span>
-            </div>
-            <div class="flex items-center space-x-2">
-              <span class="stat-value">98%</span>
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12 2
-       L13.76 7.2
-       L19.51 4.49
-       L16.2 9.24
-       L21 12
-       L16.2 14.76
-       L19.51 19.51
-       L13.76 16.8
-       L12 22
-       L10.24 16.8
-       L4.49 19.51
-       L7.8 14.76
-       L3 12
-       L7.8 9.24
-       L4.49 4.49
-       L10.24 7.2
-       Z"
-                  fill="#1F62FF"
-                />
-              </svg>
-              <span class="stat-label">Hit Ratio</span>
-            </div>
-          </div>
+  <!-- Zones Deployed -->
+  <div class="flex flex-col items-center sm:flex-row sm:items-center sm:space-x-2">
+    <span class="stat-value text-lg sm:text-base md:text-lg">135,949</span>
+    <svg
+      class="hidden md:block w-5 h-5 mt-1 sm:mt-0"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M12 2 L13.76 7.2 L19.51 4.49 L16.2 9.24 L21 12 L16.2 14.76 L19.51 19.51 L13.76 16.8 L12 22 L10.24 16.8 L4.49 19.51 L7.8 14.76 L3 12 L7.8 9.24 L4.49 4.49 L10.24 7.2 Z" fill="#1F62FF"/>
+    </svg>
+    <span class="stat-label text-sm mt-1 sm:mt-0 sm:ml-2 text-center sm:text-left">Zones Deployed</span>
+  </div>
+
+  <!-- Hit Ratio -->
+  <div class="flex flex-col items-center sm:flex-row sm:items-center sm:space-x-2">
+    <span class="stat-value text-lg sm:text-base md:text-lg">98%</span>
+    <svg
+      class="hidden md:block w-5 h-5 mt-1 sm:mt-0"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M12 2 L13.76 7.2 L19.51 4.49 L16.2 9.24 L21 12 L16.2 14.76 L19.51 19.51 L13.76 16.8 L12 22 L10.24 16.8 L4.49 19.51 L7.8 14.76 L3 12 L7.8 9.24 L4.49 4.49 L10.24 7.2 Z" fill="#1F62FF"/>
+    </svg>
+    <span class="stat-label text-sm mt-1 sm:mt-0 sm:ml-2 text-center sm:text-left">Hit Ratio</span>
+  </div>
+
+</div>
         </div>
       </div>
-
       <!-- Right Section: Dashboard Preview Panel -->
-      <div class="w-full lg:w-[40%] mt-6 sm:mt-8 lg:mt-0 hero-image-section order-1 lg:order-2">
+      <div
+        class="w-full lg:w-[40%] mt-6 sm:mt-8 pl-[5%] lg:pl-0 lg:mt-0 hero-image-section order-2 lg:order-2"
+      >
         <img
           src="/images/Varnish.svg"
           alt="BEST CDN AWARD"
@@ -244,6 +193,45 @@
 </script>
 
 <style scoped>
+.fancy-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  height: 37px;
+  padding: 8px 14px;
+
+  background-color: #1f62ff;
+  border: none;
+  border-radius: 8px;
+  box-sizing: border-box;
+
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: -0.084px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+
+  cursor: pointer;
+  user-select: none;
+
+  /* Fixed shadow: darkest -> softest */
+  box-shadow: 0px 1px 1.5px -0.5px rgba(0, 0, 0, 0.14),
+    0px 2px 4px -1px rgba(0, 0, 0, 0.12), 0px 4px 8px -4px rgba(0, 0, 0, 0.1),
+    0px 8px 12px -4px rgba(0, 0, 0, 0.08),
+    inset 0px 1px 3px rgba(255, 255, 255, 0.12),
+    inset 0px 0.5px 1px rgba(255, 255, 255, 0.08);
+
+  transition: all 0.3s ease;
+}
+.fancy-button:hover {
+  background-color: #1b56e0;
+}
+
 .hero-section {
   background-color: #f7f7f8;
   background-image: radial-gradient(

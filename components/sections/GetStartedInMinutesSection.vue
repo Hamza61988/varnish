@@ -9,7 +9,7 @@
         <!-- Section Label -->
         <div class="flex items-center justify-center mb-4 sm:mb-6">
           <div
-            class="flex items-center"
+            class="flex bg-gray-200 items-center"
             style="
               height: 24px;
               gap: 2px;
@@ -18,7 +18,7 @@
               padding-right: 8px;
               padding-bottom: 4px;
               padding-left: 8px;
-              background: #ffffffe5;
+
               box-shadow: 0px 0.5px 0.5px 0px rgba(7, 1, 19, 0.03),
                 0px 1px 1px -0.5px rgba(7, 1, 19, 0.03),
                 0px 2px 2px -1px rgba(7, 1, 19, 0.03),
@@ -61,8 +61,8 @@
         <h2
           class="text-center mb-4 sm:mb-6"
           style="
-            font-family: 'Bricolage Grotesque', sans-serif;
-            font-weight: 600;
+            font-family: 'Funnel Display', sans-serif;
+            font-weight: 500;
             font-style: SemiBold;
             font-size: 48px;
             line-height: 56px;
@@ -132,7 +132,8 @@
             <span
               class="text-white font-bold text-lg"
               style="
-                font-family: 'Bricolage Grotesque', sans-serif;
+                font-family: 'Funnel Display', sans-serif;
+
                 font-weight: 600;
               "
             >
@@ -146,8 +147,9 @@
             style="
               width: 256px;
               height: 32px;
-              font-family: 'Bricolage Grotesque', sans-serif;
-              font-weight: 700;
+              font-family: 'Funnel Display', sans-serif;
+
+              font-weight: 500;
               font-size: 24px;
               line-height: 32px;
               letter-spacing: -0.02em;
@@ -213,7 +215,8 @@
             <span
               class="font-bold text-lg"
               style="
-                font-family: 'Bricolage Grotesque', sans-serif;
+                font-family: 'Funnel Display', sans-serif;
+
                 font-weight: 600;
                 color: #51515e;
               "
@@ -228,8 +231,9 @@
             style="
               width: 256px;
               height: 32px;
-              font-family: 'Bricolage Grotesque', sans-serif;
-              font-weight: 700;
+              font-family: 'Funnel Display', sans-serif;
+
+              font-weight: 500;
               font-size: 24px;
               line-height: 32px;
               letter-spacing: -0.02em;
@@ -298,7 +302,8 @@
             <span
               class="font-bold text-lg"
               style="
-                font-family: 'Bricolage Grotesque', sans-serif;
+                font-family: 'Funnel Display', sans-serif;
+
                 font-weight: 600;
                 color: #51515e;
               "
@@ -313,8 +318,9 @@
             style="
               width: 256px;
               height: 32px;
-              font-family: 'Bricolage Grotesque', sans-serif;
-              font-weight: 700;
+              font-family: 'Funnel Display', sans-serif;
+
+              font-weight: 500;
               font-size: 24px;
               line-height: 32px;
               letter-spacing: -0.02em;

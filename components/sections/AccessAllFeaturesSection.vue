@@ -4,22 +4,495 @@
     style="background-color: #f7f7f8; padding: 0"
   >
     <div
-      class="absolute inset-0 pointer-events-none overflow-hidden"
-      style="z-index: 0"
+      class="absolute hidden bottom-0 left-0 w-full h-auto opacity-30 pointer-events-none md:flex justify-end"
     >
-      <!-- Bottom Right Background Image -->
-      <img
-        src="/images/2ndlast_section2.svg"
-        alt=""
-        class="absolute opacity-30 bottom-0 right-0 w-[280px] sm:w-[380px] md:w-[480px] lg:w-[600px] h-auto"
-      />
+      <svg
+        width="562"
+        height="257"
+        viewBox="0 0 562 257"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M24.0976 458.018C9.44224 347.678 34.2187 238.427 96.4862 187.86C168.973 128.994 292.268 149.657 463.309 340.714C389.806 -374.647 745.514 380.188 659.684 42.3566"
+          stroke="#73737F"
+          stroke-width="40"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
     </div>
 
     <div
-      class="m-auto relative z-10 w-full sm:w-[75%] md:w-[65%] lg:w-[68%] py-0 sm:py-10 md:py-12"
+      class="absolute hidden  inset-0 md:flex justify-center top-0 pointer-events-none overflow-hidden"
+    >
+      <svg
+        width="393"
+        height="106"
+        viewBox="0 0 393 106"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g filter="url(#filter0_d_36_5969)">
+          <rect
+            x="284.5"
+            y="32.5"
+            width="32"
+            height="32"
+            rx="8"
+            transform="rotate(-180 284.5 32.5)"
+            stroke="#E7E7EA"
+            shape-rendering="crispEdges"
+          />
+        </g>
+        <g filter="url(#filter1_d_36_5969)">
+          <rect
+            width="32"
+            height="32"
+            rx="8"
+            transform="matrix(1 -8.74228e-08 -8.74228e-08 -1 108.5 32.5)"
+            stroke="#E7E7EA"
+            shape-rendering="crispEdges"
+          />
+        </g>
+        <g filter="url(#filter2_d_36_5969)">
+          <rect
+            x="320.5"
+            y="68.5"
+            width="32"
+            height="32"
+            rx="8"
+            transform="rotate(-180 320.5 68.5)"
+            stroke="#E7E7EA"
+            shape-rendering="crispEdges"
+          />
+        </g>
+        <g filter="url(#filter3_d_36_5969)">
+          <rect
+            width="32"
+            height="32"
+            rx="8"
+            transform="matrix(1 -8.74228e-08 -8.74228e-08 -1 72.5 68.5)"
+            stroke="#E7E7EA"
+            shape-rendering="crispEdges"
+          />
+        </g>
+        <g filter="url(#filter4_d_36_5969)">
+          <rect
+            x="392.5"
+            y="68.5"
+            width="32"
+            height="32"
+            rx="8"
+            transform="rotate(-180 392.5 68.5)"
+            stroke="#E7E7EA"
+            shape-rendering="crispEdges"
+          />
+        </g>
+        <g filter="url(#filter5_d_36_5969)">
+          <rect
+            width="32"
+            height="32"
+            rx="8"
+            transform="matrix(1 -8.74228e-08 -8.74228e-08 -1 0.5 68.5)"
+            stroke="#E7E7EA"
+            shape-rendering="crispEdges"
+          />
+        </g>
+        <g filter="url(#filter6_d_36_5969)">
+          <rect
+            x="284.5"
+            y="104.5"
+            width="32"
+            height="32"
+            rx="8"
+            transform="rotate(-180 284.5 104.5)"
+            stroke="#E7E7EA"
+            shape-rendering="crispEdges"
+          />
+        </g>
+        <g filter="url(#filter7_d_36_5969)">
+          <rect
+            width="32"
+            height="32"
+            rx="8"
+            transform="matrix(1 -8.74228e-08 -8.74228e-08 -1 108.5 104.5)"
+            stroke="#E7E7EA"
+            shape-rendering="crispEdges"
+          />
+        </g>
+        <g filter="url(#filter8_d_36_5969)">
+          <rect
+            x="356.5"
+            y="104.5"
+            width="32"
+            height="32"
+            rx="8"
+            transform="rotate(-180 356.5 104.5)"
+            stroke="#E7E7EA"
+            shape-rendering="crispEdges"
+          />
+        </g>
+        <g filter="url(#filter9_d_36_5969)">
+          <rect
+            width="32"
+            height="32"
+            rx="8"
+            transform="matrix(1 -8.74228e-08 -8.74228e-08 -1 36.5 104.5)"
+            stroke="#E7E7EA"
+            shape-rendering="crispEdges"
+          />
+        </g>
+        <defs>
+          <filter
+            id="filter0_d_36_5969"
+            x="252"
+            y="0"
+            width="33"
+            height="33.8"
+            filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB"
+          >
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feColorMatrix
+              in="SourceAlpha"
+              type="matrix"
+              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              result="hardAlpha"
+            />
+            <feOffset dy="0.8" />
+            <feComposite in2="hardAlpha" operator="out" />
+            <feColorMatrix
+              type="matrix"
+              values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.56 0"
+            />
+            <feBlend
+              mode="normal"
+              in2="BackgroundImageFix"
+              result="effect1_dropShadow_36_5969"
+            />
+            <feBlend
+              mode="normal"
+              in="SourceGraphic"
+              in2="effect1_dropShadow_36_5969"
+              result="shape"
+            />
+          </filter>
+          <filter
+            id="filter1_d_36_5969"
+            x="108"
+            y="0"
+            width="33"
+            height="33.8"
+            filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB"
+          >
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feColorMatrix
+              in="SourceAlpha"
+              type="matrix"
+              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              result="hardAlpha"
+            />
+            <feOffset dy="0.8" />
+            <feComposite in2="hardAlpha" operator="out" />
+            <feColorMatrix
+              type="matrix"
+              values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.56 0"
+            />
+            <feBlend
+              mode="normal"
+              in2="BackgroundImageFix"
+              result="effect1_dropShadow_36_5969"
+            />
+            <feBlend
+              mode="normal"
+              in="SourceGraphic"
+              in2="effect1_dropShadow_36_5969"
+              result="shape"
+            />
+          </filter>
+          <filter
+            id="filter2_d_36_5969"
+            x="288"
+            y="36"
+            width="33"
+            height="33.8"
+            filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB"
+          >
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feColorMatrix
+              in="SourceAlpha"
+              type="matrix"
+              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              result="hardAlpha"
+            />
+            <feOffset dy="0.8" />
+            <feComposite in2="hardAlpha" operator="out" />
+            <feColorMatrix
+              type="matrix"
+              values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.56 0"
+            />
+            <feBlend
+              mode="normal"
+              in2="BackgroundImageFix"
+              result="effect1_dropShadow_36_5969"
+            />
+            <feBlend
+              mode="normal"
+              in="SourceGraphic"
+              in2="effect1_dropShadow_36_5969"
+              result="shape"
+            />
+          </filter>
+          <filter
+            id="filter3_d_36_5969"
+            x="72"
+            y="36"
+            width="33"
+            height="33.8"
+            filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB"
+          >
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feColorMatrix
+              in="SourceAlpha"
+              type="matrix"
+              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              result="hardAlpha"
+            />
+            <feOffset dy="0.8" />
+            <feComposite in2="hardAlpha" operator="out" />
+            <feColorMatrix
+              type="matrix"
+              values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.56 0"
+            />
+            <feBlend
+              mode="normal"
+              in2="BackgroundImageFix"
+              result="effect1_dropShadow_36_5969"
+            />
+            <feBlend
+              mode="normal"
+              in="SourceGraphic"
+              in2="effect1_dropShadow_36_5969"
+              result="shape"
+            />
+          </filter>
+          <filter
+            id="filter4_d_36_5969"
+            x="360"
+            y="36"
+            width="33"
+            height="33.8"
+            filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB"
+          >
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feColorMatrix
+              in="SourceAlpha"
+              type="matrix"
+              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              result="hardAlpha"
+            />
+            <feOffset dy="0.8" />
+            <feComposite in2="hardAlpha" operator="out" />
+            <feColorMatrix
+              type="matrix"
+              values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.56 0"
+            />
+            <feBlend
+              mode="normal"
+              in2="BackgroundImageFix"
+              result="effect1_dropShadow_36_5969"
+            />
+            <feBlend
+              mode="normal"
+              in="SourceGraphic"
+              in2="effect1_dropShadow_36_5969"
+              result="shape"
+            />
+          </filter>
+          <filter
+            id="filter5_d_36_5969"
+            x="0"
+            y="36"
+            width="33"
+            height="33.8"
+            filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB"
+          >
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feColorMatrix
+              in="SourceAlpha"
+              type="matrix"
+              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              result="hardAlpha"
+            />
+            <feOffset dy="0.8" />
+            <feComposite in2="hardAlpha" operator="out" />
+            <feColorMatrix
+              type="matrix"
+              values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.56 0"
+            />
+            <feBlend
+              mode="normal"
+              in2="BackgroundImageFix"
+              result="effect1_dropShadow_36_5969"
+            />
+            <feBlend
+              mode="normal"
+              in="SourceGraphic"
+              in2="effect1_dropShadow_36_5969"
+              result="shape"
+            />
+          </filter>
+          <filter
+            id="filter6_d_36_5969"
+            x="252"
+            y="72"
+            width="33"
+            height="33.8"
+            filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB"
+          >
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feColorMatrix
+              in="SourceAlpha"
+              type="matrix"
+              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              result="hardAlpha"
+            />
+            <feOffset dy="0.8" />
+            <feComposite in2="hardAlpha" operator="out" />
+            <feColorMatrix
+              type="matrix"
+              values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.56 0"
+            />
+            <feBlend
+              mode="normal"
+              in2="BackgroundImageFix"
+              result="effect1_dropShadow_36_5969"
+            />
+            <feBlend
+              mode="normal"
+              in="SourceGraphic"
+              in2="effect1_dropShadow_36_5969"
+              result="shape"
+            />
+          </filter>
+          <filter
+            id="filter7_d_36_5969"
+            x="108"
+            y="72"
+            width="33"
+            height="33.8"
+            filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB"
+          >
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feColorMatrix
+              in="SourceAlpha"
+              type="matrix"
+              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              result="hardAlpha"
+            />
+            <feOffset dy="0.8" />
+            <feComposite in2="hardAlpha" operator="out" />
+            <feColorMatrix
+              type="matrix"
+              values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.56 0"
+            />
+            <feBlend
+              mode="normal"
+              in2="BackgroundImageFix"
+              result="effect1_dropShadow_36_5969"
+            />
+            <feBlend
+              mode="normal"
+              in="SourceGraphic"
+              in2="effect1_dropShadow_36_5969"
+              result="shape"
+            />
+          </filter>
+          <filter
+            id="filter8_d_36_5969"
+            x="324"
+            y="72"
+            width="33"
+            height="33.8"
+            filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB"
+          >
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feColorMatrix
+              in="SourceAlpha"
+              type="matrix"
+              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              result="hardAlpha"
+            />
+            <feOffset dy="0.8" />
+            <feComposite in2="hardAlpha" operator="out" />
+            <feColorMatrix
+              type="matrix"
+              values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.56 0"
+            />
+            <feBlend
+              mode="normal"
+              in2="BackgroundImageFix"
+              result="effect1_dropShadow_36_5969"
+            />
+            <feBlend
+              mode="normal"
+              in="SourceGraphic"
+              in2="effect1_dropShadow_36_5969"
+              result="shape"
+            />
+          </filter>
+          <filter
+            id="filter9_d_36_5969"
+            x="36"
+            y="72"
+            width="33"
+            height="33.8"
+            filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB"
+          >
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feColorMatrix
+              in="SourceAlpha"
+              type="matrix"
+              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              result="hardAlpha"
+            />
+            <feOffset dy="0.8" />
+            <feComposite in2="hardAlpha" operator="out" />
+            <feColorMatrix
+              type="matrix"
+              values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.56 0"
+            />
+            <feBlend
+              mode="normal"
+              in2="BackgroundImageFix"
+              result="effect1_dropShadow_36_5969"
+            />
+            <feBlend
+              mode="normal"
+              in="SourceGraphic"
+              in2="effect1_dropShadow_36_5969"
+              result="shape"
+            />
+          </filter>
+        </defs>
+      </svg>
+    </div>
+
+    <div
+      class="m-auto relative z-10 w-full sm:w-full md:w-[85%] xl:w-[55%] py-10 px-5 sm:py-10 md:py-20"
     >
       <div
-        class="bg-[#1A1925] text-center relative rounded-none sm:rounded-[28px] md:rounded-[32px] lg:rounded-[35px] cta-card"
+        class="bg-[#1A1925] text-center relative rounded-[28px] sm:rounded-[28px] md:rounded-[32px] lg:rounded-[35px] cta-card"
         style="
           display: flex;
           flex-direction: column;
@@ -28,53 +501,26 @@
           margin: 0 auto;
         "
       >
-        <!-- CTA Badge -->
-        <div class="relative">
-          <div
-            class="inline-flex items-center px-2.5 sm:px-3 md:px-3.5 lg:px-4 py-0.5 sm:py-0.75 md:py-1 bg-[#FFFFFFE5] rounded-full sm:text-xs md:text-sm font-medium text-gray-300"
-            style="
-              font-family: 'Bricolage Grotesque', sans-serif;
-              font-weight: 500;
-              font-size: 12px;
-              line-height: 16px;
-              letter-spacing: 0%;
-              text-align: center;
-            "
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-3 w-3 sm:h-3.5 sm:w-3.5 md:h-4 md:w-4 color-[#A3A3AE] fill-[#A3A3AE]"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M13 10V3L4 14h7v7l9-11h-7z"
-              />
-            </svg>
-            <span class="text-[#1A1925] ml-1">Lets Get Started</span>
-          </div>
+        <div
+          class="absolute -top-[30px] left-1/2 -translate-x-1/2 flex items-center justify-center w-[60px] h-[60px] rounded-[14px] z-20"
+        >
+          <img src="/favicon.svg" alt="Logo" class="w-20 h-20" />
         </div>
-
-        <!-- Main Heading -->
         <h2
-          class="relative text-white cta-heading"
+          class="relative text-white cta-heading pt-4 sm:pt-0"
           style="
-            font-family: 'Bricolage Grotesque', sans-serif;
-            font-weight: 600;
+            font-family: 'Funnel Display', sans-serif;
+            font-weight: 500;
             letter-spacing: -0.04em;
             text-align: center;
             text-transform: capitalize;
             color: #ffffff;
+            font-size: 40px;
           "
         >
-          Access All Features
+          Get Started with Varnish
         </h2>
 
-        <!-- Subtitle -->
         <p
           class="relative cta-subtitle"
           style="
@@ -82,12 +528,12 @@
             font-weight: 400;
             letter-spacing: -0.011em;
             text-align: center;
+            font-size: 16px;
           "
         >
           Get started with a free 14 day trial, no credit card required.
         </p>
 
-        <!-- Company Metrics -->
         <div
           class="relative flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 md:gap-4 lg:gap-6 cta-metrics"
         >
@@ -134,7 +580,6 @@
           >
         </div>
 
-        <!-- CTA Button -->
         <div class="relative">
           <button
             class="hover:opacity-90 transition-opacity sm:w-[135px] md:w-[145px] lg:w-[153px] sm:h-[32px] md:h-[34px] lg:h-[36px] opacity-100"
@@ -146,8 +591,6 @@
               letter-spacing: -0.006em;
               text-align: center;
               color: #ffffff;
-              width: 255px;
-              height: 36px;
               border-radius: 8px;
               padding-top: 8px;
               padding-right: 2px;
@@ -184,13 +627,9 @@
 </script>
 
 <style scoped>
-/* Mobile Card Dimensions */
+/* Keeping your existing styles exactly as they were */
 .cta-card {
   height: 478px;
-  /* padding-top: 50px;
-  padding-right: 29px;
-  padding-bottom: 50px;
-  padding-left: 29px; */
   gap: 30px;
 }
 
@@ -264,12 +703,16 @@
   letter-spacing: -0.011em;
   text-align: center;
   color: #d4d4d4;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 @media (min-width: 640px) {
   .cta-subtitle {
     font-size: 11px;
     line-height: 16px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
