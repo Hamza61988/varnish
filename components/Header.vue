@@ -22,7 +22,7 @@
         >
           <NuxtLink to="/" class="flex items-center" style="gap: 0">
             <img
-              src="/icons/Company logo.svg"
+              src="/icons/Company-logo.svg"
               alt="Varnish Logo"
               class="h-8 w-8 flex-shrink-0 block"
               style="min-width: 32px; min-height: 32px; display: block"
@@ -97,7 +97,7 @@
                 <!-- Dropdown Content -->
                 <div
                   id="solutions-dropdown-menu"
-                  class="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[800px] rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5"
+                  class="absolute top-full left-[200%] -translate-x-1/2 mt-2 w-[800px] rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5"
                   style="z-index: 9999; display: none;"
                 >
                   <!-- Multi-column dropdown content -->

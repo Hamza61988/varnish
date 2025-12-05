@@ -1,10 +1,12 @@
 <template>
-  <section class="mx-auto pb-8 sm:pb-10 md:pb-12 lg:pb-16 px-4 sm:px-6 md:px-0">
+  <section class="mx-auto md:px-[24px] lg:px-0 mt-[24px] px-4 sm:px-6 ">
     <div>
-      <div
-        class="bg-white rounded-lg shadow-lg p-4 sm:p-5 md:p-6 lg:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 sm:gap-5 md:gap-6" style="border-radius: 20px;"
-      >
-        <div class="flex items-center space-x-3 sm:space-x-4 w-full md:w-auto">
+     <div
+  class="bg-white rounded-lg p-[24px] flex flex-col md:flex-row items-start md:items-center md:justify-between gap-4 sm:gap-5 md:gap-6"
+  style="border-radius: 16px; box-shadow: 0 1px 2px -1px #1a19250a, 0 1px 1px #1a19250a, 0 .5px .5px #1a19250a;"
+>
+
+<div class="flex flex-col sm:flex-row items-start sm:items-center sm:space-x-4 space-y-3 sm:space-y-0 w-auto">
           <div class="thumb-icon-container flex-shrink-0">
             <div class="thumb-blob"></div>
             <svg
@@ -31,7 +33,7 @@
             </p>
           </div>
         </div>
-        <button class="contact-us-button w-full md:w-auto mt-4 md:mt-0">
+        <button class="contact-us-button w-full md:w-auto  ">
           Contact Us
         </button>
       </div>
@@ -103,7 +105,7 @@
 .contact-us-button {
   font-family: 'Inter', sans-serif;
   font-weight: 500;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 20px;
   letter-spacing: -0.006em;
   text-align: center;
@@ -111,12 +113,12 @@
   background: 
     linear-gradient(180deg, rgba(236, 236, 236, 0.08) 0%, rgba(85, 85, 85, 0.08) 100%),
     #1F62FF;
-  padding: 12px 24px;
+  padding: 8px 14px;
   border-radius: 8px;
   border: none;
   cursor: pointer;
   white-space: nowrap;
-  width: 100%;
+  width: auto;
   box-shadow: 
     0px 0.25px 0.25px 0px rgba(255, 255, 255, 0.12) inset,
     0px 0.75px 0.75px 0px rgba(255, 255, 255, 0.08) inset,
@@ -132,7 +134,10 @@
 }
 
 .contact-us-button:hover {
-  transform: translateY(-1px);
+background:
+  linear-gradient(180deg, rgba(236, 236, 236, 0.08) 0%, rgba(85, 85, 85, 0.08) 100%),
+  #1251e4;
+
 }
 
 .contact-us-button:active {

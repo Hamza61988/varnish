@@ -17,7 +17,7 @@
         >
           <NuxtLink to="/" class="flex items-center space-x-2">
             <img
-              src="/icons/Company logo.svg"
+              src="/icons/Company-logo.svg"
               alt="Varnish Logo"
               class="h-9 w-9 sm:h-8 sm:w-8"
             />
@@ -84,7 +84,7 @@
           <!-- Award Badge -->
           <div class="flex items-center justify-start space-x-2 pt-1">
             <img
-              src="/images/Frame 2147225686.svg"
+              src="/images/Frame-2147225686.svg"
               alt="BEST CDN AWARD"
               class="h-[50px] sm:h-[62px] w-auto"
             />
