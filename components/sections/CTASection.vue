@@ -1,5 +1,6 @@
 <template>
   <section
+    ref="ctaSection"
     class="relative overflow-hidden bg-white h-[450px] sm:h-[550px] md:h-[620px] lg:h-[676px] w-full"
   >
     <!-- Background Images -->
@@ -90,7 +91,7 @@
               text-align: center;
               color: #ffffff;
             "
-            >120 Employes</span
+            >{{ employeesCounter }} Employees</span
           >
           <span class="text-gray-600 text-xs sm:text-sm md:text-base">•</span>
           <span
@@ -102,7 +103,7 @@
               text-align: center;
               color: #ffffff;
             "
-            >$31.5M Raised</span
+            >${{ raisedCounter }}M Raised</span
           >
           <span class="text-gray-600 text-xs sm:text-sm md:text-base">•</span>
           <span
@@ -114,7 +115,7 @@
               text-align: center;
               color: #ffffff;
             "
-            >7 Years old</span
+            >{{ yearsCounter }} Years old</span
           >
         </div>
 
@@ -139,7 +140,56 @@
 </template>
 
 <script setup lang="ts">
-// CTA Section Component
+import { ref, onMounted } from 'vue';
+
+// Target values
+const employeesTarget = 120;
+const raisedTarget = 31.5;
+const yearsTarget = 7;
+
+// Counters
+const employeesCounter = ref(0);
+const raisedCounter = ref(0);
+const yearsCounter = ref(0);
+
+// Ref for section
+const ctaSection = ref<HTMLElement | null>(null);
+
+// Function to animate counter
+const animateCounter = (counter: any, target: number, duration: number, decimal = false) => {
+  const start = performance.now();
+  const step = (timestamp: number) => {
+    const progress = Math.min((timestamp - start) / duration, 1);
+    counter.value = decimal ? +(target * progress).toFixed(1) : Math.floor(target * progress);
+    if (progress < 1) {
+      requestAnimationFrame(step);
+    } else {
+      counter.value = target;
+    }
+  };
+  requestAnimationFrame(step);
+};
+
+onMounted(() => {
+  console.log('fired')
+  if (ctaSection.value) {
+    const observer = new IntersectionObserver(
+      (entries, obs) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            // Animate counters when section enters viewport
+            animateCounter(employeesCounter, employeesTarget, 2000);
+            animateCounter(raisedCounter, raisedTarget, 2000, true);
+            animateCounter(yearsCounter, yearsTarget, 2000);
+            obs.disconnect(); // Stop observing after triggering
+          }
+        });
+      },
+      { threshold: 0.3 } // Trigger when 30% of section is visible
+    );
+    observer.observe(ctaSection.value);
+  }
+});
 </script>
 
 <style scoped>

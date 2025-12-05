@@ -1,47 +1,56 @@
 <template>
-  <div class="fixed inset-0 overflow-y-auto flex items-center justify-center px-4 py-2" style="background-color: #FFFFFF; font-family: 'Bricolage Grotesque', sans-serif;">
+  <div
+    class="fixed inset-0 overflow-y-auto flex items-center justify-center px-4 py-2"
+    style="
+      background-color: #ffffff;
+      font-family: 'Bricolage Grotesque', sans-serif;
+    "
+  >
     <!-- Background decorative shapes -->
     <div class="fixed inset-0 pointer-events-none overflow-hidden">
       <div class="absolute top-0 right-0 w-96 h-96 opacity-20"></div>
-      <div class="absolute bottom-0 left-0 w-96 h-96 opacity-20" style="background: linear-gradient(315deg, #E5E5E5 0%, transparent 100%); border-radius: 50%; transform: translate(-30%, 30%);"></div>
+      <div
+        class="absolute bottom-0 left-0 w-96 h-96 opacity-20"
+        style="
+          background: linear-gradient(315deg, #e5e5e5 0%, transparent 100%);
+          border-radius: 50%;
+          transform: translate(-30%, 30%);
+        "
+      ></div>
       <!-- BG_Line_landing.svg in top right -->
       <div class="absolute top-0 right-0 hidden sm:block">
-        <img 
-          src="/images/BG_Line_landing.svg" 
-          alt="Background line decoration top right" 
+        <img
+          src="/images/BG_Line_landing.svg"
+          alt="Background line decoration top right"
           class="w-auto h-auto"
-          style="max-width: 241px; max-height: 481px;"
+          style="max-width: 241px; max-height: 481px"
         />
       </div>
       <!-- BGline.svg in bottom left -->
       <div class="absolute bottom-0 left-0 hidden sm:block">
-        <img 
-          src="/images/about/BGline.svg" 
-          alt="Background line decoration" 
+        <img
+          src="/images/about/BGline.svg"
+          alt="Background line decoration"
           class="w-auto h-auto"
-          style="max-width: 657px; max-height: 209px;"
+          style="max-width: 657px; max-height: 209px"
         />
       </div>
     </div>
 
     <!-- Signup Card Container -->
-    <div 
+    <div
       class="relative z-10 flex flex-col w-full max-w-[589px] mx-auto px-4 py-6 sm:px-6 sm:py-8 sm:gap-8 sm:rounded-[25px] md:px-8 md:py-10 md:gap-10 lg:px-[102px] lg:py-11 lg:gap-[60px] my-4"
-      style="
-        gap: 24px;
-        border-radius: 20px;
-        background: #1A1925;
-      "
+      style="gap: 24px; border-radius: 20px; background: #1a1925"
     >
       <!-- Header Section with Logo and Title -->
       <div class="flex items-center justify-center">
         <div class="flex items-center gap-1.5 sm:gap-2 md:gap-3">
           <img
-            src="/icons/Company logo.svg"
+            src="/icons/Company-logo.svg"
             alt="Varnish Logo"
             class="rounded-lg w-8 h-8 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-[72px] lg:h-[72px]"
           />
-          <h1 
+          <h1
             class="text-white text-xl sm:text-2xl md:text-3xl lg:text-[57.58px] lg:leading-[47.5px]"
             style="
               font-family: 'Bricolage Grotesque', sans-serif;
@@ -49,7 +58,7 @@
               font-style: bold;
               letter-spacing: -0.03em;
               vertical-align: bottom;
-              color: #FFFFFF;
+              color: #ffffff;
             "
           >
             Varnish
@@ -58,7 +67,7 @@
       </div>
 
       <!-- Form Section -->
-      <div class="flex flex-col gap-3 sm:gap-4" style="gap: 16px;">
+      <div class="flex flex-col gap-3 sm:gap-4" style="gap: 16px">
         <!-- Your Website Input -->
         <input
           v-model="formData.website"
@@ -68,8 +77,8 @@
           style="
             padding: 8px 12px;
             border-radius: 6px;
-            background: #FFFFFF;
-            color: #1A192599;
+            background: #ffffff;
+            color: #1a192599;
             font-family: 'Bricolage Grotesque', sans-serif;
             font-weight: 700;
             line-height: 16px;
@@ -86,8 +95,8 @@
           style="
             padding: 8px 12px;
             border-radius: 6px;
-            background: #FFFFFF;
-            color: #1A192599;
+            background: #ffffff;
+            color: #1a192599;
             font-family: 'Bricolage Grotesque', sans-serif;
             font-weight: 700;
             line-height: 16px;
@@ -104,8 +113,8 @@
           style="
             padding: 8px 12px;
             border-radius: 6px;
-            background: #FFFFFF;
-            color: #1A192599;
+            background: #ffffff;
+            color: #1a192599;
             font-family: 'Bricolage Grotesque', sans-serif;
             font-weight: 700;
             line-height: 16px;
@@ -122,8 +131,8 @@
           style="
             padding: 8px 12px;
             border-radius: 6px;
-            background: #FFFFFF;
-            color: #1A192599;
+            background: #ffffff;
+            color: #1a192599;
             font-family: 'Bricolage Grotesque', sans-serif;
             font-weight: 700;
             line-height: 16px;
@@ -140,8 +149,8 @@
           style="
             padding: 8px 12px;
             border-radius: 6px;
-            background: #FFFFFF;
-            color: #1A192599;
+            background: #ffffff;
+            color: #1a192599;
             font-family: 'Bricolage Grotesque', sans-serif;
             font-weight: 700;
             line-height: 16px;
@@ -150,20 +159,16 @@
         />
 
         <!-- Checkboxes Section -->
-        <div class="flex flex-col gap-2 sm:gap-3" style="gap: 12px;">
+        <div class="flex flex-col gap-2 sm:gap-3" style="gap: 12px">
           <!-- Terms and Privacy Policy Checkbox -->
           <label class="flex items-start gap-2 cursor-pointer">
             <input
               v-model="formData.acceptTerms"
               type="checkbox"
               class="w-4 h-4 sm:w-5 sm:h-5 rounded border-2 border-white bg-transparent checked:bg-white focus:outline-none mt-0.5 sm:mt-0"
-              style="
-                accent-color: #FFFFFF;
-                cursor: pointer;
-                flex-shrink: 0;
-              "
+              style="accent-color: #ffffff; cursor: pointer; flex-shrink: 0"
             />
-            <span 
+            <span
               class="text-white text-xs sm:text-sm md:text-base"
               style="
                 font-family: 'Bricolage Grotesque', sans-serif;
@@ -172,14 +177,11 @@
                 letter-spacing: 0%;
               "
             >
-              I accept the 
-              <a 
-                href="#" 
+              I accept the
+              <a
+                href="#"
                 class="underline"
-                style="
-                  text-decoration: underline;
-                  color: #FFFFFF;
-                "
+                style="text-decoration: underline; color: #ffffff"
               >
                 terms and privacy policy
               </a>
@@ -192,13 +194,9 @@
               v-model="formData.agreeToContact"
               type="checkbox"
               class="w-4 h-4 sm:w-5 sm:h-5 rounded border-2 border-white bg-transparent checked:bg-white focus:outline-none mt-0.5 sm:mt-0"
-              style="
-                accent-color: #FFFFFF;
-                cursor: pointer;
-                flex-shrink: 0;
-              "
+              style="accent-color: #ffffff; cursor: pointer; flex-shrink: 0"
             />
-            <span 
+            <span
               class="text-white text-xs sm:text-sm md:text-base"
               style="
                 font-family: 'Bricolage Grotesque', sans-serif;
@@ -219,7 +217,7 @@
           style="
             padding: 8px 12px;
             border-radius: 6px;
-            background: #1F62FF;
+            background: #1f62ff;
             font-family: 'Bricolage Grotesque', sans-serif;
             font-weight: 700;
             line-height: 16px;
@@ -235,44 +233,44 @@
 
 <script setup lang="ts">
 definePageMeta({
-  layout: 'blank'
-})
+  layout: "blank",
+});
 
 // Prevent body scrolling but allow card scrolling if needed
 onMounted(() => {
-  if (typeof window !== 'undefined') {
-    document.body.style.overflow = 'hidden'
-    document.documentElement.style.overflow = 'hidden'
+  if (typeof window !== "undefined") {
+    document.body.style.overflow = "hidden";
+    document.documentElement.style.overflow = "hidden";
   }
-})
+});
 
 onUnmounted(() => {
-  if (typeof window !== 'undefined') {
-    document.body.style.overflow = ''
-    document.documentElement.style.overflow = ''
+  if (typeof window !== "undefined") {
+    document.body.style.overflow = "";
+    document.documentElement.style.overflow = "";
   }
-})
+});
 
 const formData = ref({
-  website: '',
-  name: '',
-  username: '',
-  password: '',
-  confirmPassword: '',
+  website: "",
+  name: "",
+  username: "",
+  password: "",
+  confirmPassword: "",
   acceptTerms: false,
-  agreeToContact: false
-})
+  agreeToContact: false,
+});
 
 const handleSignup = () => {
   // Handle signup logic here
-  console.log('Signup attempt:', formData.value)
-}
+  console.log("Signup attempt:", formData.value);
+};
 </script>
 
 <style scoped>
 /* Ensure text fill works properly */
 h1 {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 /* Placeholder styling for input fields */
@@ -289,7 +287,7 @@ input[type="checkbox"] {
   -moz-appearance: none;
   width: 16px;
   height: 16px;
-  border: 2px solid #FFFFFF;
+  border: 2px solid #ffffff;
   border-radius: 4px;
   background: transparent;
   cursor: pointer;
@@ -304,16 +302,16 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"]:checked {
-  background: #FFFFFF;
+  background: #ffffff;
 }
 
 input[type="checkbox"]:checked::after {
-  content: '✓';
+  content: "✓";
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #1A1925;
+  color: #1a1925;
   font-size: 12px;
   font-weight: bold;
 }
@@ -333,4 +331,3 @@ input[type="checkbox"]:checked::after {
   width: 100%;
 }
 </style>
-

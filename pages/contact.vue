@@ -1,41 +1,19 @@
 <template>
-  <div class="min-h-screen bg-gray-50 relative overflow-hidden">
-    <!-- Background Wave Pattern - Bottom Left -->
+  <div class="min-h-screen relative overflow-hidden bg-gray-50">
     <div
       class="absolute inset-0 pointer-events-none hidden md:block"
       style="
         background-image: url('/images/about/BGline.svg');
         background-repeat: no-repeat;
         background-position: left bottom;
-        background-size: auto;
-        opacity: 1;
         z-index: 0;
       "
     ></div>
 
-    <div class="container mx-auto px-4 py-16 relative z-10">
-      <!-- Header Section -->
-      <div class="text-center mb-12 flex flex-col items-center">
-        <!-- Contact Tag -->
-        <div class="flex items-center justify-center mb-4 sm:mb-6">
-          <div
-            class="flex items-center"
-            style="
-              height: 24px;
-              gap: 2px;
-              border-radius: 999px;
-              padding-top: 4px;
-              padding-right: 8px;
-              padding-bottom: 4px;
-              padding-left: 8px;
-              background: #ffffffe5;
-              box-shadow: 0px 0.5px 0.5px 0px rgba(7, 1, 19, 0.03),
-                0px 1px 1px -0.5px rgba(7, 1, 19, 0.03),
-                0px 2px 2px -1px rgba(7, 1, 19, 0.03),
-                0px 3px 3px -1.5px rgba(7, 1, 19, 0.03);
-            "
-          >
-            <!-- Lightning Bolt Icon -->
+    <div class="max-w-2xl mx-auto md:px-[2.3547rem] px-[1.125rem] lg:px-0 py-16 relative z-10">
+      
+      <div class="text-center mb-12 flex flex-col items-center gap-4">
+        <div class="inline-flex items-center bg-white/90 rounded-full px-3 py-1 shadow-sm border border-gray-100 gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-4 w-4 fill-[#A3A3AE] stroke-[#A3A3AE]"
@@ -51,363 +29,131 @@
                 d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"
               />
             </svg>
-            <span
-              style="
-                font-family: 'Bricolage Grotesque', sans-serif;
-                font-weight: 500;
-                font-size: 12px;
-                line-height: 16px;
-                letter-spacing: 0%;
-                text-align: center;
-                color: #1a1925;
-              "
-            >
-              Contact
-            </span>
-          </div>
+          <span class="text-xs font-medium text-[#1a1925]">Contact</span>
         </div>
 
-        <!-- Main Title -->
-        <h1
-          class="mb-4 text-center w-full"
-          style="
-            font-family: 'Bricolage Grotesque', sans-serif;
-            font-weight: 500;
-            font-size: 48px;
-            line-height: 56px;
-            letter-spacing: -0.02em;
-            text-align: center;
-            vertical-align: middle;
-            color: #1a1925;
-          "
-        >
+        <h1 class="text-4xl md:text-5xl font-medium text-[#1a1925] tracking-tight" style="font-family: 'Funnel Display', sans-serif;">
           Contact
         </h1>
 
-        <!-- Subtitle -->
-        <p
-          class="text-center w-full"
-          style="
-            font-family: 'Inter', sans-serif;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 24px;
-            letter-spacing: -0.011em;
-            text-align: center;
-            color: #51515e;
-          "
-        >
+        <p class="text-[#51515e] text-base">
           Get quick answers to any questions that you may have.
         </p>
       </div>
 
-      <!-- Information Cards -->
-      <div class="flex justify-center mb-16">
-        <div
-          class="grid grid-cols-1 md:grid-cols-3 gap-6"
-          style="max-width: 622px"
-        >
-          <!-- FAQ Card -->
-          <div
-            class="bg-white p-6 w-full md:w-[200.67px] md:h-[210px] h-auto"
-            style="border-radius: 20px; border: 1px solid #eeeef0"
-          >
-            <div class="flex flex-col h-full">
-              <div class="">
-                <div
-                  class="mb-4 relative"
-                  style="padding-top: 4.67px; padding-left: 2.33px"
-                >
-                  <!-- Icon Background - bgcardicon.svg -->
-                  <div
-                    class="absolute -top-2 -left-2 w-8 h-8"
-                    style="
-                      background-image: url('/images/about/bgcardicon.svg');
-                      background-repeat: no-repeat;
-                      background-size: contain;
-                      z-index: 0;
-                    "
-                  ></div>
-                  <!-- Reliability Icon -->
-                  <img
-                    src="/images/about/Icon.svg"
-                    alt="Reliability Icon"
-                    class="relative z-10"
-                    style="height: 20.71px; width: auto; color: #1a1925"
-                  />
-                </div>
-                <h3
-                  class="mb-2"
-                  style="
-                    font-family: 'Inter', sans-serif;
-                    font-weight: 500;
-                    font-size: 16px;
-                    line-height: 24px;
-                    letter-spacing: -0.011em;
-                    color: #1a1925;
-                  "
-                >
-                  FAQ
-                </h3>
-                <p
-                  style="
-                    font-family: 'Inter', sans-serif;
-                    font-weight: 400;
-                    font-size: 13px;
-                    line-height: 20px;
-                    letter-spacing: -0.006em;
-                    color: #51515e;
-                  "
-                >
-                  Have questions? Find answers in our frequently asked
-                  questions.
-                </p>
-              </div>
-            </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+        <div class="info-card">
+          <div class="relative mb-4">
+            <div class="absolute -top-2 -left-2 w-8 h-8 bg-contain bg-no-repeat" style="background-image: url('/images/about/bgcardicon.svg');"></div>
+            <img src="/images/about/Icon.svg" alt="Icon" class="relative z-10 h-5 w-auto" />
           </div>
+          <h3 class="font-medium text-[#1a1925] mb-2">FAQ</h3>
+          <p class="text-sm text-[#51515e]">Have questions? Find answers in our frequently asked questions.</p>
+        </div>
 
-          <!-- Knowledge Base Card -->
-          <div
-            class="bg-white p-6 w-full md:w-[200.67px] md:h-[210px] h-auto"
-            style="border-radius: 20px; border: 1px solid #eeeef0"
-          >
-            <div class="flex flex-col h-full">
-              <div>
-                <div
-                  class="mb-4 relative"
-                  style="padding-top: 4.67px; padding-left: 2.33px"
-                >
-                  <!-- Icon Background - bgcardicon.svg -->
-                  <div
-                    class="absolute -top-2 -left-2 w-8 h-8"
-                    style="
-                      background-image: url('/images/about/bgcardicon.svg');
-                      background-repeat: no-repeat;
-                      background-size: contain;
-                      z-index: 0;
-                    "
-                  ></div>
-                  <!-- Reliability Icon -->
-                  <img
-                    src="/images/about/Group.svg"
-                    alt="Reliability Icon"
-                    class="relative z-10"
-                    style="height: 20.71px; width: auto; color: #1a1925"
-                  />
-                </div>
-                <h3
-                  class="mb-2"
-                  style="
-                    font-family: 'Inter', sans-serif;
-                    font-weight: 500;
-                    font-size: 16px;
-                    line-height: 24px;
-                    letter-spacing: -0.011em;
-                    color: #1a1925;
-                  "
-                >
-                  Knowledge base
-                </h3>
-                <p
-                  style="
-                    font-family: 'Inter', sans-serif;
-                    font-weight: 400;
-                    font-size: 13px;
-                    line-height: 20px;
-                    letter-spacing: -0.006em;
-                    color: #51515e;
-                  "
-                >
-                  Need help? Find guidance in our extensive knowledge base.
-                </p>
-              </div>
-            </div>
+        <div class="info-card">
+          <div class="relative mb-4">
+            <div class="absolute -top-2 -left-2 w-8 h-8 bg-contain bg-no-repeat" style="background-image: url('/images/about/bgcardicon.svg');"></div>
+            <img src="/images/about/Group.svg" alt="Icon" class="relative z-10 h-5 w-auto" />
           </div>
+          <h3 class="font-medium text-[#1a1925] mb-2">Knowledge base</h3>
+          <p class="text-sm text-[#51515e]">Need help? Find guidance in our extensive knowledge base.</p>
+        </div>
 
-          <!-- Support Request Card -->
-          <div
-            class="bg-white p-6 w-full md:w-[200.67px] md:h-[210px] h-auto"
-            style="border-radius: 20px; border: 1px solid #eeeef0"
-          >
-            <div class="flex flex-col h-full">
-              <div>
-                <div
-                  class="mb-4 relative"
-                  style="padding-top: 4.67px; padding-left: 2.33px"
-                >
-                  <!-- Icon Background - bgcardicon.svg -->
-                  <div
-                    class="absolute -top-2 -left-2 w-8 h-8"
-                    style="
-                      background-image: url('/images/about/bgcardicon.svg');
-                      background-repeat: no-repeat;
-                      background-size: contain;
-                      z-index: 0;
-                    "
-                  ></div>
-                  <!-- Reliability Icon -->
-                  <img
-                    src="/images/about/Icon3rd.svg"
-                    alt="Reliability Icon"
-                    class="relative z-10"
-                    style="height: 20.71px; width: auto; color: #1a1925"
-                  />
-                </div>
-                <h3
-                  class="mb-2"
-                  style="
-                    font-family: 'Inter', sans-serif;
-                    font-weight: 500;
-                    font-size: 16px;
-                    line-height: 24px;
-                    letter-spacing: -0.011em;
-                    color: #1a1925;
-                  "
-                >
-                  Support request
-                </h3>
-                <p
-                  style="
-                    font-family: 'Inter', sans-serif;
-                    font-weight: 400;
-                    font-size: 13px;
-                    line-height: 20px;
-                    letter-spacing: -0.006em;
-                    color: #51515e;
-                  "
-                >
-                  Existing customer? Please open a new support request.
-                </p>
-              </div>
-            </div>
+        <div class="info-card">
+          <div class="relative mb-4">
+            <div class="absolute -top-2 -left-2 w-8 h-8 bg-contain bg-no-repeat" style="background-image: url('/images/about/bgcardicon.svg');"></div>
+            <img src="/images/about/Icon3rd.svg" alt="Icon" class="relative z-10 h-5 w-auto" />
           </div>
+          <h3 class="font-medium text-[#1a1925] mb-2">Support request</h3>
+          <p class="text-sm text-[#51515e]">Existing customer? Please open a new support request.</p>
         </div>
       </div>
 
-      <!-- Contact Form -->
-      <div class="mx-auto contact-form-container" style="margin-bottom: 10%">
+      <div class="w-full mb-12">
         <form @submit.prevent="handleSubmit" class="space-y-6">
-          <!-- Name and Email Row -->
+          
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <!-- Name Field -->
-            <div>
-              <label
-                for="name"
-                class="block text-sm font-medium text-gray-700 mb-2"
-              >
-                Name *
-              </label>
+            <div class="flex flex-col gap-2">
+              <label for="name" class="text-sm font-medium text-gray-700">Name *</label>
               <input
                 id="name"
                 v-model="form.name"
                 type="text"
                 placeholder="John Doe"
                 required
-                class="contact-input"
+                class="input-base input-shadow"
               />
             </div>
 
-            <!-- Email Field -->
-            <div>
-              <label
-                for="email"
-                class="block text-sm font-medium text-gray-700 mb-2"
-              >
-                Email *
-              </label>
+            <div class="flex flex-col gap-2">
+              <label for="email" class="text-sm font-medium text-gray-700">Email *</label>
               <input
                 id="email"
                 v-model="form.email"
                 type="email"
                 placeholder="John@gmail.com"
                 required
-                class="contact-input"
+                class="input-base input-shadow"
               />
             </div>
           </div>
 
-          <!-- Type Field -->
-          <div class="relative">
-            <label
-              for="type"
-              class="block text-sm font-medium text-gray-700 mb-2"
-            >
-              Type *
-            </label>
-            <select
-              id="type"
-              v-model="form.type"
-              required
-              class="contact-input contact-select contact-type-select appearance-none pr-10"
-            >
-              <option value="general">General Inquiry</option>
-              <option value="support">Support</option>
-              <option value="sales">Sales</option>
-              <option value="technical">Technical</option>
-            </select>
-            <div
-              class="absolute right-3 top-[30px] pointer-events-none flex items-center h-[36px]"
-            >
-              <svg
-                class="w-5 h-5 text-gray-400"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
+          <div class="flex flex-col gap-2 relative">
+            <label for="type" class="text-sm font-medium text-gray-700">Type *</label>
+            <div class="relative w-full">
+              <select
+                id="type"
+                v-model="form.type"
+                required
+                class="input-base input-shadow w-full appearance-none pr-10 cursor-pointer"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
+                <option value="general">General Inquiry</option>
+                <option value="support">Support</option>
+                <option value="sales">Sales</option>
+                <option value="technical">Technical</option>
+              </select>
+              <div class="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-gray-400">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
             </div>
           </div>
 
-          <!-- Message Field -->
-          <div>
-            <label
-              for="message"
-              class="block text-sm font-medium text-gray-700 mb-2"
-            >
-              Message *
-            </label>
+          <div class="flex flex-col gap-2">
+            <label for="message" class="text-sm font-medium text-gray-700">Message *</label>
             <textarea
               id="message"
               v-model="form.message"
               rows="6"
               placeholder="Write your message here..."
               required
-              class="contact-textarea"
+              class="input-base input-shadow resize-none h-32"
             ></textarea>
           </div>
 
-          <!-- Privacy Policy Checkbox -->
-          <div class="flex items-center space-x-3 pt-2">
+          <div class="flex items-center space-x-3">
             <input
               id="privacy"
               v-model="form.agreeToPrivacy"
               type="checkbox"
               required
-              class="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500 flex-shrink-0"
+              class="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
             />
-            <label for="privacy" class="contact-checkbox-label">
+            <label for="privacy" class="text-sm font-medium text-[#51515e] cursor-pointer">
               I Agree to the privacy policy
             </label>
           </div>
 
-          <!-- Separator -->
-          <hr class="contact-separator" />
+          <hr class="border-t border-gray-200" />
 
-          <!-- Acknowledgement Text & Submit Button -->
-          <div
-            class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pt-2"
-          >
-            <p class="contact-acknowledgement">
+          <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <p class="text-sm text-[#51515e]">
               By submitting, I acknowledge that I have read and agree to the
-              <span class="contact-privacy-link">Privacy Policy</span>.
+              <span class="text-[#1a1925] font-medium cursor-pointer hover:text-blue-600">Privacy Policy</span>.
             </p>
-            <button type="submit" class="contact-submit-btn flex-shrink-0">
+            <button type="submit" class="submit-btn">
               Submit
             </button>
           </div>
@@ -429,12 +175,8 @@ const form = ref({
 });
 
 const handleSubmit = () => {
-  // Handle form submission here
   console.log("Form submitted:", form.value);
-  // You can add API call or other logic here
   alert("Thank you for your message! We will get back to you soon.");
-
-  // Reset form
   form.value = {
     name: "",
     email: "",
@@ -446,222 +188,82 @@ const handleSubmit = () => {
 </script>
 
 <style scoped>
-/* Contact Form Container */
-.contact-form-container {
-  max-width: 622px;
-  width: 100%;
-  background: transparent;
-  border-radius: 8px;
-}
+/* Reusable Styles */
 
-/* Contact Form Input Fields */
-.contact-input {
+/* 1. Base style for all Inputs, Selects, and Textareas */
+.input-base {
   width: 100%;
-  max-width: 305px;
-  height: 36px;
   border-radius: 8px;
   padding: 8px 12px;
-  background: #ffffffe5;
+  background-color: transparent;
   border: none;
   outline: none;
   font-family: "Inter", sans-serif;
   font-size: 14px;
   color: #1a1925;
-  box-shadow: 0px 0.5px 0.5px 0px rgba(7, 1, 19, 0.08),
-    0px 1px 1px -0.5px rgba(7, 1, 19, 0.08),
-    0px 2px 2px -1px rgba(7, 1, 19, 0.08),
-    0px 3px 3px -1.5px rgba(7, 1, 19, 0.08),
-    0px 0px 0px 1px rgba(26, 25, 37, 0.08);
   transition: all 0.2s ease;
 }
 
-.contact-input:focus {
-  box-shadow: 0px 0.5px 0.5px 0px rgba(7, 1, 19, 0.08),
+/* 2. The Custom Shadow (extracted from your inline styles) */
+.input-shadow {
+  box-shadow: 
+    0 0 0 1px #1a192514, 
+    0 3px 3px -1.5px #07011308,
+    0 2px 2px -1px #07011308, 
+    0 1px 1px -0.5px #07011308,
+    0 0.5px 0.5px #07011308;
+}
+
+.input-base:focus {
+  box-shadow: 
+    0px 0.5px 0.5px 0px rgba(7, 1, 19, 0.08),
     0px 1px 1px -0.5px rgba(7, 1, 19, 0.08),
     0px 2px 2px -1px rgba(7, 1, 19, 0.08),
     0px 3px 3px -1.5px rgba(7, 1, 19, 0.08),
     0px 0px 0px 1px rgba(31, 98, 255, 0.5);
 }
 
-/* Select Dropdown - Arrow inside input */
-.contact-select {
-  padding-right: 40px !important;
-  cursor: pointer;
+/* 3. Info Cards */
+.info-card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 20px;
+  border: 1px solid #eeeef0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
-/* Type Select - Full width like textarea */
-.contact-type-select {
-  width: 100% !important;
-  max-width: 622px !important;
-}
-
-/* Contact Form Textarea */
-.contact-textarea {
-  width: 100%;
-  max-width: 622px;
-  height: 128px;
-  border-radius: 14px;
-  padding: 10px 12px;
-  background: #ffffffe5;
-  border: none;
-  outline: none;
-  font-family: "Inter", sans-serif;
-  font-size: 14px;
-  color: #1a1925;
-  resize: none;
-  box-shadow: 0px 0.5px 0.5px 0px rgba(7, 1, 19, 0.08),
-    0px 1px 1px -0.5px rgba(7, 1, 19, 0.08),
-    0px 2px 2px -1px rgba(7, 1, 19, 0.08),
-    0px 3px 3px -1.5px rgba(7, 1, 19, 0.08),
-    0px 0px 0px 1px rgba(26, 25, 37, 0.08);
-  transition: all 0.2s ease;
-}
-
-.contact-textarea:focus {
-  box-shadow: 0px 0.5px 0.5px 0px rgba(7, 1, 19, 0.08),
-    0px 1px 1px -0.5px rgba(7, 1, 19, 0.08),
-    0px 2px 2px -1px rgba(7, 1, 19, 0.08),
-    0px 3px 3px -1.5px rgba(7, 1, 19, 0.08),
-    0px 0px 0px 1px rgba(31, 98, 255, 0.5);
-}
-
-/* Submit Button */
-.contact-submit-btn {
-  width: 72px;
+/* 4. Submit Button */
+.submit-btn {
+  width: auto;
+  min-width: 72px;
   height: 36px;
   border-radius: 8px;
-  padding: 8px 2px;
+  padding: 0 16px;
   background: #1f62ff;
-  background-image: linear-gradient(
-    180deg,
-    rgba(236, 236, 236, 0.08) 0%,
-    rgba(85, 85, 85, 0.08) 100%
-  );
+  background-image: linear-gradient(180deg, rgba(255,255,255,0.08) 0%, rgba(85,85,85,0.08) 100%);
   border: none;
   color: white;
   font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 13px;
-  line-height: 20px;
-  letter-spacing: -0.006em;
   cursor: pointer;
-  white-space: nowrap;
-  box-shadow: 0px 0.25px 0.25px 0px rgba(255, 255, 255, 0.12) inset,
+  box-shadow: 
+    0px 0.25px 0.25px 0px rgba(255, 255, 255, 0.12) inset,
     0px 0.75px 0.75px 0px rgba(255, 255, 255, 0.08) inset,
     0px 1px 3px 0px rgba(255, 255, 255, 0.08) inset,
-    0px -8px 20px 0px rgba(26, 25, 37, 0.08) inset,
-    0px 0.25px 0.25px 0px rgba(26, 25, 37, 0.24),
-    0px 0.75px 0.75px 0px rgba(26, 25, 37, 0.12),
-    0px 1px 1.5px -0.5px rgba(26, 25, 37, 0.12),
-    0px 2px 4px -1px rgba(26, 25, 37, 0.12),
-    0px 4px 8px -4px rgba(26, 25, 37, 0.12),
-    0px 8px 12px -4px rgba(26, 25, 37, 0.06);
+    0px 2px 4px -1px rgba(26, 25, 37, 0.12);
   transition: all 0.2s ease;
 }
 
-.contact-submit-btn:hover {
-  opacity: 0.9;
+.submit-btn:hover {
+
+  background: #0346e2;
+  transform: translateY(-1px);
 }
 
-.contact-submit-btn:active {
+.submit-btn:active {
   transform: translateY(1px);
-}
-
-/* Checkbox Label */
-.contact-checkbox-label {
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: -0.006em;
-  color: #51515e;
-  cursor: pointer;
-}
-
-.contact-checkbox-link {
-  color: #51515e;
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-.contact-checkbox-link:hover {
-  color: #1f62ff;
-}
-
-/* Separator */
-.contact-separator {
-  border: none;
-  border-top: 1px solid #eeeef0;
-  margin: 0;
-  width: 100%;
-}
-
-/* Acknowledgement Text */
-.contact-acknowledgement {
-  font-family: "Inter", sans-serif;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 20px;
-  letter-spacing: -0.006em;
-  color: #51515e;
-  text-align: left;
-}
-
-.contact-privacy-link {
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 20px;
-  letter-spacing: -0.006em;
-  color: #1a1925;
-  cursor: pointer;
-}
-
-.contact-privacy-link:hover {
-  color: #1f62ff;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  /* Ensure header section is centered on mobile */
-  .container .text-center {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    text-align: center !important;
-  }
-
-  /* Main Title - Responsive font size */
-  h1 {
-    font-size: 36px !important;
-    line-height: 44px !important;
-    text-align: center !important;
-  }
-
-  .contact-form-container {
-    width: 100%;
-    padding: 24px 16px;
-  }
-
-  .contact-input {
-    max-width: 100%;
-  }
-
-  .contact-textarea {
-    max-width: 100%;
-  }
-
-  .contact-submit-btn {
-    width: auto;
-    padding: 8px 12px;
-  }
-
-  .contact-acknowledgement {
-    text-align: center !important;
-  }
-
-  .contact-separator {
-    margin: 16px 0;
-  }
 }
 </style>
