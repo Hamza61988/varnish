@@ -534,51 +534,20 @@
           Get started with a free 14 day trial, no credit card required.
         </p>
 
-        <div
-          class="relative flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 md:gap-4 lg:gap-6 cta-metrics"
-        >
-          <span
-            class="cta-metric-text"
-            style="
-              font-family: 'Funnel Display', sans-serif;
-              font-weight: 500;
-              letter-spacing: -0.02em;
-              text-align: center;
-              color: #ffffff;
-            "
-            >120 Employes</span
-          >
-          <span
-            class="hidden sm:inline text-gray-600 text-xs sm:text-sm md:text-base"
-            >•</span
-          >
-          <span
-            class="cta-metric-text"
-            style="
-              font-family: 'Funnel Display', sans-serif;
-              font-weight: 500;
-              letter-spacing: -0.02em;
-              text-align: center;
-              color: #ffffff;
-            "
-            >$31.5M Raised</span
-          >
-          <span
-            class="hidden sm:inline text-gray-600 text-xs sm:text-sm md:text-base"
-            >•</span
-          >
-          <span
-            class="cta-metric-text"
-            style="
-              font-family: 'Funnel Display', sans-serif;
-              font-weight: 500;
-              letter-spacing: -0.02em;
-              text-align: center;
-              color: #ffffff;
-            "
-            >7 Years old</span
-          >
-        </div>
+       <div class="relative flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 md:gap-4 lg:gap-6 cta-metrics">
+  <div
+    v-for="(stat, index) in stats"
+    :key="index"
+    class="flex items-center gap-1"
+  >
+    <span class="cta-metric-text">
+      {{ stat.isMoney ? '$' : '' }}{{ stat.display.value }}{{ stat.isMoney && stat.value % 1 !== 0 ? 'M' : '' }}
+    </span>
+    <span class="cta-metric-text">{{ stat.label }}</span>
+    <span v-if="index < stats.length - 1" class="hidden sm:inline text-gray-600 text-xs sm:text-sm md:text-base">•</span>
+  </div>
+</div>
+
 
         <div class="relative">
           <button
@@ -623,8 +592,65 @@
 </template>
 
 <script setup lang="ts">
-// Access All Features CTA Section
+import { ref, onMounted } from 'vue';
+
+const stats = [
+  { label: 'Employees', value: 120, display: ref(0) },
+  { label: 'Raised', value: 31.5, isMoney: true, display: ref(0) },
+  { label: 'Years old', value: 7, display: ref(0) },
+];
+
+const hasAnimated = ref(false);
+
+const DESKTOP_WIDTH = 1024;
+
+const animateNumber = (stat: any, duration = 2000) => {
+  const start = 0;
+  const end = stat.value;
+  const startTime = performance.now();
+
+  const step = (currentTime: number) => {
+    const progress = Math.min((currentTime - startTime) / duration, 1);
+    stat.display.value = stat.isMoney
+      ? parseFloat((end * progress).toFixed(1))
+      : Math.floor(end * progress);
+
+    if (progress < 1) {
+      requestAnimationFrame(step);
+    }
+  };
+
+  requestAnimationFrame(step);
+};
+
+onMounted(() => {
+  if (window.innerWidth < DESKTOP_WIDTH) {
+    stats.forEach(stat => {
+      stat.display.value = stat.value;
+    });
+    return;
+  }
+
+  const section = document.querySelector('.cta-card');
+  if (!section) return;
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !hasAnimated.value) {
+          stats.forEach(stat => animateNumber(stat));
+          hasAnimated.value = true;
+          observer.disconnect();
+        }
+      });
+    },
+    { threshold: 0.5 }
+  );
+
+  observer.observe(section);
+});
 </script>
+
 
 <style scoped>
 /* Keeping your existing styles exactly as they were */

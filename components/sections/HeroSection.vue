@@ -10,13 +10,15 @@
           <!-- Top Badge -->
           <div class="mb-4 sm:mb-5 md:mb-6">
             <div
-            style="    padding-top: 4px;
-    padding-right: 12px;
-    padding-bottom: 4px;
-    padding-left: 8px;
-    box-shadow: 0 3px 3px -1.5px #07011308, 0 2px 2px -1px #07011308, 0 1px 1px -.5px #07011308, 0 .5px .5px #07011308;
-"
-              class="no-pointer inline-flex items-center space-x-2  sm:py-2 bg-white rounded-full text-xs sm:text-sm font-medium text-gray-700  transition-colors"
+              style="
+                padding-top: 4px;
+                padding-right: 12px;
+                padding-bottom: 4px;
+                padding-left: 8px;
+                box-shadow: 0 3px 3px -1.5px #07011308, 0 2px 2px -1px #07011308,
+                  0 1px 1px -0.5px #07011308, 0 0.5px 0.5px #07011308;
+              "
+              class="no-pointer inline-flex items-center space-x-2 sm:py-2 bg-white rounded-full text-xs sm:text-sm font-medium text-gray-700 transition-colors"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -39,23 +41,24 @@
 
           <!-- Headline Section -->
           <div class="mb-6 sm:mb-7 md:mb-8">
-          <h1
-  style="font-family: 'Funnel Display', sans-serif;
-  font-weight: 500; line-height: 1.2
-;"
-  class="text-[3.5rem] sm:text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-3 sm:mb-4"
->
-  <span>Content Delivery,</span>
-  <span class="block hero-headline-line-2">
-    Simplified.
-    <img
-      src="/images/Company_logo.svg"
-      alt="BEST CDN AWARD"
-      class="w-full h-auto lg:h-full object-cover"
-    />
-  </span>
-</h1>
-
+            <h1
+              style="
+                font-family: 'Funnel Display', sans-serif;
+                font-weight: 500;
+                line-height: 1.2;
+              "
+              class="text-[3.5rem] sm:text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-3 sm:mb-4"
+            >
+              <span>Content Delivery,</span>
+              <span class="block hero-headline-line-2">
+                Simplified.
+                <img
+                  src="/images/Company_logo.svg"
+                  alt="BEST CDN AWARD"
+                  class="w-full h-auto lg:h-full object-cover"
+                />
+              </span>
+            </h1>
           </div>
 
           <!-- Description -->
@@ -135,32 +138,40 @@
             </p>
           </div>
 
-       <!-- Statistics Section -->
-      <div class="flex flex-wrap items-center md:justify-start justify-between gap-3 sm:gap-4 md:gap-6 mt-8 sm:mt-10 md:mt-12">
-    <div
-      v-for="(stat, index) in stats"
-      :key="index"
-      class="flex flex-col items-center sm:flex-row sm:items-center sm:space-x-2"
-    >
-      <span class="stat-value text-lg sm:text-base md:text-lg">
-        {{ stat.display.value }}{{ stat.isPercent ? '%' : '' }}
-      </span>
-      <svg
-        class="hidden md:block w-5 h-5 mt-1 sm:mt-0"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M12 2 L13.76 7.2 L19.51 4.49 L16.2 9.24 L21 12 L16.2 14.76 L19.51 19.51 L13.76 16.8 L12 22 L10.24 16.8 L4.49 19.51 L7.8 14.76 L3 12 L7.8 9.24 L4.49 4.49 L10.24 7.2 Z"
-          fill="#1F62FF"
-        />
-      </svg>
-      <span class="stat-label text-sm mt-1 sm:mt-0 sm:ml-2 text-center sm:text-left">
-        {{ stat.label }}
-      </span>
-    </div>
-      </div>
-      </div>
+          <!-- Statistics Section -->
+          <div
+            class="flex flex-wrap items-center md:justify-start justify-between gap-3 sm:gap-4 md:gap-6 mt-8 sm:mt-10 md:mt-12"
+          >
+            <div
+              v-for="(stat, index) in stats"
+              :key="index"
+              class="flex flex-col items-center sm:flex-row sm:items-center sm:space-x-2"
+            >
+              <span
+                class="stat-value text-lg sm:text-base md:text-lg font-mono tabular-nums"
+                :style="{ minWidth: stat.minWidth + 'ch' }"
+              >
+                {{ stat.display.value }}{{ stat.isPercent ? "%" : "" }}
+              </span>
+
+              <svg
+                class="hidden md:block w-5 h-5 mt-1 sm:mt-0"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 2 L13.76 7.2 L19.51 4.49 L16.2 9.24 L21 12 L16.2 14.76 L19.51 19.51 L13.76 16.8 L12 22 L10.24 16.8 L4.49 19.51 L7.8 14.76 L3 12 L7.8 9.24 L4.49 4.49 L10.24 7.2 Z"
+                  fill="#1F62FF"
+                />
+              </svg>
+              <span
+                class="stat-label text-sm mt-1 sm:mt-0 sm:ml-2 text-center sm:text-left"
+              >
+                {{ stat.label }}
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- Right Section: Dashboard Preview Panel -->
       <div
@@ -176,38 +187,43 @@
   </div>
 </template>
 <script setup lang="ts">
-import { ref, onMounted } from 'vue'
+import { ref, onMounted } from "vue";
 
 const stats = [
-  { label: 'Active Users', value: 2400, display: ref(0) },
-  { label: 'Zones Deployed', value: 135949, display: ref(0) },
-  { label: 'Hit Ratio', value: 98, display: ref(0), isPercent: true },
-]
+  { label: "Active Users", value: 2400, display: ref(0), minWidth: 4 },
+  { label: "Zones Deployed", value: 135949, display: ref(0), minWidth: 6 },
+  {
+    label: "Hit Ratio",
+    value: 98,
+    display: ref(0),
+    isPercent: true,
+    minWidth: 2,
+  },
+];
 
-const animateValue = (stat: typeof stats[0], duration = 1500) => {
-  const start = 0
-  const end = stat.value
-  const startTime = performance.now()
+const animateValue = (stat: (typeof stats)[0], duration = 1500) => {
+  const start = 0;
+  const end = stat.value;
+  const startTime = performance.now();
 
   const step = (currentTime: number) => {
-    const progress = Math.min((currentTime - startTime) / duration, 1)
-    stat.display.value = Math.floor(progress * end)
-    if (progress < 1) requestAnimationFrame(step)
-    else if (stat.isPercent) stat.display.value = end
-  }
+    const progress = Math.min((currentTime - startTime) / duration, 1);
+    stat.display.value = Math.floor(progress * end);
+    if (progress < 1) requestAnimationFrame(step);
+    else if (stat.isPercent) stat.display.value = end;
+  };
 
-  requestAnimationFrame(step)
-}
+  requestAnimationFrame(step);
+};
 
 onMounted(() => {
   if (window.innerWidth >= 768) {
-    stats.forEach(stat => animateValue(stat))
+    stats.forEach((stat) => animateValue(stat));
   } else {
-    stats.forEach(stat => (stat.display.value = stat.value))
+    stats.forEach((stat) => (stat.display.value = stat.value));
   }
-})
+});
 </script>
-
 
 <style scoped>
 .fancy-button {
