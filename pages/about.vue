@@ -1,6 +1,6 @@
 <template>
   <div class="min-h-screen bg-white relative overflow-hidden">
-    <!-- Page Background - BGline.svg -->
+    <!-- Pagee Background - BGline.svg -->
     <div
       class="absolute inset-0 pointer-events-none hidden md:block"
       style="
