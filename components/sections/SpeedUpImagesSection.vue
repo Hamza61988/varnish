@@ -4,9 +4,7 @@
     style="background: #f7f7f8"
   >
     <div class="max-w-6xl mx-auto">
-      <!-- Header Section -->
       <div class="mb-8 sm:mb-10 md:mb-12">
-        <!-- Section Label -->
         <div class="flex items-center justify-start mb-4 sm:mb-6">
           <div
             class="flex items-center"
@@ -25,7 +23,6 @@
                 0px 3px 3px -1.5px rgba(7, 1, 19, 0.03);
             "
           >
-            <!-- Lightning Bolt Icon -->
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-4 w-4 fill-[#A3A3AE] stroke-[#A3A3AE]"
@@ -57,12 +54,11 @@
           </div>
         </div>
 
-        <!-- Title -->
         <h2
           class="mb-3 sm:mb-4"
           style="
-            font-family: 'Bricolage Grotesque', sans-serif;
-            font-weight: 600;
+            font-family: 'Funnel Display', sans-serif;
+            font-weight: 500;
             font-style: SemiBold;
             font-size: 48px;
             line-height: 56px;
@@ -75,7 +71,6 @@
           Speed Up Images
         </h2>
 
-        <!-- Subtitle -->
         <p
           class="text-sm md:text-base mb-8 sm:mb-10"
           style="
@@ -92,10 +87,9 @@
         </p>
       </div>
 
-      <!-- Main Content: Two Column Layout -->
-      <div class="flex flex-col lg:flex-row gap-4" style="width: 100%">
-        <!-- Left Section: Image Card -->
-        <div class="flex flex-col w-full lg:w-[60%]">
+      <div class="flex flex-col lg:flex-row gap-8 lg:gap-4" style="width: 100%">
+        
+        <div class="flex flex-col w-full lg:w-[60%] order-2 lg:order-1">
           <div
             class="mb-4 sm:mb-6 overflow-hidden flex items-center justify-center"
             style="
@@ -119,7 +113,6 @@
               box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
             "
           >
-            <!-- URL Field -->
             <div
               class="flex flex-row items-center gap-2 sm:gap-3 w-full"
               style="
@@ -129,26 +122,28 @@
                 width: 100%;
               "
             >
-              <input
-                type="text"
-                readonly
-                value="https://ip.keycdn.com/example.jpg?format=webp"
+              <div
                 class="w-full px-3 sm:px-4 py-2 sm:py-3 bg-white rounded-lg border border-gray-200 text-xs sm:text-sm font-mono"
                 style="
                   font-family: 'Monaco', 'Courier New', monospace;
                   color: #51515e;
-                  outline: none;
                   width: 100%;
                   min-width: 0;
                   border: none;
                   border-radius: 20px;
-                  text-align: center;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  white-space: nowrap;
+                  overflow: hidden;
                 "
-              />
+              >
+                <span>{{ displayedText }}</span>
+                <span class="blinking-cursor">|</span>
+              </div>
             </div>
           </div>
 
-          <!-- Button for Mobile/Tablet - Hidden on Desktop -->
           <div class="flex flex-row items-center justify-center lg:hidden">
             <button
               class="flex items-center justify-center whitespace-nowrap flex-shrink-0"
@@ -162,7 +157,7 @@
                 padding-left: 6px;
                 background: linear-gradient(0deg, #1a1925, #1a1925),
                   linear-gradient(
-                    180deg,
+                    160deg,
                     rgba(255, 255, 255, 0.12) 0%,
                     rgba(255, 255, 255, 0) 100%
                   );
@@ -177,7 +172,7 @@
                   0px 4px 8px -4px rgba(26, 25, 37, 0.12),
                   0px 8px 12px -4px rgba(26, 25, 37, 0.06),
                   0px -8px 20px 0px rgba(26, 25, 37, 0.08) inset;
-                font-family: 'Bricolage Grotesque', sans-serif;
+                font-family: 'inter', sans-serif;
                 font-weight: 500;
                 font-style: Medium;
                 font-size: 17px;
@@ -186,7 +181,6 @@
                 text-align: center;
                 text-transform: capitalize;
                 color: #ffffff;
-
                 width: 100%;
               "
             >
@@ -195,153 +189,148 @@
           </div>
         </div>
 
-        <!-- Right Section: Feature Blocks - Hidden on Mobile/Tablet -->
         <div
-          class="hidden lg:flex flex-col"
-          style="justify-content: space-between; width: 40%"
+          class="flex flex-col lg:justify-between w-full lg:w-[40%] order-1 lg:order-2"
         >
-          <!-- Transform Block -->
-          <div>
-            <h3
-              class="mb-2 sm:mb-3"
-              style="
-                font-family: 'Bricolage Grotesque', sans-serif;
-                font-weight: 600;
-                font-style: SemiBold;
-                font-size: 18px;
-                line-height: 24px;
-                letter-spacing: -0.02em;
-                color: #1a1925;
-              "
-            >
-              Transform
-            </h3>
-            <p
-              class=""
-              style="
-                font-family: 'Inter', sans-serif;
-                font-weight: 400;
-                font-style: Regular;
-                font-size: 14px;
-                line-height: 20px;
-                letter-spacing: -0.006em;
-                color: #73737f;
-              "
-            >
-              Serve properly scaled images by dynamically updating the width and
-              height.
-            </p>
-          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-3  lg:flex lg:flex-col gap-6 lg:gap-0 lg:h-full lg:justify-between">
+            
+            <div>
+              <h3
+                class="mb-2 sm:mb-3"
+                style="
+                  font-family: 'inter', sans-serif;
+                  font-weight: 600;
+                  font-style: SemiBold;
+                  font-size: 16px;
+                  line-height: 24px;
+                  letter-spacing: -0.02em;
+                  color: #1a1925;
+                "
+              >
+                Transform
+              </h3>
+              <p
+                class=""
+                style="
+                  font-family: 'Inter', sans-serif;
+                  font-weight: 400;
+                  font-style: Regular;
+                  font-size: 14px;
+                  line-height: 20px;
+                  letter-spacing: -0.006em;
+                  color: #73737f;
+                "
+              >
+                Serve properly scaled images by dynamically updating the width and
+                height.
+              </p>
+            </div>
 
-          <!-- Optimize Block -->
-          <div>
-            <h3
-              class="mb-2 sm:mb-3"
-              style="
-                font-family: 'Bricolage Grotesque', sans-serif;
-                font-weight: 600;
-                font-style: SemiBold;
-                font-size: 18px;
-                line-height: 24px;
-                letter-spacing: -0.02em;
-                color: #1a1925;
-              "
-            >
-              Optimize
-            </h3>
-            <p
-              class=""
-              style="
-                font-family: 'Inter', sans-serif;
-                font-weight: 400;
-                font-style: Regular;
-                font-size: 14px;
-                line-height: 20px;
-                letter-spacing: -0.006em;
-                color: #73737f;
-              "
-            >
-              Improve image performance by reducing the overall size and using
-              the next-gen formats.
-            </p>
-          </div>
+            <div>
+              <h3
+                class="mb-2 sm:mb-3"
+                style="
+                  font-family: 'inter', sans-serif;
+                  font-weight: 600;
+                  font-style: SemiBold;
+                  font-size: 16px;
+                  line-height: 24px;
+                  letter-spacing: -0.02em;
+                  color: #1a1925;
+                "
+              >
+                Optimize
+              </h3>
+              <p
+                class=""
+                style="
+                  font-family: 'Inter', sans-serif;
+                  font-weight: 400;
+                  font-style: Regular;
+                  font-size: 14px;
+                  line-height: 20px;
+                  letter-spacing: -0.006em;
+                  color: #73737f;
+                "
+              >
+                Improve image performance by reducing the overall size and using
+                the next-gen formats.
+              </p>
+            </div>
 
-          <!-- Deliver Block -->
-          <div>
-            <h3
-              class="mb-2 sm:mb-3"
-              style="
-                font-family: 'Bricolage Grotesque', sans-serif;
-                font-weight: 600;
-                font-style: SemiBold;
-                font-size: 18px;
-                line-height: 24px;
-                letter-spacing: -0.02em;
-                color: #1a1925;
-              "
+            <div>
+              <h3
+                class="mb-2 sm:mb-3"
+                style="
+                  font-family: 'inter', sans-serif;
+                  font-weight: 600;
+                  font-style: SemiBold;
+                  font-size: 16px;
+                  line-height: 24px;
+                  letter-spacing: -0.02em;
+                  color: #1a1925;
+                "
+              >
+                Deliver
+              </h3>
+              <p
+                class=""
+                style="
+                  font-family: 'Inter', sans-serif;
+                  font-weight: 400;
+                  font-style: Regular;
+                  font-size: 14px;
+                  line-height: 20px;
+                  letter-spacing: -0.006em;
+                  color: #73737f;
+                "
+              >
+                Increase image speed by being distributed globally through our
+                premium edge locations.
+              </p>
+            </div>
+            
+            <div
+              class="hidden lg:flex flex-row items-center gap-2 sm:gap-3"
+              style="flex-direction: row; align-items: center"
             >
-              Deliver
-            </h3>
-            <p
-              class=""
-              style="
-                font-family: 'Inter', sans-serif;
-                font-weight: 400;
-                font-style: Regular;
-                font-size: 14px;
-                line-height: 20px;
-                letter-spacing: -0.006em;
-                color: #73737f;
-              "
-            >
-              Increase image speed by being distributed globally through our
-              premium edge locations.
-            </p>
-          </div>
-          <div
-            class="flex flex-row items-center gap-2 sm:gap-3"
-            style="display: flex; flex-direction: row; align-items: center"
-          >
-            <button
-              class="flex items-center justify-center whitespace-nowrap flex-shrink-0"
-              style="
-                width: 175px;
-                height: 40px;
-                border-radius: 6px;
-                padding-top: 10px;
-                padding-right: 6px;
-                padding-bottom: 10px;
-                padding-left: 6px;
-                background: linear-gradient(0deg, #1a1925, #1a1925),
-                  linear-gradient(
-                    180deg,
-                    rgba(255, 255, 255, 0.12) 0%,
-                    rgba(255, 255, 255, 0) 100%
-                  );
-                box-shadow: 0px 0.25px 0.25px 0px rgba(255, 255, 255, 0.12)
-                    inset,
-                  0px 0.75px 0.75px 0px rgba(255, 255, 255, 0.08) inset,
-                  0px 1px 3px 0px rgba(255, 255, 255, 0.08) inset,
-                  0px 0.25px 0.25px 0px rgba(26, 25, 37, 0.24),
-                  0px 0.75px 0.75px 0px rgba(26, 25, 37, 0.12),
-                  0px 1px 1.5px -0.5px rgba(26, 25, 37, 0.12),
-                  0px 2px 4px -1px rgba(26, 25, 37, 0.12),
-                  0px 4px 8px -4px rgba(26, 25, 37, 0.12),
-                  0px 8px 12px -4px rgba(26, 25, 37, 0.06),
-                  0px -8px 20px 0px rgba(26, 25, 37, 0.08) inset;
-                font-family: 'Bricolage Grotesque', sans-serif;
-                font-weight: 500;
-                font-style: Medium;
-                font-size: 17px;
-                line-height: 20px;
-                letter-spacing: -0.02em;
-                text-align: center;
-                text-transform: capitalize;
-                color: #ffffff;
-              "
-            >
-              API Documentaiton
-            </button>
+              <button
+                class="flex bg-[#1a1925] hover:bg-[#51515e] items-center justify-center whitespace-nowrap flex-shrink-0"
+                style="
+                  width: 175px;
+                  height: 40px;
+                  border-radius: 6px;
+                  padding-top: 10px;
+                  padding-right: 6px;
+                  padding-bottom: 10px;
+                  padding-left: 6px;
+
+                  box-shadow: 0px 0.25px 0.25px 0px rgba(255, 255, 255, 0.12)
+                      inset,
+                    0px 0.75px 0.75px 0px rgba(255, 255, 255, 0.08) inset,
+                    0px 1px 3px 0px rgba(255, 255, 255, 0.08) inset,
+                    0px 0.25px 0.25px 0px rgba(26, 25, 37, 0.24),
+                    0px 0.75px 0.75px 0px rgba(26, 25, 37, 0.12),
+                    0px 1px 1.5px -0.5px rgba(26, 25, 37, 0.12),
+                    0px 2px 4px -1px rgba(26, 25, 37, 0.12),
+                    0px 4px 8px -4px rgba(26, 25, 37, 0.12),
+                    0px 8px 12px -4px rgba(26, 25, 37, 0.06),
+                    0px -8px 20px 0px rgba(26, 25, 37, 0.08) inset;
+                  font-family: 'inter', sans-serif;
+                  font-weight: 500;
+                  font-style: Medium;
+                  font-size: 17px;
+                  line-height: 20px;
+                  letter-spacing: -0.02em;
+                  text-align: center;
+                  text-transform: capitalize;
+                  color: #ffffff;
+                "
+              >
+                API Documentaiton
+              </button>
+            </div>
+
           </div>
         </div>
       </div>
@@ -350,5 +339,78 @@
 </template>
 
 <script setup lang="ts">
-// Speed Up Images Section Component
+import { ref, onMounted, onUnmounted } from 'vue';
+
+const baseText = 'https://ip.varnish.com/example.jpg?format=';
+const formats = ['webp', 'jpeg'];
+
+const displayedText = ref('');
+let loopNum = 0;
+let isDeleting = false;
+let typingTimeout: any = null;
+
+const typeAnimation = () => {
+  const currentFormat = formats[loopNum % formats.length];
+  const fullText = baseText + currentFormat;
+
+  if (isDeleting) {
+    // When deleting, we stop deleting once we hit the baseText length
+    displayedText.value = fullText.substring(0, displayedText.value.length - 1);
+  } else {
+    // When typing, we add one character
+    displayedText.value = fullText.substring(0, displayedText.value.length + 1);
+  }
+
+  // Speed Logic
+  let typeSpeed = 100; // Normal typing speed
+  if (isDeleting) {
+    typeSpeed = 50; // Deleting is faster
+  }
+
+  // Logic for switching states
+  if (!isDeleting && displayedText.value === fullText) {
+    // Finished typing the full URL, wait 3 seconds before deleting
+    typeSpeed = 3000;
+    isDeleting = true;
+  } else if (isDeleting && displayedText.value === baseText) {
+    // Finished deleting the format part, switch to next format
+    isDeleting = false;
+    loopNum++;
+    typeSpeed = 500; // Small pause before typing next one
+  }
+
+  typingTimeout = setTimeout(typeAnimation, typeSpeed);
+};
+
+onMounted(() => {
+  // Initialize with empty base or full base, here we start typing from scratch
+  // or start typing the format if you prefer base to be static.
+  // To make it look cooler, lets start by typing the whole thing
+  displayedText.value = baseText;
+  typeAnimation();
+});
+
+onUnmounted(() => {
+  if (typingTimeout) clearTimeout(typingTimeout);
+});
 </script>
+
+<style scoped>
+.blinking-cursor {
+  font-weight: 100;
+  font-size: 1.2em;
+  color: #51515e;
+  animation: blink 1s step-end infinite;
+  margin-left: 2px;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+</style>
