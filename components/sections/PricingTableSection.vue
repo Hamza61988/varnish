@@ -1,5 +1,5 @@
 <template>
-  <section class="mx-auto py-2 sm:py-4 md:py-6 lg:py-8 bg-[#F7F7F8]">
+  <section class="mx-auto py-2 sm:py-4 md:py-6 lg:pt-10 bg-[#F7F7F8]">
     <div>
       <!-- Pricing Header -->
       <div class="mb-[48px] px-4 md:px-[24px] lg:px-0">
@@ -162,13 +162,13 @@
 
       <!-- Desktop: Original Table Layout -->
       <div
-        class="hidden lg:flex flex-row overflow-x-auto -mx-4 sm:-mx-4 md:-mx-6 lg:mx-0 px-4 sm:px-4 md:px-6 lg:px-0 pricing-table-container"
+        class="hidden lg:flex flex-row overflow-x-auto -mx-4 sm:-mx-4 md:-mx-6 lg:mx-0 px-4 sm:px-4 md:px-6 lg:px-0 rounded-2xl"
         style="background-color: #eeeef0"
       >
         <div class="flex w-full min-w-0" style="padding: 4px">
           <div class="w-full sm:w-2/5 md:w-1/3 lg:w-1/4 flex-shrink-0">
-            <div class="bg-[#eeeef0] rounded-lg p-0.5 sm:p-1">
-              <div class="bg-[#eeeef0] rounded-lg overflow-hidden">
+            <div class="bg-[#eeeef0] p-0.5 sm:p-1">
+              <div class="bg-[#eeeef0]  overflow-hidden">
                 <table class="w-full">
                   <thead>
                     <tr style="background-color: #eeeef0">
@@ -198,7 +198,7 @@
             </div>
           </div>
           <div
-            class="flex-1 bg-gray-100 rounded-lg min-w-0 overflow-x-auto"
+            class="flex-1 bg-gray-100 rounded-2xl min-w-0 overflow-x-auto"
           >
             <div
               class="bg-white rounded-2xl overflow-hidden pricing-table-wrapper"
@@ -271,21 +271,7 @@ defineProps<Props>();
 </script>
 
 <style scoped>
-.pricing-table-container {
-  border-radius: 16px;
-}
 
-@media (min-width: 640px) {
-  .pricing-table-container {
-    border-radius: 20px;
-  }
-}
-
-@media (min-width: 768px) {
-  .pricing-table-container {
-    border-radius: 24px;
-  }
-}
 
 table th:first-child {
   border-top-left-radius: 12px;

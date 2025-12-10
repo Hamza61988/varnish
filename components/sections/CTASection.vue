@@ -171,7 +171,7 @@ const animateCounter = (counter: any, target: number, duration: number, decimal 
 };
 
 onMounted(() => {
-  console.log('fired')
+ 
   if (ctaSection.value) {
     const observer = new IntersectionObserver(
       (entries, obs) => {

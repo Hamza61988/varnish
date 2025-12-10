@@ -30,7 +30,9 @@
           <span class="text-sm text-gray-700 font-medium">Calculator</span>
         </div>
       </div>
-      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
+      <h2 style="
+      font-family: 'Funnel Display', sans-serif;"
+       class="text-[48px] font-medium text-gray-900 mb-2">
         Calculate Your Costs
       </h2>
       <p class="text-sm md:text-base text-gray-500">
@@ -47,7 +49,7 @@
       <!-- Footer with Get Started and Price -->
       <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mt-6 md:mt-8 pt-6 border-t border-gray-200">
         <button
-          @click="handleGetStarted"
+         
           class="px-6 md:px-8 py-3 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition-colors font-medium text-sm md:text-base"
           style="
             font-family: 'Bricolage Grotesque', sans-serif;
@@ -103,9 +105,4 @@ const formattedPrice = computed(() => {
   return `$${monthlyPrice.value.toFixed(2)}`;
 });
 
-const handleGetStarted = () => {
-  console.log("Get Started clicked with bandwidth:", bandwidth.value);
-  console.log("Monthly price:", formattedPrice.value);
-  // Add navigation or action here
-};
 </script>
