@@ -24,7 +24,7 @@
     </div>
 
     <div
-      class="absolute hidden  inset-0 md:flex justify-center top-0 pointer-events-none overflow-hidden"
+      class="absolute hidden inset-0 md:flex justify-center top-0 pointer-events-none overflow-hidden"
     >
       <svg
         width="393"
