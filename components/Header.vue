@@ -1,18 +1,23 @@
 <template>
   <header class="bg-white z-50 fixed w-full" style="background-color: #f7f7f8">
     <div class="hidden md:flex justify-center">
-      <div
-        v-if="visible"
-        class="bg-black text-white flex w-full mx-2 rounded-xl justify-center gap-[40px] items-center h-9 px-4"
-      >
-        <p class="text-[14px]">This website uses biscuts 🍪.</p>
-        <span
-          @click="visible = false"
-          class="cursor-pointer text-white font-bold text-xl"
-          >×</span
-        >
-      </div>
-    </div>
+     <div
+  v-if="visible"
+  class="bg-black text-white flex w-full mx-2 rounded-xl justify-center items-center h-9 px-4 relative"
+  style="background-image: url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 562 257%22 fill=%22none%22><path d=%22M24.0976 458.018C9.44224 347.678 34.2187 238.427 96.4862 187.86C168.973 128.994 292.268 149.657 463.309 340.714C389.806 -374.647 745.514 380.188 659.684 42.3566%22 stroke=%22%2373737F%22 stroke-width=%2240%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22/></svg>'); background-repeat: no-repeat; "
+>
+  <p class="text-[14px]">
+    Varnish uses Cookies to make its website Easier to use.  
+    <a class="underline text-[14px]">Learn More</a>
+  </p>
+
+  <span
+    @click="visible = false"
+    class="cursor-pointer text-white font-bold text-xl ml-4"
+  >×</span>
+</div>
+
+</div>
 
     <img
       src="/images/BG_Line_landing.svg"
