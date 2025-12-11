@@ -534,33 +534,20 @@
           Get started with a free 14 day trial, no credit card required.
         </p>
 
-        <div
-          class="relative flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 md:gap-4 lg:gap-6 cta-metrics"
-        >
-          <div
-            v-for="(stat, index) in stats"
-            :key="index"
-            class="flex items-center gap-1"
-          >
-            <div class="relative flex justify-end">
-                <span class="cta-metric-text opacity-0 select-none">
-                    {{ stat.isMoney ? "$" : "" }}{{ stat.value }}{{ stat.isMoney && stat.value % 1 !== 0 ? "M" : "" }}
-                </span>
-                
-                <span class="cta-metric-text absolute right-0 top-0 tabular-nums">
-                    {{ stat.isMoney ? "$" : "" }}{{ stat.display.value }}{{ stat.isMoney && stat.value % 1 !== 0 ? "M" : "" }}
-                </span>
-            </div>
+       <div class="relative flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 md:gap-4 lg:gap-6 cta-metrics">
+  <div
+    v-for="(stat, index) in stats"
+    :key="index"
+    class="flex items-center gap-1"
+  >
+    <span class="cta-metric-text">
+      {{ stat.isMoney ? '$' : '' }}{{ stat.display.value }}{{ stat.isMoney && stat.value % 1 !== 0 ? 'M' : '' }}
+    </span>
+    <span class="cta-metric-text">{{ stat.label }}</span>
+    <span v-if="index < stats.length - 1" class="hidden sm:inline text-gray-600 text-xs sm:text-sm md:text-base">•</span>
+  </div>
+</div>
 
-            <span class="cta-metric-text">{{ stat.label }}</span>
-            
-            <span
-              v-if="index < stats.length - 1"
-              class="hidden sm:inline text-gray-600 text-xs sm:text-sm md:text-base"
-              >•</span
-            >
-          </div>
-        </div>
 
         <div class="relative">
           <button
@@ -605,12 +592,12 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted } from "vue";
+import { ref, onMounted } from 'vue';
 
 const stats = [
-  { label: "Employees", value: 120, display: ref(0) },
-  { label: "Raised", value: 31.5, isMoney: true, display: ref(0) },
-  { label: "Years old", value: 7, display: ref(0) },
+  { label: 'Employees', value: 120, display: ref(0) },
+  { label: 'Raised', value: 31.5, isMoney: true, display: ref(0) },
+  { label: 'Years old', value: 7, display: ref(0) },
 ];
 
 const hasAnimated = ref(false);
@@ -638,20 +625,20 @@ const animateNumber = (stat: any, duration = 2000) => {
 
 onMounted(() => {
   if (window.innerWidth < DESKTOP_WIDTH) {
-    stats.forEach((stat) => {
+    stats.forEach(stat => {
       stat.display.value = stat.value;
     });
     return;
   }
 
-  const section = document.querySelector(".cta-card");
+  const section = document.querySelector('.cta-card');
   if (!section) return;
 
   const observer = new IntersectionObserver(
     (entries) => {
-      entries.forEach((entry) => {
+      entries.forEach(entry => {
         if (entry.isIntersecting && !hasAnimated.value) {
-          stats.forEach((stat) => animateNumber(stat));
+          stats.forEach(stat => animateNumber(stat));
           hasAnimated.value = true;
           observer.disconnect();
         }
@@ -663,6 +650,7 @@ onMounted(() => {
   observer.observe(section);
 });
 </script>
+
 
 <style scoped>
 /* Keeping your existing styles exactly as they were */

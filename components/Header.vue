@@ -1,40 +1,17 @@
 <template>
   <header class="bg-white z-50 fixed w-full" style="background-color: #f7f7f8">
     <div class="hidden md:flex justify-center">
-   <div
-  v-if="visible"
-  class="relative bg-black text-white flex w-full mx-2 rounded-xl justify-center items-center h-9 px-4"
->
-  <!-- BACKGROUND SVG (no layout impact) -->
-  <svg
-    class="absolute inset-0 h-9 pl-4 w-23 opacity-55 pointer-events-none"
-    viewBox="0 0 562 257"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    preserveAspectRatio="none"
-  >
-    <path
-      d="M24.0976 458.018C9.44224 347.678 34.2187 238.427 96.4862 187.86C168.973 128.994 292.268 149.657 463.309 340.714C389.806 -374.647 745.514 380.188 659.684 42.3566"
-      stroke="#9D9DA6"
-      stroke-width="40"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-    />
-  </svg>
-
-  <!-- Actual content (centered & unaffected by SVG) -->
-  <p class="text-[14px] relative z-10">
-    Varnish uses Cookies to make it's Website easier to use.
-    <a class="underline cursor-pointer">Learn More</a>
-  </p>
-
-  <span
-    @click="visible = false"
-    class="cursor-pointer text-white font-bold text-xl leading-none relative z-10 ml-2"
-  >
-    ×
-  </span>
-</div>
+      <div
+        v-if="visible"
+        class="bg-black text-white flex w-full mx-2 rounded-xl justify-center gap-[40px] items-center h-9 px-4"
+      >
+        <p class="text-[14px]">This website uses biscuts 🍪.</p>
+        <span
+          @click="visible = false"
+          class="cursor-pointer text-white font-bold text-xl"
+          >×</span
+        >
+      </div>
     </div>
 
     <img
