@@ -1135,7 +1135,7 @@ onMounted(() => {
 const navigationLinks = [
   { name: "Features", hasDropdown: false, route: "/features" },
   { name: "Solutions", hasDropdown: true },
-  { name: "Network", hasDropdown: false, route: "/" },
+  { name: "Network", hasDropdown: false, route: "/network" },
   { name: "Pricing", hasDropdown: false, route: "/pricing" },
   { name: "Support", hasDropdown: false, route: "/support" },
 ];
@@ -1144,10 +1144,6 @@ const navigationLinks = [
 const isActiveLink = (routePath: string | undefined) => {
   if (!routePath) return false;
   const currentPath = route.path;
-  // Don't highlight Network link on home page
-  if (routePath === "/") {
-    return false; // Network link should not be active on home page
-  }
   return currentPath === routePath || currentPath.startsWith(routePath + "/");
 };
 

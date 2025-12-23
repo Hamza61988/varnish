@@ -123,7 +123,7 @@
             </li>
             <li>
               <NuxtLink
-                to="/"
+                to="/network"
                 class="hover:text-black text-[#73737F] transition-opacity text-[14px] sm:text-sm"
                 style="
                   font-family: 'Bricolage Grotesque', sans-serif;
@@ -201,7 +201,7 @@
             </li>
             <li>
               <NuxtLink
-                to="#"
+                to="/blog"
                 class="hover:text-black text-[#73737F] transition-opacity text-[14px] sm:text-sm"
                 style="
                   font-family: 'Bricolage Grotesque', sans-serif;
