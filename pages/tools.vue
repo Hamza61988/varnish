@@ -1,16 +1,9 @@
 <template>
-  <div
-    class="min-h-screen bg-white relative overflow-hidden"
-    style="background-color: #f7f7f8"
-  >
+  <div class="min-h-screen bg-white relative overflow-hidden" style="background-color: #f7f7f8">
     <main>
       <section style="margin: 3% 1% 1% 1%; padding: 0 4%">
-        <div
-          class="flex items-center justify-start sm:justify-center mb-4 sm:mb-6"
-        >
-          <div
-            class="flex items-center"
-            style="
+        <div class="flex items-center justify-start sm:justify-center mb-4 sm:mb-6">
+          <div class="flex items-center" style="
               height: 24px;
               gap: 2px;
               border-radius: 999px;
@@ -23,26 +16,14 @@
                 0px 1px 1px -0.5px rgba(7, 1, 19, 0.03),
                 0px 2px 2px -1px rgba(7, 1, 19, 0.03),
                 0px 3px 3px -1.5px rgba(7, 1, 19, 0.03);
-            "
-          >
+            ">
             <!-- Lightning Bolt Icon -->
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-3 w-3 fill-[#A3A3AE] stroke-[#A3A3AE]"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              stroke-width="2"
-              style="color: #1a1925"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"
-              />
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 fill-[#A3A3AE] stroke-[#A3A3AE]" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" style="color: #1a1925">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
             </svg>
-            <span
-              style="
+            <span style="
                 font-family: 'Bricolage Grotesque', sans-serif;
                 font-weight: 500;
                 font-size: 12px;
@@ -50,36 +31,29 @@
                 letter-spacing: 0%;
                 text-align: center;
                 color: #1a1925;
-              "
-            >
+              ">
               Tools
             </span>
           </div>
         </div>
 
-        <h2
-          class="text-left sm:text-center mb-4 sm:mb-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
-          style="
+        <h2 class="text-left sm:text-center mb-4 sm:mb-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl" style="
             font-family: 'Bricolage Grotesque', sans-serif;
             font-weight: 500;
             letter-spacing: -0.02em;
             vertical-align: middle;
             color: #1a1925;
-          "
-        >
+          ">
           Tools
         </h2>
 
-        <p
-          class="text-left sm:text-center mb-6 sm:mb-8 md:mb-12 lg:mb-16 text-sm sm:text-base px-0 sm:px-2"
-          style="
+        <p class="text-left sm:text-center mb-6 sm:mb-8 md:mb-12 lg:mb-16 text-sm sm:text-base px-0 sm:px-2" style="
             font-family: 'Inter', sans-serif;
             font-weight: 400;
             line-height: 24px;
             letter-spacing: -0.011em;
             color: #51515e;
-          "
-        >
+          ">
           Troubleshoot website, network, and CDN issues for fast resolutions.
         </p>
 
@@ -89,20 +63,16 @@
           </h3>
         </div>
         <div
-          class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 lg:gap-10 max-w-6xl mx-auto mb-8 sm:mb-12 md:mb-16 lg:mb-20 xl:mb-24 px-2 sm:px-0"
-        >
-          <div
-            class="relative overflow-hidden min-h-[210px] md:h-[210px] w-full"
+          class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 lg:gap-10 max-w-6xl mx-auto mb-8 sm:mb-12 md:mb-16 lg:mb-20 xl:mb-24 px-2 sm:px-0">
+          <NuxtLink to="/web/websitespeedtest"
+            class="relative overflow-hidden min-h-[210px] md:h-[210px] w-full cursor-pointer transition-all hover:shadow-lg"
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
               background: #ffffff;
-            "
-          >
+            ">
             <!-- Card Background - bgcard.svg -->
-            <div
-              class="absolute hidden sm:block"
-              style="
+            <div class="absolute hidden sm:block" style="
                 width: 148px;
                 height: 148px;
                 top: 8px;
@@ -119,71 +89,51 @@
                 background-repeat: no-repeat;
                 background-size: contain;
                 border: none;
-              "
-            ></div>
+              "></div>
             <div class="relative z-10 p-5 sm:p-5 md:p-6">
-              <div
-                class="mb-4 relative"
-                style="padding-top: 4.67px; padding-left: 2.33px"
-              >
+              <div class="mb-4 relative" style="padding-top: 4.67px; padding-left: 2.33px">
                 <!-- Icon Background - bgcardicon.svg -->
-                <div
-                  class="absolute -top-2 -left-2 w-8 h-8"
-                  style="
+                <div class="absolute -top-2 -left-2 w-8 h-8" style="
                     background-image: url('/images/about/bgcardicon.svg');
                     background-repeat: no-repeat;
                     background-size: contain;
                     z-index: 0;
-                  "
-                ></div>
+                  "></div>
                 <!-- Agility Icon -->
-                <img
-                  src="/images/about/Icon.svg"
-                  alt="Agility Icon"
-                  class="relative z-10"
-                  style="height: 20.71px; width: auto; color: #1a1925"
-                />
+                <img src="/images/about/Icon.svg" alt="Agility Icon" class="relative z-10"
+                  style="height: 20.71px; width: auto; color: #1a1925" />
               </div>
-              <h3
-                class="mb-2 sm:mb-3 text-base sm:text-lg"
-                style="
+              <h3 class="mb-2 sm:mb-3 text-base sm:text-lg" style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 500;
                   line-height: 24px;
                   letter-spacing: -0.011em;
                   color: #1a1925;
-                "
-              >
+                ">
                 Website Speed Test
               </h3>
-              <p
-                class="text-sm sm:text-base card-description"
-                style="
+              <p class="text-sm sm:text-base card-description" style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 400;
                   line-height: 20px;
                   letter-spacing: -0.006em;
                   color: #51515e;
-                "
-              >
+                ">
                 Full page speed test to get detailed insights on how a website
                 performs.
               </p>
             </div>
-          </div>
+          </NuxtLink>
 
-          <div
-            class="relative overflow-hidden min-h-[210px] md:h-[210px] w-full"
+          <NuxtLink to="/web/performancetest"
+            class="relative overflow-hidden min-h-[210px] md:h-[210px] w-full cursor-pointer transition-all hover:shadow-lg"
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
               background: #ffffff;
-            "
-          >
+            ">
             <!-- Card Background - bgcard.svg -->
-            <div
-              class="absolute hidden sm:block"
-              style="
+            <div class="absolute hidden sm:block" style="
                 width: 148px;
                 height: 148px;
                 top: 8px;
@@ -200,72 +150,52 @@
                 background-repeat: no-repeat;
                 background-size: contain;
                 border: none;
-              "
-            ></div>
+              "></div>
             <div class="relative z-10 p-5 sm:p-5 md:p-6">
-              <div
-                class="mb-4 relative"
-                style="padding-top: 4.67px; padding-left: 2.33px"
-              >
+              <div class="mb-4 relative" style="padding-top: 4.67px; padding-left: 2.33px">
                 <!-- Icon Background - bgcardicon.svg -->
-                <div
-                  class="absolute -top-2 -left-2 w-8 h-8"
-                  style="
+                <div class="absolute -top-2 -left-2 w-8 h-8" style="
                     background-image: url('/images/about/bgcardicon.svg');
                     background-repeat: no-repeat;
                     background-size: contain;
                     z-index: 0;
                     border: none;
-                  "
-                ></div>
+                  "></div>
                 <!-- Integrity Icon -->
-                <img
-                  src="/images/about/Group.svg"
-                  alt="Integrity Icon"
-                  class="relative z-10"
-                  style="height: 20.71px; width: auto; color: #1a1925"
-                />
+                <img src="/images/about/Group.svg" alt="Integrity Icon" class="relative z-10"
+                  style="height: 20.71px; width: auto; color: #1a1925" />
               </div>
-              <h3
-                class="mb-2 sm:mb-3 text-base sm:text-lg"
-                style="
+              <h3 class="mb-2 sm:mb-3 text-base sm:text-lg" style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 500;
                   line-height: 24px;
                   letter-spacing: -0.011em;
                   color: #1a1925;
-                "
-              >
+                ">
                 Performance Test
               </h3>
-              <p
-                class="text-sm sm:text-base card-description"
-                style="
+              <p class="text-sm sm:text-base card-description" style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 400;
                   line-height: 20px;
                   letter-spacing: -0.006em;
                   color: #51515e;
-                "
-              >
+                ">
                 Asset performance test from multiple locations to get detailed
                 speed metrics.
               </p>
             </div>
-          </div>
+          </NuxtLink>
 
-          <div
-            class="relative overflow-hidden min-h-[210px] md:h-[210px] w-full"
+          <NuxtLink to="/web/httpheaderchecker"
+            class="relative overflow-hidden min-h-[210px] md:h-[210px] w-full cursor-pointer transition-all hover:shadow-lg"
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
               background: #ffffff;
-            "
-          >
+            ">
             <!-- Card Background - bgcard.svg -->
-            <div
-              class="absolute hidden sm:block"
-              style="
+            <div class="absolute hidden sm:block" style="
                 width: 148px;
                 height: 148px;
                 top: 8px;
@@ -282,70 +212,50 @@
                 background-repeat: no-repeat;
                 background-size: contain;
                 border: none;
-              "
-            ></div>
+              "></div>
             <div class="relative z-10 p-5 sm:p-5 md:p-6">
-              <div
-                class="mb-4 relative"
-                style="padding-top: 4.67px; padding-left: 2.33px"
-              >
+              <div class="mb-4 relative" style="padding-top: 4.67px; padding-left: 2.33px">
                 <!-- Icon Background - bgcardicon.svg -->
-                <div
-                  class="absolute -top-2 -left-2 w-8 h-8"
-                  style="
+                <div class="absolute -top-2 -left-2 w-8 h-8" style="
                     background-image: url('/images/about/bgcardicon.svg');
                     background-repeat: no-repeat;
                     background-size: contain;
                     z-index: 0;
-                  "
-                ></div>
+                  "></div>
                 <!-- Reliability Icon -->
-                <img
-                  src="/images/about/Icon3rd.svg"
-                  alt="Reliability Icon"
-                  class="relative z-10"
-                  style="height: 20.71px; width: auto; color: #1a1925"
-                />
+                <img src="/images/about/Icon3rd.svg" alt="Reliability Icon" class="relative z-10"
+                  style="height: 20.71px; width: auto; color: #1a1925" />
               </div>
-              <h3
-                class="mb-2 sm:mb-3 text-base sm:text-lg"
-                style="
+              <h3 class="mb-2 sm:mb-3 text-base sm:text-lg" style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 500;
                   line-height: 24px;
                   letter-spacing: -0.011em;
                   color: #1a1925;
-                "
-              >
+                ">
                 HTTP Header Checker
               </h3>
-              <p
-                class="text-sm sm:text-base card-description"
-                style="
+              <p class="text-sm sm:text-base card-description" style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 400;
                   line-height: 20px;
                   letter-spacing: -0.006em;
                   color: #51515e;
-                "
-              >
+                ">
                 Single asset request with curl to get the HTTP response headers.
               </p>
             </div>
-          </div>
+          </NuxtLink>
 
-          <div
-            class="relative overflow-hidden min-h-[210px] md:h-[210px] w-full"
+          <NuxtLink to="/web/http2test"
+            class="relative overflow-hidden min-h-[210px] md:h-[210px] w-full cursor-pointer transition-all hover:shadow-lg"
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
               background: #ffffff;
-            "
-          >
+            ">
             <!-- Card Background - bgcard.svg -->
-            <div
-              class="absolute hidden sm:block"
-              style="
+            <div class="absolute hidden sm:block" style="
                 width: 148px;
                 height: 148px;
                 top: 8px;
@@ -362,71 +272,51 @@
                 background-repeat: no-repeat;
                 background-size: contain;
                 border: none;
-              "
-            ></div>
+              "></div>
             <div class="relative z-10 p-5 sm:p-5 md:p-6">
-              <div
-                class="mb-4 relative"
-                style="padding-top: 4.67px; padding-left: 2.33px"
-              >
+              <div class="mb-4 relative" style="padding-top: 4.67px; padding-left: 2.33px">
                 <!-- Icon Background - bgcardicon.svg -->
-                <div
-                  class="absolute -top-2 -left-2 w-8 h-8"
-                  style="
+                <div class="absolute -top-2 -left-2 w-8 h-8" style="
                     background-image: url('/images/about/bgcardicon.svg');
                     background-repeat: no-repeat;
                     background-size: contain;
                     z-index: 0;
-                  "
-                ></div>
+                  "></div>
                 <!-- Agility Icon -->
-                <img
-                  src="/images/about/Icon.svg"
-                  alt="Agility Icon"
-                  class="relative z-10"
-                  style="height: 20.71px; width: auto; color: #1a1925"
-                />
+                <img src="/images/about/Icon.svg" alt="Agility Icon" class="relative z-10"
+                  style="height: 20.71px; width: auto; color: #1a1925" />
               </div>
-              <h3
-                class="mb-2 sm:mb-3 text-base sm:text-lg"
-                style="
+              <h3 class="mb-2 sm:mb-3 text-base sm:text-lg" style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 500;
                   line-height: 24px;
                   letter-spacing: -0.011em;
                   color: #1a1925;
-                "
-              >
+                ">
                 HTTP/2 Test
               </h3>
-              <p
-                class="text-sm sm:text-base card-description"
-                style="
+              <p class="text-sm sm:text-base card-description" style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 400;
                   line-height: 20px;
                   letter-spacing: -0.006em;
                   color: #51515e;
-                "
-              >
+                ">
                 Verify if a URL is delivered through the HTTP/2 network
                 protocol.
               </p>
             </div>
-          </div>
+          </NuxtLink>
 
-          <div
-            class="relative overflow-hidden min-h-[210px] md:h-[210px] w-full"
+          <NuxtLink to="/web/brotlitest"
+            class="relative overflow-hidden min-h-[210px] md:h-[210px] w-full cursor-pointer transition-all hover:shadow-lg"
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
               background: #ffffff;
-            "
-          >
+            ">
             <!-- Card Background - bgcard.svg -->
-            <div
-              class="absolute hidden sm:block"
-              style="
+            <div class="absolute hidden sm:block" style="
                 width: 148px;
                 height: 148px;
                 top: 8px;
@@ -443,59 +333,42 @@
                 background-repeat: no-repeat;
                 background-size: contain;
                 border: none;
-              "
-            ></div>
+              "></div>
             <div class="relative z-10 p-5 sm:p-5 md:p-6">
-              <div
-                class="mb-4 relative"
-                style="padding-top: 4.67px; padding-left: 2.33px"
-              >
+              <div class="mb-4 relative" style="padding-top: 4.67px; padding-left: 2.33px">
                 <!-- Icon Background - bgcardicon.svg -->
-                <div
-                  class="absolute -top-2 -left-2 w-8 h-8"
-                  style="
+                <div class="absolute -top-2 -left-2 w-8 h-8" style="
                     background-image: url('/images/about/bgcardicon.svg');
                     background-repeat: no-repeat;
                     background-size: contain;
                     z-index: 0;
                     border: none;
-                  "
-                ></div>
+                  "></div>
                 <!-- Integrity Icon -->
-                <img
-                  src="/images/about/Group.svg"
-                  alt="Integrity Icon"
-                  class="relative z-10"
-                  style="height: 20.71px; width: auto; color: #1a1925"
-                />
+                <img src="/images/about/Group.svg" alt="Integrity Icon" class="relative z-10"
+                  style="height: 20.71px; width: auto; color: #1a1925" />
               </div>
-              <h3
-                class="mb-2 sm:mb-3 text-base sm:text-lg"
-                style="
+              <h3 class="mb-2 sm:mb-3 text-base sm:text-lg" style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 500;
                   line-height: 24px;
                   letter-spacing: -0.011em;
                   color: #1a1925;
-                "
-              >
+                ">
                 Brotli Test
               </h3>
-              <p
-                class="text-sm sm:text-base card-description"
-                style="
+              <p class="text-sm sm:text-base card-description" style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 400;
                   line-height: 20px;
                   letter-spacing: -0.006em;
                   color: #51515e;
-                "
-              >
+                ">
                 Verify if a server supports the lossless Brotli compression
                 algorithm.
               </p>
             </div>
-          </div>
+          </NuxtLink>
         </div>
 
         <div class="max-w-6xl mx-auto mb-4 sm:mb-6 md:mb-8 px-2 sm:px-0">
@@ -504,20 +377,16 @@
           </h3>
         </div>
         <div
-          class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 lg:gap-10 max-w-6xl mx-auto mb-8 sm:mb-12 md:mb-16 lg:mb-20 xl:mb-24 px-2 sm:px-0"
-        >
-          <div
-            class="relative overflow-hidden min-h-[210px] md:h-[210px] w-full"
+          class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 lg:gap-10 max-w-6xl mx-auto mb-8 sm:mb-12 md:mb-16 lg:mb-20 xl:mb-24 px-2 sm:px-0">
+          <NuxtLink to="/networks/iplocationfinder"
+            class="relative overflow-hidden min-h-[210px] md:h-[210px] w-full cursor-pointer transition-all hover:shadow-lg"
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
               background: #ffffff;
-            "
-          >
+            ">
             <!-- Card Background - bgcard.svg -->
-            <div
-              class="absolute hidden sm:block"
-              style="
+            <div class="absolute hidden sm:block" style="
                 width: 148px;
                 height: 148px;
                 top: 8px;
@@ -534,72 +403,52 @@
                 background-repeat: no-repeat;
                 background-size: contain;
                 border: none;
-              "
-            ></div>
+              "></div>
             <div class="relative z-10 p-5 sm:p-5 md:p-6">
-              <div
-                class="mb-4 relative"
-                style="padding-top: 4.67px; padding-left: 2.33px"
-              >
+              <div class="mb-4 relative" style="padding-top: 4.67px; padding-left: 2.33px">
                 <!-- Icon Background - bgcardicon.svg -->
-                <div
-                  class="absolute -top-2 -left-2 w-8 h-8"
-                  style="
+                <div class="absolute -top-2 -left-2 w-8 h-8" style="
                     background-image: url('/images/about/bgcardicon.svg');
                     background-repeat: no-repeat;
                     background-size: contain;
                     z-index: 0;
-                  "
-                ></div>
+                  "></div>
                 <!-- Agility Icon -->
-                <img
-                  src="/images/about/Icon.svg"
-                  alt="Agility Icon"
-                  class="relative z-10"
-                  style="height: 20.71px; width: auto; color: #1a1925"
-                />
+                <img src="/images/about/Icon.svg" alt="Agility Icon" class="relative z-10"
+                  style="height: 20.71px; width: auto; color: #1a1925" />
               </div>
-              <h3
-                class="mb-2 sm:mb-3 text-base sm:text-lg"
-                style="
+              <h3 class="mb-2 sm:mb-3 text-base sm:text-lg" style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 500;
                   line-height: 24px;
                   letter-spacing: -0.011em;
                   color: #1a1925;
-                "
-              >
+                ">
                 IP Location Finder
               </h3>
-              <p
-                class="text-sm sm:text-base card-description"
-                style="
+              <p class="text-sm sm:text-base card-description" style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 400;
                   line-height: 20px;
                   letter-spacing: -0.006em;
                   color: #51515e;
-                "
-              >
+                ">
                 Lookup an IP address or hostname to get the geographical
                 location.
               </p>
             </div>
-          </div>
+          </NuxtLink>
 
           <!-- Integrity Card -->
-          <div
-            class="relative overflow-hidden min-h-[210px] md:h-[210px] w-full"
+          <NuxtLink to="/networks/dnschecker"
+            class="relative overflow-hidden min-h-[210px] md:h-[210px] w-full cursor-pointer transition-all hover:shadow-lg"
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
               background: #ffffff;
-            "
-          >
+            ">
             <!-- Card Background - bgcard.svg -->
-            <div
-              class="absolute hidden sm:block"
-              style="
+            <div class="absolute hidden sm:block" style="
                 width: 148px;
                 height: 148px;
                 top: 8px;
@@ -616,72 +465,52 @@
                 background-repeat: no-repeat;
                 background-size: contain;
                 border: none;
-              "
-            ></div>
+              "></div>
             <div class="relative z-10 p-5 sm:p-5 md:p-6">
-              <div
-                class="mb-4 relative"
-                style="padding-top: 4.67px; padding-left: 2.33px"
-              >
+              <div class="mb-4 relative" style="padding-top: 4.67px; padding-left: 2.33px">
                 <!-- Icon Background - bgcardicon.svg -->
-                <div
-                  class="absolute -top-2 -left-2 w-8 h-8"
-                  style="
+                <div class="absolute -top-2 -left-2 w-8 h-8" style="
                     background-image: url('/images/about/bgcardicon.svg');
                     background-repeat: no-repeat;
                     background-size: contain;
                     z-index: 0;
-                  "
-                ></div>
+                  "></div>
                 <!-- Integrity Icon -->
-                <img
-                  src="/images/about/Group.svg"
-                  alt="Integrity Icon"
-                  class="relative z-10"
-                  style="height: 20.71px; width: auto; color: #1a1925"
-                />
+                <img src="/images/about/Group.svg" alt="Integrity Icon" class="relative z-10"
+                  style="height: 20.71px; width: auto; color: #1a1925" />
               </div>
-              <h3
-                class="mb-2 sm:mb-3 text-base sm:text-lg"
-                style="
+              <h3 class="mb-2 sm:mb-3 text-base sm:text-lg" style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 500;
                   line-height: 24px;
                   letter-spacing: -0.011em;
                   color: #1a1925;
-                "
-              >
+                ">
                 DNS Checker
               </h3>
-              <p
-                class="text-sm sm:text-base card-description"
-                style="
+              <p class="text-sm sm:text-base card-description" style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 400;
                   line-height: 20px;
                   letter-spacing: -0.006em;
                   color: #51515e;
-                "
-              >
+                ">
                 Lookup a DNS record from multiple servers to get detailed record
                 information.
               </p>
             </div>
-          </div>
+          </NuxtLink>
 
           <!-- Reliability Card -->
-          <div
-            class="relative overflow-hidden min-h-[210px] md:h-[210px] w-full"
+          <NuxtLink to="/networks/pingtest"
+            class="relative overflow-hidden min-h-[210px] md:h-[210px] w-full cursor-pointer transition-all hover:shadow-lg"
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
               background: #ffffff;
-            "
-          >
+            ">
             <!-- Card Background - bgcard.svg -->
-            <div
-              class="absolute hidden sm:block"
-              style="
+            <div class="absolute hidden sm:block" style="
                 width: 148px;
                 height: 148px;
                 top: 8px;
@@ -698,71 +527,51 @@
                 background-repeat: no-repeat;
                 background-size: contain;
                 border: none;
-              "
-            ></div>
+              "></div>
             <div class="relative z-10 p-5 sm:p-5 md:p-6">
-              <div
-                class="mb-4 relative"
-                style="padding-top: 4.67px; padding-left: 2.33px"
-              >
+              <div class="mb-4 relative" style="padding-top: 4.67px; padding-left: 2.33px">
                 <!-- Icon Background - bgcardicon.svg -->
-                <div
-                  class="absolute -top-2 -left-2 w-8 h-8"
-                  style="
+                <div class="absolute -top-2 -left-2 w-8 h-8" style="
                     background-image: url('/images/about/bgcardicon.svg');
                     background-repeat: no-repeat;
                     background-size: contain;
                     z-index: 0;
-                  "
-                ></div>
+                  "></div>
                 <!-- Reliability Icon -->
-                <img
-                  src="/images/about/Icon3rd.svg"
-                  alt="Reliability Icon"
-                  class="relative z-10"
-                  style="height: 20.71px; width: auto; color: #1a1925"
-                />
+                <img src="/images/about/Icon3rd.svg" alt="Reliability Icon" class="relative z-10"
+                  style="height: 20.71px; width: auto; color: #1a1925" />
               </div>
-              <h3
-                class="mb-2 sm:mb-3 text-base sm:text-lg"
-                style="
+              <h3 class="mb-2 sm:mb-3 text-base sm:text-lg" style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 500;
                   line-height: 24px;
                   letter-spacing: -0.011em;
                   color: #1a1925;
-                "
-              >
+                ">
                 Ping Test
               </h3>
-              <p
-                class="text-sm sm:text-base card-description"
-                style="
+              <p class="text-sm sm:text-base card-description" style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 400;
                   line-height: 20px;
                   letter-spacing: -0.006em;
                   color: #51515e;
-                "
-              >
+                ">
                 Ping any IP address or hostname simultaneously from multiple
                 locations.
               </p>
             </div>
-          </div>
+          </NuxtLink>
 
-          <div
-            class="relative overflow-hidden min-h-[210px] md:h-[210px] w-full"
+          <NuxtLink to="/networks/ipv6test"
+            class="relative overflow-hidden min-h-[210px] md:h-[210px] w-full cursor-pointer transition-all hover:shadow-lg"
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
               background: #ffffff;
-            "
-          >
+            ">
             <!-- Card Background - bgcard.svg -->
-            <div
-              class="absolute hidden sm:block"
-              style="
+            <div class="absolute hidden sm:block" style="
                 width: 148px;
                 height: 148px;
                 top: 8px;
@@ -779,72 +588,52 @@
                 background-repeat: no-repeat;
                 background-size: contain;
                 border: none;
-              "
-            ></div>
+              "></div>
             <div class="relative z-10 p-5 sm:p-5 md:p-6">
-              <div
-                class="mb-4 relative"
-                style="padding-top: 4.67px; padding-left: 2.33px"
-              >
+              <div class="mb-4 relative" style="padding-top: 4.67px; padding-left: 2.33px">
                 <!-- Icon Background - bgcardicon.svg -->
-                <div
-                  class="absolute -top-2 -left-2 w-8 h-8"
-                  style="
+                <div class="absolute -top-2 -left-2 w-8 h-8" style="
                     background-image: url('/images/about/bgcardicon.svg');
                     background-repeat: no-repeat;
                     background-size: contain;
                     z-index: 0;
-                  "
-                ></div>
+                  "></div>
                 <!-- Agility Icon -->
-                <img
-                  src="/images/about/Icon.svg"
-                  alt="Agility Icon"
-                  class="relative z-10"
-                  style="height: 20.71px; width: auto; color: #1a1925"
-                />
+                <img src="/images/about/Icon.svg" alt="Agility Icon" class="relative z-10"
+                  style="height: 20.71px; width: auto; color: #1a1925" />
               </div>
-              <h3
-                class="mb-2 sm:mb-3 text-base sm:text-lg"
-                style="
+              <h3 class="mb-2 sm:mb-3 text-base sm:text-lg" style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 500;
                   line-height: 24px;
                   letter-spacing: -0.011em;
                   color: #1a1925;
-                "
-              >
+                ">
                 Ping IPv6 Test
               </h3>
-              <p
-                class="text-sm sm:text-base card-description"
-                style="
+              <p class="text-sm sm:text-base card-description" style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 400;
                   line-height: 20px;
                   letter-spacing: -0.006em;
                   color: #51515e;
-                "
-              >
+                ">
                 Ping any IPv6 address or hostname simultaneously from multiple
                 locations.
               </p>
             </div>
-          </div>
+          </NuxtLink>
 
           <!-- Integrity Card -->
-          <div
-            class="relative overflow-hidden min-h-[210px] md:h-[210px] w-full"
+          <NuxtLink to="/networks/traceroutetest"
+            class="relative overflow-hidden min-h-[210px] md:h-[210px] w-full cursor-pointer transition-all hover:shadow-lg"
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
               background: #ffffff;
-            "
-          >
+            ">
             <!-- Card Background - bgcard.svg -->
-            <div
-              class="absolute hidden sm:block"
-              style="
+            <div class="absolute hidden sm:block" style="
                 width: 148px;
                 height: 148px;
                 top: 8px;
@@ -861,71 +650,51 @@
                 background-repeat: no-repeat;
                 background-size: contain;
                 border: none;
-              "
-            ></div>
+              "></div>
             <div class="relative z-10 p-5 sm:p-5 md:p-6">
-              <div
-                class="mb-4 relative"
-                style="padding-top: 4.67px; padding-left: 2.33px"
-              >
+              <div class="mb-4 relative" style="padding-top: 4.67px; padding-left: 2.33px">
                 <!-- Icon Background - bgcardicon.svg -->
-                <div
-                  class="absolute -top-2 -left-2 w-8 h-8"
-                  style="
+                <div class="absolute -top-2 -left-2 w-8 h-8" style="
                     background-image: url('/images/about/bgcardicon.svg');
                     background-repeat: no-repeat;
                     background-size: contain;
                     z-index: 0;
-                  "
-                ></div>
+                  "></div>
                 <!-- Integrity Icon -->
-                <img
-                  src="/images/about/Group.svg"
-                  alt="Integrity Icon"
-                  class="relative z-10"
-                  style="height: 20.71px; width: auto; color: #1a1925"
-                />
+                <img src="/images/about/Group.svg" alt="Integrity Icon" class="relative z-10"
+                  style="height: 20.71px; width: auto; color: #1a1925" />
               </div>
-              <h3
-                class="mb-2 sm:mb-3 text-base sm:text-lg"
-                style="
+              <h3 class="mb-2 sm:mb-3 text-base sm:text-lg" style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 500;
                   line-height: 24px;
                   letter-spacing: -0.011em;
                   color: #1a1925;
-                "
-              >
+                ">
                 Traceroute Test
               </h3>
-              <p
-                class="text-sm sm:text-base card-description"
-                style="
+              <p class="text-sm sm:text-base card-description" style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 400;
                   line-height: 20px;
                   letter-spacing: -0.006em;
                   color: #51515e;
-                "
-              >
+                ">
                 Trace any IP address or hostname simultaneously from multiple
                 locations.
               </p>
             </div>
-          </div>
+          </NuxtLink>
 
-          <div
-            class="relative overflow-hidden min-h-[210px] md:h-[210px] w-full"
+          <NuxtLink to="/networks/bgplookingglass"
+            class="relative overflow-hidden min-h-[210px] md:h-[210px] w-full cursor-pointer transition-all hover:shadow-lg"
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
               background: #ffffff;
-            "
-          >
+            ">
             <!-- Card Background - bgcard.svg -->
-            <div
-              class="absolute hidden sm:block"
-              style="
+            <div class="absolute hidden sm:block" style="
                 width: 148px;
                 height: 148px;
                 top: 8px;
@@ -942,58 +711,41 @@
                 background-repeat: no-repeat;
                 background-size: contain;
                 border: none;
-              "
-            ></div>
+              "></div>
             <div class="relative z-10 p-5 sm:p-5 md:p-6">
-              <div
-                class="mb-4 relative"
-                style="padding-top: 4.67px; padding-left: 2.33px"
-              >
+              <div class="mb-4 relative" style="padding-top: 4.67px; padding-left: 2.33px">
                 <!-- Icon Background - bgcardicon.svg -->
-                <div
-                  class="absolute -top-2 -left-2 w-8 h-8"
-                  style="
+                <div class="absolute -top-2 -left-2 w-8 h-8" style="
                     background-image: url('/images/about/bgcardicon.svg');
                     background-repeat: no-repeat;
                     background-size: contain;
                     z-index: 0;
-                  "
-                ></div>
+                  "></div>
                 <!-- Reliability Icon -->
-                <img
-                  src="/images/about/Icon3rd.svg"
-                  alt="Reliability Icon"
-                  class="relative z-10"
-                  style="height: 20.71px; width: auto; color: #1a1925"
-                />
+                <img src="/images/about/Icon3rd.svg" alt="Reliability Icon" class="relative z-10"
+                  style="height: 20.71px; width: auto; color: #1a1925" />
               </div>
-              <h3
-                class="mb-2 sm:mb-3 text-base sm:text-lg"
-                style="
+              <h3 class="mb-2 sm:mb-3 text-base sm:text-lg" style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 500;
                   line-height: 24px;
                   letter-spacing: -0.011em;
                   color: #1a1925;
-                "
-              >
+                ">
                 BGP Looking Glass
               </h3>
-              <p
-                class="text-sm sm:text-base card-description"
-                style="
+              <p class="text-sm sm:text-base card-description" style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 400;
                   line-height: 20px;
                   letter-spacing: -0.006em;
                   color: #51515e;
-                "
-              >
+                ">
                 Comprehensive directory of BGP looking glass servers in various
                 regions.
               </p>
             </div>
-          </div>
+          </NuxtLink>
         </div>
 
         <div class="max-w-6xl mx-auto mb-4 sm:mb-6 md:mb-8 px-2 sm:px-0">
@@ -1002,21 +754,17 @@
           </h3>
         </div>
         <div
-          class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 lg:gap-10 max-w-6xl mx-auto mb-8 sm:mb-12 md:mb-16 lg:mb-20 xl:mb-24 px-2 sm:px-0"
-        >
+          class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 lg:gap-10 max-w-6xl mx-auto mb-8 sm:mb-12 md:mb-16 lg:mb-20 xl:mb-24 px-2 sm:px-0">
           <!-- Agility Card -->
-          <div
-            class="relative overflow-hidden min-h-[210px] md:h-[210px] w-full"
+          <NuxtLink to="/security/certificatechecker"
+            class="relative overflow-hidden min-h-[210px] md:h-[210px] w-full cursor-pointer transition-all hover:shadow-lg"
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
               background: #ffffff;
-            "
-          >
+            ">
             <!-- Card Background - bgcard.svg -->
-            <div
-              class="absolute hidden sm:block"
-              style="
+            <div class="absolute hidden sm:block" style="
                 width: 148px;
                 height: 148px;
                 top: 8px;
@@ -1033,72 +781,52 @@
                 background-repeat: no-repeat;
                 background-size: contain;
                 border: none;
-              "
-            ></div>
+              "></div>
             <div class="relative z-10 p-5 sm:p-5 md:p-6">
-              <div
-                class="mb-4 relative"
-                style="padding-top: 4.67px; padding-left: 2.33px"
-              >
+              <div class="mb-4 relative" style="padding-top: 4.67px; padding-left: 2.33px">
                 <!-- Icon Background - bgcardicon.svg -->
-                <div
-                  class="absolute -top-2 -left-2 w-8 h-8"
-                  style="
+                <div class="absolute -top-2 -left-2 w-8 h-8" style="
                     background-image: url('/images/about/bgcardicon.svg');
                     background-repeat: no-repeat;
                     background-size: contain;
                     z-index: 0;
-                  "
-                ></div>
+                  "></div>
                 <!-- Agility Icon -->
-                <img
-                  src="/images/about/Icon.svg"
-                  alt="Agility Icon"
-                  class="relative z-10"
-                  style="height: 20.71px; width: auto; color: #1a1925"
-                />
+                <img src="/images/about/Icon.svg" alt="Agility Icon" class="relative z-10"
+                  style="height: 20.71px; width: auto; color: #1a1925" />
               </div>
-              <h3
-                class="mb-2 sm:mb-3 text-base sm:text-lg"
-                style="
+              <h3 class="mb-2 sm:mb-3 text-base sm:text-lg" style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 500;
                   line-height: 24px;
                   letter-spacing: -0.011em;
                   color: #1a1925;
-                "
-              >
+                ">
                 Certificate Checker
               </h3>
-              <p
-                class="text-sm sm:text-base card-description"
-                style="
+              <p class="text-sm sm:text-base card-description" style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 400;
                   line-height: 20px;
                   letter-spacing: -0.006em;
                   color: #51515e;
-                "
-              >
+                ">
                 Decode an SSL/TLS certificate to validate intermediate
                 certificates.
               </p>
             </div>
-          </div>
+          </NuxtLink>
 
           <!-- Integrity Card -->
-          <div
-            class="relative overflow-hidden min-h-[210px] md:h-[210px] w-full"
+          <NuxtLink to="/security/certificatechaincomposer"
+            class="relative overflow-hidden min-h-[210px] md:h-[210px] w-full cursor-pointer transition-all hover:shadow-lg"
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
               background: #ffffff;
-            "
-          >
+            ">
             <!-- Card Background - bgcard.svg -->
-            <div
-              class="absolute hidden sm:block"
-              style="
+            <div class="absolute hidden sm:block" style="
                 width: 148px;
                 height: 148px;
                 top: 8px;
@@ -1115,71 +843,51 @@
                 background-repeat: no-repeat;
                 background-size: contain;
                 border: none;
-              "
-            ></div>
+              "></div>
             <div class="relative z-10 p-5 sm:p-5 md:p-6">
-              <div
-                class="mb-4 relative"
-                style="padding-top: 4.67px; padding-left: 2.33px"
-              >
+              <div class="mb-4 relative" style="padding-top: 4.67px; padding-left: 2.33px">
                 <!-- Icon Background - bgcardicon.svg -->
-                <div
-                  class="absolute -top-2 -left-2 w-8 h-8"
-                  style="
+                <div class="absolute -top-2 -left-2 w-8 h-8" style="
                     background-image: url('/images/about/bgcardicon.svg');
                     background-repeat: no-repeat;
                     background-size: contain;
                     z-index: 0;
-                  "
-                ></div>
+                  "></div>
                 <!-- Integrity Icon -->
-                <img
-                  src="/images/about/Group.svg"
-                  alt="Integrity Icon"
-                  class="relative z-10"
-                  style="height: 20.71px; width: auto; color: #1a1925"
-                />
+                <img src="/images/about/Group.svg" alt="Integrity Icon" class="relative z-10"
+                  style="height: 20.71px; width: auto; color: #1a1925" />
               </div>
-              <h3
-                class="mb-2 sm:mb-3 text-base sm:text-lg"
-                style="
+              <h3 class="mb-2 sm:mb-3 text-base sm:text-lg" style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 500;
                   line-height: 24px;
                   letter-spacing: -0.011em;
                   color: #1a1925;
-                "
-              >
+                ">
                 Certificate Chain Composer
               </h3>
-              <p
-                class="text-sm sm:text-base card-description"
-                style="
+              <p class="text-sm sm:text-base card-description" style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 400;
                   line-height: 20px;
                   letter-spacing: -0.006em;
                   color: #51515e;
-                "
-              >
+                ">
                 Generate intermediate certificates for an SSL/TLS certificate.
               </p>
             </div>
-          </div>
+          </NuxtLink>
 
           <!-- Reliability Card -->
-          <div
-            class="relative overflow-hidden min-h-[210px] md:h-[210px] w-full"
+          <NuxtLink to="/security/sha256"
+            class="relative overflow-hidden min-h-[210px] md:h-[210px] w-full cursor-pointer transition-all hover:shadow-lg"
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
               background: #ffffff;
-            "
-          >
+            ">
             <!-- Card Background - bgcard.svg -->
-            <div
-              class="absolute hidden sm:block"
-              style="
+            <div class="absolute hidden sm:block" style="
                 width: 148px;
                 height: 148px;
                 top: 8px;
@@ -1196,70 +904,50 @@
                 background-repeat: no-repeat;
                 background-size: contain;
                 border: none;
-              "
-            ></div>
+              "></div>
             <div class="relative z-10 p-5 sm:p-5 md:p-6">
-              <div
-                class="mb-4 relative"
-                style="padding-top: 4.67px; padding-left: 2.33px"
-              >
+              <div class="mb-4 relative" style="padding-top: 4.67px; padding-left: 2.33px">
                 <!-- Icon Background - bgcardicon.svg -->
-                <div
-                  class="absolute -top-2 -left-2 w-8 h-8"
-                  style="
+                <div class="absolute -top-2 -left-2 w-8 h-8" style="
                     background-image: url('/images/about/bgcardicon.svg');
                     background-repeat: no-repeat;
                     background-size: contain;
                     z-index: 0;
-                  "
-                ></div>
+                  "></div>
                 <!-- Reliability Icon -->
-                <img
-                  src="/images/about/Icon3rd.svg"
-                  alt="Reliability Icon"
-                  class="relative z-10"
-                  style="height: 20.71px; width: auto; color: #1a1925"
-                />
+                <img src="/images/about/Icon3rd.svg" alt="Reliability Icon" class="relative z-10"
+                  style="height: 20.71px; width: auto; color: #1a1925" />
               </div>
-              <h3
-                class="mb-2 sm:mb-3 text-base sm:text-lg"
-                style="
+              <h3 class="mb-2 sm:mb-3 text-base sm:text-lg" style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 500;
                   line-height: 24px;
                   letter-spacing: -0.011em;
                   color: #1a1925;
-                "
-              >
+                ">
                 SHA256 Generator
               </h3>
-              <p
-                class="text-sm sm:text-base card-description"
-                style="
+              <p class="text-sm sm:text-base card-description" style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 400;
                   line-height: 20px;
                   letter-spacing: -0.006em;
                   color: #51515e;
-                "
-              >
+                ">
                 Instantly generate a SHA256 hash of any string or input value.
               </p>
             </div>
-          </div>
+          </NuxtLink>
 
-          <div
-            class="relative overflow-hidden min-h-[210px] md:h-[210px] w-full"
+          <NuxtLink to="/security/sslfreaktest"
+            class="relative overflow-hidden min-h-[210px] md:h-[210px] w-full cursor-pointer transition-all hover:shadow-lg"
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
               background: #ffffff;
-            "
-          >
+            ">
             <!-- Card Background - bgcard.svg -->
-            <div
-              class="absolute hidden sm:block"
-              style="
+            <div class="absolute hidden sm:block" style="
                 width: 148px;
                 height: 148px;
                 top: 8px;
@@ -1276,71 +964,51 @@
                 background-repeat: no-repeat;
                 background-size: contain;
                 border: none;
-              "
-            ></div>
+              "></div>
             <div class="relative z-10 p-5 sm:p-5 md:p-6">
-              <div
-                class="mb-4 relative"
-                style="padding-top: 4.67px; padding-left: 2.33px"
-              >
+              <div class="mb-4 relative" style="padding-top: 4.67px; padding-left: 2.33px">
                 <!-- Icon Background - bgcardicon.svg -->
-                <div
-                  class="absolute -top-2 -left-2 w-8 h-8"
-                  style="
+                <div class="absolute -top-2 -left-2 w-8 h-8" style="
                     background-image: url('/images/about/bgcardicon.svg');
                     background-repeat: no-repeat;
                     background-size: contain;
                     z-index: 0;
-                  "
-                ></div>
+                  "></div>
                 <!-- Agility Icon -->
-                <img
-                  src="/images/about/Icon.svg"
-                  alt="Agility Icon"
-                  class="relative z-10"
-                  style="height: 20.71px; width: auto; color: #1a1925"
-                />
+                <img src="/images/about/Icon.svg" alt="Agility Icon" class="relative z-10"
+                  style="height: 20.71px; width: auto; color: #1a1925" />
               </div>
-              <h3
-                class="mb-2 sm:mb-3 text-base sm:text-lg"
-                style="
+              <h3 class="mb-2 sm:mb-3 text-base sm:text-lg" style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 500;
                   line-height: 24px;
                   letter-spacing: -0.011em;
                   color: #1a1925;
-                "
-              >
+                ">
                 SSL FREAK Test
               </h3>
-              <p
-                class="text-sm sm:text-base card-description"
-                style="
+              <p class="text-sm sm:text-base card-description" style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 400;
                   line-height: 20px;
                   letter-spacing: -0.006em;
                   color: #51515e;
-                "
-              >
+                ">
                 Verify if a server is vulnerable to the FREAK attack
                 (CVE-2015-0204).
               </p>
             </div>
-          </div>
+          </NuxtLink>
 
           <!-- Integrity Card -->
-          <div
-            class="relative overflow-hidden min-h-[210px] md:h-[210px] w-full"
+          <NuxtLink to="/security/tlslogjam"
+            class="relative overflow-hidden min-h-[210px] md:h-[210px] w-full cursor-pointer transition-all hover:shadow-lg"
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
               background: #ffffff;
-            "
-          >
-            <div
-              class="absolute hidden sm:block"
-              style="
+            ">
+            <div class="absolute hidden sm:block" style="
                 width: 148px;
                 height: 148px;
                 top: 8px;
@@ -1357,58 +1025,41 @@
                 background-repeat: no-repeat;
                 background-size: contain;
                 border: none;
-              "
-            ></div>
+              "></div>
             <div class="relative z-10 p-5 sm:p-5 md:p-6">
-              <div
-                class="mb-4 relative"
-                style="padding-top: 4.67px; padding-left: 2.33px"
-              >
+              <div class="mb-4 relative" style="padding-top: 4.67px; padding-left: 2.33px">
                 <!-- Icon Background - bgcardicon.svg -->
-                <div
-                  class="absolute -top-2 -left-2 w-8 h-8"
-                  style="
+                <div class="absolute -top-2 -left-2 w-8 h-8" style="
                     background-image: url('/images/about/bgcardicon.svg');
                     background-repeat: no-repeat;
                     background-size: contain;
                     z-index: 0;
-                  "
-                ></div>
+                  "></div>
                 <!-- Integrity Icon -->
-                <img
-                  src="/images/about/Group.svg"
-                  alt="Integrity Icon"
-                  class="relative z-10"
-                  style="height: 20.71px; width: auto; color: #1a1925"
-                />
+                <img src="/images/about/Group.svg" alt="Integrity Icon" class="relative z-10"
+                  style="height: 20.71px; width: auto; color: #1a1925" />
               </div>
-              <h3
-                class="mb-2 sm:mb-3 text-base sm:text-lg"
-                style="
+              <h3 class="mb-2 sm:mb-3 text-base sm:text-lg" style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 500;
                   line-height: 24px;
                   letter-spacing: -0.011em;
                   color: #1a1925;
-                "
-              >
+                ">
                 TLS Logjam Test
               </h3>
-              <p
-                class="text-sm sm:text-base card-description"
-                style="
+              <p class="text-sm sm:text-base card-description" style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 400;
                   line-height: 20px;
                   letter-spacing: -0.006em;
                   color: #51515e;
-                "
-              >
+                ">
                 Verify if a server is vulnerable to the Logjam attack
                 (CVE-2015-4000).
               </p>
             </div>
-          </div>
+          </NuxtLink>
         </div>
 
         <!-- OTHERS Section -->
@@ -1419,20 +1070,16 @@
         </div>
         <!-- Tools Others Cards -->
         <div
-          class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 lg:gap-10 max-w-6xl mx-auto px-2 sm:px-0 mb-8 sm:mb-12 md:mb-16"
-        >
-          <div
-            class="relative overflow-hidden min-h-[210px] md:h-[210px] w-full"
+          class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 lg:gap-10 max-w-6xl mx-auto px-2 sm:px-0 mb-8 sm:mb-12 md:mb-16">
+          <NuxtLink to="/others/epochconverter"
+            class="relative overflow-hidden min-h-[210px] md:h-[210px] w-full cursor-pointer transition-all hover:shadow-lg"
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
               background: #ffffff;
-            "
-          >
+            ">
             <!-- Card Background - bgcard.svg -->
-            <div
-              class="absolute hidden sm:block"
-              style="
+            <div class="absolute hidden sm:block" style="
                 width: 148px;
                 height: 148px;
                 top: 8px;
@@ -1449,70 +1096,50 @@
                 background-repeat: no-repeat;
                 background-size: contain;
                 border: none;
-              "
-            ></div>
+              "></div>
             <div class="relative z-10 p-5 sm:p-5 md:p-6">
-              <div
-                class="mb-4 relative"
-                style="padding-top: 4.67px; padding-left: 2.33px"
-              >
+              <div class="mb-4 relative" style="padding-top: 4.67px; padding-left: 2.33px">
                 <!-- Icon Background - bgcardicon.svg -->
-                <div
-                  class="absolute -top-2 -left-2 w-8 h-8"
-                  style="
+                <div class="absolute -top-2 -left-2 w-8 h-8" style="
                     background-image: url('/images/about/bgcardicon.svg');
                     background-repeat: no-repeat;
                     background-size: contain;
                     z-index: 0;
-                  "
-                ></div>
+                  "></div>
                 <!-- Agility Icon -->
-                <img
-                  src="/images/about/Icon.svg"
-                  alt="Agility Icon"
-                  class="relative z-10"
-                  style="height: 20.71px; width: auto; color: #1a1925"
-                />
+                <img src="/images/about/Icon.svg" alt="Agility Icon" class="relative z-10"
+                  style="height: 20.71px; width: auto; color: #1a1925" />
               </div>
-              <h3
-                class="mb-2 sm:mb-3 text-base sm:text-lg"
-                style="
+              <h3 class="mb-2 sm:mb-3 text-base sm:text-lg" style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 500;
                   line-height: 24px;
                   letter-spacing: -0.011em;
                   color: #1a1925;
-                "
-              >
+                ">
                 Epoch Converter
               </h3>
-              <p
-                class="text-sm sm:text-base card-description"
-                style="
+              <p class="text-sm sm:text-base card-description" style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 400;
                   line-height: 20px;
                   letter-spacing: -0.006em;
                   color: #51515e;
-                "
-              >
+                ">
                 Convert a unix epoch timestamp to a human readable format.
               </p>
             </div>
-          </div>
+          </NuxtLink>
 
-          <div
-            class="relative overflow-hidden min-h-[210px] md:h-[210px] w-full"
+          <NuxtLink to="/others/hexconverter"
+            class="relative overflow-hidden min-h-[210px] md:h-[210px] w-full cursor-pointer transition-all hover:shadow-lg"
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
               background: #ffffff;
-            "
-          >
+            ">
             <!-- Card Background - bgcard.svg -->
-            <div
-              class="absolute hidden sm:block"
-              style="
+            <div class="absolute hidden sm:block" style="
                 width: 148px;
                 height: 148px;
                 top: 8px;
@@ -1529,58 +1156,41 @@
                 background-repeat: no-repeat;
                 background-size: contain;
                 border: none;
-              "
-            ></div>
+              "></div>
             <div class="relative z-10 p-5 sm:p-5 md:p-6">
-              <div
-                class="mb-4 relative"
-                style="padding-top: 4.67px; padding-left: 2.33px"
-              >
+              <div class="mb-4 relative" style="padding-top: 4.67px; padding-left: 2.33px">
                 <!-- Icon Background - bgcardicon.svg -->
-                <div
-                  class="absolute -top-2 -left-2 w-8 h-8"
-                  style="
+                <div class="absolute -top-2 -left-2 w-8 h-8" style="
                     background-image: url('/images/about/bgcardicon.svg');
                     background-repeat: no-repeat;
                     background-size: contain;
                     z-index: 0;
-                  "
-                ></div>
+                  "></div>
                 <!-- Integrity Icon -->
-                <img
-                  src="/images/about/Group.svg"
-                  alt="Integrity Icon"
-                  class="relative z-10"
-                  style="height: 20.71px; width: auto; color: #1a1925"
-                />
+                <img src="/images/about/Group.svg" alt="Integrity Icon" class="relative z-10"
+                  style="height: 20.71px; width: auto; color: #1a1925" />
               </div>
-              <h3
-                class="mb-2 sm:mb-3 text-base sm:text-lg"
-                style="
+              <h3 class="mb-2 sm:mb-3 text-base sm:text-lg" style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 500;
                   line-height: 24px;
                   letter-spacing: -0.011em;
                   color: #1a1925;
-                "
-              >
+                ">
                 Knowledge base
               </h3>
-              <p
-                class="text-sm sm:text-base card-description"
-                style="
+              <p class="text-sm sm:text-base card-description" style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 400;
                   line-height: 20px;
                   letter-spacing: -0.006em;
                   color: #51515e;
-                "
-              >
+                ">
                 Convert a hexadecimal value to decimal and a decimal value to
                 hexadecimal.
               </p>
             </div>
-          </div>
+          </NuxtLink>
         </div>
       </section>
       <div class="mb-12 sm:mb-8 md:mb-0">

@@ -337,6 +337,21 @@
                 FAQ
               </NuxtLink>
             </li>
+            <li>
+              <NuxtLink
+                to="/tools"
+                class="hover:text-black text-[#73737F] transition-opacity text-[14px] sm:text-sm"
+                style="
+                  font-family: 'Bricolage Grotesque', sans-serif;
+                  font-weight: 400;
+                  line-height: 20px;
+                  letter-spacing: -0.006em;
+                  
+                "
+              >
+                Tools
+              </NuxtLink>
+            </li>
           </ul>
         </div>
       </div>
