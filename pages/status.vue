@@ -117,7 +117,7 @@
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
-              background: #fafafa;
+              
               box-shadow: 0px 0.5px 0.5px 0px rgba(7, 1, 19, 0.03),
                 0px 1px 1px -0.5px rgba(7, 1, 19, 0.03),
                 0px 2px 2px -1px rgba(7, 1, 19, 0.03),
@@ -220,7 +220,7 @@
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
-              background: #fafafa;
+              
               box-shadow: 0px 0.5px 0.5px 0px rgba(7, 1, 19, 0.03),
                 0px 1px 1px -0.5px rgba(7, 1, 19, 0.03),
                 0px 2px 2px -1px rgba(7, 1, 19, 0.03),
@@ -332,7 +332,7 @@
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
-              background: #fafafa;
+              
               box-shadow: 0px 0.5px 0.5px 0px rgba(7, 1, 19, 0.03),
                 0px 1px 1px -0.5px rgba(7, 1, 19, 0.03),
                 0px 2px 2px -1px rgba(7, 1, 19, 0.03),
@@ -436,7 +436,7 @@
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
-              background: #fafafa;
+              
               box-shadow: 0px 0.5px 0.5px 0px rgba(7, 1, 19, 0.03),
                 0px 1px 1px -0.5px rgba(7, 1, 19, 0.03),
                 0px 2px 2px -1px rgba(7, 1, 19, 0.03),
@@ -535,7 +535,7 @@
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
-              background: #fafafa;
+              
               box-shadow: 0px 0.5px 0.5px 0px rgba(7, 1, 19, 0.03),
                 0px 1px 1px -0.5px rgba(7, 1, 19, 0.03),
                 0px 2px 2px -1px rgba(7, 1, 19, 0.03),
@@ -635,7 +635,7 @@
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
-              background: #fafafa;
+              
               box-shadow: 0px 0.5px 0.5px 0px rgba(7, 1, 19, 0.03),
                 0px 1px 1px -0.5px rgba(7, 1, 19, 0.03),
                 0px 2px 2px -1px rgba(7, 1, 19, 0.03),

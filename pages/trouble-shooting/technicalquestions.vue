@@ -1,8 +1,7 @@
 <template>
   <div class="mt-[4.25rem] mx-auto max-w-3xl">
     <div class="w-full flex flex-col items-start gap-4">
-      <button class="support-btn shadow-md">Support</button>
-
+ 
       <h1 class="text-5xl font-medium">Technical Questions</h1>
 
       <button class="btn2 text-[#73737F] mt-4">
@@ -106,7 +105,7 @@
       </p>
 
       <div
-        class="border border-[#D0D0D8] text-[#73737F] rounded-md p-4 mt-2 bg-white text-[10px]"
+        class="border border-[#D0D0D8] overflow-x-auto text-[#73737F] rounded-md p-4 mt-2  text-[14px]"
       >
         <pre><code>
 GET /foobar.jpg HTTP/1.1
@@ -117,7 +116,8 @@ X-Forwarded-Scheme: http
 X-Pull: KeyCDN
 Connection: close
 Accept: */*
-User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5)  AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/41.0.2272.118 Safari/537.36
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5)  AppleWebKit/537.36 (KHTML, like Gecko) 
+ Chrome/41.0.2272.118 Safari/537.36
 Accept-Language: en-US,en;q=0.8,de;q=0.6,ja;q=0.4
 Cookie: foobar
   </code></pre>
@@ -435,34 +435,29 @@ Cookie: foobar
       </p>
     </div>
   </div>
+    <Teleport to="#full-width-section">
+  <svg
+    class="image-processing-bg"
+    width="691"
+    height="202"
+    viewBox="0 0 691 202"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M662.785 573.706C685.376 425.8 661.407 281.837 590.396 218.417C507.73 144.588 361.315 179.909 150.391 445.226C271.485 -512.328 -184.359 515.654 -66.8792 60.2144"
+      stroke="#EEEEF0"
+      stroke-width="40"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </svg>
+</Teleport>
 </template>
 
 <style scoped>
-.support-btn {
-  position: relative;
-  padding-left: 39px;
-  font-size: 16px;
-  font-weight: 500;
-  background: #ffffff;
-
-  border-radius: 10px;
-  padding: 1px 20px;
-  cursor: pointer;
-}
-
-.support-btn::before {
-  content: "";
-  position: absolute;
-  padding-left: 12px;
-  left: 4px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 14px;
-  height: 14px;
-
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' fill='%23888'><path d='M7 0L1 8h4l-1 6 6-8H7z'/></svg>");
+p, ol, ul, pre, code {
+  font-family: inter;
 }
 .arrow {
   width: 12px;
@@ -480,7 +475,6 @@ Cookie: foobar
 
   font-size: 16px;
   font-weight: 500;
-  background: #ffffff;
   border: 2px solid #eaeaea;
   border-radius: 6px;
   padding: 15px 20px;

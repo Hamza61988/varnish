@@ -4,19 +4,14 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
 </script>
 
 <template>
-  <div class="min-h-screen bg-white text-[#1f2937] p-6  md:p-12 ">
+  <div class="min-h-screen  text-[#1f2937]  ">
     <div class="max-w-3xl mb-4 mx-auto flex flex-col gap-6">
       
       <div class="flex flex-col mb-4 gap-6">
         
         <div class="flex items-start flex-col gap-4">
-          <button
-            class="tools-btn shadow-md gap-2 rounded-[2rem] flex items-center w-fit"
-          >
-            <span class="tools-icon"></span>
-            Tools
-          </button>
-
+          
+     
           <div class="flex flex-col gap-2">
             <h1 class="text-[3rem] font-medium text-[#111827]">
              IP Location Finder
@@ -257,31 +252,21 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
   </div>
 
 
-  <AccessAllFeaturesSection class="mt-10"/>
+ <Teleport to="#full-width-section">
+ <AccessAllFeaturesSection class=""/>
+
+</Teleport>
 </template>
 <style scoped>
 input[type="checkbox"] {
   accent-color: #2563eb;
 }
-.tools-btn {
-  background: #ffffff;
-  border: 1px solid #e5e7eb;
-  border-radius: 12px;
-  padding: 2px 9px;
-  display: inline-flex;
-  align-items: center;
-  gap: 2px;
-  cursor: pointer;
-  transition: box-shadow 0.2s ease, background-color 0.2s ease;
+
+p, ol, ul, pre, code {
+  font-family: inter;
 }
-.tools-icon {
-  width: 16px;
-  height: 16px;
-  display: inline-block;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23888" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M14.615 1.595a.75.75 0 01.359.852L12.982 9.75h7.268a.75.75 0 01.548 1.262l-10.5 11.25a.75.75 0 01-1.272-.71l1.992-7.302H3.75a.75.75 0 01-.548-1.262l10.5-11.25a.75.75 0 01.913-.143z" clip-rule="evenodd"/></svg>');
-}
+
+
 .btn {
   position: relative;
   padding-left: 39px;

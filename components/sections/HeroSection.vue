@@ -178,7 +178,7 @@
         class="w-full lg:w-[40%] mt-6 sm:mt-8 pl-[5%] lg:pl-0 lg:mt-0 hero-image-section order-2 lg:order-2"
       >
         <img
-          src="/images/Varnish.svg"
+          src="/images/varnish.svg"
           alt="BEST CDN AWARD"
           class="w-full h-auto lg:h-full object-cover"
         />
@@ -264,15 +264,11 @@ onMounted(() => {
 .fancy-button:hover {
   background-color: #1b56e0;
 }
-
 .hero-section {
   background-color: #f7f7f8;
-  background-image: radial-gradient(
-    circle,
-    rgba(163, 163, 174, 0.3) 1px,
-    transparent 1px
-  );
-  background-size: 24px 24px;
+  background-image: url("/images/dots.png");
+  background-repeat: repeat;
+
   background-position: 0 0;
   position: relative;
 }

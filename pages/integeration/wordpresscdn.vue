@@ -6,19 +6,18 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
 <template>
   <div class="mt-[4.25rem] mx-auto max-w-3xl">
     <div class="w-full">
-      <button class="support-btn shadow-md">Support</button>
-
+ 
       <h1 class="text-5xl font-medium mt-4">WordPress CDN Integration</h1>
 
       <p class="text-[#73737F] mt-4">
         This tutorial shows how to integrate a WordPress website with KeyCDN
-        using our CDN Enabler plugin.
+        using our CDN <span class="underline">Enabler</span> plugin.
       </p>
     </div>
 
-    <div class="mt-[2.3125rem]">
+    <div class="">
       <div class="pl-8">
-        <ol class="text-[#73737F]">
+        <ol class="text-[#73737F] flex flex-col gap-4 ">
           <li class="mt-3">Create a <a class="underline">Pull Zone</a>.</li>
           <li class="mt-3">Log in to your WordPress admin dashboard.</li>
           <li class="mt-3">Go to the CDN Enabler settings.</li>
@@ -31,6 +30,7 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
           <li>Click Save Changes and Validate Configuration.</li>
           <li>If applicable, clear your WordPress cache.</li>
         </ol>
+        </div>
 
         <p class="text-[#73737F] mt-4">
           That's it! We recommend verifying that the URLs have been rewritten
@@ -62,8 +62,8 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
         </p>
       </div>
 
-      <hr class="border-[#00000038] border-t-2 mt-4" />
-    </div>
+      <hr class="border-[#8D8D9738]/22 border-[1px] mt-4" />
+ 
 
     <div class="my-4">
       <h2 class="text-[2rem] font-semibold">WordPress CDN Enabler Plugin</h2>
@@ -77,44 +77,16 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
     </div>
   </div>
 
- <AccessAllFeaturesSection class="mt-10"/>
+ <Teleport to="#full-width-section">
+  <AccessAllFeaturesSection class="mt-10"/>
+</Teleport>
 </template>
 
 <style scoped>
-.support-btn {
-  position: relative;
-  padding-left: 39px;
-  font-size: 16px;
-  font-weight: 500;
-  background: #ffffff;
-
-  border-radius: 10px;
-  padding: 1px 20px;
-  cursor: pointer;
+p, ol, ul, pre, code {
+  font-family: inter;
 }
 
-.support-btn::before {
-  content: "";
-  position: absolute;
-  padding-left: 12px;
-  left: 4px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 14px;
-  height: 14px;
-
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' fill='%23888'><path d='M7 0L1 8h4l-1 6 6-8H7z'/></svg>");
-}
-.arrow {
-  width: 12px;
-  height: 12px;
-  background-repeat: no-repeat;
-  background-size: contain;
-
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%23888'><path fill-rule='evenodd' d='M10 6l6 6H4l6-6z' clip-rule='evenodd'/></svg>");
-}
 ol {
   list-style-type: decimal;
   padding-left: 1.25rem;

@@ -6,7 +6,6 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
 <template>
   <div class="mt-[4.25rem] mx-auto max-w-3xl">
     <div class="w-full flex flex-col gap-4 items-start">
-      <button class="support-btn shadow-md">Support</button>
 
       <h1 class="text-5xl font-medium">Larvel CDN Integration</h1>
 
@@ -32,7 +31,7 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
           </li>
 
           <div
-            class="w-full border border-[#D0D0D8] text-[#73737F] shadow rounded-xl p-4 bg-white"
+            class="w-full border border-[#D0D0D8] text-[#73737F] shadow rounded-xl p-4 "
           >
             <pre><code>
 ...
@@ -55,7 +54,7 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
           <li>Add the following code to your ./app/helpers.php:</li>
 
           <div
-            class="w-full border border-[#D0D0D8] shadow rounded-xl p-4 bg-white"
+            class="w-full border border-[#D0D0D8] shadow rounded-xl p-4 "
           >
             <pre><code>
 &lt;?php
@@ -99,7 +98,7 @@ function cdnPath($cdn, $asset) {
 
           <li>Define the CDN URLs in the ./config/app.php file.</li>
 
-          <div class="w-full border border-[#D0D0D8] shadow rounded-xl p-4 bg-white">
+          <div class="w-full border border-[#D0D0D8] shadow rounded-xl p-4 ">
   <pre><code>
 &lt;?php
 return [
@@ -129,7 +128,7 @@ return [
 
           <li>Use the global helper function in your views:</li>
 
-    <div class="w-full border border-[#D0D0D8] shadow rounded-xl p-2 bg-white">
+    <div class="w-full border border-[#D0D0D8] shadow rounded-xl p-2 ">
   <pre><code v-pre>
 &lt;img src=&quot;{{ cdn('/img/yourImg.png') }} alt=&quot;Your Image loaded from KeyCDN&quot; /&gt;
   </code></pre>
@@ -147,43 +146,15 @@ return [
 
   </div>
 
-<AccessAllFeaturesSection class="mt-10"/>
+<Teleport to="#full-width-section">
+  <AccessAllFeaturesSection class="mt-10"/>
+
+</Teleport>
 </template>
 
 <style scoped>
-.support-btn {
-  position: relative;
-  padding-left: 39px;
-  font-size: 16px;
-  font-weight: 500;
-  background: #ffffff;
-
-  border-radius: 10px;
-  padding: 1px 20px;
-  cursor: pointer;
-}
-
-.support-btn::before {
-  content: "";
-  position: absolute;
-  padding-left: 12px;
-  left: 4px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 14px;
-  height: 14px;
-
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' fill='%23888'><path d='M7 0L1 8h4l-1 6 6-8H7z'/></svg>");
-}
-.arrow {
-  width: 12px;
-  height: 12px;
-  background-repeat: no-repeat;
-  background-size: contain;
-
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%23888'><path fill-rule='evenodd' d='M10 6l6 6H4l6-6z' clip-rule='evenodd'/></svg>");
+p, ol, ul, pre, code {
+  font-family: inter;
 }
 ol {
   list-style-type: decimal;
