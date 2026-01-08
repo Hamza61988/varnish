@@ -1,12 +1,10 @@
 <script setup lang="ts">
-import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSection.vue';
-
+import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSection.vue";
 </script>
 
 <template>
   <div class="mt-[4.25rem] mx-auto max-w-3xl">
     <div class="w-full flex flex-col items-start gap-4">
- 
       <h1 class="text-5xl font-medium">Drupal CDN Integration</h1>
 
       <p class="text-[#73737F]">
@@ -108,70 +106,81 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
           We always recommend checking the changes in the HTML code. Make sure
           the URLs have been rewritten properly.
         </li>
-
-        
       </ol>
 
       <p class="text-[#73737F]">
-          That's it. The Drupal CDN integration is completed. If there are any
-          issues after the CDN integration, the KeyCDN support can be contacted
-          anytime
-        </p>
+        That's it. The Drupal CDN integration is completed. If there are any
+        issues after the CDN integration, the KeyCDN support can be contacted
+        anytime
+      </p>
     </div>
 
-<div class="mt-[2.3125rem]">
-  <h2 class="text-[2rem] font-semibold">
-    The benefits of using Varnish with Drupal
-  </h2>
+    <div class="mt-[2.3125rem]">
+      <h2 class="text-[2rem] font-semibold">
+        The benefits of using Varnish with Drupal
+      </h2>
 
-  <p class="text-[#73737F] mt-4">
-    Once Varnish is integrated into a Drupal site, there are lots of advantages to benefit from:
-  </p>
+      <p class="text-[#73737F] mt-4">
+        Once Varnish is integrated into a Drupal site, there are lots of
+        advantages to benefit from:
+      </p>
 
-  <ul class="text-[#73737F] pl-8 list-disc mt-6 flex flex-col gap-2">
-    <li>Access to our complete network of POPs. Content is always served from the closest location to the end users.</li>
-    <li>Detailed statistics can be monitored in the Varnish dashboard.</li>
-    <li>Varnish supports HTTP/2 for even faster content delivery. There is no special configuration needed to take advantage of the new protocol.</li>
-  </ul>
+      <ul class="text-[#73737F] pl-8 list-disc mt-6 flex flex-col gap-2">
+        <li>
+          Access to our complete network of POPs. Content is always served from
+          the closest location to the end users.
+        </li>
+        <li>Detailed statistics can be monitored in the Varnish dashboard.</li>
+        <li>
+          Varnish supports HTTP/2 for even faster content delivery. There is no
+          special configuration needed to take advantage of the new protocol.
+        </li>
+      </ul>
 
-  <div class="my-8">
+      <div class="my-8">
+        <p class="text-[#73737F]">
+          Varnish also offers great <a href="#" class="underline">tools</a> and
+          an up to date <a href="#" class="underline">knowledge base</a>. Here
+          some useful pages:
+        </p>
 
-  <p class="text-[#73737F] ">
-    Varnish also offers great <a href="#" class="underline">tools</a> and an up to date 
-    <a href="#" class="underline">knowledge base</a>. Here some useful pages:
-  </p>
-
-  <ul class="text-[#73737F] pl-8 list-disc mt-2 flex flex-col gap-2">
-    <li>
-      The <a href="#" class="underline">Website Speed Test</a> from Varnish lets you analyze the loading time of a website.
-    </li>
-    <li>
-      When it comes to HTTP headers, the Varnish 
-      <a href="#" class="underline">HTTP Header Checker</a> is the perfect tool.
-    </li>
-    <li>
-      <a href="#" class="underline">Custom SSL</a> is free for everyone, just upload your certificate.
-    </li>
-    <li>
-      The <a href="#" class="underline">SSL Certificate Checker</a> lets you easily verify certificates.
-    </li>
-  </ul>
+        <ul class="text-[#73737F] pl-8 list-disc mt-2 flex flex-col gap-2">
+          <li>
+            The <a href="#" class="underline">Website Speed Test</a> from
+            Varnish lets you analyze the loading time of a website.
+          </li>
+          <li>
+            When it comes to HTTP headers, the Varnish
+            <a href="#" class="underline">HTTP Header Checker</a> is the perfect
+            tool.
+          </li>
+          <li>
+            <a href="#" class="underline">Custom SSL</a> is free for everyone,
+            just upload your certificate.
+          </li>
+          <li>
+            The <a href="#" class="underline">SSL Certificate Checker</a> lets
+            you easily verify certificates.
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
-</div>
-
-  </div>
- <Teleport to="#full-width-section">
-  <AccessAllFeaturesSection class="mt-10"/>
-
-</Teleport>
+  <ClientOnly>
+    <Teleport to="#full-width-section">
+      <AccessAllFeaturesSection class="mt-10" />
+    </Teleport>
+  </ClientOnly>
 </template>
 
 <style scoped>
-
-p, ol, ul, pre, code {
+p,
+ol,
+ul,
+pre,
+code {
   font-family: inter;
 }
-
 
 ol {
   list-style-type: decimal;

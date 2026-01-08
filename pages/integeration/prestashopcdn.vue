@@ -1,12 +1,10 @@
 <script setup lang="ts">
-import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSection.vue';
-
+import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSection.vue";
 </script>
 
 <template>
   <div class="mt-[4.25rem] mx-auto max-w-3xl">
     <div class="w-full flex flex-col items-start gap-4">
-
       <h1 class="text-5xl font-medium">PrestaShop CDN Integration</h1>
 
       <p class="text-[#73737F]">
@@ -34,8 +32,8 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
       <h2 class="text-[2rem] font-semibold">PrestaShop CDN integration</h2>
 
       <p class="text-[#73737F]">
-        This article shows how to complete a <a class="underline">PrestaShop</a> CDN integration with
-        KeyCDN.
+        This article shows how to complete a
+        <a class="underline">PrestaShop</a> CDN integration with KeyCDN.
       </p>
 
       <ol class="text-[#73737F] flex flex-col gap-4 pl-8">
@@ -71,7 +69,6 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
         </li>
       </ol>
 
-
       <p class="text-[#73737F]">
         The KeyCDN cache can easily be purged via the dashboard or the API. One
         can choose to purge the whole Zone or individual URLs, it only takes a
@@ -87,53 +84,73 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
 
     <div class="mt-[2.3125rem]">
       <h2 class="text-[2rem] font-semibold">
-       The benefits of using a CDN for your PrestaShop site
+        The benefits of using a CDN for your PrestaShop site
       </h2>
 
       <p class="text-[#73737F] mt-4">
-        Once the PrestaShop CDN integration is completed, there are many benefits:
+        Once the PrestaShop CDN integration is completed, there are many
+        benefits:
       </p>
 
       <ul class="text-[#73737F] pl-8 list-disc mt-4 flex flex-col gap-2">
         <li>
-        Access to all of our <a class="underline">strategically placed POPs</a>  worldwide. We ensure that the assets are always loaded from the closest POP to ensure low latency and best throughput.
+          Access to all of our
+          <a class="underline">strategically placed POPs</a> worldwide. We
+          ensure that the assets are always loaded from the closest POP to
+          ensure low latency and best throughput.
         </li>
         <li>
-         The <a class="underline">pricing</a>  of KeyCDN is very transparent. There is no monthly fee. KeyCDN does not charge for HTTP request and there is no extra fee for HTTPS traffic.
+          The <a class="underline">pricing</a> of KeyCDN is very transparent.
+          There is no monthly fee. KeyCDN does not charge for HTTP request and
+          there is no extra fee for HTTPS traffic.
         </li>
         <li>
-         KeyCDN also delivers content based on <a class="underline">HTTP/2</a>.  The new protocol brings a number of advantages.
+          KeyCDN also delivers content based on <a class="underline">HTTP/2</a>.
+          The new protocol brings a number of advantages.
         </li>
-     
-</ul>
+      </ul>
 
+      <div class="mt-4 text-[#73737F]">
+        <p>
+          KeyCDN has launched awesome <a class="underline">tools</a> and is
+          constantly expanding the <a class="undelrine">knowledge</a> base. Here
+          are some important pages:
+        </p>
+        <ul class="text-[#73737F] pl-8 list-disc mt-4 flex flex-col gap-2">
+          <li>
+            The <a class="underline">Website Speed Test</a> is essential for
+            analyzing web performance.
+          </li>
 
-<div  class="mt-4 text-[#73737F]">
-      <p>
-        KeyCDN has launched awesome <a class="underline">tools</a> and is constantly expanding the <a class="undelrine">knowledge</a> base. Here are some important pages:
-      </p>
-<ul class="text-[#73737F] pl-8 list-disc mt-4 flex flex-col gap-2">
-      <li>
-        The <a class="underline">Website Speed Test</a>  is essential for analyzing web performance.
-      </li>
-
-      <li>The KeyCDN <a class="underline">HTTP Header Checker</a>  is very useful for examining HTTP headers.</li>
-      <li> <a class="underline">Custom SSL</a> can be added to every Zone.</li>
-      <li>Certificates can easily be decrypted with the <a class="underline">SSL Certificate Checker</a> .</li>
-       </ul>
-
-       </div>
+          <li>
+            The KeyCDN <a class="underline">HTTP Header Checker</a> is very
+            useful for examining HTTP headers.
+          </li>
+          <li>
+            <a class="underline">Custom SSL</a> can be added to every Zone.
+          </li>
+          <li>
+            Certificates can easily be decrypted with the
+            <a class="underline">SSL Certificate Checker</a> .
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 
-<Teleport to="#full-width-section">
-  <AccessAllFeaturesSection class="mt-10"/>
-
-</Teleport>
+  <ClientOnly>
+    <Teleport to="#full-width-section">
+      <AccessAllFeaturesSection class="mt-10" />
+    </Teleport>
+  </ClientOnly>
 </template>
 
 <style scoped>
-p, ol, ul, pre, code {
+p,
+ol,
+ul,
+pre,
+code {
   font-family: inter;
 }
 ol {

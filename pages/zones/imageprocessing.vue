@@ -14,7 +14,7 @@ const processingFeatures = [
       {
         code: "https://ip.keycdn.com/example.jpg?crop=smart&width=400&height=400",
         image: "/images/Zones/crop.svg",
-        widthClass: "", 
+        widthClass: "",
       },
       {
         code: "https://ip.keycdn.com/example.jpg?crop=600,400",
@@ -451,7 +451,7 @@ const processingFeatures = [
       },
     ],
   },
-   {
+  {
     title: "Signing overlay requests",
     description:
       "Signing overlay images is a special case where the base image from the origin should not be  revealed or accessed. In order to achieve this, there are a few  important details to consider. First, a canonical header would reveal  where the base image is located. That means if the origin server is not  authenticating requests then someone could simply use this URL to access the image directly from the origin without the watermark. Therefore,  the Zone setting Canonical Header should be disabled. The canonical header should also be removed from the origin server if set. Next, choosing a secret Origin URL, such as https://urjdh47e.example.com, is recommended as this makes it more difficult to be guessed compared to something more common like https://www.example.com. Limiting acccess to the origin server to only KeyCDN can be implemented for further access control. One way to do this would be through the X-Pull request header, which is a request header that all of KeyCDN's requests contain. A unique X-Pull Key could be set followed by a rule added to the origin server that forbids any requests without that request header and value.",
@@ -787,7 +787,6 @@ const tableRows = [
 
 <template>
   <div class="w-full flex flex-col gap-4">
-    
     <h1 class="text-5xl font-medium mt-4">Image Processing</h1>
 
     <img src="/images/Zones/imageprocessing.svg" alt="image processing" />
@@ -941,31 +940,33 @@ const tableRows = [
         </template>
       </div>
     </div>
-    
   </div>
-  <Teleport to="#full-width-section">
-  <svg
-    class="image-processing-bg"
-    width="691"
-    height="202"
-    viewBox="0 0 691 202"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path
-      d="M662.785 573.706C685.376 425.8 661.407 281.837 590.396 218.417C507.73 144.588 361.315 179.909 150.391 445.226C271.485 -512.328 -184.359 515.654 -66.8792 60.2144"
-      stroke="#EEEEF0"
-      stroke-width="40"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-    />
-  </svg>
-</Teleport>
-
+  <ClientOnly>
+    <Teleport to="#full-width-section">
+      <svg
+        class="image-processing-bg"
+        width="691"
+        height="202"
+        viewBox="0 0 691 202"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M662.785 573.706C685.376 425.8 661.407 281.837 590.396 218.417C507.73 144.588 361.315 179.909 150.391 445.226C271.485 -512.328 -184.359 515.654 -66.8792 60.2144"
+          stroke="#EEEEF0"
+          stroke-width="40"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </Teleport>
+  </ClientOnly>
 </template>
 
 <style scoped>
-  p,ol,ul {
+p,
+ol,
+ul {
   font-family: inter;
 }
 </style>

@@ -1,12 +1,10 @@
 <script setup lang="ts">
-import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSection.vue';
-
+import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSection.vue";
 </script>
 
 <template>
   <div class="mt-[4.25rem] mx-auto max-w-3xl">
     <div class="w-full flex flex-col items-start gap-4">
- 
       <h1 class="text-5xl font-medium">Typo3 CDN Integration</h1>
 
       <p class="text-[#73737F]">
@@ -58,8 +56,10 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
           example-hexid.kxcdn.com with your own Zone URL or Zone Alias):
         </li>
 
-      <div class="w-full border border-[#D0D0D8] shadow rounded-xl p-4 bg-white">
-  <pre><code>
+        <div
+          class="w-full border border-[#D0D0D8] shadow rounded-xl p-4 bg-white"
+        >
+          <pre><code>
 config.tx_ja_replacer {
   search {
     1="typo3temp/
@@ -73,7 +73,7 @@ config.tx_ja_replacer {
   }
 }
   </code></pre>
-</div>
+        </div>
 
         <img src="/images/Integeration/typo4.svg" alt="typo 4rd" />
 
@@ -120,27 +120,29 @@ config.tx_ja_replacer {
           everything. It only takes a few seconds until the cache is globally
           purged on all POPs.
         </li>
-
-       
       </ul>
 
-       <p class="mt-4 text-[#73737F]">
-          KeyCDN also offers many additional features and provides a list of
-          useful tools to do everything from site speed tests to HTTP/2 server
-          checks, and much more.
-        </p>
-</div>
-
+      <p class="mt-4 text-[#73737F]">
+        KeyCDN also offers many additional features and provides a list of
+        useful tools to do everything from site speed tests to HTTP/2 server
+        checks, and much more.
+      </p>
+    </div>
   </div>
 
-<Teleport to="#full-width-section">
-  <AccessAllFeaturesSection class="mt-10"/>
-
-</Teleport>
+  <ClientOnly>
+    <Teleport to="#full-width-section">
+      <AccessAllFeaturesSection class="mt-10" />
+    </Teleport>
+  </ClientOnly>
 </template>
 
 <style scoped>
-p, ol, ul, pre, code {
+p,
+ol,
+ul,
+pre,
+code {
   font-family: inter;
 }
 ol {

@@ -1,13 +1,10 @@
 <script setup lang="ts">
-import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSection.vue';
-
+import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSection.vue";
 </script>
 
 <template>
-  <div class="min-h-screen  text-[#1f2937]  ">
+  <div class="min-h-screen text-[#1f2937]">
     <div class="max-w-3xl mx-auto">
-      
-    
       <h1 class="text-[3rem] font-medium text-[#111827]">Hex Converter</h1>
       <h2 class="text-[#73737F] font-medium uppercase tracking-wide mb-4">
         Convert hexadecimal and decimal
@@ -86,21 +83,25 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
       </div>
     </div>
   </div>
- 
- <Teleport to="#full-width-section">
- <AccessAllFeaturesSection class=""/>
 
-</Teleport>
+  <ClientOnly>
+    <Teleport to="#full-width-section">
+      <AccessAllFeaturesSection class="" />
+    </Teleport>
+  </ClientOnly>
 </template>
 <style scoped>
 input[type="checkbox"] {
   accent-color: #2563eb;
 }
 
-p, ol, ul, pre, code {
+p,
+ol,
+ul,
+pre,
+code {
   font-family: inter;
 }
-
 
 .btn {
   position: relative;

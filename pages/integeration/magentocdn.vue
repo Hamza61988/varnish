@@ -1,12 +1,10 @@
 <script setup lang="ts">
-import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSection.vue';
-
+import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSection.vue";
 </script>
 
 <template>
   <div class="mt-[4.25rem] mx-auto max-w-3xl">
     <div class="w-full flex flex-col items-start gap-4">
- 
       <h1 class="text-5xl font-medium">Magento CDN Integration</h1>
 
       <p class="text-[#73737F]">
@@ -40,7 +38,10 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
       </p>
 
       <ol class="text-[#73737F] flex flex-col gap-4 pl-8">
-        <li class="">Create  <a class="underline">Pull zone</a> or a <a class="underline">Push Zone</a>.</li>
+        <li class="">
+          Create <a class="underline">Pull zone</a> or a
+          <a class="underline">Push Zone</a>.
+        </li>
         <li class="">
           Log in to the Magento admin panel to start with the Magento CDN
           integration.
@@ -219,35 +220,45 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
           free Let's Encrypt certificates.
         </p>
 
-         <p class="text-[#73737F]">
-        KeyCDN has also developed a series of tools and maintains a knowledge base. Check these pages as well:
+        <p class="text-[#73737F]">
+          KeyCDN has also developed a series of tools and maintains a knowledge
+          base. Check these pages as well:
         </p>
 
         <ul class="text-[#73737F] pl-8 list-disc mt-2 flex flex-col gap-2">
           <li>
-          The <a class="underline">Ping Test</a> tool makes pinging IPs from different locations a breeze.
+            The <a class="underline">Ping Test</a> tool makes pinging IPs from
+            different locations a breeze.
           </li>
           <li>
-          <a class="underline">Website Speed</a> Test from different locations lets you analyze the page loading time.
+            <a class="underline">Website Speed</a> Test from different locations
+            lets you analyze the page loading time.
           </li>
           <li>
-          HTTP headers can be examined with the KeyCDN <a class="underline">HTTP Header Checker</a> .
+            HTTP headers can be examined with the KeyCDN
+            <a class="underline">HTTP Header Checker</a> .
           </li>
           <li>
-           Our <a class="underline">troubleshooting guide</a>  lets you solve the most common problems around CDNs.
+            Our <a class="underline">troubleshooting guide</a> lets you solve
+            the most common problems around CDNs.
           </li>
         </ul>
       </div>
     </div>
   </div>
-<Teleport to="#full-width-section">
-  <AccessAllFeaturesSection class="mt-10"/>
-
-</Teleport>
+  <ClientOnly>
+    <Teleport to="#full-width-section">
+      <AccessAllFeaturesSection class="mt-10" />
+    </Teleport>
+  </ClientOnly>
 </template>
 
 <style scoped>
-p, ol, ul, pre, code {
+p,
+ol,
+ul,
+pre,
+code {
   font-family: inter;
 }
 ol {

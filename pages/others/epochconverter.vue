@@ -1,13 +1,10 @@
 <script setup lang="ts">
-import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSection.vue';
-
+import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSection.vue";
 </script>
 
 <template>
-  <div class="min-h-screen  text-[#1f2937] ">
+  <div class="min-h-screen text-[#1f2937]">
     <div class="max-w-3xl mx-auto">
-    
-     
       <h1 class="text-[3rem] font-medium text-[#111827]">Epoch Converter</h1>
       <h2 class="text-[#73737F] font-medium uppercase tracking-wide mb-6">
         UNIX EPOCH TIME CONVERTER
@@ -148,10 +145,11 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
     </div>
   </div>
 
- <Teleport to="#full-width-section">
- <AccessAllFeaturesSection class=""/>
-
-</Teleport>
+  <ClientOnly>
+    <Teleport to="#full-width-section">
+      <AccessAllFeaturesSection class="" />
+    </Teleport>
+  </ClientOnly>
 </template>
 <style scoped>
 input[type="checkbox"] {

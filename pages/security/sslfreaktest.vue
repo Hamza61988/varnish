@@ -1,12 +1,10 @@
 <script setup lang="ts">
-import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSection.vue';
-
+import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSection.vue";
 </script>
 
 <template>
-  <div class="min-h-screen  text-[#1f2937] ">
+  <div class="min-h-screen text-[#1f2937]">
     <div class="max-w-3xl mx-auto">
-     
       <h1 class="text-[3rem] font-medium text-[#111827] mb-4">
         SSL FREAK Test
       </h1>
@@ -43,41 +41,46 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
           <p class="text-[15px]">
             Tuesday 2015/03/03 - Researchers of miTLS team (joint project
             between Inria and Microsoft Research) disclosed a new SSL/TLS
-            vulnerability — the FREAK SSL attack <a class="underline">(CVE-2015-0204)</a>. The
-            vulnerability allows attackers to intercept HTTPS connections
-            between vulnerable clients and servers and force them to use
-            'export-grade' cryptography, which can then be decrypted or altered.
-            <br/>
-             <br/>
+            vulnerability — the FREAK SSL attack
+            <a class="underline">(CVE-2015-0204)</a>. The vulnerability allows
+            attackers to intercept HTTPS connections between vulnerable clients
+            and servers and force them to use 'export-grade' cryptography, which
+            can then be decrypted or altered.
+            <br />
+            <br />
             Read more about the <a class="underline">FREAK SSL attack</a>.
           </p>
         </div>
         <div>
           <h3 class="text-[1.5625rem] font-semibold text-[#1f2937] mb-3">
-          How to eliminate the vulnerability?
+            How to eliminate the vulnerability?
           </h3>
           <p class="text-[15px]">
-          Upgrade the OpenSSL version to at least 1.02.
+            Upgrade the OpenSSL version to at least 1.02.
           </p>
         </div>
       </div>
     </div>
   </div>
- 
- <Teleport to="#full-width-section">
- <AccessAllFeaturesSection class=""/>
 
-</Teleport>
+  <ClientOnly>
+    <Teleport to="#full-width-section">
+      <AccessAllFeaturesSection class="" />
+    </Teleport>
+  </ClientOnly>
 </template>
 <style scoped>
 input[type="checkbox"] {
   accent-color: #2563eb;
 }
 
-p, ol, ul, pre, code {
+p,
+ol,
+ul,
+pre,
+code {
   font-family: inter;
 }
-
 
 .btn {
   position: relative;

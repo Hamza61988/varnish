@@ -1,12 +1,10 @@
 <script setup lang="ts">
-import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSection.vue';
-
+import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSection.vue";
 </script>
 
 <template>
   <div class="mt-[4.25rem] mx-auto max-w-3xl">
     <div class="w-full flex flex-col gap-4 items-start">
- 
       <h1 class="text-5xl font-medium">Check if CDN Working</h1>
 
       <img alt="cdn work" src="/images/Trouble-shoot/cdnwork.svg" />
@@ -38,8 +36,9 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
         integrated with your site. There are a few ways to do this. First of
         all, take note of which URL you used during the integration process, was
         it the default Zone URL (e.g. example-hexid.kxcdn.com) or did you
-        configure a <a class="underline">Zone Alias</a> (e.g. cdn.yourwebsite.com). This is important as
-        this URL is what you will need to look for in the methods below.
+        configure a <a class="underline">Zone Alias</a> (e.g.
+        cdn.yourwebsite.com). This is important as this URL is what you will
+        need to look for in the methods below.
       </p>
       <ol class="list-disc pl-8 text-[#73737F] flex flex-col gap-4">
         <li>
@@ -100,12 +99,12 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
           Perform a curl command on one of your assets, for example:
         </li>
         <div
-          class=" border border-[#E5E7EB] p-4 rounded text-[#73737F] text-sm overflow-x-auto whitespace-nowrap"
+          class="border border-[#E5E7EB] p-4 rounded text-[#73737F] text-sm overflow-x-auto whitespace-nowrap"
         >
           curl -I https://www.keycdn.com/img/example.jpg
         </div>
         <div
-          class="w-full border border-[#D0D0D8] text-[#73737F] text-sm shadow rounded-xl p-4 "
+          class="w-full border border-[#D0D0D8] text-[#73737F] text-sm shadow rounded-xl p-4"
         >
           <pre><code>
 HTTP/2 200 
@@ -159,15 +158,19 @@ accept-ranges: bytes
     </div>
   </div>
 
+  <ClientOnly>
     <Teleport to="#full-width-section">
- <AccessAllFeaturesSection class="mt-10"/>
-
-</Teleport>
-
+      <AccessAllFeaturesSection class="mt-10" />
+    </Teleport>
+  </ClientOnly>
 </template>
 
 <style scoped>
-p, ol, ul, pre, code {
+p,
+ol,
+ul,
+pre,
+code {
   font-family: inter;
 }
 ol {

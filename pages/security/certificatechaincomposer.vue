@@ -1,13 +1,10 @@
 <script setup lang="ts">
-import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSection.vue';
-
+import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSection.vue";
 </script>
 
 <template>
-  <div class="min-h-screen  text-[#1f2937] ">
+  <div class="min-h-screen text-[#1f2937]">
     <div class="max-w-3xl mx-auto">
-      
-  
       <h1 class="text-[3rem] font-medium text-[#111827]">
         Certificate Chain composer
       </h1>
@@ -18,14 +15,13 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
       <div class="mt-4 mb-[20px]">
         <p class="text-[15px]">Certificate (PEM format)</p>
 
-       <div class="mt-2">
-        <textarea
-  placeholder="-----BEGIN CERTIFICATE-----
+        <div class="mt-2">
+          <textarea
+            placeholder="-----BEGIN CERTIFICATE-----
 Certificate
 ----END CERTIFICATE-----"
-   class="border text-[#73737F] focus:outline-none focus:ring-blue-500 focus:ring-2 rounded-lg p-4 h-[16rem] w-full text-[14px] resize-none"
-  ></textarea>
-
+            class="border text-[#73737F] focus:outline-none focus:ring-blue-500 focus:ring-2 rounded-lg p-4 h-[16rem] w-full text-[14px] resize-none"
+          ></textarea>
         </div>
 
         <button
@@ -64,28 +60,33 @@ Certificate
             intermediate certificate. These must be installed to a web server
             along with a primary certificate. If they aren't installed web
             browsers will display an "Invalid certificate" or "certificate not
-            trusted" error. You can use our <a class="underline">Certificate Checker</a> tool to validate
-            your chain. 
+            trusted" error. You can use our
+            <a class="underline">Certificate Checker</a> tool to validate your
+            chain.
           </p>
         </div>
       </div>
     </div>
   </div>
- 
- <Teleport to="#full-width-section">
- <AccessAllFeaturesSection class=""/>
 
-</Teleport>
+  <ClientOnly>
+    <Teleport to="#full-width-section">
+      <AccessAllFeaturesSection class="" />
+    </Teleport>
+  </ClientOnly>
 </template>
 <style scoped>
 input[type="checkbox"] {
   accent-color: #2563eb;
 }
 
-p, ol, ul, pre, code {
+p,
+ol,
+ul,
+pre,
+code {
   font-family: inter;
 }
-
 
 .btn {
   position: relative;

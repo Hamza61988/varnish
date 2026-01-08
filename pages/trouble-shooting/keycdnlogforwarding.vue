@@ -1,7 +1,6 @@
 <template>
   <div class="mt-[4.25rem] mx-auto max-w-3xl">
     <div class="w-full">
- 
       <h1 class="text-5xl font-medium mt-4">Key CDN Log Forwarding</h1>
 
       <p class="text-[#73737F] mt-4">
@@ -37,8 +36,8 @@
       <p class="text-[#73737F]">KeyCDN recommends the following options:</p>
       <ul class="pl-8 gap-4 list-disc flex flex-col text-[#73737F]">
         <li>
-          Configure your own syslog server. For more details please read <a class="underline">
-          Configure Your Own Syslog Server</a>.
+          Configure your own syslog server. For more details please read
+          <a class="underline"> Configure Your Own Syslog Server</a>.
         </li>
         <li>
           Third party log management services such as LogDNA, Logentries,
@@ -49,7 +48,7 @@
 
     <hr class="border-t border-gray-300 my-4 mb-20" />
 
-    <div class="mt-4 flex flex-col gap-4 mb-20 ">
+    <div class="mt-4 flex flex-col gap-4 mb-20">
       <h2 class="text-[2rem] text-[#0E84F7] font-semibold">
         KeyCDN Log Forwarding
       </h2>
@@ -61,28 +60,34 @@
       </p>
     </div>
   </div>
+  <ClientOnly>
     <Teleport to="#full-width-section">
-  <svg
-    class="image-processing-bg"
-    width="691"
-    height="202"
-    viewBox="0 0 691 202"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path
-      d="M662.785 573.706C685.376 425.8 661.407 281.837 590.396 218.417C507.73 144.588 361.315 179.909 150.391 445.226C271.485 -512.328 -184.359 515.654 -66.8792 60.2144"
-      stroke="#EEEEF0"
-      stroke-width="40"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-    />
-  </svg>
-</Teleport>
+      <svg
+        class="image-processing-bg"
+        width="691"
+        height="202"
+        viewBox="0 0 691 202"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M662.785 573.706C685.376 425.8 661.407 281.837 590.396 218.417C507.73 144.588 361.315 179.909 150.391 445.226C271.485 -512.328 -184.359 515.654 -66.8792 60.2144"
+          stroke="#EEEEF0"
+          stroke-width="40"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </Teleport>
+  </ClientOnly>
 </template>
 
 <style scoped>
-p, ol, ul, pre, code {
+p,
+ol,
+ul,
+pre,
+code {
   font-family: inter;
 }
 ol {

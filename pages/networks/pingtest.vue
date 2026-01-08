@@ -78,10 +78,12 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
     </div>
   </div>
  
+ <ClientOnly>
  <Teleport to="#full-width-section">
  <AccessAllFeaturesSection class=""/>
 
 </Teleport>
+</ClientOnly>
 </template>
 <style scoped>
 input[type="checkbox"] {

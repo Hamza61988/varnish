@@ -1,7 +1,6 @@
 <template>
   <div class="mt-[4.25rem] mx-auto max-w-3xl">
     <div class="w-full flex flex-col items-start gap-4">
-
       <h1 class="text-5xl font-medium">CDN Trouble Shooting Guide</h1>
 
       <button class="btn2 text-[#73737F] mt-4">
@@ -59,7 +58,7 @@
       </p>
 
       <div
-        class="border border-[#D0D0D8] text-[#73737F] rounded-md p-4 mt-2  text-sm"
+        class="border border-[#D0D0D8] text-[#73737F] rounded-md p-4 mt-2 text-sm"
       >
         <pre><code>
 curl -I https://www.keycdn.com 
@@ -263,7 +262,7 @@ access-control-allow-origin: *
         </li>
 
         <div
-          class="border border-[#D0D0D8] text-[#73737F] rounded-md p-4 mt-2  text-sm"
+          class="border border-[#D0D0D8] text-[#73737F] rounded-md p-4 mt-2 text-sm"
         >
           <pre><code>
 openssl x509 -noout -modulus -in certificate.crt | openssl md5 
@@ -324,7 +323,8 @@ openssl rsa -noout -modulus -in privateKey.key | openssl md5
         </li>
         <ul class="flex list-disc flex-col gap-4 pl-8 text-[#73737F]">
           <li>
-           How to check a certificate for weak keys? Go to SSLLabs and check the grade of your domain, also check "Weak key".
+            How to check a certificate for weak keys? Go to SSLLabs and check
+            the grade of your domain, also check "Weak key".
           </li>
 
           <li>
@@ -472,7 +472,9 @@ openssl rsa -noout -modulus -in privateKey.key | openssl md5
           src="/images/Trouble-shoot/cdntroubleshoot5.svg"
         />
 
-        <p class="text-[#73737F]">Referrer <span class="font-bold">blocked</span> example:</p>
+        <p class="text-[#73737F]">
+          Referrer <span class="font-bold">blocked</span> example:
+        </p>
         <img
           alt="cdn toruble shoot guide"
           src="/images/Trouble-shoot/cdntroubleshoot6.svg"
@@ -541,8 +543,8 @@ openssl rsa -noout -modulus -in privateKey.key | openssl md5
       </p>
       <ul class="flex list-disc flex-col gap-4 pl-8 text-[#73737F]">
         <li>
-          Bowsers are sometimes requesting files by default (e.g. /favicon.ico
-          ) even if the files don't exist and are not part of the HTML.
+          Bowsers are sometimes requesting files by default (e.g. /favicon.ico )
+          even if the files don't exist and are not part of the HTML.
         </li>
         <li>
           Your Secure Token has expired which will result in a 410 error for the
@@ -636,7 +638,7 @@ openssl rsa -noout -modulus -in privateKey.key | openssl md5
       </p>
 
       <div
-        class="border border-[#D0D0D8] text-[#73737F] rounded-md p-4 mt-2  text-sm"
+        class="border border-[#D0D0D8] text-[#73737F] rounded-md p-4 mt-2 text-sm"
       >
         <pre><code>
 function wpseo_cdn_filter($uri) { 
@@ -671,7 +673,8 @@ add_filter( 'wpseo_xml_sitemap_img_src', 'wpseo_cdn_filter' );
       />
 
       <p class="text-[#73737F]">
-        Learn more about indexing images in SERPs by reading our <a class="underline">CDN SEO guide</a>.
+        Learn more about indexing images in SERPs by reading our
+        <a class="underline">CDN SEO guide</a>.
       </p>
     </div>
 
@@ -707,28 +710,34 @@ add_filter( 'wpseo_xml_sitemap_img_src', 'wpseo_cdn_filter' );
       </ol>
     </div>
   </div>
+  <ClientOnly>
     <Teleport to="#full-width-section">
-  <svg
-    class="image-processing-bg"
-    width="691"
-    height="202"
-    viewBox="0 0 691 202"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path
-      d="M662.785 573.706C685.376 425.8 661.407 281.837 590.396 218.417C507.73 144.588 361.315 179.909 150.391 445.226C271.485 -512.328 -184.359 515.654 -66.8792 60.2144"
-      stroke="#EEEEF0"
-      stroke-width="40"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-    />
-  </svg>
-</Teleport>
+      <svg
+        class="image-processing-bg"
+        width="691"
+        height="202"
+        viewBox="0 0 691 202"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M662.785 573.706C685.376 425.8 661.407 281.837 590.396 218.417C507.73 144.588 361.315 179.909 150.391 445.226C271.485 -512.328 -184.359 515.654 -66.8792 60.2144"
+          stroke="#EEEEF0"
+          stroke-width="40"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </Teleport>
+  </ClientOnly>
 </template>
 
 <style scoped>
- p, ol, ul, pre, code {
+p,
+ol,
+ul,
+pre,
+code {
   font-family: inter;
 }
 .arrow {

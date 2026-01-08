@@ -126,7 +126,8 @@
 </div>
 
     </div>
-     <Teleport to="#full-width-section">
+      <ClientOnly>
+      <Teleport to="#full-width-section">
   <svg
     class="image-processing-bg"
     width="691"
@@ -142,8 +143,9 @@
       stroke-linecap="round"
       stroke-linejoin="round"
     />
-  </svg>
+    </svg>
 </Teleport>
+</ClientOnly>
 </template>
 
 <style scoped>

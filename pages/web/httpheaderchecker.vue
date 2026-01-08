@@ -135,6 +135,7 @@
       </div>
     </div>
   </div>
+ <ClientOnly>
    <Teleport to="#full-width-section">
   <svg
     class="image-processing-bg"
@@ -153,6 +154,8 @@
     />
   </svg>
 </Teleport>
+</ClientOnly>
+
 </template>
 
 <style scoped>

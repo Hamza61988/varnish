@@ -146,10 +146,12 @@ return [
 
   </div>
 
+<ClientOnly>
 <Teleport to="#full-width-section">
   <AccessAllFeaturesSection class="mt-10"/>
 
 </Teleport>
+</ClientOnly>
 </template>
 
 <style scoped>
