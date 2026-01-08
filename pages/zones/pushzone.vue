@@ -1,20 +1,19 @@
 <template>
   <div class="mt-[4.25rem] mx-auto max-w-3xl">
     <div class="w-full">
-      <button class="support-btn shadow-md">Support</button>
 
       <h1 class="text-5xl font-medium mt-4">Create a Push Zone</h1>
 
-      <p class="text-[#73737F] mt-4">
+      <p style="font-family: inter;" class="text-[#73737F] mt-4">
         A Varnish Push Zone allows you to upload your data to our storage
         cluster. This is recommended for files greater than 10 MB in size and is
-        required for files larger than 100 MB because Pull Zones do not cache
+        required for files larger than 100 MB because <span class="underline" >Pull Zones</span>  do not cache
         anything larger than 100 MB.
       </p>
     </div>
 
     <div class="mt-[2.3125rem] mb-[8.1875rem]">
-      <p class="text-[#73737F] mt-4">
+      <p style="font-family: inter;" class="text-[#73737F] mt-4">
         To set up a Push Zone, follow the steps outlined below:
       </p>
 
@@ -28,7 +27,7 @@
         </ol>
       </div>
 
-      <p class="text-[#73737F] mt-4">
+      <p style="font-family: inter;" class="text-[#73737F] mt-4">
         These are the minimal steps in order to have a working Zone. The default
         settings work for most use cases. Read our
         <a class="underline">Push Zone settings</a> article for more information
@@ -37,42 +36,29 @@
       </p>
     </div>
   </div>
+   <Teleport to="#full-width-section">
+  <svg
+    class="image-processing-bg"
+    width="691"
+    height="202"
+    viewBox="0 0 691 202"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M662.785 573.706C685.376 425.8 661.407 281.837 590.396 218.417C507.73 144.588 361.315 179.909 150.391 445.226C271.485 -512.328 -184.359 515.654 -66.8792 60.2144"
+      stroke="#EEEEF0"
+      stroke-width="40"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </svg>
+</Teleport>
 </template>
 
 <style scoped>
-.support-btn {
-  position: relative;
-  padding-left: 39px;
-  font-size: 16px;
-  font-weight: 500;
-  background: #ffffff;
-
-  border-radius: 10px;
-  padding: 1px 20px;
-  cursor: pointer;
-}
-
-.support-btn::before {
-  content: "";
-  position: absolute;
-  padding-left: 12px;
-  left: 4px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 14px;
-  height: 14px;
-
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' fill='%23888'><path d='M7 0L1 8h4l-1 6 6-8H7z'/></svg>");
-}
-.arrow {
-  width: 12px;
-  height: 12px;
-  background-repeat: no-repeat;
-  background-size: contain;
-
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%23888'><path fill-rule='evenodd' d='M10 6l6 6H4l6-6z' clip-rule='evenodd'/></svg>");
+p,ol,ul {
+  font-family: inter;
 }
 ol {
   list-style-type: decimal;

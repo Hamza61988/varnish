@@ -1,17 +1,13 @@
 <script setup lang="ts">
-import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSection.vue';
-
+import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSection.vue";
 </script>
 
-
 <template>
-  <div class="mt-[4.25rem]  mx-auto max-w-3xl">
+  <div class="mt-[4.25rem] mx-auto max-w-3xl">
     <div class="w-full">
-      <button class="support-btn shadow-md">Support</button>
-
       <h1 class="text-5xl font-medium mt-4">Upload Data to a Push Zone</h1>
 
-      <p class="text-[#73737F] mt-4">
+      <p  style="font-family: inter;" class="text-[#73737F] mt-4">
         There are a couple of ways to upload data to a KeyCDN Push Zone. This
         guide walks through how to upload data to our
         <a class="underline">CDN storage </a> cloud through FTP(S) and rsync
@@ -19,8 +15,18 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
         do not change frequently. The maximum file size should not exceed 5 GB.
       </p>
 
-      <div
-        class="bg-[#FEF9D8] text-[#73737F] max-w-[47.5rem] mt-4 border mx-auto py-5 rounded-2xl px-10"
+      <div style="box-shadow: 0px 0.5px 0.5px 0px #07011308;
+
+box-shadow: 0px 1px 1px -0.5px #07011308;
+
+box-shadow: 0px 2px 2px -1px #07011308;
+
+box-shadow: 0px 3px 3px -1.5px #07011308;
+
+box-shadow: 0px 0px 0px 1px #1A192514;
+
+"
+        class="bg-[#FEF9D8] text-[#73737F] max-w-[47.5rem] mt-4  mx-auto py-5 rounded-2xl px-10"
       >
         <h1 class="">
           <span class="font-bold">Note:</span> Push Zones are limited to 250,000
@@ -34,30 +40,30 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
         How to upload data with FTP(S)
       </h2>
 
-      <p class="text-[#73737F] mt-4">
+      <p  style="font-family: inter;" class="text-[#73737F] mt-4">
         If a new <a class="underline">Push Zone</a> was just created you will
         need to wait a few minutes until the Zone has been deployed. Follow the
         steps below to successfully upload your data to KeyCDN using FTP(S):
       </p>
 
       <div class="pl-8">
-        <ol class="text-[#73737F]">
-          <li class="mt-3">
+        <ol class="text-[#73737F] flex flex-col gap-4 my-[24px]">
+          <li class="">
             From the KeyCDN dashboard, navigate to Subusers and add a user for
             the specified Push Zone.
           </li>
-          <li class="mt-3">Connect to the FTP server:</li>
-          <li class="mt-3">
+          <li class="">Connect to the FTP server:</li>
+          <li class="">
             <span class="font-bold">Hostname:</span>ftp.keycdn.com <br />
             <span class="font-bold">Port:</span>21 <br />
             <span class="font-bold">Username:</span>{subuser_username}<br />
             <span class="font-bold">Password:</span>{subuser_password}
           </li>
 
-          <li class="mt-3">Upload data to your Push Zone.</li>
+          <li class="">Upload data to your Push Zone.</li>
         </ol>
 
-        <p class="text-[#73737F] mt-4">
+        <p  style="font-family: inter;" class="text-[#73737F] mt-4">
           We recommend using FTPS (explicit FTP over TLS) to avoid plaintext
           transfer of your credentials over the network and using an FTP client
           like <a class="underline">FileZilla</a>.
@@ -65,14 +71,14 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
       </div>
     </div>
 
-    <div>
+    <div class="mt-4 flex flex-col gap-4">
       <img
         src="/images/Zones/Uploadpushzone.svg"
         alt="BEST CDN AWARD"
         class=""
       />
 
-      <div class="bg-[#FEF9D8] text-[#73737F] border py-5 rounded-2xl px-10">
+      <div class="bg-[#FEF9D8] text-[#73737F] border  py-5 rounded-2xl px-10">
         <h1 class="">
           <span class="font-bold">Note:</span> If FTPS is used please ensure
           data is being transferred over TLS 1.2 or TLS 1.3.
@@ -85,20 +91,20 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
         <h2 class="text-[2rem] font-semibold text-black">
           How to upload data with rsync over SSH
         </h2>
-        <p class="text-[#73737F]">
+        <p  style="font-family: inter;" class="text-[#73737F]">
           If you are interested in lsyncd read our
           <a href="#" class="underline">lsyncd over SSH</a> article. Follow the
           steps below to successfully upload your data to KeyCDN using rsync:
         </p>
       </div>
 
-      <p class="pl-8 text-[#73737F]">
+      <p  style="font-family: inter;" class="pl-8 text-[#73737F]">
         1. SSH public key (ssh-rsa or ssh-ed25519). It takes a few minutes for
         the key to be distributed to the responsible servers.
       </p>
 
       <div class="flex flex-col gap-2">
-        <p class="pl-8 text-[#73737F]">
+        <p  style="font-family: inter;" class="pl-8 text-[#73737F]">
           2. Add your SSH private key on your system:
         </p>
         <div
@@ -109,7 +115,7 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
       </div>
 
       <div class="flex flex-col gap-2">
-        <p class="pl-8 text-[#73737F]">
+        <p  style="font-family: inter;" class="pl-8 text-[#73737F]">
           3. Upload/synchronise data to your Push Zone using the following rsync
           command:
         </p>
@@ -132,7 +138,7 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
       </div>
 
       <div class="flex flex-col gap-2">
-        <p class="text-[#73737F]">
+        <p  style="font-family: inter;" class="text-[#73737F]">
           In addition to the above, you might find the following flags useful:
         </p>
         <ul class="text-[#73737F] list-disc pl-7 space-y-4">
@@ -147,7 +153,7 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
         </ul>
       </div>
 
-      <p class="text-[#73737F]">
+      <p  style="font-family: inter;" class="text-[#73737F]">
         If you want to list the content in your Push Zone use the following
         command:
       </p>
@@ -167,7 +173,7 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
         How data gets deployed to a Push Zone
       </h2>
 
-      <p class="text-[#73737F]">
+      <p  style="font-family: inter;" class="text-[#73737F]">
         Now that your data is uploaded to our storage cluster, there are a few
         things to consider when it comes to deploying this data:
       </p>
@@ -197,49 +203,16 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
         </li>
       </ul>
     </div>
-
-    
-
-
   </div>
 
-  <AccessAllFeaturesSection class="mt-10"/>
+  <Teleport to="#full-width-section">
+    <AccessAllFeaturesSection class="mt-10" />
+  </Teleport>
 </template>
 
 <style scoped>
-.support-btn {
-  position: relative;
-  padding-left: 39px;
-  font-size: 16px;
-  font-weight: 500;
-  background: #ffffff;
-
-  border-radius: 10px;
-  padding: 1px 20px;
-  cursor: pointer;
-}
-
-.support-btn::before {
-  content: "";
-  position: absolute;
-  padding-left: 12px;
-  left: 4px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 14px;
-  height: 14px;
-
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' fill='%23888'><path d='M7 0L1 8h4l-1 6 6-8H7z'/></svg>");
-}
-.arrow {
-  width: 12px;
-  height: 12px;
-  background-repeat: no-repeat;
-  background-size: contain;
-
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%23888'><path fill-rule='evenodd' d='M10 6l6 6H4l6-6z' clip-rule='evenodd'/></svg>");
+p,ol,ul {
+  font-family: inter;
 }
 ol {
   list-style-type: decimal;

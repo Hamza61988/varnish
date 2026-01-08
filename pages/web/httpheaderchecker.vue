@@ -1,14 +1,8 @@
 <template>
-  <div class="min-h-screen bg-white text-[#1f2937] p-6 md:p-12">
+  <div class="min-h-screen text-[#1f2937] ">
     <div class="max-w-3xl  mx-auto">
       
-        
-      <button
-        class="tools-btn shadow-md gap-2 mb-4 rounded-[2rem] flex items-center"
-      >
-        <span class="tools-icon"></span>
-        Tools
-      </button>
+
 
       <h1 class="text-[3rem] font-medium text-[#111827] mb-4">
         HTTP Header Checker
@@ -141,6 +135,24 @@
       </div>
     </div>
   </div>
+   <Teleport to="#full-width-section">
+  <svg
+    class="image-processing-bg"
+    width="691"
+    height="202"
+    viewBox="0 0 691 202"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M662.785 573.706C685.376 425.8 661.407 281.837 590.396 218.417C507.73 144.588 361.315 179.909 150.391 445.226C271.485 -512.328 -184.359 515.654 -66.8792 60.2144"
+      stroke="#EEEEF0"
+      stroke-width="40"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </svg>
+</Teleport>
 </template>
 
 <style scoped>
@@ -152,23 +164,9 @@ input[type="checkbox"] {
   height: 1rem;
   margin-right: 0.5rem;
 }
-.tools-btn {
-  background: #ffffff;
-  border: 1px solid #e5e7eb;
-  border-radius: 12px;
-  padding: 2px 9px;
-  display: inline-flex;
-  align-items: center;
-  gap: 2px;
-  cursor: pointer;
-  transition: box-shadow 0.2s ease, background-color 0.2s ease;
+
+p, ol, ul, pre, code {
+  font-family: inter;
 }
-.tools-icon {
-  width: 16px;
-  height: 16px;
-  display: inline-block;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23888" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M14.615 1.595a.75.75 0 01.359.852L12.982 9.75h7.268a.75.75 0 01.548 1.262l-10.5 11.25a.75.75 0 01-1.272-.71l1.992-7.302H3.75a.75.75 0 01-.548-1.262l10.5-11.25a.75.75 0 01.913-.143z" clip-rule="evenodd"/></svg>');
-}
+
 </style>

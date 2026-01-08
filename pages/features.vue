@@ -137,16 +137,16 @@
                     background-image: url('/images/about/bgcardicon.svg');
                     background-repeat: no-repeat;
                     background-size: contain;
-                    z-index: 0;
+                    z-index: -10;
                   "
                 ></div>
+                <div class="">
                 <!-- Integrity Icon -->
-                <img
-                  src="/images/about/Group.svg"
-                  alt="Integrity Icon"
-                  class="relative z-10"
-                  style="height: 20.71px; width: auto; color: #1a1925"
-                />
+                <svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M31.0782 29H0.91249C0.40867 29 0 28.5828 0 28.0688V0.931235C0 0.417188 0.408641 0 0.91249 0H31.0875C31.5913 0 32 0.417167 32 0.931235V28.0688C31.9905 28.5828 31.5915 29 31.0782 29ZM1.82498 27.1373H30.175V8.27628H1.82498V27.1373ZM1.82498 6.41323H30.175V1.8532H1.82498V6.41323ZM27.2768 3.07564C26.6781 3.07564 26.203 3.60935 26.203 4.25934C26.203 4.91928 26.6876 5.44304 27.2768 5.44304C27.866 5.44304 28.3508 4.90962 28.3508 4.25934C28.3603 3.59969 27.8758 3.07564 27.2768 3.07564ZM22.7055 4.25934C22.7055 3.60938 23.1901 3.07564 23.7793 3.07564C24.378 3.07564 24.8629 3.59966 24.8534 4.25934C24.8534 4.90959 24.378 5.44304 23.7793 5.44304C23.1901 5.44304 22.7055 4.91931 22.7055 4.25934ZM26.6116 24.5953C26.1078 24.5953 25.6991 24.1782 25.6991 23.6638C25.6991 21.083 24.7107 18.6576 22.9241 16.8333C21.1371 15.0094 18.7612 14.0004 16.2332 14.0004C15.1686 14.0004 14.1233 14.1751 13.1254 14.5341C12.6501 14.6991 12.1272 14.4466 11.9659 13.9616C11.8043 13.4764 12.0513 12.9429 12.5267 12.7779C13.7146 12.3608 14.9595 12.1471 16.2331 12.1471C19.246 12.1471 22.0875 13.3504 24.2162 15.5237C26.3453 17.697 27.5238 20.598 27.5238 23.6733C27.5238 24.1779 27.1154 24.5953 26.6116 24.5953ZM5.85515 24.5953C5.35133 24.5953 4.94266 24.1782 4.94266 23.6638C4.94266 21.3352 5.61758 19.0941 6.9004 17.173C7.18567 16.7462 7.74644 16.6393 8.16453 16.9306C8.58266 17.2215 8.68733 17.8037 8.40206 18.2211C7.32801 19.8316 6.75801 21.7137 6.75801 23.6638C6.7675 24.1781 6.35871 24.5953 5.85515 24.5953ZM16.1519 19.7552L9.00063 12.8265C8.65842 12.4868 8.11694 12.4868 7.76523 12.8071C7.41354 13.1271 7.36609 13.6705 7.65107 14.0586L13.6371 22.1104C13.6257 22.2127 13.6195 22.3167 13.6195 22.4221C13.6195 23.8967 14.7885 25.0901 16.2332 25.0901C17.6682 25.0901 18.8467 23.8967 18.8467 22.4221C18.8467 20.9472 17.6777 19.7539 16.2332 19.7539C16.2059 19.7539 16.179 19.7543 16.1519 19.7552ZM15.961 21.6655C16.0232 21.6575 16.0849 21.643 16.1449 21.6216C16.174 21.6185 16.2036 21.6168 16.2334 21.6168C16.661 21.6168 17.0222 21.9758 17.0222 22.4221C17.0222 22.8683 16.6705 23.2273 16.2334 23.2273C15.7963 23.2273 15.4446 22.8683 15.4446 22.4221C15.4446 22.0736 15.659 21.7784 15.961 21.6655Z" fill="black"/>
+</svg>
+</div>
+
               </div>
               <h3
                 class="mb-2 sm:mb-3 text-base sm:text-lg"
@@ -217,26 +217,21 @@
                       background-image: url('/images/about/bgcardicon.svg');
                       background-repeat: no-repeat;
                       background-size: contain;
-                      z-index: 0;
+                      z-index: -10;
                     "
                   ></div>
-                  <!-- Dollar Sign Icon -->
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="relative z-10"
-                  >
-                    <path
-                      d="M12 2V22M17 5H9.5C8.57174 5 7.6815 5.36875 7.02513 6.02513C6.36875 6.6815 6 7.57174 6 8.5C6 9.42826 6.36875 10.3185 7.02513 10.9749C7.6815 11.6312 8.57174 12 9.5 12H14.5C15.4283 12 16.3185 12.3687 16.9749 13.0251C17.6312 13.6815 18 14.5717 18 15.5C18 16.4283 17.6312 17.3185 16.9749 17.9749C16.3185 18.6312 15.4283 19 14.5 19H6"
-                      stroke="#1A1925"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
+<div class="z-10">
+     <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect width="34" height="34" fill="url(#pattern0_18509_10282)"/>
+<defs>
+<pattern id="pattern0_18509_10282" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_18509_10282" transform="scale(0.0111111)"/>
+</pattern>
+<image id="image0_18509_10282" width="90" height="90" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAACpUlEQVR4nO2aTWvUUBSG34pNWn9BBdeu/B8i/T/i2hHxA7Qfui3iUlcFF/pjbEUdUEER0UMXLZULEWSYTJOc3Jx77n0fyGo4c/M+E07OTQYghBBCCCGEEEIIWcplAOvLPyqbDQA7AL4DOB/pEAAHAK50PIcKwC6AX8p1Q4Y9AJtIkKcjCl48XnQ8h0cjr7uPBPkSUfRJx3OYj7zuDwBrSIx5RNHnTWu6iI8R1k2ufdyPLLpL4McliF4HcBfAB0PRWwD+5C66L2FCOIwQ+ElL/RmAGyvqJEfRNYA3ka6srRXSXpYkuh4guW/gtlEzyLxUguh6oOS+gZ+3fMfvEkTXHSS/bWZmTeBrK74j7DKRs+iqw43vXRNKG/hZS/0pgOs5i656SNYGvrqifuixmVO72PivRiN6Z2TJLkTXAyRrRc9LE10PlKwV/akk0bVCslb0rBTRtVKyVnR4K3MPwOecRVc9p4vUxiwX491YkgMUPYHkAEVH6smLvDd6pZSs6BiS2yaHKV6SJik6luR/regBgK8Tv/ZPTnRMyVrCj/QQwLfmR9rv8Z+QpESnLLmt7YSnea5Ejz1dxOB4yTn97HgjTUK0B8laWeaivUh2L/pVwj05G9E3DSRXRpODqejbBlfyzGhyMBW9bdAujhRbcLeiQ7jXCwsfRu7JYiTL/Ga41lzZdwDcmmA9KVX01AhFT4NQ9DQIRU+DUHTemw7xKHrmcNPhUvSx0ePK4kSLQ1kUjfRrzRCHsiga6deaIQ5lUTTSr1VR2qZDrESXtukQK9GlbTrESrTHwELRyLpWhcfAQtHIulaFx8BC0ci6VoXHwELRyLpWhcfAQtHIulaFx8BC0ci6VoXHwELRyLpWhcfAQtHIulaFx8BC0ci6lhBCCCGEEEKQPH8BZTJTYfF4k0sAAAAASUVORK5CYII="/>
+</defs>
+</svg>
+</div>               
+
                 </div>
               </div>
               <h3
@@ -308,40 +303,21 @@
                       background-image: url('/images/about/bgcardicon.svg');
                       background-repeat: no-repeat;
                       background-size: contain;
-                      z-index: 0;
+                      z-index: -10;
                     "
                   ></div>
                   <!-- Headphone Icon -->
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="relative z-10"
-                  >
-                    <path
-                      d="M3 18V12C3 9.61305 3.94821 7.32387 5.63604 5.63604C7.32387 3.94821 9.61305 3 12 3C14.3869 3 16.6761 3.94821 18.364 5.63604C20.0518 7.32387 21 9.61305 21 12V18"
-                      stroke="#1A1925"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M21 19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H17C16.4696 21 15.9609 20.7893 15.5858 20.4142C15.2107 20.0391 15 19.5304 15 19V15C15 14.4696 15.2107 13.9609 15.5858 13.5858C15.9609 13.2107 16.4696 13 17 13H19C19.5304 13 20.0391 13.2107 20.4142 13.5858C20.7893 13.9609 21 14.4696 21 15V19Z"
-                      stroke="#1A1925"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M3 19C3 19.5304 3.21071 20.0391 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21H7C7.53043 21 8.03914 20.7893 8.41421 20.4142C8.78929 20.0391 9 19.5304 9 19V15C9 14.4696 8.78929 13.9609 8.41421 13.5858C8.03914 13.2107 7.53043 13 7 13H5C4.46957 13 3.96086 13.2107 3.58579 13.5858C3.21071 13.9609 3 14.4696 3 15V19Z"
-                      stroke="#1A1925"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
+                  <div class="z-10">
+<svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_18509_10291" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="2" y="0" width="30" height="30">
+<path d="M2.65527 0.55542H31.234V29.8065H2.65527V0.55542Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_18509_10291)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M22.2976 25.0201C22.1644 25.3301 22.2769 25.549 22.5702 25.6705L25.2888 26.5772C25.5626 26.6684 25.8593 26.5235 25.9517 26.2538C26.185 25.5741 25.1125 25.4294 24.1882 25.1212C26.1235 24.1097 27.773 22.6371 28.9858 20.8536C32.4858 15.7083 31.83 8.794 27.354 4.37508C23.7794 0.845918 18.5211 -0.331184 13.8026 1.23689C12.4285 1.69389 11.1553 2.36726 10.027 3.21475C9.79821 3.38735 9.75388 3.71076 9.92868 3.93667C10.1035 4.16301 10.4317 4.20633 10.6605 4.03374C11.6997 3.25266 12.8712 2.63328 14.1332 2.21328C15.1921 1.86106 16.3201 1.64924 17.4933 1.60069V2.87707C17.4933 3.16261 17.7278 3.39416 18.017 3.39416C18.3062 3.39416 18.5403 3.1626 18.5403 2.87707V1.60133C21.6895 1.73287 24.5289 3.04736 26.6147 5.10598C28.6997 7.16461 30.0311 9.96872 30.1645 13.0782H28.871C28.5818 13.0782 28.3478 13.3093 28.3478 13.5948C28.3478 13.8803 28.5818 14.1114 28.871 14.1114H30.1645C30.0673 16.3907 29.3268 18.5049 28.1192 20.2803C26.9941 21.9341 25.4641 23.2967 23.6706 24.2286L24.1801 22.7315C24.401 22.0874 23.4103 21.757 23.19 22.4004L22.2976 25.0201ZM18.0308 14.1112H23.8825C24.171 14.1112 24.4051 13.8797 24.4051 13.5946C24.4051 13.3098 24.1717 13.0775 23.8819 13.078H18.5403V5.24397C18.5403 4.95843 18.3063 4.72733 18.0171 4.72733C17.7279 4.72733 17.4938 4.95889 17.4938 5.24397V13.5813C17.4933 13.8866 17.7221 14.1114 18.0308 14.1114L18.0308 14.1112ZM13.674 28.7748C14.8347 29.4252 16.5839 30.0659 17.9918 29.7003C18.269 29.6278 18.5376 29.5159 18.8024 29.3644L20.2925 28.5133C21.0048 28.0833 21.2416 27.1718 20.824 26.4569L18.2886 22.1202C17.8632 21.3919 16.9216 21.1431 16.184 21.5627L14.3046 22.6327C14.0848 22.7586 13.859 22.659 13.7322 22.4567L8.22112 13.0331C8.11269 12.843 8.17793 12.592 8.37043 12.4831C8.98305 12.1198 9.62601 11.7671 10.2487 11.4119C10.9911 10.9883 11.2477 10.0278 10.7949 9.30409L8.2767 4.99542C7.8506 4.26875 6.90792 4.02135 6.17146 4.43955L4.71259 5.27032C4.18358 5.57287 3.79054 5.96408 3.48852 6.48888C2.93447 7.45232 2.67791 8.63529 2.66779 9.95162C2.64367 13.0751 4.02123 17.0157 6.08672 20.5487C8.15356 24.0826 10.9224 27.2337 13.6742 28.7746L13.674 28.7748Z" fill="black"/>
+</g>
+</svg>
+
+                  </div>
                 </div>
               </div>
               <h3

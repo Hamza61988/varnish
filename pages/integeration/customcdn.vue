@@ -6,8 +6,7 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
 <template>
   <div class="mt-[4.25rem] mx-auto max-w-3xl">
     <div class="w-full flex flex-col gap-4 items-start">
-      <button class="support-btn shadow-md">Support</button>
-
+ 
       <h1 class="text-5xl font-medium ">Custom CDN Integration</h1>
 
       <p class="text-[#73737F] ">
@@ -30,7 +29,7 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
 
       <div class="my-4">
         <div class="pl-8">
-          <ol class="text-[#73737F] flex flex-col gap-4">
+          <ol class="text-[#73737F] list-decimal flex flex-col gap-4">
             <li class="">Create a <a class="underline">Pull Zone</a>  or <a class="underline">Push Zone</a> .</li>
             <li class="">Get the CDN URL (created in step 1).</li>
             <li class="">
@@ -66,8 +65,11 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
    <div class="mt-[2.3125rem]">
   <p class="text-[#73737F] font-bold">Before integrating website with CDN:</p>
 
-  <div class="border border-[#D0D0D8]  text-[#73737F] rounded-md p-4 mt-2 bg-white">
-    <pre><code>
+  <div class="mt-[2.3125rem]">
+  <p class="text-[#73737F] font-bold">Before integrating website with CDN:</p>
+
+  <div class="border border-[#D0D0D8] text-[#73737F] rounded-md p-4 mt-2 overflow-x-auto">
+    <pre class="whitespace-pre"><code>
 &lt;html&gt;
 &lt;head&gt;
 &lt;link href="https://www.example.com/css/example.css" rel="stylesheet"&gt;
@@ -83,12 +85,11 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
   </div>
 </div>
 
-
 <div class="mt-[2.3125rem]">
   <p class="text-[#73737F] font-bold">After integrating website with CDN:</p>
 
-  <div class="border border-[#D0D0D8] text-[#73737F] rounded-md p-4 mt-2 bg-white">
-    <pre><code>
+  <div class="border border-[#D0D0D8] text-[#73737F] rounded-md p-4 mt-2 overflow-x-auto">
+    <pre class="whitespace-pre"><code>
 &lt;html&gt;
 &lt;head&gt;
 &lt;link href="https://example-hexid.kxcdm.com/css/example.css" rel="stylesheet"&gt;
@@ -96,57 +97,37 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
 &lt;body&gt;
 &lt;h1&gt;Website Heading&lt;/h1&gt;
 &lt;a href="https://www.example.com/news.html"&gt;Link&lt;/a&gt;
-&lt;p&gt;Paragraph.&lt;/p&gt; 
+&lt;p&gt;Paragraph.&lt;/p&gt;
 &lt;img src="https://example-hexid.kxcdm.com/img/example.jpg" alt="example"&gt;
 &lt;/body&gt;
 &lt;/html&gt;
     </code></pre>
   </div>
-</div>
 
   </div>
+  </div>
 
-<AccessAllFeaturesSection class="mt-10"/>
+
+  </div>
+ <Teleport to="#full-width-section">
+  <AccessAllFeaturesSection class="mt-10"/>
+
+</Teleport>
 </template>
 
 <style scoped>
-.support-btn {
-  position: relative;
-  padding-left: 39px;
-  font-size: 16px;
-  font-weight: 500;
-  background: #ffffff;
-
-  border-radius: 10px;
-  padding: 1px 20px;
-  cursor: pointer;
+p, ol, ul, pre, code {
+  font-family: inter;
 }
 
-.support-btn::before {
-  content: "";
-  position: absolute;
-  padding-left: 12px;
-  left: 4px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 14px;
-  height: 14px;
+pre {
+  font-size: 0.875rem; /* text-sm */
+}
 
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' fill='%23888'><path d='M7 0L1 8h4l-1 6 6-8H7z'/></svg>");
+@media (min-width: 768px) {
+  pre {
+    font-size: 1rem; /* text-base */
+  }
 }
-.arrow {
-  width: 12px;
-  height: 12px;
-  background-repeat: no-repeat;
-  background-size: contain;
 
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%23888'><path fill-rule='evenodd' d='M10 6l6 6H4l6-6z' clip-rule='evenodd'/></svg>");
-}
-ol {
-  list-style-type: decimal;
-  padding-left: 1.25rem;
-  margin-top: 1rem;
-}
 </style>
