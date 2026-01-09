@@ -1,13 +1,13 @@
 <template>
   <section
-    class="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 py-12 sm:py-16 md:py-20 lg:py-24"
+    class="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 pt-[7.625rem]"
     style="background: #f7f7f8"
   >
     <div class="max-w-6xl mx-auto">
       <div class="mb-8 sm:mb-10 md:mb-12">
-        <div class="flex items-center justify-start mb-4 sm:mb-6">
+        <div class="flex items-center  justify-start mb-4 sm:mb-6">
           <div
-            class="flex items-center"
+            class="flex  items-center"
             style="
               height: 24px;
               gap: 2px;
@@ -24,20 +24,18 @@
             "
           >
             <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-4 w-4 fill-[#A3A3AE] stroke-[#A3A3AE]"
-              viewBox="0 0 24 24"
+              width="12"
+              height="12"
+              viewBox="0 0 12 12"
               fill="none"
-              stroke="#A3A3AE"
-              stroke-width="2.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              style="min-width: 16px; min-height: 16px"
+              xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"
+                d="M7.00288 1.2006C7.00288 0.458539 6.04046 0.167152 5.62884 0.784575L1.59597 6.83388C1.2637 7.3323 1.62099 7.99991 2.22001 7.99991H5.00288V10.7992C5.00288 11.5413 5.9653 11.8327 6.37692 11.2152L10.4098 5.16593C10.7421 4.66752 10.3848 3.99991 9.78575 3.99991H7.00288V1.2006Z"
+                fill="#A3A3AE"
               />
             </svg>
+
             <span
               style="
                 font-family: 'Bricolage Grotesque', sans-serif;
@@ -57,12 +55,11 @@
         <h2
           class="mb-3 sm:mb-4"
           style="
-            font-family: 'Funnel Display', sans-serif;
             font-weight: 500;
             font-style: SemiBold;
             font-size: 48px;
             line-height: 56px;
-            letter-spacing: -0.04em;
+            letter-spacing: -4%;
             vertical-align: middle;
             text-transform: capitalize;
             color: #1a1925;
@@ -88,7 +85,6 @@
       </div>
 
       <div class="flex flex-col lg:flex-row gap-8 lg:gap-4" style="width: 100%">
-        
         <div class="flex flex-col w-full lg:w-[60%] order-2 lg:order-1">
           <div
             class="mb-4 sm:mb-6 overflow-hidden flex items-center justify-center"
@@ -192,13 +188,13 @@
         <div
           class="flex flex-col lg:justify-between w-full lg:w-[40%] order-1 lg:order-2"
         >
-          <div class="grid grid-cols-1 sm:grid-cols-3  lg:flex lg:flex-col gap-6 lg:gap-0 lg:h-full lg:justify-between">
-            
+          <div
+            class="grid grid-cols-1 sm:grid-cols-3 lg:flex lg:flex-col gap-6 lg:gap-0 lg:h-full lg:justify-between"
+          >
             <div>
               <h3
                 class="mb-2 sm:mb-3"
                 style="
-                  font-family: 'inter', sans-serif;
                   font-weight: 600;
                   font-style: SemiBold;
                   font-size: 16px;
@@ -221,8 +217,8 @@
                   color: #73737f;
                 "
               >
-                Serve properly scaled images by dynamically updating the width and
-                height.
+                Serve properly scaled images by dynamically updating the width
+                and height.
               </p>
             </div>
 
@@ -230,7 +226,6 @@
               <h3
                 class="mb-2 sm:mb-3"
                 style="
-                  font-family: 'inter', sans-serif;
                   font-weight: 600;
                   font-style: SemiBold;
                   font-size: 16px;
@@ -262,7 +257,6 @@
               <h3
                 class="mb-2 sm:mb-3"
                 style="
-                  font-family: 'inter', sans-serif;
                   font-weight: 600;
                   font-style: SemiBold;
                   font-size: 16px;
@@ -289,7 +283,7 @@
                 premium edge locations.
               </p>
             </div>
-            
+
             <div
               class="hidden lg:flex flex-row items-center gap-2 sm:gap-3"
               style="flex-direction: row; align-items: center"
@@ -330,7 +324,6 @@
                 API Documentaiton
               </button>
             </div>
-
           </div>
         </div>
       </div>
@@ -339,12 +332,12 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from 'vue';
+import { ref, onMounted, onUnmounted } from "vue";
 
-const baseText = 'https://ip.varnish.com/example.jpg?format=';
-const formats = ['webp', 'jpeg'];
+const baseText = "https://ip.varnish.com/example.jpg?format=";
+const formats = ["webp", "jpeg"];
 
-const displayedText = ref('');
+const displayedText = ref("");
 let loopNum = 0;
 let isDeleting = false;
 let typingTimeout: any = null;
