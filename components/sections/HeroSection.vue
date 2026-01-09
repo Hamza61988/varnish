@@ -171,7 +171,7 @@
       </div>
       <!-- Right Section: Dashboard Preview Panel -->
       <div
-        class="w-full lg:w-[40%] mt-6 sm:mt-8 pl-[5%] lg:pl-0 lg:mt-0 hero-image-section order-2 lg:order-2"
+        class="w-full lg:w-[40%] mt-6 sm:mt-8 pl-[10%] lg:pl-0 lg:mt-0 hero-image-section order-2 lg:order-2"
       >
         <img
           src="/images/varnish.svg"
