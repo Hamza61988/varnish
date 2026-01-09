@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen hero-section">
+  <div class="xl:h-screen lg:min-h-screen hero-section">
     <!-- Split Layout: Landing Page (Left) + Dashboard Preview (Right) -->
     <div class="flex flex-col lg:flex-row hero-container">
       <!-- Left Section: Landing Page -->
@@ -43,8 +43,8 @@
           <div class="mb-6 sm:mb-7 md:mb-8">
             <h1
               style="
-                font-family: 'Funnel Display', sans-serif;
-                font-weight: 500;
+              
+                font-weight: 600;
                 line-height: 1.2;
               "
               class="text-[3.5rem] sm:text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-3 sm:mb-4"
@@ -230,11 +230,17 @@ onMounted(() => {
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
   height: 37px;
   padding: 8px 14px;
 
-  background-color: #1f62ff;
+  /* Gradient background */
+  background: linear-gradient(
+    180deg,
+    rgba(236, 236, 236, 0.08) 0%,
+    rgba(85, 85, 85, 0.08) 100%
+  ),
+  #1F62FF; /* base brand color */
+
   border: none;
   border-radius: 8px;
   box-sizing: border-box;
@@ -246,21 +252,27 @@ onMounted(() => {
   letter-spacing: -0.084px;
   color: white;
   text-decoration: none;
-  text-align: center;
   white-space: nowrap;
 
   cursor: pointer;
   user-select: none;
 
-  /* Fixed shadow: darkest -> softest */
-  box-shadow: 0px 1px 1.5px -0.5px rgba(0, 0, 0, 0.14),
-    0px 2px 4px -1px rgba(0, 0, 0, 0.12), 0px 4px 8px -4px rgba(0, 0, 0, 0.1),
-    0px 8px 12px -4px rgba(0, 0, 0, 0.08),
-    inset 0px 1px 3px rgba(255, 255, 255, 0.12),
-    inset 0px 0.5px 1px rgba(255, 255, 255, 0.08);
+  /* Combined shadows (all in one declaration) */
+  box-shadow:
+    0px 0.25px 0.25px rgba(255, 255, 255, 0.12) inset,
+    0px 0.75px 0.75px rgba(255, 255, 255, 0.08) inset,
+    0px 1px 3px rgba(255, 255, 255, 0.08) inset,
+    0px -8px 20px rgba(26, 25, 37, 0.08) inset,
+    0px 0.25px 0.25px rgba(26, 25, 37, 0.24),
+    0px 0.75px 0.75px rgba(26, 25, 37, 0.12),
+    0px 1px 1.5px -0.5px rgba(26, 25, 37, 0.12),
+    0px 2px 4px -1px rgba(26, 25, 37, 0.12),
+    0px 4px 8px -4px rgba(26, 25, 37, 0.12),
+    0px 8px 12px -4px rgba(26, 25, 37, 0.06);
 
   transition: all 0.3s ease;
 }
+
 .fancy-button:hover {
   background-color: #1b56e0;
 }
@@ -273,9 +285,7 @@ onMounted(() => {
   position: relative;
 }
 
-.hero-container {
-  padding: 2% 0;
-}
+
 
 @media (min-width: 1024px) {
   .hero-container {
