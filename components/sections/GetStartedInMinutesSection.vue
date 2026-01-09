@@ -1,13 +1,13 @@
 <template>
   <section
-    class="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 pt-[7.625rem]"
+    class="container mx-auto px-[57.5px] md:px-12 lg:px-24 pt-[6.25rem] md:pt-[7.625rem]"
     style="background: #f7f7f8"
   >
     <div class="max-w-6xl mx-auto">
       <!-- Header Section -->
       <div class="flex flex-col items-center mb-8 sm:mb-10 md:mb-12">
         <!-- Section Label -->
-        <div class="flex items-center justify-center mb-4 sm:mb-6">
+        <div class="flex items-center justify-center mb-0 sm:mb-6">
           <div
             class="flex bg-[#fff] items-center"
             style="
@@ -51,10 +51,10 @@
 
         <!-- Title -->
         <h2
-          class="text-center mb-4 sm:mb-6"
+          class="text-center md:text-[2rem] text-[2rem] mb-0 "
           style="
             font-weight: 600;
-            font-size: 48px;
+            
             line-height: 56px;
             letter-spacing: -0.04em;
             color: #1a1925;
@@ -65,11 +65,11 @@
 
         <!-- Subtitle -->
         <p
-          class="text-center mb-8 sm:mb-10 md:mb-12 text-sm md:text-base max-w-2xl mx-auto"
+          class="text-center text-[14px] md:text-[1rem] text-sm md:text-base max-w-2xl mx-auto"
           style="
             font-family: 'Inter', sans-serif;
             font-weight: 400;
-            font-size: 16px;
+            
             line-height: 24px;
             color: #51515e;
           "

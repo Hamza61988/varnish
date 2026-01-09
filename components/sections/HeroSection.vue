@@ -6,7 +6,7 @@
       <div
         class="flex-1 justify-center items-center hero-left-section order-1 lg:order-1"
       >
-        <div class="max-w-2xl mx-auto">
+        <div class="max-w-2xl md:px-0 px-[3.875rem] mx-auto">
           <!-- Top Badge -->
           <div class="mb-4 sm:mb-5 md:mb-6">
             <div
@@ -40,14 +40,10 @@
           </div>
 
           <!-- Headline Section -->
-          <div class="mb-6 sm:mb-7 md:mb-8">
+          <div class="mb-0 sm:mb-7 md:mb-8">
             <h1
-              style="
-              
-                font-weight: 600;
-                line-height: 1.2;
-              "
-              class="text-[3.5rem] sm:text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-3 sm:mb-4"
+              style="font-weight: 600; line-height: 1.2"
+              class="text-[32px] sm:text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-0 sm:mb-4"
             >
               <span>Content Delivery,</span>
               <span class="block hero-headline-line-2">
@@ -55,7 +51,7 @@
                 <img
                   src="/images/Company_logo.svg"
                   alt="BEST CDN AWARD"
-                  class="w-full h-auto lg:h-full object-cover"
+                  class="w-full h-[51px] lg:h-full object-cover"
                 />
               </span>
             </h1>
@@ -70,7 +66,7 @@
 
           <!-- Input Form -->
           <div class="mb-5 sm:mb-6">
-            <div class="flex flex-col sm:flex-row gap-3 sm:gap-4">
+            <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 hero-form">
               <!-- Email Input -->
               <div class="flex-1 relative">
                 <div
@@ -226,6 +222,11 @@ onMounted(() => {
 </script>
 
 <style scoped>
+@media (max-width: 480px) {
+  .hero-form {
+    align-items: flex-start;
+  }
+}
 .fancy-button {
   display: flex;
   align-items: center;
@@ -235,11 +236,11 @@ onMounted(() => {
 
   /* Gradient background */
   background: linear-gradient(
-    180deg,
-    rgba(236, 236, 236, 0.08) 0%,
-    rgba(85, 85, 85, 0.08) 100%
-  ),
-  #1F62FF; /* base brand color */
+      180deg,
+      rgba(236, 236, 236, 0.08) 0%,
+      rgba(85, 85, 85, 0.08) 100%
+    ),
+    #1f62ff; /* base brand color */
 
   border: none;
   border-radius: 8px;
@@ -257,9 +258,8 @@ onMounted(() => {
   cursor: pointer;
   user-select: none;
 
-  /* Combined shadows (all in one declaration) */
-  box-shadow:
-    0px 0.25px 0.25px rgba(255, 255, 255, 0.12) inset,
+  /* Combined shadows */
+  box-shadow: 0px 0.25px 0.25px rgba(255, 255, 255, 0.12) inset,
     0px 0.75px 0.75px rgba(255, 255, 255, 0.08) inset,
     0px 1px 3px rgba(255, 255, 255, 0.08) inset,
     0px -8px 20px rgba(26, 25, 37, 0.08) inset,
@@ -273,9 +273,25 @@ onMounted(() => {
   transition: all 0.3s ease;
 }
 
+/* Fixed compact mobile version */
+@media (max-width: 480px) {
+  .fancy-button {
+    height: 36px;
+    padding: 16px 8px;
+
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.006em;
+
+    border-radius: 8px;
+  }
+}
+
 .fancy-button:hover {
   background-color: #1b56e0;
 }
+
 .hero-section {
   background-color: #f7f7f8;
   background-image: url("/images/dots.png");
@@ -285,8 +301,6 @@ onMounted(() => {
   position: relative;
 }
 
-
-
 @media (min-width: 1024px) {
   .hero-container {
     padding: 3% 0;
@@ -294,7 +308,7 @@ onMounted(() => {
 }
 
 .hero-left-section {
-  padding: 2% 4%;
+  padding: 2% 0%;
   margin: 2% 0;
 }
 

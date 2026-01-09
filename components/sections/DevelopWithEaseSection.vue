@@ -1,10 +1,10 @@
 <template>
   <section
-    class="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 pt-[7.5rem]"
+    class="container mx-auto px-[57.5px] md:px-12 lg:px-24 pt-[7.5rem]"
     style="background: #f7f7f8; overflow-x: hidden"
   >
     <div class="max-w-6xl mx-auto">
-      <div class="mb-8 sm:mb-10 md:mb-12">
+      <div class="mb-[1.25rem] md:mb-12">
         <div class="flex items-center justify-start mb-4 sm:mb-6">
           <div
             class="flex items-center"
@@ -48,11 +48,11 @@
         </div>
 
         <h2
-          class="mb-3 sm:mb-4"
+          class="mb-0 text-[32px] md:text-[2rem] md:mb-4"
           style="
             font-weight: 600;
             font-style: SemiBold;
-            font-size: 48px;
+          
             line-height: 56px;
             letter-spacing: -0.04em;
             text-transform: capitalize;
@@ -63,12 +63,12 @@
         </h2>
 
         <p
-          class="text-sm md:text-base mb-8 sm:mb-10"
+          class="md:text-[1rem] text-[14px] md:text-base  "
           style="
             font-family: 'Inter', sans-serif;
             font-weight: 400;
             font-style: Regular;
-            font-size: 16px;
+           
             line-height: 24px;
             letter-spacing: -0.011em;
             color: #51515e;
