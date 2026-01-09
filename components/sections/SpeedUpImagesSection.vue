@@ -1,21 +1,18 @@
 <template>
   <section
-    class="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 pt-[7.625rem]"
+    class="container mx-auto px-0 sm:px-6 md:px-12 lg:px-24 pt-[0.25rem] md:pt-[100pt]"
     style="background: #f7f7f8"
   >
     <div class="max-w-6xl mx-auto">
-      <div class="mb-8 sm:mb-10 md:mb-12">
-        <div class="flex items-center  justify-start mb-4 sm:mb-6">
+      <div class="hidden md:block ">
+        <div class="flex items-center justify-start mb-3 ">
           <div
-            class="flex  items-center"
+            class="flex items-center"
             style="
               height: 24px;
               gap: 2px;
               border-radius: 999px;
-              padding-top: 4px;
-              padding-right: 8px;
-              padding-bottom: 4px;
-              padding-left: 8px;
+              padding: 4px 8px;
               background: #ffffffe5;
               box-shadow: 0px 0.5px 0.5px 0px rgba(7, 1, 19, 0.03),
                 0px 1px 1px -0.5px rgba(7, 1, 19, 0.03),
@@ -42,8 +39,6 @@
                 font-weight: 500;
                 font-size: 12px;
                 line-height: 16px;
-                letter-spacing: 0%;
-                text-align: center;
                 color: #1a1925;
               "
             >
@@ -53,14 +48,12 @@
         </div>
 
         <h2
-          class="mb-3 sm:mb-4"
+          class="mb-3 "
           style="
-            font-weight: 500;
-            font-style: SemiBold;
+            font-weight: 600;
             font-size: 48px;
             line-height: 56px;
             letter-spacing: -4%;
-            vertical-align: middle;
             text-transform: capitalize;
             color: #1a1925;
           "
@@ -69,11 +62,10 @@
         </h2>
 
         <p
-          class="text-sm md:text-base mb-8 sm:mb-10"
+          class="text-sm md:text-base mb-[1.875rem]"
           style="
             font-family: 'Inter', sans-serif;
             font-weight: 400;
-            font-style: Regular;
             font-size: 16px;
             line-height: 24px;
             letter-spacing: -0.011em;
@@ -84,7 +76,7 @@
         </p>
       </div>
 
-      <div class="flex flex-col lg:flex-row gap-8 lg:gap-4" style="width: 100%">
+      <div class="flex md:px-0 px-[57.5px] flex-col lg:flex-row gap-8 lg:gap-4" style="width: 100%">
         <div class="flex flex-col w-full lg:w-[60%] order-2 lg:order-1">
           <div
             class="mb-4 sm:mb-6 overflow-hidden flex items-center justify-center"
@@ -102,8 +94,9 @@
               style="display: block; max-width: 100%; border-radius: 20px"
             />
           </div>
+
           <div
-            class="mb-4 lg:mb-0 w-full"
+            class="mb-4 hidden md:flex lg:mb-0 w-full"
             style="
               border-radius: 16px;
               box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
@@ -111,12 +104,7 @@
           >
             <div
               class="flex flex-row items-center gap-2 sm:gap-3 w-full"
-              style="
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                width: 100%;
-              "
+              style="display: flex; flex-direction: row; align-items: center; width: 100%;"
             >
               <div
                 class="w-full px-3 sm:px-4 py-2 sm:py-3 bg-white rounded-lg border border-gray-200 text-xs sm:text-sm font-mono"
@@ -134,59 +122,67 @@
                   overflow: hidden;
                 "
               >
-                <span>{{ displayedText }}</span>
+                <span >{{ displayedText }}</span>
                 <span class="blinking-cursor">|</span>
               </div>
             </div>
           </div>
 
-          <div class="flex flex-row items-center justify-center lg:hidden">
+            <div
+            class="mb-4 md:hidden lg:mb-0 w-full"
+            style="
+              border-radius: 20px;
+              box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+            "
+          >
+            <div
+              class="flex flex-row items-center gap-2 sm:gap-3 w-full"
+              style="display: flex; flex-direction: row; align-items: center; width: 100%;"
+            >
+              <div
+                class="w-full px-3 sm:px-4 py-2 sm:py-3 bg-white rounded-lg border border-gray-200 text-[15px] sm:text-sm "
+                style="
+               
+                  color: #51515e;
+                  width: 100%;
+                  min-width: 0;
+                  border: none;
+                  border-radius: 20px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  white-space: nowrap;
+                  overflow: hidden;
+                "
+              >
+                https://ip.keycdn.com/example.jpg?<br/>format=webp |
+              </div>
+            </div>
+          </div>
+          
+
+          <div class="flex flex-row items-center justify-center md:hidden">
             <button
               class="flex items-center justify-center whitespace-nowrap flex-shrink-0"
               style="
-                width: 175px;
+                width: 100%;
                 height: 40px;
                 border-radius: 6px;
-                padding-top: 10px;
-                padding-right: 6px;
-                padding-bottom: 10px;
-                padding-left: 6px;
-                background: linear-gradient(0deg, #1a1925, #1a1925),
-                  linear-gradient(
-                    160deg,
-                    rgba(255, 255, 255, 0.12) 0%,
-                    rgba(255, 255, 255, 0) 100%
-                  );
-                box-shadow: 0px 0.25px 0.25px 0px rgba(255, 255, 255, 0.12)
-                    inset,
-                  0px 0.75px 0.75px 0px rgba(255, 255, 255, 0.08) inset,
-                  0px 1px 3px 0px rgba(255, 255, 255, 0.08) inset,
-                  0px 0.25px 0.25px 0px rgba(26, 25, 37, 0.24),
-                  0px 0.75px 0.75px 0px rgba(26, 25, 37, 0.12),
-                  0px 1px 1.5px -0.5px rgba(26, 25, 37, 0.12),
-                  0px 2px 4px -1px rgba(26, 25, 37, 0.12),
-                  0px 4px 8px -4px rgba(26, 25, 37, 0.12),
-                  0px 8px 12px -4px rgba(26, 25, 37, 0.06),
-                  0px -8px 20px 0px rgba(26, 25, 37, 0.08) inset;
+                padding: 10px 6px;
+                background: #1a1925;
                 font-family: 'inter', sans-serif;
                 font-weight: 500;
-                font-style: Medium;
                 font-size: 17px;
-                line-height: 20px;
-                letter-spacing: -0.02em;
-                text-align: center;
-                text-transform: capitalize;
                 color: #ffffff;
-                width: 100%;
               "
             >
-              API Documentaiton
+              API Documentation
             </button>
           </div>
         </div>
 
         <div
-          class="flex flex-col lg:justify-between w-full lg:w-[40%] order-1 lg:order-2"
+          class="hidden md:flex flex-col lg:justify-between w-full lg:w-[40%] order-1 lg:order-2"
         >
           <div
             class="grid grid-cols-1 sm:grid-cols-3 lg:flex lg:flex-col gap-6 lg:gap-0 lg:h-full lg:justify-between"
@@ -194,93 +190,36 @@
             <div>
               <h3
                 class="mb-2 sm:mb-3"
-                style="
-                  font-weight: 600;
-                  font-style: SemiBold;
-                  font-size: 16px;
-                  line-height: 24px;
-                  letter-spacing: -0.02em;
-                  color: #1a1925;
-                "
+                style="font-weight: 600; font-size: 16px; color: #1a1925;"
               >
                 Transform
               </h3>
-              <p
-                class=""
-                style="
-                  font-family: 'Inter', sans-serif;
-                  font-weight: 400;
-                  font-style: Regular;
-                  font-size: 14px;
-                  line-height: 20px;
-                  letter-spacing: -0.006em;
-                  color: #73737f;
-                "
-              >
-                Serve properly scaled images by dynamically updating the width
-                and height.
+              <p style="font-family: 'Inter', sans-serif; font-size: 14px; color: #73737f;">
+                Serve properly scaled images by dynamically updating the width and height.
               </p>
             </div>
 
             <div>
               <h3
                 class="mb-2 sm:mb-3"
-                style="
-                  font-weight: 600;
-                  font-style: SemiBold;
-                  font-size: 16px;
-                  line-height: 24px;
-                  letter-spacing: -0.02em;
-                  color: #1a1925;
-                "
+                style="font-weight: 600; font-size: 16px; color: #1a1925;"
               >
                 Optimize
               </h3>
-              <p
-                class=""
-                style="
-                  font-family: 'Inter', sans-serif;
-                  font-weight: 400;
-                  font-style: Regular;
-                  font-size: 14px;
-                  line-height: 20px;
-                  letter-spacing: -0.006em;
-                  color: #73737f;
-                "
-              >
-                Improve image performance by reducing the overall size and using
-                the next-gen formats.
+              <p style="font-family: 'Inter', sans-serif; font-size: 14px; color: #73737f;">
+                Improve image performance by reducing the overall size and using next-gen formats.
               </p>
             </div>
 
             <div>
               <h3
                 class="mb-2 sm:mb-3"
-                style="
-                  font-weight: 600;
-                  font-style: SemiBold;
-                  font-size: 16px;
-                  line-height: 24px;
-                  letter-spacing: -0.02em;
-                  color: #1a1925;
-                "
+                style="font-weight: 600; font-size: 16px; color: #1a1925;"
               >
                 Deliver
               </h3>
-              <p
-                class=""
-                style="
-                  font-family: 'Inter', sans-serif;
-                  font-weight: 400;
-                  font-style: Regular;
-                  font-size: 14px;
-                  line-height: 20px;
-                  letter-spacing: -0.006em;
-                  color: #73737f;
-                "
-              >
-                Increase image speed by being distributed globally through our
-                premium edge locations.
+              <p style="font-family: 'Inter', sans-serif; font-size: 14px; color: #73737f;">
+                Increase image speed by being distributed globally through our premium edge locations.
               </p>
             </div>
 
@@ -294,34 +233,15 @@
                   width: 175px;
                   height: 40px;
                   border-radius: 6px;
-                  padding-top: 10px;
-                  padding-right: 6px;
-                  padding-bottom: 10px;
-                  padding-left: 6px;
-
-                  box-shadow: 0px 0.25px 0.25px 0px rgba(255, 255, 255, 0.12)
-                      inset,
-                    0px 0.75px 0.75px 0px rgba(255, 255, 255, 0.08) inset,
-                    0px 1px 3px 0px rgba(255, 255, 255, 0.08) inset,
-                    0px 0.25px 0.25px 0px rgba(26, 25, 37, 0.24),
-                    0px 0.75px 0.75px 0px rgba(26, 25, 37, 0.12),
-                    0px 1px 1.5px -0.5px rgba(26, 25, 37, 0.12),
-                    0px 2px 4px -1px rgba(26, 25, 37, 0.12),
-                    0px 4px 8px -4px rgba(26, 25, 37, 0.12),
-                    0px 8px 12px -4px rgba(26, 25, 37, 0.06),
-                    0px -8px 20px 0px rgba(26, 25, 37, 0.08) inset;
+                  padding: 10px 6px;
                   font-family: 'inter', sans-serif;
                   font-weight: 500;
-                  font-style: Medium;
                   font-size: 17px;
-                  line-height: 20px;
-                  letter-spacing: -0.02em;
-                  text-align: center;
-                  text-transform: capitalize;
                   color: #ffffff;
+                  box-shadow: 0px 8px 12px -4px rgba(26, 25, 37, 0.06);
                 "
               >
-                API Documentaiton
+                API Documentation
               </button>
             </div>
           </div>
@@ -347,38 +267,27 @@ const typeAnimation = () => {
   const fullText = baseText + currentFormat;
 
   if (isDeleting) {
-    // When deleting, we stop deleting once we hit the baseText length
     displayedText.value = fullText.substring(0, displayedText.value.length - 1);
   } else {
-    // When typing, we add one character
     displayedText.value = fullText.substring(0, displayedText.value.length + 1);
   }
 
-  // Speed Logic
-  let typeSpeed = 100; // Normal typing speed
-  if (isDeleting) {
-    typeSpeed = 50; // Deleting is faster
-  }
+  let typeSpeed = 100;
+  if (isDeleting) typeSpeed = 50;
 
-  // Logic for switching states
   if (!isDeleting && displayedText.value === fullText) {
-    // Finished typing the full URL, wait 3 seconds before deleting
     typeSpeed = 3000;
     isDeleting = true;
   } else if (isDeleting && displayedText.value === baseText) {
-    // Finished deleting the format part, switch to next format
     isDeleting = false;
     loopNum++;
-    typeSpeed = 500; // Small pause before typing next one
+    typeSpeed = 500;
   }
 
   typingTimeout = setTimeout(typeAnimation, typeSpeed);
 };
 
 onMounted(() => {
-  // Initialize with empty base or full base, here we start typing from scratch
-  // or start typing the format if you prefer base to be static.
-  // To make it look cooler, lets start by typing the whole thing
   displayedText.value = baseText;
   typeAnimation();
 });
@@ -398,12 +307,7 @@ onUnmounted(() => {
 }
 
 @keyframes blink {
-  0%,
-  100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
 </style>

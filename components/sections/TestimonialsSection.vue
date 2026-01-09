@@ -1,12 +1,12 @@
 <template>
   <section
-    class="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 py-[7.5rem]"
+    class="container mx-auto px-[3.6rem]  sm:px-6 md:px-12 lg:px-24 py-[7.5rem]"
     style="background: #f7f7f8"
   >
-    <div class="max-w-5xl mx-auto">
+    <div class="max-w-5xl  mx-auto">
       <!-- Header Section -->
       <div class="flex flex-col items-center mb-4 sm:mb-10 md:mb-0">
-        <div class="flex items-center justify-center mb-4 sm:mb-6">
+        <div class="flex items-center justify-center mb-1 sm:mb-6">
           <div
             class="flex bg-white items-center"
             style="
@@ -47,7 +47,7 @@
 
         <!-- Title -->
         <h2
-          class="text-center mb-3 text-3xl w-[80%] md:w-full  md:text-[48px] leading-[40px] md:leading-[56px]"
+          class="text-center mb-3 text-[32px] w-[80%] md:w-full  md:text-[48px] leading-[40px] md:leading-[56px]"
           style="
             font-weight: 600;
             font-style: SemiBold;
