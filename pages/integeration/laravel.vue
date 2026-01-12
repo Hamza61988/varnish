@@ -7,7 +7,7 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
   <div class="mt-[4.25rem] mx-auto max-w-3xl">
     <div class="w-full flex flex-col gap-4 items-start">
 
-      <h1 class="text-5xl font-medium">Larvel CDN Integration</h1>
+      <h1 class="text-5xl font-medium">Laravel CDN Integration</h1>
 
       <p class="text-[#73737F]">
         The <a class="underline">Laravel CDN</a> integration could be done with either the <a class="underline">CDN Assets
