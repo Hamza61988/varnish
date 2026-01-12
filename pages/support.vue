@@ -481,7 +481,7 @@ const zonesLinks = [
   { name: "Upload Data to a Push Zone", route: "/zones/uploadpushzone" },
   { name: "Create a Zone Alias", route: "/zones/zonealias" },
   { name: "Purge CDN Cache", route: "/zones/purgecdncache" },
-  { name: "Image Processing", route: "#" },
+  { name: "Image Processing", route: "/zones/imageprocessing" },
 ];
 
 const integrationsLinks = [

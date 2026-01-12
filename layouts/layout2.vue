@@ -94,10 +94,6 @@
         </main>
       </div>
     </div>
-
-    <div id="full-width-section" class="fixed inset-0 -z-10 pointer-events-none">
-       <slot name="background" />
-    </div>
   </div>
 </template>
 
@@ -131,7 +127,7 @@ const navigation = [
       { name: 'Custom CDN', path: '/integeration/customcdn' },
       { name: 'Drupal', path: '/integeration/drupalcdn' },
       { name: 'Joomla', path: '/integeration/joomlacdn' },
-      { name: 'Laravel', path: '/integeration/laravelcdn' },
+      { name: 'Laravel', path: '/integeration/laravel' },
       { name: 'Magento', path: '/integeration/magentocdn' },
       { name: 'PrestaShop', path: '/integeration/prestashopcdn' },
       { name: 'Typo3', path: '/integeration/typo3cdn' },
