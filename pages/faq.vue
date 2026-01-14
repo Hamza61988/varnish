@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-white relative overflow-hidden">
+  <div class="min-h-screen  relative overflow-hidden">
     <!-- Page Background - BGline.svg -->
     <div
       class="absolute inset-0 pointer-events-none hidden md:block"
@@ -15,73 +15,25 @@
 
     <!-- Main Content -->
     <main
-      class="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 py-12 sm:py-16 md:py-20 lg:py-24 relative z-10"
+      class="container mx-auto px-[57.5px] md:px-0 py-12 sm:py-16 md:py-20 lg:py-24 relative z-10"
     >
       <!-- FAQ Section -->
-      <section class="w-full md:w-3/4 lg:w-2/3 xl:w-3/4 mx-auto px-4 sm:px-6 md:px-0">
+      <section class="w-full max-w-4xl mx-auto ">
         <!-- Section Label -->
-        <div class="flex items-center justify-center mb-4 sm:mb-6">
-          <div
-            class="flex items-center"
-            style="
-              width: 70px;
-              height: 24px;
-              gap: 2px;
-              border-radius: 999px;
-              padding-top: 4px;
-              padding-right: 8px;
-              padding-bottom: 4px;
-              padding-left: 8px;
-              background: #FFFFFFE5;
-              box-shadow: 0px 0.5px 0.5px 0px rgba(7, 1, 19, 0.03),
-                0px 1px 1px -0.5px rgba(7, 1, 19, 0.03),
-                0px 2px 2px -1px rgba(7, 1, 19, 0.03),
-                0px 3px 3px -1.5px rgba(7, 1, 19, 0.03);
-            "
-          >
-            <!-- Lightning Bolt Icon -->
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-3 w-3 fill-[#A3A3AE] stroke-[#A3A3AE]"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              stroke-width="2"
-              style="color: #1a1925"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"
-              />
-            </svg>
-            <span
-              style="
-                font-family: 'Bricolage Grotesque', sans-serif;
-                font-weight: 500;
-                font-size: 12px;
-                line-height: 16px;
-                letter-spacing: 0%;
-                text-align: center;
-                color: #1a1925;
-              "
-            >
-              FAQ'S
-            </span>
-          </div>
+        <div class="flex items-center md:justify-center mb-4 sm:mb-6">
+<SectionsUpername name="FAQ'S" />
         </div>
 
         <!-- Title -->
         <h1
-          class="text-center mb-4 sm:mb-6"
+          class="md:text-center text-[2rem] md:text-[3rem] mb-4 sm:mb-6"
           style="
             font-family: 'Bricolage Grotesque', sans-serif;
             font-weight: 500;
-            font-size: 48px;
+          
             line-height: 56px;
             letter-spacing: -0.02em;
-            text-align: center;
-            vertical-align: middle;
+           
             color: #1A1925;
           "
         >
@@ -90,14 +42,13 @@
 
         <!-- Subtitle -->
         <p
-          class="text-center mb-8 sm:mb-10 md:mb-12"
+          class="md:text-center text-[0.875rem] md:text-[1rem] mb-8 sm:mb-10 md:mb-12"
           style="
             font-family: 'Inter', sans-serif;
             font-weight: 400;
-            font-size: 16px;
             line-height: 24px;
             letter-spacing: -0.011em;
-            text-align: center;
+           
             color: #51515E;
           "
         >
@@ -137,13 +88,13 @@
                 background-size: contain;
               "
             ></div>
-            <div class="relative z-10 p-4 sm:p-5 md:p-6">
+            <div class="relative  z-10 p-4 sm:p-5 md:p-6">
               <h3
-                class="mb-3"
+                class="mb-2 text-[1rem] md:text-[1.125rem]"
                 style="
                   font-family: 'Bricolage Grotesque', sans-serif;
                   font-weight: 600;
-                  font-size: 18px;
+                  
                   line-height: 24px;
                   letter-spacing: -0.02em;
                   color: #1A1925;
@@ -151,11 +102,11 @@
               >
                 1. What is Varnish?
               </h3>
-              <p
+              <p class="text-[0.875rem] md:text-[0.9375rem]"
                 style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 400;
-                  font-size: 15px;
+                
                   line-height: 20px;
                   letter-spacing: -0.006em;
                   color: #51515E;
@@ -199,13 +150,13 @@
                 background-size: contain;
               "
             ></div>
-            <div class="relative z-10 p-4 sm:p-5 md:p-6">
+            <div class="relative  z-10 p-4 sm:p-5 md:p-6">
               <h3
-                class="mb-3"
+                class="mb-2 text-[1rem] md:text-[1.125rem]"
                 style="
                   font-family: 'Bricolage Grotesque', sans-serif;
                   font-weight: 600;
-                  font-size: 18px;
+                  
                   line-height: 24px;
                   letter-spacing: -0.02em;
                   color: #1A1925;
@@ -213,11 +164,11 @@
               >
                 2. Who can use Varnish?
               </h3>
-              <p
+              <p class="text-[0.875rem] md:text-[0.9375rem]"
                 style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 400;
-                  font-size: 15px;
+                
                   line-height: 20px;
                   letter-spacing: -0.006em;
                   color: #51515E;
@@ -261,13 +212,13 @@
                 background-size: contain;
               "
             ></div>
-            <div class="relative z-10 p-4 sm:p-5 md:p-6">
+            <div class="relative  z-10 p-4 sm:p-5 md:p-6">
               <h3
-                class="mb-3"
+                class="mb-2 text-[1rem] md:text-[1.125rem]"
                 style="
                   font-family: 'Bricolage Grotesque', sans-serif;
                   font-weight: 600;
-                  font-size: 18px;
+                  
                   line-height: 24px;
                   letter-spacing: -0.02em;
                   color: #1A1925;
@@ -275,11 +226,11 @@
               >
                 3. What types of content can Varnish deliver?
               </h3>
-              <p
+              <p class="text-[0.875rem] md:text-[0.9375rem]"
                 style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 400;
-                  font-size: 15px;
+                
                   line-height: 20px;
                   letter-spacing: -0.006em;
                   color: #51515E;
@@ -323,13 +274,13 @@
                 background-size: contain;
               "
             ></div>
-            <div class="relative z-10 p-4 sm:p-5 md:p-6">
+            <div class="relative  z-10 p-4 sm:p-5 md:p-6">
               <h3
-                class="mb-3"
+                class="mb-2 text-[1rem] md:text-[1.125rem]"
                 style="
                   font-family: 'Bricolage Grotesque', sans-serif;
                   font-weight: 600;
-                  font-size: 18px;
+                  
                   line-height: 24px;
                   letter-spacing: -0.02em;
                   color: #1A1925;
@@ -337,11 +288,11 @@
               >
                 4. How do I get support?
               </h3>
-              <p
+              <p class="text-[0.875rem] md:text-[0.9375rem]"
                 style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 400;
-                  font-size: 15px;
+                
                   line-height: 20px;
                   letter-spacing: -0.006em;
                   color: #51515E;
@@ -385,13 +336,13 @@
                 background-size: contain;
               "
             ></div>
-            <div class="relative z-10 p-4 sm:p-5 md:p-6">
+            <div class="relative  z-10 p-4 sm:p-5 md:p-6">
               <h3
-                class="mb-3"
+                class="mb-2 text-[1rem] md:text-[1.125rem]"
                 style="
                   font-family: 'Bricolage Grotesque', sans-serif;
                   font-weight: 600;
-                  font-size: 18px;
+                  
                   line-height: 24px;
                   letter-spacing: -0.02em;
                   color: #1A1925;
@@ -399,11 +350,11 @@
               >
                 5. How quickly can I get started?
               </h3>
-              <p
+              <p class="text-[0.875rem] md:text-[0.9375rem]"
                 style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 400;
-                  font-size: 15px;
+                
                   line-height: 20px;
                   letter-spacing: -0.006em;
                   color: #51515E;
@@ -419,7 +370,7 @@
         </div>
 
         <!-- Have More Questions Section -->
-        <div class="text-center">
+        <div class="md:text-center">
           <p
             style="
               font-family: 'Inter', sans-serif;

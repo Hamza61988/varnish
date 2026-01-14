@@ -2,59 +2,31 @@
   <section class="mx-auto py-2 sm:py-4 md:py-6 lg:pt-10 bg-[#F7F7F8]">
     <div>
       <!-- Pricing Header -->
-      <div class="mb-[48px] px-4 md:px-[24px] lg:px-0">
+      <div class="mb-[24px] md:mb-[48px]  px-[57.5px] md:px-0">
         <div class="mb-3 sm:mb-4 flex justify-start items-start">
-          <div
-            class="inline-flex gap-[6px] items-center rounded-full text-xs sm:text-sm font-medium text-gray-700"
-            style="
-              background: #ffffffe5;
-                 box-shadow: 0 3px 3px -1.5px #07011308, 0 2px 2px -1px #07011308, 0 1px 1px -.5px #07011308, 0 .5px .5px #07011308;
-
-              padding-top: 4px;
-              padding-right: 12px;
-              padding-bottom: 4px;
-              padding-left: 8px;
-            "
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-3 w-3 sm:h-4 sm:w-4"
-              style="color: #a3a3ae; fill: #a3a3ae"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="#A3A3AE"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M13 10V3L4 14h7v7l9-11h-7z"
-              />
-            </svg>
-            <span>Pricing</span>
-          </div>
+<SectionsUpername name="Pricing" />
         </div>
         <div
           class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 sm:gap-6 mb-6 sm:mb-8"
         >
           <div class="text-left  w-full">
-            <h2 style=" font-size: 48px; font-weight: 500;   font-family: 'Funnel Display', sans-serif;"
-              class=" text-gray-900 mb-[16px]"
+            <h2 style="  font-weight: 600; "
+              class=" text-gray-900 text-[2rem] md:text-[3rem] mb-[8px] md:mb-[16px]"
             >
               Pricing
             </h2>
             <div
-              class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 lg:gap-0"
+              class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-5 lg:gap-0"
             >
               <p
               style="font-family: 'inter' , sans-serif;"
-                class="text-[16px] text-[#73737] max-w-2xl"
+                class="text-[14px] md:text-[16px] text-[#51515E] max-w-2xl"
               >
                 Get access to our entire content delivery network without
                 commitment.
               </p>
               <div
-                class="flex items-center lg:justify-center justify-start space-x-3 sm:space-x-4"
+                class="flex items-center  justify-center space-x-3 sm:space-x-4"
               >
                 <span class="
                 text-[14px]  text-[#51515e] "
@@ -77,23 +49,23 @@
 
       <!-- Two Separate Tables: Region Table and Pricing Table -->
       <!-- Mobile/Tablet: Cards for each tier -->
-      <div class="lg:hidden space-y-4 px-4 mb-[24px-] sm:px-6">
+      <div class="lg:hidden space-y-4 px-[57.5px] md:px-0 mb-[24px-] ">
         <div
           v-for="(heading, headingIndex) in headings"
           :key="headingIndex"
-          class="bg-[#F3F4F6] rounded-lg p-0.5 sm:p-1"
+          class="bg-[#EEEEF0] rounded-lg p-0.5 sm:p-1"
           style="border-radius: 16px"
         >
-          <div class="flex w-full min-w-0">
+          <div class="flex w-full md:px-0 md:py-0 px-[0.9375rem] py-[1.25rem] gap-[22px] md:gap-0 min-w-0">
             <!-- Region Column -->
             <div class="w-2/5 sm:w-1/3 flex-shrink-0">
-              <div class="bg-white rounded-lg overflow-hidden">
+              <div class=" rounded-lg overflow-hidden">
                 <table class="w-full">
                   <thead>
-                    <tr style="background-color: #f3f4f6">
+                    <tr style="background-color: #EEEEF0">
                       <th
-                        class="px-2 sm:px-3 py-2 sm:py-3 text-left text-xs sm:text-sm font-semibold bg-transparent align-middle"
-                        style="color: #73737f"
+                        class="px-2 sm:px-3 py-2 sm:py-3 text-left text-xs font-semibold bg-transparent align-middle"
+                        style="color: #717171"
                       >
                         REGION
                       </th>
@@ -103,10 +75,10 @@
                     <tr
                       v-for="(row, index) in tableData"
                       :key="index"
-                      class="bg-[#F3F4F6]"
+                      class="bg-[#EEEEF0]"
                     >
                       <td
-                        class="px-2 sm:px-3 py-2 sm:py-3 text-xs sm:text-sm font-medium text-gray-900 bg-transparent text-left align-middle"
+                        class="px-2 sm:px-3 py-2 sm:py-3 text-sm font-bold text-gray-900 bg-transparent text-left align-middle"
                       >
                         {{ row.region }}
                       </td>
@@ -116,9 +88,9 @@
               </div>
             </div>
             <!-- Pricing Column -->
-            <div class="flex-1 bg-gray-100 rounded-lg min-w-0">
+            <div class="flex-1  rounded-lg min-w-0">
               <div
-                class="bg-white rounded-lg overflow-hidden"
+                class="bg-white w-[127px] md:w-full rounded-lg overflow-hidden"
                 style="padding: 4px"
               >
                 <!-- Tier Header -->
@@ -126,7 +98,7 @@
                   class="bg-[#212129] rounded-lg px-3 sm:px-4 py-2 sm:py-3 mb-2 sm:mb-3"
                 >
                   <div
-                    class="text-center text-xs sm:text-sm font-semibold text-white"
+                    class="text-center text-xs  font-semibold text-white"
                   >
                     {{ heading.title.toUpperCase() }}
                   </div>
@@ -141,11 +113,13 @@
                   <div
                     v-for="(row, rIndex) in tableData"
                     :key="rIndex"
-                    class="pb-2 sm:pb-3 border-b border-[#eeeef0] last:border-b-0"
+                    
+                    class="py-2  border-b border-[#eeeef0] last:border-b-0"
                   >
                     <div class="text-center">
                       <span
-                        class="font-bold text-gray-900 text-xs sm:text-sm"
+                      style="line-height: 24px;"
+                        class="font-medium text-gray-900 text-base"
                         >{{ row.prices[headingIndex]?.value || "" }}</span
                       ><span
                         class="text-gray-500 font-normal text-xs sm:text-sm"
@@ -174,7 +148,7 @@
                     <tr style="background-color: #eeeef0">
                       <th
                         class="px-2 sm:px-3 md:px-4 lg:px-6 py-2 sm:py-3 md:py-4 text-left text-xs sm:text-sm font-semibold bg-transparent align-middle"
-                        style="color: #73737f"
+                        style="color: #717171"
                       >
                         REGION
                       </th>
@@ -198,10 +172,10 @@
             </div>
           </div>
           <div
-            class="flex-1 bg-gray-100 rounded-2xl min-w-0 overflow-x-auto"
+            class="flex-1  bg-gray-100 rounded-2xl  min-w-0 overflow-x-auto"
           >
             <div
-              class="bg-white rounded-2xl overflow-hidden pricing-table-wrapper"
+              class="bg-white rounded-2xl  overflow-hidden pricing-table-wrapper"
               style="padding: 0px"
             >
               <table class="w-full overflow-hidden  pricing-table">

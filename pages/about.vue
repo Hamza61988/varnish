@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-white relative overflow-hidden">
+  <div class="min-h-screen  relative overflow-hidden">
     <!-- Pagee Background - BGline.svg -->
     <div
       class="absolute inset-0 pointer-events-none hidden md:block"
@@ -15,14 +15,14 @@
 
     <!-- Main Content -->
     <main
-      class="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 py-12 sm:py-16 md:py-20 lg:py-24 relative z-10"
+      class="container mx-auto px-[3.5938rem] md:px-0  py-12 sm:py-16 md:py-20 lg:py-24 relative z-10"
     >
       <!-- About Us Section -->
       <section
-        class="mb-12 sm:mb-16 md:mb-20 lg:mb-24 xl:mb-32 w-full md:w-3/4 lg:w-2/3 xl:w-1/2 mx-auto px-4 sm:px-6 md:px-0"
+        class="mb-12 sm:mb-16 md:mb-20 lg:mb-24 xl:mb-32 w-full md:w-3/4 lg:w-2/3 xl:w-1/2 mx-auto"
       >
         <!-- Section Label -->
-        <div class="flex items-center justify-center mb-4 sm:mb-6">
+        <div class="flex items-center justify-start md:justify-center mb-4 sm:mb-6">
           <div
             class="flex items-center"
             style="
@@ -63,7 +63,7 @@
                 font-size: 12px;
                 line-height: 16px;
                 letter-spacing: 0%;
-                text-align: center;
+               
                 color: #1a1925;
               "
             >
@@ -74,13 +74,11 @@
 
         <!-- Title -->
         <h1
-          class="text-center mb-4 sm:mb-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
+          class="text-start md:text-center mb-4 sm:mb-6 text-[2rem] md:text-[3rem]"
           style="
             font-family: 'Bricolage Grotesque', sans-serif;
             font-weight: 500;
             letter-spacing: -0.02em;
-            text-align: center;
-            vertical-align: middle;
             color: #1a1925;
           "
         >
@@ -89,7 +87,7 @@
 
         <!-- Subtitle -->
         <p
-          class="text-center mb-6 sm:mb-8 md:mb-10 lg:mb-12 text-sm sm:text-base"
+          class=" text-start md:text-center mb-6 sm:mb-8 md:mb-10 lg:mb-12 text-[0.875rem] md:text-[1rem]"
           style="
             font-family: 'Inter', sans-serif;
             font-weight: 400;
@@ -104,7 +102,7 @@
         <!-- Content Paragraphs -->
         <div class="max-w-4xl mx-auto space-y-4 sm:space-y-6 md:space-y-8">
           <p
-            class="text-sm sm:text-base md:text-lg text-left md:text-justify"
+            class="text-[13px] md:text-base text-left md:text-justify"
             style="
               font-family: 'Inter', sans-serif;
               font-weight: 400;
@@ -113,7 +111,7 @@
               color: #73737f;
             "
           >
-            <strong>Varnish</strong> is a registered trademark and service of
+            <span class="text-[#1A1925]">Varnish</span> is a registered trademark and service of
             Varnish Technologies LLC, a privately funded company headquartered
             in [Your Location]. We are a leading content delivery network
             provider, built from the ground up with a next-generation
@@ -147,7 +145,7 @@
       <!-- Our Values Section -->
       <section>
         <!-- Section Label -->
-        <div class="flex items-center justify-center mb-4 sm:mb-6">
+        <div class="flex items-center md:justify-center mb-4 sm:mb-6">
           <div
             class="flex items-center"
             style="
@@ -188,7 +186,7 @@
                 font-size: 12px;
                 line-height: 16px;
                 letter-spacing: 0%;
-                text-align: center;
+               
                 color: #1a1925;
               "
             >
@@ -199,12 +197,12 @@
 
         <!-- Title -->
         <h2
-          class="text-center mb-4 sm:mb-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
+          class="md:text-center mb-4 sm:mb-6 text-[2rem] md:text-[3rem]"
           style="
             font-family: 'Bricolage Grotesque', sans-serif;
             font-weight: 500;
             letter-spacing: -0.02em;
-            text-align: center;
+           
             vertical-align: middle;
             color: #1a1925;
           "
@@ -214,7 +212,7 @@
 
         <!-- Subtitle -->
         <p
-          class="text-center mb-8 sm:mb-12 md:mb-16 lg:mb-20 text-sm sm:text-base"
+          class="md:text-center mb-8 sm:mb-12 md:mb-16 lg:mb-20 text-[0.8125rem] sm:text-base"
           style="
             font-family: 'Inter', sans-serif;
             font-weight: 400;
@@ -232,7 +230,7 @@
         >
           <!-- Agility Card -->
           <div
-            class="relative overflow-hidden min-h-[210px] md:h-[210px]"
+            class="relative overflow-hidden min-h-[210px] md:h-[210px] flex flex-col  justify-center md:justify-start "
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
@@ -311,7 +309,7 @@
 
           <!-- Integrity Card -->
           <div
-            class="relative overflow-hidden min-h-[210px] md:h-[210px]"
+            class="relative overflow-hidden min-h-[210px] md:h-[210px] flex flex-col  justify-center md:justify-start "
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
@@ -396,7 +394,7 @@
 
           <!-- Reliability Card -->
           <div
-            class="relative overflow-hidden min-h-[210px] md:h-[210px]"
+            class="relative overflow-hidden min-h-[210px] md:h-[210px] flex flex-col justify-center md:justify-start "
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;

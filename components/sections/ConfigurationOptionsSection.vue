@@ -1,6 +1,6 @@
 <template>
-  <section class="bg-[#f7f7f8]  ">
-    <div class="container mx-auto px-4">
+  <section class="bg-[#f7f7f8] pt-[100px] md:pt-[80px]  ">
+    <div class="container  mx-auto px-[3.5938rem] md:px-0">
       <div class="max-w-4xl mx-auto">
         
         <div class="flex flex-col gap-4 w-full lg:w-[75%] lg:mx-auto">
@@ -14,7 +14,7 @@
               @click="toggleCard(index)"
               class="w-full p-6 flex items-center justify-between text-left cursor-pointer group"
             >
-              <h3 style="font-family: 'inter' , sans-serif;" class="text-base font-medium text-[#1a1925] font-sans">
+              <h3  class="text-base font-medium text-[#1a1925]">
                 {{ item.title }}
               </h3>
               
@@ -36,7 +36,7 @@
             >
               <div class="overflow-hidden">
                 <div class="px-6 pb-6 pt-0">
-                  <p class="text-sm text-gray-500 font-sans">
+                  <p style="font-family: inter;" class="text-sm text-gray-500 ">
                     {{ item.description }}
                   </p>
                 </div>

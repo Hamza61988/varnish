@@ -9,55 +9,7 @@
         class="w-full md:w-3/4 lg:w-2/3 xl:w-1/2 mx-auto px-4 sm:px-6 md:px-0 mb-12 sm:mb-16 md:mb-20"
       >
         <!-- Section Label -->
-        <div class="flex items-center justify-center mb-4 sm:mb-6">
-          <div
-            class="flex items-center"
-            style="
-              height: 24px;
-              gap: 2px;
-              border-radius: 999px;
-              padding-top: 4px;
-              padding-bottom: 4px;
-              padding-left: 8px;
-              padding-right: 8px;
-              background: #ffffffe5;
-              box-shadow: 0px 0.5px 0.5px 0px rgba(7, 1, 19, 0.03),
-                0px 1px 1px -0.5px rgba(7, 1, 19, 0.03),
-                0px 2px 2px -1px rgba(7, 1, 19, 0.03),
-                0px 3px 3px -1.5px rgba(7, 1, 19, 0.03);
-            "
-          >
-            <!-- Lightning Bolt Icon -->
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-3 w-3 fill-[#A3A3AE] stroke-[#A3A3AE]"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              stroke-width="2"
-              style="color: #1a1925"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"
-              />
-            </svg>
-            <span
-              style="
-                font-family: 'Bricolage Grotesque', sans-serif;
-                font-weight: 500;
-                font-size: 12px;
-                line-height: 16px;
-                letter-spacing: 0%;
-                text-align: center;
-                color: #1a1925;
-              "
-            >
-              Blog
-            </span>
-          </div>
-        </div>
+        <SectionsUpername name="Blog" />
 
         <!-- Title -->
         <h1

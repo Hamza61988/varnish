@@ -3,44 +3,18 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
 </script>
 
 <template>
-  <div class="mt-[4.25rem] mx-auto px-6 max-w-[940px]">
+  <div class="mt-[4.25rem] mx-auto px-[3.5938rem] md:px-0 max-w-[940px]">
     
-    <div
-      style="
-        padding: 4px 12px 4px 8px;
-        box-shadow: 0 3px 3px -1.5px #07011308, 0 2px 2px -1px #07011308,
-          0 1px 1px -0.5px #07011308, 0 0.5px 0.5px #07011308;
-      "
-      class="inline-flex items-center space-x-2 rounded-full text-xs sm:text-sm font-medium border border-gray-100"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="h-3 w-3 sm:h-4 sm:w-4"
-        style="color: #a3a3ae; fill: #a3a3ae"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="#A3A3AE"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M13 10V3L4 14h7v7l9-11h-7z"
-        />
-      </svg>
-      <span style="color: #1a1925; font-weight: 500; font-size: 12.06px">
-        Solutions
-      </span>
-    </div>
+<SectionsUpername name="Solutions" />
 
     <div class="max-w-4xl">
-      <h1 class="text-5xl font-medium mt-2">CDN Services</h1>
-      <p class="text-[#73737F] mt-4 max-w-2xl">
+      <h1 class="text-[2rem] md:text-5xl font-semibold mt-2">CDN Services</h1>
+      <p class="text-[#73737F] md:text-[1rem]  mt-4 text-[14px]  max-w-2xl">
         We offer an ideal content delivery service that operates exceedingly fast.
       </p>
     </div>
 
-    <div class="mt-[5rem] flex flex-col gap-6 text-[#73737F] max-w-4xl">
+    <div class="md:mt-[5rem] mt-[3.125rem] flex flex-col gap-6 md:text-[1rem] text-[13px] text-[#73737F] max-w-4xl">
       <p>
         CDN services are not created equally. There are many differentiating
         factors that make up each content delivery network available. We have
@@ -58,12 +32,11 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
       </p>
     </div>
 
-    <div class="mt-[4.3125rem] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="mt-[0.875rem] md:mt-[4.3125rem] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       
       <div style="width: 300;
 height: 144;
 gap: 16px;
-angle: 0 deg;
 opacity: 1;
 border-radius: 20px;
 border-width: 1px;
@@ -80,8 +53,8 @@ border: 1px solid var(--Border-Secondary, #EEEEF0)
           </svg>
         </div>
         <div>
-          <h2 class="text-[1rem] font-semibold text-[#1a1925]">Instant purge</h2>
-          <p class="text-[#73737F] mt-1 text-sm leading-relaxed">
+          <h2 class="text-[1.125rem] font-semibold text-[#1a1925]">Instant purge</h2>
+          <p class="text-[#73737F]   mt-1 text-sm leading-relaxed">
             Never serve stale content again. Purge all data centers in the
             blink of an eye. Purge the entire cache or individual content.
           </p>
@@ -91,7 +64,6 @@ border: 1px solid var(--Border-Secondary, #EEEEF0)
       <div   style="width: 300;
 height: 144;
 gap: 16px;
-angle: 0 deg;
 opacity: 1;
 border-radius: 20px;
 border-width: 1px;
@@ -107,8 +79,8 @@ border: 1px solid var(--Border-Secondary, #EEEEF0)
           </svg>
         </div>
         <div>
-          <h2 class="text-[1rem] font-semibold text-[#1a1925]">Platform features</h2>
-          <p class="text-[#73737F] mt-1 text-sm leading-relaxed">
+          <h2 class="text-[1.125rem] font-semibold text-[#1a1925]">Platform features</h2>
+          <p class="text-[#73737F]   mt-1 text-sm leading-relaxed">
             We have many advanced features that allow complete content
             delivery control.
           </p>
@@ -118,7 +90,6 @@ border: 1px solid var(--Border-Secondary, #EEEEF0)
       <div   style="width: 300;
 height: 144;
 gap: 16px;
-angle: 0 deg;
 opacity: 1;
 border-radius: 20px;
 border-width: 1px;
@@ -134,8 +105,8 @@ border: 1px solid var(--Border-Secondary, #EEEEF0)
           </svg>
         </div>
         <div>
-          <h2 class="text-[1rem] font-semibold text-[#1a1925]">Network health</h2>
-          <p class="text-[#73737F] mt-1 text-sm leading-relaxed">
+          <h2 class="text-[1.125rem] font-semibold text-[#1a1925]">Network health</h2>
+          <p class="text-[#73737F]   mt-1 text-sm leading-relaxed">
             We have a low latency network with stellar speeds and an almost
             perfect uptime record.
           </p>
@@ -143,7 +114,7 @@ border: 1px solid var(--Border-Secondary, #EEEEF0)
       </div>
     </div>
 
-    <div class="mt-16 flex flex-col gap-6 text-[#73737F] max-w-4xl">
+    <div class="mt-16 flex flex-col gap-6 text-[0.8125rem] md:text-[1rem] text-[#73737F] max-w-4xl">
       <p>
         Although there are many CDN services provided by any CDN provider,
         customer support is one of the most important. At KeyCDN we want all
@@ -168,7 +139,6 @@ border: 1px solid var(--Border-Secondary, #EEEEF0)
       <div   style="width: 300;
 height: 144;
 gap: 16px;
-angle: 0 deg;
 opacity: 1;
 border-radius: 20px;
 border-width: 1px;
@@ -184,8 +154,8 @@ border: 1px solid var(--Border-Secondary, #EEEEF0)
           </svg>
         </div>
         <div>
-          <h2 class="text-[1rem] font-semibold text-[#1a1925]">Low pricing</h2>
-          <p class="text-[#73737F] mt-1 text-sm leading-relaxed">
+          <h2 class="text-[1.125rem] font-semibold text-[#1a1925]">Low pricing</h2>
+          <p class="text-[#73737F]   mt-1 text-sm leading-relaxed">
             Benefit from pay as you go billing and volume pricing as low as
             $0.01/GB.
           </p>
@@ -195,7 +165,6 @@ border: 1px solid var(--Border-Secondary, #EEEEF0)
       <div   style="width: 300;
 height: 144;
 gap: 16px;
-angle: 0 deg;
 opacity: 1;
 border-radius: 20px;
 border-width: 1px;
@@ -211,8 +180,8 @@ border: 1px solid var(--Border-Secondary, #EEEEF0)
           </svg>
         </div>
         <div>
-          <h2 class="text-[1rem] font-semibold text-[#1a1925]">Fast platform</h2>
-          <p class="text-[#73737F] mt-1 text-sm leading-relaxed">
+          <h2 class="text-[1.125rem] font-semibold text-[#1a1925]">Fast platform</h2>
+          <p class="text-[#73737F]   mt-1 text-sm leading-relaxed">
             Configuration updates only take a few minutes to be deployed
             across the globe.
           </p>
@@ -222,7 +191,6 @@ border: 1px solid var(--Border-Secondary, #EEEEF0)
       <div   style="width: 300;
 height: 144;
 gap: 16px;
-angle: 0 deg;
 opacity: 1;
 border-radius: 20px;
 border-width: 1px;
@@ -238,8 +206,8 @@ border: 1px solid var(--Border-Secondary, #EEEEF0)
           </svg>
         </div>
         <div>
-          <h2 class="text-[1rem] font-semibold text-[#1a1925]">No commitment</h2>
-          <p class="text-[#73737F] mt-1 text-sm leading-relaxed">
+          <h2 class="text-[1.125rem] font-semibold text-[#1a1925]">No commitment</h2>
+          <p class="text-[#73737F]   mt-1 text-sm leading-relaxed">
             No contract required, allowing traffic volume to scale up or down
             at any time.
           </p>

@@ -1,64 +1,18 @@
 <template>
   <div
-    class="min-h-screen bg-white relative overflow-hidden"
-    style="background-color: #f7f7f8"
+    class="min-h-screen  relative overflow-hidden"
+  
   >
     <main>
-      <section style="margin: 3% 1% 1% 1%; padding: 0 4%">
+      <section class=" mt-[4.25rem] mx-auto max-w-6xl  px-[3.5938rem] md:px-2 lg:px-0">
         <div
-          class="flex items-center justify-start sm:justify-center mb-4 sm:mb-6"
+          class="flex items-center justify-start sm:justify-center"
         >
-          <div
-            class="flex items-center"
-            style="
-              height: 24px;
-              gap: 2px;
-              border-radius: 999px;
-              padding-top: 4px;
-              padding-bottom: 4px;
-              padding-left: 8px;
-              padding-right: 8px;
-              background: #ffffffe5;
-              box-shadow: 0px 0.5px 0.5px 0px rgba(7, 1, 19, 0.03),
-                0px 1px 1px -0.5px rgba(7, 1, 19, 0.03),
-                0px 2px 2px -1px rgba(7, 1, 19, 0.03),
-                0px 3px 3px -1.5px rgba(7, 1, 19, 0.03);
-            "
-          >
-            <!-- Lightning Bolt Icon -->
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-3 w-3 fill-[#A3A3AE] stroke-[#A3A3AE]"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              stroke-width="2"
-              style="color: #1a1925"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"
-              />
-            </svg>
-            <span
-              style="
-                font-family: 'Bricolage Grotesque', sans-serif;
-                font-weight: 500;
-                font-size: 12px;
-                line-height: 16px;
-                letter-spacing: 0%;
-                text-align: center;
-                color: #1a1925;
-              "
-            >
-              Tools
-            </span>
-          </div>
+        <SectionsUpername name="Tools" />
         </div>
 
         <h2
-          class="text-left sm:text-center mb-4 sm:mb-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
+          class="text-left sm:text-center mb-4 sm:mb-6 text-[32px] md:text-5xl"
           style="
             font-family: 'Bricolage Grotesque', sans-serif;
             font-weight: 500;
@@ -71,7 +25,7 @@
         </h2>
 
         <p
-          class="text-left sm:text-center mb-6 sm:mb-8 md:mb-12 lg:mb-16 text-sm sm:text-base px-0 sm:px-2"
+          class="text-left sm:text-center mb-6 sm:mb-8 md:mb-12 lg:mb-16 text-[0.875rem] md:text-[1rem]"
           style="
             font-family: 'Inter', sans-serif;
             font-weight: 400;
@@ -83,17 +37,17 @@
           Troubleshoot website, network, and CDN issues for fast resolutions.
         </p>
 
-        <div class="max-w-6xl mx-auto mb-4 sm:mb-6 md:mb-8 px-2 sm:px-0">
-          <h3 class="text-left section-heading" style="margin-bottom: 16px">
+        <div class="max-w-6xl mx-auto mb-4 sm:mb-6 md:mb-8 ">
+          <h3 class="text-left text-[1.5rem] md:text-[2rem] section-heading" style="margin-bottom: 16px">
             WEB
           </h3>
         </div>
         <div
-          class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 lg:gap-10 max-w-6xl mx-auto mb-8 sm:mb-12 md:mb-16 lg:mb-20 xl:mb-24 px-2 sm:px-0"
+          class="grid grid-cols-1 md:grid-cols-3 gap-[0.625rem] md:gap-[0.75rem] max-w-6xl mx-auto mb-8 sm:mb-12 md:mb-16 lg:mb-20 xl:mb-24 "
         >
           <NuxtLink
             to="/web/websitespeedtest"
-            class="relative overflow-hidden min-h-[210px] md:h-[210px] w-full cursor-pointer transition-all hover:shadow-lg"
+            class="relative flex flex-col justify-center md:justify-start overflow-hidden min-h-[210px] md:h-[210px] w-full cursor-pointer transition-all hover:shadow-lg"
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
@@ -122,9 +76,9 @@
                 border: none;
               "
             ></div>
-            <div class="relative z-10 p-5 sm:p-5 md:p-6">
+            <div class="relative  z-10 p-5 sm:p-5 md:p-6">
               <div
-                class="mb-4 relative"
+                class="mb-2 relative"
                 style="padding-top: 4.67px; padding-left: 2.33px"
               >
                 <!-- Icon Background - bgcardicon.svg -->
@@ -176,7 +130,7 @@
                 </div>
               </div>
               <h3
-                class="mb-2 sm:mb-3 text-base sm:text-lg"
+                class="mb-1 text-base sm:text-lg"
                 style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 500;
@@ -188,7 +142,7 @@
                 Website Speed Test
               </h3>
               <p
-                class="text-sm sm:text-base card-description"
+                class="text-base md:text-[0.8125rem] card-description"
                 style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 400;
@@ -205,7 +159,7 @@
 
           <NuxtLink
             to="/web/performancetest"
-            class="relative overflow-hidden min-h-[210px] md:h-[210px] w-full cursor-pointer transition-all hover:shadow-lg"
+            class="relative flex flex-col justify-center md:justify-start overflow-hidden min-h-[210px] md:h-[210px] w-full cursor-pointer transition-all hover:shadow-lg"
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
@@ -236,7 +190,7 @@
             ></div>
             <div class="relative z-10 p-5 sm:p-5 md:p-6">
               <div
-                class="mb-4 relative"
+                class="mb-2 relative"
                 style="padding-top: 4.67px; padding-left: 2.33px"
               >
                 <!-- Icon Background - bgcardicon.svg -->
@@ -266,7 +220,7 @@
                 </div>
               </div>
               <h3
-                class="mb-2 sm:mb-3 text-base sm:text-lg"
+                class="mb-1 text-base sm:text-lg"
                 style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 500;
@@ -278,7 +232,7 @@
                 Performance Test
               </h3>
               <p
-                class="text-sm sm:text-base card-description"
+                class="text-base md:text-[0.8125rem] card-description"
                 style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 400;
@@ -295,7 +249,7 @@
 
           <NuxtLink
             to="/web/httpheaderchecker"
-            class="relative overflow-hidden min-h-[210px] md:h-[210px] w-full cursor-pointer transition-all hover:shadow-lg"
+            class="relative flex flex-col justify-center md:justify-start overflow-hidden min-h-[210px] md:h-[210px] w-full cursor-pointer transition-all hover:shadow-lg"
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
@@ -326,7 +280,7 @@
             ></div>
             <div class="relative z-10 p-5 sm:p-5 md:p-6">
               <div
-                class="mb-4 relative"
+                class="mb-2 relative"
                 style="padding-top: 4.67px; padding-left: 2.33px"
               >
                 <!-- Icon Background - bgcardicon.svg -->
@@ -354,7 +308,7 @@
                 </div>
               </div>
               <h3
-                class="mb-2 sm:mb-3 text-base sm:text-lg"
+                class="mb-1 text-base sm:text-lg"
                 style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 500;
@@ -366,7 +320,7 @@
                 HTTP Header Checker
               </h3>
               <p
-                class="text-sm sm:text-base card-description"
+                class="text-base md:text-[0.8125rem] card-description"
                 style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 400;
@@ -382,7 +336,7 @@
 
           <NuxtLink
             to="/web/http2test"
-            class="relative overflow-hidden min-h-[210px] md:h-[210px] w-full cursor-pointer transition-all hover:shadow-lg"
+            class="relative flex flex-col justify-center md:justify-start overflow-hidden min-h-[210px] md:h-[210px] w-full cursor-pointer transition-all hover:shadow-lg"
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
@@ -413,7 +367,7 @@
             ></div>
             <div class="relative z-10 p-5 sm:p-5 md:p-6">
               <div
-                class="mb-4 relative"
+                class="mb-2 relative"
                 style="padding-top: 4.67px; padding-left: 2.33px"
               >
                 <!-- Icon Background - bgcardicon.svg -->
@@ -441,7 +395,7 @@
                 </div>
               </div>
               <h3
-                class="mb-2 sm:mb-3 text-base sm:text-lg"
+                class="mb-1 text-base sm:text-lg"
                 style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 500;
@@ -453,7 +407,7 @@
                 HTTP/2 Test
               </h3>
               <p
-                class="text-sm sm:text-base card-description"
+                class="text-base md:text-[0.8125rem] card-description"
                 style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 400;
@@ -470,7 +424,7 @@
 
           <NuxtLink
             to="/web/brotlitest"
-            class="relative overflow-hidden min-h-[210px] md:h-[210px] w-full cursor-pointer transition-all hover:shadow-lg"
+            class="relative flex flex-col justify-center md:justify-start overflow-hidden min-h-[210px] md:h-[210px] w-full cursor-pointer transition-all hover:shadow-lg"
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
@@ -501,7 +455,7 @@
             ></div>
             <div class="relative z-10 p-5 sm:p-5 md:p-6">
               <div
-                class="mb-4 relative"
+                class="mb-2 relative"
                 style="padding-top: 4.67px; padding-left: 2.33px"
               >
                 <!-- Icon Background - bgcardicon.svg -->
@@ -530,7 +484,7 @@
                 </div>
               </div>
               <h3
-                class="mb-2 sm:mb-3 text-base sm:text-lg"
+                class="mb-1 text-base sm:text-lg"
                 style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 500;
@@ -542,7 +496,7 @@
                 Brotli Test
               </h3>
               <p
-                class="text-sm sm:text-base card-description"
+                class="text-base md:text-[0.8125rem] card-description"
                 style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 400;
@@ -558,17 +512,17 @@
           </NuxtLink>
         </div>
 
-        <div class="max-w-6xl mx-auto mb-4 sm:mb-6 md:mb-8 px-2 sm:px-0">
+        <div class="max-w-6xl mx-auto mb-4 sm:mb-6 md:mb-8 ">
           <h3 class="text-left section-heading" style="margin-bottom: 16px">
             NETWORK
           </h3>
         </div>
         <div
-          class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 lg:gap-10 max-w-6xl mx-auto mb-8 sm:mb-12 md:mb-16 lg:mb-20 xl:mb-24 px-2 sm:px-0"
+          class="grid grid-cols-1 md:grid-cols-3 gap-[0.625rem] md:gap-[0.75rem] max-w-6xl mx-auto mb-8 sm:mb-12 md:mb-16 lg:mb-20 xl:mb-24 "
         >
           <NuxtLink
             to="/networks/iplocationfinder"
-            class="relative overflow-hidden min-h-[210px] md:h-[210px] w-full cursor-pointer transition-all hover:shadow-lg"
+            class="relative flex flex-col justify-center md:justify-start overflow-hidden min-h-[210px] md:h-[210px] w-full cursor-pointer transition-all hover:shadow-lg"
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
@@ -599,7 +553,7 @@
             ></div>
             <div class="relative z-10 p-5 sm:p-5 md:p-6">
               <div
-                class="mb-4 relative"
+                class="mb-2 relative"
                 style="padding-top: 4.67px; padding-left: 2.33px"
               >
                 <!-- Icon Background - bgcardicon.svg -->
@@ -628,7 +582,7 @@
                 </div>
               </div>
               <h3
-                class="mb-2 sm:mb-3 text-base sm:text-lg"
+                class="mb-1 text-base sm:text-lg"
                 style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 500;
@@ -640,7 +594,7 @@
                 IP Location Finder
               </h3>
               <p
-                class="text-sm sm:text-base card-description"
+                class="text-base md:text-[0.8125rem] card-description"
                 style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 400;
@@ -658,7 +612,7 @@
           <!-- Integrity Card -->
           <NuxtLink
             to="/networks/dnschecker"
-            class="relative overflow-hidden min-h-[210px] md:h-[210px] w-full cursor-pointer transition-all hover:shadow-lg"
+            class="relative flex flex-col justify-center md:justify-start overflow-hidden min-h-[210px] md:h-[210px] w-full cursor-pointer transition-all hover:shadow-lg"
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
@@ -689,7 +643,7 @@
             ></div>
             <div class="relative z-10 p-5 sm:p-5 md:p-6">
               <div
-                class="mb-4 relative"
+                class="mb-2 relative"
                 style="padding-top: 4.67px; padding-left: 2.33px"
               >
                 <!-- Icon Background - bgcardicon.svg -->
@@ -720,7 +674,7 @@
                 </div>
               </div>
               <h3
-                class="mb-2 sm:mb-3 text-base sm:text-lg"
+                class="mb-1 text-base sm:text-lg"
                 style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 500;
@@ -732,7 +686,7 @@
                 DNS Checker
               </h3>
               <p
-                class="text-sm sm:text-base card-description"
+                class="text-base md:text-[0.8125rem] card-description"
                 style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 400;
@@ -750,7 +704,7 @@
           <!-- Reliability Card -->
           <NuxtLink
             to="/networks/pingtest"
-            class="relative overflow-hidden min-h-[210px] md:h-[210px] w-full cursor-pointer transition-all hover:shadow-lg"
+            class="relative flex flex-col justify-center md:justify-start overflow-hidden min-h-[210px] md:h-[210px] w-full cursor-pointer transition-all hover:shadow-lg"
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
@@ -781,7 +735,7 @@
             ></div>
             <div class="relative z-10 p-5 sm:p-5 md:p-6">
               <div
-                class="mb-4 relative"
+                class="mb-2 relative"
                 style="padding-top: 4.67px; padding-left: 2.33px"
               >
                 <!-- Icon Background - bgcardicon.svg -->
@@ -810,7 +764,7 @@
                 </div>
               </div>
               <h3
-                class="mb-2 sm:mb-3 text-base sm:text-lg"
+                class="mb-1 text-base sm:text-lg"
                 style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 500;
@@ -822,7 +776,7 @@
                 Ping Test
               </h3>
               <p
-                class="text-sm sm:text-base card-description"
+                class="text-base md:text-[0.8125rem] card-description"
                 style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 400;
@@ -839,7 +793,7 @@
 
           <NuxtLink
             to="/networks/ipv6test"
-            class="relative overflow-hidden min-h-[210px] md:h-[210px] w-full cursor-pointer transition-all hover:shadow-lg"
+            class="relative flex flex-col justify-center md:justify-start overflow-hidden min-h-[210px] md:h-[210px] w-full cursor-pointer transition-all hover:shadow-lg"
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
@@ -870,7 +824,7 @@
             ></div>
             <div class="relative z-10 p-5 sm:p-5 md:p-6">
               <div
-                class="mb-4 relative"
+                class="mb-2 relative"
                 style="padding-top: 4.67px; padding-left: 2.33px"
               >
                 <!-- Icon Background - bgcardicon.svg -->
@@ -909,7 +863,7 @@
                 </div>
               </div>
               <h3
-                class="mb-2 sm:mb-3 text-base sm:text-lg"
+                class="mb-1 text-base sm:text-lg"
                 style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 500;
@@ -921,7 +875,7 @@
                 Ping IPv6 Test
               </h3>
               <p
-                class="text-sm sm:text-base card-description"
+                class="text-base md:text-[0.8125rem] card-description"
                 style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 400;
@@ -939,7 +893,7 @@
           <!-- Integrity Card -->
           <NuxtLink
             to="/networks/traceroutetest"
-            class="relative overflow-hidden min-h-[210px] md:h-[210px] w-full cursor-pointer transition-all hover:shadow-lg"
+            class="relative flex flex-col justify-center md:justify-start overflow-hidden min-h-[210px] md:h-[210px] w-full cursor-pointer transition-all hover:shadow-lg"
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
@@ -970,7 +924,7 @@
             ></div>
             <div class="relative z-10 p-5 sm:p-5 md:p-6">
               <div
-                class="mb-4 relative"
+                class="mb-2 relative"
                 style="padding-top: 4.67px; padding-left: 2.33px"
               >
                 <!-- Icon Background - bgcardicon.svg -->
@@ -1001,7 +955,7 @@
                 </div>
               </div>
               <h3
-                class="mb-2 sm:mb-3 text-base sm:text-lg"
+                class="mb-1 text-base sm:text-lg"
                 style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 500;
@@ -1013,7 +967,7 @@
                 Traceroute Test
               </h3>
               <p
-                class="text-sm sm:text-base card-description"
+                class="text-base md:text-[0.8125rem] card-description"
                 style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 400;
@@ -1030,7 +984,7 @@
 
           <NuxtLink
             to="/networks/bgplookingglass"
-            class="relative overflow-hidden min-h-[210px] md:h-[210px] w-full cursor-pointer transition-all hover:shadow-lg"
+            class="relative flex flex-col justify-center md:justify-start overflow-hidden min-h-[210px] md:h-[210px] w-full cursor-pointer transition-all hover:shadow-lg"
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
@@ -1061,7 +1015,7 @@
             ></div>
             <div class="relative z-10 p-5 sm:p-5 md:p-6">
               <div
-                class="mb-4 relative"
+                class="mb-2 relative"
                 style="padding-top: 4.67px; padding-left: 2.33px"
               >
                 <!-- Icon Background - bgcardicon.svg -->
@@ -1088,7 +1042,7 @@
                 </div>
               </div>
               <h3
-                class="mb-2 sm:mb-3 text-base sm:text-lg"
+                class="mb-1 text-base sm:text-lg"
                 style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 500;
@@ -1100,7 +1054,7 @@
                 BGP Looking Glass
               </h3>
               <p
-                class="text-sm sm:text-base card-description"
+                class="text-base md:text-[0.8125rem] card-description"
                 style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 400;
@@ -1116,18 +1070,18 @@
           </NuxtLink>
         </div>
 
-        <div class="max-w-6xl mx-auto mb-4 sm:mb-6 md:mb-8 px-2 sm:px-0">
-          <h3 class="text-left section-heading" style="margin-bottom: 16px">
+        <div class="max-w-6xl mx-auto mb-4 sm:mb-6 md:mb-8 ">
+           <h3 class="text-left text-[1.5rem] md:text-[2rem] section-heading" style="margin-bottom: 16px">
             SECURITY
           </h3>
         </div>
         <div
-          class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 lg:gap-10 max-w-6xl mx-auto mb-8 sm:mb-12 md:mb-16 lg:mb-20 xl:mb-24 px-2 sm:px-0"
+          class="grid grid-cols-1 md:grid-cols-3 gap-[0.625rem] md:gap-[0.75rem] max-w-6xl mx-auto mb-8 sm:mb-12 md:mb-16 lg:mb-20 xl:mb-24 "
         >
           <!-- Agility Card -->
           <NuxtLink
             to="/security/certificatechecker"
-            class="relative overflow-hidden min-h-[210px] md:h-[210px] w-full cursor-pointer transition-all hover:shadow-lg"
+            class="relative flex flex-col justify-center md:justify-start overflow-hidden min-h-[210px] md:h-[210px] w-full cursor-pointer transition-all hover:shadow-lg"
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
@@ -1158,7 +1112,7 @@
             ></div>
             <div class="relative z-10 p-5 sm:p-5 md:p-6">
               <div
-                class="mb-4 relative"
+                class="mb-2 relative"
                 style="padding-top: 4.67px; padding-left: 2.33px"
               >
                 <!-- Icon Background - bgcardicon.svg -->
@@ -1188,7 +1142,7 @@
                 </div>
               </div>
               <h3
-                class="mb-2 sm:mb-3 text-base sm:text-lg"
+                class="mb-1 text-base sm:text-lg"
                 style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 500;
@@ -1200,7 +1154,7 @@
                 Certificate Checker
               </h3>
               <p
-                class="text-sm sm:text-base card-description"
+                class="text-base md:text-[0.8125rem] card-description"
                 style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 400;
@@ -1218,7 +1172,7 @@
           <!-- Integrity Card -->
           <NuxtLink
             to="/security/certificatechaincomposer"
-            class="relative overflow-hidden min-h-[210px] md:h-[210px] w-full cursor-pointer transition-all hover:shadow-lg"
+            class="relative flex flex-col justify-center md:justify-start overflow-hidden min-h-[210px] md:h-[210px] w-full cursor-pointer transition-all hover:shadow-lg"
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
@@ -1249,7 +1203,7 @@
             ></div>
             <div class="relative z-10 p-5 sm:p-5 md:p-6">
               <div
-                class="mb-4 relative"
+                class="mb-2 relative"
                 style="padding-top: 4.67px; padding-left: 2.33px"
               >
                 <!-- Icon Background - bgcardicon.svg -->
@@ -1279,7 +1233,7 @@
                 </div>
               </div>
               <h3
-                class="mb-2 sm:mb-3 text-base sm:text-lg"
+                class="mb-1 text-base sm:text-lg"
                 style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 500;
@@ -1291,7 +1245,7 @@
                 Certificate Chain Composer
               </h3>
               <p
-                class="text-sm sm:text-base card-description"
+                class="text-base md:text-[0.8125rem] card-description"
                 style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 400;
@@ -1308,7 +1262,7 @@
           <!-- Reliability Card -->
           <NuxtLink
             to="/security/sha256"
-            class="relative overflow-hidden min-h-[210px] md:h-[210px] w-full cursor-pointer transition-all hover:shadow-lg"
+            class="relative flex flex-col justify-center md:justify-start overflow-hidden min-h-[210px] md:h-[210px] w-full cursor-pointer transition-all hover:shadow-lg"
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
@@ -1339,7 +1293,7 @@
             ></div>
             <div class="relative z-10 p-5 sm:p-5 md:p-6">
               <div
-                class="mb-4 relative"
+                class="mb-2 relative"
                 style="padding-top: 4.67px; padding-left: 2.33px"
               >
                 <!-- Icon Background - bgcardicon.svg -->
@@ -1369,7 +1323,7 @@
                 </div>
               </div>
               <h3
-                class="mb-2 sm:mb-3 text-base sm:text-lg"
+                class="mb-1 text-base sm:text-lg"
                 style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 500;
@@ -1381,7 +1335,7 @@
                 SHA256 Generator
               </h3>
               <p
-                class="text-sm sm:text-base card-description"
+                class="text-base md:text-[0.8125rem] card-description"
                 style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 400;
@@ -1397,7 +1351,7 @@
 
           <NuxtLink
             to="/security/sslfreaktest"
-            class="relative overflow-hidden min-h-[210px] md:h-[210px] w-full cursor-pointer transition-all hover:shadow-lg"
+            class="relative flex flex-col justify-center md:justify-start overflow-hidden min-h-[210px] md:h-[210px] w-full cursor-pointer transition-all hover:shadow-lg"
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
@@ -1428,7 +1382,7 @@
             ></div>
             <div class="relative z-10 p-5 sm:p-5 md:p-6">
               <div
-                class="mb-4 relative"
+                class="mb-2 relative"
                 style="padding-top: 4.67px; padding-left: 2.33px"
               >
                 <!-- Icon Background - bgcardicon.svg -->
@@ -1459,7 +1413,7 @@
                 </div>
               </div>
               <h3
-                class="mb-2 sm:mb-3 text-base sm:text-lg"
+                class="mb-1 text-base sm:text-lg"
                 style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 500;
@@ -1471,7 +1425,7 @@
                 SSL FREAK Test
               </h3>
               <p
-                class="text-sm sm:text-base card-description"
+                class="text-base md:text-[0.8125rem] card-description"
                 style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 400;
@@ -1489,7 +1443,7 @@
           <!-- Integrity Card -->
           <NuxtLink
             to="/security/tlslogjam"
-            class="relative overflow-hidden min-h-[210px] md:h-[210px] w-full cursor-pointer transition-all hover:shadow-lg"
+            class="relative flex flex-col justify-center md:justify-start overflow-hidden min-h-[210px] md:h-[210px] w-full cursor-pointer transition-all hover:shadow-lg"
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
@@ -1519,7 +1473,7 @@
             ></div>
             <div class="relative z-10 p-5 sm:p-5 md:p-6">
               <div
-                class="mb-4 relative"
+                class="mb-2 relative"
                 style="padding-top: 4.67px; padding-left: 2.33px"
               >
                 <!-- Icon Background - bgcardicon.svg -->
@@ -1550,7 +1504,7 @@
                 </div>
               </div>
               <h3
-                class="mb-2 sm:mb-3 text-base sm:text-lg"
+                class="mb-1 text-base sm:text-lg"
                 style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 500;
@@ -1562,7 +1516,7 @@
                 TLS Logjam Test
               </h3>
               <p
-                class="text-sm sm:text-base card-description"
+                class="text-base md:text-[0.8125rem] card-description"
                 style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 400;
@@ -1579,18 +1533,18 @@
         </div>
 
         <!-- OTHERS Section -->
-        <div class="max-w-6xl mx-auto mb-4 sm:mb-6 md:mb-8 px-2 sm:px-0">
-          <h3 class="text-left section-heading" style="margin-bottom: 16px">
+        <div class="max-w-6xl mx-auto mb-4 sm:mb-6 md:mb-8 ">
+          <h3 class="text-left text-[1.5rem] md:text-[2rem] section-heading" style="margin-bottom: 16px">
             OTHERS
           </h3>
         </div>
         <!-- Tools Others Cards -->
         <div
-          class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 lg:gap-10 max-w-6xl mx-auto px-2 sm:px-0 mb-8 sm:mb-12 md:mb-16"
+          class="grid grid-cols-1 md:grid-cols-3 gap-[0.625rem] md:gap-[0.75rem] max-w-6xl mx-auto  mb-8 sm:mb-12 md:mb-16"
         >
           <NuxtLink
             to="/others/epochconverter"
-            class="relative overflow-hidden min-h-[210px] md:h-[210px] w-full cursor-pointer transition-all hover:shadow-lg"
+            class="relative flex flex-col justify-center md:justify-start overflow-hidden min-h-[210px] md:h-[210px] w-full cursor-pointer transition-all hover:shadow-lg"
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
@@ -1621,7 +1575,7 @@
             ></div>
             <div class="relative z-10 p-5 sm:p-5 md:p-6">
               <div
-                class="mb-4 relative"
+                class="mb-2 relative"
                 style="padding-top: 4.67px; padding-left: 2.33px"
               >
                 <!-- Icon Background - bgcardicon.svg -->
@@ -1652,7 +1606,7 @@
                 </div>
               </div>
               <h3
-                class="mb-2 sm:mb-3 text-base sm:text-lg"
+                class="mb-1 text-base sm:text-lg"
                 style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 500;
@@ -1664,7 +1618,7 @@
                 Epoch Converter
               </h3>
               <p
-                class="text-sm sm:text-base card-description"
+                class="text-base md:text-[0.8125rem] card-description"
                 style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 400;
@@ -1680,7 +1634,7 @@
 
           <NuxtLink
             to="/others/hexconverter"
-            class="relative overflow-hidden min-h-[210px] md:h-[210px] w-full cursor-pointer transition-all hover:shadow-lg"
+            class="relative flex flex-col justify-center md:justify-start overflow-hidden min-h-[210px] md:h-[210px] w-full cursor-pointer transition-all hover:shadow-lg"
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
@@ -1711,7 +1665,7 @@
             ></div>
             <div class="relative z-10 p-5 sm:p-5 md:p-6">
               <div
-                class="mb-4 relative"
+                class="mb-2 relative"
                 style="padding-top: 4.67px; padding-left: 2.33px"
               >
                 <!-- Icon Background - bgcardicon.svg -->
@@ -1777,7 +1731,7 @@
                 </div>
               </div>
               <h3
-                class="mb-2 sm:mb-3 text-base sm:text-lg"
+                class="mb-1 text-base sm:text-lg"
                 style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 500;
@@ -1789,7 +1743,7 @@
                 Knowledge base
               </h3>
               <p
-                class="text-sm sm:text-base card-description"
+                class="text-base md:text-[0.8125rem] card-description"
                 style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 400;
@@ -1822,7 +1776,7 @@ import SectionsAccessAllFeaturesSection from "~/components/sections/AccessAllFea
   font-family: "Bricolage Grotesque", sans-serif;
   font-weight: 600;
   font-style: normal;
-  font-size: 24px;
+
   line-height: 24px;
   letter-spacing: -0.02em;
   text-transform: uppercase;
