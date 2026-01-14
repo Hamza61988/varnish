@@ -7,7 +7,7 @@
         </h2>
         <p
           style="font-family: inter"
-          class="text-[#73737F] text-sm leading-relaxed"
+          class="text-[#73737F] md:text-sm text-[13px]  leading-relaxed"
         >
           KeyCDN’s Zones come with a number of configurable Zone settings. Here
           is a list and description of the CDN features for both Push and Pull
@@ -22,7 +22,7 @@
         </h2>
         <p
           style="font-family: inter"
-          class="text-[#73737F] text-sm leading-relaxed"
+          class="text-[#73737F] md:text-sm text-[13px] leading-relaxed"
         >
           Here is a list and description of the CDN features that are Pull Zone
           specific: Origin Shield Predefined shield servers, instead of our edge
@@ -37,7 +37,7 @@
         </h2>
         <p
           style="font-family: inter"
-          class="text-[#73737F] text-sm leading-relaxed"
+          class="text-[#73737F] md:text-sm text-[13px] leading-relaxed"
         >
           To set up a KeyCDN Pull Zone, follow the steps outlined below: Log in
           to the KeyCDN dashboard. In the left navigation sidebar click Zones.
@@ -52,7 +52,7 @@
         </h2>
         <p
           style="font-family: inter"
-          class="text-[#73737F] text-sm leading-relaxed"
+          class="text-[#73737F] md:text-sm text-[13px] leading-relaxed"
         >
           A KeyCDN Push Zone allows you to upload your data to our storage
           cluster. This is recommended for files greater than 10 MB in size and
@@ -67,7 +67,7 @@
         </h2>
         <p
           style="font-family: inter"
-          class="text-[#73737F] text-sm leading-relaxed"
+          class="text-[#73737F] md:text-sm text-[13px] leading-relaxed"
         >
           The Zone Alias configuration always requires a CNAME record to be
           added in your DNS in addition to adding the Zone Alias in the KeyCDN
@@ -82,7 +82,7 @@
         </h2>
         <p
           style="font-family: inter"
-          class="text-[#73737F] text-sm leading-relaxed"
+          class="text-[#73737F] md:text-sm text-[13px] leading-relaxed"
         >
           There are two different approaches to purging the CDN cache. It can
           either be completely purged, which means all assets are removed from
@@ -97,7 +97,7 @@
         </h2>
         <p
           style="font-family: inter"
-          class="text-[#73737F] text-sm leading-relaxed"
+          class="text-[#73737F] md:text-sm text-[13px] leading-relaxed"
         >
           Our powerful real-time Image Processing feature transforms and
           optimizes your images with simple query parameters. Your image
@@ -112,7 +112,7 @@
         </h2>
         <p
           style="font-family: inter"
-          class="text-[#73737F] text-sm leading-relaxed"
+          class="text-[#73737F] md:text-sm text-[13px] leading-relaxed"
         >
           Zone Referrers allow you to restrict HTTP referrers in order to
           prevent your content from being embedded on other websites. This
@@ -127,7 +127,7 @@
         </h2>
         <p
           style="font-family: inter"
-          class="text-[#73737F] text-sm leading-relaxed"
+          class="text-[#73737F] md:text-sm text-[13px] leading-relaxed"
         >
           Here is a list and description of the CDN features that are Push Zone
           specific: Directory Listing Generates directory indexes,

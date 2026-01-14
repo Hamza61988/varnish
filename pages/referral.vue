@@ -13,53 +13,7 @@
           class="flex items-center justify-start lg:justify-center"
           style="margin-bottom: 24px"
         >
-          <div
-            class="flex items-center"
-            style="
-              height: 24px;
-              gap: 2px;
-              border-radius: 999px;
-              padding-top: 4px;
-              padding-right: 8px;
-              padding-bottom: 4px;
-              padding-left: 8px;
-              background: #ffffffe5;
-              box-shadow: 0px 0.5px 0.5px 0px rgba(7, 1, 19, 0.03),
-                0px 1px 1px -0.5px rgba(7, 1, 19, 0.03),
-                0px 2px 2px -1px rgba(7, 1, 19, 0.03),
-                0px 3px 3px -1.5px rgba(7, 1, 19, 0.03);
-            "
-          >
-            <!-- Lightning Bolt Icon -->
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-4 w-4 fill-[#A3A3AE] stroke-[#A3A3AE]"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#A3A3AE"
-              stroke-width="2.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              style="min-width: 16px; min-height: 16px"
-            >
-              <path
-                d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"
-              />
-            </svg>
-            <span
-              style="
-                font-family: 'Bricolage Grotesque', sans-serif;
-                font-weight: 500;
-                font-size: 12px;
-                line-height: 16px;
-                letter-spacing: 0%;
-                text-align: center;
-                color: #1a1925;
-              "
-            >
-              Referral
-            </span>
-          </div>
+<SectionsUpername name="Referral" />
         </div>
 
         <!-- Title -->

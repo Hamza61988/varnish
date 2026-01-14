@@ -6,7 +6,7 @@
     <SectionsPricingTableSection :headings="headings" :table-data="tableData" />
     <SectionsEnterpriseSection />
     <section
-      class="mx-auto py-8 sm:py-10 md:py-12 lg:py-16 bg-[#F7F7F8] px-4 md:px-[24px] lg:px-0"
+      class="mx-auto pt-[6.25rem] md:pt-[5rem] bg-[#F7F7F8]  px-[3.5938rem] md:px-0"
     >
       <div>
         <div

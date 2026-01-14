@@ -74,21 +74,7 @@
         </aside>
 
         <main class="space-y-4">
-          <div class="mb-4">
-            <div
-              style="
-                padding: 4px 12px 4px 8px;
-                box-shadow: 0 3px 3px -1.5px #07011308, 0 2px 2px -1px #07011308,
-                  0 1px 1px -0.5px #07011308, 0 0.5px 0.5px #07011308;
-              "
-              class="inline-flex items-center space-x-2 rounded-full text-xs sm:text-sm font-medium border border-gray-100"
-            >
-                  <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M5.53413 0.751381C5.53413 0.00932038 4.57171 -0.282067 4.16009 0.335357L0.127223 6.38466C-0.205054 6.88308 0.15224 7.55069 0.751261 7.55069H3.53413V10.35C3.53413 11.092 4.49655 11.3834 4.90817 10.766L8.94104 4.71671C9.27332 4.2183 8.91603 3.55069 8.317 3.55069H5.53413V0.751381Z" fill="#A3A3AE"/>
-</svg>
-              <span style="color: #1a1925; font-weight: 500; font-size: 12.06px">Support</span>
-            </div>
-          </div>
+<SectionsUpername name="Support" />
 
           <slot />
         </main>

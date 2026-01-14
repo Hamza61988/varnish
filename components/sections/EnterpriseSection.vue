@@ -1,5 +1,5 @@
 <template>
-  <section class="mx-auto md:px-[24px] lg:px-0 mt-[24px] px-4 sm:px-6 ">
+  <section class="mx-auto px-[3.5938rem]  md:px-0 mt-[24px] ">
     <div>
      <div
   class="bg-white rounded-lg p-[24px] flex flex-col md:flex-row items-start md:items-center md:justify-between gap-4 sm:gap-5 md:gap-6"

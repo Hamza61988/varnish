@@ -13,24 +13,7 @@
     <div class="max-w-2xl mx-auto md:px-[2.3547rem] px-[1.125rem] lg:px-0 py-16 relative z-10">
       
       <div class="text-center mb-12 flex flex-col items-center gap-4">
-        <div class="inline-flex items-center bg-white/90 rounded-full px-3 py-1 shadow-sm border border-gray-100 gap-2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-4 w-4 fill-[#A3A3AE] stroke-[#A3A3AE]"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#A3A3AE"
-              stroke-width="2.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              style="min-width: 16px; min-height: 16px"
-            >
-              <path
-                d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"
-              />
-            </svg>
-          <span class="text-xs font-medium text-[#1a1925]">Contact</span>
-        </div>
+<SectionsUpername name="Contact" />
 
         <h1 class="text-4xl md:text-5xl font-medium text-[#1a1925] tracking-tight" style="font-family: 'Funnel Display', sans-serif;">
           Contact

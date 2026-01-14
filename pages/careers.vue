@@ -1,60 +1,46 @@
 <template>
-  <div class="min-h-screen relative overflow-hidden bg-white">
+  <div class="min-h-screen relative overflow-hidden">
     <!-- Page Background - BGline.svg -->
     <div
       class="absolute inset-0 pointer-events-none hidden md:block bg-[url('/images/about/BGline.svg')] bg-no-repeat bg-left-bottom bg-auto opacity-100 z-0"
     ></div>
 
     <!-- Main Content -->
-    <main class="w-full mx-auto flex flex-col max-w-[950px] mt-[5%] px-4 sm:px-6 md:px-8">
+    <main class="w-full mx-auto flex flex-col max-w-[950px] mt-[4.25rem] px-[3.5938rem] md:px-0">
       <!-- Careers Section -->
       <section class="w-full max-w-6xl mx-auto">
         <!-- Section Label -->
         <div class="flex items-center justify-start sm:justify-center mb-4 sm:mb-6">
-          <div
-            class="flex items-center h-6 gap-0.5 rounded-full py-1 px-2 bg-[#ffffffe5] shadow-[0px_0.5px_0.5px_0px_rgba(7,1,19,0.03),0px_1px_1px_-0.5px_rgba(7,1,19,0.03),0px_2px_2px_-1px_rgba(7,1,19,0.03),0px_3px_3px_-1.5px_rgba(7,1,19,0.03)]"
-          >
-            <!-- Lightning Bolt Icon -->
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-4 w-4 fill-[#A3A3AE] stroke-[#A3A3AE] min-w-4 min-h-4"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#A3A3AE"
-              stroke-width="2.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path
-                d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"
-              />
-            </svg>
-            <span class="font-['Bricolage_Grotesque'] font-medium text-xs leading-4 tracking-0 text-center text-[#1a1925]">
-              Careers
-            </span>
-          </div>
+<SectionsUpername name="Careers" />
         </div>
 
         <!-- Title -->
         <h1
-          class="text-left sm:text-center mb-4 sm:mb-6 text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl font-['Bricolage_Grotesque'] font-medium tracking-[-0.02em] align-middle text-[#1a1925]"
+          class="text-left sm:text-center mb-2 text-[2rem] md:text-[3rem] font-['Bricolage_Grotesque'] font-medium tracking-[-0.02em] align-middle text-[#1a1925]"
         >
           Careers
         </h1>
 
         <!-- Subtitle -->
         <p
-          class="text-left sm:text-center mb-8 sm:mb-10 md:mb-12 font-['Inter'] font-normal text-base leading-6 tracking-[-0.011em] text-[#51515e]"
+          class="text-left sm:text-center mb-[3.125rem] md:mb-[3.625rem] font-['Inter'] font-normal text-[0.875rem] md:text-base leading-6 tracking-[-0.011em] text-[#51515e]"
         >
           We are looking for smart and enthusiastic people to help us build a
           world-class CDN.
         </p>
 
-        <section class="w-full py-12 ">
+        <section class="w-full  ">
   <div class="max-w-[1200px] mx-auto">
     
     <div class="mb-10 md:mb-12">
-      <p class="font-['Inter'] font-normal text-base leading-[26px] tracking-[-0.006em] text-justify text-[#73737f]">
+      <p style="font-family: Inter;
+font-weight: 400;
+font-style: Regular;
+
+leading-trim: NONE;
+line-height: 20px;
+letter-spacing: -0.6%;
+" class=" text-[0.8125rem] md:text-base   text-[#73737f]">
         KeyCDN is a content delivery network headquartered in Switzerland. We are a privately funded company that has engineered our infrastructure from the ground up. There are no investors to please, allowing our primary focus to remain where it should be, making our network as fast and reliable as possible.
       </p>
     </div>
@@ -72,7 +58,7 @@
           <h3 class="mb-2 font-['Bricolage_Grotesque'] font-semibold text-lg leading-6 tracking-[-0.02em] text-[#1a1925]">
             Outcome-oriented culture
           </h3>
-          <p class="font-['Inter'] font-normal text-[15px] leading-5 tracking-[-0.006em] text-[#51515e]">
+          <p class="font-['Inter'] font-normal text-[14px] leading-5 tracking-[-0.006em] text-[#51515e]">
             We strongly value a positive working environment where talent can thrive.
           </p>
         </div>
@@ -80,18 +66,28 @@
 
       <div class="flex gap-4 p-6 rounded-[20px] border border-[#eeeef0] bg-white items-start">
         <div class="flex-shrink-0 w-8 h-8 md:w-10 md:h-10">
-          <svg viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
-            <mask id="path-1-inside-1_18509_10555" fill="white">
-              <path d="M19.5554 0.800151C18.9548 0.80035 18.3754 1.01869 17.929 1.41326C17.9262 1.08615 17.9258 0.750303 17.9258 0.400151C17.925 0.17943 17.743 0.000792681 17.5182 0H4.48155C4.25675 0.000793901 4.07481 0.17943 4.0742 0.400151C4.0742 0.750481 4.07379 1.08613 4.07076 1.41326C3.60013 0.998417 2.98374 0.779114 2.35157 0.801726C1.7194 0.824353 1.12103 1.08695 0.682319 1.53455C0.243627 1.98194 -0.00098036 2.57901 2.95321e-06 3.20004C2.95321e-06 6.22798 2.36973 7.75257 4.27389 8.97798C5.47835 9.75308 6.51849 10.4224 6.51849 11.2002C6.51828 11.4124 6.43236 11.6157 6.27953 11.7657C6.1269 11.9158 5.91968 12.0001 5.70377 12.0003C5.47877 12.0003 5.29622 12.1794 5.29622 12.4003C5.29622 12.6212 5.47877 12.8002 5.70377 12.8002C6.08121 12.7996 6.4469 12.6704 6.73843 12.4346C7.02974 12.1988 7.22887 11.8711 7.30166 11.5073C7.94029 12.0779 8.6149 12.6087 9.32143 13.0962C9.04346 14.1478 8.55606 15.1349 7.8873 16.0003H14.1127C13.4439 15.1349 12.9565 14.1478 12.6786 13.0962C13.3851 12.6087 14.0598 12.078 14.6983 11.5073C14.7711 11.8711 14.9703 12.1988 15.2616 12.4346C15.5531 12.6704 15.9188 12.7997 16.2964 12.8002C16.5214 12.8002 16.7038 12.6212 16.7038 12.4003C16.7038 12.1794 16.5214 12.0003 16.2964 12.0003C16.0803 12.0001 15.8733 11.9158 15.7205 11.7657C15.5676 11.6157 15.4817 11.4124 15.4815 11.2002C15.4815 10.4223 16.5217 9.75308 17.7261 8.97798C19.6303 7.75293 22 6.22814 22 3.20004C21.9994 2.56387 21.7416 1.95376 21.2833 1.50376C20.825 1.05378 20.2036 0.80071 19.5556 0.8001L19.5554 0.800151ZM0.815014 3.20004C0.814205 2.63358 1.11927 2.10894 1.61636 1.82134C2.11348 1.53373 2.72864 1.52599 3.23324 1.80109C3.73763 2.0764 4.05601 2.59306 4.06999 3.15952C4.08899 5.24504 4.22646 6.90459 4.94172 8.45118C4.86853 8.40394 4.79495 8.3565 4.72076 8.30866C2.88998 7.13082 0.814988 5.79602 0.814988 3.19993L0.815014 3.20004ZM14.2838 5.62397L12.9354 6.91198L13.2532 8.73189L13.253 8.73209C13.2748 8.84821 13.2429 8.96789 13.1656 9.0584C13.0884 9.14892 12.974 9.20092 12.8537 9.20013C12.7874 9.19933 12.7221 9.18425 12.6623 9.15606L11.0001 8.29621L9.33794 9.15627L9.33774 9.15607C9.19885 9.22435 9.03288 9.21204 8.90592 9.12411C8.78118 9.034 8.71952 8.88196 8.74702 8.7321L9.06482 6.91219L7.71638 5.62418C7.6058 5.51759 7.56658 5.3588 7.6151 5.2145C7.66342 5.0702 7.79118 4.9654 7.94442 4.94416L9.80211 4.6762L10.6334 3.02418C10.7106 2.89754 10.8497 2.82013 11.0001 2.82013C11.1503 2.82013 11.2894 2.89754 11.3666 3.02418L12.1977 4.6762L14.0554 4.94416H14.0556C14.2088 4.9654 14.3366 5.0702 14.3851 5.2145C14.4334 5.3588 14.3942 5.51759 14.2836 5.62418L14.2838 5.62397ZM17.2794 8.30852C17.2051 8.35635 17.1315 8.40379 17.0585 8.45103C17.7737 6.90459 17.9112 5.24484 17.9302 3.15938H17.93C17.944 2.59292 18.2624 2.07625 18.767 1.80095C19.2714 1.52584 19.8866 1.53358 20.3836 1.82119C20.881 2.1088 21.1858 2.63339 21.1852 3.1999C21.1852 5.79573 19.11 7.13053 17.2794 8.30863L17.2794 8.30852ZM15.4814 16.7999H6.5188C6.29399 16.8007 6.11205 16.9793 6.11144 17.2V21.5999H15.8892V17.2C15.8886 16.9793 15.7066 16.8007 15.4818 16.7999H15.4814ZM14.2592 19.9999H14.2594C14.2594 20.1061 14.2163 20.2079 14.1399 20.2829C14.0635 20.3578 13.96 20.4001 13.8518 20.4001H8.14809C8.03994 20.4001 7.93643 20.3578 7.86001 20.2829C7.78359 20.2079 7.74074 20.1061 7.74074 19.9999V18.3999C7.74074 18.2939 7.78359 18.1921 7.86001 18.1171C7.93643 18.042 8.03994 18 8.14809 18H13.8518C13.96 18 14.0635 18.042 14.1399 18.1171C14.2163 18.1921 14.2594 18.2939 14.2594 18.3999L14.2592 19.9999ZM17.111 22.7999V23.6C17.111 23.706 17.0682 23.8079 16.9918 23.8829C16.9153 23.9579 16.8116 24 16.7037 24H5.29622C5.18827 24 5.08456 23.9579 5.00814 23.8829C4.93173 23.8079 4.88887 23.706 4.88887 23.6V22.7999C4.88887 22.694 4.93173 22.5921 5.00814 22.5171C5.08456 22.4421 5.18827 22.4 5.29622 22.4H16.7037C16.8116 22.4 16.9153 22.4421 16.9918 22.5171C17.0682 22.5921 17.111 22.694 17.111 22.7999Z"/>
-            </mask>
-            <path d="M19.5554 0.800151C18.9548 0.80035 18.3754 1.01869 17.929 1.41326C17.9262 1.08615 17.9258 0.750303 17.9258 0.400151C17.925 0.17943 17.743 0.000792681 17.5182 0H4.48155C4.25675 0.000793901 4.07481 0.17943 4.0742 0.400151C4.0742 0.750481 4.07379 1.08613 4.07076 1.41326C3.60013 0.998417 2.98374 0.779114 2.35157 0.801726C1.7194 0.824353 1.12103 1.08695 0.682319 1.53455C0.243627 1.98194 -0.00098036 2.57901 2.95321e-06 3.20004C2.95321e-06 6.22798 2.36973 7.75257 4.27389 8.97798C5.47835 9.75308 6.51849 10.4224 6.51849 11.2002C6.51828 11.4124 6.43236 11.6157 6.27953 11.7657C6.1269 11.9158 5.91968 12.0001 5.70377 12.0003C5.47877 12.0003 5.29622 12.1794 5.29622 12.4003C5.29622 12.6212 5.47877 12.8002 5.70377 12.8002C6.08121 12.7996 6.4469 12.6704 6.73843 12.4346C7.02974 12.1988 7.22887 11.8711 7.30166 11.5073C7.94029 12.0779 8.6149 12.6087 9.32143 13.0962C9.04346 14.1478 8.55606 15.1349 7.8873 16.0003H14.1127C13.4439 15.1349 12.9565 14.1478 12.6786 13.0962C13.3851 12.6087 14.0598 12.078 14.6983 11.5073C14.7711 11.8711 14.9703 12.1988 15.2616 12.4346C15.5531 12.6704 15.9188 12.7997 16.2964 12.8002C16.5214 12.8002 16.7038 12.6212 16.7038 12.4003C16.7038 12.1794 16.5214 12.0003 16.2964 12.0003C16.0803 12.0001 15.8733 11.9158 15.7205 11.7657C15.5676 11.6157 15.4817 11.4124 15.4815 11.2002C15.4815 10.4223 16.5217 9.75308 17.7261 8.97798C19.6303 7.75293 22 6.22814 22 3.20004C21.9994 2.56387 21.7416 1.95376 21.2833 1.50376C20.825 1.05378 20.2036 0.80071 19.5556 0.8001L19.5554 0.800151ZM0.815014 3.20004C0.814205 2.63358 1.11927 2.10894 1.61636 1.82134C2.11348 1.53373 2.72864 1.52599 3.23324 1.80109C3.73763 2.0764 4.05601 2.59306 4.06999 3.15952C4.08899 5.24504 4.22646 6.90459 4.94172 8.45118C4.86853 8.40394 4.79495 8.3565 4.72076 8.30866C2.88998 7.13082 0.814988 5.79602 0.814988 3.19993L0.815014 3.20004ZM14.2838 5.62397L12.9354 6.91198L13.2532 8.73189L13.253 8.73209C13.2748 8.84821 13.2429 8.96789 13.1656 9.0584C13.0884 9.14892 12.974 9.20092 12.8537 9.20013C12.7874 9.19933 12.7221 9.18425 12.6623 9.15606L11.0001 8.29621L9.33794 9.15627L9.33774 9.15607C9.19885 9.22435 9.03288 9.21204 8.90592 9.12411C8.78118 9.034 8.71952 8.88196 8.74702 8.7321L9.06482 6.91219L7.71638 5.62418C7.6058 5.51759 7.56658 5.3588 7.6151 5.2145C7.66342 5.0702 7.79118 4.9654 7.94442 4.94416L9.80211 4.6762L10.6334 3.02418C10.7106 2.89754 10.8497 2.82013 11.0001 2.82013C11.1503 2.82013 11.2894 2.89754 11.3666 3.02418L12.1977 4.6762L14.0554 4.94416H14.0556C14.2088 4.9654 14.3366 5.0702 14.3851 5.2145C14.4334 5.3588 14.3942 5.51759 14.2836 5.62418L14.2838 5.62397ZM17.2794 8.30852C17.2051 8.35635 17.1315 8.40379 17.0585 8.45103C17.7737 6.90459 17.9112 5.24484 17.9302 3.15938H17.93C17.944 2.59292 18.2624 2.07625 18.767 1.80095C19.2714 1.52584 19.8866 1.53358 20.3836 1.82119C20.881 2.1088 21.1858 2.63339 21.1852 3.1999C21.1852 5.79573 19.11 7.13053 17.2794 8.30863L17.2794 8.30852ZM15.4814 16.7999H6.5188C6.29399 16.8007 6.11205 16.9793 6.11144 17.2V21.5999H15.8892V17.2C15.8886 16.9793 15.7066 16.8007 15.4818 16.7999H15.4814ZM14.2592 19.9999H14.2594C14.2594 20.1061 14.2163 20.2079 14.1399 20.2829C14.0635 20.3578 13.96 20.4001 13.8518 20.4001H8.14809C8.03994 20.4001 7.93643 20.3578 7.86001 20.2829C7.78359 20.2079 7.74074 20.1061 7.74074 19.9999V18.3999C7.74074 18.2939 7.78359 18.1921 7.86001 18.1171C7.93643 18.042 8.03994 18 8.14809 18H13.8518C13.96 18 14.0635 18.042 14.1399 18.1171C14.2163 18.1921 14.2594 18.2939 14.2594 18.3999L14.2592 19.9999ZM17.111 22.7999V23.6C17.111 23.706 17.0682 23.8079 16.9918 23.8829C16.9153 23.9579 16.8116 24 16.7037 24H5.29622C5.18827 24 5.08456 23.9579 5.00814 23.8829C4.93173 23.8079 4.88887 23.706 4.88887 23.6V22.7999C4.88887 22.694 4.93173 22.5921 5.00814 22.5171C5.08456 22.4421 5.18827 22.4 5.29622 22.4H16.7037C16.8116 22.4 16.9153 22.4421 16.9918 22.5171C17.0682 22.5921 17.111 22.694 17.111 22.7999Z" fill="white" stroke="#1F62FF" stroke-width="6" mask="url(#path-1-inside-1_18509_10555)"/>
-          </svg>
+          <svg width="28" height="25" viewBox="0 0 28 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.40975 13.7719C4.60395 13.7719 5.57536 12.8005 5.57536 11.6063C5.57536 10.4121 4.60395 9.44067 3.40975 9.44067C2.21555 9.44067 1.24414 10.4121 1.24414 11.6063C1.24414 12.8005 2.21555 13.7719 3.40975 13.7719ZM3.40975 10.2995C4.13041 10.2995 4.71658 10.8854 4.71658 11.6063C4.71658 12.3269 4.13064 12.9131 3.40975 12.9131C2.68886 12.9131 2.10292 12.3272 2.10292 11.6063C2.1027 10.8854 2.68909 10.2995 3.40975 10.2995Z" fill="#1F62FF" stroke="#1F62FF"/>
+<path d="M2.70096 24.5H4.12089C4.82084 24.5 5.39035 23.9305 5.39035 23.2305V21.0929C5.92673 20.9444 6.32208 20.452 6.32208 19.8687V16.8216C6.32208 15.624 5.34755 14.6497 4.15018 14.6497H2.67213C1.47453 14.6497 0.5 15.6242 0.5 16.8216V19.8689C0.5 20.4521 0.89514 20.9446 1.43174 21.0931V23.2307C1.43174 23.9305 2.00101 24.5 2.70096 24.5ZM1.35878 19.8689V16.8216C1.35878 16.0975 1.94812 15.5082 2.67213 15.5082H4.15018C4.87425 15.5082 5.46353 16.0976 5.46353 16.8216V19.8689C5.46353 20.0955 5.27925 20.2798 5.05307 20.2798H4.532V23.2307C4.532 23.4571 4.34773 23.6412 4.12154 23.6412H2.70162C2.47522 23.6412 2.29116 23.4569 2.29116 23.2307L2.29094 20.2798H1.76942C1.54301 20.2798 1.35878 20.0955 1.35878 19.8689Z" fill="#1F62FF" stroke="#1F62FF"/>
+<path d="M7.99414 11.5089C7.99414 12.7031 8.96555 13.6745 10.1598 13.6745C11.3539 13.6745 12.3256 12.7031 12.3256 11.5089C12.3256 10.3147 11.3539 9.34326 10.1598 9.34326C8.96555 9.34326 7.99414 10.3147 7.99414 11.5089ZM10.1598 10.202C10.8804 10.202 11.467 10.788 11.467 11.5089C11.467 12.2298 10.8806 12.8157 10.1598 12.8157C9.43886 12.8157 8.85292 12.2298 8.85292 11.5089C8.85292 10.788 9.43909 10.202 10.1598 10.202Z" fill="#1F62FF" stroke="#1F62FF"/>
+<path d="M9.44901 24.4025H10.8687C11.5687 24.4025 12.1384 23.8328 12.1384 23.1329V20.9952C12.6748 20.8468 13.0701 20.3543 13.0701 19.7715V16.7241C13.0701 15.5265 12.0956 14.5522 10.8982 14.5522H9.41994C8.22234 14.5522 7.24805 15.5268 7.24805 16.7241V19.7717C7.24805 20.3545 7.64319 20.847 8.17978 20.9954V23.1331C8.17933 23.8328 8.74906 24.4025 9.44901 24.4025ZM8.10637 19.7715V16.7241C8.10637 16.0001 8.69571 15.4108 9.41971 15.4108H10.898C11.6221 15.4108 12.2113 16.0001 12.2113 16.7241V19.7717C12.2113 19.9981 12.0271 20.1822 11.8004 20.1822H11.2798V23.1331C11.2798 23.3597 11.0955 23.544 10.8689 23.544H9.44899C9.22236 23.544 9.03809 23.3597 9.03809 23.1331V20.1822H8.51747C8.29062 20.1822 8.10637 19.9981 8.10637 19.7715Z" fill="#1F62FF" stroke="#1F62FF"/>
+<path d="M16.9058 13.4789C18.1 13.4789 19.0715 12.5075 19.0715 11.3133C19.0715 10.1191 18.1 9.14746 16.9058 9.14746C15.7116 9.14746 14.7402 10.1191 14.7402 11.3133C14.7405 12.5075 15.7119 13.4789 16.9058 13.4789ZM16.9058 10.0062C17.6265 10.0062 18.2127 10.5926 18.2127 11.3135C18.2127 12.0342 17.6267 12.6204 16.9058 12.6204C16.185 12.6204 15.599 12.0344 15.599 11.3135C15.599 10.5924 16.1852 10.0062 16.9058 10.0062Z" fill="#1F62FF" stroke="#1F62FF"/>
+<path d="M18.886 22.9375V20.7999C19.4224 20.6517 19.8177 20.1592 19.8177 19.5762L19.8179 16.5286C19.8179 15.331 18.8434 14.3567 17.646 14.3567H16.168C14.9704 14.3567 13.9961 15.3312 13.9961 16.5286V19.5762C13.9961 20.1594 14.3912 20.6518 14.9278 20.7999V22.9375C14.9278 23.6375 15.4973 24.2072 16.1973 24.2072H17.6172C18.3165 24.2072 18.886 23.6375 18.886 22.9375ZM15.7862 22.9375V19.9866H15.2651C15.0387 19.9866 14.8546 19.8023 14.8546 19.5762V16.5286C14.8546 15.8045 15.444 15.2152 16.168 15.2152H17.646C18.3701 15.2152 18.9594 15.8046 18.9594 16.5286V19.5762C18.9594 19.8026 18.7751 19.9866 18.5489 19.9866H18.0278V22.9375C18.0278 23.1642 17.8436 23.3484 17.6174 23.3484H16.1975C15.9704 23.3484 15.7862 23.1642 15.7862 22.9375Z" fill="#1F62FF" stroke="#1F62FF"/>
+<path d="M23.7379 13.318C24.9321 13.318 25.9035 12.3466 25.9035 11.1524C25.9035 9.95822 24.9321 8.98657 23.7379 8.98657C22.5437 8.98657 21.5723 9.95822 21.5723 11.1524C21.5725 12.3468 22.5439 13.318 23.7379 13.318ZM23.7379 9.84535C24.4585 9.84535 25.0447 10.4318 25.0447 11.1526C25.0447 11.8735 24.4588 12.4595 23.7379 12.4595C23.0172 12.4595 22.431 11.8735 22.431 11.1526C22.431 10.4318 23.0174 9.84535 23.7379 9.84535Z" fill="#1F62FF" stroke="#1F62FF"/>
+<path d="M25.7163 20.6387C26.2529 20.4905 26.648 19.9978 26.648 19.4148V16.3672C26.648 15.1696 25.6735 14.1953 24.4761 14.1953H22.9981C21.8005 14.1953 20.8262 15.1698 20.8262 16.3672V19.4148C20.8262 19.998 21.2213 20.4905 21.7579 20.6385V22.7762C21.7579 23.4761 22.3274 24.0458 23.0274 24.0458H24.4473C25.1472 24.0458 25.7167 23.4761 25.7167 22.7762L25.717 20.6387H25.7163ZM25.3788 19.8255H24.8577V22.7764C24.8577 23.003 24.6735 23.1873 24.4473 23.1873H23.0274C22.801 23.1873 22.6169 23.003 22.6169 22.7764L22.6167 19.8255H22.0956C21.8692 19.8255 21.6852 19.6412 21.6852 19.415V16.3672C21.6852 15.6431 22.2745 15.0539 22.9985 15.0539H24.4766C25.2006 15.0539 25.7899 15.6432 25.7899 16.3672V19.4148C25.7892 19.6412 25.605 19.8255 25.3788 19.8255Z" fill="#1F62FF" stroke="#1F62FF"/>
+<path d="M8.99333 7.32844C8.99333 6.13424 8.02192 5.1626 6.82772 5.1626C5.63352 5.1626 4.66211 6.13424 4.66211 7.32844C4.66211 8.52264 5.63352 9.49405 6.82772 9.49405C8.02192 9.49405 8.99333 8.52264 8.99333 7.32844ZM5.52089 7.32844C5.52089 6.60778 6.10683 6.02115 6.82772 6.02115C7.54861 6.02115 8.13455 6.60755 8.13455 7.32844C8.13455 8.04933 7.54861 8.63527 6.82772 8.63527C6.10706 8.63527 5.52089 8.0491 5.52089 7.32844Z" fill="#1F62FF" stroke="#1F62FF"/>
+<path d="M11.4082 7.23032C11.4082 8.42452 12.3798 9.39593 13.574 9.39593C14.7682 9.39593 15.7397 8.42452 15.7397 7.23032C15.7394 6.03612 14.7685 5.06494 13.574 5.06494C12.3794 5.06494 11.4082 6.03612 11.4082 7.23032ZM13.574 5.92372C14.2947 5.92372 14.8809 6.50966 14.8809 7.23055C14.8809 7.95167 14.2947 8.53738 13.574 8.53738C12.8532 8.53738 12.2668 7.95144 12.2668 7.23055C12.2668 6.50966 12.8534 5.92372 13.574 5.92372Z" fill="#1F62FF" stroke="#1F62FF"/>
+<path d="M22.4875 7.03524C22.4875 5.84104 21.5161 4.86963 20.3219 4.86963C19.1277 4.86963 18.1562 5.84104 18.1562 7.03524C18.1562 8.22944 19.1277 9.20085 20.3219 9.20085C21.5163 9.20063 22.4875 8.22944 22.4875 7.03524ZM19.0153 7.03524C19.0153 6.31458 19.6012 5.72841 20.3221 5.72841C21.0428 5.72841 21.6289 6.31435 21.6289 7.03524C21.6289 7.7559 21.043 8.34207 20.3221 8.34207C19.6014 8.34207 19.0153 7.75567 19.0153 7.03524Z" fill="#1F62FF" stroke="#1F62FF"/>
+<path d="M10.2008 4.92937C11.395 4.92937 12.3664 3.95795 12.3664 2.76376C12.3664 1.56956 11.395 0.598145 10.2008 0.598145C9.00657 0.598145 8.03516 1.56956 8.03516 2.76376C8.03516 3.95795 9.00657 4.92937 10.2008 4.92937ZM10.2008 1.45693C10.9214 1.45693 11.5076 2.04287 11.5076 2.76376C11.5076 3.48465 10.9217 4.07059 10.2008 4.07059C9.48011 4.07059 8.89394 3.48465 8.89394 2.76376C8.89394 2.04287 9.48011 1.45693 10.2008 1.45693Z" fill="#1F62FF" stroke="#1F62FF"/>
+<path d="M19.1144 2.66561C19.1144 1.47141 18.143 0.5 16.9488 0.5C15.7546 0.5 14.7832 1.47141 14.7832 2.66561C14.7832 3.85981 15.7546 4.83145 16.9488 4.83145C18.143 4.83145 19.1144 3.85981 19.1144 2.66561ZM16.9488 3.9729C16.2282 3.9729 15.642 3.3865 15.642 2.66561C15.642 1.94472 16.2279 1.35878 16.9488 1.35878C17.6695 1.35878 18.2556 1.94472 18.2556 2.66561C18.2559 3.3865 17.6695 3.9729 16.9488 3.9729Z" fill="#1F62FF" stroke="#1F62FF"/>
+</svg>
+
         </div>
         <div>
           <h3 class="mb-2 font-['Bricolage_Grotesque'] font-semibold text-lg leading-6 tracking-[-0.02em] text-[#1a1925]">
             International team
           </h3>
-          <p class="font-['Inter'] font-normal text-[15px] leading-5 tracking-[-0.006em] text-[#51515e]">
+          <p class="font-['Inter'] font-normal text-[14px] leading-5 tracking-[-0.006em] text-[#51515e]">
             Diverse origins with team members based out of many different countries.
           </p>
         </div>
@@ -105,7 +101,7 @@
           <h3 class="mb-2 font-['Bricolage_Grotesque'] font-semibold text-lg leading-6 tracking-[-0.02em] text-[#1a1925]">
             Pride in your craft
           </h3>
-          <p class="font-['Inter'] font-normal text-[15px] leading-5 tracking-[-0.006em] text-[#51515e]">
+          <p class="font-['Inter'] font-normal text-[14px] leading-5 tracking-[-0.006em] text-[#51515e]">
             Enjoy the work that you do and be proud of the impact that your skills have.
           </p>
         </div>
@@ -114,7 +110,13 @@
     </div>
 
     <div class="mb-10 md:mb-12">
-      <p class="font-['Inter'] font-normal text-base leading-[26px] tracking-[-0.006em] text-justify text-[#73737f]">
+      <p style="font-family: Inter;
+font-weight: 400;
+font-style: Regular;
+
+line-height: 20px;
+letter-spacing: -0.6%;
+" class="text-[0.8125rem] md:text-base leading-[26px] tracking-[-0.006em] text-justify text-[#73737f]">
         Our global footprint is vast with 60+ data centers spread across 6 continents. It is imperative that we expand our network where true value can be added and performance can be enhanced. We are looking for talented individuals that have the passion and initiative to help us improve and grow our network.
       </p>
     </div>
@@ -131,7 +133,7 @@
           <h3 class="mb-2 font-['Bricolage_Grotesque'] font-semibold text-lg leading-6 tracking-[-0.02em] text-[#1a1925]">
             Remote first company
           </h3>
-          <p class="font-['Inter'] font-normal text-[15px] leading-5 tracking-[-0.006em] text-[#51515e]">
+          <p class="font-['Inter'] font-normal text-[14px] leading-5 tracking-[-0.006em] text-[#51515e]">
             Geographical restraints are a problem of the past allowing you to work from any location.
           </p>
         </div>
@@ -147,7 +149,7 @@
           <h3 class="mb-2 font-['Bricolage_Grotesque'] font-semibold text-lg leading-6 tracking-[-0.02em] text-[#1a1925]">
             Flexible vacation time
           </h3>
-          <p class="font-['Inter'] font-normal text-[15px] leading-5 tracking-[-0.006em] text-[#51515e]">
+          <p class="font-['Inter'] font-normal text-[14px] leading-5 tracking-[-0.006em] text-[#51515e]">
             Take time off when needed as we highly value a healthy work-life balance.
           </p>
         </div>
@@ -169,7 +171,7 @@
           <h3 class="mb-2 font-['Bricolage_Grotesque'] font-semibold text-lg leading-6 tracking-[-0.02em] text-[#1a1925]">
             Continued learning
           </h3>
-          <p class="font-['Inter'] font-normal text-[15px] leading-5 tracking-[-0.006em] text-[#51515e]">
+          <p class="font-['Inter'] font-normal text-[14px] leading-5 tracking-[-0.006em] text-[#51515e]">
             We invest in your education in the constantly changing IT landscape.
           </p>
         </div>
@@ -181,14 +183,14 @@
         <!-- Job Listing Section -->
         <div class="mb-12 sm:mb-16 md:mb-20">
           <!-- Job Content - Single Box -->
-          <div class="rounded-[20px] border border-[#eeeef0] bg-white">
+          <div class="rounded-[20px] border mt-[3.125rem] md:mt-[3.625rem] border-[#eeeef0] bg-white">
             <!-- Job Title Header -->
             <button
               @click="toggleJobListing"
               class="w-full flex items-center justify-between pb-4 mb-4 cursor-pointer bg-transparent border-none text-left border-b border-[#eeeef0] p-6"
             >
               <h2
-                class="font-['Inter'] font-normal text-base leading-[26px] tracking-[-0.006em] text-[#73737f]"
+                class="font-['Inter'] font-normal text-[0.9375rem] md:text-[1rem] leading-[26px] tracking-[-0.006em] text-[#73737f]"
               >
                 Customer support specialist (remote)
               </h2>
@@ -223,7 +225,7 @@
             >
               <!-- Introductory Paragraph -->
               <p
-                class="font-['Inter'] font-normal text-base leading-[26px] tracking-[-0.006em] text-black"
+                class="font-['Inter'] font-normal  text-[0.8125rem] md:text-base leading-[26px] tracking-[-0.006em] text-black"
               >
                 If you're passionate about technology and customer support, can
                 back our content strategy, and execute with a minimal amount of
@@ -235,12 +237,12 @@
               <!-- The job -->
               <div>
                 <h3
-                  class="mb-3 font-['Inter'] font-semibold text-base leading-[26px] tracking-[-0.006em] text-black"
+                  class="mb-3 font-['Inter'] font-semibold text-[0.8125rem] md:text-base leading-[26px] tracking-[-0.006em] text-black"
                 >
                   The job
                 </h3>
                 <p
-                  class="font-['Inter'] font-normal text-base leading-[26px] tracking-[-0.006em] text-black"
+                  class="font-['Inter'] font-normal text-[0.8125rem] md:text-base leading-[26px] tracking-[-0.006em] text-black"
                 >
                   Solve customer issues by developing expertise in relevant
                   product areas and by learning to troubleshoot a diverse range
@@ -253,7 +255,7 @@
               <!-- You'll own and be responsible for -->
               <div>
                 <h3
-                  class="mb-3 font-['Inter'] text-base leading-[26px] tracking-[-0.006em] text-black"
+                  class="mb-3 font-['Inter'] text-[0.8125rem] md:text-base leading-[26px] tracking-[-0.006em] text-black"
                 >
                   You'll own and be responsible for:
                 </h3>
@@ -263,7 +265,7 @@
                   <li
                     v-for="item in responsibilities"
                     :key="item"
-                    class="font-['Inter'] font-normal text-base leading-[26px] tracking-[-0.006em] text-black mb-1"
+                    class="font-['Inter'] font-normal text-[0.8125rem] md:text-basee leading-[26px] tracking-[-0.006em] text-black mb-1"
                   >
                     {{ item }}
                   </li>
@@ -273,7 +275,7 @@
               <!-- What skills and experience we're looking for -->
               <div>
                 <h3
-                  class="mb-3 font-['Inter'] font-semibold text-base leading-[26px] tracking-[-0.006em] text-black"
+                  class="mb-3 font-['Inter'] font-semibold text-[0.8125rem] md:text-base leading-[26px] tracking-[-0.006em] text-black"
                 >
                   What skills and experience we're looking for
                 </h3>
@@ -283,7 +285,7 @@
                   <li
                     v-for="item in skills"
                     :key="item"
-                    class="font-['Inter'] font-normal text-base leading-[26px] tracking-[-0.006em] text-black mb-1"
+                    class="font-['Inter'] font-normal text-[0.8125rem] md:text-base leading-[26px] tracking-[-0.006em] text-black mb-1"
                   >
                     {{ item }}
                   </li>
@@ -293,7 +295,7 @@
               <!-- What we absolutely need in a candidate -->
               <div>
                 <h3
-                  class="mb-3 font-['Inter'] font-semibold text-base leading-[26px] tracking-[-0.006em] text-black"
+                  class="mb-3 font-['Inter'] font-semibold text-[0.8125rem] md:text-base leading-[26px] tracking-[-0.006em] text-black"
                 >
                   What we absolutely need in a candidate
                 </h3>
@@ -303,7 +305,7 @@
                   <li
                     v-for="item in candidateTraits"
                     :key="item"
-                    class="font-['Inter'] font-normal text-base leading-[26px] tracking-[-0.006em] text-black mb-1"
+                    class="font-['Inter'] font-normal text-[0.8125rem] md:text-base leading-[26px] tracking-[-0.006em] text-black mb-1"
                   >
                     {{ item }}
                   </li>
@@ -313,12 +315,12 @@
               <!-- Application Instructions -->
               <div class="pt-4">
                 <p
-                  class="mb-2 font-['Inter'] font-normal text-base leading-[26px] tracking-[-0.006em] text-black"
+                  class="mb-2 font-['Inter'] font-normal text-[0.8125rem] md:text-base leading-[26px] tracking-[-0.006em] text-black"
                 >
                   Please apply by emailing us at jobs [at] keycdn [dot] com.
                 </p>
                 <p
-                  class="font-['Inter'] font-normal text-base leading-[26px] tracking-[-0.006em] text-black"
+                  class="font-['Inter'] font-normal text-[0.8125rem] md:text-base leading-[26px] tracking-[-0.006em] text-black"
                 >
                   No recruiters or agencies.
                 </p>

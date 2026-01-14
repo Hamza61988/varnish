@@ -7,47 +7,7 @@
       <!-- Header Section -->
       <div class="flex flex-col items-center mb-8 sm:mb-10 md:mb-12">
         <!-- Section Label -->
-        <div class="flex items-center justify-center mb-0 sm:mb-6">
-          <div
-            class="flex bg-[#fff] items-center"
-            style="
-              height: 24px;
-              gap: 2px;
-              border-radius: 999px;
-              padding: 4px 8px;
-              box-shadow: 0px 0.5px 0.5px 0px rgba(7, 1, 19, 0.03),
-                0px 1px 1px -0.5px rgba(7, 1, 19, 0.03),
-                0px 2px 2px -1px rgba(7, 1, 19, 0.03),
-                0px 3px 3px -1.5px rgba(7, 1, 19, 0.03);
-            "
-          >
-            <!-- Star/Diamond Icon -->
-            <svg
-              width="12"
-              height="12"
-              viewBox="0 0 12 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M7.00288 1.2006C7.00288 0.458539 6.04046 0.167152 5.62884 0.784575L1.59597 6.83388C1.2637 7.3323 1.62099 7.99991 2.22001 7.99991H5.00288V10.7992C5.00288 11.5413 5.9653 11.8327 6.37692 11.2152L10.4098 5.16593C10.7421 4.66752 10.3848 3.99991 9.78575 3.99991H7.00288V1.2006Z"
-                fill="#A3A3AE"
-              />
-            </svg>
-
-            <span
-              style="
-                font-family: 'Bricolage Grotesque', sans-serif;
-                font-weight: 500;
-                font-size: 12px;
-                line-height: 16px;
-                color: #1a1925;
-              "
-            >
-              How it works
-            </span>
-          </div>
-        </div>
+<SectionsUpername name="How it works" />
 
         <!-- Title -->
         <h2

@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen relative overflow-hidden" style="background: #ffffff">
+  <div class="min-h-screen  relative overflow-hidden" >
     <!-- Page Background - BGline.svg -->
     <div class="absolute inset-0 pointer-events-none hidden md:block" style="
         background-image: url('/images/about/BGline.svg');
@@ -11,43 +11,12 @@
       "></div>
 
     <!-- Main Content -->
-    <main class="w-full mx-auto px-4 sm:px-6 md:px-8 lg:px-12 py-12 sm:py-16 md:py-20 lg:py-24 relative z-10">
+    <main class="w-full mx-auto px-[57.5px]  md:px-0 py-12 sm:py-16 md:py-20 lg:py-24 relative z-10">
       <!-- Support Section -->
       <section class="w-full max-w-6xl mx-auto px-0">
         <!-- Section Label -->
-        <div class="flex items-center justify-start sm:justify-center mb-4 sm:mb-6">
-          <div class="flex items-center" style="
-              height: 24px;
-              gap: 2px;
-              border-radius: 999px;
-              padding-top: 4px;
-              padding-right: 8px;
-              padding-bottom: 4px;
-              padding-left: 8px;
-              background: #ffffffe5;
-              box-shadow: 0px 0.5px 0.5px 0px rgba(7, 1, 19, 0.03),
-                0px 1px 1px -0.5px rgba(7, 1, 19, 0.03),
-                0px 2px 2px -1px rgba(7, 1, 19, 0.03),
-                0px 3px 3px -1.5px rgba(7, 1, 19, 0.03);
-            ">
-            <!-- Lightning Bolt Icon -->
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 fill-[#A3A3AE] stroke-[#A3A3AE]" viewBox="0 0 24 24"
-              fill="none" stroke="#A3A3AE" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
-              style="min-width: 16px; min-height: 16px">
-              <path d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
-            </svg>
-            <span style="
-                font-family: 'Bricolage Grotesque', sans-serif;
-                font-weight: 500;
-                font-size: 12px;
-                line-height: 16px;
-                letter-spacing: 0%;
-                text-align: center;
-                color: #1a1925;
-              ">
-              Support
-            </span>
-          </div>
+        <div class="flex items-center justify-start sm:justify-center">
+        <SectionsUpername name="Support" />
         </div>
 
         <!-- Title -->
@@ -83,7 +52,11 @@
               border: 1px solid #eeeef0;
               background: #ffffff;
             ">
-            <div class="flex items-center gap-2 mb-4">
+         <div
+  class="flex p-2 rounded bg-[#F9F9F9] md:bg-transparent items-center gap-2
+ md:shadow-none        shadow-[0px_0.5px_0.5px_0px_#1A19250A,0px_1px_1px_0px_#1A19250A,0px_1px_2px_-1px_#1A19250A]"
+>
+
               <h3 style="
                   font-family: 'Bricolage Grotesque', sans-serif;
                   font-weight: 600;
@@ -98,11 +71,11 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
               </svg>
             </div>
-            <ul class="flex flex-col" style="min-height: 300px; gap: 20px">
-              <li v-for="link in zonesLinks" :key="link.name" style="
+            <ul class="flex flex-col" style="min-height: 300px; gap: 10px">
+              <li class="p-2 text-[13px] md:text-[15px]" v-for="link in zonesLinks" :key="link.name" style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 400;
-                  font-size: 15px;
+                  
                   line-height: 20px;
                   letter-spacing: -0.006em;
                   color: #73737f;
@@ -114,12 +87,16 @@
           </div>
 
           <!-- Integrations Column -->
-          <div class="bg-white rounded-lg p-5 sm:p-6 w-full" style="
+          <div class="bg-white  rounded-lg p-5 sm:p-6 w-full" style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
               background: #ffffff;
             ">
-            <div class="flex items-center gap-2 mb-4">
+            <div
+  class="flex p-2 rounded bg-[#F9F9F9] md:bg-transparent items-center gap-2
+ md:shadow-none        shadow-[0px_0.5px_0.5px_0px_#1A19250A,0px_1px_1px_0px_#1A19250A,0px_1px_2px_-1px_#1A19250A]"
+>
+
               <h3 style="
                   font-family: 'Bricolage Grotesque', sans-serif;
                   font-weight: 600;
@@ -134,11 +111,11 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
               </svg>
             </div>
-            <ul class="flex flex-col" style="min-height: 300px; gap: 20px">
-              <li v-for="link in integrationsLinks" :key="link.name" style="
+            <ul class="flex flex-col" style="min-height: 300px; gap: 10px">
+              <li class="p-2 text-[13px] md:text-[15px]"  v-for="link in integrationsLinks" :key="link.name" style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 400;
-                  font-size: 15px;
+                 
                   line-height: 20px;
                   letter-spacing: -0.006em;
                   color: #73737f;
@@ -155,7 +132,11 @@
               border: 1px solid #eeeef0;
               background: #ffffff;
             ">
-            <div class="flex items-center gap-2 mb-4">
+           <div
+  class="flex p-2 rounded bg-[#F9F9F9] md:bg-transparent items-center gap-2
+ md:shadow-none        shadow-[0px_0.5px_0.5px_0px_#1A19250A,0px_1px_1px_0px_#1A19250A,0px_1px_2px_-1px_#1A19250A]"
+>
+
               <h3 style="
                   font-family: 'Bricolage Grotesque', sans-serif;
                   font-weight: 600;
@@ -170,11 +151,11 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
               </svg>
             </div>
-            <ul class="flex flex-col" style="min-height: 300px; gap: 20px">
-              <li v-for="link in troubleshootingLinks" :key="link.name" style="
+            <ul class="flex flex-col" style="min-height: 300px; gap: 10px">
+                <li class="p-2 text-[13px] md:text-[15px]" v-for="link in troubleshootingLinks" :key="link.name" style="
                   font-family: 'Inter', sans-serif;
                   font-weight: 400;
-                  font-size: 15px;
+               
                   line-height: 20px;
                   letter-spacing: -0.006em;
                   color: #73737f;

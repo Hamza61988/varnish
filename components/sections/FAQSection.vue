@@ -1,41 +1,15 @@
 <template>
   <section id="faq" class="mx-auto" style="margin: 15% 0%">
-    <div class="px-[5%] lg:px-0">
+    <div class="px-[57.5px]  md:px-0">
       <!-- FAQ Header -->
       <div class="text-center mb-8 md:mb-12">
         <div class="flex justify-center mb-2">
-          <div
-            class="inline-flex items-center space-x-2 px-4 py-2 rounded-full"
-            style="
-              background: #FFFFFFE5;
-              box-shadow: 0px 0.5px 0.5px 0px #07011308,
-                0px 1px 1px -0.5px #07011308,
-                0px 2px 2px -1px #07011308,
-                0px 3px 3px -1.5px #07011308;
-            "
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-3 w-3 sm:h-4 sm:w-4"
-              style="color: #a3a3ae; fill: #a3a3ae"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="#A3A3AE"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M13 10V3L4 14h7v7l9-11h-7z"
-              />
-            </svg>
-            <span class="text-sm font-medium text-gray-700 uppercase">FAQ</span>
-          </div>
+<SectionsUpername name="FAQ" />
         </div>
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
+        <h2 class="text-[2rem] md:text-[3rem] font-bold text-gray-900 mb-2">
           Common Pricing Questions
         </h2>
-        <p class="text-gray-600">You've Got Questions, We've got answers</p>
+        <p class= "text-[0.875rem] md:text-[1rem] text-gray-600">You've Got Questions, We've got answers</p>
       </div>
 
       <!-- FAQ Cards Grid -->
@@ -54,7 +28,7 @@
               onclick="var allFAQs=document.querySelectorAll('.faq-item');var clickedFAQ=this.closest('.faq-item');var clickedContent=clickedFAQ?clickedFAQ.querySelector('.faq-content'):null;var wasOpen=clickedContent?clickedContent.classList.contains('faq-content-expanded'):false;allFAQs.forEach(function(faq){var content=faq.querySelector('.faq-content');if(content){content.classList.remove('faq-content-expanded');content.classList.add('faq-content-collapsed');}});if(clickedContent&&!wasOpen){clickedContent.classList.remove('faq-content-collapsed');clickedContent.classList.add('faq-content-expanded');}return false;"
               class="w-full px-4 md:px-6 py-4 flex items-center justify-between text-left hover:bg-gray-50 transition-colors cursor-pointer"
             >
-              <span class="font-semibold text-gray-900 text-sm md:text-base"
+              <span class="font-semibold text-gray-900 text-[0.875rem] md:text-[1rem]"
                 >Is there a minimum usage?</span
               >
               <!-- Right Arrow when collapsed -->
@@ -91,7 +65,7 @@
               </svg>
             </button>
             <div
-              class="px-4 md:px-6 pb-4 text-gray-600 text-sm md:text-base faq-content faq-content-collapsed"
+              class="px-4 md:px-6 pb-4 text-[#51515E] text-[0.875rem] md:text-[1rem] faq-content faq-content-collapsed"
             >
               Yes, the minimum usage is $4 per month.
             </div>
@@ -109,7 +83,7 @@
               onclick="var allFAQs=document.querySelectorAll('.faq-item');var clickedFAQ=this.closest('.faq-item');var clickedContent=clickedFAQ?clickedFAQ.querySelector('.faq-content'):null;var wasOpen=clickedContent?clickedContent.classList.contains('faq-content-expanded'):false;allFAQs.forEach(function(faq){var content=faq.querySelector('.faq-content');if(content){content.classList.remove('faq-content-expanded');content.classList.add('faq-content-collapsed');}});if(clickedContent&&!wasOpen){clickedContent.classList.remove('faq-content-collapsed');clickedContent.classList.add('faq-content-expanded');}return false;"
               class="w-full px-4 md:px-6 py-4 flex items-center justify-between text-left hover:bg-gray-50 transition-colors cursor-pointer"
             >
-              <span class="font-semibold text-gray-900 text-sm md:text-base"
+              <span class="font-semibold text-gray-900 text-[0.875rem] md:text-[1rem]"
                 >What payment methods are accepted?</span
               >
               <svg
@@ -144,7 +118,7 @@
               </svg>
             </button>
             <div
-              class="px-4 md:px-6 pb-4 text-gray-600 text-sm md:text-base faq-content faq-content-collapsed"
+              class="px-4 md:px-6 pb-4 text-[#51515E] text-[0.875rem] md:text-[1rem] faq-content faq-content-collapsed"
             >
               We accept all major credit cards, PayPal, and wire transfers.
             </div>
@@ -162,7 +136,7 @@
               onclick="var allFAQs=document.querySelectorAll('.faq-item');var clickedFAQ=this.closest('.faq-item');var clickedContent=clickedFAQ?clickedFAQ.querySelector('.faq-content'):null;var wasOpen=clickedContent?clickedContent.classList.contains('faq-content-expanded'):false;allFAQs.forEach(function(faq){var content=faq.querySelector('.faq-content');if(content){content.classList.remove('faq-content-expanded');content.classList.add('faq-content-collapsed');}});if(clickedContent&&!wasOpen){clickedContent.classList.remove('faq-content-collapsed');clickedContent.classList.add('faq-content-expanded');}return false;"
               class="w-full px-4 md:px-6 py-4 flex items-center justify-between text-left hover:bg-gray-50 transition-colors cursor-pointer"
             >
-              <span class="font-semibold text-gray-900 text-sm md:text-base"
+              <span class="font-semibold text-gray-900 text-[0.875rem] md:text-[1rem]"
                 >How is storage billed?</span
               >
               <svg
@@ -197,7 +171,7 @@
               </svg>
             </button>
             <div
-              class="px-4 md:px-6 pb-4 text-gray-600 text-sm md:text-base faq-content faq-content-collapsed"
+              class="px-4 md:px-6 pb-4 text-[#51515E] text-[0.875rem] md:text-[1rem] faq-content faq-content-collapsed"
             >
               Storage is billed based on the average amount of data stored
               throughout the month, measured in GB.
@@ -219,7 +193,7 @@
               onclick="var allFAQs=document.querySelectorAll('.faq-item');var clickedFAQ=this.closest('.faq-item');var clickedContent=clickedFAQ?clickedFAQ.querySelector('.faq-content'):null;var wasOpen=clickedContent?clickedContent.classList.contains('faq-content-expanded'):false;allFAQs.forEach(function(faq){var content=faq.querySelector('.faq-content');if(content){content.classList.remove('faq-content-expanded');content.classList.add('faq-content-collapsed');}});if(clickedContent&&!wasOpen){clickedContent.classList.remove('faq-content-collapsed');clickedContent.classList.add('faq-content-expanded');}return false;"
               class="w-full px-4 md:px-6 py-4 flex items-center justify-between text-left hover:bg-gray-50 transition-colors cursor-pointer"
             >
-              <span class="font-semibold text-gray-900 text-sm md:text-base"
+              <span class="font-semibold text-gray-900 text-[0.875rem] md:text-[1rem]"
                 >Is there a minimum payment?</span
               >
               <svg
@@ -254,7 +228,7 @@
               </svg>
             </button>
             <div
-              class="px-4 md:px-6 pb-4 text-gray-600 text-sm md:text-base faq-content faq-content-collapsed"
+              class="px-4 md:px-6 pb-4 text-[#51515E] text-[0.875rem] md:text-[1rem] faq-content faq-content-collapsed"
             >
               Yes, there is a minimum payment of $4 per month regardless of
               usage.
@@ -273,7 +247,7 @@
               onclick="var allFAQs=document.querySelectorAll('.faq-item');var clickedFAQ=this.closest('.faq-item');var clickedContent=clickedFAQ?clickedFAQ.querySelector('.faq-content'):null;var wasOpen=clickedContent?clickedContent.classList.contains('faq-content-expanded'):false;allFAQs.forEach(function(faq){var content=faq.querySelector('.faq-content');if(content){content.classList.remove('faq-content-expanded');content.classList.add('faq-content-collapsed');}});if(clickedContent&&!wasOpen){clickedContent.classList.remove('faq-content-collapsed');clickedContent.classList.add('faq-content-expanded');}return false;"
               class="w-full px-4 md:px-6 py-4 flex items-center justify-between text-left hover:bg-gray-50 transition-colors cursor-pointer"
             >
-              <span class="font-semibold text-gray-900 text-sm md:text-base"
+              <span class="font-semibold text-gray-900 text-[0.875rem] md:text-[1rem]"
                 >How is traffic calculated?</span
               >
               <svg
@@ -308,7 +282,7 @@
               </svg>
             </button>
             <div
-              class="px-4 md:px-6 pb-4 text-gray-600 text-sm md:text-base faq-content faq-content-collapsed"
+              class="px-4 md:px-6 pb-4 text-[#51515E] text-[0.875rem] md:text-[1rem] faq-content faq-content-collapsed"
             >
               Traffic is calculated based on the total amount of data
               transferred from our CDN to end users, measured in GB.
@@ -327,7 +301,7 @@
               onclick="var allFAQs=document.querySelectorAll('.faq-item');var clickedFAQ=this.closest('.faq-item');var clickedContent=clickedFAQ?clickedFAQ.querySelector('.faq-content'):null;var wasOpen=clickedContent?clickedContent.classList.contains('faq-content-expanded'):false;allFAQs.forEach(function(faq){var content=faq.querySelector('.faq-content');if(content){content.classList.remove('faq-content-expanded');content.classList.add('faq-content-collapsed');}});if(clickedContent&&!wasOpen){clickedContent.classList.remove('faq-content-collapsed');clickedContent.classList.add('faq-content-expanded');}return false;"
               class="w-full px-4 md:px-6 py-4 flex items-center justify-between text-left hover:bg-gray-50 transition-colors cursor-pointer"
             >
-              <span class="font-semibold text-gray-900 text-sm md:text-base"
+              <span class="font-semibold text-gray-900 text-[0.875rem] md:text-[1rem]"
                 >How much does a TLS certificate cost?</span
               >
               <svg
@@ -362,7 +336,7 @@
               </svg>
             </button>
             <div
-              class="px-4 md:px-6 pb-4 text-gray-600 text-sm md:text-base faq-content faq-content-collapsed"
+              class="px-4 md:px-6 pb-4 text-[#51515E] text-[0.875rem] md:text-[1rem] faq-content faq-content-collapsed"
             >
               TLS certificates are provided free of charge for all zones.
             </div>
@@ -371,7 +345,7 @@
       </div>
 
       <!-- Have More Questions Section (Repeated) -->
-      <HaveMoreQuestionsSection />
+    
     </div>
   </section>
 </template>
