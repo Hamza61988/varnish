@@ -18,12 +18,10 @@
 
         <!-- Title -->
         <h1
-          class="text-left lg:text-center"
+          class="text-left lg:text-center text-[32px] leading-[40px] md:text-[48px] md:leading-[56px]"
           style="
             font-family: 'Bricolage Grotesque', sans-serif;
             font-weight: 500;
-            font-size: 48px;
-            line-height: 56px;
             letter-spacing: -0.02em;
             vertical-align: middle;
             color: #1a1925;
@@ -35,12 +33,10 @@
 
         <!-- Subtitle -->
         <p
-          class="text-left lg:text-center"
+          class="text-left lg:text-center text-[14px] leading-[20px] md:text-[16px] md:leading-[24px]"
           style="
             font-family: 'Inter', sans-serif;
             font-weight: 400;
-            font-size: 16px;
-            line-height: 24px;
             letter-spacing: -0.011em;
             color: #51515e;
             margin-bottom: 48px;
@@ -54,11 +50,10 @@
           <!-- Left Column - Company Description -->
           <div class="w-full m-auto">
             <p
+              class="text-[14px] leading-[22px] md:text-[16px] md:leading-[26px]"
               style="
                 font-family: 'Inter', sans-serif;
                 font-weight: 400;
-                font-size: 16px;
-                line-height: 26px;
                 letter-spacing: -0.006em;
                 text-align: justify;
                 color: #73737f;
@@ -72,11 +67,10 @@
               have enjoyed the benefits that our network has brought.
             </p>
             <p
+              class="text-[14px] leading-[22px] md:text-[16px] md:leading-[26px]"
               style="
                 font-family: 'Inter', sans-serif;
                 font-weight: 400;
-                font-size: 16px;
-                line-height: 26px;
                 letter-spacing: -0.006em;
                 text-align: justify;
                 color: #73737f;
@@ -120,12 +114,10 @@
               </div>
               <div>
                 <h3
-                  class="mb-2"
+                  class="mb-2 text-[16px] leading-[22px] md:text-[18px] md:leading-[24px]"
                   style="
                     font-family: 'Bricolage Grotesque', sans-serif;
                     font-weight: 600;
-                    font-size: 18px;
-                    line-height: 24px;
                     letter-spacing: -0.02em;
                     color: #1a1925;
                   "
@@ -133,11 +125,10 @@
                   Create account
                 </h3>
                 <p
+                  class="text-[13px] leading-[18px] md:text-[15px] md:leading-[20px]"
                   style="
                     font-family: 'Inter', sans-serif;
                     font-weight: 400;
-                    font-size: 15px;
-                    line-height: 20px;
                     letter-spacing: -0.006em;
                     color: #51515e;
                   "
@@ -174,12 +165,10 @@
               </div>
               <div>
                 <h3
-                  class="mb-2"
+                  class="mb-2 text-[16px] leading-[22px] md:text-[18px] md:leading-[24px]"
                   style="
                     font-family: 'Bricolage Grotesque', sans-serif;
                     font-weight: 600;
-                    font-size: 18px;
-                    line-height: 24px;
                     letter-spacing: -0.02em;
                     color: #1a1925;
                   "
@@ -187,11 +176,10 @@
                   Share link
                 </h3>
                 <p
+                  class="text-[13px] leading-[18px] md:text-[15px] md:leading-[20px]"
                   style="
                     font-family: 'Inter', sans-serif;
                     font-weight: 400;
-                    font-size: 15px;
-                    line-height: 20px;
                     letter-spacing: -0.006em;
                     color: #51515e;
                   "
@@ -228,12 +216,10 @@
               </div>
               <div>
                 <h3
-                  class="mb-2"
+                  class="mb-2 text-[16px] leading-[22px] md:text-[18px] md:leading-[24px]"
                   style="
                     font-family: 'Bricolage Grotesque', sans-serif;
                     font-weight: 600;
-                    font-size: 18px;
-                    line-height: 24px;
                     letter-spacing: -0.02em;
                     color: #1a1925;
                   "
@@ -241,11 +227,10 @@
                   Earn credits
                 </h3>
                 <p
+                  class="text-[13px] leading-[18px] md:text-[15px] md:leading-[20px]"
                   style="
                     font-family: 'Inter', sans-serif;
                     font-weight: 400;
-                    font-size: 15px;
-                    line-height: 20px;
                     letter-spacing: -0.006em;
                     color: #51515e;
                   "

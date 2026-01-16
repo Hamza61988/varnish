@@ -1,10 +1,11 @@
 <template>
   <div
-    class="min-h-screen relative overflow-hidden"
+    class="min-h-screen  relative overflow-hidden"
     style="background: #f7f7f8"
   >
+  <div class="px-[57.5px] md:px-6  xl:px-0">
     <!-- Main Content -->
-    <main class="mx-auto pt-[5%]">
+    <main class="mx-auto  pt-[5%]">
       <!-- Header Section -->
       <section
         class="w-full md:w-3/4 lg:w-2/3 xl:w-1/2 mx-auto px-4 sm:px-6 md:px-0 mb-12 sm:mb-16 md:mb-20"
@@ -851,7 +852,7 @@
       </section>
 
       <!-- Tier 1 Networks Section -->
-      <section class="w-full max-w-6xl mx-auto px-[57.5px] md:px-6 lg:px-0 xl:px-0" style="padding: 5% 0%">
+      <section class="w-full max-w-6xl mx-auto" style="padding: 5% 0%">
         <!-- Header -->
         <div class="text-center mb-12">
           <!-- Section Label -->
@@ -860,13 +861,11 @@
           </div>
 
           <h2
-            class="mb-4"
+            class="mb-4 text-[2rem] md:text-5xl"
             style="
               font-family: 'Bricolage Grotesque', sans-serif;
               font-weight: 500;
               font-style: Medium;
-              font-size: 48px;
-              line-height: 56px;
               letter-spacing: -0.02em;
               text-align: center;
               vertical-align: middle;
@@ -876,13 +875,11 @@
             Tier 1 networks
           </h2>
           <p
-            class="mb-8"
+            class="mb-8 text-[13px] md:text-base"
             style="
               font-family: 'Inter', sans-serif;
               font-weight: 400;
               font-style: Regular;
-              font-size: 16px;
-              line-height: 24px;
               letter-spacing: -0.011em;
               text-align: center;
               color: rgba(81, 81, 94, 1);
@@ -897,14 +894,12 @@
           <!-- Left: Text Content -->
           <div class="space-y-4" style="margin: auto">
             <p
+              class="text-[13px] md:text-base text-justify"
               style="
                 font-family: 'Inter', sans-serif;
                 font-weight: 400;
                 font-style: Regular;
-                font-size: 16px;
-                line-height: 26px;
                 letter-spacing: -0.006em;
-                text-align: justify;
                 color: rgba(115, 115, 127, 1);
               "
             >
@@ -918,14 +913,12 @@
               providers.
             </p>
             <p
+              class="text-[13px] md:text-base text-justify"
               style="
                 font-family: 'Inter', sans-serif;
                 font-weight: 400;
                 font-style: Regular;
-                font-size: 16px;
-                line-height: 26px;
                 letter-spacing: -0.006em;
-                text-align: justify;
                 color: rgba(115, 115, 127, 1);
               "
             >
@@ -958,13 +951,11 @@
                 </div>
                 <div>
                   <h3
-                    class="mb-2"
+                    class="mb-2 text-base md:text-lg"
                     style="
                       font-family: 'Bricolage Grotesque', sans-serif;
                       font-weight: 600;
                       font-style: SemiBold;
-                      font-size: 18px;
-                      line-height: 24px;
                       letter-spacing: -0.02em;
                       color: rgba(26, 25, 37, 1);
                     "
@@ -972,12 +963,11 @@
                     High reliability
                   </h3>
                   <p
+                    class="text-xs md:text-sm"
                     style="
                       font-family: 'Inter', sans-serif;
                       font-weight: 400;
                       font-style: Regular;
-                      font-size: 14px;
-                      line-height: 20px;
                       letter-spacing: -0.006em;
                       color: rgba(115, 115, 127, 1);
                     "
@@ -1009,13 +999,11 @@
                 </div>
                 <div>
                   <h3
-                    class="mb-2"
+                    class="mb-2 text-base md:text-lg"
                     style="
                       font-family: 'Bricolage Grotesque', sans-serif;
                       font-weight: 600;
                       font-style: SemiBold;
-                      font-size: 18px;
-                      line-height: 24px;
                       letter-spacing: -0.02em;
                       color: rgba(26, 25, 37, 1);
                     "
@@ -1023,12 +1011,11 @@
                     Endless scalability
                   </h3>
                   <p
+                    class="text-xs md:text-sm"
                     style="
                       font-family: 'Inter', sans-serif;
                       font-weight: 400;
                       font-style: Regular;
-                      font-size: 14px;
-                      line-height: 20px;
                       letter-spacing: -0.006em;
                       color: rgba(115, 115, 127, 1);
                     "
@@ -1060,13 +1047,11 @@
                 </div>
                 <div>
                   <h3
-                    class="mb-2"
+                    class="mb-2 text-base md:text-lg"
                     style="
                       font-family: 'Bricolage Grotesque', sans-serif;
                       font-weight: 600;
                       font-style: SemiBold;
-                      font-size: 18px;
-                      line-height: 24px;
                       letter-spacing: -0.02em;
                       color: rgba(26, 25, 37, 1);
                     "
@@ -1074,12 +1059,11 @@
                     Robust connections
                   </h3>
                   <p
+                    class="text-xs md:text-sm"
                     style="
                       font-family: 'Inter', sans-serif;
                       font-weight: 400;
                       font-style: Regular;
-                      font-size: 14px;
-                      line-height: 20px;
                       letter-spacing: -0.006em;
                       color: rgba(115, 115, 127, 1);
                     "
@@ -1089,15 +1073,23 @@
                   </p>
                 </div>
               </div>
+              
             </div>
           </div>
         </div>
+
+
       </section>
+      
 
       <!-- Access All Features CTA Section -->
-      <SectionsAccessAllFeaturesSection />
+      
+      
     </main>
   </div>
+  </div>  
+    <SectionsAccessAllFeaturesSection />
+
 </template>
 
 <script setup lang="ts">
