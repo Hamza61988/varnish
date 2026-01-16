@@ -1,14 +1,17 @@
 <template>
-  <div class="" style="background-color: #f7f7f8">
+  <div class="">
     <SectionsHeroSection />
+    <div class="px-[57.5px] lg:px-[25px] xl:px-0 space-y-[100px] max-w-[940px] mx-auto md:space-y-[122px]">
     <SectionsFeaturesSection />
     <SectionsGetStartedInMinutesSection />
     <SectionsSpeedUpImagesSection />
     <SectionsDevelopWithEaseSection />
     <SectionsTestimonialsSection />
-    <div class="mb-12 sm:mb-8 md:mb-0">
+       </div>
+    <div class="mb-12 mt-[100px] md:mt-[122px] sm:mb-8 md:mb-0">
       <SectionsAccessAllFeaturesSection />
     </div>
+ 
   </div>
 </template>
 

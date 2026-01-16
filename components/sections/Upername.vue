@@ -2,7 +2,7 @@
 defineProps(['name'])
 </script>
 <template>
-  <div class="mb-[10px]">
+  <div class="mb-[3px] md:mb-[16px] ">
     <div
       style="
         padding: 4px 12px 4px 8px;

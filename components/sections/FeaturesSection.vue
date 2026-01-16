@@ -1,11 +1,11 @@
 <template>
-  <section class="container mx-auto px-[57.5px] lg:px-0 pt-[100px] md:pt-[0px] bg-[#F7F7F8]">
-    <div class="max-w-6xl mx-auto">
+  <section class="container  ">
+    <div class="">
       <div
-        class="flex flex-col items-center gap-6 md:flex-row md:flex-wrap md:justify-center md:gap-8"
+        class="flex flex-col items-center gap-3 md:flex-row md:flex-nowrap md:justify-between "
       >
         <!-- Feature Card 1 -->
-        <div class="feature-card group relative overflow-hidden">
+        <div class="feature-card group bg-white relative overflow-hidden">
           <!-- Card Background - bgcard.svg -->
           <div
             class="absolute hidden group-hover:block"
@@ -28,7 +28,7 @@
               border: none;
             "
           ></div>
-          <div class="relative z-10 p-6">
+          <div class="relative lg:max-w-[253px] max-w-[217px] z-10 pl-[24px]">
             <div
               class="mb-4 relative"
               style="padding-top: 4.67px; padding-left: 2.33px"
@@ -60,7 +60,7 @@
         </div>
 
         <!-- Feature Card 2 -->
-        <div class="feature-card group relative overflow-hidden">
+        <div class="feature-card group bg-white relative overflow-hidden">
           <!-- Card Background - bgcard.svg -->
           <div
             class="absolute hidden group-hover:block"
@@ -83,7 +83,7 @@
               border: none;
             "
           ></div>
-          <div class="relative z-10 p-6">
+          <div class="relative lg:max-w-[253px] max-w-[217px] z-10 pl-[24px]">
             <div
               class="mb-4 relative"
               style="padding-top: 4.67px; padding-left: 2.33px"
@@ -114,7 +114,7 @@
         </div>
 
         <!-- Feature Card 3 -->
-        <div class="feature-card group relative overflow-hidden">
+        <div class="feature-card group bg-white relative overflow-hidden">
           <!-- Card Background - bgcard.svg -->
           <div
             class="absolute hidden group-hover:block"
@@ -137,7 +137,7 @@
               border: none;
             "
           ></div>
-          <div class="relative z-10 p-6">
+          <div class="relative lg:max-w-[253px] max-w-[217px] z-10 pl-[24px]">
             <div
               class="mb-4 relative"
               style="padding-top: 4.67px; padding-left: 2.33px"
@@ -181,16 +181,14 @@
   border: 0.8px solid rgba(26, 25, 37, 0.12);
   border-radius: 20px;
   height: 246px;
-  width: 262px;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
 
   overflow: hidden;
 }
-.feature-card:hover {
-  background-color: rgb(240, 240, 240);
-}
+
 .feature-icon-container {
   width: 48px;
   height: 48px;

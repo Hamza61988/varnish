@@ -1,9 +1,9 @@
 <template>
   <section
-    class="container mx-auto px-[57.5px] lg:px-[25px] xl:px-0 pt-[0.25rem] md:pt-[100pt]"
-    style="background: #f7f7f8"
+    class="container "
+    
   >
-    <div class="max-w-6xl mx-auto">
+    <div class="">
       <div class="hidden md:block ">
       <SectionsUpername name="Speed Up Images" />
 

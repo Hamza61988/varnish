@@ -1,9 +1,9 @@
 <template>
   <section
-    class="container mx-auto px-[57.5px] lg:px-[25px] xl:px-0 py-[7.5rem]"
-    style="background: #f7f7f8"
+    class="container  "
+    
   >
-    <div class="max-w-6xl  mx-auto">
+    <div class="">
       <!-- Header Section -->
       <div class="flex flex-col items-center mb-4 sm:mb-10 md:mb-0">
       <SectionsUpername name="Testimonials" />
