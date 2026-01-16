@@ -4,7 +4,7 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
 
 <template>
   <div class="min-h-screen text-[#1f2937]">
-    <div class="max-w-3xl mb-4 mx-auto flex flex-col gap-6">
+    <div class="md:max-w-lg lg:max-w-3xl mb-4 mx-auto flex flex-col gap-6">
       <div class="flex flex-col mb-4 gap-6">
         <div class="flex items-start flex-col gap-4">
           <div class="flex flex-col gap-2">
@@ -209,8 +209,8 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
               class="bg-[#d1e7dd] text-[#0f5132] px-[0.4rem] py-[0.1rem] rounded-[0.2rem] font-bold mr-[1rem] text-[0.75rem]"
               >GET</span
             >
-            <span class="text-gray-600"
-              >https://tools.keycdn.com/geo.json?host=</span
+            <p class="text-gray-600"
+              >https://tools.keycdn.com/geo.json?host=</p
             >
             <span class="bg-[#fff3cd] px-[0.2rem]"> {IP or hostname} </span>
           </div>
@@ -352,7 +352,16 @@ ul,
 pre,
 code {
   font-family: inter;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+
 }
+
+p{
+    max-width: 90%;
+}
+
+
 
 .btn {
   position: relative;

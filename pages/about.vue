@@ -15,7 +15,7 @@
 
     <!-- Main Content -->
     <main
-      class="container mx-auto px-[3.5938rem] md:px-0  py-12 sm:py-16 md:py-20 lg:py-24 relative z-10"
+      class="container mx-auto px-[57.5px] md:px-6  xl:px-0  py-12 sm:py-16 md:py-20 lg:py-24 relative z-10"
     >
       <!-- About Us Section -->
       <section
