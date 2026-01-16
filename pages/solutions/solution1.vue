@@ -3,7 +3,7 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
 </script>
 
 <template>
-  <div class="mt-[4.25rem] mx-auto px-[3.5938rem] md:px-0 max-w-[940px]">
+  <div class="mt-[4.25rem] mx-auto px-[3.5938rem] lg:px-0 max-w-[940px]">
     
 <SectionsUpername name="Solutions" />
 

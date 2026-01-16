@@ -1,9 +1,9 @@
 <template>
   <div class="mt-[4.25rem] mx-auto max-w-3xl">
     <div class="w-full">
-      <h1 class="text-5xl font-medium mt-4">Create a Push Zone</h1>
+      <h1 class="text-[2rem] md:text-5xl font-medium mt-4">Create a Push Zone</h1>
 
-      <p style="font-family: inter" class="text-[#73737F] mt-4">
+      <p style="font-family: inter" class="text-[#73737F] text-[13px] md:text-[1rem] mt-4">
         A Varnish Push Zone allows you to upload your data to our storage
         cluster. This is recommended for files greater than 10 MB in size and is
         required for files larger than 100 MB because
@@ -13,12 +13,12 @@
     </div>
 
     <div class="mt-[2.3125rem] mb-[8.1875rem]">
-      <p style="font-family: inter" class="text-[#73737F] mt-4">
+      <p style="font-family: inter" class="text-[#73737F] text-[13px] md:text-[1rem] mt-4">
         To set up a Push Zone, follow the steps outlined below:
       </p>
 
       <div class="pl-8">
-        <ol class="text-[#73737F]">
+        <ol class="text-[#73737F] text-[13px] md:text-[1rem]">
           <li class="mt-3">Log in to the Varnish dashboard.</li>
           <li class="mt-3">In the left navigation sidebar click Zones.</li>
           <li class="mt-3">Click Add Zone.</li>
@@ -27,7 +27,7 @@
         </ol>
       </div>
 
-      <p style="font-family: inter" class="text-[#73737F] mt-4">
+      <p style="font-family: inter" class="text-[#73737F] text-[13px] md:text-[1rem] mt-4">
         These are the minimal steps in order to have a working Zone. The default
         settings work for most use cases. Read our
         <a class="underline">Push Zone settings</a> article for more information
@@ -39,7 +39,7 @@
   <ClientOnly>
     <Teleport to="#full-width-section">
       <svg
-        class="image-processing-bg"
+        class="image-processing-bg hidden md:flex"
         width="691"
         height="202"
         viewBox="0 0 691 202"

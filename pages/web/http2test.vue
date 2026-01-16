@@ -5,8 +5,8 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
 <template>
   <div class="min-h-screen text-[#1f2937]">
     <div class="max-w-3xl mx-auto">
-      <h1 class="text-[3rem] font-medium text-[#111827] mb-4">HTTP/2 Test</h1>
-      <h2 class="text-[#73737F] uppercase tracking-wide mb-4">
+      <h1 class="text-[2rem] md:text-5xl font-semibold mt-2 mb-4">HTTP/2 Test</h1>
+      <h2 class="text-[#73737F] md:text-[1rem] mt-4 text-[14px] max-w-2xl mb-4">
         VERIFY HTTP/2 SUPPORT
       </h2>
 
@@ -38,7 +38,7 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
           What is HTTP/2?
         </h3>
 
-        <p class="text-[15px] mb-4">
+        <p class="text-[13px] md:text-[1rem] mb-4">
           HTTP/2 is the first major HTTP protocol update since 1997 when
           HTTP/1.1 was first published by the IETF. The new HTTP protocol is
           needed to keep up with the exponential growth of the web. The
@@ -80,12 +80,12 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
           </li>
         </ul>
 
-        <p class="text-[15px] mb-4">
+        <p class="text-[13px] md:text-[1rem] mb-4">
           HTTP/2 introduces other improvements, more details:
           <a href="#" class="underline">HTTP/2 RFC7540</a>
         </p>
 
-        <p class="text-[15px]">
+        <p class="text-[13px] md:text-[1rem]">
           This test can check HTTP and HTTPS but most browsers
         </p>
       </div>

@@ -4,10 +4,10 @@
       
 
 
-      <h1 class="text-[3rem] font-medium text-[#111827] mb-4">
+      <h1 class="text-[2rem] md:text-5xl font-semibold mt-2 mb-4">
         HTTP Header Checker
       </h1>
-      <h2 class="text-[#73737F] uppercase tracking-wide mb-4">
+      <h2 class="text-[#73737F] md:text-[1rem] mt-4 text-[14px] max-w-2xl mb-4">
         VERIFY BROTLI COMPRESSION SUPPORT
       </h2>
 
@@ -90,10 +90,10 @@
             <h3 class="text-[1.5625rem] font-semibold text-[#1f2937] mb-3">
               What is the HTTP Header Checker tool?
             </h3>
-            <p class="text-[15px] mb-4">
+            <p class="text-[13px] md:text-[1rem] mb-4">
               The HTTP Header Checker tool is an online curl test. It allows the HTTP response headers of any URL to be analyzed. Optionally send custom Referer and X-Pull request headers as well as content encoding options, like Brotli and Gzip. The results returned will give the complete curl output.
             </p>
-            <p class="text-[15px]">
+            <p class="text-[13px] md:text-[1rem]">
               The HTTP Header Checker tool can be used to verify server configurations, like checking whether or not hotlink protection and file compression has been set up correctly.
             </p>
           </div>
@@ -138,7 +138,7 @@
  <ClientOnly>
    <Teleport to="#full-width-section">
   <svg
-    class="image-processing-bg"
+    class="image-processing-bg hidden md:flex"
     width="691"
     height="202"
     viewBox="0 0 691 202"

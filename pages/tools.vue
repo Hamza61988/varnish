@@ -4,7 +4,7 @@
   
   >
     <main>
-      <section class=" mt-[4.25rem] mx-auto max-w-6xl  px-[3.5938rem] md:px-2 lg:px-0">
+      <section class=" mt-[4.25rem] mx-auto max-w-6xl px-[57.5px] lg:px-4 xl:px-0">
         <div
           class="flex items-center justify-start sm:justify-center"
         >
@@ -159,7 +159,7 @@
 
           <NuxtLink
             to="/web/performancetest"
-            class="relative flex flex-col justify-center md:justify-start overflow-hidden min-h-[210px] md:h-[210px] w-full cursor-pointer transition-all hover:shadow-lg"
+            class="relative flex flex-col justify-center md:justify-start overflow-hidden min-h-[210px] h-full w-full cursor-pointer transition-all hover:shadow-lg"
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
@@ -249,7 +249,7 @@
 
           <NuxtLink
             to="/web/httpheaderchecker"
-            class="relative flex flex-col justify-center md:justify-start overflow-hidden min-h-[210px] md:h-[210px] w-full cursor-pointer transition-all hover:shadow-lg"
+            class="relative flex flex-col justify-center md:justify-start overflow-hidden min-h-[210px] h-full w-full cursor-pointer transition-all hover:shadow-lg"
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
@@ -336,7 +336,7 @@
 
           <NuxtLink
             to="/web/http2test"
-            class="relative flex flex-col justify-center md:justify-start overflow-hidden min-h-[210px] md:h-[210px] w-full cursor-pointer transition-all hover:shadow-lg"
+            class="relative flex flex-col justify-center md:justify-start overflow-hidden min-h-[210px] h-full w-full cursor-pointer transition-all hover:shadow-lg"
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
@@ -424,7 +424,7 @@
 
           <NuxtLink
             to="/web/brotlitest"
-            class="relative flex flex-col justify-center md:justify-start overflow-hidden min-h-[210px] md:h-[210px] w-full cursor-pointer transition-all hover:shadow-lg"
+            class="relative flex flex-col justify-center md:justify-start overflow-hidden min-h-[210px] h-full w-full cursor-pointer transition-all hover:shadow-lg"
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
@@ -522,7 +522,7 @@
         >
           <NuxtLink
             to="/networks/iplocationfinder"
-            class="relative flex flex-col justify-center md:justify-start overflow-hidden min-h-[210px] md:h-[210px] w-full cursor-pointer transition-all hover:shadow-lg"
+            class="relative flex flex-col justify-center md:justify-start overflow-hidden min-h-[210px] h-full w-full cursor-pointer transition-all hover:shadow-lg"
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
@@ -612,7 +612,7 @@
           <!-- Integrity Card -->
           <NuxtLink
             to="/networks/dnschecker"
-            class="relative flex flex-col justify-center md:justify-start overflow-hidden min-h-[210px] md:h-[210px] w-full cursor-pointer transition-all hover:shadow-lg"
+            class="relative flex flex-col justify-center md:justify-start overflow-hidden min-h-[210px] h-full w-full cursor-pointer transition-all hover:shadow-lg"
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
@@ -704,7 +704,7 @@
           <!-- Reliability Card -->
           <NuxtLink
             to="/networks/pingtest"
-            class="relative flex flex-col justify-center md:justify-start overflow-hidden min-h-[210px] md:h-[210px] w-full cursor-pointer transition-all hover:shadow-lg"
+            class="relative flex flex-col justify-center md:justify-start overflow-hidden min-h-[210px] h-full w-full cursor-pointer transition-all hover:shadow-lg"
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
@@ -793,7 +793,7 @@
 
           <NuxtLink
             to="/networks/ipv6test"
-            class="relative flex flex-col justify-center md:justify-start overflow-hidden min-h-[210px] md:h-[210px] w-full cursor-pointer transition-all hover:shadow-lg"
+            class="relative flex flex-col justify-center md:justify-start overflow-hidden min-h-[210px] h-full w-full cursor-pointer transition-all hover:shadow-lg"
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
@@ -1803,7 +1803,7 @@ import SectionsAccessAllFeaturesSection from "~/components/sections/AccessAllFea
 
 @media (min-width: 768px) {
   .card-description {
-    width: 70%;
+    width: 90%;
   }
 }
 

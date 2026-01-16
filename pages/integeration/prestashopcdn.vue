@@ -5,16 +5,16 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
 <template>
   <div class="mt-[4.25rem] mx-auto max-w-3xl">
     <div class="w-full flex flex-col items-start gap-4">
-      <h1 class="text-5xl font-medium">PrestaShop CDN Integration</h1>
+      <h1 class="text-[2rem] md:text-5xl font-medium">PrestaShop CDN Integration</h1>
 
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         <a class="underline">PrestaShop</a> is a free ecommerce solution written
         in PHP. About 250,000 shops worldwide are using PrestaShop. The shop
         solution was initiated in 2005 by French students and is now maintained
         by PrestaShop SA, located in Paris and Miami.
       </p>
 
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         A slow PrestaShop website can have a significant impact on revenue.
         KeyCDN can solve that problem by supercharging PrestaShop websites. Once
         KeyCDN is integrated, the static content of a PrestaShop website is
@@ -29,14 +29,14 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
     </div>
 
     <div class="mt-[2.3125rem] flex flex-col gap-4">
-      <h2 class="text-[2rem] font-semibold">PrestaShop CDN integration</h2>
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">PrestaShop CDN integration</h2>
 
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         This article shows how to complete a
         <a class="underline">PrestaShop</a> CDN integration with KeyCDN.
       </p>
 
-      <ol class="text-[#73737F] flex flex-col gap-4 pl-8">
+      <ol class="text-[#73737F] text-[13px] md:text-[1rem] flex flex-col gap-4 pl-8">
         <li class="">Create a <a class="underline">Pull Zone</a>.</li>
         <li class="">Log in to the admin panel of PrestaShop.</li>
         <li class="">Go to "Advanced Parameters" and click "Performance"</li>
@@ -69,7 +69,7 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
         </li>
       </ol>
 
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         The KeyCDN cache can easily be purged via the dashboard or the API. One
         can choose to purge the whole Zone or individual URLs, it only takes a
         few seconds to purge the content globally. The raw logs of the CDN can
@@ -83,16 +83,16 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
     </div>
 
     <div class="mt-[2.3125rem]">
-      <h2 class="text-[2rem] font-semibold">
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">
         The benefits of using a CDN for your PrestaShop site
       </h2>
 
-      <p class="text-[#73737F] mt-4">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem] mt-4">
         Once the PrestaShop CDN integration is completed, there are many
         benefits:
       </p>
 
-      <ul class="text-[#73737F] pl-8 list-disc mt-4 flex flex-col gap-2">
+      <ul class="text-[#73737F] text-[13px] md:text-[1rem] pl-8 list-disc mt-4 flex flex-col gap-2">
         <li>
           Access to all of our
           <a class="underline">strategically placed POPs</a> worldwide. We
@@ -110,13 +110,13 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
         </li>
       </ul>
 
-      <div class="mt-4 text-[#73737F]">
+      <div class="mt-4 text-[#73737F] text-[13px] md:text-[1rem]">
         <p>
           KeyCDN has launched awesome <a class="underline">tools</a> and is
           constantly expanding the <a class="undelrine">knowledge</a> base. Here
           are some important pages:
         </p>
-        <ul class="text-[#73737F] pl-8 list-disc mt-4 flex flex-col gap-2">
+        <ul class="text-[#73737F] text-[13px] md:text-[1rem] pl-8 list-disc mt-4 flex flex-col gap-2">
           <li>
             The <a class="underline">Website Speed Test</a> is essential for
             analyzing web performance.

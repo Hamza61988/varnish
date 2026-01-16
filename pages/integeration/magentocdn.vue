@@ -5,15 +5,15 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
 <template>
   <div class="mt-[4.25rem] mx-auto max-w-3xl">
     <div class="w-full flex flex-col items-start gap-4">
-      <h1 class="text-5xl font-medium">Magento CDN Integration</h1>
+      <h1 class="text-[2rem] md:text-5xl font-medium">Magento CDN Integration</h1>
 
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         Magento is a popular ecommerce solution for online businesses. Magento
         is powering about 1% of the websites worldwide and is developed and
         maintained by Magento, Inc., a company owned by Adobe.
       </p>
 
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         A slow Magento website means less revenue, which is why it's important
         to choose the best CDN for Magento. With KeyCDN, the static content of a
         Magento website is offloaded to the CDN. Assets to an end client are
@@ -21,23 +21,23 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
         latency and higher throughput.
       </p>
 
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         This article shows how to complete both a Magento and Magento 2 CDN
         integration.
       </p>
     </div>
 
     <div class="mt-[2.3125rem] flex flex-col gap-4">
-      <h2 class="text-[2rem] font-semibold">
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">
         How to complete a Magento CDN integration (pre version 2)
       </h2>
 
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         This section shows how to complete a Magento CDN integration with
         KeyCDN. The integration can be done with HTTPS in addition to HTTP.
       </p>
 
-      <ol class="text-[#73737F] flex flex-col gap-4 pl-8">
+      <ol class="text-[#73737F] text-[13px] md:text-[1rem] flex flex-col gap-4 pl-8">
         <li class="">
           Create <a class="underline">Pull zone</a> or a
           <a class="underline">Push Zone</a>.
@@ -59,7 +59,7 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
           Select the Unsecure section and enter the following information.
         </li>
 
-        <ul class="text-[#73737F] list-disc flex flex-col gap-4 pl-8">
+        <ul class="text-[#73737F] text-[13px] md:text-[1rem] list-disc flex flex-col gap-4 pl-8">
           <li>
             Base URL: Enter your website URL in the following format:
             http://www.yourwebsite.com
@@ -101,7 +101,7 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
           Shared SSL and Custom SSL are free of charge.
         </li>
 
-        <ul class="text-[#73737F] list-disc flex flex-col gap-4 pl-8">
+        <ul class="text-[#73737F] text-[13px] md:text-[1rem] list-disc flex flex-col gap-4 pl-8">
           <li>
             Base URL: Enter your website URL in the following format:
             https://www.yourwebsite.com
@@ -134,7 +134,7 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
             server.
           </li>
 
-          <ul class="text-[#73737F] list-disc flex flex-col gap-4 pl-8">
+          <ul class="text-[#73737F] text-[13px] md:text-[1rem] list-disc flex flex-col gap-4 pl-8">
             <li>Use Secure URL in Frontend > Yes</li>
             <li>Use Secure URL in Admin > Yes</li>
           </ul>
@@ -154,11 +154,11 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
     </div>
 
     <div class="mt-[2.3125rem]">
-      <h2 class="text-[2rem] font-semibold">
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">
         How to complete a Magento 2 CDN integration
       </h2>
 
-      <ol class="text-[#73737F] pl-8 list-disc mt-6 flex flex-col gap-4">
+      <ol class="text-[#73737F] text-[13px] md:text-[1rem] pl-8 list-disc mt-6 flex flex-col gap-4">
         <li>
           Create a <a class="underline">Pull Zone</a> or a
           <a class="underline">Push Zone.</a>
@@ -199,7 +199,7 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
 
         <img src="/images/Integeration/magento6.svg" alt="magento 6th" />
 
-        <p class="text-[#73737F]">
+        <p class="text-[#73737F] text-[13px] md:text-[1rem]">
           That's it! Now your Magento installation is integrated with KeyCDN.
           Also, make sure to check out our additional 12 tips on how to
           <a class="underline">speed up Magento performance</a>.
@@ -207,11 +207,11 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
       </ol>
 
       <div class="my-8">
-        <h2 class="text-[2rem] font-semibold">
+        <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">
           Choosing the best CDN for Magento
         </h2>
 
-        <p class="text-[#73737F]">
+        <p class="text-[#73737F] text-[13px] md:text-[1rem]">
           Now that your Magento site is integrated with a CDN, you can begin
           taking advantage of the speed improvements, improved redundancy, and
           better security for your site. When choosing the best CDN for Magento,
@@ -220,12 +220,12 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
           free Let's Encrypt certificates.
         </p>
 
-        <p class="text-[#73737F]">
+        <p class="text-[#73737F] text-[13px] md:text-[1rem]">
           KeyCDN has also developed a series of tools and maintains a knowledge
           base. Check these pages as well:
         </p>
 
-        <ul class="text-[#73737F] pl-8 list-disc mt-2 flex flex-col gap-2">
+        <ul class="text-[#73737F] text-[13px] md:text-[1rem] pl-8 list-disc mt-2 flex flex-col gap-2">
           <li>
             The <a class="underline">Ping Test</a> tool makes pinging IPs from
             different locations a breeze.

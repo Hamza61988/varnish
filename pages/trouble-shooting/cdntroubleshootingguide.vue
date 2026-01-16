@@ -1,23 +1,23 @@
 <template>
-  <div class="mt-[4.25rem] mx-auto max-w-3xl">
+  <div class="mt-[4.25rem] mx-auto md:max-w-lg lg:max-w-3xl">
     <div class="w-full flex flex-col items-start gap-4">
-      <h1 class="text-5xl font-medium">CDN Trouble Shooting Guide</h1>
+      <h1 class="text-[2rem] md:text-5xl font-medium">CDN Trouble Shooting Guide</h1>
 
-      <button class="btn2 text-[#73737F] mt-4">
+      <button class="btn2 text-[#73737F] text-[13px] md:text-[1rem] mt-4">
         <span>Table of contents</span>
         <span class="arrow"></span>
       </button>
 
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         This guide provides a list of troubleshooting suggestions for issues
         that you may experience when configuring a CDN.
       </p>
     </div>
 
     <div class="mt-[2.3125rem] flex flex-col gap-4">
-      <h2 class="text-[2rem] font-semibold">Troubleshooting tools</h2>
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">Troubleshooting tools</h2>
 
-      <ul class="text-[#73737F] flex flex-col gap-4 list-disc pl-5">
+      <ul class="text-[#73737F] text-[13px] md:text-[1rem] flex flex-col gap-4 list-disc pl-5">
         <li>
           <a class="underline">KeyCDN Tools</a> offers many tools, such as a DNS
           check (dig), HTTP header verification, and more.
@@ -42,23 +42,23 @@
     </div>
 
     <div class="mt-[2.3125rem] flex flex-col gap-4">
-      <h2 class="text-[2rem] font-semibold">
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">
         Are assets being cached on the KeyCDN edge servers?
       </h2>
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         There are six different cache statuses that may be returned by the
         KeyCDN edge servers. These include HIT, MISS, EXPIRED, REVALIDATED,
         UPDATING, and STALE. To learn more about what each cache status mean,
         read our <a class="underline">What Cache Status are there</a> .
       </p>
 
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         In order to check the cache status of a particular asset, you can run a
         curl command and check the X-Cache response header.
       </p>
 
       <div
-        class="border border-[#D0D0D8] text-[#73737F] rounded-md p-4 mt-2 text-sm"
+        class="border border-[#D0D0D8] text-[#73737F] text-[13px] md:text-[1rem] rounded-md p-4 mt-2 text-sm"
       >
         <pre><code>
 curl -I https://www.keycdn.com 
@@ -83,7 +83,7 @@ access-control-allow-origin: *
   </code></pre>
       </div>
 
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         An X-Cache: HIT means that the asset was delivered by a KeyCDN edge
         server and is properly cached. To receive a HIT status, the resource
         needs to be requested at least twice from the same server in order to
@@ -92,10 +92,10 @@ access-control-allow-origin: *
     </div>
 
     <div class="mt-[2.3125rem] flex flex-col gap-4">
-      <h2 class="text-[2rem] font-semibold">
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">
         Is your Zone Alias (CNAME) correctly configured?
       </h2>
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         Go to the KeyCDN Tools <a class="underline">DNS Checker</a> and verify
         that your Zone Alias (e.g. cdn.example.com) points to the Zone URL (e.g.
         example-hexid.kxcdn.com).
@@ -713,7 +713,7 @@ add_filter( 'wpseo_xml_sitemap_img_src', 'wpseo_cdn_filter' );
   <ClientOnly>
     <Teleport to="#full-width-section">
       <svg
-        class="image-processing-bg"
+        class="image-processing-bg hidden md:flex"
         width="691"
         height="202"
         viewBox="0 0 691 202"
@@ -754,7 +754,6 @@ code {
   justify-content: space-between;
   align-items: center;
 
-  font-size: 16px;
   font-weight: 500;
   border: 2px solid #eaeaea;
   border-radius: 6px;

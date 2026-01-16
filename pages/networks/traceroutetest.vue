@@ -8,10 +8,10 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
     <div class="max-w-3xl mx-auto">
       
 
-      <h1 class="text-[3rem] font-medium text-[#111827] mb-4">
+      <h1 class="text-[2rem] md:text-5xl font-semibold mt-2 mb-4">
         Traceroute Test
       </h1>
-      <h2 class="text-[#73737F] font-medium uppercase tracking-wide mb-4">
+      <h2 class="text-[#73737F] md:text-[1rem] mt-4 text-[14px] max-w-2xl mb-4">
        Trace any IP or hostname
       </h2>
 
@@ -45,7 +45,7 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
     <h3 class="text-[1.5625rem] font-semibold text-[#1f2937] mb-3">
       Using the Traceroute Tool
     </h3>
-    <p class="text-[15px] mb-4">
+    <p class="text-[13px] md:text-[1rem] mb-4">
       This tool is typically used to diagnose hiccups or interruptions in the
       transfer of data and pinpoint where along the chain it occurred. This IPv4
       or IPv6 traceroute is unique in that it allows you to simultaneously test

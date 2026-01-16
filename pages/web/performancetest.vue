@@ -5,10 +5,10 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
 <template>
   <div class="min-h-screen text-[#1f2937]">
     <div class="max-w-3xl mx-auto">
-      <h1 class="text-[3rem] font-medium text-[#111827] mb-4">
+      <h1 class="text-[2rem] md:text-5xl font-semibold mt-2 mb-4">
         Performance Test
       </h1>
-      <h2 class="text-[#73737F] uppercase tracking-wide mb-4">URL SPEED</h2>
+      <h2 class="text-[#73737F] md:text-[1rem] mt-4 text-[14px] max-w-2xl mb-4">URL SPEED</h2>
 
       <div class="mb-12">
         <div class="flex flex-col md:flex-row gap-4 items-end">
@@ -39,14 +39,14 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
             <h3 class="text-[1.5625rem] font-semibold text-[#1f2937] mb-3">
               What is the Performance Test tool?
             </h3>
-            <p class="text-[15px] mb-4">
+            <p class="text-[13px] md:text-[1rem] mb-4">
               The Performance Test tool is a single asset performance test that
               can be performed from 10 different locations around the world. It
               allows the performance of any URL to be tested and measured. The
               results returned will give a breakdown of the loading times and
               HTTP response headers.
             </p>
-            <p class="text-[15px]">
+            <p class="text-[13px] md:text-[1rem]">
               The Performance Test tool can be used to evaluate the performance
               of a single asset to see where improvements can be made. Consider
               adding KeyCDN to your stack to significantly reduce the latency of

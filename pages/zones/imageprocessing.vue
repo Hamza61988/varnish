@@ -786,12 +786,12 @@ const tableRows = [
 </script>
 
 <template>
-  <div class="w-full flex flex-col gap-4">
-    <h1 class="text-5xl font-medium mt-4">Image Processing</h1>
+  <div class=" md:max-w-lg lg:max-w-3xl flex flex-col gap-4">
+    <h1 class="text-[2rem] md:text-5xl font-medium mt-4">Image Processing</h1>
 
     <img src="/images/Zones/imageprocessing.svg" alt="image processing" />
 
-    <p style="font-family: inter" class="text-[#73737F] text-[16px]">
+    <p style="font-family: inter" class="text-[#73737F] text-[13px] md:text-[1rem]">
       Our powerful real-time Image Processing feature transforms and optimizes
       your images with simple query parameters. Your image management workflow
       defines the user experience by transforming and optimizing the image
@@ -802,16 +802,16 @@ const tableRows = [
     <div
       class="bg-[#FEF9D8] text-[#73737F] max-w-[47.5rem] mt-4 mx-auto py-5 rounded-2xl px-10 shadow-sm border border-[#1a192514]"
     >
-      <h1 class="">
+      <p class="text-[13px] md:text-[1rem]">
         <span class="font-bold">Note: </span>Purging a processed image from the
         CDN cache can only be done by Purge URL. The Cache Key Scheme setting
         must be disabled.
-      </h1>
+      </p>
     </div>
 
     <div class="w-full mt-8 font-inter">
       <div
-        class="grid grid-cols-4 border-b border-gray-200 pb-4 mb-4 text-[#8B929A] text-[1rem] uppercase"
+        class="grid grid-cols-4 border-b border-gray-200 pb-4 mb-4 text-[#8B929A] text-[11px] gap-2 md:text-[1rem]  uppercase"
       >
         <div
           style="font-weight: 400; font-family: inter"
@@ -826,72 +826,51 @@ const tableRows = [
       <div
         v-for="(row, index) in tableRows"
         :key="index"
-        class="grid grid-cols-4 border-b border-gray-200 py-6 text-[#73737F] text-base"
+        class="grid grid-cols-4  border-b gap-4 border-gray-200 py-6 text-[#73737F] text-[11px] md:text-base"
       >
-        <div class="flex flex-col gap-1 pr-4">
+        <div class="flex  flex-col gap-1">
           <span
             style="font-family: inter"
-            class="text-[#000000] font-normal whitespace-pre-line leading-relaxed"
+            class="text-[#000000]  font-normal whitespace-pre-line leading-relaxed text-[11px] md:text-[15px]"
           >
             {{ row.paramName }}
           </span>
-          <span style="font-family: inter" class="text-[#A0A0AA] text-[16px]">{{
+          <span style="font-family: inter" class="text-[#A0A0AA] text-[11px] md:text-[15px]">{{
             row.paramType
           }}</span>
         </div>
 
-        <div class="flex flex-col gap-1 pr-4">
+        <div class="flex flex-col gap-1">
           <span
             style="font-family: inter"
-            class="font-medium text-black whitespace-pre-line leading-relaxed"
+            class="font-medium  text-black whitespace-pre-line leading-relaxed text-[11px] md:text-[15px]"
           >
             {{ row.valRange }}
           </span>
-          <span style="font-family: inter" class="text-[#A0A0AA] text-[16px]">
+          <span style="font-family: inter" class="text-[#A0A0AA] text-[11px] md:text-[15px]">
             {{ row.valType }}
           </span>
         </div>
 
-        <div class="whitespace-pre-line pr-4 text-[16px] text-[#A0A0AA]">
+        <div class="whitespace-pre-line text-[11px] md:text-[15px] text-[#A0A0AA]">
           {{ row.dependencies }}
         </div>
 
-        <div class="whitespace-pre-line text-[16px] text-[#A0A0AA]">
+        <div class="whitespace-pre-line text-[11px] md:text-[15px] text-[#A0A0AA]">
           {{ row.default }}
         </div>
       </div>
     </div>
     <div class="flex flex-col gap-4">
-      <h1
-        style="
-          font-family: Bricolage Grotesque;
-          font-weight: 600;
-          font-style: SemiBold;
-          font-size: 32px;
-          leading-trim: NONE;
-          line-height: 35px;
-          letter-spacing: -2%;
-        "
-      >
+      <h2 class="text-[2rem] md:text-5xl font-medium text-[#1A1925] mb-4">
         Order of Operations
-      </h1>
-      <p
-        style="
-          font-family: Inter;
-          font-weight: 400;
-          font-style: Regular;
-          font-size: 16px;
-          leading-trim: NONE;
-          line-height: 26px;
-          letter-spacing: -0.6%;
-          color: #73737f;
-        "
-      >
+      </h2>
+      <p class="text-[#73737F] text-[13px] md:text-[1rem] leading-relaxed mb-4" style="font-family: Inter;">
         The query parameters can be defined in any order but our system
         normalizes the transformation sequence to the following order:
       </p>
       <ol class="list-disc">
-        <ol class="list-decimal flex flex-col gap-4 text-[#73737F] pl-6">
+        <ol class="list-decimal flex flex-col gap-4 text-[#73737F] text-[13px] md:text-[1rem] pl-6">
           <li>trim</li>
           <li>crop</li>
           <li>resize</li>
@@ -909,15 +888,15 @@ const tableRows = [
         :key="index"
         class="flex flex-col gap-4 mt-8"
       >
-        <h1
-          class="text-[32px] font-semibold leading-[35px] tracking-[-0.02em]"
+        <h2
+          class="text-[1.5rem] md:text-[2rem] font-semibold leading-[35px] tracking-[-0.02em]"
           style="font-family: 'Bricolage Grotesque', sans-serif"
         >
           {{ feature.title }}
-        </h1>
+        </h2>
 
         <p
-          class="text-[16px] leading-[26px] tracking-[-0.006em] text-[#73737f] font-normal"
+          class="text-[13px] md:text-[1rem] leading-[26px] tracking-[-0.006em] text-[#73737f] font-normal"
           style="font-family: 'Inter', sans-serif"
         >
           {{ feature.description }}
@@ -925,7 +904,7 @@ const tableRows = [
 
         <template v-for="(example, exIndex) in feature.examples" :key="exIndex">
           <div
-            class="w-full md:w-[662.98px] py-[9px] px-6 border border-[#eeeef0] text-[#73737f] overflow-x-auto whitespace-nowrap"
+            class="w-full md:w-[662.98px] py-[9px] px-6 border border-[#eeeef0] text-[13px] md:text-sm text-[#73737f] overflow-x-auto whitespace-nowrap"
             style="font-family: 'Inter', sans-serif"
           >
             {{ example.code }}
@@ -944,7 +923,7 @@ const tableRows = [
   <ClientOnly>
     <Teleport to="#full-width-section">
       <svg
-        class="image-processing-bg"
+        class="image-processing-bg hidden md:flex"
         width="691"
         height="202"
         viewBox="0 0 691 202"

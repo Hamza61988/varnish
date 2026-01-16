@@ -5,10 +5,10 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
 <template>
   <div class="min-h-screen text-[#1f2937]">
     <div class="max-w-3xl mx-auto">
-      <h1 class="text-[3rem] font-medium text-[#111827] mb-4">
+      <h1 class="text-[2rem] md:text-5xl font-semibold mt-2 mb-4">
         SSL FREAK Test
       </h1>
-      <p class="text-[#73737F] font-medium uppercase tracking-wide mb-4">
+      <p class="text-[#73737F] md:text-[1rem] mt-4 text-[14px] max-w-2xl mb-4">
         CVE-2015-0204
       </p>
       <div class="mb-12">
@@ -38,7 +38,7 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
           <h3 class="text-[1.5625rem] font-semibold text-[#1f2937] mb-3">
             What is the FREAK SSL attack?
           </h3>
-          <p class="text-[15px]">
+          <p class="text-[13px] md:text-[1rem]">
             Tuesday 2015/03/03 - Researchers of miTLS team (joint project
             between Inria and Microsoft Research) disclosed a new SSL/TLS
             vulnerability — the FREAK SSL attack
@@ -55,7 +55,7 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
           <h3 class="text-[1.5625rem] font-semibold text-[#1f2937] mb-3">
             How to eliminate the vulnerability?
           </h3>
-          <p class="text-[15px]">
+          <p class="text-[13px] md:text-[1rem]">
             Upgrade the OpenSSL version to at least 1.02.
           </p>
         </div>

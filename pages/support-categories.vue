@@ -2,9 +2,10 @@
   <div>
    
     <div
-      class="relative z-10 mt-[4.25rem] mb-[146.22px] mx-auto max-w-[855px] px-[57.5px] md:px-0"
+      class="relative z-10 mt-[4.25rem] mb-[146.22px] mx-auto max-w-[855px] px-[57.5px] lg:px-0"
     >
-      <div class="flex flex-col items-start md:items-center md:text-center gap-4 mb-[3.625rem]">
+    
+      <div class="flex flex-col items-start md:items-center md:text-center  mb-[3.625rem]">
        
         <SectionsUpername name="Support Categories"/>
 

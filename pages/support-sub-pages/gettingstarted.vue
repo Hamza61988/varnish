@@ -81,11 +81,11 @@
           <div class="flex flex-col items-start text-left gap-4">
 <SectionsUpername name="Support Categories" />
 
-            <h1 class="text-[48.22px] font-medium text-[#1A1925]">
+            <h1 class="text-[2rem] md:text-5xl font-medium text-[#1A1925]">
               Getting Started
             </h1>
 
-            <p style="font-family: inter" class="text-[#51515E] text-[16.07px] max-w-xl">
+            <p style="font-family: inter" class="text-[#51515E] text-[13px] md:text-[1rem] max-w-xl">
               Setting up a CDN to work with your website is easy and can be done
               in just a few steps.The article
               <a href="#" class="underline text-[#73737F]">How Does a CDN Work</a>
@@ -95,7 +95,7 @@
           </div>
 
           <section>
-            <p style="font-family: inter" class="text-[#73737F] text-[16px] leading-relaxed mb-4">
+            <p style="font-family: inter" class="text-[#73737F] text-[13px] md:text-[1rem] leading-relaxed mb-4">
               Pull Zones are the most commonly used Zone Type and are the
               recommended method for most CDN users. With this method, the CDN
               automatically pulls content from your origin server and caches it
@@ -103,22 +103,22 @@
               will be routed and delivered from the nearest possible edge server
               location.
             </p>
-            <p style="font-family: inter" class="text-[#73737F] text-[16px] leading-relaxed">
+            <p style="font-family: inter" class="text-[#73737F] text-[13px] md:text-[1rem] leading-relaxed">
               To get started with your KeyCDN integration, complete the
               following three steps:
             </p>
           </section>
 
           <section>
-            <h2 class="font-semibold text-[#1A1925] text-[2rem] mb-1">
+            <h2 class="font-semibold text-[#1A1925] text-[1.5rem] md:text-[2rem] mb-1">
               1. Create your Zone
             </h2>
-            <p style="font-family: inter" class="text-[#73737F] text-[16px] leading-relaxed mb-4">
+            <p style="font-family: inter" class="text-[#73737F] text-[13px] md:text-[1rem] leading-relaxed mb-4">
               Creating a KeyCDN Zone is easy. Simply follow the steps outlined
               below:
             </p>
             <ol style="font-family: inter"
-              class="list-decimal list-inside text-[#73737F] text-[16px] leading-relaxed space-y-2 mb-4">
+              class="list-decimal list-inside text-[#73737F] text-[13px] md:text-[1rem] leading-relaxed space-y-2 mb-4">
               <li>Log in to the KeyCDN dashboard.</li>
               <li>In the left navigation sidebar click Zones.</li>
               <li>Click Add Zone.</li>
@@ -129,7 +129,7 @@
                 Wait approximately 5 minutes for the Zone to fully deploy.
               </li>
             </ol>
-            <p style="font-family: inter" class="text-[#73737F] text-[16px] leading-relaxed">
+            <p style="font-family: inter" class="text-[#73737F] text-[13px] md:text-[1rem] leading-relaxed">
               Alternatively, using a
               <a href="#" class="underline">Push Zone</a> is recommended for
               files greater than 10 MB in size and is required for files larger
@@ -140,15 +140,15 @@
           </section>
 
           <section>
-            <h2 class="font-semibold text-[#1A1925] text-[2rem] mb-1">
+            <h2 class="font-semibold text-[#1A1925] text-[1.5rem] md:text-[2rem] mb-1">
               2. Check your CDN assets
             </h2>
-            <p style="font-family: inter" class="text-[#73737F] text-[16px] leading-relaxed mb-4">
+            <p style="font-family: inter" class="text-[#73737F] text-[13px] md:text-[1rem] leading-relaxed mb-4">
               Once your Zone is fully deployed, you'll want to check an asset to
               see if it is properly accessible via the CDN.
             </p>
             <ol style="font-family: inter"
-              class="list-decimal list-inside text-[#73737F] text-[16px] leading-relaxed space-y-2 mb-4">
+              class="list-decimal list-inside text-[#73737F] text-[13px] md:text-[1rem] leading-relaxed space-y-2 mb-4">
               <li>
                 Choose one of your website's static asset URLs (e.g.
                 https://www.yourwebsite.com/path/to/example.css).
@@ -177,7 +177,7 @@ x-cache: HIT
 x-edge-location: defr</pre>
             </div>
 
-            <p style="font-family: inter" class="text-[#73737F] text-[16px] leading-relaxed">
+            <p style="font-family: inter" class="text-[#73737F] text-[13px] md:text-[1rem] leading-relaxed">
               Once you have verified that your assets are accessible through the
               Zone URL, you can move on to the next step of integrating KeyCDN
               with your website.
@@ -185,15 +185,15 @@ x-edge-location: defr</pre>
           </section>
 
           <section>
-            <h2 class="font-semibold text-[#1A1925] text-[2rem] mb-1">
+            <h2 class="font-semibold text-[#1A1925] text-[1.5rem] md:text-[2rem] mb-1">
               3. Integrate the CDN with your website
             </h2>
-            <p style="font-family: inter" class="text-[#73737F] text-[16px] leading-relaxed mb-4">
+            <p style="font-family: inter" class="text-[#73737F] text-[13px] md:text-[1rem] leading-relaxed mb-4">
               The following integration guides will help you to quickly
               integrate KeyCDN into your web projects:
             </p>
             <ul style="font-family: inter"
-              class="list-disc list-inside text-[#73737F] text-[16px] leading-relaxed space-y-3">
+              class="list-disc list-inside text-[#73737F] text-[13px] md:text-[1rem] leading-relaxed space-y-3">
               <li>WordPress integration</li>
               <li>CMS integration guides</li>
               <li>Framework integration guides</li>

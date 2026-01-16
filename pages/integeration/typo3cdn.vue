@@ -5,9 +5,9 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
 <template>
   <div class="mt-[4.25rem] mx-auto max-w-3xl">
     <div class="w-full flex flex-col items-start gap-4">
-      <h1 class="text-5xl font-medium">Typo3 CDN Integration</h1>
+      <h1 class="text-[2rem] md:text-5xl font-medium">Typo3 CDN Integration</h1>
 
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         Typo3 is an open source CMS used primarily by enterprises or for
         Intranet purposes. With a large, active community of 100,000 people in
         48 countries, this CMS offers great opportunities for both beginners and
@@ -16,7 +16,7 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
         providing them with a better user experience.
       </p>
 
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         This tutorial guides you through the Typo3 CDN integration with the
         Content Replacer extension which is compatible with both Typo3 LTS 7 and
         8.
@@ -24,14 +24,14 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
     </div>
 
     <div class="mt-[2.3125rem] flex flex-col gap-4">
-      <h2 class="text-[2rem] font-semibold">Typo3 CDN integration</h2>
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">Typo3 CDN integration</h2>
 
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         This section shows how to complete a Magento CDN integration with
         KeyCDN. The integration can be done with HTTPS in addition to HTTP.
       </p>
 
-      <ol class="text-[#73737F] flex flex-col gap-4 pl-8">
+      <ol class="text-[#73737F] text-[13px] md:text-[1rem] flex flex-col gap-4 pl-8">
         <li class="">
           Create a Pull Zone before you start with the Typo3 CDN integration.
         </li>
@@ -86,7 +86,7 @@ config.tx_ja_replacer {
 
       <img src="/images/Integeration/typo5.svg" alt="typo 5th" />
 
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         Another Typo3 CDN integration option is to use the cs_cdn extension
         which is based on smile_cdn. This extension replaces local file
         references with references to remote files, overwrites file links, and
@@ -96,16 +96,16 @@ config.tx_ja_replacer {
     </div>
 
     <div class="mt-[2.3125rem]">
-      <h2 class="text-[2rem] font-semibold">
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">
         Supercharging Typo3 with a CDN integration
       </h2>
 
-      <p class="text-[#73737F] mt-4">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem] mt-4">
         With KeyCDN, supercharging your Typo3 Installation is done in a variety
         of ways.
       </p>
 
-      <ul class="text-[#73737F] pl-8 list-disc mt-6 flex flex-col gap-2">
+      <ul class="text-[#73737F] text-[13px] md:text-[1rem] pl-8 list-disc mt-6 flex flex-col gap-2">
         <li>
           KeyCDN offers HTTP/2 support on all edge servers to help improve speed
           and optimize content delivery.
@@ -122,7 +122,7 @@ config.tx_ja_replacer {
         </li>
       </ul>
 
-      <p class="mt-4 text-[#73737F]">
+      <p class="mt-4 text-[#73737F] text-[13px] md:text-[1rem]">
         KeyCDN also offers many additional features and provides a list of
         useful tools to do everything from site speed tests to HTTP/2 server
         checks, and much more.
@@ -149,5 +149,11 @@ ol {
   list-style-type: decimal;
   padding-left: 1.25rem;
   margin-top: 1rem;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-all;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <section
-    class="container mx-auto px-[57.5px] md:px-12 lg:px-24 pt-[6.25rem] md:pt-[7.625rem]"
+    class="container mx-auto px-[57.5px] lg:px-[25px] xl:px-0 pt-[6.25rem] md:pt-[7.625rem]"
     style="background: #f7f7f8"
   >
     <div class="max-w-6xl mx-auto">
@@ -25,7 +25,7 @@
 
         <!-- Subtitle -->
         <p
-          class="text-center text-[14px] md:text-[1rem] text-sm md:text-base max-w-2xl mx-auto"
+          class="text-center text-[14px] lg:text-[1rem]  max-w-2xl mx-auto"
           style="
             font-family: 'Inter', sans-serif;
             font-weight: 400;
@@ -86,8 +86,6 @@
           <h3
             class="mb-2 sm:mb-3"
             style="
-              width: 256px;
-              height: 32px;
               font-family: 'Funnel Display', sans-serif;
               font-weight: 500;
               font-size: 24px;
@@ -100,13 +98,10 @@
 
           <!-- Description -->
           <p
-            class="mb-[24px]"
+            class="mb-[24px] text-[13px] max-w-[304px] w-full"
             style="
-              width: 304px;
-              height: 40px;
               font-family: 'Inter', sans-serif;
               font-weight: 400;
-              font-size: 13px;
               line-height: 20px;
               color: #73737f;
             "

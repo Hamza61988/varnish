@@ -8,10 +8,10 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
       <div class="flex flex-col mb-4 gap-6">
         <div class="flex items-start flex-col gap-4">
           <div class="flex flex-col gap-2">
-            <h1 class="text-[3rem] font-medium text-[#111827]">
+            <h1 class="text-[2rem] md:text-5xl font-semibold mt-2 mb-4">
               IP Location Finder
             </h1>
-            <p class="text-[15px] text-[#73737F] leading-relaxed">
+            <p class="text-[13px] md:text-[1rem] text-[#73737F] leading-relaxed">
               IP lookup or IP address lookup with detailed IP geolocation data
             </p>
           </div>
@@ -116,7 +116,7 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
                 <h2 class="text-[1.25rem] font-bold text-gray-900 mb-[0.75rem]">
                   What is IP Geolocation?
                 </h2>
-                <p class="text-[1rem] leading-[1.6]">
+                <p class="text-[13px] md:text-[1rem] leading-[1.6]">
                   IP geolocation is the mapping of an IP address to the
                   geographic location of the internet from the connected device.
                   By geographically mapping the IP address, it provides you with
@@ -130,7 +130,7 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
                 <h2 class="text-[1.25rem] font-bold text-gray-900 mb-[0.75rem]">
                   How does the IP lookup work?
                 </h2>
-                <p class="text-[1rem] leading-[1.6] mb-[1rem]">
+                <p class="text-[13px] md:text-[1rem] leading-[1.6] mb-[1rem]">
                   <a
                     href="#"
                     class="underline decoration-dotted text-gray-800 hover:text-blue-600"
@@ -142,7 +142,7 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
                   submitted and then those IPs are assigned to the requested
                   ISP.
                 </p>
-                <p class="text-[1rem] leading-[1.6]">
+                <p class="text-[13px] md:text-[1rem] leading-[1.6]">
                   The IP geolocation data gets updated automatically based on
                   the databases of the regional Internet registry (RIR).
                   <span class="font-bold text-gray-800"
@@ -157,7 +157,7 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
                 <h2 class="text-[1.25rem] font-bold text-gray-900 mb-[0.75rem]">
                   How accurate is IP Geolocation?
                 </h2>
-                <p class="text-[1rem] leading-[1.6]">
+                <p class="text-[13px] md:text-[1rem] leading-[1.6]">
                   There are many different IP location databases in which you
                   can pull from. Most vendors claim a 98% or higher accuracy. IP
                   mapping to specific cities can sometimes vary slightly based
@@ -169,7 +169,7 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
                 <h2 class="text-[1.25rem] font-bold text-gray-900 mb-[0.75rem]">
                   Does it support IPv6 location lookups?
                 </h2>
-                <p class="text-[1rem] leading-[1.6]">
+                <p class="text-[13px] md:text-[1rem] leading-[1.6]">
                   Yes, IPv6 geoaction is supported as well. Just enter a valid
                   address above to perform the IPv6 lookup.
                 </p>
@@ -183,19 +183,19 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
             IP Location Finder API
           </h1>
 
-          <p class="text-[1rem] leading-[1.6] mb-[1.5rem]">
+          <p class="text-[13px] md:text-[1rem] leading-[1.6] mb-[1.5rem]">
             Get the IP geolocation data through the simple REST API. All the
             responses are JSON encoded. We are rate limiting requests (3r/s) to
             avoid overload of the system.
           </p>
 
-          <p class="text-[1rem] leading-[1.6] mb-[1.5rem]">
+          <p class="text-[13px] md:text-[1rem] leading-[1.6] mb-[1.5rem]">
             Please note that the use of this service requires a link back in
             your project: [IP Location Finder by
             KeyCDN](https://tools.keycdn.com/geo)
           </p>
 
-          <p class="text-[1rem] leading-[1.6] mb-[2rem]">
+          <p class="text-[13px] md:text-[1rem] leading-[1.6] mb-[2rem]">
             It is required to set the request header User-Agent in the format
             keycdn-tools:https://.*, which must include the website you are
             using the API for. Missing attributions or invalid values will be

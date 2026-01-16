@@ -5,8 +5,8 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
 <template>
   <div class="min-h-screen text-[#1f2937]">
     <div class="max-w-3xl mx-auto">
-      <h1 class="text-[3rem] font-medium text-[#111827]">Hex Converter</h1>
-      <h2 class="text-[#73737F] font-medium uppercase tracking-wide mb-4">
+      <h1 class="text-[2rem] md:text-5xl font-semibold mt-2 mb-4">Hex Converter</h1>
+      <h2 class="text-[#73737F] md:text-[1rem] mt-4 text-[14px] max-w-2xl mb-4">
         Convert hexadecimal and decimal
       </h2>
       <div
@@ -48,7 +48,7 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
           <h3 class="text-[1.5625rem] font-semibold text-[#1f2937] mb-3">
             What is the Hex System?
           </h3>
-          <p class="text-[15px]">
+          <p class="text-[13px] md:text-[1rem]">
             The hex system, or <a class="underline">hexadecimal</a>, is a number
             system of base 16. Because the decimal system only has 10 digits,
             the extra 6 digits are represented by the first 6 letters in the
@@ -62,7 +62,7 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
           <h3 class="text-[1.5625rem] font-semibold text-[#1f2937] mb-3">
             Hex Converter Results
           </h3>
-          <p class="text-[15px]">
+          <p class="text-[13px] md:text-[1rem]">
             The online hex converter tool allows you to instantly convert a
             <a></a>hex to decimal <a></a>value as well as a <a></a>decimal to
             hex <a></a>value. It also outputs the conversion to binary.
@@ -73,7 +73,7 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
         <h3 class="text-[1.5625rem] font-semibold text-[#111827] mb-4">
           What is the Decimal System?
         </h3>
-        <p class="text-[15px] w-[400px] text-[#73737F] leading-relaxed mb-6">
+        <p class="text-[13px] md:text-[1rem] w-[400px] text-[#73737F] leading-relaxed mb-6">
           The decimal system, is one of the oldest and most commonly used
           numbers systems today. It is also known as <a></a>base 10 numbering
           <a></a>since it is based on 10 single digits: 0,1,2,3,4,5,6,7,8,9. For

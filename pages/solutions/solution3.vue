@@ -8,8 +8,8 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
     <div class="mb-4">
 <SectionsUpername name="Solutions" />    </div>
     
-    <h1 class="text-5xl font-medium mt-2 text-[#1A1925]">Video CDN</h1>
-    <p class="text-[#73737F] mt-4 max-w-2xl text-lg">
+    <h1 class="text-[2rem] md:text-5xl font-semibold mt-2">Video CDN</h1>
+    <p class="text-[#73737F] md:text-[1rem]  mt-4 text-[14px]  max-w-2xl">
       We offer an affordable way to deliver high resolution videos without delay.
     </p>
 
@@ -46,8 +46,8 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
 
           </div>
           <div>
-            <h2 class="text-[1.125rem] font-semibold text-gray-900 mb-1">Global network</h2>
-            <p class="text-[#73737F]  leading-relaxed">
+            <h2 class="text-[1.125rem] font-semibold text-[#1a1925]">Global network</h2>
+            <p class="text-[#73737F]   mt-1 text-sm leading-relaxed">
               We have 60+ data centers in 40+ countries spread across 6 continents.
             </p>
           </div>
@@ -88,8 +88,8 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
 
           </div>
           <div>
-            <h2 class="text-[1.125rem] font-semibold text-gray-900 mb-1">Smooth playback</h2>
-            <p class="text-[#73737F]  leading-relaxed">
+            <h2 class="text-[1.125rem] font-semibold text-[#1a1925]">Smooth playback</h2>
+            <p class="text-[#73737F]   mt-1 text-sm leading-relaxed">
               Optimized for all types of video and HTTP live streaming to prevent interruptions.
             </p>
           </div>
@@ -102,8 +102,8 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
 </svg>
           </div>
           <div>
-            <h2 class="text-[1.125rem] font-semibold text-gray-900 mb-1">Safeguard content</h2>
-            <p class="text-[#73737F]  leading-relaxed">
+            <h2 class="text-[1.125rem] font-semibold text-[#1a1925]">Safeguard content</h2>
+            <p class="text-[#73737F]   mt-1 text-sm leading-relaxed">
               Hotlink protection and token authentication keeps content private and secure.
             </p>
           </div>
@@ -121,8 +121,8 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
 </svg>
           </div>
           <div>
-            <h2 class="text-[1.125rem] font-semibold text-gray-900 mb-1">Low pricing</h2>
-            <p class="text-[#73737F]  leading-relaxed">
+            <h2 class="text-[1.125rem] font-semibold text-[#1a1925]">Low pricing</h2>
+            <p class="text-[#73737F]   mt-1 text-sm leading-relaxed">
               Benefit from pay as you go billing and volume pricing as low as $0.01/GB.
             </p>
           </div>
@@ -135,8 +135,8 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
 </svg>
           </div>
           <div>
-            <h2 class="text-[1.125rem] font-semibold text-gray-900 mb-1">Fast platform</h2>
-            <p class="text-[#73737F]  leading-relaxed">
+            <h2 class="text-[1.125rem] font-semibold text-[#1a1925]">Fast platform</h2>
+            <p class="text-[#73737F]   mt-1 text-sm leading-relaxed">
               Configuration updates only take a few minutes to be deployed across the globe.
             </p>
           </div>
@@ -149,8 +149,8 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
 </svg>
           </div>
           <div>
-            <h2 class="text-[1.125rem] font-semibold text-gray-900 mb-1">No commitment</h2>
-            <p class="text-[#73737F]  leading-relaxed">
+            <h2 class="text-[1.125rem] font-semibold text-[#1a1925]">No commitment</h2>
+            <p class="text-[#73737F]   mt-1 text-sm leading-relaxed">
               No contract required, allowing traffic volume to scale up or down at any time.
             </p>
           </div>

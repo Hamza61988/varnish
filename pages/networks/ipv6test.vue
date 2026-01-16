@@ -9,10 +9,10 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
      
     
 
-      <h1 class="text-[3rem] font-medium text-[#111827] mb-4">
+      <h1 class="text-[2rem] md:text-5xl font-semibold mt-2 mb-4">
         Ping IPv6 Test
       </h1>
-      <h2 class="text-[#73737F] font-medium uppercase tracking-wide mb-4">
+      <h2 class="text-[#73737F] md:text-[1rem] mt-4 text-[14px] max-w-2xl mb-4">
        IPv6 or hostname ping
       </h2>
 
@@ -51,7 +51,7 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
             <h3 class="text-[1.5625rem] font-semibold text-[#1f2937] mb-3">
               Using the IPv6 Ping Test
             </h3>
-            <p class="text-[15px] mb-4">
+            <p class="text-[13px] md:text-[1rem] mb-4">
               The IPv6 Ping test is very similar to our
               <span class="underline ">Ping Test tool</span>
               but in this case it allows you to ping an IPv6 host or IP simultaneously from
@@ -59,7 +59,7 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
               <span class="underline ">latency</span>.
               The tool sends out ICMP packets to an address to see how fast the response is. A faster ping means a more responsive connection.
             </p>
-            <p class="text-[15px]">
+            <p class="text-[13px] md:text-[1rem]">
               Example of an IPv6 address: ipv6.google.com
             </p>
           </div>
@@ -81,7 +81,7 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
             <h3 class="text-[1.5625rem] font-semibold text-[#1f2937] mb-3">
               What is IPv6?
             </h3>
-            <p class="text-[15px]">
+            <p class="text-[13px] md:text-[1rem]">
               <span class="underline ">IPv6</span>
               is the latest internet protocol designed to replace IPv4 due to
               the network shortage of addresses. IPv6 addresses are 128 bits (16

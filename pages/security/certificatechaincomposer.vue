@@ -5,10 +5,10 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
 <template>
   <div class="min-h-screen text-[#1f2937]">
     <div class="max-w-3xl mx-auto">
-      <h1 class="text-[3rem] font-medium text-[#111827]">
+      <h1 class="text-[2rem] md:text-5xl font-semibold mt-2 mb-4">
         Certificate Chain composer
       </h1>
-      <h2 class="text-[#73737F] font-medium uppercase tracking-wide mb-4">
+      <h2 class="text-[#73737F] md:text-[1rem] mt-4 text-[14px] max-w-2xl mb-4">
         Generate intermediate certificate
       </h2>
 
@@ -41,7 +41,7 @@ Certificate
           <h3 class="text-[1.5625rem] font-semibold text-[#1f2937] mb-3">
             Get Your Certificate Chain
           </h3>
-          <p class="text-[15px]">
+          <p class="text-[13px] md:text-[1rem]">
             If you have missing chain certificates or don't know what they are,
             you can use the certificate chain composer tool above to fetch them.
             Simply paste in the contents of your .crt file and it will return
@@ -54,7 +54,7 @@ Certificate
           <h3 class="text-[1.5625rem] font-semibold text-[#1f2937]">
             What is a Certificate Chain?
           </h3>
-          <p class="text-[15px] mb-6">
+          <p class="text-[13px] md:text-[1rem] mb-6">
             The list of SSL certificates, from the root certificate to the
             end-user certificate, represents a SSL certificate chain, or
             intermediate certificate. These must be installed to a web server

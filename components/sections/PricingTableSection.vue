@@ -1,9 +1,9 @@
 <template>
-  <section class="mx-auto py-2 sm:py-4 md:py-6 lg:pt-10 bg-[#F7F7F8]">
+  <section class="mx-auto  md:pt-[6.25rem]  px-[57.5px] lg:px-0  bg-[#F7F7F8]">
     <div>
       <!-- Pricing Header -->
-      <div class="mb-[24px] md:mb-[48px]  px-[57.5px] md:px-0">
-        <div class="mb-3 sm:mb-4 flex justify-start items-start">
+      <div class="mb-[24px] md:mb-[48px] ">
+        <div class=" flex justify-start items-start">
 <SectionsUpername name="Pricing" />
         </div>
         <div
@@ -49,7 +49,7 @@
 
       <!-- Two Separate Tables: Region Table and Pricing Table -->
       <!-- Mobile/Tablet: Cards for each tier -->
-      <div class="lg:hidden space-y-4 px-[57.5px] md:px-0 mb-[24px-] ">
+      <div class="lg:hidden space-y-4 mb-[24px-] ">
         <div
           v-for="(heading, headingIndex) in headings"
           :key="headingIndex"

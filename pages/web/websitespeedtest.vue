@@ -5,10 +5,10 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
 <template>
   <div class="min-h-screen text-[#1f2937]">
     <div class="max-w-3xl mx-auto">
-      <h1 class="text-[3rem] font-medium text-[#111827] mb-4">
+      <h1 class="text-[2rem] md:text-5xl font-semibold mt-2 mb-4">
         Website Speed Test
       </h1>
-      <h2 class="text-[#73737F] uppercase tracking-wide mb-4">
+      <h2 class="text-[#73737F] md:text-[1rem] mt-4 text-[14px] max-w-2xl mb-4">
         Full page speed test
       </h2>
 
@@ -70,7 +70,7 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
             <h3 class="text-[1.5625rem] font-semibold text-[#1f2937] mb-3">
               What is the Website Speed Test tool?
             </h3>
-            <p class="text-[15px] mb-4">
+            <p class="text-[13px] md:text-[1rem] mb-4">
               The Website Speed Test tool is a full page speed test that can be
               performed from 10 different locations around the world. It allows
               the performance of any HTML page to be tested and measured. The
@@ -78,7 +78,7 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
               size, and loading time. In addition there is a complete waterfall
               that details the timings and HTTP headers of each asset.
             </p>
-            <p class="text-[15px]">
+            <p class="text-[13px] md:text-[1rem]">
               The Website Speed Test tool can be used to evaluate the
               performance of your website to see where improvements can be made.
               Consider adding KeyCDN to your stack to significantly reduce the

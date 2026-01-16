@@ -5,9 +5,9 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
 <template>
   <div class="mt-[4.25rem] mx-auto max-w-3xl">
     <div class="w-full">
-      <h1 class="text-5xl font-medium mt-4">WordPress CDN Integration</h1>
+      <h1 class="text-[2rem] md:text-5xl font-medium mt-4">WordPress CDN Integration</h1>
 
-      <p class="text-[#73737F] mt-4">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem] mt-4">
         This tutorial shows how to integrate a WordPress website with KeyCDN
         using our CDN <span class="underline">Enabler</span> plugin.
       </p>
@@ -15,7 +15,7 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
 
     <div class="">
       <div class="pl-8">
-        <ol class="text-[#73737F] flex flex-col gap-4">
+        <ol class="text-[#73737F] text-[13px] md:text-[1rem] flex flex-col gap-4">
           <li class="mt-3">Create a <a class="underline">Pull Zone</a>.</li>
           <li class="mt-3">Log in to your WordPress admin dashboard.</li>
           <li class="mt-3">Go to the CDN Enabler settings.</li>
@@ -30,14 +30,14 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
         </ol>
       </div>
 
-      <p class="text-[#73737F] mt-4">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem] mt-4">
         That's it! We recommend verifying that the URLs have been rewritten
         properly, which can be done by checking the HTML in the page source or
         by running a <a class="underline"> Website Speed Test</a>.
       </p>
 
       <div
-        class="bg-[#FEF9D8] mt-4 text-[#73737F] border py-5 rounded-2xl px-10"
+        class="bg-[#FEF9D8] mt-4 text-[#73737F] text-[13px] md:text-[1rem] border py-5 rounded-2xl px-10"
       >
         <h1 class="">
           <span class="font-bold">Note:</span> CDN Enabler will only rewrite
@@ -46,14 +46,14 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
         </h1>
       </div>
 
-      <p class="text-[#73737F] mt-4">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem] mt-4">
         To have the ability to purge the CDN cache from your WordPress website,
         either from the admin bar or <a href="underline">WP-CLI</a> , connect
         your KeyCDN account with your API key and Zone ID. The API key and Zone
         ID can be obtained from the KeyCDN dashboard.
       </p>
 
-      <p class="text-[#73737F] mt-4">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem] mt-4">
         For more information about this plugin, like the available settings and
         hooks, please read the
         <a class="underline">CDN Enabler documentation</a>.
@@ -63,9 +63,9 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
     <hr class="border-[#8D8D9738]/22 border-[1px] mt-4" />
 
     <div class="my-4">
-      <h2 class="text-[2rem] font-semibold">WordPress CDN Enabler Plugin</h2>
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">WordPress CDN Enabler Plugin</h2>
 
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         The WordPress CDN Enabler plugin is a content delivery network (CDN)
         integration plugin that rewrites URLs, such as those serving CSS,
         JavaScript, and images, to be served by a CDN. It supports including

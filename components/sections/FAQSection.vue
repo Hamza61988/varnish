@@ -1,6 +1,6 @@
 <template>
   <section id="faq" class="mx-auto" style="margin: 15% 0%">
-    <div class="px-[57.5px]  md:px-0">
+    <div class="px-[57.5px]  lg:px-0">
       <!-- FAQ Header -->
       <div class="text-center mb-8 md:mb-12">
         <div class="flex justify-center mb-2">

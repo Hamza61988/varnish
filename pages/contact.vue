@@ -10,7 +10,7 @@
       "
     ></div>
 
-    <div class="max-w-2xl mx-auto md:px-[2.3547rem] px-[1.125rem] lg:px-0 py-16 relative z-10">
+    <div class="max-w-2xl mx-auto md:px-[2.3547rem] px-[57px] lg:px-0 py-16 relative z-10">
       
       <div class="text-center mb-12 flex flex-col items-center gap-4">
 <SectionsUpername name="Contact" />

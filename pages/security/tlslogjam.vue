@@ -8,8 +8,8 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
     <div class="max-w-3xl mx-auto">
       
      
-      <h1 class="text-[3rem] font-medium text-[#111827]">TLS Logjam Test</h1>
-      <h2 class="text-[#73737F] font-medium uppercase tracking-wide mb-4">
+      <h1 class="text-[2rem] md:text-5xl font-semibold mt-2 mb-4">TLS Logjam Test</h1>
+      <h2 class="text-[#73737F] md:text-[1rem] mt-4 text-[14px] max-w-2xl mb-4">
         CVE-2015-4000
       </h2>
       <div
@@ -51,7 +51,7 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
           <h3 class="text-[1.5625rem] font-semibold text-[#1f2937] mb-3">
             What is the Logjam TLS attack?
           </h3>
-          <p class="text-[15px]">
+          <p class="text-[13px] md:text-[1rem]">
             The Logjam attack (CVE-2015-4000) is against the TLS Protocol. That
             means it affects services that are using TLS. The attack gives a
             man-in-the-middle attacker the possibility to downgrade weak TLS
@@ -74,7 +74,7 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
           <h3 class="text-[1.5625rem] font-semibold text-[#1f2937] mb-3">
             How to eliminate Logjam vulnerability?
           </h3>
-          <p class="text-[15px] mb-6">
+          <p class="text-[13px] md:text-[1rem] mb-6">
             Remove the weak ciphers from the accepted cipher list. This need to
             be done for each service that uses TLS (e.g. Apache, nginx,
             lighttpd, postfix, dovecot, sendmail, Microsoft IIS, etc). Detailed
@@ -109,7 +109,11 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
     </div>
   </div>
  
- <AccessAllFeaturesSection />
+ <ClientOnly>
+    <Teleport to="#full-width-section">
+      <AccessAllFeaturesSection class="" />
+    </Teleport>
+  </ClientOnly>
 
 
 </template>

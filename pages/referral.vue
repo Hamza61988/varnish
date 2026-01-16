@@ -1,7 +1,7 @@
 <template>
   <div
-    class="min-h-screen relative overflow-hidden"
-    style="background: #ffffff"
+    class="min-h-screen pt-10  relative overflow-hidden"
+
   >
     <main>
       <section
@@ -11,7 +11,7 @@
         <!-- Section Label -->
         <div
           class="flex items-center justify-start lg:justify-center"
-          style="margin-bottom: 24px"
+          
         >
 <SectionsUpername name="Referral" />
         </div>

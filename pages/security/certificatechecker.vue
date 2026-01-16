@@ -5,8 +5,8 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
 <template>
   <div class="min-h-screen text-[#1f2937]">
     <div class="max-w-3xl mx-auto">
-      <h1 class="text-[3rem] font-medium text-[#111827]">Certificate Chain</h1>
-      <h2 class="text-[#73737F] font-medium uppercase tracking-wide mb-4">
+      <h1 class="text-[2rem] md:text-5xl font-semibold mt-2 mb-4">Certificate Chain</h1>
+      <h2 class="text-[#73737F] md:text-[1rem] mt-4 text-[14px] max-w-2xl mb-4">
         Certificate decoder
       </h2>
 
@@ -42,7 +42,7 @@ Intermediate certificate
           <h3 class="text-[1.5625rem] font-semibold text-[#1f2937] mb-3">
             What are Intermediate Certificates?
           </h3>
-          <p class="text-[15px]">
+          <p class="text-[13px] md:text-[1rem]">
             The list of SSL certificates, from the root certificate to the
             end-user certificate, represents an SSL certificate chain, or
             intermediate certificate. These must be installed to a web server
@@ -60,7 +60,7 @@ Intermediate certificate
           <h3 class="text-[1.5625rem] font-semibold text-[#1f2937]">
             Missing Intermediate SSL certificate?
           </h3>
-          <p class="text-[15px] mb-6">
+          <p class="text-[13px] md:text-[1rem] mb-6">
             If you don't install an intermediate SSL certificate web browsers
             will display an "Invalid certificate" or "certificate not trusted"
             error. You can use our

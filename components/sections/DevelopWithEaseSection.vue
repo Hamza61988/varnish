@@ -1,6 +1,6 @@
 <template>
   <section
-    class="container mx-auto px-[57.5px] md:px-12 lg:px-24 pt-[7.5rem]"
+    class="container mx-auto px-[57.5px] lg:px-[25px] xl:px-0 pt-[7.5rem]"
     style="background: #f7f7f8; overflow-x: hidden"
   >
     <div class="max-w-6xl mx-auto">

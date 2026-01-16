@@ -6,11 +6,11 @@
     ></div>
 
     <!-- Main Content -->
-    <main class="w-full mx-auto flex flex-col max-w-[950px] mt-[4.25rem] px-[3.5938rem] md:px-0">
+    <main class="w-full mx-auto flex flex-col max-w-[950px] mt-[4.25rem] px-[3.5938rem] lg:px-0">
       <!-- Careers Section -->
       <section class="w-full max-w-6xl mx-auto">
         <!-- Section Label -->
-        <div class="flex items-center justify-start sm:justify-center mb-4 sm:mb-6">
+        <div class="flex items-center justify-start sm:justify-center ">
 <SectionsUpername name="Careers" />
         </div>
 
@@ -181,13 +181,13 @@ letter-spacing: -0.6%;
   </div>
 </section>
         <!-- Job Listing Section -->
-        <div class="mb-12 sm:mb-16 md:mb-20">
+        <div class="mb-12 sm:mb-16 md:mb-[300px]">
           <!-- Job Content - Single Box -->
           <div class="rounded-[20px] border mt-[3.125rem] md:mt-[3.625rem] border-[#eeeef0] bg-white">
             <!-- Job Title Header -->
             <button
               @click="toggleJobListing"
-              class="w-full flex items-center justify-between pb-4 mb-4 cursor-pointer bg-transparent border-none text-left border-b border-[#eeeef0] p-6"
+              class="w-full flex items-center  justify-between pb-4 mb-4 cursor-pointer bg-transparent border-none text-left border-b border-[#eeeef0] p-6"
             >
               <h2
                 class="font-['Inter'] font-normal text-[0.9375rem] md:text-[1rem] leading-[26px] tracking-[-0.006em] text-[#73737f]"
@@ -215,14 +215,15 @@ letter-spacing: -0.6%;
             </button>
 
             
-             <hr    v-show="isJobListingOpen" class="bg-[eeeef0] mx-auto max-w-[850px]"/>
-
-
-            <!-- Job Content -->
-            <div
-              v-show="isJobListingOpen"
-              class="space-y-6 p-6"
+            <div 
+              class="grid transition-all duration-300 ease-in-out"
+              :class="isJobListingOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
             >
+              <div class="overflow-hidden">
+                <hr class="bg-[eeeef0] mx-auto max-w-[850px]"/>
+
+                <!-- Job Content -->
+                <div class="space-y-6 p-6">
               <!-- Introductory Paragraph -->
               <p
                 class="font-['Inter'] font-normal  text-[0.8125rem] md:text-base leading-[26px] tracking-[-0.006em] text-black"
@@ -324,7 +325,9 @@ letter-spacing: -0.6%;
                 >
                   No recruiters or agencies.
                 </p>
-              </div>
+                </div>
+            </div>
+          </div>
             </div>
           </div>
         </div>

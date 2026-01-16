@@ -5,8 +5,8 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
 <template>
   <div class="min-h-screen text-[#1f2937]">
     <div class="max-w-3xl mx-auto">
-      <h1 class="text-[3rem] font-medium text-[#111827]">Epoch Converter</h1>
-      <h2 class="text-[#73737F] font-medium uppercase tracking-wide mb-6">
+      <h1 class="text-[2rem] md:text-5xl font-semibold mt-2 mb-4">Epoch Converter</h1>
+      <h2 class="text-[#73737F] md:text-[1rem] mt-4 text-[14px] max-w-2xl mb-6">
         UNIX EPOCH TIME CONVERTER
       </h2>
       <div
@@ -115,7 +115,7 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
           <h3 class="text-[1.5625rem] font-semibold text-[#1f2937] mb-3">
             What is Epoch Time?
           </h3>
-          <p class="text-[15px]">
+          <p class="text-[13px] md:text-[1rem]">
             Epoch time, also known as <a class="underline">Unix time</a> or
             POSIX time, is the amount of time in seconds that has elapsed since
             January 1st, 1970 (00:00:00 UTC). It is important to note that this
@@ -130,7 +130,7 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
           <h3 class="text-[1.5625rem] font-semibold text-[#1f2937] mb-3">
             UNIX Epoch Timestamp
           </h3>
-          <p class="text-[15px]">
+          <p class="text-[13px] md:text-[1rem]">
             The purpose of the online Epoch time converter is to output the
             <span class="font-bold"
               >UNIX Epoch timestamp into a human readable date/time</span

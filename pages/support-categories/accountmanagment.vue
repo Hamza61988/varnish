@@ -4,8 +4,8 @@
     <div class="relative flex flex-col gap-[45px] z-10">
       
       <section class="">
-        <h2 class="font-semibold text-[#1A1925] text-[18.08px] mb-1">Account Access Rules</h2>
-        <p  style="font-family: inter;" class="text-[#73737F] md:text-sm text-[13px] leading-relaxed">
+        <h2 class="font-semibold text-[#1A1925] text-[18px] md:text-[20px] mb-1">Account Access Rules</h2>
+        <p  style="font-family: inter;" class="text-[#73737F] text-[13px] md:text-[1rem] leading-relaxed">
           KeyCDN offers the ability to add account access rules in order to restrict access based on IP address
           or network. This helps increase security by allowing only the users with the specific IP address or
           network defined in your settings to access your...
@@ -13,8 +13,8 @@
       </section>
 
       <section class="">
-        <h2 class="font-semibold text-[#1A1925] text-[18.08px] mb-1">Enabling Two-Factor Authentication</h2>
-        <p  style="font-family: inter;" class="text-[#73737F] md:text-sm text-[13px] leading-relaxed">
+        <h2 class="font-semibold text-[#1A1925] text-[18px] md:text-[20px] mb-1">Enabling Two-Factor Authentication</h2>
+        <p  style="font-family: inter;" class="text-[#73737F] text-[13px] md:text-[1rem] leading-relaxed">
           Two-factor authentication helps improve account security by requiring the user to provide two forms
           of authentication in order to log in. This increases the difficulty for an attacker to compromise an
           account since even if they obtain a password they...
@@ -22,8 +22,8 @@
       </section>
 
       <section class="">
-        <h2 class="font-semibold text-[#1A1925] text-[18.08px] mb-1">Account Notifications</h2>
-        <p  style="font-family: inter;" class="text-[#73737F] md:text-sm text-[13px] leading-relaxed">
+        <h2 class="font-semibold text-[#1A1925] text-[18px] md:text-[20px] mb-1">Account Notifications</h2>
+        <p  style="font-family: inter;" class="text-[#73737F] text-[13px] md:text-[1rem] leading-relaxed">
           Account notifications can be enabled through the KeyCDN dashboard to alert the account owner of
           successful login or an Origin URL change. The login notification sends an email to the account owner
           with information such as the username, login time...
@@ -31,8 +31,8 @@
       </section>
 
       <section class="">
-        <h2 class="font-semibold text-[#1A1925] text-[18.08px] mb-1">Credit System Explained</h2>
-        <p  style="font-family: inter;" class="text-[#73737F] md:text-sm text-[13px] leading-relaxed">
+        <h2 class="font-semibold text-[#1A1925] text-[18px] md:text-[20px] mb-1">Credit System Explained</h2>
+        <p  style="font-family: inter;" class="text-[#73737F] text-[13px] md:text-[1rem] leading-relaxed">
           This guide will walk you through everything you need to know about KeyCDN's credit system. What is
           a KeyCDN credit? 1 KeyCDN credit equals 1 USD. KeyCDN credits can be used for a few different
           purposes. Most commonly, KeyCDN customers will purchase...
@@ -40,8 +40,8 @@
       </section>
 
       <section class="">
-        <h2 class="font-semibold text-[#1A1925] text-[18.08px] mb-1">Invoicing</h2>
-        <p  style="font-family: inter;" class="text-[#73737F] md:text-sm text-[13px] leading-relaxed">
+        <h2 class="font-semibold text-[#1A1925] text-[18px] md:text-[20px] mb-1">Invoicing</h2>
+        <p  style="font-family: inter;" class="text-[#73737F] text-[13px] md:text-[1rem] leading-relaxed">
           Keeping track of your invoices can be vital for both businesses and individuals. To receive your
           invoices you have a three different options, each of these are explained in more details below. 1.
           Automatic email invoicing If you want to receive...
