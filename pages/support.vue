@@ -11,7 +11,7 @@
       "></div>
 
     <!-- Main Content -->
-    <main class="w-full mx-auto px-[57.5px]  md:px-0 py-12 sm:py-16 md:py-20 lg:py-24 relative z-10">
+    <main class="w-full mx-auto px-[57.5px]  lg:px-4 xl:px-0 py-12 sm:py-16 md:py-20 lg:py-24 relative z-10">
       <!-- Support Section -->
       <section class="w-full max-w-6xl mx-auto px-0">
         <!-- Section Label -->

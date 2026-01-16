@@ -1,6 +1,6 @@
 <template>
   <section
-    class="container mx-auto px-0 sm:px-6 md:px-12 lg:px-24 pt-[0.25rem] md:pt-[100pt]"
+    class="container mx-auto px-[57.5px] lg:px-[25px] xl:px-0 pt-[0.25rem] md:pt-[100pt]"
     style="background: #f7f7f8"
   >
     <div class="max-w-6xl mx-auto">
@@ -36,7 +36,7 @@
         </p>
       </div>
 
-      <div class="flex md:px-0 px-[57.5px] flex-col lg:flex-row gap-8 lg:gap-4" style="width: 100%">
+      <div class="flex lg:px-0  flex-col lg:flex-row gap-8 lg:gap-4" style="width: 100%">
         <div class="flex flex-col w-full lg:w-[60%] order-2 lg:order-1">
           <div
             class="mb-4 sm:mb-6 overflow-hidden flex items-center justify-center"

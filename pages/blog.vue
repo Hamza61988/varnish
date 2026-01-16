@@ -9,7 +9,9 @@
         class="w-full md:w-3/4 lg:w-2/3 xl:w-1/2 mx-auto px-4 sm:px-6 md:px-0 mb-12 sm:mb-16 md:mb-20"
       >
         <!-- Section Label -->
+         <div class="flex items-center justify-center">
         <SectionsUpername name="Blog" />
+        </div>
 
         <!-- Title -->
         <h1
@@ -49,14 +51,14 @@
 
       <!-- Blog Posts Section -->
       <section class="w-full max-w-4xl mx-auto px-4 sm:px-6 md:px-0">
-        <div class="flex flex-col gap-[40px]">
+        <div class="flex rounded flex-col gap-[40px]">
           <!-- Blog Post Card 1 -->
           <div
             class="overflow-hidden"
             style="
               height: 503px;
               background: #ffffff;
-              border: 1px solid rgba(0, 0, 0, 0.25);
+           
               border-bottom-right-radius: 14px;
               border-bottom-left-radius: 14px;
               opacity: 1;
@@ -200,7 +202,7 @@
             style="
               height: 503px;
               background: #ffffff;
-              border: 1px solid rgba(0, 0, 0, 0.25);
+           
               border-bottom-right-radius: 14px;
               border-bottom-left-radius: 14px;
               opacity: 1;
@@ -345,7 +347,7 @@
             style="
               height: 503px;
               background: #ffffff;
-              border: 1px solid rgba(0, 0, 0, 0.25);
+           
               border-bottom-right-radius: 14px;
               border-bottom-left-radius: 14px;
               opacity: 1;

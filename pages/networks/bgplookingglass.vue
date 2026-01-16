@@ -7,16 +7,16 @@
         <div class="flex items-start flex-col gap-4">
       
           <div class="flex flex-col gap-2">
-            <h1 class="text-[3rem] font-medium text-[#111827]">
+            <h1 class="text-[2rem] md:text-5xl font-semibold mt-2 mb-4">
               BGP Looking Glass
             </h1>
-            <h2 class="text-[#73737F] font-medium uppercase tracking-wide">
+            <h2 class="text-[#73737F] md:text-[1rem] mt-4 text-[14px] max-w-2xl mb-4">
               Directory
             </h2>
           </div>
         </div>
 
-        <p class="text-[15px] text-[#73737F] leading-relaxed">
+        <p class="text-[13px] md:text-[1rem] leading-relaxed">
           A comprehensive list of BGP looking glass servers located in various
           geographic regions.
         </p>
@@ -27,7 +27,7 @@
           <h3 class="text-[1.5625rem] font-semibold text-[#1f2937] mb-3">
             What Is BGP Looking Glass?
           </h3>
-          <p class="text-[15px] text-[#73737F] leading-relaxed">
+          <p class="text-[13px] md:text-[1rem] leading-relaxed">
             
             BGP, also known as Border Gateway Protocol, is the routing protocol
             of the Internet. A BGP looking glass tool is software installed on a
@@ -43,7 +43,7 @@
           <h3 class="text-[1.5625rem] font-semibold text-[#1f2937] mb-3">
             How Do I Use BGP Looking Glass?
           </h3>
-          <p class="text-[15px] text-[#73737F] leading-relaxed">
+          <p class="text-[13px] md:text-[1rem] leading-relaxed">
             Many looking glass tools also come with the option to perform a
             traceroute command, ping command, etc. Ensure that you have selected
             the BGP option and enter the IP address you wish to test against in
@@ -59,7 +59,7 @@
           <h3 class="text-[1.5625rem] font-semibold text-[#1f2937] mb-3">
             BGP Looking Glass Directory
           </h3>
-          <p class="text-[15px] text-[#73737F] leading-relaxed">
+          <p class="text-[13px] md:text-[1rem] leading-relaxed">
             The list below is a compilation of BGP looking glass services
             located in various geographic regions that can be used to test BGP
             routing.

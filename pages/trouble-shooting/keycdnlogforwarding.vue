@@ -1,20 +1,20 @@
 <template>
   <div class="mt-[4.25rem] mx-auto max-w-3xl">
     <div class="w-full">
-      <h1 class="text-5xl font-medium mt-4">Key CDN Log Forwarding</h1>
+      <h1 class="text-[2rem] md:text-5xl font-medium mt-4">Key CDN Log Forwarding</h1>
 
-      <p class="text-[#73737F] mt-4">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem] mt-4">
         The raw logs can be received through syslog. Here's how to configure Log
         Forwarding syslog to receive your raw logs in real time:
       </p>
     </div>
 
     <div class="mt-[2.3125rem]">
-      <p class="text-[#73737F] mt-4">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem] mt-4">
         To set up a Push Zone, follow the steps outlined below:
       </p>
 
-      <ol class="flex text-[#73737F] flex-col gap-4 pl-8">
+      <ol class="flex text-[#73737F] text-[13px] md:text-[1rem] flex-col gap-4 pl-8">
         <li>Log in to the KeyCDN dashboard.</li>
         <li>
           In the left navigation sidebar click Account and then Log Forwarding.
@@ -23,18 +23,18 @@
         <li>Click Save.</li>
       </ol>
 
-      <p class="text-[#73737F] mt-4">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem] mt-4">
         It is highly recommended to take advantage of the token feature when
         configuring your syslog settings. Allowed characters are: a-zA-Z0-9-.
       </p>
     </div>
 
     <div class="mt-4 flex flex-col gap-4">
-      <h2 class="text-[2rem] font-semibold">
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">
         Where to send the syslog messages to?
       </h2>
-      <p class="text-[#73737F]">KeyCDN recommends the following options:</p>
-      <ul class="pl-8 gap-4 list-disc flex flex-col text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">KeyCDN recommends the following options:</p>
+      <ul class="pl-8 gap-4 list-disc flex flex-col text-[#73737F] text-[13px] md:text-[1rem]">
         <li>
           Configure your own syslog server. For more details please read
           <a class="underline"> Configure Your Own Syslog Server</a>.
@@ -49,10 +49,10 @@
     <hr class="border-t border-gray-300 my-4 mb-20" />
 
     <div class="mt-4 flex flex-col gap-4 mb-20">
-      <h2 class="text-[2rem] text-[#0E84F7] font-semibold">
+      <h2 class="text-[1.5rem] md:text-[2rem] text-[#0E84F7] font-semibold">
         KeyCDN Log Forwarding
       </h2>
-      <p class="underline text-[#73737F]">
+      <p class="underline text-[#73737F] text-[13px] md:text-[1rem]">
         The log fields are separated by | (pipe). See the example below.
         Timestamp incl. msec (e.g. 1383918771.123) POP (point of presence) IP
         address of the client (e.g. 111.111.111.0 or 2001:be:ef::1) HTTP status
@@ -63,7 +63,7 @@
   <ClientOnly>
     <Teleport to="#full-width-section">
       <svg
-        class="image-processing-bg"
+        class="image-processing-bg hidden md:flex"
         width="691"
         height="202"
         viewBox="0 0 691 202"

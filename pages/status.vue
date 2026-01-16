@@ -22,7 +22,8 @@
         class="w-full md:w-3/4 lg:w-2/3 xl:w-1/2 mx-auto px-4 sm:px-6 md:px-0"
       >
         <!-- Section Label -->
-<SectionsUpername name="Network Status" />
+         <div class="flex items-center justify-center" ><SectionsUpername name="Network Status" /></div>
+
 
         <!-- Title -->
         <h1

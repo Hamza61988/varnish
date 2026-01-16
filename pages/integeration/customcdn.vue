@@ -3,21 +3,21 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
 </script>
 
 <template>
-  <div class="mt-[4.25rem] mx-auto max-w-3xl">
+  <div class="mt-[4.25rem] md:max-w-lg lg:max-w-2xl">
     <div class="w-full flex flex-col gap-4 items-start">
-      <h1 class="text-5xl font-medium">Custom CDN Integration</h1>
+      <h1 class="text-[2rem] md:text-5xl font-medium">Custom CDN Integration</h1>
 
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         This article focuses on how to integrate your website with KeyCDN and
         provide you with a better understanding of how to make use of the CDN.
       </p>
     </div>
 
     <div class="my-4">
-      <h2 class="text-[2rem] font-semibold mt-4">
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold mt-4">
         How to integrate your website with a CDN
       </h2>
-      <p class="text-[#73737F] mt-4">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem] mt-4">
         It is most common to have HTML pages delivered by the origin server and
         offload all static resources, such as CSS, JavaScript, images, and
         videos, to the CDN. In most cases, the static content accounts for 80%
@@ -27,7 +27,7 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
 
       <div class="my-4">
         <div class="pl-8">
-          <ol class="text-[#73737F] list-decimal flex flex-col gap-4">
+          <ol class="text-[#73737F] text-[13px] md:text-[1rem] list-decimal flex flex-col gap-4">
             <li class="">
               Create a <a class="underline">Pull Zone</a> or
               <a class="underline">Push Zone</a> .
@@ -45,7 +45,7 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
         </div>
       </div>
 
-      <div class="bg-[#FEF9D8] text-[#73737F] border py-5 rounded-2xl px-10">
+      <div class="bg-[#FEF9D8] text-[#73737F] text-[13px] md:text-[1rem] border py-5 rounded-2xl px-10">
         <h1 class="">
           <span class="font-bold">Note:</span> Make sure all pages and other
           dynamic content are delivered by the origin server. In most cases the
@@ -54,25 +54,25 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
       </div>
 
       <div class="mt-4">
-        <p class="text-[#73737F] font-bold">Example</p>
+        <p class="text-[#73737F] text-[13px] md:text-[1rem] font-bold">Example</p>
 
-        <p class="text-[#73737F]">Origin URL: https://www.example.com</p>
-        <p class="text-[#73737F]">URL: https://example-hexid.kxcdn.com</p>
+        <p class="text-[#73737F] text-[13px] md:text-[1rem]">Origin URL: https://www.example.com</p>
+        <p class="text-[#73737F] text-[13px] md:text-[1rem]">URL: https://example-hexid.kxcdn.com</p>
       </div>
     </div>
 
     <div class="mt-[2.3125rem]">
-      <p class="text-[#73737F] font-bold">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem] font-bold">
         Before integrating website with CDN:
       </p>
 
       <div class="mt-[2.3125rem]">
-        <p class="text-[#73737F] font-bold">
+        <p class="text-[#73737F] text-[13px] md:text-[1rem] font-bold">
           Before integrating website with CDN:
         </p>
 
         <div
-          class="border border-[#D0D0D8] text-[#73737F] rounded-md p-4 mt-2 overflow-x-auto"
+          class="border border-[#D0D0D8] text-[#73737F] text-[13px] md:text-[1rem] rounded-md p-4 mt-2 overflow-x-auto"
         >
           <pre class="whitespace-pre"><code>
 &lt;html&gt;
@@ -91,12 +91,12 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
       </div>
 
       <div class="mt-[2.3125rem]">
-        <p class="text-[#73737F] font-bold">
+        <p class="text-[#73737F] text-[13px] md:text-[1rem] font-bold">
           After integrating website with CDN:
         </p>
 
         <div
-          class="border border-[#D0D0D8] text-[#73737F] rounded-md p-4 mt-2 overflow-x-auto"
+          class="border border-[#D0D0D8] text-[#73737F] text-[13px] md:text-[1rem] rounded-md p-4 mt-2 overflow-x-auto"
         >
           <pre class="whitespace-pre"><code>
 &lt;html&gt;

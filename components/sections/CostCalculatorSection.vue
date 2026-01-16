@@ -1,5 +1,5 @@
 <template>
-    <div class="px-[57.5px] pt-[6.25rem] md:pt-[5rem]  md:px-0" style="margin-top: 10%;">
+    <div class="px-[57.5px] pt-[6.25rem] md:pt-[5rem]  lg:px-0" style="margin-top: 10%;">
     <div class="text-left lg:text-center mb-6 md:mb-8">
       <div class="flex justify-center mb-2">
 <SectionsUpername name="Calculator" />

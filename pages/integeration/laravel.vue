@@ -4,12 +4,12 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
 </script>
 
 <template>
-  <div class="mt-[4.25rem] mx-auto max-w-3xl">
+  <div class="mt-[4.25rem] mx-auto  md:max-w-lg lg:max-w-3xl ">
     <div class="w-full flex flex-col gap-4 items-start">
 
-      <h1 class="text-5xl font-medium">Laravel CDN Integration</h1>
+      <h1 class="text-[2rem] md:text-5xl font-medium">Laravel CDN Integration</h1>
 
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         The <a class="underline">Laravel CDN</a> integration could be done with either the <a class="underline">CDN Assets
         Manager Package</a>  in combination with an AWS S3 bucket, the <a class="underline">Simple CDN
         Package</a>  or by creating a helper that rewrites the URLs of your static
@@ -20,7 +20,7 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
 
     <div class="my-4">
       <div class="pl-8">
-        <ol class="text-[#73737F] flex flex-col gap-4">
+        <ol class="text-[#73737F] text-[13px] md:text-[1rem] flex flex-col gap-4">
           <li class="">
             Create a <a class="underline">Pull Zone</a>
             before you start the Laravel CDN integration.
@@ -31,7 +31,7 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
           </li>
 
           <div
-            class="w-full border border-[#D0D0D8] text-[#73737F] shadow rounded-xl p-4 "
+            class="w-full border border-[#D0D0D8] text-[#73737F] text-[13px] md:text-[1rem] shadow rounded-xl p-4 "
           >
             <pre><code>
 ...
@@ -91,7 +91,7 @@ function cdnPath($cdn, $asset) {
   </code></pre>
           </div>
 
-          <p class="text-[#73737F]">
+          <p class="text-[#73737F] text-[13px] md:text-[1rem]">
             The standard asset() function will be called if no CDN URLs are
             defined in the ./config/app.php config file.
           </p>
@@ -122,7 +122,7 @@ return [
   </code></pre>
 </div>
 
-  <p class="text-[#73737F]">Example</p>
+  <p class="text-[#73737F] text-[13px] md:text-[1rem]">Example</p>
 
   <img alt="larvel" src="/images/Integeration/larvel.svg"></img>
 
@@ -162,5 +162,10 @@ ol {
   list-style-type: decimal;
   padding-left: 1.25rem;
   margin-top: 1rem;
+}
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-all;
 }
 </style>

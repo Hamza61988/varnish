@@ -1,9 +1,9 @@
 <template>
   <div class="mt-[4.25rem] mx-auto max-w-3xl">
     <div class="w-full flex flex-col items-start gap-4">
-      <h1 class="text-5xl font-medium">CDN Error Codes</h1>
+      <h1 class="text-[2rem] md:text-5xl font-medium">CDN Error Codes</h1>
 
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         Error pages will not be cached, therefore only 200, 301, and 302
         responses will be cached. KeyCDNs error pages show either a black or
         blue error code font color. All other error pages are coming from your
@@ -11,49 +11,49 @@
       </p>
     </div>
     <div class="mt-[2.3125rem] flex flex-col gap-4 mb-20">
-      <h2 class="text-[2rem] font-semibold">400 Bad Request</h2>
-      <p class="text-[#73737F]">
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">400 Bad Request</h2>
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         In most of the cases a malformed HTTP request (e.g. empty requests by
         load balancers / health checks). A certain number is normal. Learn more
         about how to
         <a class="underline">avoid a bad request</a>.
       </p>
 
-      <h2 class="text-[2rem] font-semibold">403 Forbidden</h2>
-      <p class="text-[#73737F]">
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">403 Forbidden</h2>
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         It is prohibited to access the requested asset. A possible reason is a
         wrong URL or the Secure Token is not valid. Learn more about
         <a class="underline">403 Forbidden</a> errors.
       </p>
 
-      <h2 class="text-[2rem] font-semibold">404 Not Found</h2>
-      <p class="text-[#73737F]">
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">404 Not Found</h2>
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         The content either does not exist or has been moved. Learn more about
         <a class="underline">404 Not Found</a> errors.
       </p>
 
-      <h2 class="text-[2rem] font-semibold">405 Method Not Allowed</h2>
-      <p class="text-[#73737F]">
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">405 Method Not Allowed</h2>
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         The method is not allowed. A Push Zone only supports the GET and HEAD
         methods. Learn more about
         <a class="underline">405 Method Not Allowed</a> errors.
       </p>
 
-      <h2 class="text-[2rem] font-semibold">410 Gone</h2>
-      <p class="text-[#73737F]">
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">410 Gone</h2>
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         The <a class="underline">Secure Token</a> has expired.
       </p>
 
-      <h2 class="text-[2rem] font-semibold">
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">
         451 Unavailable For Legal Reasons
       </h2>
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         A <a class="underline">bad bot</a> which is blocked hits a KeyCDN edge
         server.
       </p>
 
-      <h2 class="text-[2rem] font-semibold">500 Origin Error</h2>
-      <p class="text-[#73737F]">
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">500 Origin Error</h2>
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         Our edge server was not able to pull the content from your origin
         server. Either your origin server is not reachable or firewall rules
         prevented the connection. The status code 500 is a generic error
@@ -67,7 +67,7 @@
   <ClientOnly>
     <Teleport to="#full-width-section">
       <svg
-        class="image-processing-bg"
+        class="image-processing-bg hidden md:flex"
         width="691"
         height="202"
         viewBox="0 0 691 202"

@@ -5,8 +5,8 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
 <template>
   <div class="min-h-screen text-[#1f2937]">
     <div class="max-w-3xl mx-auto">
-      <h1 class="text-[3rem] font-medium text-[#111827] mb-4">DNS Checker</h1>
-      <h2 class="text-[#73737F] font-medium uppercase tracking-wide mb-4">
+      <h1 class="text-[2rem] md:text-5xl font-semibold mt-2 mb-4">DNS Checker</h1>
+      <h2 class="text-[#73737F] md:text-[1rem] mt-4 text-[14px] max-w-2xl mb-4">
         IP OR HOSTNAME LOOKUP
       </h2>
       <div class="mb-12">
@@ -99,7 +99,7 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
           <h3 class="text-[1.5625rem] font-semibold text-[#1f2937] mb-3">
             EDNS Client Subnet Check
           </h3>
-          <p class="text-[15px]">
+          <p class="text-[13px] md:text-[1rem]">
             An open IETF standard
             <a href="#" class="underline text-[#73737F]">edns-client-subnet</a>
             was developed in order to better direct content to users and lower
@@ -111,7 +111,7 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
           <h3 class="text-[1.5625rem] font-semibold text-[#1f2937] mb-3">
             What is a DNS?
           </h3>
-          <p class="text-[15px]">
+          <p class="text-[13px] md:text-[1rem]">
             DNS, which stands for
             <a href="#" class="underline text-[#73737F]">domain name system</a>,
             is an Internet service that translates domains names into IP

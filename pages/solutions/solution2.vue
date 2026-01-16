@@ -3,10 +3,10 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
 </script>
 
 <template>
-  <div class="mt-[4.25rem] mx-auto px-6 max-w-[940px]">
+  <div  class="mt-[4.25rem] mx-auto px-[3.5938rem] lg:px-0 max-w-[940px]">
 <SectionsUpername name="Solutions" />
-    <h1 class="text-5xl font-medium mt-2">Image Processing</h1>
-    <p class="text-[#73737F] mt-4 max-w-2xl">
+    <h1 class="text-[2rem] md:text-5xl font-semibold mt-2">Image Processing</h1>
+    <p class="text-[#73737F] md:text-[1rem]  mt-4 text-[14px]  max-w-2xl">
       We offer a powerful way to transform and optimize images in real time.
     </p>
 
@@ -83,8 +83,8 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
             </svg>
           </div>
           <div>
-            <h2 class="text-[18px] font-semibold">Flexible transformations</h2>
-            <p class="text-[#73737F] text-[14px]">
+            <h2 class="text-[1.125rem] font-semibold text-[#1a1925]">Flexible transformations</h2>
+            <p class="text-[#73737F]   mt-1 text-sm leading-relaxed">
               Serve properly scaled images by dynamically updating the width and
               height.
             </p>
@@ -142,8 +142,8 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
             </svg>
           </div>
           <div>
-            <h2 class="text-[18px] font-semibold">Robust optimizations</h2>
-            <p class="text-[#73737F] text-[14px]">
+            <h2 class="text-[1.125rem] font-semibold text-[#1a1925]">Robust optimizations</h2>
+            <p class="text-[#73737F]   mt-1 text-sm leading-relaxed">
               Improve image performance by reducing the overall size and using a
               better format.
             </p>
@@ -221,8 +221,8 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
             </svg>
           </div>
           <div>
-            <h2 class="text-[18px] font-semibold">Swift delivery</h2>
-            <p class="text-[#73737F] text-[14px]">
+            <h2 class="text-[1.125rem] font-semibold text-[#1a1925]">Swift delivery</h2>
+            <p class="text-[#73737F]   mt-1 text-sm leading-relaxed">
               Increase image speed by being distributed globally through our 60+
               data centers.
             </p>
@@ -310,8 +310,8 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
 </svg>
           </div>
           <div>
-            <h2 class="text-[18px] font-semibold">Low pricing</h2>
-            <p class="text-[#73737F] text-[14px]">
+            <h2 class="text-[1.125rem] font-semibold text-[#1a1925]">Low pricing</h2>
+            <p class="text-[#73737F]   mt-1 text-sm leading-relaxed">
               Benefit from pay as you go billing and volume pricing as low as
               $0.01/GB.
             </p>
@@ -340,8 +340,8 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
 </svg>
           </div>
           <div>
-            <h2 class="text-[18px] font-semibold">Fast platform</h2>
-            <p class="text-[#73737F] text-[14px]">
+            <h2 class="text-[1.125rem] font-semibold text-[#1a1925]">Fast platform</h2>
+            <p class="text-[#73737F]   mt-1 text-sm leading-relaxed">
               Configuration updates only take a few minutes to be deployed
               across the globe.
             </p>
@@ -370,8 +370,8 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
 </svg>
           </div>
           <div>
-            <h2 class="text-[18px] font-semibold">No commitment</h2>
-            <p class="text-[#73737F] text-[14px]">
+            <h2 class="text-[1.125rem] font-semibold text-[#1a1925]">No commitment</h2>
+            <p class="text-[#73737F]   mt-1 text-sm leading-relaxed">
               No contract required, allowing traffic volume to scale up or down
               at any time.
             </p>

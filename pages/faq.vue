@@ -15,7 +15,7 @@
 
     <!-- Main Content -->
     <main
-      class="container mx-auto px-[57.5px] md:px-0 py-12 sm:py-16 md:py-20 lg:py-24 relative z-10"
+      class="container mx-auto px-[57.5px] lg:px-0 py-12 sm:py-16 md:py-20 lg:py-24 relative z-10"
     >
       <!-- FAQ Section -->
       <section class="w-full max-w-4xl mx-auto ">

@@ -5,16 +5,16 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
 <template>
   <div class="mt-[4.25rem] mx-auto max-w-3xl">
     <div class="w-full flex flex-col items-start gap-4">
-      <h1 class="text-5xl font-medium">Drupal CDN Integration</h1>
+      <h1 class="text-[2rem] md:text-5xl font-medium">Drupal CDN Integration</h1>
 
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         Drupal is a free, open source CMS based on PHP. About 2.1% of the
         websites globally are powered by Drupal. Like other content management
         systems, it offers a wide range of modules that can be integrated into
         Drupal websites.
       </p>
 
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         Slow Drupal website? Varnish can change that. Here's why: Varnish will
         cache the static files of a Drupal website all around the world. In
         addition to optimizing a Drupal website, it's essential to integrate a
@@ -22,14 +22,14 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
         specified in the HTTP headers defined by the origin server.
       </p>
 
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         How does the Drupal CDN module work? The module will change the URL of
         static assets. The new URL will point to Varnish instead of the origin
         server. There is no redirection taking place, the URL will be rewritten
         to the Varnish domain. An example would be:
       </p>
 
-      <ul class="list-disc text-[#73737F] pl-8">
+      <ul class="list-disc text-[#73737F] text-[13px] md:text-[1rem] pl-8">
         <li class="">
           URL to the origin server: https://www.yourwebsite/drupalfolder/pic.jpg
         </li>
@@ -41,16 +41,16 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
     </div>
 
     <div class="mt-[2.3125rem] flex flex-col gap-4">
-      <h2 class="text-[2rem] font-semibold">
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">
         Let's get started with the Drupal CDN Integration
       </h2>
 
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         This tutorial shows how to complete a Drupal CDN integration with
         Varnish.
       </p>
 
-      <ol class="text-[#73737F] flex flex-col gap-4 pl-8">
+      <ol class="text-[#73737F] text-[13px] md:text-[1rem] flex flex-col gap-4 pl-8">
         <li class="">
           Create a Pull Zone before you start with the Drupal CDN integration. A
           Push Zone would work as well but it's not recommended here.
@@ -82,7 +82,7 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
 
         <img src="/images/Integeration/drupalcdn3.svg" alt="drupals 3rd" />
 
-        <p class="text-[#73737F]">
+        <p class="text-[#73737F] text-[13px] md:text-[1rem]">
           The setting "Far Future expiration" will define higher caching values
           for the assets (valid for KeyCDN, as well as the client's browser).
           Longer cached assets will result in less request to the CDN and the
@@ -108,7 +108,7 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
         </li>
       </ol>
 
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         That's it. The Drupal CDN integration is completed. If there are any
         issues after the CDN integration, the KeyCDN support can be contacted
         anytime
@@ -116,16 +116,16 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
     </div>
 
     <div class="mt-[2.3125rem]">
-      <h2 class="text-[2rem] font-semibold">
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">
         The benefits of using Varnish with Drupal
       </h2>
 
-      <p class="text-[#73737F] mt-4">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem] mt-4">
         Once Varnish is integrated into a Drupal site, there are lots of
         advantages to benefit from:
       </p>
 
-      <ul class="text-[#73737F] pl-8 list-disc mt-6 flex flex-col gap-2">
+      <ul class="text-[#73737F] text-[13px] md:text-[1rem] pl-8 list-disc mt-6 flex flex-col gap-2">
         <li>
           Access to our complete network of POPs. Content is always served from
           the closest location to the end users.
@@ -138,13 +138,13 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
       </ul>
 
       <div class="my-8">
-        <p class="text-[#73737F]">
+        <p class="text-[#73737F] text-[13px] md:text-[1rem]">
           Varnish also offers great <a href="#" class="underline">tools</a> and
           an up to date <a href="#" class="underline">knowledge base</a>. Here
           some useful pages:
         </p>
 
-        <ul class="text-[#73737F] pl-8 list-disc mt-2 flex flex-col gap-2">
+        <ul class="text-[#73737F] text-[13px] md:text-[1rem] pl-8 list-disc mt-2 flex flex-col gap-2">
           <li>
             The <a href="#" class="underline">Website Speed Test</a> from
             Varnish lets you analyze the loading time of a website.

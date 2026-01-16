@@ -1,27 +1,27 @@
 <template>
-  <div class="mt-[4.25rem] mx-auto max-w-3xl">
+  <div class="mt-[4.25rem] mx-auto md:max-w-lg lg:max-w-3xl">
     <div class="w-full flex flex-col items-start gap-4">
-      <h1 class="text-5xl font-medium">Technical Questions</h1>
+      <h1 class="text-[2rem] md:text-5xl font-medium">Technical Questions</h1>
 
-      <button class="btn2 text-[#73737F] mt-4">
+      <button class="btn2 text-[#73737F] text-[13px] md:text-[1rem] mt-4">
         <span>Table of contents</span>
         <span class="arrow"></span>
       </button>
 
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         This section is focusing on technical questions on a deeper level and is
         the continuation of our FAQ.
       </p>
     </div>
 
     <div class="mt-[2.3125rem] flex flex-col gap-4">
-      <h2 class="text-[2rem] font-semibold">What cache statuses are there?</h2>
-      <p class="text-[#73737F]">
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">What cache statuses are there?</h2>
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         Different cache statuses can occur for Push and Pull Zones. Here's an
         overview of possible cache statuses:
       </p>
 
-      <ul class="text-[#73737F] flex flex-col gap-4 list-disc pl-5">
+      <ul class="text-[#73737F] text-[13px] md:text-[1rem] flex flex-col gap-4 list-disc pl-5">
         <li>HIT - Your content has been delivered from the cache.</li>
         <li>
           MISS - Your content was not yet in the cache but will be after the
@@ -49,23 +49,23 @@
         </li>
       </ul>
 
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         In some error cases there is no cache status returned. Raw logs will
         show a - instead of one of above values.
       </p>
     </div>
 
     <div class="mt-[2.3125rem] flex flex-col gap-4">
-      <h2 class="text-[2rem] font-semibold">
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">
         Which HTTP request methods do you support?
       </h2>
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         The request methods allowed vary slightly between Push and Pull Zones.
         For Pull Zones, we support all common
         <a class="underline">Http request Methods</a>:
       </p>
 
-      <ul class="text-[#73737F] flex flex-col gap-4 list-disc pl-5">
+      <ul class="text-[#73737F] text-[13px] md:text-[1rem] flex flex-col gap-4 list-disc pl-5">
         <li>
           HEAD and GET requests get cached and will be served from the KeyCDN
           cache.
@@ -73,7 +73,7 @@
         <li>PUT, POST, DELETE requests will not be cached (X-Cache: MISS).</li>
       </ul>
 
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         For Push Zones, we only support HEAD and GET requests. If using a method
         other than HEAD or GET on a Push Zone you will receive a
         <a class="underline">405 Method Not Allowed</a> status.
@@ -81,10 +81,10 @@
     </div>
 
     <div class="mt-[2.3125rem] flex flex-col gap-4">
-      <h2 class="text-[2rem] font-semibold">
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">
         Do I need to define specific edge server locations for my KeyCDN Zone?
       </h2>
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         No, this is not required. All KeyCDN Zones are automatically configured
         to work with our complete <a class="underline">Network</a> of edge
         server locations. This does not need to be defined manually. Upon user
@@ -94,10 +94,10 @@
     </div>
 
     <div class="mt-[2.3125rem] flex flex-col gap-4">
-      <h2 class="text-[2rem] font-semibold">
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">
         What does a request header from a KeyCDN edge server look like?
       </h2>
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         Commonly used for full site acceleration, this option forwards the Host
         header Host: www.example.com to the origin server as received from the
         client instead of the host from the origin URL.
@@ -439,7 +439,7 @@ Cookie: foobar
   <ClientOnly>
     <Teleport to="#full-width-section">
       <svg
-        class="image-processing-bg"
+        class="image-processing-bg hidden md:flex"
         width="691"
         height="202"
         viewBox="0 0 691 202"
@@ -480,7 +480,6 @@ code {
   justify-content: space-between;
   align-items: center;
 
-  font-size: 16px;
   font-weight: 500;
   border: 2px solid #eaeaea;
   border-radius: 6px;
@@ -491,5 +490,10 @@ ol {
   list-style-type: decimal;
   padding-left: 1.25rem;
   margin-top: 1rem;
+}
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-all;
 }
 </style>

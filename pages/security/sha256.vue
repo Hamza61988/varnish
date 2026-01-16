@@ -8,8 +8,8 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
     <div class="max-w-3xl mx-auto">
       
     
-      <h1 class="text-[3rem] font-medium text-[#111827]">SHA256 Generator</h1>
-      <h2 class="text-[#73737F] font-medium uppercase tracking-wide mb-4">
+      <h1 class="text-[2rem] md:text-5xl font-semibold mt-2 mb-4">SHA256 Generator</h1>
+      <h2 class="text-[#73737F] md:text-[1rem] mt-4 text-[14px] max-w-2xl mb-4">
         Generate a SHA256 hash
       </h2>
 
@@ -50,7 +50,7 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
           <h3 class="text-[1.5625rem] font-semibold text-[#1f2937]">
             MTypical Uses for SHA256
           </h3>
-          <p class="text-[15px] mb-6">
+          <p class="text-[13px] md:text-[1rem] mb-6">
             The hashing is a one-way method making it almost impossible to
             decrypt. This in turn means that SHA256 is ideal for challenge hash
             authentication, finger-printing, password validation, digital
@@ -62,7 +62,7 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
           <h3 class="text-[1.5625rem] font-semibold text-[#1f2937]">
             What is SHA256?
           </h3>
-          <p class="text-[15px] mb-6">
+          <p class="text-[13px] md:text-[1rem] mb-6">
             SHA, which stands for secure hash algorithm, is a <a class="underline">cryptographic
             hashing algorithm</a>  used to determine the integrity of a particular
             piece of data. SHA256 has become a successor to that of SHA1 because
@@ -73,8 +73,11 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
       </div>
     </div>
   </div>
-
-<AccessAllFeaturesSection class="mt-10"/>
+ <ClientOnly>
+    <Teleport to="#full-width-section">
+      <AccessAllFeaturesSection class="" />
+    </Teleport>
+  </ClientOnly>
 </template>
 <style scoped>
 input[type="checkbox"] {

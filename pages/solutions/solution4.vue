@@ -9,8 +9,8 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
 <SectionsUpername name="Solutions" />
     </div>
 
-    <h1 class="text-5xl font-medium mt-2 text-[#1A1925]">CDN Storage</h1>
-    <p class="text-[#73737F] mt-4 max-w-2xl text-lg">
+    <h1 class="text-[2rem] md:text-5xl font-semibold mt-2">CDN Storage</h1>
+    <p class="text-[#73737F] md:text-[1rem]  mt-4 text-[14px]  max-w-2xl">
       We offer high speed content delivery storage optimized for large files.
     </p>
 
@@ -46,10 +46,10 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
 
           </div>
           <div>
-            <h2 class="text-[1.125rem] font-semibold text-gray-900 mb-1">
+            <h2 class="text-[1.125rem] font-semibold text-[#1a1925]">
               Accelerated uploads
             </h2>
-            <p class="text-[#73737F] leading-relaxed">
+            <p class="text-[#73737F]   mt-1 text-sm leading-relaxed">
               Data can be transferred through FTP(S) or rsync over SSH based on
               certificates.
             </p>
@@ -66,10 +66,10 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
 
           </div>
           <div>
-            <h2 class="text-[1.125rem] font-semibold text-gray-900 mb-1">
+            <h2 class="text-[1.125rem] font-semibold text-[#1a1925]">
               High throughput
             </h2>
-            <p class="text-[#73737F] leading-relaxed">
+            <p class="text-[#73737F]   mt-1 text-sm leading-relaxed">
               Tier 1 network backbone and optimized hardware prevent bandwidth
               bottlenecks.
             </p>
@@ -86,10 +86,10 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
 
           </div>
           <div>
-            <h2 class="text-[1.125rem] font-semibold text-gray-900 mb-1">
+            <h2 class="text-[1.125rem] font-semibold text-[#1a1925]">
               Secure storage
             </h2>
-            <p class="text-[#73737F] leading-relaxed">
+            <p class="text-[#73737F]   mt-1 text-sm leading-relaxed">
               All content is stored in our highly redundant and secure European
               data centers.
             </p>
@@ -108,8 +108,8 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
 </svg>
           </div>
           <div>
-            <h2 class="text-[1.125rem] font-semibold text-gray-900 mb-1">Low pricing</h2>
-            <p class="text-[#73737F]  leading-relaxed">
+            <h2 class="text-[1.125rem] font-semibold text-[#1a1925]">Low pricing</h2>
+            <p class="text-[#73737F]   mt-1 text-sm leading-relaxed">
               Benefit from pay as you go billing and volume pricing as low as $0.01/GB.
             </p>
           </div>
@@ -122,8 +122,8 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
 </svg>
           </div>
           <div>
-            <h2 class="text-[1.125rem] font-semibold text-gray-900 mb-1">Fast platform</h2>
-            <p class="text-[#73737F]  leading-relaxed">
+            <h2 class="text-[1.125rem] font-semibold text-[#1a1925]">Fast platform</h2>
+            <p class="text-[#73737F]   mt-1 text-sm leading-relaxed">
               Configuration updates only take a few minutes to be deployed across the globe.
             </p>
           </div>
@@ -136,8 +136,8 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
 </svg>
           </div>
           <div>
-            <h2 class="text-[1.125rem] font-semibold text-gray-900 mb-1">No commitment</h2>
-            <p class="text-[#73737F]  leading-relaxed">
+            <h2 class="text-[1.125rem] font-semibold text-[#1a1925]">No commitment</h2>
+            <p class="text-[#73737F]   mt-1 text-sm leading-relaxed">
               No contract required, allowing traffic volume to scale up or down at any time.
             </p>
           </div>

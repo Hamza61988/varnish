@@ -8,8 +8,8 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
     <div class="max-w-3xl mx-auto">
       
      
-      <h1 class="text-[3rem] font-medium text-[#111827] mb-4">Ping Test</h1>
-      <h2 class="text-[#73737F] font-medium uppercase tracking-wide mb-4">
+      <h1 class="text-[2rem] md:text-5xl font-semibold mt-2 mb-4">Ping Test</h1>
+      <h2 class="text-[#73737F] md:text-[1rem] mt-4 text-[14px] max-w-2xl mb-4">
         IP OR HOSTNAME PING
       </h2>
       <div class="mb-12">
@@ -41,7 +41,7 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
           <h3 class="text-[1.5625rem] font-semibold text-[#1f2937] mb-3">
             How Can I Improve My Ping Times?
           </h3>
-          <p class="text-[15px]">
+          <p class="text-[13px] md:text-[1rem]">
             Ping times, also referred to as website latency, can be reduced
             using a few different techniques as described below.
           </p>
@@ -64,7 +64,7 @@ import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSec
           <h3 class="text-[1.5625rem] font-semibold text-[#1f2937] mb-3">
             What is Ping?
           </h3>
-          <p class="text-[15px]">
+          <p class="text-[13px] md:text-[1rem]">
             Ping is a utility used to send out
             <a class="underline">ICMP</a> packets to an address to see how fast
             the response is (and if one even exists). Ping is important when it

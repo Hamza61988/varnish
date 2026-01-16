@@ -583,52 +583,9 @@
       <section class="w-full mx-auto lg:px-0 mb-[6.25rem] md:mb-[7.625rem]">
         <!-- Section Label -->
         <div
-          class="flex items-center justify-start md:justify-center mb-4 sm:mb-6"
+          class="flex items-center justify-start md:justify-center "
         >
-          <div
-            class="flex items-center"
-            style="
-              height: 24px;
-              gap: 2px;
-              border-radius: 999px;
-              padding-top: 4px;
-              padding-right: 8px;
-              padding-bottom: 4px;
-              padding-left: 8px;
-              background: #ffffffe5;
-              box-shadow: 0px 0.5px 0.5px 0px rgba(7, 1, 19, 0.03),
-                0px 1px 1px -0.5px rgba(7, 1, 19, 0.03),
-                0px 2px 2px -1px rgba(7, 1, 19, 0.03),
-                0px 3px 3px -1.5px rgba(7, 1, 19, 0.03);
-            "
-          >
-            <!-- Lightning Bolt Icon -->
-            <svg
-                width="10"
-                height="12"
-                viewBox="0 0 10 12"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M5.53413 0.751381C5.53413 0.00932038 4.57171 -0.282067 4.16009 0.335357L0.127223 6.38466C-0.205054 6.88308 0.15224 7.55069 0.751261 7.55069H3.53413V10.35C3.53413 11.092 4.49655 11.3834 4.90817 10.766L8.94104 4.71671C9.27332 4.2183 8.91603 3.55069 8.317 3.55069H5.53413V0.751381Z"
-                  fill="#A3A3AE"
-                />
-              </svg>
-            <span
-              style="
-                font-family: 'Bricolage Grotesque', sans-serif;
-                font-weight: 500;
-                font-size: 12px;
-                line-height: 16px;
-                letter-spacing: 0%;
-                text-align: center;
-                color: #1a1925;
-              "
-            >
-              Platform
-            </span>
-          </div>
+        <SectionsUpername name="Platform" />
         </div>
 
         <!-- Title -->
@@ -663,7 +620,7 @@
 
         <!-- Platform Cards -->
         <div
-          class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 md:gap-10 max-w-6xl mx-auto"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-end gap-6 sm:gap-8 md:gap-10 max-w-6xl mx-auto"
         >
           <!-- Flexible Card -->
           <div class="flex flex-col items-center">
@@ -754,11 +711,11 @@
             </h3>
             <!-- Description -->
             <p
-              class="mb-4 text-left w-full"
+              class="mb-4 text-[14px] lg:text-[15px] text-left w-full"
               style="
                 font-family: 'Inter', sans-serif;
                 font-weight: 400;
-                font-size: 15px;
+              
                 line-height: 20px;
                 letter-spacing: -0.006em;
                 color: #51515e;
@@ -875,11 +832,11 @@
             </h3>
             <!-- Description -->
             <p
-              class="mb-4 text-left w-full"
+              class="mb-4 text-[14px] lg:font-[15px] text-left w-full"
               style="
                 font-family: 'Inter', sans-serif;
                 font-weight: 400;
-                font-size: 15px;
+              
                 line-height: 20px;
                 letter-spacing: -0.006em;
                 color: #51515e;
@@ -997,11 +954,11 @@
             </h3>
             <!-- Description -->
             <p
-              class="mb-4 text-left w-full"
+              class="mb-4 text-[14px] lg:font-[15px] text-left w-full"
               style="
                 font-family: 'Inter', sans-serif;
                 font-weight: 400;
-                font-size: 15px;
+              
                 line-height: 20px;
                 letter-spacing: -0.006em;
                 color: #51515e;
@@ -1037,52 +994,9 @@
         <!-- Section Label -->
         <div class="flex flex-col" style="align-items: flex-start">
           <div
-            class="flex items-center justify-start lg:justify-center mb-4 sm:mb-6"
+            class="flex items-center justify-start lg:justify-center "
           >
-            <div
-              class="flex items-center"
-              style="
-                height: 24px;
-                gap: 2px;
-                border-radius: 999px;
-                padding-top: 4px;
-                padding-right: 8px;
-                padding-bottom: 4px;
-                padding-left: 8px;
-                background: #ffffffe5;
-                box-shadow: 0px 0.5px 0.5px 0px rgba(7, 1, 19, 0.03),
-                  0px 1px 1px -0.5px rgba(7, 1, 19, 0.03),
-                  0px 2px 2px -1px rgba(7, 1, 19, 0.03),
-                  0px 3px 3px -1.5px rgba(7, 1, 19, 0.03);
-              "
-            >
-              <!-- Lightning Bolt Icon -->
-            <svg
-                width="10"
-                height="12"
-                viewBox="0 0 10 12"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M5.53413 0.751381C5.53413 0.00932038 4.57171 -0.282067 4.16009 0.335357L0.127223 6.38466C-0.205054 6.88308 0.15224 7.55069 0.751261 7.55069H3.53413V10.35C3.53413 11.092 4.49655 11.3834 4.90817 10.766L8.94104 4.71671C9.27332 4.2183 8.91603 3.55069 8.317 3.55069H5.53413V0.751381Z"
-                  fill="#A3A3AE"
-                />
-              </svg>
-              <span
-                style="
-                  font-family: 'Bricolage Grotesque', sans-serif;
-                  font-weight: 600;
-                  font-size: 12px;
-                  line-height: 16px;
-                  letter-spacing: 0%;
-                  text-align: center;
-                  color: #1a1925;
-                "
-              >
-                Integrations
-              </span>
-            </div>
+          <SectionsUpername name="Integration" />
           </div>
 
           <!-- Title -->

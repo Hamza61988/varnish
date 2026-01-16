@@ -3,11 +3,11 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
 </script>
 
 <template>
-  <div class="mt-[4.25rem] mx-auto max-w-3xl">
+  <div class="mt-[4.25rem]  md:max-w-lg lg:max-w-2xl ">
     <div class="w-full">
-      <h1 class="text-5xl font-medium mt-4">Upload Data to a Push Zone</h1>
+      <h1 class="text-[2rem] md:text-5xl font-medium mt-4">Upload Data to a Push Zone</h1>
 
-      <p style="font-family: inter" class="text-[#73737F] mt-4">
+      <p style="font-family: inter" class="text-[#73737F] text-[13px] md:text-[1rem] mt-4">
         There are a couple of ways to upload data to a KeyCDN Push Zone. This
         guide walks through how to upload data to our
         <a class="underline">CDN storage </a> cloud through FTP(S) and rsync
@@ -27,7 +27,7 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
 
           box-shadow: 0px 0px 0px 1px #1a192514;
         "
-        class="bg-[#FEF9D8] text-[#73737F] max-w-[47.5rem] mt-4 mx-auto py-5 rounded-2xl px-10"
+        class="bg-[#FEF9D8] text-[#73737F] text-[13px] md:text-[1rem] max-w-[47.5rem] mt-4 mx-auto py-5 rounded-2xl px-10"
       >
         <h1 class="">
           <span class="font-bold">Note:</span> Push Zones are limited to 250,000
@@ -37,18 +37,18 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
     </div>
 
     <div class="mt-[2.3125rem]">
-      <h2 class="text-[2rem] font-semibold mt-4">
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold mt-4">
         How to upload data with FTP(S)
       </h2>
 
-      <p style="font-family: inter" class="text-[#73737F] mt-4">
+      <p style="font-family: inter" class="text-[#73737F] text-[13px] md:text-[1rem] mt-4">
         If a new <a class="underline">Push Zone</a> was just created you will
         need to wait a few minutes until the Zone has been deployed. Follow the
         steps below to successfully upload your data to KeyCDN using FTP(S):
       </p>
 
       <div class="pl-8">
-        <ol class="text-[#73737F] flex flex-col gap-4 my-[24px]">
+        <ol class="text-[#73737F] text-[13px] md:text-[1rem] flex flex-col gap-4 my-[24px]">
           <li class="">
             From the KeyCDN dashboard, navigate to Subusers and add a user for
             the specified Push Zone.
@@ -64,7 +64,7 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
           <li class="">Upload data to your Push Zone.</li>
         </ol>
 
-        <p style="font-family: inter" class="text-[#73737F] mt-4">
+        <p style="font-family: inter" class="text-[#73737F] text-[13px] md:text-[1rem] mt-4">
           We recommend using FTPS (explicit FTP over TLS) to avoid plaintext
           transfer of your credentials over the network and using an FTP client
           like <a class="underline">FileZilla</a>.
@@ -79,7 +79,7 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
         class=""
       />
 
-      <div class="bg-[#FEF9D8] text-[#73737F] border py-5 rounded-2xl px-10">
+      <div class="bg-[#FEF9D8] text-[#73737F] text-[13px] md:text-[1rem] border py-5 rounded-2xl px-10">
         <h1 class="">
           <span class="font-bold">Note:</span> If FTPS is used please ensure
           data is being transferred over TLS 1.2 or TLS 1.3.
@@ -89,39 +89,39 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
 
     <div class="mt-4 flex flex-col gap-6">
       <div class="flex flex-col gap-4">
-        <h2 class="text-[2rem] font-semibold text-black">
+        <h2 class="text-[1.5rem] md:text-[2rem] font-semibold text-black">
           How to upload data with rsync over SSH
         </h2>
-        <p style="font-family: inter" class="text-[#73737F]">
+        <p style="font-family: inter" class="text-[#73737F] text-[13px] md:text-[1rem]">
           If you are interested in lsyncd read our
           <a href="#" class="underline">lsyncd over SSH</a> article. Follow the
           steps below to successfully upload your data to KeyCDN using rsync:
         </p>
       </div>
 
-      <p style="font-family: inter" class="pl-8 text-[#73737F]">
+      <p style="font-family: inter" class="pl-8 text-[#73737F] text-[13px] md:text-[1rem]">
         1. SSH public key (ssh-rsa or ssh-ed25519). It takes a few minutes for
         the key to be distributed to the responsible servers.
       </p>
 
       <div class="flex flex-col gap-2">
-        <p style="font-family: inter" class="pl-8 text-[#73737F]">
+        <p style="font-family: inter" class="pl-8 text-[#73737F] text-[13px] md:text-[1rem]">
           2. Add your SSH private key on your system:
         </p>
         <div
-          class="ml-8 bg-[#F9FAFB] border border-[#E5E7EB] p-4 rounded text-[#73737F] text-sm overflow-x-auto"
+          class="ml-8 bg-[#F9FAFB] border border-[#E5E7EB] p-4 rounded text-[#73737F] text-[13px] md:text-[1rem] text-sm overflow-x-auto"
         >
           ssh-add /path/to/your/private.key
         </div>
       </div>
 
       <div class="flex flex-col gap-2">
-        <p style="font-family: inter" class="pl-8 text-[#73737F]">
+        <p style="font-family: inter" class="pl-8 text-[#73737F] text-[13px] md:text-[1rem]">
           3. Upload/synchronise data to your Push Zone using the following rsync
           command:
         </p>
         <div
-          class="ml-8 bg-[#F9FAFB] border border-[#E5E7EB] p-4 rounded text-[#73737F] text-sm overflow-x-auto whitespace-nowrap"
+          class="ml-8 bg-[#F9FAFB] border border-[#E5E7EB] p-4 rounded text-[#73737F] text-[13px] md:text-[1rem] text-sm overflow-x-auto whitespace-nowrap"
         >
           rsync -rtvz --chmod=D2755,F644 {path_to_your_folder}/
           {keycdn_username}@rsync.keycdn.com:{zone_name}
@@ -129,9 +129,9 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
       </div>
 
       <div class="flex flex-col gap-2">
-        <strong class="ml-8 text-[#73737F] font-bold">Example:</strong>
+        <strong class="ml-8 text-[#73737F] text-[13px] md:text-[1rem] font-bold">Example:</strong>
         <div
-          class="ml-8 bg-[#F9FAFB] border border-[#E5E7EB] p-4 rounded text-[#73737F] text-sm overflow-x-auto whitespace-nowrap"
+          class="ml-8 bg-[#F9FAFB] border border-[#E5E7EB] p-4 rounded text-[#73737F] text-[13px] md:text-[1rem] text-sm overflow-x-auto whitespace-nowrap"
         >
           rsync -rtvz --chmod=D2755,F644 {path_to_your_folder}/
           {keycdn_username}@rsync.keycdn.com:{zone_name}
@@ -139,10 +139,10 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
       </div>
 
       <div class="flex flex-col gap-2">
-        <p style="font-family: inter" class="text-[#73737F]">
+        <p style="font-family: inter" class="text-[#73737F] text-[13px] md:text-[1rem]">
           In addition to the above, you might find the following flags useful:
         </p>
-        <ul class="text-[#73737F] list-disc pl-7 space-y-4">
+        <ul class="text-[#73737F] text-[13px] md:text-[1rem] list-disc pl-7 space-y-4">
           <li>-n (Perform a trial run with no changes made.)</li>
           <li>
             --delete (Delete extraneous files from destination directories.)
@@ -154,12 +154,12 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
         </ul>
       </div>
 
-      <p style="font-family: inter" class="text-[#73737F]">
+      <p style="font-family: inter" class="text-[#73737F] text-[13px] md:text-[1rem]">
         If you want to list the content in your Push Zone use the following
         command:
       </p>
 
-      <div class="bg-[#FEF9D8] text-[#73737F] border py-5 rounded-2xl px-10">
+      <div class="bg-[#FEF9D8] text-[#73737F] text-[13px] md:text-[1rem] border py-5 rounded-2xl px-10">
         <h1 class="">
           <span class="font-bold">Note:</span> We limit the allowed rsync flags.
           Some older rsync versions behave differently in regards to what flags
@@ -170,16 +170,16 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
     </div>
 
     <div class="mt-6 flex flex-col gap-4">
-      <h2 class="text-[2rem] font-semibold text-black">
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold text-black">
         How data gets deployed to a Push Zone
       </h2>
 
-      <p style="font-family: inter" class="text-[#73737F]">
+      <p style="font-family: inter" class="text-[#73737F] text-[13px] md:text-[1rem]">
         Now that your data is uploaded to our storage cluster, there are a few
         things to consider when it comes to deploying this data:
       </p>
 
-      <ul class="text-[#73737F] list-disc pl-5 space-y-2">
+      <ul class="text-[#73737F] text-[13px] md:text-[1rem] list-disc pl-5 space-y-2">
         <li>
           New content is instantly uploaded to our storage cluster and is
           immediately available.

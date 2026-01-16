@@ -5,13 +5,13 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
 <template>
   <div class="mt-[4.25rem] mx-auto max-w-3xl">
     <div class="w-full flex flex-col items-start gap-4">
-      <h1 class="text-5xl font-medium">Joomla CDN Integration</h1>
+      <h1 class="text-[2rem] md:text-5xl font-medium">Joomla CDN Integration</h1>
 
       <div class="">
         <img src="/images/Integeration/joomlacdn.svg" alt="zone alias" />
       </div>
 
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         <a class="underline">Joomla</a> is the second most popular content
         management systems (CMS) after WordPress. The open source CMS is freely
         available and offers a wide range of extensions to customize a website.
@@ -19,7 +19,7 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
         improve content delivery speeds and reduce latency.
       </p>
 
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         A fast loading Joomla website is essential for user satisfaction, which
         is why it's important to choose the best CDN for Joomla. With KeyCDN,
         the static content of a Joomla site will always be delivered to the end
@@ -29,7 +29,7 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
         KeyCDN and not the origin server anymore.
       </p>
 
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         The free version of the CDN for Joomla extension only supports HTTP
         integrations. If you are using HTTPS for your CDN URL, then you are
         required to buy the paid version from the
@@ -39,11 +39,11 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
     </div>
 
     <div class="mt-[2.3125rem]">
-      <h2 class="text-[2rem] font-semibold">
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">
         How to complete a Joomla CDN integration.
       </h2>
       <div class="pl-8 flex flex-col gap-4">
-        <ol class="text-[#73737F] flex flex-col gap-4">
+        <ol class="text-[#73737F] text-[13px] md:text-[1rem] flex flex-col gap-4">
           <li class="">
             It is recommended to backup your CMS before you start with the
             integration.
@@ -89,13 +89,13 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
           <li>Save all the updates.<br /></li>
         </ol>
       </div>
-      <p class="text-[#73737F] mt-4">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem] mt-4">
         We recommend to examine the HTML code, in order to check if all the URLs
         have been properly rewritten. All static assets (as defined by file type
         in the plugin) should now be pointing to KeyCDN.
       </p>
 
-      <p class="text-[#73737F] mt-4">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem] mt-4">
         Using the CDN for Joomla! extension is one way to setup a Joomla CDN
         integration, however, some users may already have the
         <a class="underline"> JCH Optimize plugin</a> installed and configured.
@@ -106,7 +106,7 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
 
       <img src="/images/Integeration/joomlacdn4.svg" alt="zone alias" />
 
-      <p class="text-[#73737F] mt-4">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem] mt-4">
         This plugin allows you to define multiple domains to parallelize
         downloads across hostnames however this is no longer recommended with
         HTTP/2. Select the file types you want to accelerate using the Joomla
@@ -114,15 +114,15 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
         being called using the CDN URL.
       </p>
 
-      <p class="text-[#73737F] mt-4">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem] mt-4">
         To learn about other ways to improve your Joomla site's performance,
         check out these 10 tips to speed up Joomla performance
       </p>
     </div>
 
     <div class="mt-4 flex flex-col gap-4">
-      <h2 class="text-[2rem] font-semibold">Choosing the best Joomla CDN</h2>
-      <p class="text-[#73737F]">
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">Choosing the best Joomla CDN</h2>
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         Once you have completed the above integration, your Joomla site will be
         integrated with KeyCDN. When choosing the best Joomla CDN, you should
         ensure that the CDN provider supports the new HTTP/2 protocol, uses
@@ -131,7 +131,7 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
         performance boost while remaining secure.
       </p>
 
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         Additionally, KeyCDN users will benefit from our global network of
         strategically placed points of presence (POPs) around the world. Traffic
         spikes can easily be handled by the CDN (instead of the origin server).
@@ -145,13 +145,13 @@ import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSec
         seconds until the cache is globally purged.
       </p>
 
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         KeyCDN provides you with awesome <a>tools</a> for content delivery. Also
         check the following pages:
       </p>
 
       <div class="pl-8">
-        <ul class="text-[#73737F] list-disc flex flex-col gap-4">
+        <ul class="text-[#73737F] text-[13px] md:text-[1rem] list-disc flex flex-col gap-4">
           <li class="">
             The KeyCDN <a class="underline">Website Speed Test</a> lets you
             measure the site speed of a website from various locations.
