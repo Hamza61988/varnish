@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen hero-section flex flex-col">
     <!-- Split Layout: Landing Page (Left) + Dashboard Preview (Right) -->
-    <div class="flex flex-col lg:flex-row hero-container flex-1">
+    <div class="flex  flex-col lg:flex-row hero-container flex-1">
       <!-- Left Section: Landing Page -->
       <div
         class="flex-1 justify-center items-center hero-left-section order-1 lg:order-1"
@@ -13,7 +13,7 @@
           </div>
 
           <!-- Headline Section -->
-          <div class="mb-[3px] md:mb-[1rem] ">
+          <div class="mb-[3px] mt-[3px] md:mt-[16px]  md:mb-[1rem] ">
             <h1
               style="font-weight: 600; line-height: 1.2"
               class="text-[32px]  md:text-7xl font-bold text-gray-900 "

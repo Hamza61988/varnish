@@ -7,9 +7,10 @@
           class="flex flex-col lg:flex-row lg:justify-between lg:items-center items-start justify-start gap-[10px] lg:gap-0 mb-2 text-left"
         >
           <label class="region-label">North America / Europe</label>
-          <span class="value-display">{{
-            formatGB(localBandwidth.naEurope)
-          }}</span>
+          <span
+            class="value-display"
+            v-html="formatGB(localBandwidth.naEurope)"
+          ></span>
         </div>
         <input
           v-model.number="localBandwidth.naEurope"
@@ -33,9 +34,10 @@
           class="flex flex-col lg:flex-row lg:justify-between lg:items-center items-start justify-start gap-[10px] lg:gap-0 mb-2 text-left"
         >
           <label class="region-label">Asia / Oceania</label>
-          <span class="value-display">{{
-            formatGB(localBandwidth.asiaOceania)
-          }}</span>
+          <span
+            class="value-display"
+            v-html="formatGB(localBandwidth.asiaOceania)"
+          ></span>
         </div>
         <input
           v-model.number="localBandwidth.asiaOceania"
@@ -59,9 +61,10 @@
           class="flex flex-col lg:flex-row lg:justify-between lg:items-center items-start justify-start gap-[10px] lg:gap-0 mb-2 text-left"
         >
           <label class="region-label">Africa / Latin America</label>
-          <span class="value-display">{{
-            formatGB(localBandwidth.africaLatin)
-          }}</span>
+          <span
+            class="value-display"
+            v-html="formatGB(localBandwidth.africaLatin)"
+          ></span>
         </div>
         <input
           v-model.number="localBandwidth.africaLatin"
@@ -116,33 +119,20 @@ watch(
   { deep: true }
 );
 
-const formatGB = (val: number) => `${val} GB`;
+const formatGB = (val: number) => `${val} <span class="font-bold">GB</span>`;
 </script>
 
 <style scoped>
 .region-label {
   font-family: "Bricolage Grotesque", sans-serif;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 22px;
   letter-spacing: -0.02em;
   color: #1a1925;
   vertical-align: middle;
 }
 
-@media (min-width: 640px) {
-  .region-label {
-    font-size: 18px;
-    line-height: 26px;
-  }
-}
-
-@media (min-width: 768px) {
-  .region-label {
-    font-size: 20px;
-    line-height: 28px;
-  }
-}
 
 .value-display {
   border: 1px solid #eeeef0;
@@ -154,7 +144,7 @@ const formatGB = (val: number) => `${val} GB`;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 11px;
+  font-size: 13px;
   color: #6b7280;
   box-sizing: border-box;
   flex-shrink: 0;

@@ -1,9 +1,9 @@
 <template>
-  <section class="mx-auto px-[57.5px] lg:px-0 mt-[24px] ">
+  <section class=" ">
     <div>
      <div
   class="bg-white rounded-lg p-[24px] flex flex-col md:flex-row items-start md:items-center md:justify-between gap-4 sm:gap-5 md:gap-6"
-  style="border-radius: 16px; box-shadow: 0 1px 2px -1px #1a19250a, 0 1px 1px #1a19250a, 0 .5px .5px #1a19250a;"
+  style="border-radius: 24px; box-shadow: 0 1px 2px -1px #1a19250a, 0 1px 1px #1a19250a, 0 .5px .5px #1a19250a;"
 >
 
 <div class="flex flex-col sm:flex-row items-start sm:items-center sm:space-x-4 space-y-3 sm:space-y-0 w-auto">

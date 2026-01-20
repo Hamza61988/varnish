@@ -1,55 +1,34 @@
 <template>
-  <section class="mx-auto  md:pt-[6.25rem]  px-[57.5px] lg:px-0  bg-[#F7F7F8]">
+  <section class="">
     <div>
       <!-- Pricing Header -->
-      <div class="mb-[24px] md:mb-[48px] ">
-        <div class=" flex justify-start items-start">
-<SectionsUpername name="Pricing" />
-        </div>
-        <div
-          class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 sm:gap-6 mb-6 sm:mb-8"
-        >
-          <div class="text-left  w-full">
-            <h2 style="  font-weight: 600; "
-              class=" text-gray-900 text-[2rem] md:text-[3rem] mb-[8px] md:mb-[16px]"
+      <SectionsTitle 
+        upername="Pricing" 
+        title="Pricing Plans" 
+        subtitle="Get access to our entire content delivery network without commitment." 
+        alignment="start"
+      >
+        <template #suffix>
+          <div class="flex items-center space-x-3 sm:space-x-4">
+            <span class="text-[14px] text-[#51515e]">Monthly</span>
+            <button
+              class="relative inline-flex h-5 w-10 sm:h-6 sm:w-11 items-center rounded-full bg-blue-500 transition-colors"
             >
-              Pricing
-            </h2>
-            <div
-              class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-5 lg:gap-0"
-            >
-              <p
-              style="font-family: 'inter' , sans-serif;"
-                class="text-[14px] md:text-[16px] text-[#51515E] max-w-2xl"
-              >
-                Get access to our entire content delivery network without
-                commitment.
-              </p>
-              <div
-                class="flex items-center  justify-center space-x-3 sm:space-x-4"
-              >
-                <span class="
-                text-[14px]  text-[#51515e] "
-                  >Monthly</span
-                >
-                <button
-                  class="relative inline-flex h-5 w-10 sm:h-6 sm:w-11 items-center rounded-full bg-blue-500 transition-colors"
-                >
-                  <span
-                    class="inline-block h-3 w-3 sm:h-4 sm:w-4 transform rounded-full bg-white transition translate-x-1"
-                  ></span>
-                </button>
-                <span class="
-                text-[14px] text-[#51515e]">Yearly</span>
-              </div>
-            </div>
+              <span
+                class="inline-block h-3 w-3 sm:h-4 sm:w-4 transform rounded-full bg-white transition translate-x-1"
+              ></span>
+            </button>
+            <span class="text-[14px] text-[#51515e]">Yearly</span>
           </div>
-        </div>
-      </div>
+        </template>
+      </SectionsTitle>
+                    
+     
+     
 
       <!-- Two Separate Tables: Region Table and Pricing Table -->
       <!-- Mobile/Tablet: Cards for each tier -->
-      <div class="lg:hidden space-y-4 mb-[24px-] ">
+      <div class="lg:hidden space-y-4 mb-[24px] ">
         <div
           v-for="(heading, headingIndex) in headings"
           :key="headingIndex"
@@ -141,7 +120,7 @@
       >
         <div class="flex w-full min-w-0" style="padding: 4px">
           <div class="w-full sm:w-2/5 md:w-1/3 lg:w-1/4 flex-shrink-0">
-            <div class="bg-[#eeeef0] p-0.5 sm:p-1">
+            <div class="bg-[#eeeef0] p-0.5 lg:p-[20px]">
               <div class="bg-[#eeeef0]  overflow-hidden">
                 <table class="w-full">
                   <thead>
@@ -172,10 +151,10 @@
             </div>
           </div>
           <div
-            class="flex-1  bg-gray-100 rounded-2xl  min-w-0 overflow-x-auto"
+            class="flex-1  rounded-2xl lg:p-5  min-w-0 overflow-x-auto"
           >
             <div
-              class="bg-white rounded-2xl  overflow-hidden pricing-table-wrapper"
+              class="bg-white rounded-2xl overflow-hidden pricing-table-wrapper"
               style="padding: 0px"
             >
               <table class="w-full overflow-hidden  pricing-table">

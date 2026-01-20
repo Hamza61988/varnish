@@ -1,252 +1,25 @@
 <template>
   <div
-    class="w-full"
-    style="background-color: #f7f7f8; max-width: 900px; margin: auto"
+    class=" "
+  
   >
+   <section class="space-y-[80px] md:space-y-[100px] flex flex-col site-padding site-margins">
+    <div class="space-y-[20px] md:space-y-[12px]">
     <SectionsPricingTableSection :headings="headings" :table-data="tableData" />
     <SectionsEnterpriseSection />
-    <section
-      class="mx-auto pt-[6.25rem] md:pt-[5rem] bg-[#F7F7F8]  px-[57.5px] lg:px-0"
-    >
-      <div>
-        <div
-          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-5 md:gap-6 lg:gap-8"
-        >
-          <div
-            class="flex relative overflow-hidden min-h-[210px] md:h-[210px]"
-            style="
-              border-radius: 20px;
-              border: 1px solid #eeeef0;
-              background: #ffffff;
-              height: 287px;
-            "
-          >
-            <div
-              class="absolute hidden sm:block"
-              style="
-                width: 148px;
-                height: 148px;
-                top: 8px;
-                right: 26px;
-                opacity: 1;
-                border: 0.8px solid;
-                border-image-source: radial-gradient(
-                  81.86% 81.86% at 100% 100%,
-                  rgba(26, 25, 37, 0.12) 0%,
-                  rgba(26, 25, 37, 0) 77.02%
-                );
-                border-image-slice: 1;
-                background-image: url('/images/about/bgcard.svg');
-                background-repeat: no-repeat;
-                background-size: contain;
-                border: none;
-              "
-            ></div>
-            <div class="flex flex-col m-auto relative z-10 p-4 sm:p-5 md:p-6">
-              <div
-                class="mb-4 relative"
-                style="padding-top: 4.67px; padding-left: 2.33px"
-              >
-                <div
-                  class="absolute -top-2 -left-2 w-8 h-8"
-                  style="
-                    background-image: url('/images/about/bgcardicon.svg');
-                    background-repeat: no-repeat;
-                    background-size: contain;
-                    z-index: 0;
-                  "
-                ></div>
-                <img
-                  src="/images/about/Group.svg"
-                  alt="Integrity Icon"
-                  class="relative z-10"
-                  style="height: 20.71px; width: auto; color: #1a1925"
-                />
-              </div>
-              <h3
-                class="mb-2 sm:mb-3 font-['Bricolage_Grotesque'] font-semibold text-lg leading-6 tracking-[-0.02em] text-[#1a1925]"
-              >
-                Secure and Flexible Sharing Tools
-              </h3>
-              <p
-                class="font-['Inter'] font-normal text-sm leading-5 tracking-[-0.006em] text-[#73737f]"
-              >
-                Our pricing includes unlimited HTTP and HTTPS requests to keep
-                costs low and affordable from the very beginning.
-              </p>
-            </div>
-          </div>
+    </div>
 
-          <div
-            class="flex relative overflow-hidden min-h-[210px] md:h-[210px]"
-            style="
-              border-radius: 20px;
-              border: 1px solid #eeeef0;
-              background: #ffffff;
-              height: 287px;
-            "
-          >
-            <div
-              class="absolute hidden sm:block"
-              style="
-                width: 148px;
-                height: 148px;
-                top: 8px;
-                right: 26px;
-                opacity: 1;
-                border: 0.8px solid;
-                border-image-source: radial-gradient(
-                  81.86% 81.86% at 100% 100%,
-                  rgba(26, 25, 37, 0.12) 0%,
-                  rgba(26, 25, 37, 0) 77.02%
-                );
-                border-image-slice: 1;
-                background-image: url('/images/about/bgcard.svg');
-                background-repeat: no-repeat;
-                background-size: contain;
-                border: none;
-              "
-            ></div>
-            <div class="flex flex-col m-auto relative z-10 p-4 sm:p-5 md:p-6">
-              <div class="mb-4">
-                <div class="relative">
-                  <div
-                    class="absolute -top-2 -left-2 w-8 h-8"
-                    style="
-                      background-image: url('/images/about/bgcardicon.svg');
-                      background-repeat: no-repeat;
-                      background-size: contain;
-                      z-index: 0;
-                    "
-                  ></div>
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="relative z-10"
-                  >
-                    <path
-                      d="M12 2V22M17 5H9.5C8.57174 5 7.6815 5.36875 7.02513 6.02513C6.36875 6.6815 6 7.57174 6 8.5C6 9.42826 6.36875 10.3185 7.02513 10.9749C7.6815 11.6312 8.57174 12 9.5 12H14.5C15.4283 12 16.3185 12.3687 16.9749 13.0251C17.6312 13.6815 18 14.5717 18 15.5C18 16.4283 17.6312 17.3185 16.9749 17.9749C16.3185 18.6312 15.4283 19 14.5 19H6"
-                      stroke="#1A1925"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <h3
-                class="mb-2 sm:mb-3 font-['Bricolage_Grotesque'] font-semibold text-lg leading-6 tracking-[-0.02em] text-[#1a1925]"
-              >
-                Low minimum usage
-              </h3>
-              <p
-                class="font-['Inter'] font-normal text-sm leading-5 tracking-[-0.006em] text-[#73737f]"
-              >
-                Our minimum charge is $4 per month based on the combined total
-                account traffic volume and other services used.
-              </p>
-            </div>
-          </div>
+      <SectionsFeaturesSection :features="features" />
+   
 
-          <div
-            class="flex relative overflow-hidden min-h-[210px] md:h-[210px]"
-            style="
-              border-radius: 20px;
-              border: 1px solid #eeeef0;
-              background: #ffffff;
-              height: 287px;
-            "
-          >
-            <div
-              class="absolute hidden sm:block"
-              style="
-                width: 148px;
-                height: 148px;
-                top: 8px;
-                right: 26px;
-                opacity: 1;
-                border: 0.8px solid;
-                border-image-source: radial-gradient(
-                  81.86% 81.86% at 100% 100%,
-                  rgba(26, 25, 37, 0.12) 0%,
-                  rgba(26, 25, 37, 0) 77.02%
-                );
-                border-image-slice: 1;
-                background-image: url('/images/about/bgcard.svg');
-                background-repeat: no-repeat;
-                background-size: contain;
-                border: none;
-              "
-            ></div>
-            <div class="flex flex-col m-auto relative z-10 p-4 sm:p-5 md:p-6">
-              <div class="mb-4">
-                <div class="relative">
-                  <div
-                    class="absolute -top-2 -left-2 w-8 h-8"
-                    style="
-                      background-image: url('/images/about/bgcardicon.svg');
-                      background-repeat: no-repeat;
-                      background-size: contain;
-                      z-index: 0;
-                    "
-                  ></div>
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="relative z-10"
-                  >
-                    <path
-                      d="M3 18V12C3 9.61305 3.94821 7.32387 5.63604 5.63604C7.32387 3.94821 9.61305 3 12 3C14.3869 3 16.6761 3.94821 18.364 5.63604C20.0518 7.32387 21 9.61305 21 12V18"
-                      stroke="#1A1925"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M21 19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H17C16.4696 21 15.9609 20.7893 15.5858 20.4142C15.2107 20.0391 15 19.5304 15 19V15C15 14.4696 15.2107 13.9609 15.5858 13.5858C15.9609 13.2107 16.4696 13 17 13H19C19.5304 13 20.0391 13.2107 20.4142 13.5858C20.7893 13.9609 21 14.4696 21 15V19Z"
-                      stroke="#1A1925"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M3 19C3 19.5304 3.21071 20.0391 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21H7C7.53043 21 8.03914 20.7893 8.41421 20.4142C8.78929 20.0391 9 19.5304 9 19V15C9 14.4696 8.78929 13.9609 8.41421 13.5858C8.03914 13.2107 7.53043 13 7 13H5C4.46957 13 3.96086 13.2107 3.58579 13.5858C3.21071 13.9609 3 14.4696 3 15V19Z"
-                      stroke="#1A1925"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <h3
-                class="mb-2 sm:mb-3 font-['Bricolage_Grotesque'] font-semibold text-lg leading-6 tracking-[-0.02em] text-[#1a1925]"
-              >
-                24/7 support
-              </h3>
-              <p
-                class="font-['Inter'] font-normal text-sm leading-5 tracking-[-0.006em] text-[#73737f]"
-              >
-                Our professional technical support team is available 24 hours a
-                day, 7 days a week for all customers at no additional cost.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+
     <SectionsConfigurationOptionsSection />
     <SectionsCostCalculatorSection
       v-model:bandwidth="bandwidth"
       :total-cost="totalCost"
     />
     <SectionsFAQSection :open-faqs="openFAQs" @toggle-faq="toggleFAQ" />
+     </section>
   </div>
 </template>
 
@@ -360,4 +133,32 @@ const openFAQs = ref([false, false, false, false, false, false]); // All collaps
 const toggleFAQ = (index: number) => {
   openFAQs.value[index] = !openFAQs.value[index];
 };
+
+const features = [
+  {
+    title: "Secure and Flexible Sharing Tools",
+    description: "Our pricing includes unlimited HTTP and HTTPS requests to keep costs low and affordable from the very beginning.",
+    icon: `<svg width="28" height="30" viewBox="0 0 28 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.33984 9.75C5.33984 12.0706 6.25403 14.2962 7.8813 15.9372C9.50857 17.5781 11.7156 18.5 14.0169 18.5C16.3182 18.5 18.5253 17.5781 20.1526 15.9372C21.7798 14.2962 22.694 12.0706 22.694 9.75C22.694 7.42936 21.7798 5.20376 20.1526 3.56282C18.5253 1.92187 16.3182 1 14.0169 1C11.7156 1 9.50857 1.92187 7.8813 3.56282C6.25403 5.20376 5.33984 7.42936 5.33984 9.75Z" stroke="#1A1925" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14.0156 18.5C15.9434 18.0144 16.908 17.7708 16.908 9.75C16.908 4.40278 15.9439 1.48611 14.0156 1C12.0874 1.48611 11.1233 4.40278 11.1233 9.75C11.1233 17.7708 12.0879 18.0144 14.0156 18.5ZM14.0156 18.5V22.875M5.33854 9.75H22.6927M1 25.7917H11.1233M11.1233 25.7917C11.1233 26.5652 11.428 27.3071 11.9704 27.8541C12.5128 28.401 13.2485 28.7083 14.0156 28.7083C14.7827 28.7083 15.5184 28.401 16.0608 27.8541C16.6033 27.3071 16.908 26.5652 16.908 25.7917M11.1233 25.7917C11.1233 25.0181 11.428 24.2763 11.9704 23.7293C12.5128 23.1823 13.2485 22.875 14.0156 22.875M16.908 25.7917H27.0313M16.908 25.7917C16.908 25.0181 16.6033 24.2763 16.0608 23.7293C15.5184 23.1823 14.7827 22.875 14.0156 22.875" stroke="#1A1925" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+  },
+  {
+    title: "Low minimum usage",
+    description: "Our minimum charge is $4 per month based on the combined total account traffic volume and other services used.",
+    icon: `<svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.2751 13.9172C18.5335 13.3266 17.4207 12.8549 15.9365 12.5021L14.7979 12.2307V7.31927L14.9521 7.38281C15.9185 7.87708 16.4378 8.8125 16.5089 9.85417H20.3848C20.3141 7.77083 19.552 6.23021 18.0983 5.14167C17.1324 4.41823 16.0309 3.95312 14.7979 3.71875V1H11.1882V3.63542C9.5189 3.84375 8.19515 4.38646 7.2231 5.26875C5.9504 6.42396 5.31422 7.8743 5.31456 9.61979C5.31456 11.533 5.96484 12.9392 7.26538 13.8385C7.99352 14.3484 9.30593 14.8219 11.1882 15.2604V20.5812C10.5018 20.3901 9.96393 20.0755 9.58491 19.6208C9.21929 19.1792 8.97434 18.7083 8.84955 17.6667H5C5 19.75 5.72762 21.2448 7.18339 22.4042C8.23434 23.2406 9.57202 23.749 11.1882 23.9693V26H14.7979V24.0036C16.5167 23.7958 17.9044 23.2417 18.9553 22.3349C20.3184 21.1578 21 19.6788 21 17.8979C21 16.1611 20.425 14.8342 19.2751 13.9172ZM9.98559 10.8875C9.35921 10.5434 9.04602 10.0226 9.04602 9.325C9.04602 8.56667 9.36368 7.9724 9.999 7.54948C10.3342 7.32604 10.7333 7.16354 11.1882 7.05625V11.3396C10.6286 11.175 10.2249 11.024 9.98559 10.8875ZM15.3873 20.4745C15.1942 20.5393 14.9973 20.5925 14.7979 20.6339V16.1042C15.4198 16.2903 15.9094 16.4924 16.2666 16.7104C16.8297 17.063 17.1118 17.5646 17.1118 18.2078C17.1113 19.3099 16.5363 20.0687 15.3873 20.4745Z" fill="#1A1925"/>
+</svg>
+`
+  },
+  {
+    title: "24/7 support",
+    description: "Our professional technical support team is available 24 hours a day, 7 days a week for all customers at no additional cost.",
+    icon: `<svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.4987 2.58325C8.37645 2.58325 2.58203 8.37767 2.58203 15.4999V20.8513C2.58203 22.174 3.74066 23.2499 5.16536 23.2499H6.45703C6.7996 23.2499 7.12814 23.1138 7.37038 22.8716C7.61261 22.6294 7.7487 22.3008 7.7487 21.9583V15.3152C7.7487 14.9726 7.61261 14.6441 7.37038 14.4019C7.12814 14.1596 6.7996 14.0235 6.45703 14.0235H5.2842C6.00236 9.02479 10.3036 5.16659 15.4987 5.16659C20.6938 5.16659 24.995 9.02479 25.7132 14.0235H24.5404C24.1978 14.0235 23.8693 14.1596 23.627 14.4019C23.3848 14.6441 23.2487 14.9726 23.2487 15.3152V23.2499C23.2487 24.6746 22.0901 25.8333 20.6654 25.8333H18.082V24.5416H12.9154V28.4166H20.6654C23.5148 28.4166 25.832 26.0993 25.832 23.2499C27.2567 23.2499 28.4154 22.174 28.4154 20.8513V15.4999C28.4154 8.37767 22.6209 2.58325 15.4987 2.58325Z" fill="#1A1925"/>
+</svg>
+`
+  }
+];
 </script>
