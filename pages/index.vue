@@ -9,13 +9,14 @@
     <LandingTestimonials />
        </div>
     <div class="mb-12 mt-[100px] md:mt-[122px] sm:mb-8 md:mb-0">
-      <LandingAccessAllFeatures />
+      <LandingAccessAllFeaturesSection />
     </div>
  
   </div>
 </template>
 
 <script setup >
+import LandingAccessAllFeaturesSection from "~/components/common/AccessAllFeatures.vue";
 const features = [
   {
     title: "Optimized hardware",

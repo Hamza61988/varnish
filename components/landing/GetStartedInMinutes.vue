@@ -7,7 +7,7 @@
       <!-- Header Section -->
 
       
-      <SectionsTitle 
+      <commonTitle 
         upername="How it works" 
         title="Get Started In Minutes" 
         subtitle="It only takes a few steps to unlock our entire network." 
@@ -107,6 +107,7 @@
 </template>
 
 <script setup lang="ts">
+import SectionsTitle from "~/components/common/Title.vue";
 import { ref } from "vue";
 
 const hovered = ref<number | null>(null);

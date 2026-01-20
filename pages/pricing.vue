@@ -9,7 +9,7 @@
     <SectionsEnterpriseSection />
     </div>
 
-      <SectionsFeaturesSection :features="features" />
+      <LandingFeatures :features="features" />
    
 
 

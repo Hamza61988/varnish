@@ -1,7 +1,7 @@
 <template>
   <div class="" style="background-color: #f7f7f8">
     <SectionsHeroSection />
-    <SectionsFeaturesSection />
+    <LandingFeatures :features="features" />
     <SectionsGetStartedInMinutesSection />
     <SectionsSpeedUpImagesSection />
     <SectionsDevelopWithEaseSection />

@@ -156,6 +156,7 @@
   </div>
 </template>
 <script setup lang="ts">
+import SectionsUpername from "~/components/common/Upername.vue";
 import { ref, onMounted } from "vue";
 
 const stats = [

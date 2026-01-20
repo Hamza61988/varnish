@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSection.vue';
+import AccessAllFeaturesSection from '~/components/common/AccessAllFeatures.vue';
 
 </script>
 

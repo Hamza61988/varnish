@@ -1,5 +1,7 @@
 <script setup lang="ts">
-import AccessAllFeaturesSection from '~/components/sections/AccessAllFeaturesSection.vue';
+import SectionsTitle from "~/components/common/Title.vue";
+import SectionsUpername from "~/components/common/Upername.vue";
+import AccessAllFeaturesSection from '~/components/common/AccessAllFeatures.vue';
 </script>
 
 <template>

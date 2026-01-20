@@ -1767,7 +1767,9 @@
 </template>
 
 <script setup lang="ts">
-import SectionsAccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSection.vue";
+import SectionsTitle from "~/components/common/Title.vue";
+import SectionsUpername from "~/components/common/Upername.vue";
+import SectionsAccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
 </script>
 
 <style scoped>
