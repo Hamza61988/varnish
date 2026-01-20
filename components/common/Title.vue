@@ -1,6 +1,6 @@
 <template>
   <div :class="['flex gap-[3px] md:gap-[12px] flex-col', containerAlignmentClass, mbClass, customClass]">
-    <SectionsUpername :name="upername" v-if="upername" />
+    <Upername :name="upername" v-if="upername" />
 
     <h2
       class="md:text-[3rem] text-[2rem] mb-0"
@@ -35,6 +35,7 @@
 </template>
 
 <script setup lang="ts">
+import Upername from './Upername.vue';
 import { computed } from 'vue';
 
 type Alignment = "center" | "start" | "end";

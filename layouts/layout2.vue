@@ -84,6 +84,8 @@
 </template>
 
 <script setup>
+import SectionsTitle from "~/components/common/Title.vue";
+import SectionsUpername from "~/components/common/Upername.vue";
 import { ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 

@@ -6,7 +6,7 @@
     <div class="">
       <!-- Header Section -->
    
-         <SectionsTitle 
+         <commonTitle 
         upername="Testimonials" 
         title="Trusted By Thousands" 
         subtitle="Over 40,000 customers trust Varnish to deliver content to millions." 
@@ -295,5 +295,7 @@
 </template>
 
 <script setup lang="ts">
+import SectionsTitle from "~/components/common/Title.vue";
+import SectionsUpername from "~/components/common/Upername.vue";
 // Testimonials Section Component
 </script>

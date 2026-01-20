@@ -249,7 +249,7 @@
 </template>
 
 <script setup lang="ts">
-import SectionsAccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSection.vue";
+import SectionsAccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
 </script>
 
 <style scoped>

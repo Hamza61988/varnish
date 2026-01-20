@@ -8,14 +8,14 @@
       <!-- Features Section -->
       <section >
       
-          <SectionsTitle 
+          <commonTitle 
         upername="Multiple Features" 
         title="Features" 
         subtitle="Get access to all of our features no matter the account size." 
         alignment="start"
       />
 
-      <SectionsFeaturesSection :features="features" />
+      <LandingFeatures :features="features" />
 
 
       </section>
@@ -248,7 +248,7 @@
       <section class="flex flex-col ">
         <!-- Section Label -->
       
-         <SectionsTitle 
+         <commonTitle 
         upername="Platform" 
         title="Powerful Platform" 
         subtitle="Content delivery is a breeze with our user-friendly dashboard." 
@@ -629,7 +629,7 @@
       <!-- Easy Integration Section -->
       <section class="">
         <!-- Section Label -->
-       <SectionsTitle 
+       <commonTitle 
         upername="Integration" 
         title="Easy Integration" 
         subtitle="Add to any infrastructure in a matter of seconds." 
@@ -741,6 +741,8 @@
 </template>
 
 <script setup lang="ts">
+import commonTitle from "~/components/common/Title.vue";
+import SectionsAccessAllFeaturesSection from "~/components/common/AccessAllFeatures.vue";
   const features = [
  
   {

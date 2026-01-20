@@ -4,7 +4,7 @@
     style=" overflow-x: hidden"
   >
     <div class="">
-  <SectionsTitle 
+  <commonTitle 
         upername="Develop With Ease" 
         title="Develop With Ease" 
         subtitle="Complete account control with our RESTful API." 
@@ -364,6 +364,8 @@
 </template>
 
 <script setup lang="ts">
+import SectionsTitle from "~/components/common/Title.vue";
+import SectionsUpername from "~/components/common/Upername.vue";
 import { ref, computed } from "vue";
 
 // State for active tab

@@ -1093,8 +1093,10 @@
 </template>
 
 <script setup lang="ts">
+import SectionsTitle from "~/components/common/Title.vue";
+import SectionsUpername from "~/components/common/Upername.vue";
 import { ref } from "vue";
-import SectionsAccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSection.vue";
+import SectionsAccessAllFeaturesSection from "~/components/common/AccessAllFeatures.vue";
 
 // Hover state for POP dots
 const hoveredPOP = ref<any>(null);

@@ -209,5 +209,5 @@ x-edge-location: defr</pre>
 </template>
 
 <script setup>
-import AccessAllFeaturesSection from "~/components/sections/AccessAllFeaturesSection.vue";
+import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
 </script>

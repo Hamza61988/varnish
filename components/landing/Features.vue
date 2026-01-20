@@ -2,10 +2,10 @@
   <section class="  ">
     <div class="">
       <div
-        class="flex flex-col items-center gap-3 md:flex-row md:flex-nowrap md:justify-between "
+        class="flex flex-col items-center gap-3 md:flex-row md:flex-nowrap md:justify-between"
       >
-        <div 
-          v-for="(feature, index) in features" 
+        <div
+          v-for="(feature, index) in features"
           :key="index"
           class="feature-card group bg-white relative overflow-hidden"
         >
@@ -25,7 +25,7 @@
                 rgba(26, 25, 37, 0) 77.02%
               );
               border-image-slice: 1;
-              background-image: url('/images/about/bgcard.svg');
+              background-image: url(&quot;/images/about/bgcard.svg&quot;);
               background-repeat: no-repeat;
               background-size: contain;
               border: none;
@@ -40,7 +40,7 @@
               <div
                 class="absolute -top-2 -left-2 w-8 h-8"
                 style="
-                  background-image: url('/images/about/bgcardicon.svg');
+                  background-image: url(&quot;/images/about/bgcardicon.svg&quot;);
                   background-repeat: no-repeat;
                   background-size: contain;
                   z-index: -10;
@@ -51,11 +51,8 @@
               <div v-html="feature.icon"></div>
             </div>
             <div class="max-w-[220px]">
-            <h3 class="feature-heading">{{ feature.title }}</h3>
-            <p class="feature-description ">
-              {{ feature.description }}
-
-            </p>
+              <h3 class="feature-heading">{{ feature.title }}</h3>
+              <p class="feature-description" v-html="feature.description"></p>
             </div>
           </div>
         </div>
@@ -71,8 +68,8 @@ defineProps<{
     title: string;
     description: string;
     icon: string;
-  }[]
-}>()
+  }[];
+}>();
 </script>
 
 <style scoped>

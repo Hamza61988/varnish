@@ -122,6 +122,8 @@
 </template>
 
 <script setup lang="ts">
+import SectionsTitle from "~/components/common/Title.vue";
+import SectionsUpername from "~/components/common/Upername.vue";
 import { ref, onMounted } from 'vue';
 
 // Target values

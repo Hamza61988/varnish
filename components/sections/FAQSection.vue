@@ -2,7 +2,7 @@
   <section id="faq" class="mx-auto" >
     <div class="">
       <!-- FAQ Header -->
-      <SectionsTitle 
+      <commonTitle 
         upername="FAQ" 
         title="Common Pricing Questions" 
         subtitle="You've Got Questions, We've got answers" 
@@ -94,6 +94,8 @@
 </template>
 
 <script setup lang="ts">
+import SectionsTitle from "~/components/common/Title.vue";
+import SectionsUpername from "~/components/common/Upername.vue";
 import { ref, computed } from "vue";
 
 const faqData = [
