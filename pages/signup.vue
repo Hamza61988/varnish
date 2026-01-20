@@ -42,6 +42,9 @@
       class="relative z-10 flex flex-col w-full max-w-[589px] mx-auto px-4 py-6 sm:px-6 sm:py-8 sm:gap-8 sm:rounded-[25px] md:px-8 md:py-10 md:gap-10 lg:px-[102px] lg:py-11 lg:gap-[60px] my-4"
       style="gap: 24px; border-radius: 20px; background: #1a1925"
     >
+      <div class="absolute left-4 top-4 sm:left-6 sm:top-6">
+        <CommonBackButton />
+      </div>
       <!-- Header Section with Logo and Title -->
       <div class="flex items-center justify-center">
         <div class="flex items-center gap-1.5 sm:gap-2 md:gap-3">

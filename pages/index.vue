@@ -1,15 +1,15 @@
 <template>
   <div class="">
-    <SectionsHeroSection />
+    <LandingHeroSection />
     <div class="site-padding space-y-[100px]  md:space-y-[122px]">
-    <SectionsFeaturesSection :features="features" />
-    <SectionsGetStartedInMinutesSection />
-    <SectionsSpeedUpImagesSection />
-    <SectionsDevelopWithEaseSection />
-    <SectionsTestimonialsSection />
+    <LandingFeatures :features="features" />
+    <LandingGetStartedInMinutes />
+    <LandingSpeedUpImages />
+    <LandingDevelopWithEase />
+    <LandingTestimonials />
        </div>
     <div class="mb-12 mt-[100px] md:mt-[122px] sm:mb-8 md:mb-0">
-      <SectionsAccessAllFeaturesSection />
+      <LandingAccessAllFeatures />
     </div>
  
   </div>

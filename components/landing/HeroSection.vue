@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen hero-section flex flex-col">
+  <div class="min-h-dvh hero-section flex flex-col">
     <!-- Split Layout: Landing Page (Left) + Dashboard Preview (Right) -->
     <div class="flex  flex-col lg:flex-row hero-container flex-1">
       <!-- Left Section: Landing Page -->
@@ -271,7 +271,7 @@ onMounted(() => {
   background-repeat: repeat;
   background-position: 0 0;
   position: relative;
-  min-height: 100vh;
+  min-height: 100dvh;
 }
 
 @media (min-width: 1024px) {

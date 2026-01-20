@@ -26,6 +26,9 @@
 
     <!-- Wrapper to center card and signup link together -->
     <div class="relative z-10 w-full max-w-[589px] mx-auto px-4 py-2 flex flex-col items-center justify-center">
+      <div class="absolute left-4 top-4 sm:left-6 sm:top-6">
+        <CommonBackButton />
+      </div>
       <!-- Login Card Container -->
       <div 
         class="w-full flex flex-col px-4 py-6 sm:px-6 sm:py-8 sm:gap-8 sm:rounded-[25px] md:px-8 md:py-10 md:gap-10 lg:px-[102px] lg:py-11 lg:gap-[60px]"
