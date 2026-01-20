@@ -1,6 +1,6 @@
 <template>
-  <section class="bg-[#f7f7f8] pt-[100px] md:pt-[80px]  ">
-    <div class="container  mx-auto px-[3.5938rem] lg:px-0">
+  <section class="  ">
+    <div class="">
       <div class="max-w-4xl mx-auto">
         
         <div class="flex flex-col gap-4 w-full lg:w-[75%] lg:mx-auto">
@@ -45,7 +45,7 @@
           </div>
         </div>
 
-        <div class="mt-16 text-center">
+        <div class="mt-10 text-center">
           <h2 class="font-['Bricolage_Grotesque'] font-medium text-xs tracking-[0.1em] text-[#1a1925] mb-8 uppercase">
             Access All Features
           </h2>

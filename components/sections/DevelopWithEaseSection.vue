@@ -1,50 +1,23 @@
 <template>
   <section
-    class="container mx-auto px-[57.5px] lg:px-[25px] xl:px-0 pt-[7.5rem]"
-    style="background: #f7f7f8; overflow-x: hidden"
+    class=""
+    style=" overflow-x: hidden"
   >
-    <div class="max-w-6xl mx-auto">
-      <div class="mb-[1.25rem] md:mb-12">
-        <SectionsUpername name="Develop With Ease" />
-
-        <h2
-          class="mb-0 text-[32px] md:text-[2rem] md:mb-4"
-          style="
-            font-weight: 600;
-            font-style: SemiBold;
+    <div class="">
+  <SectionsTitle 
+        upername="Develop With Ease" 
+        title="Develop With Ease" 
+        subtitle="Complete account control with our RESTful API." 
+        alignment="start"
           
-            line-height: 56px;
-            letter-spacing: -0.04em;
-            text-transform: capitalize;
-            color: #1a1925;
-          "
-        >
-          Develop With Ease
-        </h2>
-
-        <p
-          class="md:text-[1rem] text-[14px] md:text-base  "
-          style="
-            font-family: 'Inter', sans-serif;
-            font-weight: 400;
-            font-style: Regular;
-           
-            line-height: 24px;
-            letter-spacing: -0.011em;
-            color: #51515e;
-          "
-        >
-          Complete account control with our RESTful API.
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 items-stretch">
+      />
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 items-stretch">
         <div
-          class="flex flex-col gap-4 justify-between order-2 lg:order-1 min-w-0"
+          class="flex flex-col gap-5 justify-between order-2 lg:order-1 min-w-0"
         >
           <div
             @click="activeTab = 'zones'"
-            class="rounded-xl p-4 sm:p-8 shadow-sm h-auto lg:h-[124px] cursor-pointer transition-all duration-200 flex items-center"
+            class="rounded-xl p-5 shadow-sm h-auto lg:h-[124px] cursor-pointer transition-all duration-200 flex items-center"
             :style="{
               borderRadius: '16px',
               background: activeTab === 'zones' ? '#ffffff' : '#f3f4f6',
@@ -114,7 +87,7 @@
 
           <div
             @click="activeTab = 'purge'"
-            class="rounded-xl p-4 sm:p-8 shadow-sm h-auto lg:h-[124px] cursor-pointer transition-all duration-200 flex items-center"
+            class="rounded-xl p-5 shadow-sm h-auto lg:h-[124px] cursor-pointer transition-all duration-200 flex items-center"
             :style="{
               borderRadius: '16px',
               background: activeTab === 'purge' ? '#ffffff' : '#f3f4f6',
@@ -180,7 +153,7 @@
 
           <div
             @click="activeTab = 'reports'"
-            class="rounded-xl p-4 sm:p-8 shadow-sm h-auto lg:h-[124px] cursor-pointer transition-all duration-200 flex items-center"
+            class="rounded-xl p-5 shadow-sm h-auto lg:h-[124px] cursor-pointer transition-all duration-200 flex items-center"
             :style="{
               borderRadius: '16px',
               background: activeTab === 'reports' ? '#ffffff' : '#f3f4f6',

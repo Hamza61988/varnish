@@ -12,7 +12,7 @@
   font-weight: 500;
   font-display: swap;
   src: url('/fonts/FunnelDisplay-Medium.woff2') format('woff2'),
-       url('/fonts/FunnelDisplay-Medium.woff') format('woff');
+    url('/fonts/FunnelDisplay-Medium.woff') format('woff');
 }
 
 /* Currently using 'Funnel Display' with sans-serif fallback */
@@ -78,6 +78,7 @@
   * {
     border-color: hsl(var(--border));
   }
+
   body {
     background-color: hsl(var(--background));
     color: hsl(var(--foreground));
@@ -98,3 +99,12 @@
   -webkit-touch-callout: none;
 }
 
+@layer utilities {
+  .site-padding {
+    @apply px-[57.5px] lg:px-[25px] xl:px-0 max-w-[940px] mx-auto;
+  }
+
+  .site-margins{
+    @apply md:mt-[138px] mt-[50px] md:mb-[138px] mb-[50px]
+  }
+}

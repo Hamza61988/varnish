@@ -1,45 +1,25 @@
 <template>
   <section
-    class="container mx-auto px-[57.5px] lg:px-[25px] xl:px-0 pt-[0.25rem] md:pt-[100pt]"
-    style="background: #f7f7f8"
+    class=" "
+    
   >
-    <div class="max-w-6xl mx-auto">
-      <div class="hidden md:block ">
-      <SectionsUpername name="Speed Up Images" />
+    <div class="">
 
-        <h2
-          class="mb-3 "
-          style="
-            font-weight: 600;
-            font-size: 48px;
-            line-height: 56px;
-            letter-spacing: -4%;
-            text-transform: capitalize;
-            color: #1a1925;
-          "
-        >
-          Speed Up Images
-        </h2>
 
-        <p
-          class="text-sm md:text-base mb-[1.875rem]"
-          style="
-            font-family: 'Inter', sans-serif;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 24px;
-            letter-spacing: -0.011em;
-            color: #51515e;
-          "
-        >
-          Transform and optimize images in real time.
-        </p>
-      </div>
+      <SectionsTitle 
+        upername="Transform" 
+        title="Speed Up Images" 
+        subtitle="Transform and optimize images in real time." 
+        alignment="start"
+        customClass="hidden md:flex"
+      />
 
-      <div class="flex lg:px-0  flex-col lg:flex-row gap-8 lg:gap-4" style="width: 100%">
+
+
+      <div class="flex lg:px-0  flex-col lg:flex-row gap-5" style="width: 100%">
         <div class="flex flex-col w-full lg:w-[60%] order-2 lg:order-1">
           <div
-            class="mb-4 sm:mb-6 overflow-hidden flex items-center justify-center"
+            class="mb-5 overflow-hidden flex items-center justify-center"
             style="
               height: 269px;
               border-radius: 20px;
@@ -58,8 +38,8 @@
           <div
             class="mb-4 hidden md:flex lg:mb-0 w-full"
             style="
-              border-radius: 16px;
-              box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+              border-radius: 20px;
+             
             "
           >
             <div
@@ -67,7 +47,7 @@
               style="display: flex; flex-direction: row; align-items: center; width: 100%;"
             >
               <div
-                class="w-full px-3 sm:px-4 py-2 sm:py-3 bg-white rounded-lg border border-gray-200 text-xs sm:text-sm font-mono"
+                class="w-full px-3 sm:px-4 py-2 sm:py-5 bg-white rounded-lg border border-gray-200 text-xs sm:text-sm font-mono"
                 style="
                   font-family: 'Monaco', 'Courier New', monospace;
                   color: #51515e;
@@ -129,7 +109,7 @@
                 height: 40px;
                 border-radius: 6px;
                 padding: 10px 6px;
-                background: #1a1925;
+                background: #1A1925;
                 font-family: 'inter', sans-serif;
                 font-weight: 500;
                 font-size: 17px;
@@ -145,12 +125,12 @@
           class="hidden md:flex flex-col lg:justify-between w-full lg:w-[40%] order-1 lg:order-2"
         >
           <div
-            class="grid grid-cols-1 sm:grid-cols-3 lg:flex lg:flex-col gap-6 lg:gap-0 lg:h-full lg:justify-between"
+            class="grid grid-cols-1 sm:grid-cols-3  lg:flex lg:flex-col  "
           >
-            <div>
+            <div class="flex flex-col mb-[27px] gap-[6px]">
               <h3
-                class="mb-2 sm:mb-3"
-                style="font-weight: 600; font-size: 16px; color: #1a1925;"
+                class=""
+                style="font-weight: 600; font-size: 18px; color: #1A1925;"
               >
                 Transform
               </h3>
@@ -159,10 +139,10 @@
               </p>
             </div>
 
-            <div>
+            <div class="flex flex-col mb-[27px] gap-[6px]">
               <h3
-                class="mb-2 sm:mb-3"
-                style="font-weight: 600; font-size: 16px; color: #1a1925;"
+                class=""
+                style="font-weight: 600; font-size: 18px; color: #1A1925;"
               >
                 Optimize
               </h3>
@@ -171,10 +151,10 @@
               </p>
             </div>
 
-            <div>
+            <div class="flex flex-col mb-[25px]  gap-[6px]">
               <h3
-                class="mb-2 sm:mb-3"
-                style="font-weight: 600; font-size: 16px; color: #1a1925;"
+                class=""
+                style="font-weight: 600; font-size: 18px; color: #1A1925;"
               >
                 Deliver
               </h3>
@@ -188,7 +168,7 @@
               style="flex-direction: row; align-items: center"
             >
               <button
-                class="flex bg-[#1a1925] hover:bg-[#51515e] items-center justify-center whitespace-nowrap flex-shrink-0"
+                class="flex bg-[#1A1925] hover:bg-[#51515e] items-center justify-center whitespace-nowrap flex-shrink-0"
                 style="
                   width: 175px;
                   height: 40px;

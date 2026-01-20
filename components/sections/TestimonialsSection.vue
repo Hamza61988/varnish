@@ -1,47 +1,19 @@
 <template>
   <section
-    class="container mx-auto px-[57.5px] lg:px-[25px] xl:px-0 py-[7.5rem]"
-    style="background: #f7f7f8"
+    class="  "
+    
   >
-    <div class="max-w-6xl  mx-auto">
+    <div class="">
       <!-- Header Section -->
-      <div class="flex flex-col items-center mb-4 sm:mb-10 md:mb-0">
-      <SectionsUpername name="Testimonials" />
-
-        <!-- Title -->
-        <h2
-          class="text-center mb-3 text-[32px] w-[80%] md:w-full  md:text-[48px] leading-[40px] md:leading-[56px]"
-          style="
-            font-weight: 600;
-            font-style: SemiBold;
-            letter-spacing: -0.04em;
-            text-align: center;
-            vertical-align: middle;
-            text-transform: capitalize;
-            color: #1a1925;
-          "
-        >
-          Trusted By Thousands
-        </h2>
-
-        <!-- Subtitle -->
-        <p
-          class="text-center mb-6 md:mb-8 lg:mb-10 xl:mb-12 text-sm md:text-base w-[80%] md:w-full  max-w-2xl mx-auto leading-5 md:leading-6"
-          style="
-            font-family: 'Inter', sans-serif;
-            font-weight: 400;
-            letter-spacing: -0.011em;
-            text-align: center;
-            color: #51515e;
-          "
-        >
-          Over 40,000 customers trust Varnish to deliver content to millions.
-        </p>
-      </div>
-
+   
+         <SectionsTitle 
+        upername="Testimonials" 
+        title="Trusted By Thousands" 
+        subtitle="Over 40,000 customers trust Varnish to deliver content to millions." 
+      />
       <!-- Testimonial Card -->
      <div
-  class="flex flex-col  md:flex-row px-4 md:px-0  gap-4 md:gap-6 mb-6 md:mb-5 "
+  class="flex flex-col  md:flex-row px-4 md:px-0  gap-5 mb-5 "
   style="width: 100%"
 >
   <!-- Left: Image -->
@@ -56,7 +28,7 @@
 
   <!-- Right Card -->
   <div
-    class="flex flex-col p-4 md:p-6 lg:p-8 xl:p-10 2xl:p-12 mx-auto md:mx-0 relative overflow-hidden w-full md:w-[70%]  rounded-[20px] md:rounded-[28px]"
+    class="flex flex-col p-[29px] lg:p-10  mx-auto md:mx-0 relative overflow-hidden w-full md:w-[70%]  rounded-[28px]"
     style="
       background: #eeeef0;
       box-shadow: 0px 0.5px 0.5px 0px rgba(26, 25, 37, 0.08),
@@ -155,13 +127,13 @@
     <!-- QUOTE (BOTTOM) -->
     <div class="relative z-10 mt-10 md:mt-auto">
       <p
-        class=" text-[28px]  md:w-full w-[250px] leading-[39px] sm:leading-[26px] md:leading-[30px] lg:leading-[36px]"
+        class=" text-[23px] md:text-[28px]  md:w-full w-[250px] leading-[39px] sm:leading-[26px] md:leading-[30px] lg:leading-[36px]"
         style="
-          font-family: 'Funnel Display', sans-serif;
+        
           font-weight: 500;
           letter-spacing: -0.02em;
           vertical-align: middle;
-          color: #51515e;
+          color: #51515E;
         "
       >
         Varnish has been an excellent CDN for us. Setup was quick and
@@ -183,7 +155,7 @@
         class="flex flex-col md:flex-row md:justify-between px-4 md:px-0 md:items-center gap-4 md:gap-0 w-full"
       >
         <!-- Statistics Boxes -->
-        <div class="flex md:flex-row flex-col gap-2 w-full md:w-auto justify-center md:justify-start">
+        <div class="flex md:flex-row flex-col gap-3 w-full md:w-auto justify-center md:justify-start">
           <div
             class="flex items-center justify-center flex-1 md:flex-none "
             style="

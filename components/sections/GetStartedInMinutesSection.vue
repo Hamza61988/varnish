@@ -1,42 +1,18 @@
 <template>
   <section
-    class="container mx-auto px-[57.5px] lg:px-[25px] xl:px-0 pt-[6.25rem] md:pt-[7.625rem]"
-    style="background: #f7f7f8"
+    class=" "
+    
   >
-    <div class="max-w-6xl mx-auto">
+    <div class="">
       <!-- Header Section -->
-      <div class="flex flex-col items-center mb-8 sm:mb-10 md:mb-12">
-        <!-- Section Label -->
-<SectionsUpername name="How it works" />
 
-        <!-- Title -->
-        <h2
-          class="text-center md:text-[2rem] text-[2rem] mb-0 "
-          style="
-            font-weight: 600;
-            
-            line-height: 56px;
-            letter-spacing: -0.04em;
-            color: #1a1925;
-          "
-        >
-          Get Started In Minutes
-        </h2>
+      
+      <SectionsTitle 
+        upername="How it works" 
+        title="Get Started In Minutes" 
+        subtitle="It only takes a few steps to unlock our entire network." 
+      />
 
-        <!-- Subtitle -->
-        <p
-          class="text-center text-[14px] lg:text-[1rem]  max-w-2xl mx-auto"
-          style="
-            font-family: 'Inter', sans-serif;
-            font-weight: 400;
-            
-            line-height: 24px;
-            color: #51515e;
-          "
-        >
-          It only takes a few steps to unlock our entire network.
-        </p>
-      </div>
 
       <!-- Three Steps -->
       <div
@@ -84,10 +60,10 @@
 
           <!-- Title -->
           <h3
-            class="mb-2 sm:mb-3"
+            class="mb-3"
             style="
-              font-family: 'Funnel Display', sans-serif;
-              font-weight: 500;
+            
+              font-weight: 700;
               font-size: 24px;
               line-height: 32px;
               color: #1a1925;
@@ -98,7 +74,7 @@
 
           <!-- Description -->
           <p
-            class="mb-[24px] text-[13px] max-w-[304px] w-full"
+            class="mb-[23px] text-[13px] max-w-[304px] w-full"
             style="
               font-family: 'Inter', sans-serif;
               font-weight: 400;

@@ -1,22 +1,22 @@
 <template>
-  <div class="xl:h-screen lg:min-h-screen hero-section">
+  <div class="min-h-screen hero-section flex flex-col">
     <!-- Split Layout: Landing Page (Left) + Dashboard Preview (Right) -->
-    <div class="flex flex-col lg:flex-row hero-container">
+    <div class="flex  flex-col lg:flex-row hero-container flex-1">
       <!-- Left Section: Landing Page -->
       <div
         class="flex-1 justify-center items-center hero-left-section order-1 lg:order-1"
       >
         <div class="max-w-2xl md:px-0 px-[3.875rem] mx-auto">
           <!-- Top Badge -->
-          <div class="mb-4 sm:mb-5 md:mb-6">
+          <div class="">
 <SectionsUpername name="Empower Innovation!" />
           </div>
 
           <!-- Headline Section -->
-          <div class="mb-0 sm:mb-7 md:mb-8">
+          <div class="mb-[3px] mt-[3px] md:mt-[16px]  md:mb-[1rem] ">
             <h1
               style="font-weight: 600; line-height: 1.2"
-              class="text-[32px] sm:text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-0 sm:mb-4"
+              class="text-[32px]  md:text-7xl font-bold text-gray-900 "
             >
               <span>Content Delivery,</span>
               <span class="block hero-headline-line-2">
@@ -31,15 +31,15 @@
           </div>
 
           <!-- Description -->
-          <p class="hero-description mb-6 sm:mb-7 md:mb-8">
+          <p class="hero-description mb-[20px] md:mb-[32px]">
             Varnish is a high performance content delivery network that has been
             built for the future. It only takes a few minutes to start
             delivering content to your users at a blazing fast speed.
           </p>
 
           <!-- Input Form -->
-          <div class="mb-5 sm:mb-6">
-            <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 hero-form">
+          <div class="">
+            <div class="flex flex-col sm:flex-row gap-3  hero-form">
               <!-- Email Input -->
               <div class="flex-1 relative">
                 <div
@@ -102,14 +102,14 @@
               <!-- Get Started Button -->
               <button class="fancy-button">Get Started</button>
             </div>
-            <p class="flex no-credits-text mt-2 sm:mt-3">
+            <p class="flex no-credits-text  mt-3">
               No Credit Card Required
             </p>
           </div>
 
           <!-- Statistics Section -->
           <div
-            class="flex flex-wrap items-center md:justify-start justify-between gap-3 sm:gap-4 md:gap-6 mt-8 sm:mt-10 md:mt-12"
+            class="flex flex-wrap items-center md:justify-start justify-between gap-3 sm:gap-4 md:gap-6 mt-[30px] md:mt-[52px]"
           >
             <div
               v-for="(stat, index) in stats"
@@ -144,7 +144,7 @@
       </div>
       <!-- Right Section: Dashboard Preview Panel -->
       <div
-        class="w-full lg:w-[40%] mt-6 sm:mt-8 pl-[10%] lg:pl-0 lg:mt-0 hero-image-section order-2 lg:order-2"
+        class="lg:w-[40%] pl-[10%]  w-full lg:pl-0 flex flex-col justify-end hero-image-section order-2 lg:order-2"
       >
         <img
           src="/images/varnish.svg"
@@ -269,25 +269,25 @@ onMounted(() => {
   background-color: #f7f7f8;
   background-image: url("/images/dots.png");
   background-repeat: repeat;
-
   background-position: 0 0;
   position: relative;
+  min-height: 100vh;
 }
 
 @media (min-width: 1024px) {
   .hero-container {
-    padding: 3% 0;
+    padding: 38px 0 0 0;
   }
 }
 
 .hero-left-section {
-  padding: 2% 0%;
-  margin: 2% 0;
+  padding: 20px 0px;
+
 }
 
 @media (min-width: 640px) {
   .hero-left-section {
-    padding: 2.5% 5%;
+    padding: 5% 5%;
   }
 }
 
