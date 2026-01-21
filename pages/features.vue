@@ -12,8 +12,9 @@
         upername="Multiple Features" 
         title="Features" 
         subtitle="Get access to all of our features no matter the account size." 
-        alignment="start"
-      />
+       mobileAlignment="center"
+        pcAlignment="center"
+        />
 
       <LandingFeatures :features="features" />
 

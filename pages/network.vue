@@ -1,1095 +1,806 @@
 <template>
   <div
-    class="min-h-screen  relative overflow-hidden"
-    style="background: #f7f7f8"
+    class="min-h-screen relative overflow-hidden"
+  
   >
-  <div class="px-[57.5px] md:px-6  xl:px-0">
-    <!-- Main Content -->
-    <main class="mx-auto  pt-[5%]">
-      <!-- Header Section -->
-      <section
-        class="w-full md:w-3/4 lg:w-2/3 xl:w-1/2 mx-auto px-4 sm:px-6 md:px-0 mb-12 sm:mb-16 md:mb-20"
-      >
-        <!-- Section Label -->
-        <div class="flex items-center  justify-center ">
-<SectionsUpername name="Network" />
-        </div>
-
-        <!-- Title -->
-        <h1
-          class="text-center mb-4 sm:mb-6"
-          style="
-            font-family: 'Bricolage Grotesque', sans-serif;
-            font-weight: 500;
-            font-style: Medium;
-            font-size: 48px;
-            line-height: 56px;
-            letter-spacing: -0.02em;
-            text-align: center;
-            vertical-align: middle;
-            color: rgba(26, 25, 37, 1);
-          "
-        >
-          Network
-        </h1>
-
-        <!-- Subtitle -->
-        <p
-          class="text-center mb-8 sm:mb-12 md:mb-16 lg:mb-20"
-          style="
-            font-family: 'Inter', sans-serif;
-            font-weight: 400;
-            font-style: Regular;
-            font-size: 16px;
-            line-height: 24px;
-            letter-spacing: -0.011em;
-            text-align: center;
-            color: rgba(81, 81, 94, 1);
-          "
-        >
-          Get access to all of our strategic content delivery locations.
-        </p>
-      </section>
-
-      <!-- World Map Section -->
-      <section
-        class="w-full max-w-6xl mx-auto px-4  mb-16 sm:mb-20 md:mb-24"
-      >
-        <div class="relative w-full">
-          <!-- Map Container -->
-          <div
-            class="relative w-full"
-            style="min-height: 400px; position: relative"
-          >
-            <!-- Map Image -->
-            <img
-              src="/images/Network/map.svg"
-              alt="World Map with POP Locations"
-              class="w-full h-auto"
-              style="display: block"
-            />
-
-            <!-- Interactive POP Dots Overlay -->
+    <div >
+      <!-- Main Content -->
+      <main class="site-margins ">
+        <!-- Header Section -->
+        <commonTitle class="site-padding"
+          upername="Network"
+          title="Network"
+          subtitle="Get access to all of our strategic content delivery locations."
+          mobileAlignment="center"
+          pcAlignment="center"
+        />
+        <!-- World Map Section -->
+        <section class="px-[20px] mb-[20px] md:mb-[100px] md:px-[150px] ">
+          <div class="relative w-full">
+            <!-- Map Container -->
             <div
-              class="absolute inset-0 pointer-events-none"
-              style="z-index: 10"
+              class="relative w-full"
+              style="min-height: 400px; position: relative"
             >
-              <!-- Active POP Dots (Blue) -->
-              <template v-for="pop in activePOPs" :key="pop.id">
-                <div
-                  class="absolute cursor-pointer pointer-events-auto pop-dot active-pop"
-                  :style="{
-                    left: pop.x + '%',
-                    top: pop.y + '%',
-                    width: '8px',
-                    height: '8px',
-                    background: '#3b82f6',
-                    borderRadius: '50%',
-                    transform: 'translate(-50%, -50%)',
-                    transition: 'all 0.2s ease',
-                  }"
-                  @mouseenter="hoveredPOP = pop"
-                  @mouseleave="hoveredPOP = null"
-                  :title="pop.location"
-                >
+              <!-- Map Image -->
+              <img
+                src="/images/Network/map.svg"
+                alt="World Map with POP Locations"
+                class="w-full h-auto"
+                style="display: block"
+              />
+
+              <!-- Interactive POP Dots Overlay -->
+              <div
+                class="absolute inset-0 pointer-events-none"
+                style="z-index: 10"
+              >
+                <!-- Active POP Dots (Blue) -->
+                <template v-for="pop in activePOPs" :key="pop.id">
                   <div
-                    v-if="hoveredPOP?.id === pop.id"
-                    class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 rounded text-xs whitespace-nowrap"
+                    class="absolute cursor-pointer pointer-events-auto pop-dot active-pop"
+                    :style="{
+                      left: pop.x + '%',
+                      top: pop.y + '%',
+                      width: '8px',
+                      height: '8px',
+                      background: '#3b82f6',
+                      borderRadius: '50%',
+                      transform: 'translate(-50%, -50%)',
+                      transition: 'all 0.2s ease',
+                    }"
+                    @mouseenter="hoveredPOP = pop"
+                    @mouseleave="hoveredPOP = null"
+                    :title="pop.location"
+                  >
+                    <div
+                      v-if="hoveredPOP?.id === pop.id"
+                      class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 rounded text-xs whitespace-nowrap"
+                      style="
+                        background: rgba(26, 25, 37, 0.9);
+                        color: white;
+                        font-family: &quot;Inter&quot;, sans-serif;
+                        font-size: 11px;
+                        pointer-events: none;
+                        z-index: 20;
+                      "
+                    >
+                      {{ pop.location }}
+                    </div>
+                  </div>
+                </template>
+
+                <!-- Planned POP Dots (Gray) -->
+                <template v-for="pop in plannedPOPs" :key="pop.id">
+                  <div
+                    class="absolute cursor-pointer pointer-events-auto pop-dot planned-pop"
+                    :style="{
+                      left: pop.x + '%',
+                      top: pop.y + '%',
+                      width: '8px',
+                      height: '8px',
+                      background: '#9ca3af',
+                      borderRadius: '50%',
+                      transform: 'translate(-50%, -50%)',
+                      transition: 'all 0.2s ease',
+                    }"
+                    @mouseenter="hoveredPOP = pop"
+                    @mouseleave="hoveredPOP = null"
+                    :title="pop.location"
+                  >
+                    <div
+                      v-if="hoveredPOP?.id === pop.id"
+                      class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 rounded text-xs whitespace-nowrap"
+                      style="
+                        background: rgba(26, 25, 37, 0.9);
+                        color: white;
+                        font-family: &quot;Inter&quot;, sans-serif;
+                        font-size: 11px;
+                        pointer-events: none;
+                        z-index: 20;
+                      "
+                    >
+                      {{ pop.location }} (Planned)
+                    </div>
+                  </div>
+                </template>
+              </div>
+
+              <!-- Legend -->
+              <div
+                class="absolute bottom-4 left-4 flex flex-col gap-3 z-20"
+                style="padding: 12px 16px"
+              >
+                <div class="flex items-center gap-2">
+                  <div
+                    class="w-3 h-3 rounded-full"
+                    style="background: #3b82f6"
+                  ></div>
+                  <span
                     style="
-                      background: rgba(26, 25, 37, 0.9);
-                      color: white;
-                      font-family: 'Inter', sans-serif;
-                      font-size: 11px;
-                      pointer-events: none;
-                      z-index: 20;
+                      font-family: &quot;Inter&quot;, sans-serif;
+                      font-weight: 400;
+                      font-size: 12px;
+                      color: #1a1925;
                     "
                   >
-                    {{ pop.location }}
-                  </div>
+                    Active POP
+                  </span>
                 </div>
-              </template>
-
-              <!-- Planned POP Dots (Gray) -->
-              <template v-for="pop in plannedPOPs" :key="pop.id">
-                <div
-                  class="absolute cursor-pointer pointer-events-auto pop-dot planned-pop"
-                  :style="{
-                    left: pop.x + '%',
-                    top: pop.y + '%',
-                    width: '8px',
-                    height: '8px',
-                    background: '#9ca3af',
-                    borderRadius: '50%',
-                    transform: 'translate(-50%, -50%)',
-                    transition: 'all 0.2s ease',
-                  }"
-                  @mouseenter="hoveredPOP = pop"
-                  @mouseleave="hoveredPOP = null"
-                  :title="pop.location"
-                >
+                <div class="flex items-center gap-2">
                   <div
-                    v-if="hoveredPOP?.id === pop.id"
-                    class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 rounded text-xs whitespace-nowrap"
+                    class="w-3 h-3 rounded-full"
+                    style="background: #9ca3af"
+                  ></div>
+                  <span
                     style="
-                      background: rgba(26, 25, 37, 0.9);
-                      color: white;
-                      font-family: 'Inter', sans-serif;
-                      font-size: 11px;
-                      pointer-events: none;
-                      z-index: 20;
+                      font-family: &quot;Inter&quot;, sans-serif;
+                      font-weight: 400;
+                      font-size: 12px;
+                      color: #1a1925;
                     "
                   >
-                    {{ pop.location }} (Planned)
-                  </div>
+                    Planned POP
+                  </span>
                 </div>
-              </template>
-            </div>
-
-            <!-- Legend -->
-            <div
-              class="absolute bottom-4 left-4 flex flex-col gap-3 z-20"
-              style="padding: 12px 16px"
-            >
-              <div class="flex items-center gap-2">
-                <div
-                  class="w-3 h-3 rounded-full"
-                  style="background: #3b82f6"
-                ></div>
-                <span
-                  style="
-                    font-family: 'Inter', sans-serif;
-                    font-weight: 400;
-                    font-size: 12px;
-                    color: #1a1925;
-                  "
-                >
-                  Active POP
-                </span>
-              </div>
-              <div class="flex items-center gap-2">
-                <div
-                  class="w-3 h-3 rounded-full"
-                  style="background: #9ca3af"
-                ></div>
-                <span
-                  style="
-                    font-family: 'Inter', sans-serif;
-                    font-weight: 400;
-                    font-size: 12px;
-                    color: #1a1925;
-                  "
-                >
-                  Planned POP
-                </span>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- City List by Regions Section -->
-      <section
-        class="w-full max-w-6xl mx-auto px-4 md:px-6  xl:px-0 mb-16 sm:mb-20 md:mb-24"
-      >
-        <div
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6"
+        <!-- City List by Regions Section -->
+         <div class="space-y-[100px] flex flex-col site-padding ">
+        <section
+          class=""
         >
-          <!-- North America Card -->
           <div
-            class="relative overflow-hidden rounded-[20px] p-4 md:p-6"
-            style="
-              background: rgba(255, 255, 255, 1);
-              border: 1px solid rgba(238, 238, 240, 1);
-              box-shadow: 0px 0.5px 0.5px 0px rgba(26, 25, 37, 0.08),
-                0px 1px 1px 0px rgba(26, 25, 37, 0.08),
-                0px 1px 2px -1px rgba(26, 25, 37, 0.06);
-            "
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[25px]"
           >
-            <h3
-              class="mb-4"
+            <!-- North America Card -->
+            <div
+              class="relative overflow-hidden rounded-[20px] p-4 md:p-6"
               style="
-                font-family: 'Inter', sans-serif;
-                font-weight: 600;
-                font-size: 18px;
-                line-height: 24px;
-                color: #1a1925;
+                background: rgba(255, 255, 255, 1);
+                border: 1px solid rgba(238, 238, 240, 1);
+                box-shadow:
+                  0px 0.5px 0.5px 0px rgba(26, 25, 37, 0.08),
+                  0px 1px 1px 0px rgba(26, 25, 37, 0.08),
+                  0px 1px 2px -1px rgba(26, 25, 37, 0.06);
               "
             >
-              North America
-            </h3>
-            <div class="space-y-2">
-              <div
-                v-for="city in northAmericaCities"
-                :key="city.name"
-                class="flex items-center gap-2"
+              <h3
+                class="font-['Inter'] font-semibold text-[18px] leading-6 text-[#757575] mb-4"
               >
-                <span class="text-base">{{ city.flag }}</span>
-                <span
-                  style="
-                    font-family: 'Inter', sans-serif;
-                    font-weight: 400;
-                    font-size: 14px;
-                    line-height: 20px;
-                    color: #1a1925;
-                  "
+                North America
+              </h3>
+              <div class="space-y-2">
+                <div
+                  v-for="city in northAmericaCities"
+                  :key="city.name"
+                  class="flex items-center gap-2"
                 >
-                  {{ city.name }}
-                </span>
+                  <span class="text-base">{{ city.flag }}</span>
+                  <span
+                    class="font-['Inter'] font-normal text-[15px] leading-5 text-[#1a1925]"
+                  >
+                    {{ city.name }}
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Europe Card -->
+            <div
+              class="relative overflow-hidden rounded-[20px] p-4 md:p-6"
+              style="
+                background: rgba(255, 255, 255, 1);
+                border: 1px solid rgba(238, 238, 240, 1);
+                box-shadow:
+                  0px 0.5px 0.5px 0px rgba(26, 25, 37, 0.08),
+                  0px 1px 1px 0px rgba(26, 25, 37, 0.08),
+                  0px 1px 2px -1px rgba(26, 25, 37, 0.06);
+              "
+            >
+              <h3
+                class="font-['Inter'] font-semibold text-[18px] leading-6 text-[#757575] mb-4"
+              >
+                Europe
+              </h3>
+              <div class="space-y-2">
+                <div
+                  v-for="city in europeCities"
+                  :key="city.name"
+                  class="flex items-center gap-2"
+                >
+                  <span class="text-base">{{ city.flag }}</span>
+                  <span
+                    class="font-['Inter'] font-normal text-[15px] leading-5 text-[#1a1925]"
+                  >
+                    {{ city.name }}
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Asia Card -->
+            <div
+              class="relative overflow-hidden rounded-[20px] p-4 md:p-6"
+              style="
+                background: rgba(255, 255, 255, 1);
+                border: 1px solid rgba(238, 238, 240, 1);
+                box-shadow:
+                  0px 0.5px 0.5px 0px rgba(26, 25, 37, 0.08),
+                  0px 1px 1px 0px rgba(26, 25, 37, 0.08),
+                  0px 1px 2px -1px rgba(26, 25, 37, 0.06);
+              "
+            >
+              <h3
+                class="font-['Inter'] font-semibold text-[18px] leading-6 text-[#757575] mb-4"
+              >
+                Asia
+              </h3>
+              <div class="space-y-2">
+                <div
+                  v-for="city in asiaCities"
+                  :key="city.name"
+                  class="flex items-center gap-2"
+                >
+                  <span class="text-base">{{ city.flag }}</span>
+                  <span
+                    class="font-['Inter'] font-normal text-[15px] leading-5 text-[#1a1925]"
+                  >
+                    {{ city.name }}
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Oceania Card -->
+            <div
+              class="relative overflow-hidden rounded-[20px] p-4 md:p-6"
+              style="
+                background: rgba(255, 255, 255, 1);
+                border: 1px solid rgba(238, 238, 240, 1);
+                box-shadow:
+                  0px 0.5px 0.5px 0px rgba(26, 25, 37, 0.08),
+                  0px 1px 1px 0px rgba(26, 25, 37, 0.08),
+                  0px 1px 2px -1px rgba(26, 25, 37, 0.06);
+              "
+            >
+              <h3
+                class="font-['Inter'] font-semibold text-[18px] leading-6 text-[#757575] mb-4"
+              >
+                Oceania
+              </h3>
+              <div class="space-y-2">
+                <div
+                  v-for="city in oceaniaCities"
+                  :key="city.name"
+                  class="flex items-center gap-2"
+                >
+                  <span class="text-base">{{ city.flag }}</span>
+                  <span
+                    class="font-['Inter'] font-normal text-[15px] leading-5 text-[#1a1925]"
+                  >
+                    {{ city.name }}
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Latin America Card -->
+            <div
+              class="relative overflow-hidden rounded-[20px] p-4 md:p-6"
+              style="
+                background: rgba(255, 255, 255, 1);
+                border: 1px solid rgba(238, 238, 240, 1);
+                box-shadow:
+                  0px 0.5px 0.5px 0px rgba(26, 25, 37, 0.08),
+                  0px 1px 1px 0px rgba(26, 25, 37, 0.08),
+                  0px 1px 2px -1px rgba(26, 25, 37, 0.06);
+              "
+            >
+              <h3
+                class="font-['Inter'] font-semibold text-[18px] leading-6 text-[#757575] mb-4"
+              >
+                Latin America
+              </h3>
+              <div class="space-y-2">
+                <div
+                  v-for="city in latinAmericaCities"
+                  :key="city.name"
+                  class="flex items-center gap-2"
+                >
+                  <span class="text-base">{{ city.flag }}</span>
+                  <span
+                    class="font-['Inter'] font-normal text-[15px] leading-5 text-[#1a1925]"
+                  >
+                    {{ city.name }}
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Africa Card -->
+            <div
+              class="relative overflow-hidden rounded-[20px] p-4 md:p-6"
+              style="
+                background: rgba(255, 255, 255, 1);
+                border: 1px solid rgba(238, 238, 240, 1);
+                box-shadow:
+                  0px 0.5px 0.5px 0px rgba(26, 25, 37, 0.08),
+                  0px 1px 1px 0px rgba(26, 25, 37, 0.08),
+                  0px 1px 2px -1px rgba(26, 25, 37, 0.06);
+              "
+            >
+              <h3
+                class="font-['Inter'] font-semibold text-[18px] leading-6 text-[#757575] mb-4"
+              >
+                Africa
+              </h3>
+              <div class="space-y-2">
+                <div
+                  v-for="city in africaCities"
+                  :key="city.name"
+                  class="flex items-center gap-2"
+                >
+                  <span class="text-base">{{ city.flag }}</span>
+                  <span
+                    class="font-['Inter'] font-normal text-[15px] leading-5 text-[#1a1925]"
+                  >
+                    {{ city.name }}
+                  </span>
+                </div>
               </div>
             </div>
           </div>
+        </section>
 
-          <!-- Europe Card -->
-          <div
-            class="relative overflow-hidden rounded-[20px] p-4 md:p-6"
-            style="
-              background: rgba(255, 255, 255, 1);
-              border: 1px solid rgba(238, 238, 240, 1);
-              box-shadow: 0px 0.5px 0.5px 0px rgba(26, 25, 37, 0.08),
-                0px 1px 1px 0px rgba(26, 25, 37, 0.08),
-                0px 1px 2px -1px rgba(26, 25, 37, 0.06);
-            "
-          >
-            <h3
-              class="mb-4"
-              style="
-                font-family: 'Inter', sans-serif;
-                font-weight: 600;
-                font-size: 18px;
-                line-height: 24px;
-                color: #1a1925;
-              "
-            >
-              Europe
-            </h3>
-            <div class="space-y-2">
-              <div
-                v-for="city in europeCities"
-                :key="city.name"
-                class="flex items-center gap-2"
-              >
-                <span class="text-base">{{ city.flag }}</span>
-                <span
-                  style="
-                    font-family: 'Inter', sans-serif;
-                    font-weight: 400;
-                    font-size: 14px;
-                    line-height: 20px;
-                    color: #1a1925;
-                  "
-                >
-                  {{ city.name }}
-                </span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Asia Card -->
-          <div
-            class="relative overflow-hidden rounded-[20px] p-4 md:p-6"
-            style="
-              background: rgba(255, 255, 255, 1);
-              border: 1px solid rgba(238, 238, 240, 1);
-              box-shadow: 0px 0.5px 0.5px 0px rgba(26, 25, 37, 0.08),
-                0px 1px 1px 0px rgba(26, 25, 37, 0.08),
-                0px 1px 2px -1px rgba(26, 25, 37, 0.06);
-            "
-          >
-            <h3
-              class="mb-4"
-              style="
-                font-family: 'Inter', sans-serif;
-                font-weight: 600;
-                font-size: 18px;
-                line-height: 24px;
-                color: #1a1925;
-              "
-            >
-              Asia
-            </h3>
-            <div class="space-y-2">
-              <div
-                v-for="city in asiaCities"
-                :key="city.name"
-                class="flex items-center gap-2"
-              >
-                <span class="text-base">{{ city.flag }}</span>
-                <span
-                  style="
-                    font-family: 'Inter', sans-serif;
-                    font-weight: 400;
-                    font-size: 14px;
-                    line-height: 20px;
-                    color: #1a1925;
-                  "
-                >
-                  {{ city.name }}
-                </span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Oceania Card -->
-          <div
-            class="relative overflow-hidden rounded-[20px] p-4 md:p-6"
-            style="
-              background: rgba(255, 255, 255, 1);
-              border: 1px solid rgba(238, 238, 240, 1);
-              box-shadow: 0px 0.5px 0.5px 0px rgba(26, 25, 37, 0.08),
-                0px 1px 1px 0px rgba(26, 25, 37, 0.08),
-                0px 1px 2px -1px rgba(26, 25, 37, 0.06);
-            "
-          >
-            <h3
-              class="mb-4"
-              style="
-                font-family: 'Inter', sans-serif;
-                font-weight: 600;
-                font-size: 18px;
-                line-height: 24px;
-                color: #1a1925;
-              "
-            >
-              Oceania
-            </h3>
-            <div class="space-y-2">
-              <div
-                v-for="city in oceaniaCities"
-                :key="city.name"
-                class="flex items-center gap-2"
-              >
-                <span class="text-base">{{ city.flag }}</span>
-                <span
-                  style="
-                    font-family: 'Inter', sans-serif;
-                    font-weight: 400;
-                    font-size: 14px;
-                    line-height: 20px;
-                    color: #1a1925;
-                  "
-                >
-                  {{ city.name }}
-                </span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Latin America Card -->
-          <div
-            class="relative overflow-hidden rounded-[20px] p-4 md:p-6"
-            style="
-              background: rgba(255, 255, 255, 1);
-              border: 1px solid rgba(238, 238, 240, 1);
-              box-shadow: 0px 0.5px 0.5px 0px rgba(26, 25, 37, 0.08),
-                0px 1px 1px 0px rgba(26, 25, 37, 0.08),
-                0px 1px 2px -1px rgba(26, 25, 37, 0.06);
-            "
-          >
-            <h3
-              class="mb-4"
-              style="
-                font-family: 'Inter', sans-serif;
-                font-weight: 600;
-                font-size: 18px;
-                line-height: 24px;
-                color: #1a1925;
-              "
-            >
-              Latin America
-            </h3>
-            <div class="space-y-2">
-              <div
-                v-for="city in latinAmericaCities"
-                :key="city.name"
-                class="flex items-center gap-2"
-              >
-                <span class="text-base">{{ city.flag }}</span>
-                <span
-                  style="
-                    font-family: 'Inter', sans-serif;
-                    font-weight: 400;
-                    font-size: 14px;
-                    line-height: 20px;
-                    color: #1a1925;
-                  "
-                >
-                  {{ city.name }}
-                </span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Africa Card -->
-          <div
-            class="relative overflow-hidden rounded-[20px] p-4 md:p-6"
-            style="
-              background: rgba(255, 255, 255, 1);
-              border: 1px solid rgba(238, 238, 240, 1);
-              box-shadow: 0px 0.5px 0.5px 0px rgba(26, 25, 37, 0.08),
-                0px 1px 1px 0px rgba(26, 25, 37, 0.08),
-                0px 1px 2px -1px rgba(26, 25, 37, 0.06);
-            "
-          >
-            <h3
-              class="mb-4"
-              style="
-                font-family: 'Inter', sans-serif;
-                font-weight: 600;
-                font-size: 18px;
-                line-height: 24px;
-                color: #1a1925;
-              "
-            >
-              Africa
-            </h3>
-            <div class="space-y-2">
-              <div
-                v-for="city in africaCities"
-                :key="city.name"
-                class="flex items-center gap-2"
-              >
-                <span class="text-base">{{ city.flag }}</span>
-                <span
-                  style="
-                    font-family: 'Inter', sans-serif;
-                    font-weight: 400;
-                    font-size: 14px;
-                    line-height: 20px;
-                    color: #1a1925;
-                  "
-                >
-                  {{ city.name }}
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Premium Data Centers Section -->
-      <section
-        class="w-full max-w-6xl mx-auto px-4 sm:px-6 md:px-0 mb-16 sm:mb-20 md:mb-24"
-        style="
-          background-color: #f7f7f8;
-          padding: 60px 40px;
-          border-radius: 20px;
-        "
-      >
-        <!-- Header -->
-        <div class="text-center mb-12">
-          <!-- Section Label -->
-          <div class="flex items-center justify-center mb-4 sm:mb-6">
-          <SectionsUpername name="Network" />
-          </div>
-
-          <h2
-            class="mb-4"
-            style="
-              font-family: 'Bricolage Grotesque', sans-serif;
-              font-weight: 500;
-              font-style: Medium;
-              font-size: 48px;
-              line-height: 56px;
-              letter-spacing: -0.02em;
-              text-align: center;
-              vertical-align: middle;
-              color: rgba(26, 25, 37, 1);
-            "
-          >
-            Premium data centers
-          </h2>
-          <p
-            class="mb-8"
-            style="
-              font-family: 'Inter', sans-serif;
-              font-weight: 400;
-              font-style: Regular;
-              font-size: 16px;
-              line-height: 24px;
-              letter-spacing: -0.011em;
-              text-align: center;
-              color: rgba(81, 81, 94, 1);
-            "
-          >
-            Leading providers for high performance and connectivity.
-          </p>
-        </div>
-
-        <!-- Feature Cards -->
-        <div
-          class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 md:gap-10 max-w-6xl mx-auto"
+        <!-- Premium Data Centers Section -->
+        <section
+          class=""
+          style="
+            background-color: #f7f7f8;
+          
+            border-radius: 20px;
+          "
         >
-          <!-- Flexible Card -->
-          <div class="flex flex-col items-center">
-            <!-- Card with Icon Only -->
-            <div
-              class="relative overflow-hidden mb-4"
-              style="
-                width: 235px;
-                height: 167px;
-                border-radius: 20px;
-                background: #ffffff;
-                box-shadow: 0px 0.5px 0.5px 0px rgba(26, 25, 37, 0.04),
-                  0px 1px 1px 0px rgba(26, 25, 37, 0.04),
-                  0px 1px 2px -1px rgba(26, 25, 37, 0.04);
-              "
-            >
-              <div
-                class="absolute hidden sm:block"
-                style="
-                  width: 148px;
-                  height: 148px;
-                  top: 0px;
-                  right: 0px;
-                  opacity: 1;
-                  border: 0.8px solid;
-                  border-image-source: radial-gradient(
-                    81.86% 81.86% at 100% 100%,
-                    rgba(26, 25, 37, 0.12) 0%,
-                    rgba(26, 25, 37, 0) 77.02%
-                  );
-                  border-image-slice: 1;
-                  background-image: url('/images/about/bgcard.svg');
-                  background-repeat: no-repeat;
-                  background-size: contain;
-                  border: none;
-                "
-              ></div>
-              <!-- Card Background - bgcard.svg -->
-              <div
-                class="absolute top-0 right-0 w-1/2 h-1/2 pointer-events-none opacity-30"
-                style="
-                  background-image: url('/images/about/bgcard.svg');
-                  background-repeat: no-repeat;
-                  background-position: top right;
-                  background-size: contain;
-                "
-              ></div>
-              <!-- Icon -->
-              <div class="relative flex items-center justify-center h-full">
-                <div class="relative">
-                  <!-- Icon Background -->
-                  <div
-                    class="absolute"
-                    style="
-                      width: 75px;
-                      height: 75px;
-                      background-image: url('/images/about/bgcardicon.svg');
-                      background-repeat: no-repeat;
-                      background-size: cover;
-                      background-position: center;
-                      z-index: 0;
-                    "
-                  ></div>
-                  <!-- Flexible Icon -->
-                  <img
-                    src="/icons/network1.svg"
-                    alt="Flexible"
-                    class="relative z-10"
-                    style="width: 105px; height: 105px; opacity: 1"
-                  />
-                </div>
-              </div>
-            </div>
-            <!-- Title -->
-            <h3
-              class="mb-2 text-left w-full"
-              style="
-                font-family: 'Bricolage Grotesque', sans-serif;
-                font-weight: 700;
-                font-style: Bold;
-                font-size: 24px;
-                line-height: 32px;
-                letter-spacing: -0.02em;
-                text-align: center;
-                color: rgba(26, 25, 37, 1);
-              "
-            >
-              Global
-            </h3>
-            <!-- Description -->
-            <p
-              class="mb-4 text-left w-full"
-              style="
-                font-family: 'Inter', sans-serif;
-                font-weight: 400;
-                font-style: Regular;
-                font-size: 13px;
-                line-height: 20px;
-                letter-spacing: -0.006em;
-                text-align: center;
-                color: rgba(115, 115, 127, 1);
-              "
-            >
-              Extensive coverage with 60+ data centers in 40+ countries spread
-              across 6 continents.
-            </p>
-          </div>
-
-          <!-- Programmatic Card -->
-          <div class="flex flex-col items-center">
-            <!-- Card with Icon Only -->
-            <div
-              class="relative overflow-hidden mb-4"
-              style="
-                width: 235px;
-                height: 167px;
-                border-radius: 20px;
-                background: #ffffff;
-                box-shadow: 0px 0.5px 0.5px 0px rgba(26, 25, 37, 0.04),
-                  0px 1px 1px 0px rgba(26, 25, 37, 0.04),
-                  0px 1px 2px -1px rgba(26, 25, 37, 0.04);
-              "
-            >
-              <div
-                class="absolute hidden sm:block"
-                style="
-                  width: 148px;
-                  height: 148px;
-                  top: 0px;
-                  right: 0px;
-                  opacity: 1;
-                  border: 0.8px solid;
-                  border-image-source: radial-gradient(
-                    81.86% 81.86% at 100% 100%,
-                    rgba(26, 25, 37, 0.12) 0%,
-                    rgba(26, 25, 37, 0) 77.02%
-                  );
-                  border-image-slice: 1;
-                  background-image: url('/images/about/bgcard.svg');
-                  background-repeat: no-repeat;
-                  background-size: contain;
-                  border: none;
-                "
-              ></div>
-              <!-- Card Background - bgcard.svg -->
-              <div
-                class="absolute top-0 right-0 w-1/2 h-1/2 pointer-events-none opacity-30"
-                style="
-                  background-image: url('/images/about/bgcard.svg');
-                  background-repeat: no-repeat;
-                  background-position: top right;
-                  background-size: contain;
-                "
-              ></div>
-              <!-- Icon -->
-              <div class="relative flex items-center justify-center h-full">
-                <div class="relative">
-                  <!-- Icon Background -->
-                  <div
-                    class="absolute"
-                    style="
-                      width: 75px;
-                      height: 75px;
-                      background-image: url('/images/about/bgcardicon.svg');
-                      background-repeat: no-repeat;
-                      background-size: cover;
-                      background-position: center;
-                      z-index: 0;
-                    "
-                  ></div>
-                  <!-- Programmatic Icon -->
-                  <img
-                    src="/icons/network3.svg"
-                    alt="Programmatic"
-                    class="relative z-10"
-                    style="width: 105px; height: 105px; opacity: 1"
-                  />
-                </div>
-              </div>
-            </div>
-            <!-- Title -->
-            <h3
-              class="mb-2 text-left w-full"
-              style="
-                font-family: 'Bricolage Grotesque', sans-serif;
-                font-weight: 700;
-                font-style: Bold;
-                font-size: 24px;
-                line-height: 32px;
-                letter-spacing: -0.02em;
-                text-align: center;
-                color: rgba(26, 25, 37, 1);
-              "
-            >
-              Secure
-            </h3>
-            <!-- Description -->
-            <p
-              class="mb-4 text-left w-full"
-              style="
-                font-family: 'Inter', sans-serif;
-                font-weight: 400;
-                font-style: Regular;
-                font-size: 13px;
-                line-height: 20px;
-                letter-spacing: -0.006em;
-                text-align: center;
-                color: rgba(115, 115, 127, 1);
-              "
-            >
-              Stringent security and compliance standards to keep data safe (ISO
-              27001).
-            </p>
-          </div>
-
-          <!-- Accurate Card -->
-          <div class="flex flex-col items-center">
-            <!-- Card with Icon Only -->
-            <div
-              class="relative overflow-hidden mb-4"
-              style="
-                width: 235px;
-                height: 167px;
-                border-radius: 20px;
-                background: #ffffff;
-                box-shadow: 0px 0.5px 0.5px 0px rgba(26, 25, 37, 0.04),
-                  0px 1px 1px 0px rgba(26, 25, 37, 0.04),
-                  0px 1px 2px -1px rgba(26, 25, 37, 0.04);
-              "
-            >
-              <div
-                class="absolute hidden sm:block"
-                style="
-                  width: 148px;
-                  height: 148px;
-                  top: 0px;
-                  right: 0px;
-                  opacity: 1;
-                  border: 0.8px solid;
-                  border-image-source: radial-gradient(
-                    81.86% 81.86% at 100% 100%,
-                    rgba(26, 25, 37, 0.12) 0%,
-                    rgba(26, 25, 37, 0) 77.02%
-                  );
-                  border-image-slice: 1;
-                  background-image: url('/images/about/bgcard.svg');
-                  background-repeat: no-repeat;
-                  background-size: contain;
-                  border: none;
-                "
-              ></div>
-              <!-- Card Background - bgcard.svg -->
-              <div
-                class="absolute top-0 right-0 w-1/2 h-1/2 pointer-events-none opacity-30"
-                style="
-                  background-image: url('/images/about/bgcard.svg');
-                  background-repeat: no-repeat;
-                  background-position: top right;
-                  background-size: contain;
-                "
-              ></div>
-              <!-- Icon -->
-              <div class="relative flex items-center justify-center h-full">
-                <div class="relative">
-                  <!-- Icon Background -->
-                  <div
-                    class="absolute"
-                    style="
-                      width: 75px;
-                      height: 75px;
-                      background-image: url('/images/about/bgcardicon.svg');
-                      background-repeat: no-repeat;
-                      background-size: cover;
-                      background-position: center;
-                      z-index: 0;
-                    "
-                  ></div>
-                  <!-- Accurate Icon -->
-                  <img
-                    src="/icons/network2.svg"
-                    alt="Accurate"
-                    class="relative z-10"
-                    style="width: 105px; height: 105px; opacity: 1"
-                  />
-                </div>
-              </div>
-            </div>
-            <!-- Title -->
-            <h3
-              class="mb-2 text-left w-full"
-              style="
-                font-family: 'Bricolage Grotesque', sans-serif;
-                font-weight: 700;
-                font-style: Bold;
-                font-size: 24px;
-                line-height: 32px;
-                letter-spacing: -0.02em;
-                text-align: center;
-                color: rgba(26, 25, 37, 1);
-              "
-            >
-              Redundant
-            </h3>
-            <!-- Description -->
-            <p
-              class="mb-4 text-left w-full"
-              style="
-                font-family: 'Inter', sans-serif;
-                font-weight: 400;
-                font-style: Regular;
-                font-size: 13px;
-                line-height: 20px;
-                letter-spacing: -0.006em;
-                text-align: center;
-                color: rgba(115, 115, 127, 1);
-              "
-            >
-              Dense interconnectivity with distributed power and cooling ensures
-              high availability.
-            </p>
-          </div>
-        </div>
-
-        <!-- Company Logos -->
-        <div class="flex flex-wrap items-center justify-center gap-8 md:gap-12">
-          <img
-            src="/icons/d6c20539cb41888055fe0be24db21e91473acf1b.png"
-            alt="Company logo"
-            style="width: auto"
+          <!-- Header -->
+          <commonTitle
+            upername="Network"
+            title="Premium Data Centers"
+            subtitle="Leading providers for high performance and connectivity."
+            mobileAlignment="center"
+            pcAlignment="center"
           />
-        </div>
-      </section>
 
-      <!-- Tier 1 Networks Section -->
-      <section class="w-full max-w-6xl mx-auto" style="padding: 5% 0%">
-        <!-- Header -->
-        <div class="text-center mb-12">
-          <!-- Section Label -->
-          <div class="flex items-center justify-center mb-4 sm:mb-6">
-         <SectionsUpername name="Network" />
-          </div>
-
-          <h2
-            class="mb-4 text-[2rem] md:text-5xl"
-            style="
-              font-family: 'Bricolage Grotesque', sans-serif;
-              font-weight: 500;
-              font-style: Medium;
-              letter-spacing: -0.02em;
-              text-align: center;
-              vertical-align: middle;
-              color: rgba(26, 25, 37, 1);
-            "
+          <div
+            class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 md:gap-10 "
           >
-            Tier 1 networks
-          </h2>
-          <p
-            class="mb-8 text-[13px] md:text-base"
-            style="
-              font-family: 'Inter', sans-serif;
-              font-weight: 400;
-              font-style: Regular;
-              letter-spacing: -0.011em;
-              text-align: center;
-              color: rgba(81, 81, 94, 1);
-            "
-          >
-            Leading providers for high throughput and low latency.
-          </p>
-        </div>
-
-        <!-- Content Grid -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
-          <!-- Left: Text Content -->
-          <div class="space-y-4" style="margin: auto">
-            <p
-              class="text-[13px] md:text-base text-justify"
-              style="
-                font-family: 'Inter', sans-serif;
-                font-weight: 400;
-                font-style: Regular;
-                letter-spacing: -0.006em;
-                color: rgba(115, 115, 127, 1);
-              "
-            >
-              We operate a
-              <span style="text-decoration: underline"
-                >non-federated global CDN</span
+            <!-- Flexible Card -->
+            <div class="flex flex-col items-center">
+              <!-- Card with Icon Only -->
+              <div
+                class="relative overflow-hidden mb-4"
+                style="
+                  width: 235px;
+                  height: 167px;
+                  border-radius: 20px;
+                  background: #ffffff;
+                  box-shadow:
+                    0px 0.5px 0.5px 0px rgba(26, 25, 37, 0.04),
+                    0px 1px 1px 0px rgba(26, 25, 37, 0.04),
+                    0px 1px 2px -1px rgba(26, 25, 37, 0.04);
+                "
               >
-              and have engineered our architecture from the ground up. Each
-              point of presence must adhere to our strict data center
-              requirements, including direct access to multiple Tier 1 network
-              providers.
-            </p>
-            <p
-              class="text-[13px] md:text-base text-justify"
-              style="
-                font-family: 'Inter', sans-serif;
-                font-weight: 400;
-                font-style: Regular;
-                letter-spacing: -0.006em;
-                color: rgba(115, 115, 127, 1);
-              "
-            >
-              Having our network backbone powered by Tier 1 networks allows data
-              to be transferred without delay, even in the most demanding
-              circumstances. We only expand our network where true value can be
-              added.
-            </p>
+                <div
+                  class="absolute hidden sm:block"
+                  style="
+                    width: 148px;
+                    height: 148px;
+                    top: 0px;
+                    right: 0px;
+                    opacity: 1;
+                    border: 0.8px solid;
+                    border-image-source: radial-gradient(
+                      81.86% 81.86% at 100% 100%,
+                      rgba(26, 25, 37, 0.12) 0%,
+                      rgba(26, 25, 37, 0) 77.02%
+                    );
+                    border-image-slice: 1;
+                    background-image: url(&quot;/images/about/bgcard.svg&quot;);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    border: none;
+                  "
+                ></div>
+                <!-- Card Background - bgcard.svg -->
+                <div
+                  class="absolute top-0 right-0 w-1/2 h-1/2 pointer-events-none opacity-30"
+                  style="
+                    background-image: url(&quot;/images/about/bgcard.svg&quot;);
+                    background-repeat: no-repeat;
+                    background-position: top right;
+                    background-size: contain;
+                  "
+                ></div>
+                <!-- Icon -->
+                <div class="relative flex items-center justify-center h-full">
+                  <div class="relative">
+                    <!-- Icon Background -->
+                    <div
+                      class="absolute"
+                      style="
+                        width: 75px;
+                        height: 75px;
+                        background-image: url(&quot;/images/about/bgcardicon.svg&quot;);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: center;
+                        z-index: 0;
+                      "
+                    ></div>
+                    <!-- Flexible Icon -->
+                    <img
+                      src="/icons/network1.svg"
+                      alt="Flexible"
+                      class="relative z-10"
+                      style="width: 105px; height: 105px; opacity: 1"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- Title -->
+              <h3
+                class="font-['Bricolage_Grotesque'] font-bold text-center text-xl md:text-[24px] leading-8 tracking-tight text-[#1a1925] mb-2"
+              >
+                Global
+              </h3>
+              <!-- Description -->
+              <p
+                class="font-['Inter'] font-normal text-center text-[13px] leading-5 tracking-tight text-[#73737f] mb-4"
+              >
+                Extensive coverage with 60+ data centers in 40+ countries spread
+                across 6 continents.
+              </p>
+            </div>
+
+            <!-- Programmatic Card -->
+            <div class="flex flex-col items-center">
+              <!-- Card with Icon Only -->
+              <div
+                class="relative overflow-hidden mb-4"
+                style="
+                  width: 235px;
+                  height: 167px;
+                  border-radius: 20px;
+                  background: #ffffff;
+                  box-shadow:
+                    0px 0.5px 0.5px 0px rgba(26, 25, 37, 0.04),
+                    0px 1px 1px 0px rgba(26, 25, 37, 0.04),
+                    0px 1px 2px -1px rgba(26, 25, 37, 0.04);
+                "
+              >
+                <div
+                  class="absolute hidden sm:block"
+                  style="
+                    width: 148px;
+                    height: 148px;
+                    top: 0px;
+                    right: 0px;
+                    opacity: 1;
+                    border: 0.8px solid;
+                    border-image-source: radial-gradient(
+                      81.86% 81.86% at 100% 100%,
+                      rgba(26, 25, 37, 0.12) 0%,
+                      rgba(26, 25, 37, 0) 77.02%
+                    );
+                    border-image-slice: 1;
+                    background-image: url(&quot;/images/about/bgcard.svg&quot;);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    border: none;
+                  "
+                ></div>
+                <!-- Card Background - bgcard.svg -->
+                <div
+                  class="absolute top-0 right-0 w-1/2 h-1/2 pointer-events-none opacity-30"
+                  style="
+                    background-image: url(&quot;/images/about/bgcard.svg&quot;);
+                    background-repeat: no-repeat;
+                    background-position: top right;
+                    background-size: contain;
+                  "
+                ></div>
+                <!-- Icon -->
+                <div class="relative flex items-center justify-center h-full">
+                  <div class="relative">
+                    <!-- Icon Background -->
+                    <div
+                      class="absolute"
+                      style="
+                        width: 75px;
+                        height: 75px;
+                        background-image: url(&quot;/images/about/bgcardicon.svg&quot;);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: center;
+                        z-index: 0;
+                      "
+                    ></div>
+                    <!-- Programmatic Icon -->
+                    <img
+                      src="/icons/network3.svg"
+                      alt="Programmatic"
+                      class="relative z-10"
+                      style="width: 105px; height: 105px; opacity: 1"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- Title -->
+              <h3
+                class="font-['Bricolage_Grotesque'] font-bold text-center text-xl md:text-[24px] leading-8 tracking-tight text-[#1a1925] mb-2"
+              >
+                Secure
+              </h3>
+              <!-- Description -->
+              <p
+                class="font-['Inter'] font-normal text-center text-[13px] leading-5 tracking-tight text-[#73737f] mb-4"
+              >
+                Stringent security and compliance standards to keep data safe
+                (ISO 27001).
+              </p>
+            </div>
+
+            <!-- Accurate Card -->
+            <div class="flex flex-col items-center">
+              <!-- Card with Icon Only -->
+              <div
+                class="relative overflow-hidden mb-4"
+                style="
+                  width: 235px;
+                  height: 167px;
+                  border-radius: 20px;
+                  background: #ffffff;
+                  box-shadow:
+                    0px 0.5px 0.5px 0px rgba(26, 25, 37, 0.04),
+                    0px 1px 1px 0px rgba(26, 25, 37, 0.04),
+                    0px 1px 2px -1px rgba(26, 25, 37, 0.04);
+                "
+              >
+                <div
+                  class="absolute hidden sm:block"
+                  style="
+                    width: 148px;
+                    height: 148px;
+                    top: 0px;
+                    right: 0px;
+                    opacity: 1;
+                    border: 0.8px solid;
+                    border-image-source: radial-gradient(
+                      81.86% 81.86% at 100% 100%,
+                      rgba(26, 25, 37, 0.12) 0%,
+                      rgba(26, 25, 37, 0) 77.02%
+                    );
+                    border-image-slice: 1;
+                    background-image: url(&quot;/images/about/bgcard.svg&quot;);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    border: none;
+                  "
+                ></div>
+                <!-- Card Background - bgcard.svg -->
+                <div
+                  class="absolute top-0 right-0 w-1/2 h-1/2 pointer-events-none opacity-30"
+                  style="
+                    background-image: url(&quot;/images/about/bgcard.svg&quot;);
+                    background-repeat: no-repeat;
+                    background-position: top right;
+                    background-size: contain;
+                  "
+                ></div>
+                <!-- Icon -->
+                <div class="relative flex items-center justify-center h-full">
+                  <div class="relative">
+                    <!-- Icon Background -->
+                    <div
+                      class="absolute"
+                      style="
+                        width: 75px;
+                        height: 75px;
+                        background-image: url(&quot;/images/about/bgcardicon.svg&quot;);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: center;
+                        z-index: 0;
+                      "
+                    ></div>
+                    <!-- Accurate Icon -->
+                    <img
+                      src="/icons/network2.svg"
+                      alt="Accurate"
+                      class="relative z-10"
+                      style="width: 105px; height: 105px; opacity: 1"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- Title -->
+              <h3
+                class="font-['Bricolage_Grotesque'] font-bold text-center text-xl md:text-[24px] leading-8 tracking-tight text-[#1a1925] mb-2"
+              >
+                Redundant
+              </h3>
+              <!-- Description -->
+              <p
+                class="font-['Inter'] font-normal text-center text-[13px] leading-5 tracking-tight text-[#73737f] mb-4"
+              >
+                Dense interconnectivity with distributed power and cooling
+                ensures high availability.
+              </p>
+            </div>
           </div>
 
-          <!-- Right: Feature Cards -->
-          <div class="space-y-4">
-            <!-- High Reliability Card -->
-            <div
-              class="rounded-[20px] p-6"
-              style="
-                background: rgba(255, 255, 255, 1);
-                border: 1px solid rgba(238, 238, 240, 1);
-              "
-            >
-              <div class="flex items-start gap-[10px]">
-                <div
-                  class="flex-shrink-0"
-                  style="padding-left: 2px; padding-right: 2px"
-                >
-                  <img
-                    src="/icons/svgexport-53.png"
-                    alt="Endless scalability icon"
-                  />
-                </div>
-                <div>
-                  <h3
-                    class="mb-2 text-base md:text-lg"
-                    style="
-                      font-family: 'Bricolage Grotesque', sans-serif;
-                      font-weight: 600;
-                      font-style: SemiBold;
-                      letter-spacing: -0.02em;
-                      color: rgba(26, 25, 37, 1);
-                    "
-                  >
-                    High reliability
-                  </h3>
-                  <p
-                    class="text-xs md:text-sm"
-                    style="
-                      font-family: 'Inter', sans-serif;
-                      font-weight: 400;
-                      font-style: Regular;
-                      letter-spacing: -0.006em;
-                      color: rgba(115, 115, 127, 1);
-                    "
-                  >
-                    Always stay online when every single point of failure has
-                    been eliminated.
-                  </p>
-                </div>
-              </div>
+          <!-- Company Logos -->
+          <div
+            class="flex flex-wrap items-center justify-center gap-8 md:gap-12"
+          >
+            <img
+              src="/icons/d6c20539cb41888055fe0be24db21e91473acf1b.png"
+              alt="Company logo"
+              style="width: auto"
+            />
+          </div>
+        </section>
+
+        <!-- Tier 1 Networks Section -->
+        <section class="w-full max-w-6xl mx-auto">
+          <!-- Header -->
+          <commonTitle
+            upername="Network"
+            title="Tier 1 networks"
+            subtitle="Leading providers for high throughput and low latency."
+            mobileAlignment="center"
+            pcAlignment="center"
+          />
+
+          <!-- Content Grid -->
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
+            <!-- Left: Text Content -->
+            <div class="space-y-4" style="margin: auto">
+              <p
+                class="text-[13px] md:text-base text-justify font-['Inter'] font-normal text-[#73737f] tracking-tight"
+              >
+                We operate a
+                <span class="underline">non-federated global CDN</span>
+                and have engineered our architecture from the ground up. Each
+                point of presence must adhere to our strict data center
+                requirements, including direct access to multiple Tier 1 network
+                providers.
+              </p>
+              <p
+                class="text-[13px] md:text-base text-justify font-['Inter'] font-normal text-[#73737f] tracking-tight"
+              >
+                Having our network backbone powered by Tier 1 networks allows
+                data to be transferred without delay, even in the most demanding
+                circumstances. We only expand our network where true value can
+                be added.
+              </p>
             </div>
 
-            <!-- Endless Scalability Card -->
-            <div
-              class="rounded-[20px] p-6"
-              style="
-                background: rgba(255, 255, 255, 1);
-                border: 1px solid rgba(238, 238, 240, 1);
-              "
-            >
-              <div class="flex items-start gap-[10px]">
-                <div
-                  class="flex-shrink-0"
-                  style="padding-left: 2px; padding-right: 2px"
-                >
-                  <img
-                    src="/icons/svgexport-54.svg"
-                    alt="Robust connections icon"
-                  />
-                </div>
-                <div>
-                  <h3
-                    class="mb-2 text-base md:text-lg"
-                    style="
-                      font-family: 'Bricolage Grotesque', sans-serif;
-                      font-weight: 600;
-                      font-style: SemiBold;
-                      letter-spacing: -0.02em;
-                      color: rgba(26, 25, 37, 1);
-                    "
+            <!-- Right: Feature Cards -->
+            <div class="space-y-4">
+              <!-- High Reliability Card -->
+              <div
+                class="rounded-[20px] p-6"
+                style="
+                  background: rgba(255, 255, 255, 1);
+                  border: 1px solid rgba(238, 238, 240, 1);
+                "
+              >
+                <div class="flex items-start gap-[10px]">
+                  <div
+                    class="flex-shrink-0"
+                    style="padding-left: 2px; padding-right: 2px"
                   >
-                    Endless scalability
-                  </h3>
-                  <p
-                    class="text-xs md:text-sm"
-                    style="
-                      font-family: 'Inter', sans-serif;
-                      font-weight: 400;
-                      font-style: Regular;
-                      letter-spacing: -0.006em;
-                      color: rgba(115, 115, 127, 1);
-                    "
-                  >
-                    Grow confidently knowing our infrastructure can handle any
-                    traffic volume.
-                  </p>
+                    <img
+                      src="/icons/svgexport-53.png"
+                      alt="Endless scalability icon"
+                    />
+                  </div>
+                  <div>
+                    <h3
+                      class="mb-2 text-base md:text-lg font-['Bricolage_Grotesque'] font-semibold tracking-tight text-[#1a1925]"
+                    >
+                      High reliability
+                    </h3>
+                    <p
+                      class="text-xs md:text-sm font-['Inter'] font-normal tracking-tight text-[#73737f]"
+                    >
+                      Always stay online when every single point of failure has
+                      been eliminated.
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <!-- Robust Connections Card -->
-            <div
-              class="rounded-[20px] p-6"
-              style="
-                background: rgba(255, 255, 255, 1);
-                border: 1px solid rgba(238, 238, 240, 1);
-              "
-            >
-              <div class="flex items-start gap-[10px]">
-                <div
-                  class="flex-shrink-0"
-                  style="padding-left: 2px; padding-right: 2px"
-                >
-                  <img
-                    src="/icons/network_icon.svg"
-                    alt="High reliability icon"
-                  />
-                </div>
-                <div>
-                  <h3
-                    class="mb-2 text-base md:text-lg"
-                    style="
-                      font-family: 'Bricolage Grotesque', sans-serif;
-                      font-weight: 600;
-                      font-style: SemiBold;
-                      letter-spacing: -0.02em;
-                      color: rgba(26, 25, 37, 1);
-                    "
+              <!-- Endless Scalability Card -->
+              <div
+                class="rounded-[20px] p-6"
+                style="
+                  background: rgba(255, 255, 255, 1);
+                  border: 1px solid rgba(238, 238, 240, 1);
+                "
+              >
+                <div class="flex items-start gap-[10px]">
+                  <div
+                    class="flex-shrink-0"
+                    style="padding-left: 2px; padding-right: 2px"
                   >
-                    Robust connections
-                  </h3>
-                  <p
-                    class="text-xs md:text-sm"
-                    style="
-                      font-family: 'Inter', sans-serif;
-                      font-weight: 400;
-                      font-style: Regular;
-                      letter-spacing: -0.006em;
-                      color: rgba(115, 115, 127, 1);
-                    "
-                  >
-                    Expect fast content transfers when each edge server has at
-                    least 40 Gbps uplinks.
-                  </p>
+                    <img
+                      src="/icons/svgexport-54.svg"
+                      alt="Robust connections icon"
+                    />
+                  </div>
+                  <div>
+                    <h3
+                      class="mb-2 text-base md:text-lg font-['Bricolage_Grotesque'] font-semibold tracking-tight text-[#1a1925]"
+                    >
+                      Endless scalability
+                    </h3>
+                    <p
+                      class="text-xs md:text-sm font-['Inter'] font-normal tracking-tight text-[#73737f]"
+                    >
+                      Grow confidently knowing our infrastructure can handle any
+                      traffic volume.
+                    </p>
+                  </div>
                 </div>
               </div>
-              
+
+              <!-- Robust Connections Card -->
+              <div
+                class="rounded-[20px] p-6"
+                style="
+                  background: rgba(255, 255, 255, 1);
+                  border: 1px solid rgba(238, 238, 240, 1);
+                "
+              >
+                <div class="flex items-start gap-[10px]">
+                  <div
+                    class="flex-shrink-0"
+                    style="padding-left: 2px; padding-right: 2px"
+                  >
+                    <img
+                      src="/icons/network_icon.svg"
+                      alt="High reliability icon"
+                    />
+                  </div>
+                  <div>
+                    <h3
+                      class="mb-2 text-base md:text-lg font-['Bricolage_Grotesque'] font-semibold tracking-tight text-[#1a1925]"
+                    >
+                      Robust connections
+                    </h3>
+                    <p
+                      class="text-xs md:text-sm font-['Inter'] font-normal tracking-tight text-[#73737f]"
+                    >
+                      Expect fast content transfers when each edge server has at
+                      least 40 Gbps uplinks.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-
-
-      </section>
-      
-
-      <!-- Access All Features CTA Section -->
-      
-      
-    </main>
+        </section>
+</div>
+        <!-- Access All Features CTA Section -->
+      </main>
+    </div>
   </div>
-  </div>  
-    <SectionsAccessAllFeaturesSection />
-
+  <SectionsAccessAllFeaturesSection />
 </template>
 
 <script setup lang="ts">
