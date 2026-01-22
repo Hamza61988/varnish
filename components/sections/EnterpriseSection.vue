@@ -1,12 +1,19 @@
 <template>
   <section class=" ">
     <div>
-     <div
-  class="bg-white rounded-lg p-[24px] flex flex-col md:flex-row items-start md:items-center md:justify-between gap-4 sm:gap-5 md:gap-6"
-  style="border-radius: 24px; box-shadow: 0 1px 2px -1px #1a19250a, 0 1px 1px #1a19250a, 0 .5px .5px #1a19250a;"
->
-
-<div class="flex flex-col sm:flex-row items-start sm:items-center sm:space-x-4 space-y-3 sm:space-y-0 w-auto">
+      <div
+        class="bg-white rounded-lg p-[24px] flex flex-col md:flex-row items-start md:items-center md:justify-between gap-4 sm:gap-5 md:gap-6"
+        style="
+          border-radius: 24px;
+          box-shadow:
+            0 1px 2px -1px #1a19250a,
+            0 1px 1px #1a19250a,
+            0 0.5px 0.5px #1a19250a;
+        "
+      >
+        <div
+          class="flex flex-col sm:flex-row items-start sm:items-center sm:space-x-4 space-y-3 sm:space-y-0 w-auto"
+        >
           <div class="thumb-icon-container flex-shrink-0">
             <div class="thumb-blob"></div>
             <svg
@@ -25,17 +32,13 @@
             </svg>
           </div>
           <div class="flex-1 min-w-0">
-            <h3 class="enterprise-heading">
-              Enterprise
-            </h3>
+            <h3 class="enterprise-heading">Enterprise</h3>
             <p class="enterprise-description">
               Over 100 TB per month? Contact us for discounted volume pricing.
             </p>
           </div>
         </div>
-        <button class="contact-us-button w-full md:w-auto  ">
-          Contact Us
-        </button>
+        <Button name="Contact Us" />
       </div>
     </div>
   </section>
@@ -43,19 +46,20 @@
 
 <script setup lang="ts">
 // Enterprise Section Component
+import Button from "~/components/common/Button.vue";
 </script>
 
 <style scoped>
 .thumb-icon-container {
   width: 48px;
   height: 48px;
-  border: 1px solid #EEEEF0;
+  border: 1px solid #eeeef0;
   border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  background: #FFFFFF;
+  background: #ffffff;
   position: relative;
   overflow: hidden;
 }
@@ -64,7 +68,7 @@
   position: absolute;
   width: 36px;
   height: 28px;
-  background: #EBF1FF;
+  background: #ebf1ff;
   border-radius: 50% 40% 60% 50%;
   top: 6px;
   left: 4px;
@@ -82,72 +86,23 @@
 }
 
 .enterprise-heading {
-  font-family: 'Funnel Display', sans-serif;
+  font-family: "Funnel Display", sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 28px;
   letter-spacing: -0.02em;
   vertical-align: middle;
-  color: #1A1925;
+  color: #1a1925;
   margin-bottom: 4px;
 }
 
 .enterprise-description {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 20px;
   letter-spacing: -0.006em;
   vertical-align: middle;
-  color: #51515E;
-}
-
-.contact-us-button {
-  font-family: 'Inter', sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: -0.006em;
-  text-align: center;
-  color: #FFFFFF;
-  background: 
-    linear-gradient(180deg, rgba(236, 236, 236, 0.08) 0%, rgba(85, 85, 85, 0.08) 100%),
-    #1F62FF;
-  padding: 8px 14px;
-  border-radius: 8px;
-  border: none;
-  cursor: pointer;
-  white-space: nowrap;
-  width: auto;
-  box-shadow: 
-    0px 0.25px 0.25px 0px rgba(255, 255, 255, 0.12) inset,
-    0px 0.75px 0.75px 0px rgba(255, 255, 255, 0.08) inset,
-    0px 1px 3px 0px rgba(255, 255, 255, 0.08) inset,
-    0px -8px 20px 0px rgba(26, 25, 37, 0.08) inset,
-    0px 0.25px 0.25px 0px rgba(26, 25, 37, 0.24),
-    0px 0.75px 0.75px 0px rgba(26, 25, 37, 0.12),
-    0px 1px 1.5px -0.5px rgba(26, 25, 37, 0.12),
-    0px 2px 4px -1px rgba(26, 25, 37, 0.12),
-    0px 4px 8px -4px rgba(26, 25, 37, 0.12),
-    0px 8px 12px -4px rgba(26, 25, 37, 0.06);
-  transition: transform 0.1s ease;
-}
-
-.contact-us-button:hover {
-background:
-  linear-gradient(180deg, rgba(236, 236, 236, 0.08) 0%, rgba(85, 85, 85, 0.08) 100%),
-  #1251e4;
-
-}
-
-.contact-us-button:active {
-  transform: translateY(0);
-}
-
-@media (min-width: 768px) {
-  .contact-us-button {
-    width: auto;
-  }
+  color: #51515e;
 }
 </style>
-

@@ -102,7 +102,7 @@
 
               <!-- Legend -->
               <div
-                class="absolute bottom-4  flex flex-col gap-3 z-20 "
+                class="absolute bottom-4 flex flex-col gap-3 z-20 "
               >
                 <div class="flex items-center gap-2">
                   <div class="w-3 h-3 rounded-full bg-[#3b82f6]"></div>
