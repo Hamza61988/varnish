@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-dvh hero-section flex flex-col">
     <!-- Split Layout: Landing Page (Left) + Dashboard Preview (Right) -->
-    <div class="flex  flex-col lg:flex-row hero-container flex-1">
+    <div class="flex flex-col lg:flex-row hero-container flex-1">
       <!-- Left Section: Landing Page -->
       <div
         class="flex-1 justify-center items-center hero-left-section order-1 lg:order-1"
@@ -9,14 +9,14 @@
         <div class="max-w-2xl md:px-0 px-[3.875rem] mx-auto">
           <!-- Top Badge -->
           <div class="">
-<SectionsUpername name="Empower Innovation!" />
+            <SectionsUpername name="Empower Innovation!" />
           </div>
 
           <!-- Headline Section -->
-          <div class="mb-[3px] mt-[3px] md:mt-[16px]  md:mb-[1rem] ">
+          <div class="mb-[3px] mt-[3px] md:mt-[16px] md:mb-[1rem]">
             <h1
               style="font-weight: 600; line-height: 1.2"
-              class="text-[32px]  md:text-7xl font-bold text-gray-900 "
+              class="text-[32px] md:text-7xl font-bold text-gray-900"
             >
               <span>Content Delivery,</span>
               <span class="block hero-headline-line-2">
@@ -39,7 +39,7 @@
 
           <!-- Input Form -->
           <div class="">
-            <div class="flex flex-col sm:flex-row gap-3  hero-form">
+            <div class="flex flex-col sm:flex-row gap-3 hero-form">
               <!-- Email Input -->
               <div class="flex-1 relative">
                 <div
@@ -65,9 +65,12 @@
                   placeholder="Your email address.."
                   class="hero-input w-full pl-10 sm:pl-12 pr-3 sm:pr-4 border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none bg-white"
                   style="
-                    box-shadow: 0px 0.5px 0.5px 0px #07011308,
-                      0px 1px 1px -0.5px #07011308, 0px 2px 2px -1px #07011308,
-                      0px 3px 3px -1.5px #07011308, 0px 0px 0px 1px #1a192514;
+                    box-shadow:
+                      0px 0.5px 0.5px 0px #07011308,
+                      0px 1px 1px -0.5px #07011308,
+                      0px 2px 2px -1px #07011308,
+                      0px 3px 3px -1.5px #07011308,
+                      0px 0px 0px 1px #1a192514;
                   "
                 />
               </div>
@@ -93,18 +96,19 @@
                   placeholder="Website url"
                   class="hero-input w-full pl-10 sm:pl-12 pr-3 sm:pr-4 border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none bg-white"
                   style="
-                    box-shadow: 0px 0.5px 0.5px 0px #07011308,
-                      0px 1px 1px -0.5px #07011308, 0px 2px 2px -1px #07011308,
-                      0px 3px 3px -1.5px #07011308, 0px 0px 0px 1px #1a192514;
+                    box-shadow:
+                      0px 0.5px 0.5px 0px #07011308,
+                      0px 1px 1px -0.5px #07011308,
+                      0px 2px 2px -1px #07011308,
+                      0px 3px 3px -1.5px #07011308,
+                      0px 0px 0px 1px #1a192514;
                   "
                 />
               </div>
               <!-- Get Started Button -->
-              <button class="fancy-button">Get Started</button>
+              <Button name="Get Started" />
             </div>
-            <p class="flex no-credits-text  mt-3">
-              No Credit Card Required
-            </p>
+            <p class="flex no-credits-text mt-3">No Credit Card Required</p>
           </div>
 
           <!-- Statistics Section -->
@@ -144,12 +148,12 @@
       </div>
       <!-- Right Section: Dashboard Preview Panel -->
       <div
-        class="lg:w-[40%] pl-[10%]  w-full lg:pl-0 flex flex-col justify-end hero-image-section order-2 lg:order-2"
+        class="lg:w-[40%] pl-[10%] w-full lg:pl-0 flex flex-col justify-end hero-image-section order-2 lg:order-2"
       >
         <img
           src="/images/varnish.svg"
           alt="BEST CDN AWARD"
-          class="w-full h-auto lg:h-full object-cover"
+          class="w-full h-auto lg:h-full object-contain"
         />
       </div>
     </div>
@@ -157,6 +161,7 @@
 </template>
 <script setup lang="ts">
 import SectionsUpername from "~/components/common/Upername.vue";
+import Button from "~/components/common/Button.vue";
 import { ref, onMounted } from "vue";
 
 const stats = [
@@ -201,70 +206,6 @@ onMounted(() => {
     align-items: flex-start;
   }
 }
-.fancy-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 37px;
-  padding: 8px 14px;
-
-  /* Gradient background */
-  background: linear-gradient(
-      180deg,
-      rgba(236, 236, 236, 0.08) 0%,
-      rgba(85, 85, 85, 0.08) 100%
-    ),
-    #1f62ff; /* base brand color */
-
-  border: none;
-  border-radius: 8px;
-  box-sizing: border-box;
-
-  font-family: Inter, sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 21px;
-  letter-spacing: -0.084px;
-  color: white;
-  text-decoration: none;
-  white-space: nowrap;
-
-  cursor: pointer;
-  user-select: none;
-
-  /* Combined shadows */
-  box-shadow: 0px 0.25px 0.25px rgba(255, 255, 255, 0.12) inset,
-    0px 0.75px 0.75px rgba(255, 255, 255, 0.08) inset,
-    0px 1px 3px rgba(255, 255, 255, 0.08) inset,
-    0px -8px 20px rgba(26, 25, 37, 0.08) inset,
-    0px 0.25px 0.25px rgba(26, 25, 37, 0.24),
-    0px 0.75px 0.75px rgba(26, 25, 37, 0.12),
-    0px 1px 1.5px -0.5px rgba(26, 25, 37, 0.12),
-    0px 2px 4px -1px rgba(26, 25, 37, 0.12),
-    0px 4px 8px -4px rgba(26, 25, 37, 0.12),
-    0px 8px 12px -4px rgba(26, 25, 37, 0.06);
-
-  transition: all 0.3s ease;
-}
-
-/* Fixed compact mobile version */
-@media (max-width: 480px) {
-  .fancy-button {
-    height: 36px;
-    padding: 16px 8px;
-
-    font-size: 13px;
-    font-weight: 500;
-    line-height: 20px;
-    letter-spacing: -0.006em;
-
-    border-radius: 8px;
-  }
-}
-
-.fancy-button:hover {
-  background-color: #1b56e0;
-}
 
 .hero-section {
   background-color: #f7f7f8;
@@ -283,7 +224,6 @@ onMounted(() => {
 
 .hero-left-section {
   padding: 20px 0px;
-
 }
 
 @media (min-width: 640px) {

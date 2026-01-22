@@ -1,19 +1,16 @@
 <template>
-  <section
-    class=""
-    style=" overflow-x: hidden"
-  >
+  <section class="" style="overflow-x: hidden">
     <div class="">
-  <commonTitle 
-        upername="Develop With Ease" 
-        title="Develop With Ease" 
-        subtitle="Complete account control with our RESTful API." 
-        alignment="start"
-          
+      <commonTitle
+        upername="Develop With Ease"
+        title="Develop With Ease"
+        subtitle="Complete account control with our RESTful API."
+        mobileAlignment="start"
+        pcAlignment="start"
       />
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 items-stretch">
         <div
-          class="flex flex-col gap-5 justify-between order-2 lg:order-1 min-w-0"
+          class="flex flex-col gap-5 justify-between items-start order-2 lg:order-1 min-w-0"
         >
           <div
             @click="activeTab = 'zones'"
@@ -58,7 +55,7 @@
                 <h3
                   class="truncate"
                   style="
-                    font-family: 'Bricolage Grotesque', sans-serif;
+                    font-family: &quot;Bricolage Grotesque&quot;, sans-serif;
                     font-weight: 600;
                     font-size: 18px;
                     line-height: 24px;
@@ -70,7 +67,7 @@
                 </h3>
                 <p
                   style="
-                    font-family: 'Inter', sans-serif;
+                    font-family: &quot;Inter&quot;, sans-serif;
                     font-weight: 400;
                     font-size: 14px;
                     line-height: 20px;
@@ -124,7 +121,7 @@
                 <h3
                   class="truncate"
                   style="
-                    font-family: 'Bricolage Grotesque', sans-serif;
+                    font-family: &quot;Bricolage Grotesque&quot;, sans-serif;
                     font-weight: 600;
                     font-size: 18px;
                     line-height: 24px;
@@ -136,7 +133,7 @@
                 </h3>
                 <p
                   style="
-                    font-family: 'Inter', sans-serif;
+                    font-family: &quot;Inter&quot;, sans-serif;
                     font-weight: 400;
                     font-size: 14px;
                     line-height: 20px;
@@ -242,7 +239,7 @@
                 <h3
                   class="truncate"
                   style="
-                    font-family: 'Bricolage Grotesque', sans-serif;
+                    font-family: &quot;Bricolage Grotesque&quot;, sans-serif;
                     font-weight: 600;
                     font-size: 18px;
                     line-height: 24px;
@@ -254,7 +251,7 @@
                 </h3>
                 <p
                   style="
-                    font-family: 'Inter', sans-serif;
+                    font-family: &quot;Inter&quot;, sans-serif;
                     font-weight: 400;
                     font-size: 14px;
                     line-height: 20px;
@@ -270,36 +267,11 @@
           </div>
 
           <div class="flex justify-center sm:justify-start">
-            <button
-              class="flex items-center bg-[#1a1925] hover:bg-[#51515e] justify-center"
-              style="
-                width: 175px;
-                height: 40px;
-                border-radius: 6px;
-                box-shadow: 0px 0.25px 0.25px 0px rgba(255, 255, 255, 0.12)
-                    inset,
-                  0px 0.75px 0.75px 0px rgba(255, 255, 255, 0.08) inset,
-                  0px 1px 3px 0px rgba(255, 255, 255, 0.08) inset,
-                  0px 0.25px 0.25px 0px rgba(26, 25, 37, 0.24),
-                  0px 0.75px 0.75px 0px rgba(26, 25, 37, 0.12),
-                  0px 1px 1.5px -0.5px rgba(26, 25, 37, 0.12),
-                  0px 2px 4px -1px rgba(26, 25, 37, 0.12),
-                  0px 4px 8px -4px rgba(26, 25, 37, 0.12),
-                  0px 8px 12px -4px rgba(26, 25, 37, 0.06),
-                  0px -8px 20px 0px rgba(26, 25, 37, 0.08) inset;
-                font-family: 'Bricolage Grotesque', sans-serif;
-                font-weight: 500;
-                font-style: Medium;
-                font-size: 17px;
-                line-height: 20px;
-                letter-spacing: -0.02em;
-                text-align: center;
-                text-transform: capitalize;
-                color: #ffffff;
-              "
-            >
-              API Documentaiton
-            </button>
+            <Button
+              customClass="w-[175px]"
+              name="API Documentation"
+              variant="secondary"
+            />
           </div>
         </div>
 
@@ -310,7 +282,8 @@
               border-radius: 16px;
               background-color: #2e3234;
               min-height: 320px;
-              font-family: 'Monaco', 'Courier New', monospace;
+              font-family:
+                &quot;Monaco&quot;, &quot;Courier New&quot;, monospace;
               overflow: hidden;
             "
           >
@@ -366,6 +339,7 @@
 <script setup lang="ts">
 import SectionsTitle from "~/components/common/Title.vue";
 import SectionsUpername from "~/components/common/Upername.vue";
+import Button from "~/components/common/Button.vue";
 import { ref, computed } from "vue";
 
 // State for active tab

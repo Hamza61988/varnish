@@ -3,7 +3,7 @@
     <div class="hidden md:flex justify-center">
      <div
   v-if="visible"
-  class="bg-black text-white flex w-full mx-2 rounded-xl justify-center items-center h-9 px-4 relative"
+  class="bg-black text-white flex w-full  rounded-xl justify-center items-center h-9 px-4 relative"
   style="background-image: url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 562 257%22 fill=%22none%22><path d=%22M24.0976 458.018C9.44224 347.678 34.2187 238.427 96.4862 187.86C168.973 128.994 292.268 149.657 463.309 340.714C389.806 -374.647 745.514 380.188 659.684 42.3566%22 stroke=%22%2373737F%22 stroke-width=%2240%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22/></svg>'); background-repeat: no-repeat; "
 >
   <p class="text-[14px]">
@@ -30,8 +30,8 @@
       style="z-index: 1; margin: auto"
     >
       <div
-        class="flex items-center justify-between"
-        style="height: 80px; min-height: 80px; gap: 0"
+        class="flex items-center px-4 justify-between"
+        style="height: 80px; min-height: 80px; gap: 0 ;"
       >
         <div
           class="flex items-center flex-shrink-0 z-10"
@@ -509,50 +509,18 @@
           </NuxtLink>
           <NuxtLink
             to="/signup"
-            class="flex items-center bg-[#1a1925] hover:bg-[#51515e] transition-colors justify-center text-white"
-            style="
-              border-radius: 8px;
-              padding: 8px 14px;
-              font-family: 'inter', sans-serif;
-              font-weight: 500;
-              font-size: 14px;
-              line-height: 1.5;
-              letter-spacing: -0.02em;
-              text-align: center;
-              text-transform: capitalize;
-              box-shadow: inset 0 -8px 20px #1a192514, 0 8px 12px -4px #1a19250f,
-                0 4px 8px -4px #1a19251f, 0 2px 4px -1px #1a19251f,
-                0 1px 1.5px -0.5px #1a19251f, 0 0.75px 0.75px #1a19251f,
-                0 0.25px 0.25px #1a19253d, inset 0 1px 3px #ffffff14,
-                inset 0 0.75px 0.75px #ffffff14, inset 0 0.25px 0.25px #ffffff1f;
-            "
+    
+           
           >
-            Sign Up
+          <Button name="Sign Up" variant="secondary" />
           </NuxtLink>
         </div>
 
         <div class="flex tablet:hidden">
           <NuxtLink
             to="/signup"
-            class="flex tablet:hidden bg-[#1a1925] hover:bg-[#51515e] transition-colors justify-center text-white"
-            style="
-              border-radius: 8px;
-              padding: 8px 14px;
-              font-family: 'inter', sans-serif;
-              font-weight: 500;
-              font-size: 14px;
-              line-height: 1.5;
-              letter-spacing: -0.02em;
-              text-align: center;
-              text-transform: capitalize;
-              box-shadow: inset 0 -8px 20px #1a192514, 0 8px 12px -4px #1a19250f,
-                0 4px 8px -4px #1a19251f, 0 2px 4px -1px #1a19251f,
-                0 1px 1.5px -0.5px #1a19251f, 0 0.75px 0.75px #1a19251f,
-                0 0.25px 0.25px #1a19253d, inset 0 1px 3px #ffffff14,
-                inset 0 0.75px 0.75px #ffffff14, inset 0 0.25px 0.25px #ffffff1f;
-            "
           >
-            Sign Up
+            <Button name="Sign Up" variant="secondary" />
           </NuxtLink>
 
           <button
@@ -1064,6 +1032,7 @@
 </template>
 
 <script setup lang="ts">
+  import Button from "~/components/common/Button.vue";
 import { ref, watch, onMounted } from "vue";
 import { useRoute } from "vue-router";
 

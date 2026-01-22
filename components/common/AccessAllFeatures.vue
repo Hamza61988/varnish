@@ -1,6 +1,6 @@
 <template>
   <section
-    class="relative overflow-hidden bg-white  w-full sm:min-h-[450px] md:min-h-[560px] lg:min-h-[560px]"
+    class="relative overflow-hidden bg-white w-full sm:min-h-[450px] md:min-h-[560px] lg:min-h-[560px]"
     style="background-color: #f7f7f8; padding: 0"
   >
     <div
@@ -489,7 +489,7 @@
     </div>
 
     <div
-      class="m-auto relative z-10 w-full max-w-4xl  lg:px-0 px-4  py-10 sm:py-10 md:py-20"
+      class="m-auto relative z-10 w-full max-w-4xl lg:px-0 px-4 py-10 sm:py-10 md:py-20"
     >
       <div
         class="bg-[#1A1925] text-center relative rounded-[28px] sm:rounded-[28px] md:rounded-[32px] lg:rounded-[35px] cta-card"
@@ -509,7 +509,7 @@
         <h2
           class="relative text-white cta-heading pt-4 sm:pt-0"
           style="
-            font-family: 'Funnel Display', sans-serif;
+            font-family: &quot;Funnel Display&quot;, sans-serif;
             font-weight: 500;
             letter-spacing: -0.04em;
             text-align: center;
@@ -524,7 +524,7 @@
         <p
           class="relative cta-subtitle"
           style="
-            font-family: 'Inter', sans-serif;
+            font-family: &quot;Inter&quot;, sans-serif;
             font-weight: 400;
             letter-spacing: -0.011em;
             text-align: center;
@@ -564,41 +564,7 @@
         </div>
 
         <div class="relative">
-          <button
-            class="hover:opacity-90 transition-opacity sm:w-[135px] md:w-[145px] lg:w-[153px] sm:h-[32px] md:h-[34px] lg:h-[36px] opacity-100"
-            style="
-              font-family: 'Inter', sans-serif;
-              font-weight: 500;
-             
-              line-height: 20px;
-              letter-spacing: -0.006em;
-              text-align: center;
-              color: #ffffff;
-              border-radius: 8px;
-              padding-top: 8px;
-              padding-right: 4px;
-              padding-bottom: 8px;
-              padding-left: 4px;
-              background: #1f62ff;
-              background-image: linear-gradient(
-                180deg,
-                rgba(236, 236, 236, 0.08) 0%,
-                rgba(85, 85, 85, 0.08) 100%
-              );
-              box-shadow: 0px 0.25px 0.25px 0px rgba(255, 255, 255, 0.12) inset,
-                0px 0.75px 0.75px 0px rgba(255, 255, 255, 0.08) inset,
-                0px 1px 3px 0px rgba(255, 255, 255, 0.08) inset,
-                0px -8px 20px 0px rgba(26, 25, 37, 0.08) inset,
-                0px 0.25px 0.25px 0px rgba(26, 25, 37, 0.24),
-                0px 0.75px 0.75px 0px rgba(26, 25, 37, 0.12),
-                0px 1px 1.5px -0.5px rgba(26, 25, 37, 0.12),
-                0px 2px 4px -1px rgba(26, 25, 37, 0.12),
-                0px 4px 8px -4px rgba(26, 25, 37, 0.12),
-                0px 8px 12px -4px rgba(26, 25, 37, 0.06);
-            "
-          >
-            <span class="text-[13px]  leading-tight">Get Started ~ Free</span>
-          </button>
+          <Button name="Get Started ~ Free" />
         </div>
       </div>
     </div>
@@ -606,6 +572,7 @@
 </template>
 
 <script setup lang="ts">
+import Button from "~/components/common/Button.vue";
 import { ref, onMounted } from "vue";
 
 const stats = [
@@ -658,7 +625,7 @@ onMounted(() => {
         }
       });
     },
-    { threshold: 0.5 }
+    { threshold: 0.5 },
   );
 
   observer.observe(section);
