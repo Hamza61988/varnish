@@ -1,13 +1,16 @@
 <script setup>
-defineProps(['name'])
+defineProps(["name"]);
 </script>
 <template>
   <div class=" ">
     <div
       style="
         padding: 4px 12px 4px 8px;
-        box-shadow: 0 3px 3px -1.5px #07011308, 0 2px 2px -1px #07011308,
-          0 1px 1px -0.5px #07011308, 0 0.5px 0.5px #07011308;
+        box-shadow:
+          0 3px 3px -1.5px #07011308,
+          0 2px 2px -1px #07011308,
+          0 1px 1px -0.5px #07011308,
+          0 0.5px 0.5px #07011308;
       "
       class="inline-flex bg-white items-center space-x-2 rounded-full text-xs sm:text-sm font-medium"
     >
