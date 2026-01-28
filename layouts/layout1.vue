@@ -5,9 +5,10 @@
     </div>
 
     <div
-      class="relative z-10 mt-[4.25rem] mb-[146.22px] px-6 mx-auto max-w-[855px]"
+      class="relative z-10 site-margins  px-6 mx-auto max-w-[855px]"
     >
-      <div class="grid grid-cols-1 md:grid-cols-[155px_1fr] gap-[30px]">
+      <div class="grid grid-cols-1 lg:grid-cols-[155px_1fr] gap-[30px]">
+      
         <aside class="space-y-[9.23px] font-medium text-[11.72px]">
           <div
             class="bg-[#EFEFEF59]/35 px-[6.24px] py-[12.93px] flex flex-col gap-[5px] rounded-[9.23px]"
@@ -80,8 +81,7 @@
         </aside>
 
         <main class="relative">
-        <SectionsUpername name="Tools" />
-
+    
           <slot />
         
         </main>
@@ -91,7 +91,6 @@
 </template>
 
 <script setup>
-import SectionsTitle from "~/components/common/Title.vue";
 import SectionsUpername from "~/components/common/Upername.vue";
 import { ref, watch } from "vue";
 import { useRoute } from "vue-router";

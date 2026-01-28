@@ -1,38 +1,28 @@
 <script setup lang="ts">
-import AccessAllFeaturesSection from '~/components/common/AccessAllFeatures.vue';
-
+import AccessAllFeaturesSection from "~/components/common/AccessAllFeatures.vue";
 </script>
 
 <template>
-  <div class="min-h-screen  text-[#1f2937]  ">
-    <div class="max-w-3xl mx-auto">
-      
+  <div class="min-h-screen">
+    <div class="">
+      <CommonTitle
+        upername="Tools"
+        title="Traceroute Test"
+        subtitle="Trace any IP or hostname"
+        mobileAlignment="start"
+        pcAlignment="start"
+        :fontWeight="500"
+      />
 
-      <h1 class="text-[2rem] md:text-5xl font-semibold mt-2 mb-4">
-        Traceroute Test
-      </h1>
-      <h2 class="text-[#73737F] md:text-[1rem] mt-4 text-[14px] max-w-2xl mb-4">
-       Trace any IP or hostname
-      </h2>
+      <div class="mb-4">
+        <div class="flex flex-col md:flex-row gap-4 items-end">
+          <CommonUrlInput placeholder="e.g. https://www.example.com" />
 
-      <div class="mb-12">
-        <div class="mb-6">
-          <label class="block font-medium text-gray-900 mb-2">
-            IP Address Or Hostname
-          </label>
-          <div class="flex gap-4 justify-between">
-            <input
-              type="text"
-              placeholder="e.g. https://www.example.com"
-              class="w-full border border-gray-200 rounded-md px-4 py-3 text-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent placeholder-gray-400 bg-white"
-            />
-
-            <button
-              class="bg-[#007bff] hover:bg-[#0088FF] text-white font-semibold py-3 px-8 rounded-md transition-colors shadow-sm whitespace-nowrap"
-            >
-              Test
-            </button>
-          </div>
+          <CommonButton
+            variant="tool"
+            tool="Test"
+            custom-class="w-full md:w-auto"
+          />
         </div>
       </div>
 
@@ -40,43 +30,47 @@ import AccessAllFeaturesSection from '~/components/common/AccessAllFeatures.vue'
         Traceroute Test FAQ
       </h2>
 
-    <div class="mb-12 max-w-[402.5px]">
-  <div class="text-[#73737F] leading-relaxed">
-    <h3 class="text-[1.5625rem] font-semibold text-[#1f2937] mb-3">
-      Using the Traceroute Tool
-    </h3>
-    <p class="text-[13px] md:text-[1rem] mb-4">
-      This tool is typically used to diagnose hiccups or interruptions in the
-      transfer of data and pinpoint where along the chain it occurred. This IPv4
-      or IPv6 traceroute is unique in that it allows you to simultaneously test
-      different locations at once. This lets you quickly
-      <span class="font-bold "
-        >determine if there is any packet loss or unexpected latency</span
-      >
-      to the given IP or hostname. A CDN can help dramatically.
-    </p>
-  </div>
-</div>
-      
+      <div class="mb-12 max-w-[402.5px]">
+        <div class="text-[#73737F] leading-relaxed">
+          <h3
+            class="text-[1.5rem] md:text-[2rem] font-semibold text-[#1f2937] mb-3"
+          >
+            Using the Traceroute Tool
+          </h3>
+          <p class="text-[13px] md:text-[1rem] mb-4">
+            This tool is typically used to diagnose hiccups or interruptions in
+            the transfer of data and pinpoint where along the chain it occurred.
+            This IPv4 or IPv6 traceroute is unique in that it allows you to
+            simultaneously test different locations at once. This lets you
+            quickly
+            <span class="font-bold"
+              >determine if there is any packet loss or unexpected latency</span
+            >
+            to the given IP or hostname. A CDN can help dramatically.
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 
- <ClientOnly>
- <Teleport to="#full-width-section">
- <AccessAllFeaturesSection class=""/>
-
-</Teleport>
-</ClientOnly>
+  <ClientOnly>
+    <Teleport to="#full-width-section">
+      <AccessAllFeaturesSection class="" />
+    </Teleport>
+  </ClientOnly>
 </template>
 <style scoped>
 input[type="checkbox"] {
   accent-color: #2563eb;
 }
 
-p, ol, ul, pre, code {
+p,
+ol,
+ul,
+pre,
+code {
   font-family: inter;
 }
-
 
 .btn {
   position: relative;

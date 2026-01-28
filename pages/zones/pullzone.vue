@@ -1,28 +1,32 @@
 <template>
-  <div class="mt-[4.25rem] mx-auto max-w-3xl">
+  <div class="">
     <div class="w-full">
-      <h1 class="text-[2rem] md:text-5xl font-medium mt-4">Create a Pull Zone</h1>
-
-      <p style="font-family: inter" class="text-[#73737F] text-[13px] md:text-[1rem] mt-4">
-        To set up a KeyCDN Pull Zone, follow the steps outlined below:
-      </p>
+      <Title
+      upername="support"
+        title="Create a Pull Zone"
+        subtitle="To set up a KeyCDN Pull Zone, follow the steps outlined below:"
+        pcAlignment="start"
+        mobileAlignment="start"
+        :fontWeight="500"
+      />
     </div>
 
-    <div class="mt-[2.3125rem] mb-[8.1875rem]">
+    <div class="mt-[2.3125rem]">
       <div class="pl-8">
-        <ol class="text-[#73737F] text-[13px] md:text-[1rem]">
-          <li class="mt-3">Log in to the KeyCDN dashboard.</li>
-          <li class="mt-3">In the left navigation sidebar click Zones.</li>
-          <li class="mt-3">Click Add Zone.</li>
-          <li class="mt-3">Set the Zone Type as pull.</li>
-          <li class="mt-3">
-            Define the Origin URL (e.g. https://www.yourwebsite.com).
-          </li>
-          <li class="mt-3">Click Save.</li>
+        <ol class="space-y-[10px] text-[#73737F] text-[13px] md:text-[1rem]">
+          <li>Log in to the KeyCDN dashboard.</li>
+          <li>In the left navigation sidebar click Zones.</li>
+          <li>Click Add Zone.</li>
+          <li>Set the Zone Type as pull.</li>
+          <li>Define the Origin URL (e.g. https://www.yourwebsite.com).</li>
+          <li>Click Save.</li>
         </ol>
       </div>
 
-      <p style="font-family: inter" class="text-[#73737F] text-[13px] md:text-[1rem] mt-[48px]">
+      <p
+        style="font-family: inter"
+        class="text-[#73737F] text-[13px] md:text-[1rem] mt-[48px]"
+      >
         These are the minimal steps in order to have a working Zone. The default
         settings work for most use cases.
         <a class="underline">Pull Zone settings</a> Read our article for more
@@ -54,6 +58,10 @@
     </Teleport>
   </ClientOnly>
 </template>
+
+<script setup>
+import Title from "../../components/common/Title.vue";
+</script>
 
 <style scoped>
 p,

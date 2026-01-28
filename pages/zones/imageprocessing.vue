@@ -1,4 +1,6 @@
 <script setup>
+import Title from "../../components/common/Title.vue";
+import CodeSnippet from "../../components/common/CodeSnippet.vue";
 const processingFeatures = [
   {
     title: "Trim",
@@ -786,12 +788,21 @@ const tableRows = [
 </script>
 
 <template>
-  <div class=" md:max-w-lg lg:max-w-3xl flex flex-col gap-4">
-    <h1 class="text-[2rem] md:text-5xl font-medium mt-4">Image Processing</h1>
+  <div class="flex flex-col gap-4">
+    <Title
+      upername="support"
+      title="Image Processing"
+      pcAlignment="start"
+      mobileAlignment="start"
+      :fontWeight="500"
+    />
 
     <img src="/images/Zones/imageprocessing.svg" alt="image processing" />
 
-    <p style="font-family: inter" class="text-[#73737F] text-[13px] md:text-[1rem]">
+    <p
+      style="font-family: inter"
+      class="text-[#73737F] text-[13px] md:text-[1rem]"
+    >
       Our powerful real-time Image Processing feature transforms and optimizes
       your images with simple query parameters. Your image management workflow
       defines the user experience by transforming and optimizing the image
@@ -799,6 +810,51 @@ const tableRows = [
       variants and deliver them from our high performance CDN.
     </p>
 
+    <p
+      style="font-family: inter"
+      class="text-[#73737F] text-[13px] md:text-[1rem]"
+    >
+      This feature is available for both Pull and Push Zones. Simply set the
+      Image Processing setting to enabled. When the Image Processing setting is
+      set to enabled in a Pull Zone the Origin Shield and Cache Key Host
+      settings will be set to enabled and the Ignore Query String setting will
+      be set to disabled automatically
+    </p>
+
+    <p
+      style="font-family: inter"
+      class="text-[#73737F] text-[13px] md:text-[1rem]"
+    >
+      It is possible to process images and deliver other content at the same
+      time when this feature is enabled. When enabled, the x-ip and x-ip-info
+      response headers will be added. The x-ip response header indicates the
+      status of the operation. The following values are possible:
+    </p>
+
+    <div class="pl-6 mb-4">
+      <ul class="text-[#73737F] space-y-[10px] text-[13px] md:text-[1rem]">
+        <li class="">
+          0 - The asset was not processed (e.g. CSS or JavaScript).
+        </li>
+        <li class="">1 - The image was regularly processed.</li>
+        <li class="">
+          2 - The original image is returned because it is smaller than the
+          processed image.
+        </li>
+      </ul>
+    </div>
+
+    <p
+      style="font-family: inter"
+      class="text-[#73737F] text-[13px] md:text-[1rem]"
+    >
+      The x-ip-info response header provides additional details about the image
+      processed. The osz value shows the output size, the odim value the output
+      dimensions and the ofmt value the output format. Currently jpeg, png,
+      webp, and tiff image formats are supported. If an error has occurred
+      during the image transformation, the header x-ip-error provides a detailed
+      error message.
+    </p>
     <div
       class="bg-[#FEF9D8] text-[#73737F] max-w-[47.5rem] mt-4 mx-auto py-5 rounded-2xl px-10 shadow-sm border border-[#1a192514]"
     >
@@ -811,7 +867,7 @@ const tableRows = [
 
     <div class="w-full mt-8 font-inter">
       <div
-        class="grid grid-cols-4 border-b border-gray-200 pb-4 mb-4 text-[#8B929A] text-[11px] gap-2 md:text-[1rem]  uppercase"
+        class="grid grid-cols-4 border-b border-gray-200 pb-4 mb-4 text-[#8B929A] text-[11px] gap-2 md:text-[1rem] uppercase"
       >
         <div
           style="font-weight: 400; font-family: inter"
@@ -826,51 +882,67 @@ const tableRows = [
       <div
         v-for="(row, index) in tableRows"
         :key="index"
-        class="grid grid-cols-4  border-b gap-4 border-gray-200 py-6 text-[#73737F] text-[11px] md:text-base"
+        class="grid grid-cols-4 border-b gap-4 border-gray-200 py-6 text-[#73737F] text-[11px] md:text-base"
       >
-        <div class="flex  flex-col gap-1">
+        <div class="flex flex-col gap-1">
           <span
             style="font-family: inter"
-            class="text-[#000000]  font-normal whitespace-pre-line leading-relaxed text-[11px] md:text-[15px]"
+            class="text-[#000000] font-normal whitespace-pre-line leading-relaxed text-[11px] md:text-[15px]"
           >
             {{ row.paramName }}
           </span>
-          <span style="font-family: inter" class="text-[#A0A0AA] text-[11px] md:text-[15px]">{{
-            row.paramType
-          }}</span>
+          <span
+            style="font-family: inter"
+            class="text-[#A0A0AA] text-[11px] md:text-[15px]"
+            >{{ row.paramType }}</span
+          >
         </div>
 
         <div class="flex flex-col gap-1">
           <span
             style="font-family: inter"
-            class="font-medium  text-black whitespace-pre-line leading-relaxed text-[11px] md:text-[15px]"
+            class="font-medium text-black whitespace-pre-line leading-relaxed text-[11px] md:text-[15px]"
           >
             {{ row.valRange }}
           </span>
-          <span style="font-family: inter" class="text-[#A0A0AA] text-[11px] md:text-[15px]">
+          <span
+            style="font-family: inter"
+            class="text-[#A0A0AA] text-[11px] md:text-[15px]"
+          >
             {{ row.valType }}
           </span>
         </div>
 
-        <div class="whitespace-pre-line text-[11px] md:text-[15px] text-[#A0A0AA]">
+        <div
+          class="whitespace-pre-line text-[11px] md:text-[15px] text-[#A0A0AA]"
+        >
           {{ row.dependencies }}
         </div>
 
-        <div class="whitespace-pre-line text-[11px] md:text-[15px] text-[#A0A0AA]">
+        <div
+          class="whitespace-pre-line text-[11px] md:text-[15px] text-[#A0A0AA]"
+        >
           {{ row.default }}
         </div>
       </div>
     </div>
     <div class="flex flex-col gap-4">
-      <h2 class="text-[2rem] md:text-5xl font-medium text-[#1A1925] mb-4">
+      <h2
+        class="text-[1.5rem] md:text-[2rem] font-semibold text-[#1A1925] mb-4"
+      >
         Order of Operations
       </h2>
-      <p class="text-[#73737F] text-[13px] md:text-[1rem] leading-relaxed mb-4" style="font-family: Inter;">
+      <p
+        class="text-[#73737F] text-[13px] md:text-[1rem] leading-relaxed mb-4"
+        style="font-family: Inter"
+      >
         The query parameters can be defined in any order but our system
         normalizes the transformation sequence to the following order:
       </p>
       <ol class="list-disc">
-        <ol class="list-decimal flex flex-col gap-4 text-[#73737F] text-[13px] md:text-[1rem] pl-6">
+        <ol
+          class="list-decimal flex flex-col gap-4 text-[#73737F] text-[13px] md:text-[1rem] pl-6"
+        >
           <li>trim</li>
           <li>crop</li>
           <li>resize</li>
@@ -890,25 +962,20 @@ const tableRows = [
       >
         <h2
           class="text-[1.5rem] md:text-[2rem] font-semibold leading-[35px] tracking-[-0.02em]"
-          style="font-family: 'Bricolage Grotesque', sans-serif"
+          style="font-family: &quot;Bricolage Grotesque&quot;, sans-serif"
         >
           {{ feature.title }}
         </h2>
 
         <p
           class="text-[13px] md:text-[1rem] leading-[26px] tracking-[-0.006em] text-[#73737f] font-normal"
-          style="font-family: 'Inter', sans-serif"
+          style="font-family: &quot;Inter&quot;, sans-serif"
         >
           {{ feature.description }}
         </p>
 
         <template v-for="(example, exIndex) in feature.examples" :key="exIndex">
-          <div
-            class="w-full md:w-[662.98px] py-[9px] px-6 border border-[#eeeef0] text-[13px] md:text-sm text-[#73737f] overflow-x-auto whitespace-nowrap"
-            style="font-family: 'Inter', sans-serif"
-          >
-            {{ example.code }}
-          </div>
+          <CodeSnippet :code="example.code" />
 
           <img
             v-if="example.image"

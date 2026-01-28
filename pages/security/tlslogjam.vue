@@ -1,54 +1,41 @@
 <script setup lang="ts">
-import AccessAllFeaturesSection from '~/components/common/AccessAllFeatures.vue';
-
+import AccessAllFeaturesSection from "~/components/common/AccessAllFeatures.vue";
 </script>
 
 <template>
-  <div class="min-h-screen  text-[#1f2937] ">
-    <div class="max-w-3xl mx-auto">
-      
-     
-      <h1 class="text-[2rem] md:text-5xl font-semibold mt-2 mb-4">TLS Logjam Test</h1>
-      <h2 class="text-[#73737F] md:text-[1rem] mt-4 text-[14px] max-w-2xl mb-4">
-        CVE-2015-4000
-      </h2>
-      <div
-        class="w-full max-w-3xl mb-[3.4375rem] flex items-center gap-5 rounded-xl"
-      >
-        <div class="flex-1">
-          <label class="block mb-1 text-sm font-medium">Hostname</label>
-          <input
-            type="text"
-            placeholder="e.g. www.example.com"
-            class="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
-          />
-        </div>
-        <div>
-          <label class="block mb-1 text-sm font-medium">Weak Ciphers</label>
-          <div class="flex gap-2">
-            <select
-              class="border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
-            >
-              <option>hide</option>
-              <option>hide 2</option>
-              <option>hide 3</option>
-            </select>
-            <button
-              class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-medium shadow"
-            >
-              Test
-            </button>
-          </div>
+  <div class="min-h-screen">
+    <div class="">
+      <CommonTitle
+        upername="Tools"
+        title="TLS Logjam Test"
+        subtitle="CVE-2015-4000"
+        mobileAlignment="start"
+        pcAlignment="start"
+        :fontWeight="500"
+      />
+      <div class="w-full mb-4 flex items-end gap-5 rounded-xl">
+        <CommonUrlInput
+          label="Hostname"
+          placeholder="e.g. www.example.com"
+          :options="['hide', 'hide 2', 'hide 3']"
+          selectLabel="Weak Ciphers"
+        />
+        <div class="mb-[1px]">
+          <CommonButton variant="tool" tool="Test" />
         </div>
       </div>
-      <h2 class="text-[2rem] font-semibold text-[#111827] mb-6">
+      <h2
+        class="text-[1.5rem] md:text-[2rem] font-semibold text-[#111827] mb-6"
+      >
         TLS Logjam Test FAQ
       </h2>
       <div
         class="grid grid-cols-1 md:grid-cols-2 gap-10 text-[#73737F] leading-relaxed mb-12"
       >
         <div>
-          <h3 class="text-[1.5625rem] font-semibold text-[#1f2937] mb-3">
+          <h3
+            class="text-[1.5rem] md:text-[2rem] font-semibold text-[#1f2937] mb-3"
+          >
             What is the Logjam TLS attack?
           </h3>
           <p class="text-[13px] md:text-[1rem]">
@@ -71,7 +58,9 @@ import AccessAllFeaturesSection from '~/components/common/AccessAllFeatures.vue'
           </p>
         </div>
         <div>
-          <h3 class="text-[1.5625rem] font-semibold text-[#1f2937] mb-3">
+          <h3
+            class="text-[1.5rem] md:text-[2rem] font-semibold text-[#1f2937] mb-3"
+          >
             How to eliminate Logjam vulnerability?
           </h3>
           <p class="text-[13px] md:text-[1rem] mb-6">
@@ -83,14 +72,16 @@ import AccessAllFeaturesSection from '~/components/common/AccessAllFeatures.vue'
               >Guide to Deploying Diffie-Hellman for TLS</span
             >
           </p>
-          <h3 class="text-[1.5625rem] font-semibold text-[#1f2937] mb-3">
+          <h3
+            class="text-[1.5rem] md:text-[2rem] font-semibold text-[#1f2937] mb-3"
+          >
             How to test Logjam via command line?
           </h3>
           <div class="grid grid-cols-1 gap-6 text-[#73737F]">
             <div>
               <p class="font-semibold text-[#1f2937] mb-2">OpenSSL:</p>
               <div
-                class="border rounded-lg p-4 bg-gray-50 text-[14px] break-all"
+                class="border rounded-lg p-4 bg-gray-50 text-[13px] md:text-[14px] break-all"
               >
                 openssl s_client -connect www.example.com:443 -cipher 'EXP'
               </div>
@@ -98,7 +89,7 @@ import AccessAllFeaturesSection from '~/components/common/AccessAllFeatures.vue'
             <div>
               <p class="font-semibold text-[#1f2937] mb-2">nmap:</p>
               <div
-                class="border rounded-lg p-4 bg-gray-50 text-[14px] break-all"
+                class="border rounded-lg p-4 bg-gray-50 text-[13px] md:text-[14px] break-all"
               >
                 nmap --script ssl-enum-ciphers -p 443 www.example.com
               </div>
@@ -108,24 +99,25 @@ import AccessAllFeaturesSection from '~/components/common/AccessAllFeatures.vue'
       </div>
     </div>
   </div>
- 
- <ClientOnly>
+
+  <ClientOnly>
     <Teleport to="#full-width-section">
       <AccessAllFeaturesSection class="" />
     </Teleport>
   </ClientOnly>
-
-
 </template>
 <style scoped>
 input[type="checkbox"] {
   accent-color: #2563eb;
 }
 
-p, ol, ul, pre, code {
+p,
+ol,
+ul,
+pre,
+code {
   font-family: inter;
 }
-
 
 .btn {
   position: relative;

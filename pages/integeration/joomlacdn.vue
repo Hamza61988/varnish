@@ -1,11 +1,18 @@
 <script setup lang="ts">
-import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
+import AccessAllFeaturesSection from "~/components/common/AccessAllFeatures.vue";
+import Title from "../../components/common/Title.vue";
 </script>
 
 <template>
-  <div class="mt-[4.25rem] mx-auto max-w-3xl">
+  <div class=" ">
+      <Title
+       upername="support"
+        title="Joomla CDN Integration"
+        pcAlignment="start"
+        mobileAlignment="start"
+        :fontWeight="500"
+      />
     <div class="w-full flex flex-col items-start gap-4">
-      <h1 class="text-[2rem] md:text-5xl font-medium">Joomla CDN Integration</h1>
 
       <div class="">
         <img src="/images/Integeration/joomlacdn.svg" alt="zone alias" />
@@ -42,8 +49,10 @@ import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
       <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">
         How to complete a Joomla CDN integration.
       </h2>
-      <div class="pl-8 flex flex-col gap-4">
-        <ol class="text-[#73737F] text-[13px] md:text-[1rem] flex flex-col gap-4">
+      <div class="pl-6 flex flex-col gap-4">
+        <ol
+          class="text-[#73737F] text-[13px] md:text-[1rem] flex flex-col gap-4"
+        >
           <li class="">
             It is recommended to backup your CMS before you start with the
             integration.
@@ -121,7 +130,9 @@ import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
     </div>
 
     <div class="mt-4 flex flex-col gap-4">
-      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">Choosing the best Joomla CDN</h2>
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">
+        Choosing the best Joomla CDN
+      </h2>
       <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         Once you have completed the above integration, your Joomla site will be
         integrated with KeyCDN. When choosing the best Joomla CDN, you should
@@ -150,8 +161,10 @@ import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
         check the following pages:
       </p>
 
-      <div class="pl-8">
-        <ul class="text-[#73737F] text-[13px] md:text-[1rem] list-disc flex flex-col gap-4">
+      <div class="pl-6">
+        <ul
+          class="text-[#73737F] text-[13px] md:text-[1rem] list-disc flex flex-col gap-4"
+        >
           <li class="">
             The KeyCDN <a class="underline">Website Speed Test</a> lets you
             measure the site speed of a website from various locations.

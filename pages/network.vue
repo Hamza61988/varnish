@@ -101,9 +101,7 @@
               </div>
 
               <!-- Legend -->
-              <div
-                class="absolute bottom-4 flex flex-col gap-3 z-20 "
-              >
+              <div class="absolute bottom-4 flex flex-col gap-3 z-20">
                 <div class="flex items-center gap-2">
                   <div class="w-3 h-3 rounded-full bg-[#3b82f6]"></div>
                   <span
@@ -144,7 +142,7 @@
                 "
               >
                 <h3
-                  class="font-['Inter'] font-semibold text-[18px] leading-6 text-[#757575] mb-4"
+                  class="font-['Inter'] font-semibold text-[1.5rem] md:text-[2rem] leading-6 text-[#757575] mb-4"
                 >
                   North America
                 </h3>
@@ -156,7 +154,7 @@
                   >
                     <span class="text-base">{{ city.flag }}</span>
                     <span
-                      class="font-['Inter'] font-normal text-[15px] leading-5 text-[#1a1925]"
+                      class="font-['Inter'] font-normal text-[13px] md:text-[1rem] leading-5 text-[#1a1925]"
                     >
                       {{ city.name }}
                     </span>
@@ -177,7 +175,7 @@
                 "
               >
                 <h3
-                  class="font-['Inter'] font-semibold text-[18px] leading-6 text-[#757575] mb-4"
+                  class="font-['Inter'] font-semibold text-[1.5rem] md:text-[2rem] leading-6 text-[#757575] mb-4"
                 >
                   Europe
                 </h3>
@@ -189,7 +187,7 @@
                   >
                     <span class="text-base">{{ city.flag }}</span>
                     <span
-                      class="font-['Inter'] font-normal text-[15px] leading-5 text-[#1a1925]"
+                      class="font-['Inter'] font-normal text-[13px] md:text-[1rem] leading-5 text-[#1a1925]"
                     >
                       {{ city.name }}
                     </span>
@@ -210,7 +208,7 @@
                 "
               >
                 <h3
-                  class="font-['Inter'] font-semibold text-[18px] leading-6 text-[#757575] mb-4"
+                  class="font-['Inter'] font-semibold text-[1.5rem] md:text-[2rem] leading-6 text-[#757575] mb-4"
                 >
                   Asia
                 </h3>
@@ -222,7 +220,7 @@
                   >
                     <span class="text-base">{{ city.flag }}</span>
                     <span
-                      class="font-['Inter'] font-normal text-[15px] leading-5 text-[#1a1925]"
+                      class="font-['Inter'] font-normal text-[13px] md:text-[1rem] leading-5 text-[#1a1925]"
                     >
                       {{ city.name }}
                     </span>
@@ -243,7 +241,7 @@
                 "
               >
                 <h3
-                  class="font-['Inter'] font-semibold text-[18px] leading-6 text-[#757575] mb-4"
+                  class="font-['Inter'] font-semibold text-[1.5rem] md:text-[2rem] leading-6 text-[#757575] mb-4"
                 >
                   Oceania
                 </h3>
@@ -255,7 +253,7 @@
                   >
                     <span class="text-base">{{ city.flag }}</span>
                     <span
-                      class="font-['Inter'] font-normal text-[15px] leading-5 text-[#1a1925]"
+                      class="font-['Inter'] font-normal text-[13px] md:text-[1rem] leading-5 text-[#1a1925]"
                     >
                       {{ city.name }}
                     </span>
@@ -276,7 +274,7 @@
                 "
               >
                 <h3
-                  class="font-['Inter'] font-semibold text-[18px] leading-6 text-[#757575] mb-4"
+                  class="font-['Inter'] font-semibold text-[1.5rem] md:text-[2rem] leading-6 text-[#757575] mb-4"
                 >
                   Latin America
                 </h3>
@@ -288,7 +286,7 @@
                   >
                     <span class="text-base">{{ city.flag }}</span>
                     <span
-                      class="font-['Inter'] font-normal text-[15px] leading-5 text-[#1a1925]"
+                      class="font-['Inter'] font-normal text-[13px] md:text-[1rem] leading-5 text-[#1a1925]"
                     >
                       {{ city.name }}
                     </span>
@@ -309,7 +307,7 @@
                 "
               >
                 <h3
-                  class="font-['Inter'] font-semibold text-[18px] leading-6 text-[#757575] mb-4"
+                  class="font-['Inter'] font-semibold text-[1.5rem] md:text-[2rem] leading-6 text-[#757575] mb-4"
                 >
                   Africa
                 </h3>
@@ -321,7 +319,7 @@
                   >
                     <span class="text-base">{{ city.flag }}</span>
                     <span
-                      class="font-['Inter'] font-normal text-[15px] leading-5 text-[#1a1925]"
+                      class="font-['Inter'] font-normal text-[13px] md:text-[1rem] leading-5 text-[#1a1925]"
                     >
                       {{ city.name }}
                     </span>
@@ -427,13 +425,13 @@
                 </div>
                 <!-- Title -->
                 <h3
-                  class="font-['Bricolage_Grotesque'] font-bold text-center text-xl md:text-[24px] leading-8 tracking-tight text-[#1a1925] mb-2"
+                  class="font-['Bricolage_Grotesque'] font-bold text-center text-[1.5rem] md:text-[2rem] leading-8 tracking-tight text-[#1a1925] mb-2"
                 >
                   Global
                 </h3>
                 <!-- Description -->
                 <p
-                  class="font-['Inter'] font-normal text-center text-[13px] leading-5 tracking-tight text-[#73737f] mb-4"
+                  class="font-['Inter'] font-normal text-center text-[13px] md:text-[1rem] leading-5 tracking-tight text-[#73737f] mb-4"
                 >
                   Extensive coverage with 60+ data centers in 40+ countries
                   spread across 6 continents.
@@ -515,13 +513,13 @@
                 </div>
                 <!-- Title -->
                 <h3
-                  class="font-['Bricolage_Grotesque'] font-bold text-center text-xl md:text-[24px] leading-8 tracking-tight text-[#1a1925] mb-2"
+                  class="font-['Bricolage_Grotesque'] font-bold text-center text-[1.5rem] md:text-[2rem] leading-8 tracking-tight text-[#1a1925] mb-2"
                 >
                   Secure
                 </h3>
                 <!-- Description -->
                 <p
-                  class="font-['Inter'] font-normal text-center text-[13px] leading-5 tracking-tight text-[#73737f] mb-4"
+                  class="font-['Inter'] font-normal text-center text-[13px] md:text-[1rem] leading-5 tracking-tight text-[#73737f] mb-4"
                 >
                   Stringent security and compliance standards to keep data safe
                   (ISO 27001).
@@ -603,13 +601,13 @@
                 </div>
                 <!-- Title -->
                 <h3
-                  class="font-['Bricolage_Grotesque'] font-bold text-center text-xl md:text-[24px] leading-8 tracking-tight text-[#1a1925] mb-2"
+                  class="font-['Bricolage_Grotesque'] font-bold text-center text-[1.5rem] md:text-[2rem] leading-8 tracking-tight text-[#1a1925] mb-2"
                 >
                   Redundant
                 </h3>
                 <!-- Description -->
                 <p
-                  class="font-['Inter'] font-normal text-center text-[13px] leading-5 tracking-tight text-[#73737f] mb-4"
+                  class="font-['Inter'] font-normal text-center text-[13px] md:text-[1rem] leading-5 tracking-tight text-[#73737f] mb-4"
                 >
                   Dense interconnectivity with distributed power and cooling
                   ensures high availability.
@@ -645,7 +643,7 @@
               <!-- Left: Text Content -->
               <div class="space-y-4" style="margin: auto">
                 <p
-                  class="text-[13px] md:text-base text-justify font-['Inter'] font-normal text-[#73737f] tracking-tight"
+                  class="text-[13px] md:text-[1rem] text-justify font-['Inter'] font-normal text-[#73737f] tracking-tight"
                 >
                   We operate a
                   <span class="underline">non-federated global CDN</span>
@@ -655,7 +653,7 @@
                   network providers.
                 </p>
                 <p
-                  class="text-[13px] md:text-base text-justify font-['Inter'] font-normal text-[#73737f] tracking-tight"
+                  class="text-[13px] md:text-[1rem] text-justify font-['Inter'] font-normal text-[#73737f] tracking-tight"
                 >
                   Having our network backbone powered by Tier 1 networks allows
                   data to be transferred without delay, even in the most
@@ -686,12 +684,12 @@
                     </div>
                     <div>
                       <h3
-                        class="mb-2 text-base md:text-lg font-['Bricolage_Grotesque'] font-semibold tracking-tight text-[#1a1925]"
+                        class="mb-2 text-[1.5rem] md:text-[2rem] font-['Bricolage_Grotesque'] font-semibold tracking-tight text-[#1a1925]"
                       >
                         High reliability
                       </h3>
                       <p
-                        class="text-xs md:text-sm font-['Inter'] font-normal tracking-tight text-[#73737f]"
+                        class="text-[13px] md:text-[1rem] font-['Inter'] font-normal tracking-tight text-[#73737f]"
                       >
                         Always stay online when every single point of failure
                         has been eliminated.
@@ -720,12 +718,12 @@
                     </div>
                     <div>
                       <h3
-                        class="mb-2 text-base md:text-lg font-['Bricolage_Grotesque'] font-semibold tracking-tight text-[#1a1925]"
+                        class="mb-2 text-[1.5rem] md:text-[2rem] font-['Bricolage_Grotesque'] font-semibold tracking-tight text-[#1a1925]"
                       >
                         Endless scalability
                       </h3>
                       <p
-                        class="text-xs md:text-sm font-['Inter'] font-normal tracking-tight text-[#73737f]"
+                        class="text-[13px] md:text-[1rem] font-['Inter'] font-normal tracking-tight text-[#73737f]"
                       >
                         Grow confidently knowing our infrastructure can handle
                         any traffic volume.
@@ -754,12 +752,12 @@
                     </div>
                     <div>
                       <h3
-                        class="mb-2 text-base md:text-lg font-['Bricolage_Grotesque'] font-semibold tracking-tight text-[#1a1925]"
+                        class="mb-2 text-[1.5rem] md:text-[2rem] font-['Bricolage_Grotesque'] font-semibold tracking-tight text-[#1a1925]"
                       >
                         Robust connections
                       </h3>
                       <p
-                        class="text-xs md:text-sm font-['Inter'] font-normal tracking-tight text-[#73737f]"
+                        class="text-[13px] md:text-[1rem] font-['Inter'] font-normal tracking-tight text-[#73737f]"
                       >
                         Expect fast content transfers when each edge server has
                         at least 40 Gbps uplinks.

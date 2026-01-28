@@ -1,27 +1,38 @@
 <template>
-  <div :class="['flex gap-[3px] md:gap-[12px] flex-col', containerAlignmentClass, mbClass, customClass]">
+  <div
+    :class="[
+      'flex gap-[3px] md:gap-[12px] flex-col',
+      containerAlignmentClass,
+      mbClass,
+      customClass,
+    ]"
+  >
     <Upername :name="upername" v-if="upername" />
 
     <h2
       class="md:text-[3rem] text-[2rem] mb-0"
       :class="textAlignmentClass"
-      style="
-        font-weight: 600;
-        line-height: 56px;
-        letter-spacing: -0.04em;
-        color: #1a1925;
-      "
+      style="line-height: 56px; letter-spacing: -0.04em; color: #1a1925"
+      :style="{ fontWeight: fontWeight }"
     >
       {{ title }}
     </h2>
+    <div v-if="showTableOfContents" class="btn2">
+      <span>Table of contents</span>
+    </div>
 
-    <div :class="['flex flex-col md:flex-row md:items-center justify-between gap-4 w-full', subtitleContainerAlignmentClass]">
+    <div
+      :class="[
+        'flex flex-col md:flex-row md:items-center justify-between gap-4 w-full',
+        subtitleContainerAlignmentClass,
+      ]"
+    >
       <p
         v-if="subtitle"
         class="text-[14px] lg:text-[1rem] max-w-2xl"
         :class="[textAlignmentClass, subtitleMarginClass]"
         style="
-          font-family: 'Inter', sans-serif;
+          font-family: &quot;Inter&quot;, sans-serif;
           font-weight: 400;
           line-height: 24px;
           color: #51515e;
@@ -35,8 +46,8 @@
 </template>
 
 <script setup lang="ts">
-import Upername from './Upername.vue';
-import { computed } from 'vue';
+import Upername from "./Upername.vue";
+import { computed } from "vue";
 
 type Alignment = "center" | "start" | "end";
 
@@ -44,22 +55,28 @@ interface Props {
   upername?: string;
   title: string;
   subtitle?: string;
+  showTableOfContents?: boolean;
   alignment?: Alignment;
   mobileAlignment?: Alignment;
   pcAlignment?: Alignment;
   mbClass?: string;
   customClass?: string;
+  fontWeight?: string | number;
 }
 
 const props = withDefaults(defineProps<Props>(), {
+  showTableOfContents: false,
   alignment: undefined,
   mobileAlignment: undefined,
   pcAlignment: undefined,
   mbClass: "mb-[30px]",
   customClass: "",
+  fontWeight: 600,
 });
 
-const mobile = computed(() => props.mobileAlignment || props.alignment || "center");
+const mobile = computed(
+  () => props.mobileAlignment || props.alignment || "center",
+);
 const pc = computed(() => props.pcAlignment || props.alignment || "center");
 
 const containerAlignmentClass = computed(() => {
@@ -102,3 +119,22 @@ const subtitleMarginClass = computed(() => {
   };
 });
 </script>
+
+<style scoped>
+.btn2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  color: #73737f;
+  border-radius: 14px;
+  padding: 20px 20px;
+  box-shadow:
+    0px 0.5px 0.5px 0px #07011308,
+    0px 1px 1px -0.5px #07011308,
+    0px 2px 2px -1px #07011308,
+    0px 3px 3px -1.5px #07011308,
+    0px 0px 0px 1px #1a192514;
+}
+</style>

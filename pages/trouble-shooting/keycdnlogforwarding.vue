@@ -1,20 +1,26 @@
-<template>
-  <div class="mt-[4.25rem] mx-auto max-w-3xl">
-    <div class="w-full">
-      <h1 class="text-[2rem] md:text-5xl font-medium mt-4">Key CDN Log Forwarding</h1>
+<script setup lang="ts">
+import Title from "../../components/common/Title.vue";
+</script>
 
-      <p class="text-[#73737F] text-[13px] md:text-[1rem] mt-4">
-        The raw logs can be received through syslog. Here's how to configure Log
-        Forwarding syslog to receive your raw logs in real time:
-      </p>
-    </div>
+<template>
+  <div class="">
+    <Title
+      upername="support"
+      title="Key CDN Log Forwarding"
+      subtitle="The raw logs can be received through syslog. Here's how to configure Log Forwarding syslog to receive your raw logs in real time:"
+      pcAlignment="start"
+      mobileAlignment="start"
+      :fontWeight="500"
+    />
 
     <div class="mt-[2.3125rem]">
       <p class="text-[#73737F] text-[13px] md:text-[1rem] mt-4">
         To set up a Push Zone, follow the steps outlined below:
       </p>
 
-      <ol class="flex text-[#73737F] text-[13px] md:text-[1rem] flex-col gap-4 pl-8">
+      <ol
+        class="flex text-[#73737F] text-[13px] md:text-[1rem] flex-col gap-4 pl-8"
+      >
         <li>Log in to the KeyCDN dashboard.</li>
         <li>
           In the left navigation sidebar click Account and then Log Forwarding.
@@ -33,8 +39,12 @@
       <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">
         Where to send the syslog messages to?
       </h2>
-      <p class="text-[#73737F] text-[13px] md:text-[1rem]">KeyCDN recommends the following options:</p>
-      <ul class="pl-8 gap-4 list-disc flex flex-col text-[#73737F] text-[13px] md:text-[1rem]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
+        KeyCDN recommends the following options:
+      </p>
+      <ul
+        class="pl-8 gap-4 list-disc flex flex-col text-[#73737F] text-[13px] md:text-[1rem]"
+      >
         <li>
           Configure your own syslog server. For more details please read
           <a class="underline"> Configure Your Own Syslog Server</a>.

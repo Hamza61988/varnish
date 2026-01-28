@@ -1,36 +1,27 @@
 <script setup lang="ts">
-import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
+import AccessAllFeaturesSection from "~/components/common/AccessAllFeatures.vue";
 </script>
 
 <template>
   <div class="min-h-screen text-[#1f2937]">
-    <div class="max-w-3xl mx-auto">
-      <h1 class="text-[2rem] md:text-5xl font-semibold mt-2 mb-4">Epoch Converter</h1>
-      <h2 class="text-[#73737F] md:text-[1rem] mt-4 text-[14px] max-w-2xl mb-6">
-        UNIX EPOCH TIME CONVERTER
-      </h2>
-      <div
-        class="w-full max-w-3xl mb-[3.4375rem] flex items-end gap-5 rounded-xl"
-      >
-        <div class="flex-1">
-          <label class="block mb-1 text-sm font-medium">Epoch Timestamp</label>
-          <input
-            type="text"
-            placeholder="e.g 1763370035"
-            class="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
-          />
-        </div>
+    <div class="">
+      <CommonTitle
+        upername="Tools"
+        title="Epoch Converter"
+        subtitle="UNIX EPOCH TIME CONVERTER"
+        mobileAlignment="start"
+        pcAlignment="start"
+        :fontWeight="500"
+      />
+      <div class="w-full mb-4 flex items-end gap-5 rounded-xl">
+        <CommonUrlInput label="Epoch Timestamp" placeholder="e.g 1763370035" />
         <div>
           <label class="block mb-1 text-sm font-medium"> </label>
-          <button
-            class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-medium shadow"
-          >
-            Convert
-          </button>
+          <CommonButton variant="tool" tool="Convert" />
         </div>
       </div>
       <div class="w-full overflow-x-auto mb-12">
-        <table class="w-full text-left text-[15px]">
+        <table class="w-full text-left text-[13px] md:text-[15px]">
           <thead class="text-[#73737F] font-medium border-b">
             <tr>
               <th class="py-3">TIME</th>
@@ -105,14 +96,18 @@ import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
           </tbody>
         </table>
       </div>
-      <h2 class="text-[2rem] font-semibold text-[#111827] mb-6">
+      <h2
+        class="text-[1.5rem] md:text-[2rem] font-semibold text-[#111827] mb-6"
+      >
         Epoch Converter FAQ
       </h2>
       <div
         class="grid grid-cols-1 md:grid-cols-2 gap-10 text-[#73737F] leading-relaxed mb-12"
       >
         <div>
-          <h3 class="text-[1.5625rem] font-semibold text-[#1f2937] mb-3">
+          <h3
+            class="text-[1.5rem] md:text-[2rem] font-semibold text-[#1f2937] mb-3"
+          >
             What is Epoch Time?
           </h3>
           <p class="text-[13px] md:text-[1rem]">
@@ -127,7 +122,9 @@ import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
           </p>
         </div>
         <div>
-          <h3 class="text-[1.5625rem] font-semibold text-[#1f2937] mb-3">
+          <h3
+            class="text-[1.5rem] md:text-[2rem] font-semibold text-[#1f2937] mb-3"
+          >
             UNIX Epoch Timestamp
           </h3>
           <p class="text-[13px] md:text-[1rem]">

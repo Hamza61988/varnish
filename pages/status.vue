@@ -1,10 +1,10 @@
 <template>
-  <div class="min-h-screen bg-white relative overflow-hidden">
+  <div class="min-h-screen relative overflow-hidden">
     <!-- Page Background - BGline.svg -->
     <div
       class="absolute inset-0 pointer-events-none hidden md:block"
       style="
-        background-image: url('/images/about/BGline.svg');
+        background-image: url(&quot;/images/about/BGline.svg&quot;);
         background-repeat: no-repeat;
         background-position: left bottom;
         background-size: auto;
@@ -14,50 +14,16 @@
     ></div>
 
     <!-- Main Content -->
-    <main
-      class="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 py-12 sm:py-16 md:py-20 lg:py-24 relative z-10"
-    >
+    <main class="site-padding site-margins relative z-10">
       <!-- Header Section -->
-      <section
-        class="w-full md:w-3/4 lg:w-2/3 xl:w-1/2 mx-auto px-4 sm:px-6 md:px-0"
-      >
-        <!-- Section Label -->
-         <div class="flex items-center justify-center" ><SectionsUpername name="Network Status" /></div>
 
-
-        <!-- Title -->
-        <h1
-          class="text-center mb-4 sm:mb-6"
-          style="
-            font-family: 'Bricolage Grotesque', sans-serif;
-            font-weight: 500;
-            font-size: 48px;
-            line-height: 56px;
-            letter-spacing: -2%;
-            text-align: center;
-            vertical-align: middle;
-            color: #1a1925;
-          "
-        >
-          Status
-        </h1>
-
-        <!-- Subtitle -->
-        <p
-          class="text-center mb-6 sm:mb-8 md:mb-10 lg:mb-12"
-          style="
-            font-family: 'Inter', sans-serif;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 24px;
-            letter-spacing: -1.1%;
-            text-align: center;
-            color: #51515e;
-          "
-        >
-          All systems are operational
-        </p>
-      </section>
+      <CommonTitle
+        upername="Network Status"
+        title="Status"
+        subtitle="All systems are operational"
+        pcAlignment="center"
+        mobileAlignment="center"
+      />
 
       <!-- Regional Status Cards -->
       <section class="mb-12 sm:mb-16 md:mb-20 lg:mb-24">
@@ -70,8 +36,9 @@
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
-              
-              box-shadow: 0px 0.5px 0.5px 0px rgba(7, 1, 19, 0.03),
+
+              box-shadow:
+                0px 0.5px 0.5px 0px rgba(7, 1, 19, 0.03),
                 0px 1px 1px -0.5px rgba(7, 1, 19, 0.03),
                 0px 2px 2px -1px rgba(7, 1, 19, 0.03),
                 0px 3px 3px -1.5px rgba(7, 1, 19, 0.03);
@@ -79,15 +46,8 @@
           >
             <div class="relative z-10 p-4 sm:p-5 md:p-6">
               <h3
-                class="mb-4"
-                style="
-                  font-family: 'Bricolage Grotesque', sans-serif;
-                  font-weight: 600;
-                  font-size: 18px;
-                  line-height: 24px;
-                  letter-spacing: -2%;
-                  color: #757575;
-                "
+                class="mb-4 font-semibold text-[#757575] text-[1.5rem] md:text-[2rem]"
+                style="font-family: &quot;Bricolage Grotesque&quot;, sans-serif"
               >
                 North America
               </h3>
@@ -151,14 +111,8 @@
                     ></div>
                   </div>
                   <span
-                    style="
-                      font-family: 'Inter', sans-serif;
-                      font-weight: 400;
-                      font-size: 15px;
-                      line-height: 20px;
-                      letter-spacing: -0.6%;
-                      color: #000000;
-                    "
+                    class="text-[#000000] text-[13px] md:text-[1rem]"
+                    style="font-family: &quot;Inter&quot;, sans-serif"
                   >
                     {{ city }}
                   </span>
@@ -173,8 +127,9 @@
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
-              
-              box-shadow: 0px 0.5px 0.5px 0px rgba(7, 1, 19, 0.03),
+
+              box-shadow:
+                0px 0.5px 0.5px 0px rgba(7, 1, 19, 0.03),
                 0px 1px 1px -0.5px rgba(7, 1, 19, 0.03),
                 0px 2px 2px -1px rgba(7, 1, 19, 0.03),
                 0px 3px 3px -1.5px rgba(7, 1, 19, 0.03);
@@ -182,15 +137,8 @@
           >
             <div class="relative z-10 p-4 sm:p-5 md:p-6">
               <h3
-                class="mb-4"
-                style="
-                  font-family: 'Bricolage Grotesque', sans-serif;
-                  font-weight: 600;
-                  font-size: 18px;
-                  line-height: 24px;
-                  letter-spacing: -2%;
-                  color: #757575;
-                "
+                class="mb-4 font-semibold text-[#757575] text-[1.5rem] md:text-[2rem]"
+                style="font-family: &quot;Bricolage Grotesque&quot;, sans-serif"
               >
                 Europe
               </h3>
@@ -264,7 +212,7 @@
                   </div>
                   <span
                     style="
-                      font-family: 'Inter', sans-serif;
+                      font-family: &quot;Inter&quot;, sans-serif;
                       font-weight: 400;
                       font-size: 15px;
                       line-height: 20px;
@@ -285,8 +233,9 @@
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
-              
-              box-shadow: 0px 0.5px 0.5px 0px rgba(7, 1, 19, 0.03),
+
+              box-shadow:
+                0px 0.5px 0.5px 0px rgba(7, 1, 19, 0.03),
                 0px 1px 1px -0.5px rgba(7, 1, 19, 0.03),
                 0px 2px 2px -1px rgba(7, 1, 19, 0.03),
                 0px 3px 3px -1.5px rgba(7, 1, 19, 0.03);
@@ -294,15 +243,8 @@
           >
             <div class="relative z-10 p-4 sm:p-5 md:p-6">
               <h3
-                class="mb-4"
-                style="
-                  font-family: 'Bricolage Grotesque', sans-serif;
-                  font-weight: 600;
-                  font-size: 18px;
-                  line-height: 24px;
-                  letter-spacing: -2%;
-                  color: #757575;
-                "
+                class="mb-4 font-semibold text-[#757575] text-[1.5rem] md:text-[2rem]"
+                style="font-family: &quot;Bricolage Grotesque&quot;, sans-serif"
               >
                 Asia
               </h3>
@@ -368,7 +310,7 @@
                   </div>
                   <span
                     style="
-                      font-family: 'Inter', sans-serif;
+                      font-family: &quot;Inter&quot;, sans-serif;
                       font-weight: 400;
                       font-size: 15px;
                       line-height: 20px;
@@ -389,8 +331,9 @@
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
-              
-              box-shadow: 0px 0.5px 0.5px 0px rgba(7, 1, 19, 0.03),
+
+              box-shadow:
+                0px 0.5px 0.5px 0px rgba(7, 1, 19, 0.03),
                 0px 1px 1px -0.5px rgba(7, 1, 19, 0.03),
                 0px 2px 2px -1px rgba(7, 1, 19, 0.03),
                 0px 3px 3px -1.5px rgba(7, 1, 19, 0.03);
@@ -398,15 +341,8 @@
           >
             <div class="relative z-10 p-4 sm:p-5 md:p-6">
               <h3
-                class="mb-4"
-                style="
-                  font-family: 'Bricolage Grotesque', sans-serif;
-                  font-weight: 600;
-                  font-size: 18px;
-                  line-height: 24px;
-                  letter-spacing: -2%;
-                  color: #757575;
-                "
+                class="mb-4 font-semibold text-[#757575] text-[1.5rem] md:text-[2rem]"
+                style="font-family: &quot;Bricolage Grotesque&quot;, sans-serif"
               >
                 Oceania
               </h3>
@@ -467,7 +403,7 @@
                   </div>
                   <span
                     style="
-                      font-family: 'Inter', sans-serif;
+                      font-family: &quot;Inter&quot;, sans-serif;
                       font-weight: 400;
                       font-size: 15px;
                       line-height: 20px;
@@ -488,8 +424,9 @@
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
-              
-              box-shadow: 0px 0.5px 0.5px 0px rgba(7, 1, 19, 0.03),
+
+              box-shadow:
+                0px 0.5px 0.5px 0px rgba(7, 1, 19, 0.03),
                 0px 1px 1px -0.5px rgba(7, 1, 19, 0.03),
                 0px 2px 2px -1px rgba(7, 1, 19, 0.03),
                 0px 3px 3px -1.5px rgba(7, 1, 19, 0.03);
@@ -497,15 +434,8 @@
           >
             <div class="relative z-10 p-4 sm:p-5 md:p-6">
               <h3
-                class="mb-4"
-                style="
-                  font-family: 'Bricolage Grotesque', sans-serif;
-                  font-weight: 600;
-                  font-size: 18px;
-                  line-height: 24px;
-                  letter-spacing: -2%;
-                  color: #757575;
-                "
+                class="mb-4 font-semibold text-[#757575] text-[1.5rem] md:text-[2rem]"
+                style="font-family: &quot;Bricolage Grotesque&quot;, sans-serif"
               >
                 Latin America
               </h3>
@@ -567,7 +497,7 @@
                   </div>
                   <span
                     style="
-                      font-family: 'Inter', sans-serif;
+                      font-family: &quot;Inter&quot;, sans-serif;
                       font-weight: 400;
                       font-size: 15px;
                       line-height: 20px;
@@ -588,8 +518,9 @@
             style="
               border-radius: 20px;
               border: 1px solid #eeeef0;
-              
-              box-shadow: 0px 0.5px 0.5px 0px rgba(7, 1, 19, 0.03),
+
+              box-shadow:
+                0px 0.5px 0.5px 0px rgba(7, 1, 19, 0.03),
                 0px 1px 1px -0.5px rgba(7, 1, 19, 0.03),
                 0px 2px 2px -1px rgba(7, 1, 19, 0.03),
                 0px 3px 3px -1.5px rgba(7, 1, 19, 0.03);
@@ -597,15 +528,8 @@
           >
             <div class="relative z-10 p-4 sm:p-5 md:p-6">
               <h3
-                class="mb-4"
-                style="
-                  font-family: 'Bricolage Grotesque', sans-serif;
-                  font-weight: 600;
-                  font-size: 18px;
-                  line-height: 24px;
-                  letter-spacing: -2%;
-                  color: #757575;
-                "
+                class="mb-4 font-semibold text-[#757575] text-[1.5rem] md:text-[2rem]"
+                style="font-family: &quot;Bricolage Grotesque&quot;, sans-serif"
               >
                 Africa
               </h3>
@@ -660,7 +584,7 @@
                   </div>
                   <span
                     style="
-                      font-family: 'Inter', sans-serif;
+                      font-family: &quot;Inter&quot;, sans-serif;
                       font-weight: 400;
                       font-size: 15px;
                       line-height: 20px;
@@ -741,13 +665,9 @@
                   ></div>
                 </div>
                 <span
+                  class="font-semibold text-[#757575] text-[13px] md:text-[1rem]"
                   style="
-                    font-family: 'Bricolage Grotesque', sans-serif;
-                    font-weight: 600;
-                    font-size: 14.26px;
-                    line-height: 19.01px;
-                    letter-spacing: -2%;
-                    color: #757575;
+                    font-family: &quot;Bricolage Grotesque&quot;, sans-serif;
                   "
                 >
                   {{ item }}
@@ -762,41 +682,20 @@
       <section class="mb-12 sm:mb-16 md:mb-20 lg:mb-24">
         <div class="mx-auto">
           <h2
-            class="mb-2"
-            style="
-              font-family: 'Bricolage Grotesque', sans-serif;
-              font-weight: 600;
-              font-size: 32px;
-              line-height: 24px;
-              letter-spacing: -2%;
-              color: #1a1925;
-            "
+            class="mb-2 font-semibold text-[#1a1925] text-[1.5rem] md:text-[2rem]"
+            style="font-family: &quot;Bricolage Grotesque&quot;, sans-serif"
           >
             IP Location Finder API
           </h2>
           <p
-            class="mb-8"
-            style="
-              font-family: 'Inter', sans-serif;
-              font-weight: 700;
-              font-size: 17px;
-              line-height: 26px;
-              letter-spacing: -0.6%;
-              color: #73737f;
-            "
+            class="mb-8 font-bold text-[#73737f] text-[13px] md:text-[1rem]"
+            style="font-family: &quot;Inter&quot;, sans-serif"
           >
             LAST 90 DAYS
           </p>
           <p
-            class="mb-12"
-            style="
-              font-family: 'Inter', sans-serif;
-              font-weight: 400;
-              font-size: 16px;
-              line-height: 26px;
-              letter-spacing: -0.6%;
-              color: #73737f;
-            "
+            class="mb-12 text-[#73737f] text-[13px] md:text-[1rem]"
+            style="font-family: &quot;Inter&quot;, sans-serif"
           >
             There have been no incidents in the past 90 days.
           </p>
@@ -804,27 +703,14 @@
           <!-- API Section -->
           <div class="mb-12">
             <h3
-              class="mb-4"
-              style="
-                font-family: 'Bricolage Grotesque', sans-serif;
-                font-weight: 600;
-                font-size: 32px;
-                line-height: 24px;
-                letter-spacing: -2%;
-                color: #1a1925;
-              "
+              class="mb-4 font-semibold text-[#1a1925] text-[1.5rem] md:text-[2rem]"
+              style="font-family: &quot;Bricolage Grotesque&quot;, sans-serif"
             >
               API
             </h3>
             <p
-              class="mb-6 text-base sm:text-lg"
-              style="
-                font-family: 'Inter', sans-serif;
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 24px;
-                color: #51515e;
-              "
+              class="mb-6 text-[#51515e] text-[13px] md:text-[1rem]"
+              style="font-family: &quot;Inter&quot;, sans-serif"
             >
               The RESTful API returns the overall service status and a short
               description of an open incident in JSON format.
@@ -842,7 +728,7 @@
               <code
                 class="text-sm sm:text-base"
                 style="
-                  font-family: 'Inter', monospace;
+                  font-family: &quot;Inter&quot;, monospace;
                   font-weight: 400;
                   color: #1a1925;
                   word-break: break-all;
@@ -858,7 +744,7 @@
             <h3
               class="mb-6"
               style="
-                font-family: 'Bricolage Grotesque', sans-serif;
+                font-family: &quot;Bricolage Grotesque&quot;, sans-serif;
                 font-weight: 400;
                 font-size: 25px;
                 line-height: 35px;
@@ -874,7 +760,7 @@
                 <span
                   class="uppercase"
                   style="
-                    font-family: 'Inter', sans-serif;
+                    font-family: &quot;Inter&quot;, sans-serif;
                     font-weight: 400;
                     font-size: 16px;
                     line-height: 24px;
@@ -892,7 +778,7 @@
                 <div
                   class="mb-2"
                   style="
-                    font-family: 'Inter', monospace;
+                    font-family: &quot;Inter&quot;, monospace;
                     font-weight: 600;
                     font-size: 14px;
                     color: #000000;
@@ -902,7 +788,7 @@
                 </div>
                 <div
                   style="
-                    font-family: 'Inter', sans-serif;
+                    font-family: &quot;Inter&quot;, sans-serif;
                     font-weight: 400;
                     font-size: 14px;
                     color: #73737f;
@@ -917,7 +803,7 @@
                 <div
                   class="mb-2"
                   style="
-                    font-family: 'Inter', monospace;
+                    font-family: &quot;Inter&quot;, monospace;
                     font-weight: 600;
                     font-size: 14px;
                     color: #000000;
@@ -927,7 +813,7 @@
                 </div>
                 <div
                   style="
-                    font-family: 'Inter', sans-serif;
+                    font-family: &quot;Inter&quot;, sans-serif;
                     font-weight: 400;
                     font-size: 14px;
                     color: #73737f;
@@ -945,8 +831,7 @@
 </template>
 
 <script setup lang="ts">
-import SectionsTitle from "~/components/common/Title.vue";
-import SectionsUpername from "~/components/common/Upername.vue";
+
 import { ref } from "vue";
 
 // Regional cities status

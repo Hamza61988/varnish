@@ -1,27 +1,45 @@
+<script setup lang="ts">
+import Title from "../../components/common/Title.vue";
+import CodeSnippet from "../../components/common/CodeSnippet.vue";
+
+const headerCode = `GET /foobar.jpg HTTP/1.1
+Host: your_origin_host
+X-Forwarded-Host: <zonename>-<hexid>.kxcdn.com
+X-Forwarded-For: 178.82.72.134
+X-Forwarded-Scheme: http
+X-Pull: KeyCDN
+Connection: close
+Accept: */*
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5)  AppleWebKit/537.36 (KHTML, like Gecko) 
+ Chrome/41.0.2272.118 Safari/537.36
+Accept-Language: en-US,en;q=0.8,de;q=0.6,ja;q=0.4
+Cookie: foobar`;
+</script>
+
 <template>
-  <div class="mt-[4.25rem] mx-auto md:max-w-lg lg:max-w-3xl">
-    <div class="w-full flex flex-col items-start gap-4">
-      <h1 class="text-[2rem] md:text-5xl font-medium">Technical Questions</h1>
-
-      <button class="btn2 text-[#73737F] text-[13px] md:text-[1rem] mt-4">
-        <span>Table of contents</span>
-        <span class="arrow"></span>
-      </button>
-
-      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
-        This section is focusing on technical questions on a deeper level and is
-        the continuation of our FAQ.
-      </p>
-    </div>
+  <div>
+    <Title
+      upername="support"
+      title="Technical Questions"
+      subtitle="This section is focusing on technical questions on a deeper level and is the continuation of our FAQ."
+      pcAlignment="start"
+      mobileAlignment="start"
+      :fontWeight="500"
+      show-table-of-contents
+    />
 
     <div class="mt-[2.3125rem] flex flex-col gap-4">
-      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">What cache statuses are there?</h2>
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">
+        What cache statuses are there?
+      </h2>
       <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         Different cache statuses can occur for Push and Pull Zones. Here's an
         overview of possible cache statuses:
       </p>
 
-      <ul class="text-[#73737F] text-[13px] md:text-[1rem] flex flex-col gap-4 list-disc pl-5">
+      <ul
+        class="text-[#73737F] text-[13px] md:text-[1rem] flex flex-col gap-4 list-disc pl-5"
+      >
         <li>HIT - Your content has been delivered from the cache.</li>
         <li>
           MISS - Your content was not yet in the cache but will be after the
@@ -65,7 +83,9 @@
         <a class="underline">Http request Methods</a>:
       </p>
 
-      <ul class="text-[#73737F] text-[13px] md:text-[1rem] flex flex-col gap-4 list-disc pl-5">
+      <ul
+        class="text-[#73737F] text-[13px] md:text-[1rem] flex flex-col gap-4 list-disc pl-5"
+      >
         <li>
           HEAD and GET requests get cached and will be served from the KeyCDN
           cache.
@@ -103,26 +123,9 @@
         client instead of the host from the origin URL.
       </p>
 
-      <div
-        class="border border-[#D0D0D8] overflow-x-auto text-[#73737F] rounded-md p-4 mt-2 text-[14px]"
-      >
-        <pre><code>
-GET /foobar.jpg HTTP/1.1
-Host: your_origin_host
-X-Forwarded-Host: &lt;zonename&gt;-&lt;hexid&gt;.kxcdn.com
-X-Forwarded-For: 178.82.72.134
-X-Forwarded-Scheme: http
-X-Pull: KeyCDN
-Connection: close
-Accept: */*
-User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5)  AppleWebKit/537.36 (KHTML, like Gecko) 
- Chrome/41.0.2272.118 Safari/537.36
-Accept-Language: en-US,en;q=0.8,de;q=0.6,ja;q=0.4
-Cookie: foobar
-  </code></pre>
-      </div>
+      <CodeSnippet :code="headerCode" />
 
-      <ul class="text-[#73737F] flex flex-col gap-4 list-disc pl-5">
+      <ul class="text-[#73737F]  text-[13px] md:text-[1rem] flex flex-col gap-4 list-disc pl-5">
         <li>
           X-Forwarded-Host contains the originally requested host, either the
           Zone URL (e.g. example-hexid.kxcdn.com) or Zone Alias (e.g.
@@ -141,10 +144,10 @@ Cookie: foobar
     </div>
 
     <div class="mt-[2.3125rem] flex flex-col gap-4">
-      <h2 class="text-[2rem] font-semibold">
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">
         Is s-maxage in Cache-Control header supported?
       </h2>
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         Yes, content will be cached according to s-maxage in the Cache-Control
         header. The s-maxage header is intended for KeyCDN's edge servers, while
         max-age is intended for regular clients. Learn more about the
@@ -153,10 +156,10 @@ Cookie: foobar
     </div>
 
     <div class="mt-[2.3125rem] flex flex-col gap-4">
-      <h2 class="text-[2rem] font-semibold">
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">
         Why does the analytics page show no used storage for a Pull Zone?
       </h2>
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         Pull Zones on each edge server have a different amount of data cached.
         This is very dependent on the traffic pattern and expiry values. There
         is no storage cost for Pull Zones.
@@ -164,11 +167,11 @@ Cookie: foobar
     </div>
 
     <div class="mt-[2.3125rem] flex flex-col gap-4">
-      <h2 class="text-[2rem] font-semibold">
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">
         Is stale content served from a Pull Zone if the origin server is not
         available?
       </h2>
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         Yes, stale content will be served if the origin server is not reachable
         or if the connection times out. If the origin server is reachable and
         returns an HTTP 403, 404, 500, 502, 503, or 504 status the Pull Zone
@@ -178,13 +181,15 @@ Cookie: foobar
     </div>
 
     <div class="mt-[2.3125rem] flex flex-col gap-4">
-      <h2 class="text-[2rem] font-semibold">Is the URL case sensitive?</h2>
-      <p class="text-[#73737F]">
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">
+        Is the URL case sensitive?
+      </h2>
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         It's important to distinguish that the domain is not case sensitive but
         the path is case sensitive.
       </p>
 
-      <ul class="text-[#73737F] flex flex-col gap-4 list-disc pl-5">
+      <ul class="text-[#73737F]  text-[13px] md:text-[1rem] flex flex-col gap-4 list-disc pl-5">
         <li>
           The domain can be upper case or lower case. We recommend working with
           lower case. For example cdn.yourdomain.com, CDN.yourdomain.com, and
@@ -196,7 +201,7 @@ Cookie: foobar
         </li>
       </ul>
 
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         Having the path case-insensitive is not available due to performance
         issues. The case insensitivity of the DNS is specified in
         <a class="underline">RFC 4343</a>.
@@ -204,10 +209,10 @@ Cookie: foobar
     </div>
 
     <div class="mt-[2.3125rem] flex flex-col gap-4">
-      <h2 class="text-[2rem] font-semibold">
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">
         Can I purge content from the CDN?
       </h2>
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         Content of a Pull Zone can be purged instantly from all POPs globally.
         It can be done through the dashboard or the
         <a class="underline">API</a>. Assets of a Push Zone can only be purged
@@ -216,10 +221,10 @@ Cookie: foobar
     </div>
 
     <div class="mt-[2.3125rem] flex flex-col gap-4">
-      <h2 class="text-[2rem] font-semibold">
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">
         Is byte-range not working in combination with S3?
       </h2>
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         AWS S3 does not send the HTTP header Accept-Ranges: bytes if you are
         using the default endpoint URL. KeyCDN sends only 200 instead of 206 and
         ignores range requests if this field is missing. Use the following
@@ -229,10 +234,10 @@ Cookie: foobar
     </div>
 
     <div class="mt-[2.3125rem] flex flex-col gap-4">
-      <h2 class="text-[2rem] font-semibold">
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">
         How are byte-range requests cached?
       </h2>
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         If the asset is present in the cache, then the KeyCDN edge servers honor
         a byte-range request and deliver only the specified bytes of that file
         to the client. If the asset is not cached, or if it is in stale state,
@@ -244,7 +249,7 @@ Cookie: foobar
         when the download completes.
       </p>
 
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         After the download completes and is stored in the cache on the KeyCDN
         edge servers, all future byte-range requests, whether for a single range
         or multiple ranges, are delivered immediately from the cache.
@@ -252,10 +257,10 @@ Cookie: foobar
     </div>
 
     <div class="mt-[2.3125rem] flex flex-col gap-4">
-      <h2 class="text-[2rem] font-semibold">
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">
         Why do my files not get cached? Why is my miss ratio high?
       </h2>
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         Please check if you're sending the HTTP header Content-Length from your
         origin server. The Content-Length header must be both present and
         contain a value greater than 0 in order to produce a cache HIT.
@@ -264,15 +269,19 @@ Cookie: foobar
     </div>
 
     <div class="mt-[2.3125rem] flex flex-col gap-4">
-      <h2 class="text-[2rem] font-semibold">Can I use .htaccess in my Zone?</h2>
-      <p class="text-[#73737F]">No, .htaccess files will not be processed.</p>
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">
+        Can I use .htaccess in my Zone?
+      </h2>
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
+        No, .htaccess files will not be processed.
+      </p>
     </div>
 
     <div class="mt-[2.3125rem] flex flex-col gap-4">
-      <h2 class="text-[2rem] font-semibold">
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">
         Will an EV certificate work with KeyCDN's SSL/TLS?
       </h2>
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         Yes, any kind of <a class="underline">Ev certificate</a> on the origin
         server will work with HTTPS solutions from KeyCDN (Shared SSL,
         <a class="underline">Custom SSL</a>, or
@@ -283,31 +292,31 @@ Cookie: foobar
     </div>
 
     <div class="mt-[2.3125rem] flex flex-col gap-4">
-      <h2 class="text-[2rem] font-semibold">
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">
         Can I change the reporting time Zone?
       </h2>
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         The reporting time Zone in the whole KeyCDN dashboard is UTC, it cannot
         be changed. Also the time stamp provided in the KeyCDN raw logs is UTC.
       </p>
     </div>
 
     <div class="mt-[2.3125rem] flex flex-col gap-4">
-      <h2 class="text-[2rem] font-semibold">
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">
         Can I override the default cache expiry time?
       </h2>
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         Yes, this can be set in the Zone settings within the KeyCDN dashboard.
         Alternatively, you can set an expiry header on your origin server.
       </p>
     </div>
 
     <div class="mt-[2.3125rem] flex flex-col gap-4">
-      <h2 class="text-[2rem] font-semibold">
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">
         The Expires header has been set on your origin but the expiry date is
         not updating for the cached files?
       </h2>
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         You have set Ignore Cache Control to disabled and Expires to 0 to fully
         honor the expiry headers from your origin server. The Expires header
         value will be initially cached together with the asset. Further, if that
@@ -326,11 +335,11 @@ Cookie: foobar
     </div>
 
     <div class="mt-[2.3125rem] flex flex-col gap-4">
-      <h2 class="text-[2rem] font-semibold">
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">
         Search engines are crawling the CDN URL and I now have duplicate
         content, how can I solve that?
       </h2>
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         You can use a robots.txt or canonical headers to solve that. Check our
         <a class="underline">Best SEO for Your CDN</a> guide on how you can
         resolve this.
@@ -338,11 +347,11 @@ Cookie: foobar
     </div>
 
     <div class="mt-[2.3125rem] flex flex-col gap-4">
-      <h2 class="text-[2rem] font-semibold">
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">
         Is there a specific User-Agent when KeyCDN is fetching content from the
         origin server?
       </h2>
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         There is no specific User-Agent in place. If you want distinguish KeyCDN
         traffic from other traffic on your origin server, take advantage of the
         <a class="underline">X-Pull</a> request header.
@@ -350,10 +359,10 @@ Cookie: foobar
     </div>
 
     <div class="mt-[2.3125rem] flex flex-col gap-4">
-      <h2 class="text-[2rem] font-semibold">
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">
         Can I get the IPs of the KeyCDN edge servers?
       </h2>
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         We don't disclose the IPs of the edge servers because the IPs frequently
         change. If you want to distinguish KeyCDN traffic from other traffic on
         your origin server, please take advantage of the feature X-Pull.
@@ -361,10 +370,10 @@ Cookie: foobar
     </div>
 
     <div class="mt-[2.3125rem] flex flex-col gap-4">
-      <h2 class="text-[2rem] font-semibold">
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">
         I can't connect to my Push Zone and upload content, why?
       </h2>
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         Make sure you follow the instructions on how to
         <a class="underline">Upload to a Push Zone</a>. If you still have
         issues, please send us your IP address and we'll check if you've been
@@ -373,11 +382,11 @@ Cookie: foobar
     </div>
 
     <div class="mt-[2.3125rem] flex flex-col gap-4">
-      <h2 class="text-[2rem] font-semibold">
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">
         Can I still use the kxcdn.com domain if Let's Encrypt or Custom SSL is
         enabled?
       </h2>
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         No, once you enable and configure the Let's Encrypt or Custom SSL
         setting, you will no longer be able to use the HTTPS version of the
         kxcdn.com domain (e.g. example-hexid.kxcdn.com). This will in most cases
@@ -386,10 +395,10 @@ Cookie: foobar
     </div>
 
     <div class="mt-[2.3125rem] flex flex-col gap-4">
-      <h2 class="text-[2rem] font-semibold">
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">
         How are simultaneous requests to the same asset handled?
       </h2>
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         KeyCDN never blocks a request. We either queue the response for a
         certain number of seconds (before fetching it again) or we fetch the
         content in parallel to the other request again from the origin server.
@@ -397,10 +406,10 @@ Cookie: foobar
     </div>
 
     <div class="mt-[2.3125rem] flex flex-col gap-4">
-      <h2 class="text-[2rem] font-semibold">
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">
         Is HLS supported when Origin Shield is enabled?
       </h2>
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         If you're using HLS to stream on demand media then you can use it in
         conjunction with the KeyCDN Origin Shield feature. However, if you're
         streaming a live event over HLS, Origin Shield should be disabled as it
@@ -409,10 +418,10 @@ Cookie: foobar
     </div>
 
     <div class="mt-[2.3125rem] flex flex-col gap-4">
-      <h2 class="text-[2rem] font-semibold">
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">
         How can I determine how much bandwidth my website currently uses?
       </h2>
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         You can check your origin server's current bandwidth usage numbers. This
         will give you an approximation of how much bandwidth you will be using
         via the CDN. For more information and to see where to find your
@@ -422,11 +431,11 @@ Cookie: foobar
     </div>
 
     <div class="mt-[2.3125rem] flex flex-col gap-4 mb-20">
-      <h2 class="text-[2rem] font-semibold">
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">
         Can I use the KeyCDN Let's Encrypt SSL option if I'm already using Let's
         Encrypt on my origin server?
       </h2>
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         Yes, you can still use the KeyCDN
         <a class="underline">Let's Encrypt</a> option even if you're already
         using Let's Encrypt on your origin server. The Let's Encrypt certificate
@@ -465,26 +474,6 @@ ul,
 pre,
 code {
   font-family: inter;
-}
-.arrow {
-  width: 12px;
-  height: 12px;
-  background-repeat: no-repeat;
-  background-size: contain;
-
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%23888'><path fill-rule='evenodd' d='M10 6l6 6H4l6-6z' clip-rule='evenodd'/></svg>");
-}
-.btn2 {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  font-weight: 500;
-  border: 2px solid #eaeaea;
-  border-radius: 6px;
-  padding: 15px 20px;
-  cursor: pointer;
 }
 ol {
   list-style-type: decimal;

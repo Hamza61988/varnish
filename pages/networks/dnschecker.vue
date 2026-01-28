@@ -1,24 +1,21 @@
 <script setup lang="ts">
-import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
+import AccessAllFeaturesSection from "~/components/common/AccessAllFeatures.vue";
 </script>
 
 <template>
-  <div class="min-h-screen text-[#1f2937]">
-    <div class="max-w-3xl mx-auto">
-      <h1 class="text-[2rem] md:text-5xl font-semibold mt-2 mb-4">DNS Checker</h1>
-      <h2 class="text-[#73737F] md:text-[1rem] mt-4 text-[14px] max-w-2xl mb-4">
-        IP OR HOSTNAME LOOKUP
-      </h2>
-      <div class="mb-12">
-        <div class="mb-6">
-          <label class="block font-medium text-gray-900 mb-2">
-            IP Address Or Hostname
-          </label>
-          <input
-            type="text"
-            placeholder="e.g. https://www.example.com"
-            class="w-full border border-gray-200 rounded-md px-4 py-3 text-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent placeholder-gray-400 bg-white"
-          />
+  <div class="min-h-screen">
+    <div class="">
+      <CommonTitle
+        upername="Tools"
+        title="DNS Checker"
+        subtitle="IP OR HOSTNAME LOOKUP"
+        mobileAlignment="start"
+        pcAlignment="start"
+        :fontWeight="500"
+      />
+      <div class="mb-4">
+        <div class="mb-4">
+          <CommonUrlInput placeholder="e.g. https://www.example.com" />
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
           <div>
@@ -83,20 +80,20 @@ import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
             >
           </label>
         </div>
-        <button
-          class="bg-[#007bff] hover:bg-[#0088FF] text-white font-semibold py-3 px-8 rounded-md transition-colors shadow-sm"
-        >
-          Check
-        </button>
+        <CommonButton variant="tool" tool="Check" />
       </div>
-      <h2 class="text-[2rem] font-semibold text-[#111827] mb-6">
+      <h2
+        class="text-[1.5rem] md:text-[2rem] font-semibold text-[#111827] mb-6"
+      >
         DNS Checker FAQ
       </h2>
       <div
         class="grid grid-cols-1 md:grid-cols-2 gap-10 text-[#73737F] leading-relaxed mb-12"
       >
         <div>
-          <h3 class="text-[1.5625rem] font-semibold text-[#1f2937] mb-3">
+          <h3
+            class="text-[1.5rem] md:text-[2rem] font-semibold text-[#1f2937] mb-3"
+          >
             EDNS Client Subnet Check
           </h3>
           <p class="text-[13px] md:text-[1rem]">
@@ -108,7 +105,9 @@ import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
           </p>
         </div>
         <div>
-          <h3 class="text-[1.5625rem] font-semibold text-[#1f2937] mb-3">
+          <h3
+            class="text-[1.5rem] md:text-[2rem] font-semibold text-[#1f2937] mb-3"
+          >
             What is a DNS?
           </h3>
           <p class="text-[13px] md:text-[1rem]">
@@ -120,11 +119,13 @@ import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
         </div>
       </div>
       <div>
-        <h3 class="text-[1.5625rem] font-semibold text-[#111827] mb-4">
+        <h3
+          class="text-[1.5rem] md:text-[2rem] font-semibold text-[#111827] mb-4"
+        >
           Common DNS Records
         </h3>
         <ul
-          class="list-disc list-inside space-y-2 text-[#73737F] ml-1 text-[15px]"
+          class="list-disc list-inside space-y-2 text-[#73737F] ml-1 text-[13px] md:text-[15px]"
         >
           <li>
             <span class="text-[#73737F]">A:</span> Indicates the IP address of

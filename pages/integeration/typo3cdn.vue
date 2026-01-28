@@ -1,21 +1,33 @@
 <script setup lang="ts">
-import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
+import AccessAllFeaturesSection from "~/components/common/AccessAllFeatures.vue";
+import Title from "../../components/common/Title.vue";
+import CodeSnippet from "../../components/common/CodeSnippet.vue";
+
+const typo3Code = `config.tx_ja_replacer {
+  search {
+    1="typo3temp/
+    3="typo3conf/
+  }
+
+  replace {
+    1="https://example-hexid.kxcdn.com/typo3temp/
+    2="https://example-hexid.kxcdn.com/fileadmin/
+    3="https://example-hexid.kxcdn.com/typo3conf/
+  }
+}`;
 </script>
 
 <template>
-  <div class="mt-[4.25rem] mx-auto max-w-3xl">
+  <div class=" ">
+    <Title
+      upername="support"
+      title="Typo3 CDN Integration"
+      subtitle="Typo3 is an open source CMS used primarily by enterprises or for Intranet purposes. With a large, active community of 100,000 people in 48 countries, this CMS offers great opportunities for both beginners and experts. Using a CDN to help further improve the global performance of your Typo3 installation, is an easy way to help keep your users happy by providing them with a better user experience."
+      pcAlignment="start"
+      mobileAlignment="start"
+      :fontWeight="500"
+    />
     <div class="w-full flex flex-col items-start gap-4">
-      <h1 class="text-[2rem] md:text-5xl font-medium">Typo3 CDN Integration</h1>
-
-      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
-        Typo3 is an open source CMS used primarily by enterprises or for
-        Intranet purposes. With a large, active community of 100,000 people in
-        48 countries, this CMS offers great opportunities for both beginners and
-        experts. Using a CDN to help further improve the global performance of
-        your Typo3 installation, is an easy way to help keep your users happy by
-        providing them with a better user experience.
-      </p>
-
       <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         This tutorial guides you through the Typo3 CDN integration with the
         Content Replacer extension which is compatible with both Typo3 LTS 7 and
@@ -24,14 +36,18 @@ import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
     </div>
 
     <div class="mt-[2.3125rem] flex flex-col gap-4">
-      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">Typo3 CDN integration</h2>
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">
+        Typo3 CDN integration
+      </h2>
 
       <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         This section shows how to complete a Magento CDN integration with
         KeyCDN. The integration can be done with HTTPS in addition to HTTP.
       </p>
 
-      <ol class="text-[#73737F] text-[13px] md:text-[1rem] flex flex-col gap-4 pl-8">
+      <ol
+        class="text-[#73737F] text-[13px] md:text-[1rem] flex flex-col gap-4 pl-6"
+      >
         <li class="">
           Create a Pull Zone before you start with the Typo3 CDN integration.
         </li>
@@ -56,24 +72,7 @@ import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
           example-hexid.kxcdn.com with your own Zone URL or Zone Alias):
         </li>
 
-        <div
-          class="w-full border border-[#D0D0D8] shadow rounded-xl p-4 bg-white"
-        >
-          <pre><code>
-config.tx_ja_replacer {
-  search {
-    1="typo3temp/
-    3="typo3conf/
-  }
-
-  replace {
-    1="https://example-hexid.kxcdn.com/typo3temp/
-    2="https://example-hexid.kxcdn.com/fileadmin/
-    3="https://example-hexid.kxcdn.com/typo3conf/
-  }
-}
-  </code></pre>
-        </div>
+        <CodeSnippet :code="typo3Code" />
 
         <img src="/images/Integeration/typo4.svg" alt="typo 4rd" />
 
@@ -105,7 +104,9 @@ config.tx_ja_replacer {
         of ways.
       </p>
 
-      <ul class="text-[#73737F] text-[13px] md:text-[1rem] pl-8 list-disc mt-6 flex flex-col gap-2">
+      <ul
+        class="text-[#73737F] text-[13px] md:text-[1rem] pl-6 list-disc mt-6 flex flex-col gap-2"
+      >
         <li>
           KeyCDN offers HTTP/2 support on all edge servers to help improve speed
           and optimize content delivery.

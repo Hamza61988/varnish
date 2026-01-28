@@ -1,14 +1,15 @@
 <template>
   <button class="v-button" :class="[`variant-${variant}`, customClass]">
-    {{ name }}
+    {{ tool || name }}
   </button>
 </template>
 
 <script setup lang="ts">
 interface Props {
   customClass?: string;
-  name: string;
-  variant?: "primary" | "secondary" | "outline";
+  name?: string;
+  tool?: string;
+  variant?: "primary" | "secondary" | "outline" | "tool";
 }
 
 withDefaults(defineProps<Props>(), {
@@ -107,6 +108,22 @@ withDefaults(defineProps<Props>(), {
 
 .variant-outline:hover {
   background-color: #f7f7f8;
+}
+
+/* Tool (Blue) Variant */
+.variant-tool {
+  font-family: "Inter", sans-serif;
+  background-color: #007bff;
+  color: white;
+  font-weight: 600;
+  padding: 20px 30px;
+  border-radius: 6px;
+  font-size: 14px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.variant-tool:hover {
+  background-color: #0088ff;
 }
 
 /* Fixed compact mobile version */

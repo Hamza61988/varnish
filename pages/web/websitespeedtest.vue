@@ -1,62 +1,31 @@
 <script setup lang="ts">
-import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
+import AccessAllFeaturesSection from "~/components/common/AccessAllFeatures.vue";
 </script>
 
 <template>
-  <div class="min-h-screen text-[#1f2937]">
-    <div class="max-w-3xl mx-auto">
-      <h1 class="text-[2rem] md:text-5xl font-semibold mt-2 mb-4">
-        Website Speed Test
-      </h1>
-      <h2 class="text-[#73737F] md:text-[1rem] mt-4 text-[14px] max-w-2xl mb-4">
-        Full page speed test
-      </h2>
+  <div class="">
+    <div class="">
+      <CommonTitle
+        upername="Tools"
+        title="Website Speed Test"
+        subtitle="Full page speed test"
+        mobileAlignment="start"
+        pcAlignment="start"
+        :fontWeight="500"
+      />
 
-      <div class="mb-12">
+      <div class="mb-4">
         <div class="flex flex-col md:flex-row gap-4 items-end">
-          <div class="flex-grow w-full">
-            <label class="block font-medium text-gray-900 mb-2"> URL </label>
-            <input
-              type="text"
-              placeholder="e.g. https://www.example.com"
-              class="w-full border border-gray-200 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent placeholder-gray-400 bg-white"
-            />
-          </div>
+          <CommonUrlInput
+            :options="['Frankfurt', 'London', 'New York', 'Singapore']"
+            placeholder="e.g. https://www.example.com"
+          />
 
-          <div class="w-full md:w-48">
-            <label class="block font-medium text-gray-900 mb-2">
-              Location
-            </label>
-            <div class="relative">
-              <select
-                class="w-full border border-gray-200 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white appearance-none text-gray-700"
-              >
-                <option>Frankfurt</option>
-                <option>London</option>
-                <option>New York</option>
-                <option>Singapore</option>
-              </select>
-              <div
-                class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"
-              >
-                <svg
-                  class="fill-current h-4 w-4"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
-                  />
-                </svg>
-              </div>
-            </div>
-          </div>
-
-          <button
-            class="bg-[#007bff] hover:bg-[#0088FF] text-white font-semibold py-3 px-8 rounded-md transition-colors shadow-sm w-full md:w-auto"
-          >
-            Test
-          </button>
+          <CommonButton
+            variant="tool"
+            tool="Test"
+            custom-class=" w-full md:w-auto "
+          />
         </div>
       </div>
 

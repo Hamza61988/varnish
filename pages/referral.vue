@@ -1,58 +1,24 @@
 <template>
-  <div
-    class="min-h-screen pt-10  relative overflow-hidden"
-
-  >
+  <div class="min-h-screen pt-10 relative overflow-hidden">
     <main>
-      <section
-        class="w-full md:w-3/4 lg:w-2/3 xl:w-3/4 mx-auto px-4 sm:px-6 md:px-0"
-        style="padding: 4%"
-      >
+      <section class="site-padding site-margins">
         <!-- Section Label -->
-        <div
-          class="flex items-center justify-start lg:justify-center"
-          
-        >
-<SectionsUpername name="Referral" />
-        </div>
-
-        <!-- Title -->
-        <h1
-          class="text-left lg:text-center text-[32px] leading-[40px] md:text-[48px] md:leading-[56px]"
-          style="
-            font-family: 'Bricolage Grotesque', sans-serif;
-            font-weight: 500;
-            letter-spacing: -0.02em;
-            vertical-align: middle;
-            color: #1a1925;
-            margin-bottom: 16px;
-          "
-        >
-          Referral program
-        </h1>
-
-        <!-- Subtitle -->
-        <p
-          class="text-left lg:text-center text-[14px] leading-[20px] md:text-[16px] md:leading-[24px]"
-          style="
-            font-family: 'Inter', sans-serif;
-            font-weight: 400;
-            letter-spacing: -0.011em;
-            color: #51515e;
-            margin-bottom: 48px;
-          "
-        >
-          We offer a high reward credit system for all successful referrals.
-        </p>
+        <CommonTitle
+          upername="Referral"
+          title="Referral program"
+          subtitle="We offer a high reward credit system for all successful referrals."
+          pcAlignment="center"
+          mobileAlignment="center"
+        />
 
         <!-- Company Overview & Key Values Section -->
         <div class="grid grid-cols-1 lg:grid-cols-2 w-full mx-auto">
           <!-- Left Column - Company Description -->
           <div class="w-full m-auto">
             <p
-              class="text-[14px] leading-[22px] md:text-[16px] md:leading-[26px]"
+              class="text-[13px] md:text-[1rem]"
               style="
-                font-family: 'Inter', sans-serif;
+                font-family: &quot;Inter&quot;, sans-serif;
                 font-weight: 400;
                 letter-spacing: -0.006em;
                 text-align: justify;
@@ -67,9 +33,9 @@
               have enjoyed the benefits that our network has brought.
             </p>
             <p
-              class="text-[14px] leading-[22px] md:text-[16px] md:leading-[26px]"
+              class="text-[13px] md:text-[1rem]"
               style="
-                font-family: 'Inter', sans-serif;
+                font-family: &quot;Inter&quot;, sans-serif;
                 font-weight: 400;
                 letter-spacing: -0.006em;
                 text-align: justify;
@@ -114,9 +80,9 @@
               </div>
               <div>
                 <h3
-                  class="mb-2 text-[16px] leading-[22px] md:text-[18px] md:leading-[24px]"
+                  class="mb-2 text-[1.5rem] md:text-[2rem]"
                   style="
-                    font-family: 'Bricolage Grotesque', sans-serif;
+                    font-family: &quot;Bricolage Grotesque&quot;, sans-serif;
                     font-weight: 600;
                     letter-spacing: -0.02em;
                     color: #1a1925;
@@ -125,9 +91,9 @@
                   Create account
                 </h3>
                 <p
-                  class="text-[13px] leading-[18px] md:text-[15px] md:leading-[20px]"
+                  class="text-[13px] md:text-[1rem]"
                   style="
-                    font-family: 'Inter', sans-serif;
+                    font-family: &quot;Inter&quot;, sans-serif;
                     font-weight: 400;
                     letter-spacing: -0.006em;
                     color: #51515e;
@@ -165,9 +131,9 @@
               </div>
               <div>
                 <h3
-                  class="mb-2 text-[16px] leading-[22px] md:text-[18px] md:leading-[24px]"
+                  class="mb-2 text-[1.5rem] md:text-[2rem]"
                   style="
-                    font-family: 'Bricolage Grotesque', sans-serif;
+                    font-family: &quot;Bricolage Grotesque&quot;, sans-serif;
                     font-weight: 600;
                     letter-spacing: -0.02em;
                     color: #1a1925;
@@ -176,9 +142,9 @@
                   Share link
                 </h3>
                 <p
-                  class="text-[13px] leading-[18px] md:text-[15px] md:leading-[20px]"
+                  class="text-[13px] md:text-[1rem]"
                   style="
-                    font-family: 'Inter', sans-serif;
+                    font-family: &quot;Inter&quot;, sans-serif;
                     font-weight: 400;
                     letter-spacing: -0.006em;
                     color: #51515e;
@@ -216,9 +182,9 @@
               </div>
               <div>
                 <h3
-                  class="mb-2 text-[16px] leading-[22px] md:text-[18px] md:leading-[24px]"
+                  class="mb-2 text-[1.5rem] md:text-[2rem]"
                   style="
-                    font-family: 'Bricolage Grotesque', sans-serif;
+                    font-family: &quot;Bricolage Grotesque&quot;, sans-serif;
                     font-weight: 600;
                     letter-spacing: -0.02em;
                     color: #1a1925;
@@ -227,9 +193,9 @@
                   Earn credits
                 </h3>
                 <p
-                  class="text-[13px] leading-[18px] md:text-[15px] md:leading-[20px]"
+                  class="text-[13px] md:text-[1rem]"
                   style="
-                    font-family: 'Inter', sans-serif;
+                    font-family: &quot;Inter&quot;, sans-serif;
                     font-weight: 400;
                     letter-spacing: -0.006em;
                     color: #51515e;
@@ -249,7 +215,7 @@
 </template>
 
 <script setup lang="ts">
-import SectionsAccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
+import SectionsAccessAllFeaturesSection from "~/components/common/AccessAllFeatures.vue";
 </script>
 
 <style scoped>

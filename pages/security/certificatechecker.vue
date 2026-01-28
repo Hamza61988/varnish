@@ -1,17 +1,21 @@
 <script setup lang="ts">
-import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
+import AccessAllFeaturesSection from "~/components/common/AccessAllFeatures.vue";
 </script>
 
 <template>
-  <div class="min-h-screen text-[#1f2937]">
-    <div class="max-w-3xl mx-auto">
-      <h1 class="text-[2rem] md:text-5xl font-semibold mt-2 mb-4">Certificate Chain</h1>
-      <h2 class="text-[#73737F] md:text-[1rem] mt-4 text-[14px] max-w-2xl mb-4">
-        Certificate decoder
-      </h2>
+  <div class="min-h-screen">
+    <div class="">
+      <CommonTitle
+        upername="Tools"
+        title="Certificate Chain"
+        subtitle="Certificate decoder"
+        mobileAlignment="start"
+        pcAlignment="start"
+        :fontWeight="500"
+      />
 
       <div class="mt-4 mb-[20px]">
-        <p class="text-[15px]">Certificate (PEM format)</p>
+        <p class="text-[13px] md:text-[15px]">Certificate (PEM format)</p>
 
         <div class="mt-2">
           <textarea
@@ -25,21 +29,21 @@ Intermediate certificate
           ></textarea>
         </div>
 
-        <button
-          class="bg-blue-500 mt-4 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-medium shadow"
-        >
-          Check
-        </button>
+        <CommonButton variant="tool" tool="Check" custom-class="mt-4" />
       </div>
 
-      <h2 class="text-[2rem] font-semibold text-[#111827] mb-6">
+      <h2
+        class="text-[1.5rem] md:text-[2rem] font-semibold text-[#111827] mb-6"
+      >
         Certificate Checker FAQ
       </h2>
       <div
         class="grid grid-cols-1 md:grid-cols-2 gap-10 text-[#73737F] leading-relaxed mb-4"
       >
         <div>
-          <h3 class="text-[1.5625rem] font-semibold text-[#1f2937] mb-3">
+          <h3
+            class="text-[1.5rem] md:text-[2rem] font-semibold text-[#1f2937] mb-3"
+          >
             What are Intermediate Certificates?
           </h3>
           <p class="text-[13px] md:text-[1rem]">
@@ -51,13 +55,13 @@ Intermediate certificate
             <a class="underline">Custom SSL</a> zone configurations.
           </p>
 
-          <p class="mt-2">
+          <p class="mt-2 text-[13px] md:text-[1rem]">
             You can use the tool above to decode your SSL certificate to check
             if you are missing an intermediate certificate.
           </p>
         </div>
         <div>
-          <h3 class="text-[1.5625rem] font-semibold text-[#1f2937]">
+          <h3 class="text-[1.5rem] md:text-[2rem] font-semibold text-[#1f2937]">
             Missing Intermediate SSL certificate?
           </h3>
           <p class="text-[13px] md:text-[1rem] mb-6">

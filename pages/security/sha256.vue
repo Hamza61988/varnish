@@ -1,53 +1,55 @@
 <script setup lang="ts">
-import AccessAllFeaturesSection from '~/components/common/AccessAllFeatures.vue';
-
+import AccessAllFeaturesSection from "~/components/common/AccessAllFeatures.vue";
 </script>
 
 <template>
-  <div class="min-h-screen  text-[#1f2937]">
-    <div class="max-w-3xl mx-auto">
-      
-    
-      <h1 class="text-[2rem] md:text-5xl font-semibold mt-2 mb-4">SHA256 Generator</h1>
-      <h2 class="text-[#73737F] md:text-[1rem] mt-4 text-[14px] max-w-2xl mb-4">
-        Generate a SHA256 hash
-      </h2>
+  <div class="min-h-screen">
+    <div class="">
+      <CommonTitle
+        upername="Tools"
+        title="SHA256 Generator"
+        subtitle="Generate a SHA256 hash"
+        mobileAlignment="start"
+        pcAlignment="start"
+        :fontWeight="500"
+      />
 
       <div class="mt-4 mb-[20px]">
-        <p class="text-[15px] ">INPUT VALUE</p>
+        <p class="text-[13px] md:text-[15px]">INPUT VALUE</p>
 
-    <div class="mt-2">
-  <textarea
-    placeholder="FkHL7waU65ExKA92dxD3neap"
-    class="border text-[#73737F] focus:outline-none focus:ring-blue-500 focus:ring-2 rounded-lg p-4 h-[16rem] w-full text-[14px] resize-none"
-  ></textarea>
-</div>
+        <div class="mt-2">
+          <textarea
+            placeholder="FkHL7waU65ExKA92dxD3neap"
+            class="border text-[#73737F] focus:outline-none focus:ring-blue-500 focus:ring-2 rounded-lg p-4 h-[16rem] w-full text-[14px] resize-none"
+          ></textarea>
+        </div>
 
-        <button
-          class="bg-blue-500 mt-4 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-medium shadow"
-        >
-          Generate
-        </button>
+        <CommonButton variant="tool" tool="Generate" custom-class="mt-4" />
       </div>
 
-      <h2 class="text-[2rem] font-semibold text-[#111827] mb-6">
+      <h2
+        class="text-[1.5rem] md:text-[2rem] font-semibold text-[#111827] mb-6"
+      >
         SHA256 Generator FAQ
       </h2>
       <div
         class="grid grid-cols-1 md:grid-cols-2 gap-[3.125rem] text-[#73737F] leading-relaxed mb-4"
       >
         <div>
-          <h3 class="text-[1.5625rem] font-semibold text-[#1f2937] mb-3">
+          <h3
+            class="text-[1.5rem] md:text-[2rem] font-semibold text-[#1f2937] mb-3"
+          >
             SHA256 Results
           </h3>
-          <p class="text-[15px]">
+          <p class="text-[13px] md:text-[1rem]">
             The SHA256 online generator allows you to instantly generate a
-           <a class="underline">SHA256</a> (32-byte) hash of any string or input value, which is then
-            returned as a hexadecimal number of 64 digits.
+            <a class="underline">SHA256</a> (32-byte) hash of any string or
+            input value, which is then returned as a hexadecimal number of 64
+            digits.
           </p>
         </div>
         <div>
-          <h3 class="text-[1.5625rem] font-semibold text-[#1f2937]">
+          <h3 class="text-[1.5rem] md:text-[2rem] font-semibold text-[#1f2937]">
             MTypical Uses for SHA256
           </h3>
           <p class="text-[13px] md:text-[1rem] mb-6">
@@ -59,21 +61,22 @@ import AccessAllFeaturesSection from '~/components/common/AccessAllFeatures.vue'
           </p>
         </div>
         <div>
-          <h3 class="text-[1.5625rem] font-semibold text-[#1f2937]">
+          <h3 class="text-[1.5rem] md:text-[2rem] font-semibold text-[#1f2937]">
             What is SHA256?
           </h3>
           <p class="text-[13px] md:text-[1rem] mb-6">
-            SHA, which stands for secure hash algorithm, is a <a class="underline">cryptographic
-            hashing algorithm</a>  used to determine the integrity of a particular
-            piece of data. SHA256 has become a successor to that of SHA1 because
-            it is currently much more resistant to collision attacks, as it is
-            able to generate a longer hash which is harder to break.
+            SHA, which stands for secure hash algorithm, is a
+            <a class="underline">cryptographic hashing algorithm</a> used to
+            determine the integrity of a particular piece of data. SHA256 has
+            become a successor to that of SHA1 because it is currently much more
+            resistant to collision attacks, as it is able to generate a longer
+            hash which is harder to break.
           </p>
         </div>
       </div>
     </div>
   </div>
- <ClientOnly>
+  <ClientOnly>
     <Teleport to="#full-width-section">
       <AccessAllFeaturesSection class="" />
     </Teleport>
@@ -84,10 +87,13 @@ input[type="checkbox"] {
   accent-color: #2563eb;
 }
 
-p, ol, ul, pre, code {
+p,
+ol,
+ul,
+pre,
+code {
   font-family: inter;
 }
-
 
 .btn {
   position: relative;

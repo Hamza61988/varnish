@@ -1,18 +1,19 @@
 <script setup lang="ts">
-import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
+import AccessAllFeaturesSection from "~/components/common/AccessAllFeatures.vue";
+import Title from "../../components/common/Title.vue";
 </script>
 
 <template>
-  <div class="mt-[4.25rem] mx-auto max-w-3xl">
+  <div class="">
+      <Title
+       upername="support"
+        title="PrestaShop CDN Integration"
+        subtitle="PrestaShop is a free ecommerce solution written in PHP. About 250,000 shops worldwide are using PrestaShop. The shop solution was initiated in 2005 by French students and is now maintained by PrestaShop SA, located in Paris and Miami."
+        pcAlignment="start"
+        mobileAlignment="start"
+        :fontWeight="500"
+      />
     <div class="w-full flex flex-col items-start gap-4">
-      <h1 class="text-[2rem] md:text-5xl font-medium">PrestaShop CDN Integration</h1>
-
-      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
-        <a class="underline">PrestaShop</a> is a free ecommerce solution written
-        in PHP. About 250,000 shops worldwide are using PrestaShop. The shop
-        solution was initiated in 2005 by French students and is now maintained
-        by PrestaShop SA, located in Paris and Miami.
-      </p>
 
       <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         A slow PrestaShop website can have a significant impact on revenue.
@@ -29,14 +30,18 @@ import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
     </div>
 
     <div class="mt-[2.3125rem] flex flex-col gap-4">
-      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">PrestaShop CDN integration</h2>
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">
+        PrestaShop CDN integration
+      </h2>
 
       <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         This article shows how to complete a
         <a class="underline">PrestaShop</a> CDN integration with KeyCDN.
       </p>
 
-      <ol class="text-[#73737F] text-[13px] md:text-[1rem] flex flex-col gap-4 pl-8">
+      <ol
+        class="text-[#73737F] text-[13px] md:text-[1rem] flex flex-col gap-4 pl-6"
+      >
         <li class="">Create a <a class="underline">Pull Zone</a>.</li>
         <li class="">Log in to the admin panel of PrestaShop.</li>
         <li class="">Go to "Advanced Parameters" and click "Performance"</li>
@@ -92,7 +97,9 @@ import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
         benefits:
       </p>
 
-      <ul class="text-[#73737F] text-[13px] md:text-[1rem] pl-8 list-disc mt-4 flex flex-col gap-2">
+      <ul
+        class="text-[#73737F] text-[13px] md:text-[1rem] pl-6 list-disc mt-4 flex flex-col gap-2"
+      >
         <li>
           Access to all of our
           <a class="underline">strategically placed POPs</a> worldwide. We
@@ -116,7 +123,9 @@ import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
           constantly expanding the <a class="undelrine">knowledge</a> base. Here
           are some important pages:
         </p>
-        <ul class="text-[#73737F] text-[13px] md:text-[1rem] pl-8 list-disc mt-4 flex flex-col gap-2">
+        <ul
+          class="text-[#73737F] text-[13px] md:text-[1rem] pl-6 list-disc mt-4 flex flex-col gap-2"
+        >
           <li>
             The <a class="underline">Website Speed Test</a> is essential for
             analyzing web performance.
