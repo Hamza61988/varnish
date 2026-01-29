@@ -1,39 +1,27 @@
 <script setup lang="ts">
-import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
+import AccessAllFeaturesSection from "~/components/common/AccessAllFeatures.vue";
 </script>
 
 <template>
-  <div class="min-h-screen text-[#1f2937]">
-    <div class="md:max-w-lg lg:max-w-3xl mb-4 mx-auto flex flex-col gap-6">
-      <div class="flex flex-col mb-4 gap-6">
-        <div class="flex items-start flex-col gap-4">
-          <div class="flex flex-col gap-2">
-            <h1 class="text-[2rem] md:text-5xl font-semibold mt-2 mb-4">
-              IP Location Finder
-            </h1>
-            <p class="text-[13px] md:text-[1rem] text-[#73737F] leading-relaxed">
-              IP lookup or IP address lookup with detailed IP geolocation data
-            </p>
-          </div>
-        </div>
-      </div>
+  <div class="min-h-screen">
+    <CommonTitle
+      upername="Tools"
+      title="IP Location Finder"
+      subtitle="IP lookup or IP address lookup with detailed IP geolocation data"
+      mobileAlignment="start"
+      pcAlignment="start"
+      :fontWeight="500"
+    />
+    <div class="mb-4 flex flex-col gap-4">
+      <div class="">
+        <div class="flex flex-col md:flex-row gap-4 items-end">
+          <CommonUrlInput placeholder="e.g. https://www.example.com" />
 
-      <div class="mb-6">
-        <label class="block font-medium text-gray-900 mb-2">
-          IP Address Or Hostname
-        </label>
-        <div class="flex gap-4 justify-between">
-          <input
-            type="text"
-            placeholder="e.g. https://www.example.com"
-            class="w-full border border-gray-200 rounded-md px-4 py-3 text-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent placeholder-gray-400 bg-white"
+          <CommonButton
+            variant="tool"
+            tool="Test"
+            custom-class="w-full md:w-auto"
           />
-
-          <button
-            class="bg-[#007bff] hover:bg-[#0088FF] text-white font-semibold py-3 px-8 rounded-md transition-colors shadow-sm whitespace-nowrap"
-          >
-            Test
-          </button>
         </div>
       </div>
 
@@ -46,28 +34,28 @@ import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
           >
 
           <div class="grid grid-cols-[12rem_1fr] gap-y-[0.5rem]">
-            <h2 class="text-[1rem] font-bold">City</h2>
-            <p class="text-[1rem] font-normal">Lahore</p>
+            <h2 class="text-[14px] md:text-[1rem] font-bold">City</h2>
+            <p class="text-[13px] md:text-[1rem] font-normal">Lahore</p>
 
-            <h2 class="text-[1rem] font-bold">Region</h2>
-            <p class="text-[1rem] font-normal">Punjab (PB)</p>
+            <h2 class="text-[14px] md:text-[1rem] font-bold">Region</h2>
+            <p class="text-[13px] md:text-[1rem] font-normal">Punjab (PB)</p>
 
-            <h2 class="text-[1rem] font-bold">Postal code</h2>
-            <p class="text-[1rem] font-normal">53000</p>
+            <h2 class="text-[14px] md:text-[1rem] font-bold">Postal code</h2>
+            <p class="text-[13px] md:text-[1rem] font-normal">53000</p>
 
-            <h2 class="text-[1rem] font-bold">Country</h2>
-            <p class="text-[1rem] font-normal">Pakistan (PK)</p>
+            <h2 class="text-[14px] md:text-[1rem] font-bold">Country</h2>
+            <p class="text-[13px] md:text-[1rem] font-normal">Pakistan (PK)</p>
 
-            <h2 class="text-[1rem] font-bold">Continent</h2>
-            <p class="text-[1rem] font-normal">Asia (AS)</p>
+            <h2 class="text-[14px] md:text-[1rem] font-bold">Continent</h2>
+            <p class="text-[13px] md:text-[1rem] font-normal">Asia (AS)</p>
 
-            <h2 class="text-[1rem] font-bold">Coordinates</h2>
-            <p class="text-[1rem] font-normal">
+            <h2 class="text-[14px] md:text-[1rem] font-bold">Coordinates</h2>
+            <p class="text-[13px] md:text-[1rem] font-normal">
               32.6844 (lat) / 73.0479 (long)
             </p>
 
-            <h2 class="text-[1rem] font-bold">Time</h2>
-            <p class="text-[1rem] font-normal">
+            <h2 class="text-[14px] md:text-[1rem] font-bold">Time</h2>
+            <p class="text-[13px] md:text-[1rem] font-normal">
               2025-11-17 11:28:52 (Asia/Karachi)
             </p>
           </div>
@@ -79,17 +67,19 @@ import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
           >
 
           <div class="grid grid-cols-[12rem_1fr] gap-y-[0.5rem]">
-            <h2 class="text-[1rem] font-bold">IP address</h2>
-            <p class="text-[1rem] font-normal">39.37.188.120</p>
+            <h2 class="text-[14px] md:text-[1rem] font-bold">IP address</h2>
+            <p class="text-[13px] md:text-[1rem] font-normal">39.37.188.120</p>
 
-            <h2 class="text-[1rem] font-bold">Hostname</h2>
-            <p class="text-[1rem] font-normal">39.37.188.120</p>
+            <h2 class="text-[14px] md:text-[1rem] font-bold">Hostname</h2>
+            <p class="text-[13px] md:text-[1rem] font-normal">39.37.188.120</p>
 
-            <h2 class="text-[1rem] font-bold">Provider</h2>
-            <p class="text-[1rem] font-normal">Pakistan Telecommunication</p>
+            <h2 class="text-[14px] md:text-[1rem] font-bold">Provider</h2>
+            <p class="text-[13px] md:text-[1rem] font-normal">
+              Pakistan Telecommunication
+            </p>
 
-            <h2 class="text-[1rem] font-bold">ASN</h2>
-            <p class="text-[1rem] font-normal">12345</p>
+            <h2 class="text-[14px] md:text-[1rem] font-bold">ASN</h2>
+            <p class="text-[13px] md:text-[1rem] font-normal">12345</p>
           </div>
         </div>
       </div>
@@ -104,7 +94,9 @@ import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
 
       <div class="max-w-[60rem] mx-auto text-gray-600">
         <div class="mb-[4rem]">
-          <h1 class="text-[2rem] font-bold text-gray-900 mb-[2.5rem]">
+          <h1
+            class="text-[2rem] md:text-5xl font-bold text-gray-900 mb-[2.5rem]"
+          >
             IP Location Finder FAQ
           </h1>
 
@@ -113,7 +105,9 @@ import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
           >
             <div>
               <div class="mb-[2rem]">
-                <h2 class="text-[1.25rem] font-bold text-gray-900 mb-[0.75rem]">
+                <h2
+                  class="text-[1.25rem] md:text-[1.5rem] font-bold text-gray-900 mb-[0.75rem]"
+                >
                   What is IP Geolocation?
                 </h2>
                 <p class="text-[13px] md:text-[1rem] leading-[1.6]">
@@ -127,7 +121,9 @@ import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
               </div>
 
               <div>
-                <h2 class="text-[1.25rem] font-bold text-gray-900 mb-[0.75rem]">
+                <h2
+                  class="text-[1.25rem] md:text-[1.5rem] font-bold text-gray-900 mb-[0.75rem]"
+                >
                   How does the IP lookup work?
                 </h2>
                 <p class="text-[13px] md:text-[1rem] leading-[1.6] mb-[1rem]">
@@ -154,7 +150,9 @@ import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
 
             <div>
               <div class="mb-[2rem]">
-                <h2 class="text-[1.25rem] font-bold text-gray-900 mb-[0.75rem]">
+                <h2
+                  class="text-[1.25rem] md:text-[1.5rem] font-bold text-gray-900 mb-[0.75rem]"
+                >
                   How accurate is IP Geolocation?
                 </h2>
                 <p class="text-[13px] md:text-[1rem] leading-[1.6]">
@@ -166,7 +164,9 @@ import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
               </div>
 
               <div>
-                <h2 class="text-[1.25rem] font-bold text-gray-900 mb-[0.75rem]">
+                <h2
+                  class="text-[1.25rem] md:text-[1.5rem] font-bold text-gray-900 mb-[0.75rem]"
+                >
                   Does it support IPv6 location lookups?
                 </h2>
                 <p class="text-[13px] md:text-[1rem] leading-[1.6]">
@@ -179,7 +179,9 @@ import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
         </div>
 
         <div>
-          <h1 class="text-[2rem] font-bold text-gray-900 mb-[1.5rem]">
+          <h1
+            class="text-[2rem] md:text-5xl font-bold text-gray-900 mb-[1.5rem]"
+          >
             IP Location Finder API
           </h1>
 
@@ -209,13 +211,13 @@ import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
               class="bg-[#d1e7dd] text-[#0f5132] px-[0.4rem] py-[0.1rem] rounded-[0.2rem] font-bold mr-[1rem] text-[0.75rem]"
               >GET</span
             >
-            <p class="text-gray-600"
-              >https://tools.keycdn.com/geo.json?host=</p
-            >
+            <p class="text-gray-600">https://tools.keycdn.com/geo.json?host=</p>
             <span class="bg-[#fff3cd] px-[0.2rem]"> {IP or hostname} </span>
           </div>
 
-          <h2 class="text-[1.5625rem] font-bold text-gray-900 mb-[1.5rem]">
+          <h2
+            class="text-[1.5rem] md:text-[2rem] font-bold text-gray-900 mb-[1.5rem]"
+          >
             Request Parameters
           </h2>
 
@@ -248,7 +250,9 @@ import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
 
       <div class="max-w-[60rem] mx-auto text-gray-900">
         <div class="mb-[4rem]">
-          <h2 class="text-[25px] font-bold mb-[1.5rem]">Response Parameters</h2>
+          <h2 class="text-[1.5rem] md:text-[2rem] font-bold mb-[1.5rem]">
+            Response Parameters
+          </h2>
 
           <div class="text-[1rem] text-gray-400 uppercase mb-[0.5rem]">
             Parameter
@@ -307,7 +311,9 @@ import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
         </div>
 
         <div>
-          <h2 class="text-[25px] font-bold mb-[1.5rem]">Example</h2>
+          <h2 class="text-[1.5rem] md:text-[2rem] font-bold mb-[1.5rem]">
+            Example
+          </h2>
 
           <div class="flex text-[0.875rem]">
             <button
@@ -354,14 +360,11 @@ code {
   font-family: inter;
   overflow-wrap: break-word;
   white-space: pre-wrap;
-
 }
 
-p{
-    max-width: 90%;
+p {
+  max-width: 90%;
 }
-
-
 
 .btn {
   position: relative;

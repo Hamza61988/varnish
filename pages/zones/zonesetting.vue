@@ -1,27 +1,16 @@
 <template>
-    <div class="mt-[4.25rem]  mx-auto max-w-3xl">
+    <div class="">
 
-        <div class="w-full">
-
-           
-
-            <h1 class="text-[2rem] md:text-5xl font-medium mt-4">
-                Zone Settings
-            </h1>
-
-            <button class="btn2 mt-4">
-                <span>Table of contents</span>
-                
-            </button>
-
-            <p style="font-family: inter;" class="text-[#73737F] text-[13px] md:text-[1rem] mt-4">KeyCDN's Zones come with a number of configurable Zone settings.
-                 Here is a list and description of the CDN features
-                  for both Push and Pull Zones</p>
-
-
-
-        </div>
-<div class="w-full mt-4 mb-[8.25rem] flex flex-col gap-[3rem]">
+    <Title
+     upername="support"
+      title="Zone Settings"
+      subtitle="KeyCDN's Zones come with a number of configurable Zone settings. Here is a list and description of the CDN features for both Push and Pull Zones"
+      :showTableOfContents="true"
+      pcAlignment="start"
+      mobileAlignment="start"
+      :fontWeight="500"
+    />
+<div class="w-full mt-4  flex flex-col gap-[3rem]">
 
     <span>
         <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">Image Processing</h2>
@@ -148,32 +137,14 @@
 </ClientOnly>
 </template>
 
+<script setup>
+import Title from '../../components/common/Title.vue';
+</script>
+
 <style scoped>
   p,ol,ul {
   font-family: inter;
 }
-.btn2 {
-    width: 100%;
-    display: flex;               
-    justify-content: space-between;
-    align-items: center;
 
-    font-weight: 500;
-  color: #73737F;
-    
-    border-radius: 6px;
-    padding: 15px 20px;
-    cursor: pointer;
-    box-shadow: 0px 0.5px 0.5px 0px #07011308;
-
-box-shadow: 0px 1px 1px -0.5px #07011308;
-
-box-shadow: 0px 2px 2px -1px #07011308;
-
-box-shadow: 0px 3px 3px -1.5px #07011308;
-
-box-shadow: 0px 0px 0px 1px #1A192514;
-
-}
 
 </style>

@@ -1,15 +1,25 @@
-<template>
-  <div class="mt-[4.25rem] mx-auto md:max-w-lg lg:max-w-3xl">
-    <div class="w-full">
-      <h1 class="text-[2rem] md:text-5xl font-medium mt-4">Key CDN Log Format</h1>
+<script setup lang="ts">
+import Title from "../../components/common/Title.vue";
+import CodeSnippet from "../../components/common/CodeSnippet.vue";
 
-      <p class="text-[#73737F] text-[13px] md:text-[1rem] mt-4">
-        The log fields are separated by | (pipe). See the example below.
-      </p>
-    </div>
+const logFormatCode = `1407961382.123|usla|111.111.111.0|200|253061|uid1234|zid4321|example-hexid.kxcdn.com|HIT|"GET /`;
+</script>
+
+<template>
+  <div class="">
+    <Title
+      upername="support"
+      title="Key CDN Log Format"
+      subtitle="The log fields are separated by | (pipe). See the example below."
+      pcAlignment="start"
+      mobileAlignment="start"
+      :fontWeight="500"
+    />
 
     <div class="mt-[2.3125rem]">
-      <ol class="flex text-[#73737F] text-[13px] md:text-[1rem] flex-col gap-4 pl-8">
+      <ol
+        class="flex text-[#73737F] text-[13px] md:text-[1rem] flex-col gap-4 pl-8"
+      >
         <li>Timestamp incl. msec (e.g. 1383918771.123)</li>
         <li>POP (point of presence)</li>
         <li>IP address of the client (e.g. 111.111.111.0 or 2001:be:ef::1)</li>
@@ -42,23 +52,18 @@
       <div
         class="bg-[#FEF9D8] text-[#73737F] text-[13px] md:text-[1rem] max-w-[47.5rem] mt-4 border mx-auto py-5 rounded-2xl px-10"
       >
-        <h1 class="font-bold">
+        <h2 class="font-bold">
           Note: The client IP is anonymized by setting the last octet to 0 to be
           GDPR compliant
-        </h1>
+        </h2>
       </div>
     </div>
 
     <div>
       <h2 class="text-[1.5rem] md:text-[2rem] font-semibold mt-4">Example</h2>
 
-      <div
-        class="border border-[#D0D0D8] text-[#73737F] text-[13px] md:text-[1rem] rounded-2xl p-2 mt-2 overflow-x-auto text-sm"
-      >
-        <pre><code>
-1407961382.123|usla|111.111.111.0|200|253061|uid1234|zid4321|example-hexid.kxcdn.com|HIT|"GET /
-  </code></pre>
-      </div>
+      <CodeSnippet :code="logFormatCode" />
+
       <hr class="border-t border-gray-300 my-4" />
     </div>
 

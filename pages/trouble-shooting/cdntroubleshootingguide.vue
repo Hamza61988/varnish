@@ -1,33 +1,65 @@
+<script setup lang="ts">
+import Title from "../../components/common/Title.vue";
+import CodeSnippet from "../../components/common/CodeSnippet.vue";
+
+const opensslCode = `openssl x509 -noout -modulus -in certificate.crt | openssl md5 
+openssl rsa -noout -modulus -in privateKey.key | openssl md5`;
+
+const phpCode = `function wpseo_cdn_filter($uri) { 
+return str_replace('https://www.yoursite.com', 'https://cdn.yoursite.com', $uri);
+}
+
+add_filter( 'wpseo_xml_sitemap_img_src', 'wpseo_cdn_filter' );`;
+
+const curlCacheCode = `curl -I https://www.keycdn.com 
+HTTP/2 200 
+server: keycdn-engine 
+date: Thu, 12 Mar 2020 04:47:35 GMT 
+content-type: text/html 
+vary: Accept-Encoding 
+last-modified: Thu, 05 Mar 2020 11:41:26 GMT 
+etag: W/"5e60e566-13e3b" 
+expires: Thu, 19 Mar 2020 04:47:35 GMT 
+cache-control: max-age=604800 
+strict-transport-security: max-age=31536000; includeSubdomains; preload 
+content-security-policy: default-src 'self' 'unsafe-inline' 'unsafe-eval' https: data: 
+x-frame-options: SAMEORIGIN 
+x-xss-protection: 1; mode=block 
+x-content-type-options: nosniff 
+referrer-policy: no-referrer-when-downgrade 
+x-cache: HIT 
+x-edge-location: ussf 
+access-control-allow-origin: *`;
+</script>
+
 <template>
-  <div class="mt-[4.25rem] mx-auto md:max-w-lg lg:max-w-3xl">
-    <div class="w-full flex flex-col items-start gap-4">
-      <h1 class="text-[2rem] md:text-5xl font-medium">CDN Trouble Shooting Guide</h1>
-
-      <button class="btn2 text-[#73737F] text-[13px] md:text-[1rem] mt-4">
-        <span>Table of contents</span>
-        <span class="arrow"></span>
-      </button>
-
-      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
-        This guide provides a list of troubleshooting suggestions for issues
-        that you may experience when configuring a CDN.
-      </p>
-    </div>
+  <div class="">
+    <Title
+      upername="support"
+      title="CDN Trouble Shooting Guide"
+      subtitle="This guide provides a list of troubleshooting suggestions for issues that you may experience when configuring a CDN."
+      pcAlignment="start"
+      mobileAlignment="start"
+      :fontWeight="500"
+      show-table-of-contents
+    />
 
     <div class="mt-[2.3125rem] flex flex-col gap-4">
-      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">Troubleshooting tools</h2>
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">
+        Troubleshooting tools
+      </h2>
 
-      <ul class="text-[#73737F] text-[13px] md:text-[1rem] flex flex-col gap-4 list-disc pl-5">
+      <ul class="text-[#73737F] text-[13px] md:text-[1rem] list-disc pl-6">
         <li>
-          <a class="underline">KeyCDN Tools</a> offers many tools, such as a DNS
-          check (dig), HTTP header verification, and more.
+          <span class="underline">KeyCDN Tools</span> offers many tools, such as
+          a DNS check (dig), HTTP header verification, and more.
         </li>
         <li>
-          <a class="underline">KeyCDN full page speed test </a> provides a
+          <span class="underline">KeyCDN full page speed test</span> provides a
           detailed breakdown of all your assets including a page preview.
         </li>
         <li>
-          <a class="underline">Pingdom Tools</a> speed check from seven
+          <span class="underline">Pingdom Tools</span> speed check from seven
           different locations.
         </li>
         <li>
@@ -35,8 +67,8 @@
           browsers.
         </li>
         <li>
-          <a class="underline">Chrome Developer Tools</a> are very powerful to
-          get more insights into what is going wrong
+          <span class="underline">Chrome's Developer Tools</span> are very
+          powerful to get more insights into what is going wrong
         </li>
       </ul>
     </div>
@@ -57,31 +89,7 @@
         curl command and check the X-Cache response header.
       </p>
 
-      <div
-        class="border border-[#D0D0D8] text-[#73737F] text-[13px] md:text-[1rem] rounded-md p-4 mt-2 text-sm"
-      >
-        <pre><code>
-curl -I https://www.keycdn.com 
-HTTP/2 200 
-server: keycdn-engine 
-date: Thu, 12 Mar 2020 04:47:35 GMT 
-content-type: text/html 
-vary: Accept-Encoding 
-last-modified: Thu, 05 Mar 2020 11:41:26 GMT 
-etag: W/"5e60e566-13e3b" 
-expires: Thu, 19 Mar 2020 04:47:35 GMT 
-cache-control: max-age=604800 
-strict-transport-security: max-age=31536000; includeSubdomains; preload 
-content-security-policy: default-src 'self' 'unsafe-inline' 'unsafe-eval' https: data: 
-x-frame-options: SAMEORIGIN 
-x-xss-protection: 1; mode=block 
-x-content-type-options: nosniff 
-referrer-policy: no-referrer-when-downgrade 
-x-cache: HIT 
-x-edge-location: ussf 
-access-control-allow-origin: *
-  </code></pre>
-      </div>
+      <CodeSnippet :code="curlCacheCode" />
 
       <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         An X-Cache: HIT means that the asset was delivered by a KeyCDN edge
@@ -108,30 +116,34 @@ access-control-allow-origin: *
     </div>
 
     <div class="mt-[2.3125rem] flex flex-col gap-4">
-      <h2 class="text-[2rem] font-semibold">
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">
         Are your assets loading from KeyCDN?
       </h2>
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         Go to the KeyCDN Tools <a class="underline">HTTP Header Checker</a> and
         test this with a single asset such as a CSS file. It is important that
         you see the following in the HTTP response headers:
       </p>
-      <ol class="flex flex-col gap-4 pl-8 text-[#73737F]">
+      <ol
+        class="flex flex-col gap-4 pl-8 text-[#73737F] text-[13px] md:text-[1rem]"
+      >
         <li>HTTP/1.1 200 OK or HTTP/2 200</li>
         <li>Server: keycdn-engine</li>
       </ol>
     </div>
 
     <div class="mt-[2.3125rem] flex flex-col gap-4">
-      <h2 class="text-[2rem] font-semibold">
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">
         Debugging why assets aren't delivered by the CDN
       </h2>
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         If you have just integrated a CDN in your website and notice that some
         assets aren't being delivered via the CDN URL this may be due to a few
         reasons.
       </p>
-      <ul class="text-[#73737F] flex flex-col gap-4 list-disc pl-5">
+      <ul
+        class="text-[#73737F] text-[13px] md:text-[1rem] flex flex-col gap-4 list-disc pl-5"
+      >
         <li>
           If you plan to deliver your CDN assets using a custom URL (e.g.
           cdn.example.com) ensure that you have properly added the CNAME record
@@ -168,10 +180,10 @@ access-control-allow-origin: *
     </div>
 
     <div class="mt-[2.3125rem] flex flex-col gap-4">
-      <h2 class="text-[2rem] font-semibold">
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">
         Are the Assets not loaded correctly via HTTPS?
       </h2>
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         For HTTPS there is Shared SSL or
         <a class="underline">Custom SSL</a> available. An asset can only be
         loaded via Shared SSL, Let's Encrypt SSL, or Custom SSL but not two
@@ -180,14 +192,14 @@ access-control-allow-origin: *
         URL (e.g. https://example-hexid.kxcdn.com) will not work.
       </p>
 
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         For HTTPS, a client needs to support <a class="underline">SNI</a> , this
         means that any version of Internet Explorer running on Windows XP will
         not work with HTTPS. In this case, please use a different browser (e.g.
         Firefox or Chrome) or upgrade Windows XP to at least Windows 7.
       </p>
 
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         If the HTTPS connection is not setup correctly, a browser will typically
         show a message like this:
       </p>
@@ -197,22 +209,24 @@ access-control-allow-origin: *
         src="/images/Trouble-shoot/cdntroubleshoot2.svg"
       />
 
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         If you have trouble, loading the assets via HTTPS, please check the
         following points:
       </p>
     </div>
 
     <div class="mt-[2.3125rem] flex flex-col gap-4">
-      <h2 class="text-[2rem] font-semibold">Shared SSL</h2>
-      <ol class="text-[#73737F] list-decimal">
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">Shared SSL</h2>
+      <ol class="text-[#73737F] text-[13px] md:text-[1rem] list-decimal">
         <li>Ensure that Shared SSL is enabled in the KeyCDN dashboard.</li>
       </ol>
     </div>
 
     <div class="mt-[2.3125rem] flex flex-col gap-4">
-      <h2 class="text-[2rem] font-semibold">Let's Encrypt</h2>
-      <ol class="flex flex-col gap-4 pl-8 text-[#73737F]">
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">Let's Encrypt</h2>
+      <ol
+        class="flex flex-col gap-4 pl-8 text-[#73737F] text-[13px] md:text-[1rem]"
+      >
         <li>
           Ensure that you have the Let's Encrypt SSL option enabled in the
           KeyCDN dashboard.
@@ -228,8 +242,10 @@ access-control-allow-origin: *
     </div>
 
     <div class="mt-[2.3125rem] flex flex-col gap-4">
-      <h2 class="text-[2rem] font-semibold">Custom SSl</h2>
-      <ol class="flex flex-col gap-4 pl-8 text-[#73737F]">
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">Custom SSl</h2>
+      <ol
+        class="flex flex-col gap-4 pl-8 text-[#73737F] text-[13px] md:text-[1rem]"
+      >
         <li>
           Make sure that Custom SSL (not Shared SSL) is enabled for this Zone
         </li>
@@ -239,7 +255,9 @@ access-control-allow-origin: *
           the right zone).
         </li>
 
-        <ul class="text-[#73737F] flex flex-col gap-4 list-disc pl-5">
+        <ul
+          class="text-[#73737F] text-[13px] md:text-[1rem] flex flex-col gap-4 list-disc pl-5"
+        >
           <li>
             How to check if the CNAME on your DNS has been setup correctly? Use
             the KeyCDN Tools <a class="underline">DNS checker</a> in order to
@@ -261,14 +279,7 @@ access-control-allow-origin: *
           certificate:
         </li>
 
-        <div
-          class="border border-[#D0D0D8] text-[#73737F] rounded-md p-4 mt-2 text-sm"
-        >
-          <pre><code>
-openssl x509 -noout -modulus -in certificate.crt | openssl md5 
-openssl rsa -noout -modulus -in privateKey.key | openssl md5
-  </code></pre>
-        </div>
+        <CodeSnippet :code="opensslCode" />
 
         <li>
           Check that your certificate is issued for your Zone Alias (e.g.
@@ -276,7 +287,9 @@ openssl rsa -noout -modulus -in privateKey.key | openssl md5
           will not work for cdn.yourdomain.com.
         </li>
 
-        <ul class="flex list-disc flex-col gap-4 pl-8 text-[#73737F]">
+        <ul
+          class="flex list-disc flex-col gap-4 pl-8 text-[#73737F] text-[13px] md:text-[1rem]"
+        >
           <li>
             How to check if your certificate is valid for your subdomain? Use a
             <a class="underline">SSL certificate checker</a> .in order to verify
@@ -290,7 +303,9 @@ openssl rsa -noout -modulus -in privateKey.key | openssl md5
           certificates and intermediate certificates are the same).
         </li>
 
-        <ul class="flex list-disc flex-col gap-4 pl-8 text-[#73737F]">
+        <ul
+          class="flex list-disc flex-col gap-4 pl-8 text-[#73737F] text-[13px] md:text-[1rem]"
+        >
           <li>
             How to check if there is a missing intermediate certificate in the
             cert chain? Go to SSLLabs and check your domain (e.g.
@@ -302,7 +317,9 @@ openssl rsa -noout -modulus -in privateKey.key | openssl md5
           alt="cdn toruble shoot guide"
           src="/images/Trouble-shoot/cdntroubleshoot3.svg"
         />
-        <ul class="flex list-disc flex-col gap-4 pl-8 text-[#73737F]">
+        <ul
+          class="flex list-disc flex-col gap-4 pl-8 text-[#73737F] text-[13px] md:text-[1rem]"
+        >
           <li>
             Where to get missing intermediate certificates? Normally, all the
             needed intermediate certificates are sent along when a new
@@ -321,7 +338,9 @@ openssl rsa -noout -modulus -in privateKey.key | openssl md5
           A-graded. It's possible that a certificate will not be considered as
           secure anymore after a browser update.
         </li>
-        <ul class="flex list-disc flex-col gap-4 pl-8 text-[#73737F]">
+        <ul
+          class="flex list-disc flex-col gap-4 pl-8 text-[#73737F] text-[13px] md:text-[1rem]"
+        >
           <li>
             How to check a certificate for weak keys? Go to SSLLabs and check
             the grade of your domain, also check "Weak key".
@@ -343,10 +362,10 @@ openssl rsa -noout -modulus -in privateKey.key | openssl md5
     </div>
 
     <div class="mt-[2.3125rem] flex flex-col gap-4">
-      <h2 class="text-[2rem] font-semibold">
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">
         Your website is loading slow even though you implemented a CDN?
       </h2>
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         Use one of the speed check tools above to get more insights. Verify if
         you're getting any <a class="underline">error codes</a> and resolve them
         first. Avoid redirects as they will cause more RTTs and therefore slow
@@ -355,7 +374,7 @@ openssl rsa -noout -modulus -in privateKey.key | openssl md5
         MISS.
       </p>
 
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         A slow loading website can also be related to a slow origin server or
         external assets (commonly render blocking JavaScript libraries), which
         are loading slowly and decrease the overall load time of your website.
@@ -364,7 +383,7 @@ openssl rsa -noout -modulus -in privateKey.key | openssl md5
         optimized as well.
       </p>
 
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         We recommend reading this
         <a class="underline">website performance optimization</a> article, which
         highlights the most important performance tips to help further
@@ -373,16 +392,18 @@ openssl rsa -noout -modulus -in privateKey.key | openssl md5
     </div>
 
     <div class="mt-[2.3125rem] flex flex-col gap-4">
-      <span class="text-[2rem] font-semibold"
+      <span class="text-[1.5rem] md:text-[2rem] font-semibold"
         >Why is my cache hit ratio low?</span
       >
 
-      <span class="text-[#73737F]">
+      <span class="text-[#73737F] text-[13px] md:text-[1rem]">
         A number of factors can have an impact on your cache hit ratio (CHR).
         Please check the following points if you think the CHR is too low:
       </span>
 
-      <ul class="text-[#73737F] flex flex-col gap-4 list-disc pl-5">
+      <ul
+        class="text-[#73737F] text-[13px] md:text-[1rem] flex flex-col gap-4 list-disc pl-5"
+      >
         <li>
           <span class="font-bold">Query strings (QS):</span> Each QS will create
           a new cache entry if query strings are not ignored. QS can be
@@ -424,18 +445,18 @@ openssl rsa -noout -modulus -in privateKey.key | openssl md5
         </li>
       </ul>
 
-      <span class="text-[#73737F]">
+      <span class="text-[#73737F] text-[13px] md:text-[1rem]">
         Visit our <a class="underline">CDN Cache Hit Ratio</a> article for more
         details.
       </span>
     </div>
 
     <div class="mt-[2.3125rem] flex flex-col gap-4">
-      <h2 class="text-[2rem] font-semibold">
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">
         Are you getting 403 Forbidden after you enabled Zone Referrers?
       </h2>
 
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         First of all, keep in mind that assets which you access directly in your
         browser or using tools like curl do NOT have a referrer field in the
         HTTP request header. Requests without an HTTP referrer field are NOT
@@ -443,7 +464,9 @@ openssl rsa -noout -modulus -in privateKey.key | openssl md5
         Zone.
       </p>
 
-      <ol class="flex flex-col gap-4 pl-8 text-[#73737F]">
+      <ol
+        class="flex flex-col gap-4 pl-8 text-[#73737F] text-[13px] md:text-[1rem]"
+      >
         <li>
           Verify the HTTP Referer - Chrome's Developer Tools can help you with
           this. Open the Network panel and reload your website. Click on the
@@ -456,7 +479,7 @@ openssl rsa -noout -modulus -in privateKey.key | openssl md5
           src="/images/Trouble-shoot/cdntroubleshoot4.svg"
         />
 
-        <p class="text-[#73737F]">
+        <p class="text-[#73737F] text-[13px] md:text-[1rem]">
           In the example above you would be required to set www.keycdn.com as a
           Zone Referrer.
         </p>
@@ -472,7 +495,7 @@ openssl rsa -noout -modulus -in privateKey.key | openssl md5
           src="/images/Trouble-shoot/cdntroubleshoot5.svg"
         />
 
-        <p class="text-[#73737F]">
+        <p class="text-[#73737F] text-[13px] md:text-[1rem]">
           Referrer <span class="font-bold">blocked</span> example:
         </p>
         <img
@@ -480,7 +503,9 @@ openssl rsa -noout -modulus -in privateKey.key | openssl md5
           src="/images/Trouble-shoot/cdntroubleshoot6.svg"
         />
 
-        <ul class="text-[#73737F] flex flex-col gap-4 list-disc pl-5">
+        <ul
+          class="text-[#73737F] text-[13px] md:text-[1rem] flex flex-col gap-4 list-disc pl-5"
+        >
           <li>
             Where to get missing intermediate certificates? Normally, all the
             needed intermediate certificates are sent along when a new
@@ -500,7 +525,9 @@ openssl rsa -noout -modulus -in privateKey.key | openssl md5
           secure anymore after a browser update.
         </li>
 
-        <ul class="flex list-disc flex-col gap-4 pl-8 text-[#73737F]">
+        <ul
+          class="flex list-disc flex-col gap-4 pl-8 text-[#73737F] text-[13px] md:text-[1rem]"
+        >
           <li>
             How to check a certificate for weak keys? Go to
             <a class="underline">SSLLABS</a> . and check the grade of your
@@ -523,10 +550,10 @@ openssl rsa -noout -modulus -in privateKey.key | openssl md5
     </div>
 
     <div class="mt-[2.3125rem] flex flex-col gap-4">
-      <h2 class="text-[2rem] font-semibold">
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">
         How to further analyze the 4xx client errors shown in the dashboard?
       </h2>
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         Under Reporting > Usage among other useful information, the number of
         4xx errors are shown. Here's an example:
       </p>
@@ -538,10 +565,12 @@ openssl rsa -noout -modulus -in privateKey.key | openssl md5
     </div>
 
     <div class="mt-[2.3125rem] flex flex-col gap-4">
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         There are a number of reasons causing 4xx errors. Some of them can be:
       </p>
-      <ul class="flex list-disc flex-col gap-4 pl-8 text-[#73737F]">
+      <ul
+        class="flex list-disc flex-col gap-4 pl-8 text-[#73737F] text-[13px] md:text-[1rem]"
+      >
         <li>
           Bowsers are sometimes requesting files by default (e.g. /favicon.ico )
           even if the files don't exist and are not part of the HTML.
@@ -566,7 +595,7 @@ openssl rsa -noout -modulus -in privateKey.key | openssl md5
         </li>
       </ul>
 
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         If you have a relative small number of 404 errors, in most cases it's
         perfectly normal. Even for a correctly working website, there may not be
         zero 4xx errors. In the screenshot above, there are over 48 million 2xx
@@ -575,7 +604,9 @@ openssl rsa -noout -modulus -in privateKey.key | openssl md5
         Here's how the 4xx client errors can be analyzed. There are two options:
       </p>
 
-      <ul class="flex flex-col list-disc gap-4 pl-8 text-[#73737F]">
+      <ul
+        class="flex flex-col list-disc gap-4 pl-8 text-[#73737F] text-[13px] md:text-[1rem]"
+      >
         <li>
           <span class="font-bold">Take advantage of the raw logs: </span> The
           raw logs can be forwarded to a host of your choice. The raw logs (e.g.
@@ -588,11 +619,11 @@ openssl rsa -noout -modulus -in privateKey.key | openssl md5
     </div>
 
     <div class="mt-[2.3125rem] flex flex-col gap-4">
-      <h2 class="text-[2rem] font-semibold">
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">
         How to verify if the filter for X-Pull is properly implemented on your
         origin server?
       </h2>
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         Our <a class="underline">HTTP Header Checker</a> tool can help you with
         that. Just specify the X-Pull header value and verify if you are getting
         the response you are expecting (e.g. 403 Forbidden). Visit our How to
@@ -602,11 +633,11 @@ openssl rsa -noout -modulus -in privateKey.key | openssl md5
     </div>
 
     <div class="mt-[2.3125rem] flex flex-col gap-4">
-      <h2 class="text-[2rem] font-semibold">
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">
         Video files such as MP4 need to download completely before playing in
         your player?
       </h2>
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         By default, files with cookies are not cacheable. However, enabling this
         option will ignore the presence of cookies and therefore force the edge
         servers to cache these files.
@@ -614,10 +645,10 @@ openssl rsa -noout -modulus -in privateKey.key | openssl md5
     </div>
 
     <div class="mt-[2.3125rem] flex flex-col gap-4">
-      <h2 class="text-[2rem] font-semibold">
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">
         Why can't I log in to my FTP account?
       </h2>
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         Please check your <a class="underline">FTP</a> settings and ensure you
         are using your KeyCDN Subuser credentials and not your email address. If
         you still can't login, please send us your IP address in a support
@@ -626,10 +657,10 @@ openssl rsa -noout -modulus -in privateKey.key | openssl md5
     </div>
 
     <div class="mt-[2.3125rem] flex flex-col gap-4">
-      <h2 class="text-[2rem] font-semibold">
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">
         Why are my images being deindexed from Google Search Console?
       </h2>
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         If your images start to get deindexed from your Google Search Console
         account, this is likely a sitemap structure issue. Assuming you are
         using the Yoast SEO WordPress plugin, you may need to add the following
@@ -637,19 +668,9 @@ openssl rsa -noout -modulus -in privateKey.key | openssl md5
         index your images from the CDN domain.
       </p>
 
-      <div
-        class="border border-[#D0D0D8] text-[#73737F] rounded-md p-4 mt-2 text-sm"
-      >
-        <pre><code>
-function wpseo_cdn_filter($uri) { 
-return str_replace('https://www.yoursite.com', 'https://cdn.yoursite.com', $uri);
-}
+      <CodeSnippet :code="phpCode" />
 
-add_filter( 'wpseo_xml_sitemap_img_src', 'wpseo_cdn_filter' );
-  </code></pre>
-      </div>
-
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         Once you've added the snippet and modified it to use your origin URL and
         CDN URL, save the file and go to the Yoast SEO XML Sitemap page. You
         will need to regenerate the sitemap in order for the changes to take
@@ -659,37 +680,43 @@ add_filter( 'wpseo_xml_sitemap_img_src', 'wpseo_cdn_filter' );
         reference images.
       </p>
 
-      <p class="text-[#73737F]">Before adding functions.php snippet:</p>
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
+        Before adding functions.php snippet:
+      </p>
 
       <img
         alt="cdn toruble shoot guide"
         src="/images/Trouble-shoot/cdntroubleshoot7.svg"
       />
 
-      <p class="text-[#73737F]">After adding functions.php snippet:</p>
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
+        After adding functions.php snippet:
+      </p>
       <img
         alt="cdn toruble shoot guide"
         src="/images/Trouble-shoot/cdntroubleshoot9.svg"
       />
 
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         Learn more about indexing images in SERPs by reading our
         <a class="underline">CDN SEO guide</a>.
       </p>
     </div>
 
     <div class="mt-[2.3125rem] flex flex-col gap-4">
-      <h2 class="text-[2rem] font-semibold">
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">
         How to fix a 301 redirect back to my origin server?
       </h2>
-      <p class="text-[#73737F]">
+      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         If you have KeyCDN integrated with your website, however are receiving a
         301 redirect when trying to access a CDN URL (e.g.
         https://cdn.yourwebsite.com/path/to/your/image.jpg) there are a couple
         of things you can check.
       </p>
 
-      <ol class="flex flex-col gap-4 pl-8 mb-20 text-[#73737F]">
+      <ol
+        class="flex flex-col gap-4 pl-8 mb-20 text-[#73737F] text-[13px] md:text-[1rem]"
+      >
         <li>
           Verify that you are using the correct origin URL for your KeyCDN Zone.
           Be aware that if your origin URL is using a www subdomain, this must
@@ -740,26 +767,7 @@ pre,
 code {
   font-family: inter;
 }
-.arrow {
-  width: 12px;
-  height: 12px;
-  background-repeat: no-repeat;
-  background-size: contain;
 
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%23888'><path fill-rule='evenodd' d='M10 6l6 6H4l6-6z' clip-rule='evenodd'/></svg>");
-}
-.btn2 {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  font-weight: 500;
-  border: 2px solid #eaeaea;
-  border-radius: 6px;
-  padding: 15px 20px;
-  cursor: pointer;
-}
 ol {
   list-style-type: decimal;
   padding-left: 1.25rem;

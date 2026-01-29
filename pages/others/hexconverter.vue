@@ -1,51 +1,41 @@
 <script setup lang="ts">
-import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
+import AccessAllFeaturesSection from "~/components/common/AccessAllFeatures.vue";
 </script>
 
 <template>
   <div class="min-h-screen text-[#1f2937]">
-    <div class="max-w-3xl mx-auto">
-      <h1 class="text-[2rem] md:text-5xl font-semibold mt-2 mb-4">Hex Converter</h1>
-      <h2 class="text-[#73737F] md:text-[1rem] mt-4 text-[14px] max-w-2xl mb-4">
-        Convert hexadecimal and decimal
-      </h2>
-      <div
-        class="w-full max-w-3xl mb-[3.4375rem] flex items-center gap-5 rounded-xl"
-      >
-        <div class="flex-1">
-          <label class="block mb-1 text-sm font-medium">VALUE</label>
-          <input
-            type="text"
-            placeholder="e.g. 2280"
-            class="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
-          />
-        </div>
-        <div>
-          <label class="block mb-1 text-sm font-medium">Input</label>
-          <div class="flex gap-2">
-            <select
-              class="border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
-            >
-              <option>hex</option>
-              <option>dec</option>
-              <option>bin</option>
-            </select>
-            <button
-              class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-medium shadow"
-            >
-              Convert
-            </button>
-          </div>
+    <div class="">
+      <CommonTitle
+        upername="Tools"
+        title="Hex Converter"
+        subtitle="Convert hexadecimal and decimal"
+        mobileAlignment="start"
+        pcAlignment="start"
+        :fontWeight="500"
+      />
+      <div class="w-full mb-4 flex items-end gap-5 rounded-xl">
+        <CommonUrlInput
+          label="VALUE"
+          placeholder="e.g. 2280"
+          :options="['hex', 'dec', 'bin']"
+          selectLabel="Input"
+        />
+        <div class="mb-[1px]">
+          <CommonButton variant="tool" tool="Convert" />
         </div>
       </div>
-      <h2 class="text-[2rem] font-semibold text-[#111827] mb-6">
+      <h2
+        class="text-[1.5rem] md:text-[2rem] font-semibold text-[#111827] mb-6"
+      >
         Hex Converter FAQ
       </h2>
       <div
         class="grid grid-cols-1 md:grid-cols-2 gap-10 text-[#73737F] leading-relaxed mb-12"
       >
         <div>
-          <h3 class="text-[1.5625rem] font-semibold text-[#1f2937] mb-3">
+          <h3
+            class="text-[1.5rem] md:text-[2rem] font-semibold text-[#1f2937] mb-3"
+          >
             What is the Hex System?
           </h3>
           <p class="text-[13px] md:text-[1rem]">
@@ -59,7 +49,9 @@ import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
           </p>
         </div>
         <div>
-          <h3 class="text-[1.5625rem] font-semibold text-[#1f2937] mb-3">
+          <h3
+            class="text-[1.5rem] md:text-[2rem] font-semibold text-[#1f2937] mb-3"
+          >
             Hex Converter Results
           </h3>
           <p class="text-[13px] md:text-[1rem]">
@@ -70,10 +62,14 @@ import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
         </div>
       </div>
       <div>
-        <h3 class="text-[1.5625rem] font-semibold text-[#111827] mb-4">
+        <h3
+          class="text-[1.5rem] md:text-[2rem] font-semibold text-[#111827] mb-4"
+        >
           What is the Decimal System?
         </h3>
-        <p class="text-[13px] md:text-[1rem] w-[400px] text-[#73737F] leading-relaxed mb-6">
+        <p
+          class="text-[13px] md:text-[1rem] w-[400px] text-[#73737F] leading-relaxed mb-6"
+        >
           The decimal system, is one of the oldest and most commonly used
           numbers systems today. It is also known as <a></a>base 10 numbering
           <a></a>since it is based on 10 single digits: 0,1,2,3,4,5,6,7,8,9. For

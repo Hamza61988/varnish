@@ -1,21 +1,26 @@
 <script setup lang="ts">
-import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
+import AccessAllFeaturesSection from "~/components/common/AccessAllFeatures.vue";
+import Title from "../../components/common/Title.vue";
 </script>
 
 <template>
-  <div class="mt-[4.25rem] mx-auto max-w-3xl">
+  <div class=" ">
     <div class="w-full">
-      <h1 class="text-[2rem] md:text-5xl font-medium mt-4">WordPress CDN Integration</h1>
-
-      <p class="text-[#73737F] text-[13px] md:text-[1rem] mt-4">
-        This tutorial shows how to integrate a WordPress website with KeyCDN
-        using our CDN <span class="underline">Enabler</span> plugin.
-      </p>
+      <Title
+       upername="support"
+        title="WordPress CDN Integration"
+        subtitle="This tutorial shows how to integrate a WordPress website with KeyCDN using our CDN Enabler plugin."
+        pcAlignment="start"
+        mobileAlignment="start"
+        :fontWeight="500"
+      />
     </div>
 
     <div class="">
-      <div class="pl-8">
-        <ol class="text-[#73737F] text-[13px] md:text-[1rem] flex flex-col gap-4">
+      <div class="pl-6">
+        <ol
+          class="text-[#73737F] text-[13px] md:text-[1rem] flex flex-col gap-4"
+        >
           <li class="mt-3">Create a <a class="underline">Pull Zone</a>.</li>
           <li class="mt-3">Log in to your WordPress admin dashboard.</li>
           <li class="mt-3">Go to the CDN Enabler settings.</li>
@@ -63,7 +68,9 @@ import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
     <hr class="border-[#8D8D9738]/22 border-[1px] mt-4" />
 
     <div class="my-4">
-      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">WordPress CDN Enabler Plugin</h2>
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">
+        WordPress CDN Enabler Plugin
+      </h2>
 
       <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         The WordPress CDN Enabler plugin is a content delivery network (CDN)

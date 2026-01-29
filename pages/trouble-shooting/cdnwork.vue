@@ -1,14 +1,40 @@
 <script setup lang="ts">
-import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
+import AccessAllFeaturesSection from "~/components/common/AccessAllFeatures.vue";
+import Title from "../../components/common/Title.vue";
+import CodeSnippet from "../../components/common/CodeSnippet.vue";
+
+const curlOutputCode = `HTTP/2 200 
+server: keycdn-engine 
+date: Wed, 15 Jun 2022 06:43:47 GMT 
+content-type: image/jpeg 
+content-length: 195025 
+last-modified: Thu, 16 Jul 2020 07:06:27 GMT 
+vary: Accept-Encoding 
+etag: "5f0ffc73-2f9d1" 
+expires: Wed, 22 Jun 2022 06:43:47 GMT 
+cache-control: max-age=604800 
+strict-transport-security: max-age=31536000; includeSubdomains; preload 
+content-security-policy: default-src 'self' 'unsafe-inline' 'unsafe-eval' https: data: 
+x-frame-options: SAMEORIGIN 
+x-xss-protection: 1; mode=block 
+x-content-type-options: nosniff 
+referrer-policy: no-referrer-when-downgrade 
+x-cache: HIT 
+x-edge-location: chzh 
+access-control-allow-origin: * 
+accept-ranges: bytes`;
 </script>
 
 <template>
-  <div class="mt-[4.25rem] mx-auto max-w-3xl">
-    <div class="w-full flex flex-col gap-4 items-start">
-      <h1 class="text-[2rem] md:text-5xl font-medium">Check if CDN Working</h1>
-
-      <img alt="cdn work" src="/images/Trouble-shoot/cdnwork.svg" />
-    </div>
+  <div class="">
+    <Title
+      upername="support"
+      title="Check if CDN Working"
+      pcAlignment="start"
+      mobileAlignment="start"
+      :fontWeight="500"
+    />
+    <img class="" alt="cdn work" src="/images/Trouble-shoot/cdnwork.svg" />
 
     <div class="mt-4 flex flex-col gap-4">
       <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">
@@ -20,7 +46,9 @@ import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
         your application with KeyCDN, we have a variety of guides available
         which outline the process step by step:
       </p>
-      <ul class="list-disc pl-8 text-[#73737F] text-[13px] md:text-[1rem] flex flex-col gap-4">
+      <ul
+        class="list-disc pl-8 text-[#73737F] text-[13px] md:text-[1rem] flex flex-col gap-4"
+      >
         <li>CMS integration guides</li>
         <li>Framework integration guides</li>
       </ul>
@@ -40,7 +68,9 @@ import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
         cdn.yourwebsite.com). This is important as this URL is what you will
         need to look for in the methods below.
       </p>
-      <ol class="list-disc pl-8 text-[#73737F] text-[13px] md:text-[1rem] flex flex-col gap-4">
+      <ol
+        class="list-disc pl-8 text-[#73737F] text-[13px] md:text-[1rem] flex flex-col gap-4"
+      >
         <li>
           The first method to check if your CDN is integrated with your site is
           to run a site speed test. Choose any location to run it from and then
@@ -103,32 +133,8 @@ import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
         >
           curl -I https://www.keycdn.com/img/example.jpg
         </div>
-        <div
-          class="w-full border border-[#D0D0D8] text-[#73737F] text-[13px] md:text-[1rem] text-sm shadow rounded-xl p-4"
-        >
-          <pre><code>
-HTTP/2 200 
-server: keycdn-engine 
-date: Wed, 15 Jun 2022 06:43:47 GMT 
-content-type: image/jpeg 
-content-length: 195025 
-last-modified: Thu, 16 Jul 2020 07:06:27 GMT 
-vary: Accept-Encoding 
-etag: "5f0ffc73-2f9d1" 
-expires: Wed, 22 Jun 2022 06:43:47 GMT 
-cache-control: max-age=604800 
-strict-transport-security: max-age=31536000; includeSubdomains; preload 
-content-security-policy: default-src 'self' 'unsafe-inline' 'unsafe-eval' https: data: 
-x-frame-options: SAMEORIGIN 
-x-xss-protection: 1; mode=block 
-x-content-type-options: nosniff 
-referrer-policy: no-referrer-when-downgrade 
-x-cache: HIT 
-x-edge-location: chzh 
-access-control-allow-origin: * 
-accept-ranges: bytes
-  </code></pre>
-        </div>
+
+        <CodeSnippet :code="curlOutputCode" />
 
         <li class="">
           Run a site speed test and verify the X-Cache response header (you may

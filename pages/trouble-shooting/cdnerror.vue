@@ -1,17 +1,21 @@
-<template>
-  <div class="mt-[4.25rem] mx-auto max-w-3xl">
-    <div class="w-full flex flex-col items-start gap-4">
-      <h1 class="text-[2rem] md:text-5xl font-medium">CDN Error Codes</h1>
+<script setup lang="ts">
+import Title from "../../components/common/Title.vue";
+</script>
 
-      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
-        Error pages will not be cached, therefore only 200, 301, and 302
-        responses will be cached. KeyCDNs error pages show either a black or
-        blue error code font color. All other error pages are coming from your
-        origin server.
-      </p>
-    </div>
+<template>
+  <div class="">
+    <Title
+      upername="support"
+      title="CDN Error Codes"
+      subtitle="Error pages will not be cached, therefore only 200, 301, and 302 responses will be cached. KeyCDNs error pages show either a black or blue error code font color. All other error pages are coming from your origin server."
+      pcAlignment="start"
+      mobileAlignment="start"
+      :fontWeight="500"
+    />
     <div class="mt-[2.3125rem] flex flex-col gap-4 mb-20">
-      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">400 Bad Request</h2>
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">
+        400 Bad Request
+      </h2>
       <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         In most of the cases a malformed HTTP request (e.g. empty requests by
         load balancers / health checks). A certain number is normal. Learn more
@@ -32,7 +36,9 @@
         <a class="underline">404 Not Found</a> errors.
       </p>
 
-      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">405 Method Not Allowed</h2>
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">
+        405 Method Not Allowed
+      </h2>
       <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         The method is not allowed. A Push Zone only supports the GET and HEAD
         methods. Learn more about
@@ -52,7 +58,9 @@
         server.
       </p>
 
-      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">500 Origin Error</h2>
+      <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">
+        500 Origin Error
+      </h2>
       <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         Our edge server was not able to pull the content from your origin
         server. Either your origin server is not reachable or firewall rules

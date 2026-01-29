@@ -1,18 +1,24 @@
 <script setup lang="ts">
 import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
+import Title from '../../components/common/Title.vue';
 </script>
 
 <template>
-  <div class="mt-[4.25rem] mx-auto max-w-3xl">
-    <div class="w-full flex flex-col items-start gap-4">
-      <h1 class="text-[2rem] md:text-5xl font-medium">Drupal CDN Integration</h1>
-
-      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
-        Drupal is a free, open source CMS based on PHP. About 2.1% of the
+  <div class=" ">
+   
+    <Title
+     upername="support"
+        title="Drupal CDN Integration"
+        subtitle="Drupal is a free, open source CMS based on PHP. About 2.1% of the
         websites globally are powered by Drupal. Like other content management
         systems, it offers a wide range of modules that can be integrated into
-        Drupal websites.
-      </p>
+        Drupal websites."
+        pcAlignment="start"
+        mobileAlignment="start"
+        :fontWeight="500"
+      />
+ <div class="w-full flex flex-col items-start gap-4">
+     
 
       <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         Slow Drupal website? Varnish can change that. Here's why: Varnish will
@@ -29,7 +35,7 @@ import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
         to the Varnish domain. An example would be:
       </p>
 
-      <ul class="list-disc text-[#73737F] text-[13px] md:text-[1rem] pl-8">
+      <ul class="list-disc text-[#73737F] text-[13px] md:text-[1rem] pl-6">
         <li class="">
           URL to the origin server: https://www.yourwebsite/drupalfolder/pic.jpg
         </li>
@@ -50,7 +56,7 @@ import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
         Varnish.
       </p>
 
-      <ol class="text-[#73737F] text-[13px] md:text-[1rem] flex flex-col gap-4 pl-8">
+      <ol class="text-[#73737F] text-[13px] md:text-[1rem] flex flex-col gap-4 pl-6">
         <li class="">
           Create a Pull Zone before you start with the Drupal CDN integration. A
           Push Zone would work as well but it's not recommended here.
@@ -125,7 +131,7 @@ import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
         advantages to benefit from:
       </p>
 
-      <ul class="text-[#73737F] text-[13px] md:text-[1rem] pl-8 list-disc mt-6 flex flex-col gap-2">
+      <ul class="text-[#73737F] text-[13px] md:text-[1rem] pl-6 list-disc mt-6 flex flex-col gap-2">
         <li>
           Access to our complete network of POPs. Content is always served from
           the closest location to the end users.
@@ -144,7 +150,7 @@ import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
           some useful pages:
         </p>
 
-        <ul class="text-[#73737F] text-[13px] md:text-[1rem] pl-8 list-disc mt-2 flex flex-col gap-2">
+        <ul class="text-[#73737F] text-[13px] md:text-[1rem] pl-6 list-disc mt-2 flex flex-col gap-2">
           <li>
             The <a href="#" class="underline">Website Speed Test</a> from
             Varnish lets you analyze the loading time of a website.

@@ -1,10 +1,10 @@
 <template>
-  <div class="min-h-screen bg-white relative overflow-hidden">
+  <div class="min-h-screen relative overflow-hidden">
     <!-- Page Background - BGline.svg -->
     <div
       class="absolute inset-0 pointer-events-none hidden md:block"
       style="
-        background-image: url('/images/about/BGline.svg');
+        background-image: url(&quot;/images/about/BGline.svg&quot;);
         background-repeat: no-repeat;
         background-position: left bottom;
         background-size: auto;
@@ -14,103 +14,24 @@
     ></div>
 
     <!-- Main Content -->
-    <main
-      class="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 py-12 sm:py-16 md:py-20 lg:py-24 relative z-10"
-    >
+    <main class="container site-padding site-margins relative z-10">
       <!-- Open Source CDN Section -->
-      <section
-        class="mb-12 sm:mb-16 md:mb-20 lg:mb-24 xl:mb-32 w-full md:w-3/4 lg:w-2/3 xl:w-1/2 mx-auto px-4 sm:px-6 md:px-0"
-      >
-        <!-- Section Label -->
-        <div class="flex items-center justify-center mb-4 sm:mb-6">
-          <div
-            class="flex items-center"
-            style="
-              height: 24px;
-              gap: 2px;
-              border-radius: 999px;
-              padding-top: 4px;
-              padding-bottom: 4px;
-              padding-left: 8px;
-              padding-right: 8px;
-              background: #ffffffe5;
-              box-shadow: 0px 0.5px 0.5px 0px rgba(7, 1, 19, 0.03),
-                0px 1px 1px -0.5px rgba(7, 1, 19, 0.03),
-                0px 2px 2px -1px rgba(7, 1, 19, 0.03),
-                0px 3px 3px -1.5px rgba(7, 1, 19, 0.03);
-            "
-          >
-            <!-- Lightning Bolt Icon -->
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-3 w-3 fill-[#A3A3AE] stroke-[#A3A3AE]"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              stroke-width="2"
-              style="color: #1a1925"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"
-              />
-            </svg>
-            <span
-              style="
-                font-family: 'Bricolage Grotesque', sans-serif;
-                font-weight: 500;
-                font-size: 12px;
-                line-height: 16px;
-                letter-spacing: 0%;
-                text-align: center;
-                color: #1a1925;
-              "
-            >
-              Open Source
-            </span>
-          </div>
-        </div>
-
-        <!-- Title -->
-        <h1
-          class="text-center mb-4 sm:mb-6"
-          style="
-            font-family: 'Bricolage Grotesque', sans-serif;
-            font-weight: 500;
-            font-size: 48px;
-            line-height: 56px;
-            letter-spacing: -2%;
-            text-align: center;
-            vertical-align: middle;
-            color: #1a1925;
-          "
-        >
-          Open source CDN
-        </h1>
-
-        <!-- Subtitle -->
-        <p
-          class="text-center mb-6 sm:mb-8 md:mb-10 lg:mb-12"
-          style="
-            font-family: 'Inter', sans-serif;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 24px;
-            letter-spacing: -1.1%;
-            text-align: center;
-            color: #51515e;
-          "
-        >
-          We deliver open source software at speed and scale.
-        </p>
+      <section class="">
+        <CommonTitle
+          upername="Open Source"
+          title="Open source CDN"
+          subtitle="We deliver open source software at speed and scale."
+          pcAlignment="center"
+          mobileAlignment="center"
+          :fontWeight="500"
+        />
 
         <!-- Content Paragraphs -->
         <div class="max-w-4xl mx-auto space-y-4 sm:space-y-6 md:space-y-8">
           <p
-            class="text-sm sm:text-base md:text-lg text-left md:text-justify"
+            class="text-[13px] md:text-[1rem] text-left md:text-justify"
             style="
-              font-family: 'Inter', sans-serif;
+              font-family: &quot;Inter&quot;, sans-serif;
               font-weight: 400;
               line-height: 26px;
               letter-spacing: -0.006em;
@@ -159,8 +80,10 @@
                 height: 167px;
                 border: 12px solid #f7f7f8;
                 border-radius: 20px;
-                box-shadow: 0px 0.5px 0.5px 0px #1a19250a,
-                  0px 1px 1px 0px #1a19250a, 0px 1px 2px -1px #1a19250a;
+                box-shadow:
+                  0px 0.5px 0.5px 0px #1a19250a,
+                  0px 1px 1px 0px #1a19250a,
+                  0px 1px 2px -1px #1a19250a;
               "
             >
               <div
@@ -178,7 +101,7 @@
                     rgba(26, 25, 37, 0) 77.02%
                   );
                   border-image-slice: 1;
-                  background-image: url('/images/about/bgcard.svg');
+                  background-image: url(&quot;/images/about/bgcard.svg&quot;);
                   background-repeat: no-repeat;
                   background-size: contain;
                   border: none;
@@ -188,7 +111,7 @@
               <div
                 class="absolute top-0 right-0 w-1/2 h-1/2 pointer-events-none opacity-30"
                 style="
-                  background-image: url('/images/about/bgcard.svg');
+                  background-image: url(&quot;/images/about/bgcard.svg&quot;);
                   background-repeat: no-repeat;
                   background-position: top right;
                   background-size: contain;
@@ -203,7 +126,7 @@
                     style="
                       width: 75px;
                       height: 75px;
-                      background-image: url('/images/about/bgcardicon.svg');
+                      background-image: url(&quot;/images/about/bgcardicon.svg&quot;);
                       background-repeat: no-repeat;
                       background-size: cover;
                       background-position: center;
@@ -222,12 +145,10 @@
             </div>
             <!-- Title -->
             <h3
-              class="mb-2 text-left w-full"
+              class="mb-2 text-left w-full text-[1.5rem] md:text-[2rem]"
               style="
-                font-family: 'Bricolage Grotesque', sans-serif;
+                font-family: &quot;Bricolage Grotesque&quot;, sans-serif;
                 font-weight: 600;
-                font-size: 18px;
-                line-height: 24px;
                 letter-spacing: -0.02em;
                 color: #1a1925;
                 text-align: center;
@@ -237,12 +158,10 @@
             </h3>
             <!-- Description -->
             <p
-              class="mb-4 text-left w-full"
+              class="mb-4 text-left w-full text-[13px] md:text-[1rem]"
               style="
-                font-family: 'Inter', sans-serif;
+                font-family: &quot;Inter&quot;, sans-serif;
                 font-weight: 400;
-                font-size: 15px;
-                line-height: 20px;
                 letter-spacing: -0.006em;
                 color: #51515e;
                 text-align: center;
@@ -264,8 +183,10 @@
                 border-radius: 20px;
                 border: 12px solid #f7f7f8;
                 background: #ffffff;
-                box-shadow: 0px 0.5px 0.5px 0px #1a19250a,
-                  0px 1px 1px 0px #1a19250a, 0px 1px 2px -1px #1a19250a;
+                box-shadow:
+                  0px 0.5px 0.5px 0px #1a19250a,
+                  0px 1px 1px 0px #1a19250a,
+                  0px 1px 2px -1px #1a19250a;
               "
             >
               <div
@@ -283,7 +204,7 @@
                     rgba(26, 25, 37, 0) 77.02%
                   );
                   border-image-slice: 1;
-                  background-image: url('/images/about/bgcard.svg');
+                  background-image: url(&quot;/images/about/bgcard.svg&quot;);
                   background-repeat: no-repeat;
                   background-size: contain;
                   border: none;
@@ -293,7 +214,7 @@
               <div
                 class="absolute top-0 right-0 w-1/2 h-1/2 pointer-events-none opacity-30"
                 style="
-                  background-image: url('/images/about/bgcard.svg');
+                  background-image: url(&quot;/images/about/bgcard.svg&quot;);
                   background-repeat: no-repeat;
                   background-position: top right;
                   background-size: contain;
@@ -308,7 +229,7 @@
                     style="
                       width: 75px;
                       height: 75px;
-                      background-image: url('/images/about/bgcardicon.svg');
+                      background-image: url(&quot;/images/about/bgcardicon.svg&quot;);
                       background-repeat: no-repeat;
                       background-size: cover;
                       background-position: center;
@@ -327,12 +248,10 @@
             </div>
             <!-- Title -->
             <h3
-              class="mb-2 text-left w-full"
+              class="mb-2 text-left w-full text-[1.5rem] md:text-[2rem]"
               style="
-                font-family: 'Bricolage Grotesque', sans-serif;
+                font-family: &quot;Bricolage Grotesque&quot;, sans-serif;
                 font-weight: 600;
-                font-size: 18px;
-                line-height: 24px;
                 letter-spacing: -0.02em;
                 color: #1a1925;
                 text-align: center;
@@ -342,12 +261,10 @@
             </h3>
             <!-- Description -->
             <p
-              class="mb-4 text-left w-full"
+              class="mb-4 text-left w-full text-[13px] md:text-[1rem]"
               style="
-                font-family: 'Inter', sans-serif;
+                font-family: &quot;Inter&quot;, sans-serif;
                 font-weight: 400;
-                font-size: 15px;
-                line-height: 20px;
                 letter-spacing: -0.006em;
                 color: #51515e;
                 text-align: center;
@@ -369,8 +286,10 @@
                 border-radius: 20px;
                 border: 12px solid #f7f7f8;
                 background: #ffffff;
-                box-shadow: 0px 0.5px 0.5px 0px #1a19250a,
-                  0px 1px 1px 0px #1a19250a, 0px 1px 2px -1px #1a19250a;
+                box-shadow:
+                  0px 0.5px 0.5px 0px #1a19250a,
+                  0px 1px 1px 0px #1a19250a,
+                  0px 1px 2px -1px #1a19250a;
               "
             >
               <div
@@ -388,7 +307,7 @@
                     rgba(26, 25, 37, 0) 77.02%
                   );
                   border-image-slice: 1;
-                  background-image: url('/images/about/bgcard.svg');
+                  background-image: url(&quot;/images/about/bgcard.svg&quot;);
                   background-repeat: no-repeat;
                   background-size: contain;
                   border: none;
@@ -398,7 +317,7 @@
               <div
                 class="absolute top-0 right-0 w-1/2 h-1/2 pointer-events-none opacity-30"
                 style="
-                  background-image: url('/images/about/bgcard.svg');
+                  background-image: url(&quot;/images/about/bgcard.svg&quot;);
                   background-repeat: no-repeat;
                   background-position: top right;
                   background-size: contain;
@@ -413,7 +332,7 @@
                     style="
                       width: 75px;
                       height: 75px;
-                      background-image: url('/images/about/bgcardicon.svg');
+                      background-image: url(&quot;/images/about/bgcardicon.svg&quot;);
                       background-repeat: no-repeat;
                       background-size: cover;
                       background-position: center;
@@ -432,12 +351,10 @@
             </div>
             <!-- Title -->
             <h3
-              class="mb-2 text-left w-full"
+              class="mb-2 text-left w-full text-[1.5rem] md:text-[2rem]"
               style="
-                font-family: 'Bricolage Grotesque', sans-serif;
+                font-family: &quot;Bricolage Grotesque&quot;, sans-serif;
                 font-weight: 600;
-                font-size: 18px;
-                line-height: 24px;
                 letter-spacing: -0.02em;
                 color: #1a1925;
                 text-align: center;
@@ -447,12 +364,10 @@
             </h3>
             <!-- Description -->
             <p
-              class="mb-4 text-left w-full"
+              class="mb-4 text-left w-full text-[13px] md:text-[1rem]"
               style="
-                font-family: 'Inter', sans-serif;
+                font-family: &quot;Inter&quot;, sans-serif;
                 font-weight: 400;
-                font-size: 15px;
-                line-height: 20px;
                 letter-spacing: -0.006em;
                 color: #51515e;
                 text-align: center;
@@ -468,89 +383,13 @@
       <!-- Project We Support Section -->
       <section>
         <!-- Section Label -->
-        <div class="flex items-center justify-center mb-4 sm:mb-6">
-          <div
-            class="flex items-center"
-            style="
-              height: 24px;
-              gap: 2px;
-              border-radius: 999px;
-              padding-top: 4px;
-              padding-bottom: 4px;
-              padding-left: 8px;
-              padding-right: 8px;
-              background: #ffffffe5;
-              box-shadow: 0px 0.5px 0.5px 0px rgba(7, 1, 19, 0.03),
-                0px 1px 1px -0.5px rgba(7, 1, 19, 0.03),
-                0px 2px 2px -1px rgba(7, 1, 19, 0.03),
-                0px 3px 3px -1.5px rgba(7, 1, 19, 0.03);
-            "
-          >
-            <!-- Lightning Bolt Icon -->
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-3 w-3 fill-[#A3A3AE] stroke-[#A3A3AE]"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              stroke-width="2"
-              style="color: #1a1925"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"
-              />
-            </svg>
-            <span
-              style="
-                font-family: 'Bricolage Grotesque', sans-serif;
-                font-weight: 500;
-                font-size: 12px;
-                line-height: 16px;
-                letter-spacing: 0%;
-                text-align: center;
-                color: #1a1925;
-              "
-            >
-              Projects we support
-            </span>
-          </div>
-        </div>
-
-        <!-- Title -->
-        <h2
-          class="text-center mb-4 sm:mb-6"
-          style="
-            font-family: 'Bricolage Grotesque', sans-serif;
-            font-weight: 500;
-            font-size: 48px;
-            line-height: 56px;
-            letter-spacing: -2%;
-            text-align: center;
-            vertical-align: middle;
-            color: #1a1925;
-          "
-        >
-          Project We Support
-        </h2>
-
-        <!-- Subtitle -->
-        <p
-          class="text-center mb-8 sm:mb-12 md:mb-16 lg:mb-20"
-          style="
-            font-family: 'Inter', sans-serif;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 24px;
-            letter-spacing: -1.1%;
-            text-align: center;
-            color: #51515e;
-          "
-        >
-          We are committed to contributing back to the community.
-        </p>
-
+        <CommonTitle
+          upername="project we support"
+          title="Project We Support"
+          subtitle="We are committed to contributing back to the community."
+          pcAlignment="center"
+          mobileAlignment="center"
+        />
         <!-- Project Cards -->
         <div
           class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 lg:gap-10 max-w-6xl mx-auto"
@@ -562,7 +401,8 @@
               border-radius: 20px;
               border: 1px solid #eeeef0;
               background: #ffffff;
-              box-shadow: 0px 0.5px 0.5px 0px rgba(7, 1, 19, 0.03),
+              box-shadow:
+                0px 0.5px 0.5px 0px rgba(7, 1, 19, 0.03),
                 0px 1px 1px -0.5px rgba(7, 1, 19, 0.03),
                 0px 2px 2px -1px rgba(7, 1, 19, 0.03),
                 0px 3px 3px -1.5px rgba(7, 1, 19, 0.03);
@@ -584,7 +424,7 @@
                   rgba(26, 25, 37, 0) 77.02%
                 );
                 border-image-slice: 1;
-                background-image: url('/images/about/bgcard.svg');
+                background-image: url(&quot;/images/about/bgcard.svg&quot;);
                 background-repeat: no-repeat;
                 background-size: contain;
               "
@@ -610,7 +450,7 @@
                       width: 26.666664123535156px;
                       height: 26.666664123535156px;
                       border-radius: 4.67px;
-                      background-image: url('/images/about/bgcardicon.svg');
+                      background-image: url(&quot;/images/about/bgcardicon.svg&quot;);
                       background-repeat: no-repeat;
                       background-size: cover;
                       background-position: center;
@@ -628,12 +468,10 @@
               </div>
               <hr class="my-4 border-t-1 border-gray-200" />
               <p
-                class="text-sm sm:text-base"
+                class="text-[13px] md:text-[1rem]"
                 style="
-                  font-family: 'Inter', sans-serif;
+                  font-family: &quot;Inter&quot;, sans-serif;
                   font-weight: 400;
-                  font-size: 15px;
-                  line-height: 20px;
                   letter-spacing: -0.6%;
                   color: #73737f;
                 "
@@ -652,7 +490,8 @@
               border-radius: 20px;
               border: 1px solid #eeeef0;
               background: #ffffff;
-              box-shadow: 0px 0.5px 0.5px 0px rgba(7, 1, 19, 0.03),
+              box-shadow:
+                0px 0.5px 0.5px 0px rgba(7, 1, 19, 0.03),
                 0px 1px 1px -0.5px rgba(7, 1, 19, 0.03),
                 0px 2px 2px -1px rgba(7, 1, 19, 0.03),
                 0px 3px 3px -1.5px rgba(7, 1, 19, 0.03);
@@ -674,7 +513,7 @@
                   rgba(26, 25, 37, 0) 77.02%
                 );
                 border-image-slice: 1;
-                background-image: url('/images/about/bgcard.svg');
+                background-image: url(&quot;/images/about/bgcard.svg&quot;);
                 background-repeat: no-repeat;
                 background-size: contain;
               "
@@ -700,7 +539,7 @@
                       width: 26.666664123535156px;
                       height: 26.666664123535156px;
                       border-radius: 4.67px;
-                      background-image: url('/images/about/bgcardicon.svg');
+                      background-image: url(&quot;/images/about/bgcardicon.svg&quot;);
                       background-repeat: no-repeat;
                       background-size: cover;
                       background-position: center;
@@ -718,12 +557,10 @@
               </div>
               <hr class="my-4 border-t-1 border-gray-200" />
               <p
-                class="text-sm sm:text-base"
+                class="text-[13px] md:text-[1rem]"
                 style="
-                  font-family: 'Inter', sans-serif;
+                  font-family: &quot;Inter&quot;, sans-serif;
                   font-weight: 400;
-                  font-size: 15px;
-                  line-height: 20px;
                   letter-spacing: -0.6%;
                   color: #73737f;
                 "
@@ -742,7 +579,8 @@
               border-radius: 20px;
               border: 1px solid #eeeef0;
               background: #ffffff;
-              box-shadow: 0px 0.5px 0.5px 0px rgba(7, 1, 19, 0.03),
+              box-shadow:
+                0px 0.5px 0.5px 0px rgba(7, 1, 19, 0.03),
                 0px 1px 1px -0.5px rgba(7, 1, 19, 0.03),
                 0px 2px 2px -1px rgba(7, 1, 19, 0.03),
                 0px 3px 3px -1.5px rgba(7, 1, 19, 0.03);
@@ -764,7 +602,7 @@
                   rgba(26, 25, 37, 0) 77.02%
                 );
                 border-image-slice: 1;
-                background-image: url('/images/about/bgcard.svg');
+                background-image: url(&quot;/images/about/bgcard.svg&quot;);
                 background-repeat: no-repeat;
                 background-size: contain;
               "
@@ -790,7 +628,7 @@
                       width: 26.666664123535156px;
                       height: 26.666664123535156px;
                       border-radius: 4.67px;
-                      background-image: url('/images/about/bgcardicon.svg');
+                      background-image: url(&quot;/images/about/bgcardicon.svg&quot;);
                       background-repeat: no-repeat;
                       background-size: cover;
                       background-position: center;
@@ -808,12 +646,10 @@
               </div>
               <hr class="my-4 border-t-1 border-gray-200" />
               <p
-                class="text-sm sm:text-base"
+                class="text-[13px] md:text-[1rem]"
                 style="
-                  font-family: 'Inter', sans-serif;
+                  font-family: &quot;Inter&quot;, sans-serif;
                   font-weight: 400;
-                  font-size: 15px;
-                  line-height: 20px;
                   letter-spacing: -0.6%;
                   color: #73737f;
                 "

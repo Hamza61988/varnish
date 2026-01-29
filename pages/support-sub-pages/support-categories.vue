@@ -2,24 +2,20 @@
   <div>
     <div class="relative min-h-screen max-w-[652px] mx-auto overflow-hidden pb-20">
 
-      <div class="relative z-10 px-6 pt-[4.25rem]">
-        <div class="flex flex-col items-center text-center gap-[35px]">
+      <div class="relative site-margins z-10 px-6 ">
+        <div class="flex flex-col items-center text-center ">
 
-          <div class="flex flex-col items-center gap-4">
-
-            <SectionsUpername name="Support Categories" />
-
-            <h1 class="text-[2rem] md:text-5xl font-medium text-[#1A1925]">
-              Support
-            </h1>
-
-            <p style="font-family: inter" class="text-[#51515E] text-[13px] md:text-[1rem]">
-              Find answers, guides, and tutorials to supercharge your content delivery.
-            </p>
-          </div>
+      
 
           <div class="w-full space-y-4 ">
-
+       <CommonTitle
+      upername="support categories"
+      title="Support"
+      subtitle="Find answers, guides, and tutorials to supercharge your content delivery."
+      pcAlignment="center"
+      mobileAlignment="center"
+      :fontWeight="500"
+    />
             <NuxtLink to="/support-categories/zones"
               class="block w-full p-8 text-left  border border-[#EEEEF0] rounded-[20px] hover:border-gray-300 transition-colors">
               <h3 class="font-semibold text-[#1A1925] text-[18px] md:text-[20px] mb-2">Zones</h3>

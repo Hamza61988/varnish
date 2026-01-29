@@ -2,9 +2,11 @@
   <div>
     
        
-        <main class="space-y-4">
+        <main >
          <weblayout>
+          <div class=" support-inner-pages ">
           <NuxtPage />
+          </div>
           </weblayout>
         </main>
     

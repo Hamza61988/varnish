@@ -2,7 +2,7 @@
   <div>
     
        
-        <main class="space-y-4">
+        <main class="">
          <weblayout>
           <NuxtPage />
           </weblayout>

@@ -1,16 +1,18 @@
 <script setup lang="ts">
-import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
+import AccessAllFeaturesSection from "~/components/common/AccessAllFeatures.vue";
 </script>
 
 <template>
-  <div class="min-h-screen text-[#1f2937]">
-    <div class="max-w-3xl mx-auto">
-      <h1 class="text-[2rem] md:text-5xl font-semibold mt-2 mb-4">
-        Certificate Chain composer
-      </h1>
-      <h2 class="text-[#73737F] md:text-[1rem] mt-4 text-[14px] max-w-2xl mb-4">
-        Generate intermediate certificate
-      </h2>
+  <div class="min-h-screen">
+    <div class="">
+      <CommonTitle
+        upername="Tools"
+        title="Certificate Chain composer"
+        subtitle="Generate intermediate certificate"
+        mobileAlignment="start"
+        pcAlignment="start"
+        :fontWeight="500"
+      />
 
       <div class="mt-4 mb-[20px]">
         <p class="text-[15px]">Certificate (PEM format)</p>
@@ -24,21 +26,21 @@ Certificate
           ></textarea>
         </div>
 
-        <button
-          class="bg-blue-500 mt-4 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-medium shadow"
-        >
-          Compose
-        </button>
+        <CommonButton variant="tool" tool="Compose" custom-class="mt-4" />
       </div>
 
-      <h2 class="text-[2rem] font-semibold text-[#111827] mb-6">
+      <h2
+        class="text-[1.5rem] md:text-[2rem] font-semibold text-[#111827] mb-6"
+      >
         Certificate Chain Composer FAQ
       </h2>
       <div
         class="grid grid-cols-1 md:grid-cols-2 gap-10 text-[#73737F] leading-relaxed mb-4"
       >
         <div>
-          <h3 class="text-[1.5625rem] font-semibold text-[#1f2937] mb-3">
+          <h3
+            class="text-[1.5rem] md:text-[2rem] font-semibold text-[#1f2937] mb-3"
+          >
             Get Your Certificate Chain
           </h3>
           <p class="text-[13px] md:text-[1rem]">
@@ -51,7 +53,7 @@ Certificate
           </p>
         </div>
         <div>
-          <h3 class="text-[1.5625rem] font-semibold text-[#1f2937]">
+          <h3 class="text-[1.5rem] md:text-[2rem] font-semibold text-[#1f2937]">
             What is a Certificate Chain?
           </h3>
           <p class="text-[13px] md:text-[1rem] mb-6">

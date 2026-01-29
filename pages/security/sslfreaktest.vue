@@ -1,41 +1,43 @@
 <script setup lang="ts">
-import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
+import AccessAllFeaturesSection from "~/components/common/AccessAllFeatures.vue";
 </script>
 
 <template>
-  <div class="min-h-screen text-[#1f2937]">
-    <div class="max-w-3xl mx-auto">
-      <h1 class="text-[2rem] md:text-5xl font-semibold mt-2 mb-4">
-        SSL FREAK Test
-      </h1>
-      <p class="text-[#73737F] md:text-[1rem] mt-4 text-[14px] max-w-2xl mb-4">
-        CVE-2015-0204
-      </p>
-      <div class="mb-12">
-        <div class="mb-6">
-          <label class="block font-medium text-gray-900 mb-2"> Hostname </label>
-          <div class="flex justify-between items-center gap-4">
-            <input
-              type="text"
-              placeholder="e.g. https://www.example.com"
-              class="flex-1 border border-gray-200 rounded-md px-4 py-3 text-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent placeholder-gray-400 bg-white"
-            />
-            <button
-              class="bg-[#0088FF] text-white rounded-md px-6 py-3 hover:bg-[#0088FF] transition-colors shadow-md"
-            >
-              Test
-            </button>
-          </div>
+  <div class="min-h-screen">
+    <div class="">
+      <CommonTitle
+        upername="Tools"
+        title="SSL FREAK Test"
+        subtitle="CVE-2015-0204"
+        mobileAlignment="start"
+        pcAlignment="start"
+        :fontWeight="500"
+      />
+      <div class="mb-4">
+        <div class="flex flex-col md:flex-row gap-4 items-end">
+          <CommonUrlInput
+            label="Hostname"
+            placeholder="e.g. https://www.example.com"
+          />
+          <CommonButton
+            variant="tool"
+            tool="Test"
+            custom-class="w-full md:w-auto"
+          />
         </div>
       </div>
-      <h2 class="text-[2rem] font-semibold text-[#111827] mb-6">
+      <h2
+        class="text-[1.5rem] md:text-[2rem] font-semibold text-[#111827] mb-6"
+      >
         SSL FREAK Test FAQ
       </h2>
       <div
         class="grid grid-cols-1 md:grid-cols-2 gap-10 text-[#73737F] leading-relaxed mb-12"
       >
         <div>
-          <h3 class="text-[1.5625rem] font-semibold text-[#1f2937] mb-3">
+          <h3
+            class="text-[1.5rem] md:text-[2rem] font-semibold text-[#1f2937] mb-3"
+          >
             What is the FREAK SSL attack?
           </h3>
           <p class="text-[13px] md:text-[1rem]">
@@ -52,7 +54,9 @@ import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
           </p>
         </div>
         <div>
-          <h3 class="text-[1.5625rem] font-semibold text-[#1f2937] mb-3">
+          <h3
+            class="text-[1.5rem] md:text-[2rem] font-semibold text-[#1f2937] mb-3"
+          >
             How to eliminate the vulnerability?
           </h3>
           <p class="text-[13px] md:text-[1rem]">

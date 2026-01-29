@@ -105,6 +105,10 @@
   }
 
   .site-margins{
-    @apply md:mt-[138px] mt-[50px] md:mb-[138px] mb-[50px]
+    @apply md:mt-[100px] mt-[50px] md:mb-[100px] mb-[50px]
+  }
+
+  .support-inner-pages{
+    @apply mx-auto max-w-2xl
   }
 }

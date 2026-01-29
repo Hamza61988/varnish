@@ -1,40 +1,9 @@
 <script setup lang="ts">
 import AccessAllFeaturesSection from '~/components/common/AccessAllFeatures.vue';
+import Title from '../../components/common/Title.vue';
+import CodeSnippet from '../../components/common/CodeSnippet.vue';
 
-</script>
-
-<template>
-  <div class="mt-[4.25rem] mx-auto  md:max-w-lg lg:max-w-3xl ">
-    <div class="w-full flex flex-col gap-4 items-start">
-
-      <h1 class="text-[2rem] md:text-5xl font-medium">Laravel CDN Integration</h1>
-
-      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
-        The <a class="underline">Laravel CDN</a> integration could be done with either the <a class="underline">CDN Assets
-        Manager Package</a>  in combination with an AWS S3 bucket, the <a class="underline">Simple CDN
-        Package</a>  or by creating a helper that rewrites the URLs of your static
-        assets. The following tutorial describes the creation of a helper in
-        Laravel 5 to map your assets to the CDN URL.
-      </p>
-    </div>
-
-    <div class="my-4">
-      <div class="pl-8">
-        <ol class="text-[#73737F] text-[13px] md:text-[1rem] flex flex-col gap-4">
-          <li class="">
-            Create a <a class="underline">Pull Zone</a>
-            before you start the Laravel CDN integration.
-          </li>
-          <li class="">
-            Create the ./app/helpers.php file and update the ./composer.json as
-            follow:
-          </li>
-
-          <div
-            class="w-full border border-[#D0D0D8] text-[#73737F] text-[13px] md:text-[1rem] shadow rounded-xl p-4 "
-          >
-            <pre><code>
-...
+const composerJsonCode = `...
 "autoload": {
   "classmap": [
     ...
@@ -44,20 +13,9 @@ import AccessAllFeaturesSection from '~/components/common/AccessAllFeatures.vue'
     "app/helpers.php"
   ]
 },
-...
-  </code></pre>
-          </div>
+...`;
 
-          <li class="">
-            Execute the command composer dump-autoload to dump the autoloader.
-          </li>
-          <li>Add the following code to your ./app/helpers.php:</li>
-
-          <div
-            class="w-full border border-[#D0D0D8] shadow rounded-xl p-4 "
-          >
-            <pre><code>
-&lt;?php
+const helperPhpCode = `<?php
 // global CDN link helper function
 function cdn($asset) {
 
@@ -75,7 +33,7 @@ function cdn($asset) {
 
   // Select the CDN URL based on the extension
   foreach ($cdns as $cdn => $types) {
-    if (preg_match('/^.*\.(' . $types . ')$/i', $assetName))
+    if (preg_match('/^.*\\.(' . $types . ')$/i', $assetName))
       return cdnPath($cdn, $asset);
   }
 
@@ -87,20 +45,9 @@ function cdn($asset) {
 function cdnPath($cdn, $asset) {
   return "//" . rtrim($cdn, "/") . "/" . ltrim($asset, "/");
 }
-...
-  </code></pre>
-          </div>
+...`;
 
-          <p class="text-[#73737F] text-[13px] md:text-[1rem]">
-            The standard asset() function will be called if no CDN URLs are
-            defined in the ./config/app.php config file.
-          </p>
-
-          <li>Define the CDN URLs in the ./config/app.php file.</li>
-
-          <div class="w-full border border-[#D0D0D8] shadow rounded-xl p-4 ">
-  <pre><code>
-&lt;?php
+const configAppPhpCode = `<?php
 return [
 
   /*
@@ -118,22 +65,61 @@ return [
     "all.keycdn.com" => ""
   ),
 
-...
-  </code></pre>
-</div>
+...`;
 
-  <p class="text-[#73737F] text-[13px] md:text-[1rem]">Example</p>
+const viewCode = `<img src="{{ cdn('/img/yourImg.png') }} alt="Your Image loaded from KeyCDN" />`;
+</script>
+
+<template>
+  <div class="  ">
+  
+      <Title
+       upername="support"
+        title="Laravels CDN Integration"
+        subtitle="The Laravel CDN integration could be done with either the CDN Assets Manager Package in combination with an AWS S3 bucket, the Simple CDN Package or by creating a helper that rewrites the URLs of your static assets. The following tutorial describes the creation of a helper in Laravel 5 to map your assets to the CDN URL."
+        pcAlignment="start"
+        mobileAlignment="start"
+        :fontWeight="500"
+      />
+    </div>
+  <div class="">
+    <div class="">
+      <div class="pl-6">
+        <ol class="text-[#73737F] text-[13px] md:text-[1rem]  flex flex-col gap-4">
+          <li class="">
+            Create a <a class="underline">Pull Zone</a>
+            before you start the Laravel CDN integration.
+          </li>
+          <li class="">
+            Create the ./app/helpers.php file and update the ./composer.json as
+            follow:
+          </li>
+
+          <CodeSnippet :code="composerJsonCode" />
+
+          <li class="">
+            Execute the command composer dump-autoload to dump the autoloader.
+          </li>
+          <li>Add the following code to your ./app/helpers.php:</li>
+
+          <CodeSnippet :code="helperPhpCode" />
+
+          <p class="text-[#73737F] text-[13px] md:text-[1rem]">
+            The standard asset() function will be called if no CDN URLs are
+            defined in the ./config/app.php config file.
+          </p>
+
+          <li>Define the CDN URLs in the ./config/app.php file.</li>
+
+          <CodeSnippet :code="configAppPhpCode" />
+
+          <p class="text-[#73737F] text-[13px] md:text-[1rem]">Example</p>
 
   <img alt="larvel" src="/images/Integeration/larvel.svg"></img>
 
           <li>Use the global helper function in your views:</li>
 
-    <div class="w-full border border-[#D0D0D8] shadow rounded-xl p-2 ">
-  <pre><code v-pre>
-&lt;img src=&quot;{{ cdn('/img/yourImg.png') }} alt=&quot;Your Image loaded from KeyCDN&quot; /&gt;
-  </code></pre>
-</div>
-
+          <CodeSnippet :code="viewCode" />
 
           <li>Verify the HTML source code if your assets are loading from KeyCDN.</li>
         </ol>
@@ -162,10 +148,5 @@ ol {
   list-style-type: decimal;
   padding-left: 1.25rem;
   margin-top: 1rem;
-}
-pre {
-  white-space: pre-wrap;
-  word-wrap: break-word;
-  word-break: break-all;
 }
 </style>

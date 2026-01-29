@@ -1,7 +1,7 @@
 <template>
   <div class="relative min-h-screen overflow-x-hidden">
-    <div class="relative z-10 mt-[4.25rem] mb-[146.22px] px-6 mx-auto max-w-[855px]">
-      <div class="grid grid-cols-1 md:grid-cols-[155.01px_1fr] gap-[30px]">
+    <div class="relative z-10 site-margins px-6 mx-auto max-w-[855px]">
+      <div class="grid grid-cols-1 lg:grid-cols-[155.01px_1fr] gap-[30px]">
         
         <aside class="space-y-[9.23px] font-medium text-[11.72px]">
           <NuxtLink
@@ -74,8 +74,6 @@
         </aside>
 
         <main class="space-y-4">
-<SectionsUpername name="Support" />
-
           <slot />
         </main>
       </div>
@@ -84,7 +82,6 @@
 </template>
 
 <script setup>
-import SectionsTitle from "~/components/common/Title.vue";
 import SectionsUpername from "~/components/common/Upername.vue";
 import { ref, watch } from 'vue'
 import { useRoute } from 'vue-router'

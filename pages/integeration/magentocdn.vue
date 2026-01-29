@@ -1,18 +1,20 @@
 <script setup lang="ts">
-import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
+import AccessAllFeaturesSection from "~/components/common/AccessAllFeatures.vue";
+import Title from "../../components/common/Title.vue";
 </script>
 
 <template>
-  <div class="mt-[4.25rem] mx-auto max-w-3xl">
-    <div class="w-full flex flex-col items-start gap-4">
-      <h1 class="text-[2rem] md:text-5xl font-medium">Magento CDN Integration</h1>
-
-      <p class="text-[#73737F] text-[13px] md:text-[1rem]">
-        Magento is a popular ecommerce solution for online businesses. Magento
-        is powering about 1% of the websites worldwide and is developed and
-        maintained by Magento, Inc., a company owned by Adobe.
-      </p>
-
+  <div class=" ">
+  
+      <Title
+       upername="support"
+        title="Magento CDN Integration"
+        subtitle="Magento is a popular ecommerce solution for online businesses. Magento is powering about 1% of the websites worldwide and is developed and maintained by Magento, Inc., a company owned by Adobe."
+        pcAlignment="start"
+        mobileAlignment="start"
+        :fontWeight="500"
+      />
+  <div class="w-full flex flex-col items-start gap-4">
       <p class="text-[#73737F] text-[13px] md:text-[1rem]">
         A slow Magento website means less revenue, which is why it's important
         to choose the best CDN for Magento. With KeyCDN, the static content of a
@@ -27,7 +29,7 @@ import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
       </p>
     </div>
 
-    <div class="mt-[2.3125rem] flex flex-col gap-4">
+    <div class="mt-2 flex flex-col gap-4">
       <h2 class="text-[1.5rem] md:text-[2rem] font-semibold">
         How to complete a Magento CDN integration (pre version 2)
       </h2>
@@ -37,7 +39,9 @@ import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
         KeyCDN. The integration can be done with HTTPS in addition to HTTP.
       </p>
 
-      <ol class="text-[#73737F] text-[13px] md:text-[1rem] flex flex-col gap-4 pl-8">
+      <ol
+        class="text-[#73737F] text-[13px] md:text-[1rem] flex flex-col gap-4 pl-6"
+      >
         <li class="">
           Create <a class="underline">Pull zone</a> or a
           <a class="underline">Push Zone</a>.
@@ -59,7 +63,9 @@ import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
           Select the Unsecure section and enter the following information.
         </li>
 
-        <ul class="text-[#73737F] text-[13px] md:text-[1rem] list-disc flex flex-col gap-4 pl-8">
+        <ul
+          class="text-[#73737F] text-[13px] md:text-[1rem] list-disc flex flex-col gap-4 pl-6"
+        >
           <li>
             Base URL: Enter your website URL in the following format:
             http://www.yourwebsite.com
@@ -101,7 +107,9 @@ import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
           Shared SSL and Custom SSL are free of charge.
         </li>
 
-        <ul class="text-[#73737F] text-[13px] md:text-[1rem] list-disc flex flex-col gap-4 pl-8">
+        <ul
+          class="text-[#73737F] text-[13px] md:text-[1rem] list-disc flex flex-col gap-4 pl-6"
+        >
           <li>
             Base URL: Enter your website URL in the following format:
             https://www.yourwebsite.com
@@ -134,7 +142,9 @@ import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
             server.
           </li>
 
-          <ul class="text-[#73737F] text-[13px] md:text-[1rem] list-disc flex flex-col gap-4 pl-8">
+          <ul
+            class="text-[#73737F] text-[13px] md:text-[1rem] list-disc flex flex-col gap-4 pl-6"
+          >
             <li>Use Secure URL in Frontend > Yes</li>
             <li>Use Secure URL in Admin > Yes</li>
           </ul>
@@ -158,7 +168,9 @@ import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
         How to complete a Magento 2 CDN integration
       </h2>
 
-      <ol class="text-[#73737F] text-[13px] md:text-[1rem] pl-8 list-disc mt-6 flex flex-col gap-4">
+      <ol
+        class="text-[#73737F] text-[13px] md:text-[1rem] pl-6 list-disc mt-6 flex flex-col gap-4"
+      >
         <li>
           Create a <a class="underline">Pull Zone</a> or a
           <a class="underline">Push Zone.</a>
@@ -225,7 +237,9 @@ import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
           base. Check these pages as well:
         </p>
 
-        <ul class="text-[#73737F] text-[13px] md:text-[1rem] pl-8 list-disc mt-2 flex flex-col gap-2">
+        <ul
+          class="text-[#73737F] text-[13px] md:text-[1rem] pl-6 list-disc mt-2 flex flex-col gap-2"
+        >
           <li>
             The <a class="underline">Ping Test</a> tool makes pinging IPs from
             different locations a breeze.

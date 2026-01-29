@@ -1,33 +1,38 @@
 <template>
-  <div class="mt-[4.25rem] mx-auto max-w-3xl">
+  <div class="">
     <div class="w-full">
-      <h1 class="text-[2rem] md:text-5xl font-medium mt-4">Create a Push Zone</h1>
-
-      <p style="font-family: inter" class="text-[#73737F] text-[13px] md:text-[1rem] mt-4">
-        A Varnish Push Zone allows you to upload your data to our storage
-        cluster. This is recommended for files greater than 10 MB in size and is
-        required for files larger than 100 MB because
-        <span class="underline">Pull Zones</span> do not cache anything larger
-        than 100 MB.
-      </p>
+      <Title
+       upername="support"
+        title="Create a Push Zone"
+        subtitle="A Varnish Push Zone allows you to upload your data to our storage cluster. This is recommended for files greater than 10 MB in size and is required for files larger than 100 MB because Pull Zones do not cache anything larger than 100 MB."
+        pcAlignment="start"
+        mobileAlignment="start"
+        :fontWeight="500"
+      />
     </div>
 
-    <div class="mt-[2.3125rem] mb-[8.1875rem]">
-      <p style="font-family: inter" class="text-[#73737F] text-[13px] md:text-[1rem] mt-4">
+    <div class="mt-[2.3125rem]">
+      <p
+        style="font-family: inter"
+        class="text-[#73737F] text-[13px] md:text-[1rem] mt-4"
+      >
         To set up a Push Zone, follow the steps outlined below:
       </p>
 
-      <div class="pl-8">
-        <ol class="text-[#73737F] text-[13px] md:text-[1rem]">
-          <li class="mt-3">Log in to the Varnish dashboard.</li>
-          <li class="mt-3">In the left navigation sidebar click Zones.</li>
-          <li class="mt-3">Click Add Zone.</li>
-          <li class="mt-3">Set the Zone Type as push.</li>
-          <li class="mt-3">Click Save.</li>
+      <div class="pl-8 py-[3rem]">
+        <ol class="space-y-[10px] text-[#73737F] text-[13px] md:text-[1rem]">
+          <li>Log in to the Varnish dashboard.</li>
+          <li>In the left navigation sidebar click Zones.</li>
+          <li>Click Add Zone.</li>
+          <li>Set the Zone Type as push.</li>
+          <li>Click Save.</li>
         </ol>
       </div>
 
-      <p style="font-family: inter" class="text-[#73737F] text-[13px] md:text-[1rem] mt-4">
+      <p
+        style="font-family: inter"
+        class="text-[#73737F] text-[13px] md:text-[1rem] mt-4"
+      >
         These are the minimal steps in order to have a working Zone. The default
         settings work for most use cases. Read our
         <a class="underline">Push Zone settings</a> article for more information
@@ -57,6 +62,10 @@
     </Teleport>
   </ClientOnly>
 </template>
+
+<script setup>
+import Title from "../../components/common/Title.vue";
+</script>
 
 <style scoped>
 p,
