@@ -1,22 +1,21 @@
 <script setup lang="ts">
-import SectionsTitle from "~/components/common/Title.vue";
-import SectionsUpername from "~/components/common/Upername.vue";
-import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
+import AccessAllFeaturesSection from "~/components/common/AccessAllFeatures.vue";
 </script>
 
 <template>
-  <div  class="mt-[4.25rem] mx-auto px-[3.5938rem] lg:px-0 max-w-[940px]">
-<SectionsUpername name="Solutions" />
-    <h1 class="text-[2rem] md:text-5xl font-semibold mt-2">Image Processing</h1>
-    <p class="text-[#73737F] md:text-[1rem]  mt-4 text-[14px]  max-w-2xl">
-      We offer a powerful way to transform and optimize images in real time.
-    </p>
-
+  <div class="site-margins site-padding">
+    <CommonTitle
+      upername="Solutions"
+      title="Image Processing"
+      subtitle="We offer a powerful way to transform and optimize images in real time."
+      mobileAlignment="start"
+      pcAlignment="start"
+    />
     <div
       class="mt-10 grid grid-cols-1 place-items-center md:grid-cols-2 gap-10"
     >
       <div class="flex flex-col gap-6">
-        <p class="text-[#73737F]">
+        <p class="text-[#73737F] text-[13px] md:text-[1rem]">
           Image processing allows on the fly image transformation and
           optimization. Our real-time image processing allows images to be
           altered and enhanced with simple query parameters before being
@@ -24,7 +23,7 @@ import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
           no matter where your users are located they will receive processed
           images with low latency.
         </p>
-        <p class="text-[#73737F]">
+        <p class="text-[#73737F] text-[13px] md:text-[1rem]">
           By using our image processing service the overall resources on the
           origin server will be reduced because there is no longer a need to
           store several variations of the same image. Instead, append one or
@@ -85,8 +84,14 @@ import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
             </svg>
           </div>
           <div>
-            <h2 class="text-[1.125rem] font-semibold text-[#1a1925]">Flexible transformations</h2>
-            <p class="text-[#73737F]   mt-1 text-sm leading-relaxed">
+            <h2
+              class="text-[1.125rem] md:text-[1.25rem] font-semibold text-[#1a1925]"
+            >
+              Flexible transformations
+            </h2>
+            <p
+              class="text-[#73737F] mt-1 text-[13px] md:text-[1rem] leading-relaxed"
+            >
               Serve properly scaled images by dynamically updating the width and
               height.
             </p>
@@ -144,8 +149,14 @@ import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
             </svg>
           </div>
           <div>
-            <h2 class="text-[1.125rem] font-semibold text-[#1a1925]">Robust optimizations</h2>
-            <p class="text-[#73737F]   mt-1 text-sm leading-relaxed">
+            <h2
+              class="text-[1.125rem] md:text-[1.25rem] font-semibold text-[#1a1925]"
+            >
+              Robust optimizations
+            </h2>
+            <p
+              class="text-[#73737F] mt-1 text-[13px] md:text-[1rem] leading-relaxed"
+            >
               Improve image performance by reducing the overall size and using a
               better format.
             </p>
@@ -223,8 +234,14 @@ import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
             </svg>
           </div>
           <div>
-            <h2 class="text-[1.125rem] font-semibold text-[#1a1925]">Swift delivery</h2>
-            <p class="text-[#73737F]   mt-1 text-sm leading-relaxed">
+            <h2
+              class="text-[1.125rem] md:text-[1.25rem] font-semibold text-[#1a1925]"
+            >
+              Swift delivery
+            </h2>
+            <p
+              class="text-[#73737F] mt-1 text-[13px] md:text-[1rem] leading-relaxed"
+            >
               Increase image speed by being distributed globally through our 60+
               data centers.
             </p>
@@ -251,7 +268,7 @@ import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
       </div>
 
       <div class="flex flex-col gap-6 justify-center">
-        <p class="  text-[#73737F]">
+        <p class="text-[#73737F] text-[13px] md:text-[1rem]">
           In addition to being powerful, our real-time image processing is
           affordable. Pricing starts at $0.40 per 1,000 operations. An operation
           is counted when an image has been processed. Once an image is
@@ -307,13 +324,30 @@ import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
           class="bg-white flex gap-2"
         >
           <div class="pt-1 w-12">
-<svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M16.6982 1.2417C16.7002 1.2419 16.7022 1.2415 16.7041 1.2417L16.7031 1.24268H16.7109L24.2842 2.09131L24.2832 2.09229C24.9204 2.159 25.5216 2.41275 26.0107 2.8208L26.2148 3.00635C26.7375 3.52487 27.067 4.20759 27.1475 4.93994L27.9805 12.5142L27.9814 12.5161C28.0872 13.4907 27.7474 14.4616 27.0566 15.1577L27.0537 15.1606L14.9229 27.2769L14.9219 27.2759C14.323 27.889 13.5006 28.2312 12.6436 28.2231L12.6445 28.2241C12.6419 28.2241 12.6393 28.2231 12.6367 28.2231C12.6322 28.2231 12.6276 28.2242 12.623 28.2241V28.2231C11.771 28.2224 10.9547 27.8822 10.3555 27.2769L1.94531 18.8667V18.8657C1.34009 18.2596 1 17.4382 1 16.5815C1 15.7252 1.34011 14.9034 1.94531 14.2974L14.0596 2.16943L14.0664 2.16357C14.4957 1.74167 15.0274 1.45192 15.5996 1.31494V1.11768L16.6982 1.2417ZM22.127 6.6167C21.9984 6.61698 21.8745 6.66787 21.7832 6.75928V6.76025C21.6922 6.85141 21.6406 6.97538 21.6406 7.10498C21.6407 7.23423 21.6923 7.35768 21.7832 7.44873V7.44971C21.874 7.54069 21.9976 7.59172 22.127 7.59229C22.2542 7.59255 22.3753 7.54271 22.4668 7.45459C22.5587 7.36162 22.6113 7.23594 22.6113 7.104C22.6113 6.97507 22.5615 6.85129 22.4727 6.7583L22.3984 6.69775C22.3187 6.64488 22.2248 6.61647 22.1279 6.6167H22.127Z" fill="white" stroke="#1F62FF" stroke-width="2"/>
-</svg>
+            <svg
+              width="29"
+              height="30"
+              viewBox="0 0 29 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16.6982 1.2417C16.7002 1.2419 16.7022 1.2415 16.7041 1.2417L16.7031 1.24268H16.7109L24.2842 2.09131L24.2832 2.09229C24.9204 2.159 25.5216 2.41275 26.0107 2.8208L26.2148 3.00635C26.7375 3.52487 27.067 4.20759 27.1475 4.93994L27.9805 12.5142L27.9814 12.5161C28.0872 13.4907 27.7474 14.4616 27.0566 15.1577L27.0537 15.1606L14.9229 27.2769L14.9219 27.2759C14.323 27.889 13.5006 28.2312 12.6436 28.2231L12.6445 28.2241C12.6419 28.2241 12.6393 28.2231 12.6367 28.2231C12.6322 28.2231 12.6276 28.2242 12.623 28.2241V28.2231C11.771 28.2224 10.9547 27.8822 10.3555 27.2769L1.94531 18.8667V18.8657C1.34009 18.2596 1 17.4382 1 16.5815C1 15.7252 1.34011 14.9034 1.94531 14.2974L14.0596 2.16943L14.0664 2.16357C14.4957 1.74167 15.0274 1.45192 15.5996 1.31494V1.11768L16.6982 1.2417ZM22.127 6.6167C21.9984 6.61698 21.8745 6.66787 21.7832 6.75928V6.76025C21.6922 6.85141 21.6406 6.97538 21.6406 7.10498C21.6407 7.23423 21.6923 7.35768 21.7832 7.44873V7.44971C21.874 7.54069 21.9976 7.59172 22.127 7.59229C22.2542 7.59255 22.3753 7.54271 22.4668 7.45459C22.5587 7.36162 22.6113 7.23594 22.6113 7.104C22.6113 6.97507 22.5615 6.85129 22.4727 6.7583L22.3984 6.69775C22.3187 6.64488 22.2248 6.61647 22.1279 6.6167H22.127Z"
+                fill="white"
+                stroke="#1F62FF"
+                stroke-width="2"
+              />
+            </svg>
           </div>
           <div>
-            <h2 class="text-[1.125rem] font-semibold text-[#1a1925]">Low pricing</h2>
-            <p class="text-[#73737F]   mt-1 text-sm leading-relaxed">
+            <h2
+              class="text-[1.125rem] md:text-[1.25rem] font-semibold text-[#1a1925]"
+            >
+              Low pricing
+            </h2>
+            <p
+              class="text-[#73737F] mt-1 text-[13px] md:text-[1rem] leading-relaxed"
+            >
               Benefit from pay as you go billing and volume pricing as low as
               $0.01/GB.
             </p>
@@ -337,13 +371,30 @@ import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
           class="bg-white flex gap-2"
         >
           <div class="pt-1 w-12">
-<svg width="31" height="26" viewBox="0 0 31 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M29.5527 0.922363L23.0645 24.4087L22.9727 24.7407L22.6855 24.5513L16.3701 20.3696L11.4639 25.0366L11.1221 25.3618L11.0449 24.897L9.59766 16.1685L1.2168 12.7485L0.655273 12.519L1.21582 12.2866L29.2158 0.625488L29.6895 0.428223L29.5527 0.922363ZM14.3037 17.5806L22.2559 22.8452L27.5762 3.58447L14.3037 17.5806ZM12.707 22.2134L15.3535 19.6968L13.7363 18.6265L12.707 22.2134ZM10.7822 15.9995L11.6836 21.4458L12.6924 17.9351L12.4697 17.7886L12.6738 17.5728L23.1826 6.48975L10.7822 15.9995ZM3.75781 12.5083L10.042 15.0728L24.8252 3.73389L3.75781 12.5083Z" fill="#1F62FF" stroke="#1F62FF" stroke-width="0.5"/>
-</svg>
+            <svg
+              width="31"
+              height="26"
+              viewBox="0 0 31 26"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M29.5527 0.922363L23.0645 24.4087L22.9727 24.7407L22.6855 24.5513L16.3701 20.3696L11.4639 25.0366L11.1221 25.3618L11.0449 24.897L9.59766 16.1685L1.2168 12.7485L0.655273 12.519L1.21582 12.2866L29.2158 0.625488L29.6895 0.428223L29.5527 0.922363ZM14.3037 17.5806L22.2559 22.8452L27.5762 3.58447L14.3037 17.5806ZM12.707 22.2134L15.3535 19.6968L13.7363 18.6265L12.707 22.2134ZM10.7822 15.9995L11.6836 21.4458L12.6924 17.9351L12.4697 17.7886L12.6738 17.5728L23.1826 6.48975L10.7822 15.9995ZM3.75781 12.5083L10.042 15.0728L24.8252 3.73389L3.75781 12.5083Z"
+                fill="#1F62FF"
+                stroke="#1F62FF"
+                stroke-width="0.5"
+              />
+            </svg>
           </div>
           <div>
-            <h2 class="text-[1.125rem] font-semibold text-[#1a1925]">Fast platform</h2>
-            <p class="text-[#73737F]   mt-1 text-sm leading-relaxed">
+            <h2
+              class="text-[1.125rem] md:text-[1.25rem] font-semibold text-[#1a1925]"
+            >
+              Fast platform
+            </h2>
+            <p
+              class="text-[#73737F] mt-1 text-[13px] md:text-[1rem] leading-relaxed"
+            >
               Configuration updates only take a few minutes to be deployed
               across the globe.
             </p>
@@ -367,13 +418,30 @@ import AccessAllFeaturesSection from"~/components/common/AccessAllFeatures.vue";
           class="bg-white flex gap-2"
         >
           <div class="pt-1 w-12">
-<svg width="31" height="26" viewBox="0 0 31 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M29.5527 0.922363L23.0645 24.4087L22.9727 24.7407L22.6855 24.5513L16.3701 20.3696L11.4639 25.0366L11.1221 25.3618L11.0449 24.897L9.59766 16.1685L1.2168 12.7485L0.655273 12.519L1.21582 12.2866L29.2158 0.625488L29.6895 0.428223L29.5527 0.922363ZM14.3037 17.5806L22.2559 22.8452L27.5762 3.58447L14.3037 17.5806ZM12.707 22.2134L15.3535 19.6968L13.7363 18.6265L12.707 22.2134ZM10.7822 15.9995L11.6836 21.4458L12.6924 17.9351L12.4697 17.7886L12.6738 17.5728L23.1826 6.48975L10.7822 15.9995ZM3.75781 12.5083L10.042 15.0728L24.8252 3.73389L3.75781 12.5083Z" fill="#1F62FF" stroke="#1F62FF" stroke-width="0.5"/>
-</svg>
+            <svg
+              width="31"
+              height="26"
+              viewBox="0 0 31 26"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M29.5527 0.922363L23.0645 24.4087L22.9727 24.7407L22.6855 24.5513L16.3701 20.3696L11.4639 25.0366L11.1221 25.3618L11.0449 24.897L9.59766 16.1685L1.2168 12.7485L0.655273 12.519L1.21582 12.2866L29.2158 0.625488L29.6895 0.428223L29.5527 0.922363ZM14.3037 17.5806L22.2559 22.8452L27.5762 3.58447L14.3037 17.5806ZM12.707 22.2134L15.3535 19.6968L13.7363 18.6265L12.707 22.2134ZM10.7822 15.9995L11.6836 21.4458L12.6924 17.9351L12.4697 17.7886L12.6738 17.5728L23.1826 6.48975L10.7822 15.9995ZM3.75781 12.5083L10.042 15.0728L24.8252 3.73389L3.75781 12.5083Z"
+                fill="#1F62FF"
+                stroke="#1F62FF"
+                stroke-width="0.5"
+              />
+            </svg>
           </div>
           <div>
-            <h2 class="text-[1.125rem] font-semibold text-[#1a1925]">No commitment</h2>
-            <p class="text-[#73737F]   mt-1 text-sm leading-relaxed">
+            <h2
+              class="text-[1.125rem] md:text-[1.25rem] font-semibold text-[#1a1925]"
+            >
+              No commitment
+            </h2>
+            <p
+              class="text-[#73737F] mt-1 text-[13px] md:text-[1rem] leading-relaxed"
+            >
               No contract required, allowing traffic volume to scale up or down
               at any time.
             </p>
