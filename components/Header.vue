@@ -1,11 +1,10 @@
 <template>
-  <header class="bg-white z-50 fixed w-full" style="background-color: #f7f7f8">
+  <header class=" z-[1000] fixed w-full bg-[#f7f7f8]">
     <div class="hidden md:flex justify-center">
      <div
   v-if="visible"
-  class="bg-black text-white flex w-full  rounded-xl justify-center items-center h-9 px-4 relative"
-  style="background-image: url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 562 257%22 fill=%22none%22><path d=%22M24.0976 458.018C9.44224 347.678 34.2187 238.427 96.4862 187.86C168.973 128.994 292.268 149.657 463.309 340.714C389.806 -374.647 745.514 380.188 659.684 42.3566%22 stroke=%22%2373737F%22 stroke-width=%2240%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22/></svg>'); background-repeat: no-repeat; "
->
+  class=" text-white flex w-full justify-center items-center h-9 px-4 relative bg-[url('/global/banner.svg')] bg-cover bg-center"
+  >
   <p class="text-[14px]">
     Varnish uses Cookies to make its website Easier to use.  
     <a class="underline text-[14px]">Learn More</a>
@@ -17,14 +16,7 @@
   >×</span>
 </div>
 
-</div>
-
-    <img
-      src="/images/BG_Line_landing.svg"
-      alt="Background Line"
-      class="hidden tablet:block absolute pointer-events-none"
-      style="width: 10%; z-index: 0; opacity: 1; right: 0"
-    />
+</div class="bg-[#f7f7f8]">
     <nav
       class="container mx-auto w-full flex flex-col relative"
       style="z-index: 1; margin: auto"
@@ -41,14 +33,9 @@
             <img
               src="/icons/Company-logo.svg"
               alt="Varnish Logo"
-              class="h-8 w-8 flex-shrink-0 block"
-              style="min-width: 32px; min-height: 32px; display: block"
+              class="h-full flex-shrink-0 block"
+              style=" display: block"
             />
-            <span
-              class="text-[1rem] font-semibold text-gray-900 whitespace-nowrap ml-1.5 sm:ml-2 md:ml-2 block"
-              style="margin: 0; padding: 0; line-height: 24px"
-              >Varnish</span
-            >
           </NuxtLink>
           <div
             class="hidden tablet:flex items-center flex-1 min-w-0"
@@ -512,7 +499,7 @@
     
            
           >
-          <Button name="Sign Up" variant="secondary" />
+          <Button name="Sign Up" variant="primary" />
           </NuxtLink>
         </div>
 

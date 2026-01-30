@@ -17,15 +17,6 @@
           transform: translate(-30%, 30%);
         "
       ></div>
-      <!-- BG_Line_landing.svg in top right -->
-      <div class="absolute top-0 right-0 hidden sm:block">
-        <img
-          src="/images/BG_Line_landing.svg"
-          alt="Background line decoration top right"
-          class="w-auto h-auto"
-          style="max-width: 241px; max-height: 481px"
-        />
-      </div>
       <!-- BGline.svg in bottom left -->
       <div class="absolute bottom-0 left-0 hidden sm:block">
         <img

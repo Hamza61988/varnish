@@ -1,9 +1,10 @@
 <template>
   <section
-    class="  "
-    
+    class="relative w-screen left-1/2 -translate-x-1/2"
   >
-    <div class="">
+  <img src="/images/landing/yellow.svg" alt="Yellow Line" class="absolute top-0 left-0 object-contain z-10">
+  <img src="/images/landing/green-small.svg" alt="Green Small Line" class="absolute top-[50%] right-0 object-contain z-10">
+    <div class="site-padding">
       <!-- Header Section -->
    
          <commonTitle 
@@ -28,40 +29,21 @@
 
   <!-- Right Card -->
   <div
-    class="flex flex-col p-[29px] lg:p-10  mx-auto md:mx-0 relative overflow-hidden w-full md:w-[70%]  rounded-[28px]"
-    style="
-      background: #eeeef0;
-      box-shadow: 0px 0.5px 0.5px 0px rgba(26, 25, 37, 0.08),
-        0px 1px 1px 0px rgba(26, 25, 37, 0.08),
-        0px 1px 2px -1px rgba(26, 25, 37, 0.06);
-    "
-  >
-    <!-- Background decorative -->
-    <div
-      class="absolute bottom-5 right-5 opacity-10 md:bottom-auto md:right-auto md:top-[200px] md:left-[460px] md:opacity-100"
-      style="width: 238.78px; height: 235.45px;"
-    >
-      <img
-        src="/images/terminate_vector.svg"
-        alt="Decorative background"
-        class="w-full h-full object-contain"
-        
-        style="width: 100%; height: 100%; display: block;background-repeat: no-repeat;
-        background-position: left bottom;"
-      />
-    </div>
+    class="flex flex-col p-[29px] lg:p-10  mx-auto md:mx-0 relative overflow-hidden w-full md:w-[70%]  rounded-[28px] bg-[#4285F4] "
 
+  >
+  <img :src="'/images/landing/card.png'" alt="In Box" class="absolute bottom-0 right-0 z-10 object-contain" />
     <!-- MOBILE Name (TOP) -->
-    <div class="mb-4 sm:mb-6 relative z-10 md:hidden">
+    <div class="mb-4 sm:mb-6 relative z-10 md:hidden text-white">
       <h3
         class="mb-1 text-base sm:text-lg"
-        style="font-family: 'Inter', sans-serif; font-weight: 500; line-height: 24px; letter-spacing: -0.015em; color: #1a1925;"
+        style="font-family: 'Inter', sans-serif; font-weight: 500; line-height: 24px; letter-spacing: -0.015em; color: white;"
       >
         Angela Moss
       </h3>
       <p
         class="text-xs sm:text-sm"
-        style="font-family: 'Inter', sans-serif; font-weight: 400; line-height: 20px; letter-spacing: -0.006em; color: #73737f;"
+        style="font-family: 'Inter', sans-serif; font-weight: 400; line-height: 20px; letter-spacing: -0.006em; color: white;"
       >
         CTO at Meteor
       </p>
@@ -71,7 +53,6 @@
     <div class="flex items-center gap-2 relative z-10 md:hidden mt-0">
       <button
         class="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center rounded-lg transition-colors"
-        style="color: #73737f"
       >
         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 sm:h-5 sm:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
@@ -87,17 +68,18 @@
       </button>
     </div>
     <!-- DESKTOP Name + Nav (TOP) -->
-    <div class="hidden md:flex items-start justify-between mb-4 sm:mb-6 relative z-10">
-      <div class="flex-1 min-w-0">
+    <div class="hidden md:flex items-start justify-between mb-4 sm:mb-6 z-10">
+   
+      <div class="flex-1 min-w-0 text-white">
         <h3
           class="mb-1 text-base sm:text-lg"
-          style="font-family: 'Inter', sans-serif; font-weight: 500; line-height: 24px; letter-spacing: -0.015em; color: #1a1925;"
+          style="font-family: 'Inter', sans-serif; font-weight: 500; line-height: 24px; letter-spacing: -0.015em;"
         >
           Angela Moss
         </h3>
         <p
-          class="text-xs sm:text-sm"
-          style="font-family: 'Inter', sans-serif; font-weight: 400; line-height: 20px; letter-spacing: -0.006em; color: #73737f;"
+          class="text-xs sm:text-sm text-gray-200"
+          style="font-family: 'Inter', sans-serif; font-weight: 400; line-height: 20px; letter-spacing: -0.006em;"
         >
           CTO at Meteor
         </p>
@@ -106,8 +88,7 @@
       <!-- Desktop arrows -->
       <div class="flex items-center gap-2 flex-shrink-0 ml-2">
         <button
-          class="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center rounded-lg hover:bg-gray-200 transition-colors"
-          style="color: #73737f"
+          class="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center rounded-lg text-white"
         >
           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 sm:h-5 sm:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
@@ -125,15 +106,15 @@
     </div>
 
     <!-- QUOTE (BOTTOM) -->
-    <div class="relative z-10 mt-10 md:mt-auto">
+    <div class=" z-10 mt-10 md:mt-auto">
+   
       <p
-        class=" text-[23px] md:text-[28px]  md:w-full w-[250px] leading-[39px] sm:leading-[26px] md:leading-[30px] lg:leading-[36px]"
+        class=" text-[23px] md:text-[28px]  md:w-full w-[250px] leading-[39px] sm:leading-[26px] md:leading-[30px] lg:leading-[36px] text-white"
         style="
         
           font-weight: 500;
           letter-spacing: -0.02em;
           vertical-align: middle;
-          color: #51515E;
         "
       >
         Varnish has been an excellent CDN for us. Setup was quick and
@@ -293,9 +274,3 @@
     </div>
   </section>
 </template>
-
-<script setup lang="ts">
-import SectionsTitle from "~/components/common/Title.vue";
-import SectionsUpername from "~/components/common/Upername.vue";
-// Testimonials Section Component
-</script>

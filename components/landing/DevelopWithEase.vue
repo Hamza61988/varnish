@@ -1,6 +1,7 @@
 <template>
-  <section class="" style="overflow-x: hidden">
-    <div class="">
+  <section class="relative w-screen left-1/2 -translate-x-1/2" style="overflow-x: hidden">
+    <img src="/images/landing/blue-line.svg" alt="Blue Line" class="absolute top-[100px] right-0 object-contain z-10">
+    <div class="site-padding">
       <commonTitle
         upername="Develop With Ease"
         title="Develop With Ease"
@@ -8,7 +9,7 @@
         mobileAlignment="start"
         pcAlignment="start"
       />
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 items-stretch">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 items-stretch ">
         <div
           class="flex flex-col gap-5 justify-between items-start order-2 lg:order-1 min-w-0"
         >

@@ -1,59 +1,19 @@
 <template>
-  <section class="  ">
-    <div class="">
+  <section class="mt-12 relative w-screen left-1/2 -translate-x-1/2">
+    <img src="/images/landing/red-line.svg" alt="Red Line" class="absolute -top-[200px] left-0 object-contain z-10">
+    <div class="px-[57.5px] lg:px-[25px] xl:px-0 max-w-max mx-auto">
       <div
         class="flex flex-col items-center gap-3 md:flex-row md:flex-nowrap md:justify-between"
       >
         <div
           v-for="(feature, index) in features"
           :key="index"
-          class="feature-card group bg-white relative overflow-hidden"
+          class="feature-card lg:max-w-[320px] p-6 min-h-[257px] relative overflow-hidden rounded-[20px]"
         >
-          <!-- Card Background - bgcard.svg -->
-          <div
-            class="absolute hidden group-hover:block"
-            style="
-              width: 148px;
-              height: 148px;
-              top: 8px;
-              right: 26px;
-              opacity: 1;
-              border: 0.8px solid;
-              border-image-source: radial-gradient(
-                81.86% 81.86% at 100% 100%,
-                rgba(26, 25, 37, 0.12) 0%,
-                rgba(26, 25, 37, 0) 77.02%
-              );
-              border-image-slice: 1;
-              background-image: url(&quot;/images/about/bgcard.svg&quot;);
-              background-repeat: no-repeat;
-              background-size: contain;
-              border: none;
-            "
-          ></div>
-          <div class="relative lg:max-w-[253px] max-w-[217px] z-10 pl-[24px]">
-            <div
-              class="mb-4 relative"
-              style="padding-top: 4.67px; padding-left: 2.33px"
-            >
-              <!-- Icon Background - bgcardicon.svg -->
-              <div
-                class="absolute -top-2 -left-2 w-8 h-8"
-                style="
-                  background-image: url(&quot;/images/about/bgcardicon.svg&quot;);
-                  background-repeat: no-repeat;
-                  background-size: contain;
-                  z-index: -10;
-                  border: none;
-                "
-              ></div>
-              <!-- Feature Icon -->
-              <div v-html="feature.icon"></div>
-            </div>
-            <div class="max-w-[220px]">
-              <h3 class="feature-heading">{{ feature.title }}</h3>
-              <p class="feature-description" v-html="feature.description"></p>
-            </div>
+          <div class="relative z-10">
+            <div class="mb-4" v-html="feature.icon"></div>
+            <h3 class="feature-heading">{{ feature.title }}</h3>
+            <p class="feature-description" v-html="feature.description"></p>
           </div>
         </div>
       </div>
@@ -74,15 +34,28 @@ defineProps<{
 
 <style scoped>
 .feature-card {
-  border: 0.8px solid rgba(26, 25, 37, 0.12);
-  border-radius: 20px;
-  height: 246px;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 5px 5px 0 rgba(31, 38, 135, 0.2);
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
 
-  overflow: hidden;
+.feature-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 100%);
+  pointer-events: none;
+  z-index: 0;
+  border-radius: 20px;
 }
 
 .feature-icon-container {

@@ -4,9 +4,9 @@
     <div class="flex flex-col lg:flex-row hero-container flex-1">
       <!-- Left Section: Landing Page -->
       <div
-        class="flex-1 justify-center items-center hero-left-section order-1 lg:order-1"
+        class="flex-1 items-center lg:max-w-4xl hero-left-section order-1 lg:order-1"
       >
-        <div class="max-w-2xl md:px-0 px-[3.875rem] mx-auto">
+        <div class="max-w-3xl md:px-0 px-[3.875rem] lg:pl-[1.5rem] mx-auto">
           <!-- Top Badge -->
           <div class="">
             <SectionsUpername name="Empower Innovation!" />
@@ -134,7 +134,7 @@
               >
                 <path
                   d="M12 2 L13.76 7.2 L19.51 4.49 L16.2 9.24 L21 12 L16.2 14.76 L19.51 19.51 L13.76 16.8 L12 22 L10.24 16.8 L4.49 19.51 L7.8 14.76 L3 12 L7.8 9.24 L4.49 4.49 L10.24 7.2 Z"
-                  fill="#1F62FF"
+                  :fill="stat.color"
                 />
               </svg>
               <span
@@ -148,13 +148,14 @@
       </div>
       <!-- Right Section: Dashboard Preview Panel -->
       <div
-        class="lg:w-[40%] pl-[10%] w-full lg:pl-0 flex flex-col justify-end hero-image-section order-2 lg:order-2"
+        class="lg:w-[40%] pl-[10%] lg:flex-1  w-full lg:pl-0 flex flex-col justify-end hero-image-section order-2 lg:order-2"
       >
         <img
           src="/images/varnish.svg"
           alt="BEST CDN AWARD"
-          class="w-full h-auto lg:h-full object-contain"
+          class="w-full h-auto object-contain"
         />
+
       </div>
     </div>
   </div>
@@ -165,14 +166,15 @@ import Button from "~/components/common/Button.vue";
 import { ref, onMounted } from "vue";
 
 const stats = [
-  { label: "Active Users", value: 2400, display: ref(0), minWidth: 4 },
-  { label: "Zones Deployed", value: 135949, display: ref(0), minWidth: 6 },
+  { label: "Active Users", value: 2400, display: ref(0), minWidth: 4, color: "#EA4335" },
+  { label: "Zones Deployed", value: 135949, display: ref(0), minWidth: 6, color: "#34A853" },
   {
     label: "Hit Ratio",
     value: 98,
     display: ref(0),
     isPercent: true,
     minWidth: 2,
+    color: "#1F62FF",
   },
 ];
 

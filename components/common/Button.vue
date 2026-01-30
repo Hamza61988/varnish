@@ -65,7 +65,7 @@ withDefaults(defineProps<Props>(), {
 }
 
 .variant-primary:hover {
-  background-color: #1b56e0;
+  background-color: var(--bluish);
 }
 
 /* Secondary (Black) Variant */
