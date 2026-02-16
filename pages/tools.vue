@@ -1,43 +1,27 @@
-﻿<template>
+<template>
   <div class=" overflow-hidden">
     <main>
-      <section
-        class="site-padding site-margins"
-      >
-        <commonTitle
-          upername="Tools"
-          title="Tools"
-          subtitle="Troubleshoot website, network, and CDN issues for fast resolutions."
-          mobileAlignment="start"
-          pcAlignment="center"
-        />
+      <section style=" margin: 35px 178px;">
+        <CommonTitle upername="Tools" title="Tools"
+          subtitle="Troubleshoot website, network, and CDN issues for fast resolutions." mobileAlignment="start"
+          pcAlignment="center" />
 
-        <div class="flex flex-col gap-[50px] md:gap-[60px]">
-          <div v-for="section in toolsSections" :key="section.title">
-            <div class="max-w-6xl mx-auto mb-4 sm:mb-6 md:mb-8">
-              <h3
-                class="text-left text-[1.5rem] md:text-[2rem] section-heading"
-                style="margin-bottom: 16px"
-              >
+        <div class="flex flex-col">
+          <div v-for="(section, index) in toolsSections" :key="section.title">
+            <div class="max-w-6xl mx-auto" :style="index === 0 ? 'margin-top: 0; margin-bottom: 32px;' : 'margin-top: 60px; margin-bottom: 32px;'">
+              <h3 class="text-left text-[1.5rem] md:text-[2rem] section-heading">
                 {{ section.title }}
               </h3>
             </div>
-            <div
-              class="grid grid-cols-1 md:grid-cols-3 gap-[0.625rem] md:gap-[0.75rem] max-w-6xl mx-auto"
-            >
-              <NuxtLink
-                v-for="tool in section.items"
-                :key="tool.link"
-                :to="tool.link"
-                class="block"
-              >
-                <LandingFeatures :features="[tool]" />
+            <div class="grid grid-cols-1 md:grid-cols-3 mx-auto" style="row-gap: 32px; column-gap: 10px;">
+              <NuxtLink v-for="tool in section.items" :key="tool.link" :to="tool.link" class="block">
+                <Features :features="[tool]" />
               </NuxtLink>
             </div>
           </div>
         </div>
       </section>
-      <div class="mb-12 sm:mb-8 md:mb-0">
+      <div class="mb-16" style="padding-top: 87px;">
         <SectionsAccessAllFeaturesSection />
       </div>
     </main>
@@ -48,6 +32,7 @@
 import SectionsTitle from "~/components/common/Title.vue";
 import SectionsUpername from "~/components/common/Upername.vue";
 import SectionsAccessAllFeaturesSection from "~/components/common/AccessAllFeatures.vue";
+import Features from "~/components/landing/Features.vue";
 
 const toolsSections = [
   {

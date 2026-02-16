@@ -1,61 +1,115 @@
 <template>
-  <section class="mt-12 relative w-screen left-1/2 -translate-x-1/2">
-    <img src="/images/landing/red-line.svg" alt="Red Line" class="absolute -top-[200px] left-0 object-contain z-10">
-    <div class="px-[57.5px] lg:px-[25px] xl:px-0 max-w-max mx-auto">
-      <div
-        class="flex flex-col items-center gap-3 md:flex-row md:flex-nowrap md:justify-between"
-      >
-        <div
-          v-for="(feature, index) in features"
-          :key="index"
-          class="feature-card lg:max-w-[320px] p-6 min-h-[257px] relative overflow-hidden rounded-[20px]"
-        >
-          <div class="relative z-10">
-            <div class="mb-4" v-html="feature.icon"></div>
-            <h3 class="feature-heading">{{ feature.title }}</h3>
-            <p class="feature-description" v-html="feature.description"></p>
-          </div>
+  <section class="" v-if="feature">
+    <div class="feature-card">
+      <div class="relative z-10 feature-content">
+        <div class="feature-icon-wrapper">
+          <img :src="iconPath" alt="" class="feature-icon" />
         </div>
+        <h3 class="feature-heading">{{ feature.title }}</h3>
+        <p class="feature-description" v-html="feature.description"></p>
       </div>
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
+import { computed } from 'vue';
+
 // Features Section Component
-defineProps<{
+const props = defineProps<{
   features: {
     title: string;
     description: string;
     icon: string;
   }[];
 }>();
+
+const feature = computed(() => props.features && props.features.length > 0 ? props.features[0] : null);
+
+const iconPath = computed(() => {
+  if (!feature.value) return '/icons/toolcard1icon.svg';
+  
+  // Map titles to icon paths
+  const iconMap: Record<string, string> = {
+    'Website Speed Test': '/icons/toolcard1icon.svg',
+    'Performance Test': '/icons/toolcard2icon.svg',
+    'HTTP Header Checker': '/icons/toolcard3icon.svg',
+    'HTTP/2 Test': '/icons/toolcard4icon.svg',
+    'Brotli Test': '/icons/toolcard5icon.svg',
+    'IP Location Finder': '/icons/toolcard6icon.svg',
+    'DNS Checker': '/icons/toolcard7icon.svg',
+    'Ping Test': '/icons/toolcard8icon.svg',
+    'Ping IPv6 Test': '/icons/toolcard9icon.svg',
+    'Traceroute Test': '/icons/toolcard10icon.svg',
+    'BGP Looking Glass': '/icons/toolcard11icon.svg',
+    'Certificate Checker': '/icons/toolcard12icon.svg',
+    'Certificate Chain Composer': '/icons/toolcard13icon.svg',
+    'SHA256 Generator': '/icons/toolcard14icon.svg',
+    'SSL FREAK Test': '/icons/toolcard15icon.svg',
+    'TLS Logjam Test': '/icons/toolcard16icon.svg',
+    'Epoch Converter': '/icons/toolcard17icon.svg',
+    'Knowledge base': '/icons/toolcard18icon.svg',
+  };
+  
+  return iconMap[feature.value.title] || '/icons/toolcard1icon.svg';
+});
 </script>
 
 <style scoped>
 .feature-card {
-  background: rgba(255, 255, 255, 0.4);
-  backdrop-filter: blur(16px) saturate(180%);
-  -webkit-backdrop-filter: blur(16px) saturate(180%);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0 5px 5px 0 rgba(31, 38, 135, 0.2);
+  background: var(--Background-Light, #FFFFFF);
+  border: 1px solid var(--Border-Secondary, #EEEEF0);
+  border-radius: 20px;
+  height: 210px;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  position: relative;
 }
+
 
 .feature-card::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 100%);
+  top: 8px;
+  left: 190px;
+  width: 148px;
+  height: 148px;
+  background-image: url('/icons/BG.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
   pointer-events: none;
   z-index: 0;
-  border-radius: 20px;
+  opacity: 1;
+}
+
+.feature-content {
+  width: 190px;
+  padding-top: 23px;
+  padding-left: 24px;
+  padding-bottom: 43px;
+}
+
+.feature-icon-wrapper {
+  position: relative;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.feature-icon-bg {
+  position: absolute;
+  top: -25.67px;
+  left: -25.67px;
+  width: 46.67px;
+  height: 46.67px;
+  z-index: 0;
+  opacity: 1;
+  border-radius: 4.67px;
+  background-color: var(--Background-Secondary, #EEEEF0);
+}
+
+.feature-icon-wrapper > div {
+  position: relative;
+  z-index: 1;
 }
 
 .feature-icon-container {
@@ -83,8 +137,8 @@ defineProps<{
 }
 
 .feature-icon {
-  width: 24px;
-  height: 24px;
+  width: 34px;
+  height: 32px;
   position: relative;
   z-index: 1;
 }
