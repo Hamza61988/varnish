@@ -31,7 +31,7 @@
         >
           <NuxtLink to="/" class="flex items-center" style="gap: 0">
             <img
-              src="/icons/company-logo.png"
+              src="/icons/company-logo.svg"
               alt="Varnish Logo"
               class="h-[43px] flex-shrink-0 block"
               style=" display: block"
