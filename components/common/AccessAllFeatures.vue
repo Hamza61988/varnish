@@ -1,570 +1,140 @@
 <template>
-  <section
-    class="relative overflow-hidden bg-white w-full sm:min-h-[450px] md:min-h-[560px] lg:min-h-[560px]"
-    style="background-color: #f7f7f8; padding: 0"
-  >
-    <div
-      class="absolute hidden bottom-0 left-0 w-full h-auto opacity-30 pointer-events-none md:flex justify-end"
-    >
-      <svg
-        width="562"
-        height="257"
-        viewBox="0 0 562 257"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M24.0976 458.018C9.44224 347.678 34.2187 238.427 96.4862 187.86C168.973 128.994 292.268 149.657 463.309 340.714C389.806 -374.647 745.514 380.188 659.684 42.3566"
-          stroke="#73737F"
-          stroke-width="40"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-      </svg>
-    </div>
-
-    <div
-      class="absolute hidden inset-0 md:flex justify-center top-0 pointer-events-none overflow-hidden"
-    >
-      <svg
-        width="393"
-        height="106"
-        viewBox="0 0 393 106"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <g filter="url(#filter0_d_36_5969)">
-          <rect
-            x="284.5"
-            y="32.5"
-            width="32"
-            height="32"
-            rx="8"
-            transform="rotate(-180 284.5 32.5)"
-            stroke="#E7E7EA"
-            shape-rendering="crispEdges"
-          />
-        </g>
-        <g filter="url(#filter1_d_36_5969)">
-          <rect
-            width="32"
-            height="32"
-            rx="8"
-            transform="matrix(1 -8.74228e-08 -8.74228e-08 -1 108.5 32.5)"
-            stroke="#E7E7EA"
-            shape-rendering="crispEdges"
-          />
-        </g>
-        <g filter="url(#filter2_d_36_5969)">
-          <rect
-            x="320.5"
-            y="68.5"
-            width="32"
-            height="32"
-            rx="8"
-            transform="rotate(-180 320.5 68.5)"
-            stroke="#E7E7EA"
-            shape-rendering="crispEdges"
-          />
-        </g>
-        <g filter="url(#filter3_d_36_5969)">
-          <rect
-            width="32"
-            height="32"
-            rx="8"
-            transform="matrix(1 -8.74228e-08 -8.74228e-08 -1 72.5 68.5)"
-            stroke="#E7E7EA"
-            shape-rendering="crispEdges"
-          />
-        </g>
-        <g filter="url(#filter4_d_36_5969)">
-          <rect
-            x="392.5"
-            y="68.5"
-            width="32"
-            height="32"
-            rx="8"
-            transform="rotate(-180 392.5 68.5)"
-            stroke="#E7E7EA"
-            shape-rendering="crispEdges"
-          />
-        </g>
-        <g filter="url(#filter5_d_36_5969)">
-          <rect
-            width="32"
-            height="32"
-            rx="8"
-            transform="matrix(1 -8.74228e-08 -8.74228e-08 -1 0.5 68.5)"
-            stroke="#E7E7EA"
-            shape-rendering="crispEdges"
-          />
-        </g>
-        <g filter="url(#filter6_d_36_5969)">
-          <rect
-            x="284.5"
-            y="104.5"
-            width="32"
-            height="32"
-            rx="8"
-            transform="rotate(-180 284.5 104.5)"
-            stroke="#E7E7EA"
-            shape-rendering="crispEdges"
-          />
-        </g>
-        <g filter="url(#filter7_d_36_5969)">
-          <rect
-            width="32"
-            height="32"
-            rx="8"
-            transform="matrix(1 -8.74228e-08 -8.74228e-08 -1 108.5 104.5)"
-            stroke="#E7E7EA"
-            shape-rendering="crispEdges"
-          />
-        </g>
-        <g filter="url(#filter8_d_36_5969)">
-          <rect
-            x="356.5"
-            y="104.5"
-            width="32"
-            height="32"
-            rx="8"
-            transform="rotate(-180 356.5 104.5)"
-            stroke="#E7E7EA"
-            shape-rendering="crispEdges"
-          />
-        </g>
-        <g filter="url(#filter9_d_36_5969)">
-          <rect
-            width="32"
-            height="32"
-            rx="8"
-            transform="matrix(1 -8.74228e-08 -8.74228e-08 -1 36.5 104.5)"
-            stroke="#E7E7EA"
-            shape-rendering="crispEdges"
-          />
-        </g>
-        <defs>
-          <filter
-            id="filter0_d_36_5969"
-            x="252"
-            y="0"
-            width="33"
-            height="33.8"
-            filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
-          >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
-            <feColorMatrix
-              in="SourceAlpha"
-              type="matrix"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-              result="hardAlpha"
-            />
-            <feOffset dy="0.8" />
-            <feComposite in2="hardAlpha" operator="out" />
-            <feColorMatrix
-              type="matrix"
-              values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.56 0"
-            />
-            <feBlend
-              mode="normal"
-              in2="BackgroundImageFix"
-              result="effect1_dropShadow_36_5969"
-            />
-            <feBlend
-              mode="normal"
-              in="SourceGraphic"
-              in2="effect1_dropShadow_36_5969"
-              result="shape"
-            />
-          </filter>
-          <filter
-            id="filter1_d_36_5969"
-            x="108"
-            y="0"
-            width="33"
-            height="33.8"
-            filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
-          >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
-            <feColorMatrix
-              in="SourceAlpha"
-              type="matrix"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-              result="hardAlpha"
-            />
-            <feOffset dy="0.8" />
-            <feComposite in2="hardAlpha" operator="out" />
-            <feColorMatrix
-              type="matrix"
-              values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.56 0"
-            />
-            <feBlend
-              mode="normal"
-              in2="BackgroundImageFix"
-              result="effect1_dropShadow_36_5969"
-            />
-            <feBlend
-              mode="normal"
-              in="SourceGraphic"
-              in2="effect1_dropShadow_36_5969"
-              result="shape"
-            />
-          </filter>
-          <filter
-            id="filter2_d_36_5969"
-            x="288"
-            y="36"
-            width="33"
-            height="33.8"
-            filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
-          >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
-            <feColorMatrix
-              in="SourceAlpha"
-              type="matrix"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-              result="hardAlpha"
-            />
-            <feOffset dy="0.8" />
-            <feComposite in2="hardAlpha" operator="out" />
-            <feColorMatrix
-              type="matrix"
-              values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.56 0"
-            />
-            <feBlend
-              mode="normal"
-              in2="BackgroundImageFix"
-              result="effect1_dropShadow_36_5969"
-            />
-            <feBlend
-              mode="normal"
-              in="SourceGraphic"
-              in2="effect1_dropShadow_36_5969"
-              result="shape"
-            />
-          </filter>
-          <filter
-            id="filter3_d_36_5969"
-            x="72"
-            y="36"
-            width="33"
-            height="33.8"
-            filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
-          >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
-            <feColorMatrix
-              in="SourceAlpha"
-              type="matrix"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-              result="hardAlpha"
-            />
-            <feOffset dy="0.8" />
-            <feComposite in2="hardAlpha" operator="out" />
-            <feColorMatrix
-              type="matrix"
-              values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.56 0"
-            />
-            <feBlend
-              mode="normal"
-              in2="BackgroundImageFix"
-              result="effect1_dropShadow_36_5969"
-            />
-            <feBlend
-              mode="normal"
-              in="SourceGraphic"
-              in2="effect1_dropShadow_36_5969"
-              result="shape"
-            />
-          </filter>
-          <filter
-            id="filter4_d_36_5969"
-            x="360"
-            y="36"
-            width="33"
-            height="33.8"
-            filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
-          >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
-            <feColorMatrix
-              in="SourceAlpha"
-              type="matrix"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-              result="hardAlpha"
-            />
-            <feOffset dy="0.8" />
-            <feComposite in2="hardAlpha" operator="out" />
-            <feColorMatrix
-              type="matrix"
-              values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.56 0"
-            />
-            <feBlend
-              mode="normal"
-              in2="BackgroundImageFix"
-              result="effect1_dropShadow_36_5969"
-            />
-            <feBlend
-              mode="normal"
-              in="SourceGraphic"
-              in2="effect1_dropShadow_36_5969"
-              result="shape"
-            />
-          </filter>
-          <filter
-            id="filter5_d_36_5969"
-            x="0"
-            y="36"
-            width="33"
-            height="33.8"
-            filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
-          >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
-            <feColorMatrix
-              in="SourceAlpha"
-              type="matrix"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-              result="hardAlpha"
-            />
-            <feOffset dy="0.8" />
-            <feComposite in2="hardAlpha" operator="out" />
-            <feColorMatrix
-              type="matrix"
-              values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.56 0"
-            />
-            <feBlend
-              mode="normal"
-              in2="BackgroundImageFix"
-              result="effect1_dropShadow_36_5969"
-            />
-            <feBlend
-              mode="normal"
-              in="SourceGraphic"
-              in2="effect1_dropShadow_36_5969"
-              result="shape"
-            />
-          </filter>
-          <filter
-            id="filter6_d_36_5969"
-            x="252"
-            y="72"
-            width="33"
-            height="33.8"
-            filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
-          >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
-            <feColorMatrix
-              in="SourceAlpha"
-              type="matrix"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-              result="hardAlpha"
-            />
-            <feOffset dy="0.8" />
-            <feComposite in2="hardAlpha" operator="out" />
-            <feColorMatrix
-              type="matrix"
-              values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.56 0"
-            />
-            <feBlend
-              mode="normal"
-              in2="BackgroundImageFix"
-              result="effect1_dropShadow_36_5969"
-            />
-            <feBlend
-              mode="normal"
-              in="SourceGraphic"
-              in2="effect1_dropShadow_36_5969"
-              result="shape"
-            />
-          </filter>
-          <filter
-            id="filter7_d_36_5969"
-            x="108"
-            y="72"
-            width="33"
-            height="33.8"
-            filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
-          >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
-            <feColorMatrix
-              in="SourceAlpha"
-              type="matrix"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-              result="hardAlpha"
-            />
-            <feOffset dy="0.8" />
-            <feComposite in2="hardAlpha" operator="out" />
-            <feColorMatrix
-              type="matrix"
-              values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.56 0"
-            />
-            <feBlend
-              mode="normal"
-              in2="BackgroundImageFix"
-              result="effect1_dropShadow_36_5969"
-            />
-            <feBlend
-              mode="normal"
-              in="SourceGraphic"
-              in2="effect1_dropShadow_36_5969"
-              result="shape"
-            />
-          </filter>
-          <filter
-            id="filter8_d_36_5969"
-            x="324"
-            y="72"
-            width="33"
-            height="33.8"
-            filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
-          >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
-            <feColorMatrix
-              in="SourceAlpha"
-              type="matrix"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-              result="hardAlpha"
-            />
-            <feOffset dy="0.8" />
-            <feComposite in2="hardAlpha" operator="out" />
-            <feColorMatrix
-              type="matrix"
-              values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.56 0"
-            />
-            <feBlend
-              mode="normal"
-              in2="BackgroundImageFix"
-              result="effect1_dropShadow_36_5969"
-            />
-            <feBlend
-              mode="normal"
-              in="SourceGraphic"
-              in2="effect1_dropShadow_36_5969"
-              result="shape"
-            />
-          </filter>
-          <filter
-            id="filter9_d_36_5969"
-            x="36"
-            y="72"
-            width="33"
-            height="33.8"
-            filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
-          >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
-            <feColorMatrix
-              in="SourceAlpha"
-              type="matrix"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-              result="hardAlpha"
-            />
-            <feOffset dy="0.8" />
-            <feComposite in2="hardAlpha" operator="out" />
-            <feColorMatrix
-              type="matrix"
-              values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.56 0"
-            />
-            <feBlend
-              mode="normal"
-              in2="BackgroundImageFix"
-              result="effect1_dropShadow_36_5969"
-            />
-            <feBlend
-              mode="normal"
-              in="SourceGraphic"
-              in2="effect1_dropShadow_36_5969"
-              result="shape"
-            />
-          </filter>
-        </defs>
-      </svg>
-    </div>
-
-    <div
-      class="m-auto relative z-10 w-full max-w-4xl lg:px-0 px-4 py-10 sm:py-10 md:py-20"
-    >
-      <div
-        class="bg-[#1A1925] text-center relative rounded-[28px] sm:rounded-[28px] md:rounded-[32px] lg:rounded-[35px] cta-card"
+  <section class="relative overflow-hidden bg-white w-full sm:min-h-[450px] md:min-h-[567px] lg:min-h-[567px]"
+    style="background-color: #f7f7f8;">
+    <div class="absolute hidden bottom-0 right-0 pointer-events-none md:block" style="
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        overflow: visible;
+      ">
+      <img 
+        :src="'/images/toolsbgline.svg'" 
+        alt="Background decorative line" 
         style="
+          width: auto;
+          height: auto;
+          max-width: none;
+          max-height: none;
+          object-fit: contain;
+          object-position: right bottom;
+          display: block;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+        "
+        @error="handleImageError"
+        @load="handleImageLoad"
+        loading="eager"
+      />
+    </div>
+
+    <div class="absolute hidden md:block pointer-events-none" style="
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 392px;
+        height: 104px;
+      ">
+      <img src="/images/toolsbgboxs.svg" alt="Background decorative boxes" style="
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        " />
+    </div>
+
+
+    <div class="m-auto relative z-10 w-full max-w-4xl lg:px-0 px-4 py-10 sm:py-10 md:py-20">
+      <div class="cta-card-wrapper" style="
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
           margin: 0 auto;
-        "
-      >
-        <div
-          class="absolute -top-[30px] left-1/2 -translate-x-1/2 flex items-center justify-center w-[60px] h-[60px] rounded-[14px] z-20"
-        >
-          <img src="/favicon.svg" alt="Logo" class="w-20 h-20" />
-        </div>
-        <h2
-          class="relative text-white cta-heading pt-4 sm:pt-0"
-          style="
-            font-family: &quot;Funnel Display&quot;, sans-serif;
-            font-weight: 500;
-            letter-spacing: -0.04em;
-            text-align: center;
-            text-transform: capitalize;
-            color: #ffffff;
-            font-size: 40px;
-          "
-        >
-          Get Started with Varnish
-        </h2>
-
-        <p
-          class="relative cta-subtitle"
-          style="
-            font-family: &quot;Inter&quot;, sans-serif;
-            font-weight: 400;
-            letter-spacing: -0.011em;
-            text-align: center;
-            font-size: 16px;
-          "
-        >
-          Get started with a free 14 day trial, no credit card required.
-        </p>
-
-        <div
-          class="relative flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 md:gap-4 lg:gap-6 cta-metrics"
-        >
-          <div
-            v-for="(stat, index) in stats"
-            :key="index"
-            class="flex items-center gap-1"
-          >
-            <div class="relative flex justify-end">
-              <span class="cta-metric-text opacity-0 select-none">
-                {{ stat.isMoney ? "$" : "" }}{{ stat.value
-                }}{{ stat.isMoney && stat.value % 1 !== 0 ? "M" : "" }}
-              </span>
-
-              <span class="cta-metric-text absolute right-0 top-0 tabular-nums">
-                {{ stat.isMoney ? "$" : "" }}{{ stat.display.value
-                }}{{ stat.isMoney && stat.value % 1 !== 0 ? "M" : "" }}
+        ">
+        <div class="bg-[#FFFFFF] text-center relative cta-card" style="
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            position: relative;
+            padding: 24px;
+          ">
+          <div class="relative w-full flex flex-col items-center" style="padding-top: 0;">
+            <!-- Lets Get Started label with icon -->
+            <div class="absolute flex items-center lets-get-started-button" style="
+              z-index: 10;
+              height: 24px;
+              gap: 2px;
+              border-radius: 999px;
+              padding-top: 4px;
+              padding-right: 8px;
+              padding-bottom: 4px;
+              padding-left: 8px;
+              background: #FFFFFFE5;
+              opacity: 1;
+              top: 0;
+              left: 138px;
+              box-shadow: 
+                0px 0.5px 0.5px 0px rgba(7, 1, 19, 0.03),
+                0px 1px 1px -0.5px rgba(7, 1, 19, 0.03),
+                0px 2px 2px -1px rgba(7, 1, 19, 0.03),
+                0px 3px 3px -1.5px rgba(7, 1, 19, 0.03);
+            ">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                class="flex-shrink-0">
+                <path d="M9.33333 1.33333L3.33333 9.33333H8L6.66667 14.6667L12.6667 6.66667H8L9.33333 1.33333Z"
+                  fill="#1A1925" fill-opacity="0.6" />
+              </svg>
+              <span style="
+                font-family: 'Bricolage Grotesque', sans-serif;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 16px;
+                letter-spacing: 0%;
+                text-align: center;
+                color: #1A1925;
+              ">
+                Lets Get Started
               </span>
             </div>
 
-            <span class="cta-metric-text">{{ stat.label }}</span>
-            <span
-              v-if="index < stats.length - 1"
-              class="hidden sm:inline text-gray-600 text-xs sm:text-sm md:text-base"
-              >•</span
-            >
+            <h2 class="relative cta-heading text-center" id="access-heading" style="margin-top: 36px;">
+              Access All Features
+            </h2>
           </div>
-        </div>
 
-        <div class="relative">
-          <Button name="Get Started ~ Free" />
+          <p class="relative cta-subtitle">
+            Get started with a free 14 day trial, no credit card required.
+          </p>
+
+          <div
+            class="relative flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 md:gap-4 lg:gap-6 cta-metrics">
+            <div v-for="(stat, index) in stats" :key="index" class="flex items-center gap-1">
+              <div class="relative flex justify-end">
+                <span class="cta-metric-text opacity-0 select-none">
+                  {{ stat.isMoney ? "$" : "" }}{{ stat.value
+                  }}{{ stat.isMoney && stat.value % 1 !== 0 ? "M" : "" }}
+                </span>
+
+                <span class="cta-metric-text absolute right-0 top-0 tabular-nums">
+                  {{ stat.isMoney ? "$" : "" }}{{ stat.display.value
+                  }}{{ stat.isMoney && stat.value % 1 !== 0 ? "M" : "" }}
+                </span>
+              </div>
+
+              <span class="cta-metric-text">{{ stat.label }}</span>
+              <span v-if="index < stats.length - 1"
+                class="hidden sm:inline text-[#1a1925] text-xs sm:text-sm md:text-base">•</span>
+            </div>
+          </div>
+
+          <div class="relative">
+            <Button name="Get Started ~ Free" />
+          </div>
         </div>
       </div>
     </div>
@@ -574,6 +144,22 @@
 <script setup lang="ts">
 import Button from "~/components/common/Button.vue";
 import { ref, onMounted } from "vue";
+
+const handleImageError = (event: Event) => {
+  const img = event.target as HTMLImageElement;
+  console.error('Image failed to load:', img.src);
+  // Force reload
+  const originalSrc = img.src;
+  img.src = '';
+  setTimeout(() => {
+    img.src = originalSrc;
+  }, 100);
+};
+
+const handleImageLoad = (event: Event) => {
+  const img = event.target as HTMLImageElement;
+  console.log('Image loaded successfully:', img.src);
+};
 
 const stats = [
   { label: "Employees", value: 120, display: ref(0) },
@@ -629,35 +215,46 @@ onMounted(() => {
   );
 
   observer.observe(section);
+
 });
 </script>
 
 <style scoped>
-/* Keeping your existing styles exactly as they were */
+/* CTA Card Wrapper with Gradient Border */
+.cta-card-wrapper {
+  background: linear-gradient(180deg, #E1442A 25%, #FDB415 50%, #069857 75%, #396FB6 100%);
+  border-radius: 36px;
+  padding: 1px;
+  opacity: 1;
+  transform: rotate(0deg);
+}
+
 .cta-card {
-  height: 478px;
+  height: 356px;
+  border-radius: 36px;
   gap: 30px;
+  background: #FFFFFF;
+  border: none;
 }
 
 @media (min-width: 640px) {
   .cta-card {
     width: auto;
-    height: auto;
+    height: 356px;
     padding: 5%;
     gap: 20px;
-    min-height: 280px;
   }
 }
 
 @media (min-width: 768px) {
   .cta-card {
-    min-height: 320px;
+    height: 356px;
   }
 }
 
 @media (min-width: 1024px) {
   .cta-card {
-    min-height: 356px;
+    height: 356px;
   }
 }
 
@@ -665,32 +262,33 @@ onMounted(() => {
 .cta-heading {
   font-family: "Bricolage Grotesque", sans-serif;
   font-weight: 600;
-  font-size: 36px;
-  line-height: 43px;
+  font-size: 48px;
+  line-height: 56px;
   letter-spacing: -0.04em;
   text-align: center;
   text-transform: capitalize;
-  color: #ffffff;
+  color: #1A1925;
+  opacity: 1;
 }
 
 @media (min-width: 640px) {
   .cta-heading {
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 48px;
+    line-height: 56px;
   }
 }
 
 @media (min-width: 768px) {
   .cta-heading {
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 48px;
+    line-height: 56px;
   }
 }
 
 @media (min-width: 1024px) {
   .cta-heading {
-    font-size: 40px;
-    line-height: 48px;
+    font-size: 48px;
+    line-height: 56px;
   }
 }
 
@@ -704,19 +302,19 @@ onMounted(() => {
 .cta-subtitle {
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 24px;
   letter-spacing: -0.011em;
   text-align: center;
-  color: #d4d4d4;
+  color: #878699;
   padding-left: 40px;
   padding-right: 40px;
 }
 
 @media (min-width: 640px) {
   .cta-subtitle {
-    font-size: 11px;
-    line-height: 16px;
+    font-size: 16px;
+    line-height: 24px;
     padding-left: 0;
     padding-right: 0;
   }
@@ -724,15 +322,15 @@ onMounted(() => {
 
 @media (min-width: 768px) {
   .cta-subtitle {
-    font-size: 13px;
-    line-height: 20px;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
 @media (min-width: 1024px) {
   .cta-subtitle {
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
@@ -750,7 +348,8 @@ onMounted(() => {
   line-height: 28px;
   letter-spacing: -0.02em;
   text-align: center;
-  color: #ffffff;
+  color: #1A1925;
+  opacity: 1;
 }
 
 @media (min-width: 640px) {

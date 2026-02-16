@@ -1,19 +1,18 @@
 <template>
   <div
     :class="[
-      'flex gap-[3px] md:gap-[12px] flex-col',
+      'flex flex-col',
       containerAlignmentClass,
       mbClass,
       customClass,
     ]"
+    style="gap: 0;"
   >
-    <Upername :name="upername" v-if="upername" />
+    <Upername :name="upername" v-if="upername" style="margin-bottom: 20px;" />
 
     <h2
-      class="md:text-[3rem] text-[2rem] mb-0"
+      class="title-heading"
       :class="textAlignmentClass"
-      style="line-height: 56px; letter-spacing: -0.04em; color: #1a1925"
-      :style="{ fontWeight: fontWeight }"
     >
       {{ title }}
     </h2>
@@ -29,14 +28,8 @@
     >
       <p
         v-if="subtitle"
-        class="text-[14px] lg:text-[1rem] max-w-2xl"
+        class="title-subtitle max-w-2xl"
         :class="[textAlignmentClass, subtitleMarginClass]"
-        style="
-          font-family: &quot;Inter&quot;, sans-serif;
-          font-weight: 400;
-          line-height: 24px;
-          color: #51515e;
-        "
       >
         {{ subtitle }}
       </p>
@@ -121,6 +114,30 @@ const subtitleMarginClass = computed(() => {
 </script>
 
 <style scoped>
+.title-heading {
+  font-family: "Bricolage Grotesque", sans-serif !important;
+  font-weight: 500 !important;
+  font-style: normal !important;
+  font-size: 48px !important;
+  line-height: 56px !important;
+  letter-spacing: -0.02em !important;
+  text-align: center !important;
+  vertical-align: middle !important;
+  color: #1A1925 !important;
+  margin-bottom: 16px !important;
+}
+
+.title-subtitle {
+  font-family: "Inter", sans-serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  letter-spacing: -0.011em !important;
+  text-align: center !important;
+  color: #51515E !important;
+}
+
 .btn2 {
   width: 100%;
   display: flex;
