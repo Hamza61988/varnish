@@ -74,24 +74,25 @@ withDefaults(defineProps<Props>(), {
   font-size: 17px;
   line-height: 20px;
   letter-spacing: -0.02em;
-  background: #1a1925;
+  background: #4285F4;
 
   /* Complex shadows for Secondary */
   box-shadow:
-    0px 0.25px 0.25px rgba(255, 255, 255, 0.12) inset,
-    0px 0.75px 0.75px rgba(255, 255, 255, 0.08) inset,
-    0px 1px 3px rgba(255, 255, 255, 0.08) inset,
-    0px -8px 20px rgba(26, 25, 37, 0.08) inset,
-    0px 0.25px 0.25px rgba(26, 25, 37, 0.24),
-    0px 0.75px 0.75px rgba(26, 25, 37, 0.12),
-    0px 1px 1.5px -0.5px rgba(26, 25, 37, 0.12),
-    0px 2px 4px -1px rgba(26, 25, 37, 0.12),
-    0px 4px 8px -4px rgba(26, 25, 37, 0.12),
-    0px 8px 12px -4px rgba(26, 25, 37, 0.06);
+    0px 0.25px 0.25px 0px #FFFFFF1F inset,
+    0px 0.75px 0.75px 0px #FFFFFF14 inset,
+    0px 1px 3px 0px #FFFFFF14 inset,
+    0px 0.25px 0.25px 0px #1A19253D,
+    0px 0.75px 0.75px 0px #1A19251F,
+    0px 1px 1.5px -0.5px #1A19251F,
+    0px 2px 4px -1px #1A19251F,
+    0px 4px 8px -4px #1A19251F,
+    0px 8px 12px -4px #1A19250F,
+    0px -8px 20px 0px #1A192514 inset;
+
 }
 
 .variant-secondary:hover {
-  background-color: #51515e;
+  background-color: var(--bluish);
 }
 
 /* Outline (White) Variant */

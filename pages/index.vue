@@ -1,7 +1,7 @@
 <template>
   <div class="">
     <LandingHeroSection />
-    <div class="site-padding space-y-[100px]  md:space-y-[122px]">
+    <div class="space-y-[100px]  md:space-y-[122px]">
     <LandingFeatures :features="features" />
     <LandingGetStartedInMinutes />
     <LandingSpeedUpImages />

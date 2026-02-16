@@ -7,12 +7,12 @@
   >
   <p class="text-[14px]">
     Varnish uses Cookies to make its website Easier to use.  
-    <a class="underline text-[14px]">Learn More</a>
+    <a  class="underline hover:cursor-pointer text-[14px]">Learn More</a>
   </p>
 
   <span
     @click="visible = false"
-    class="cursor-pointer text-white font-bold text-xl ml-4"
+    class="cursor-pointer text-white font-bold text-xl absolute right-4 top-1/2 -translate-y-1/2"
   >×</span>
 </div>
 
@@ -31,9 +31,9 @@
         >
           <NuxtLink to="/" class="flex items-center" style="gap: 0">
             <img
-              src="/icons/Company-logo.svg"
+              src="/icons/company-logo.svg"
               alt="Varnish Logo"
-              class="h-full flex-shrink-0 block"
+              class="h-[43px] flex-shrink-0 block"
               style=" display: block"
             />
           </NuxtLink>

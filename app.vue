@@ -1,7 +1,7 @@
 <template>
   <div
     class="flex flex-col min-h-screen"
-    :style="isAuthPage ? 'font-family: Bricolage Grotesque, sans-serif; background-color: #FFFFFF;' : 'font-family: Bricolage Grotesque, sans-serif; background-color: #f7f7f8;'"
+    :style="isAuthPage ? 'font-family: Bricolage Grotesque, sans-serif; background-color: #FFFFFF;' : 'font-family: Bricolage Grotesque, sans-serif; background-color: #ffffff;'"
   >
     <!-- <CookieBanner v-if="!isAuthPage" /> -->
     <Header v-if="!isAuthPage" />

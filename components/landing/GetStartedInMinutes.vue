@@ -1,28 +1,43 @@
 <template>
-  <section
-    class=" "
-    
-  >
-    <div class="">
+  <section class=" ">
+    <div class="site-padding">
       <!-- Header Section -->
 
-      
-      <commonTitle 
-        upername="How it works" 
-        title="Get Started In Minutes" 
-        subtitle="It only takes a few steps to unlock our entire network." 
+      <commonTitle
+        upername="How it works"
+        title="Get Started In Minutes"
+        subtitle="It only takes a few steps to unlock our entire network."
       />
-
 
       <!-- Three Steps -->
       <div
         class="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-10 md:gap-12 lg:gap-16 relative"
       >
         <!-- Connecting Lines (Desktop Only) -->
+        <!-- Line between 1 and 2 -->
         <div
-          class="hidden md:block absolute top-[22px] left-[calc(23.333%+22px)] right-[calc(23.333%+22px)] h-px"
-          style="background: #e5e5e5; z-index: 0; opacity: 1"
-        ></div>
+          class="hidden md:block absolute top-[21px] left-[16.66%] w-[33.33%] h-[2px]"
+          style="z-index: 0"
+        >
+          <div
+            class="mx-12 h-full transition-colors duration-300"
+            :class="[
+              hovered === 0 || hovered === 1 ? 'bg-[#1F62FF]' : 'bg-[#e5e5e5]',
+            ]"
+          ></div>
+        </div>
+        <!-- Line between 2 and 3 -->
+        <div
+          class="hidden md:block absolute top-[21px] left-[50%] w-[33.33%] h-[2px]"
+          style="z-index: 0"
+        >
+          <div
+            class="mx-12 h-full transition-colors duration-300"
+            :class="[
+              hovered === 1 || hovered === 2 ? 'bg-[#1F62FF]' : 'bg-[#e5e5e5]',
+            ]"
+          ></div>
+        </div>
 
         <!-- Steps Array -->
         <div
@@ -49,7 +64,7 @@
             <span
               class="font-bold text-lg z-10"
               style="
-                font-family: 'Funnel Display', sans-serif;
+                font-family: &quot;Funnel Display&quot;, sans-serif;
                 font-weight: 600;
                 color: white;
               "
@@ -62,7 +77,6 @@
           <h3
             class="mb-3"
             style="
-            
               font-weight: 700;
               font-size: 24px;
               line-height: 32px;
@@ -76,7 +90,7 @@
           <p
             class="mb-[23px] text-[13px] max-w-[304px] w-full"
             style="
-              font-family: 'Inter', sans-serif;
+              font-family: &quot;Inter&quot;, sans-serif;
               font-weight: 400;
               line-height: 20px;
               color: #73737f;
