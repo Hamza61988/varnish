@@ -35,7 +35,7 @@
       <div class="flex items-center justify-center">
         <div class="flex items-center gap-1.5 sm:gap-2 md:gap-3">
           <img
-            src="/icons/Company-logo.svg"
+            src="/icons/company-logo.svg"
             alt="Varnish Logo"
             class="rounded-lg w-8 h-8 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-[72px] lg:h-[72px]"
           />

@@ -1,34 +1,26 @@
 <template>
-  <section class="relative w-screen left-1/2 -translate-x-1/2" style="overflow-x: hidden">
-    <img src="/images/landing/blue-line.svg" alt="Blue Line" class="absolute top-[100px] right-0 object-contain z-10">
+  <section
+    class="relative w-screen left-1/2 -translate-x-1/2"
+    style="overflow-x: hidden"
+  >
+    <img
+      src="/images/landing/blue-line.svg"
+      alt="Blue Line"
+      class="absolute top-[100px] right-0 object-contain z-10"
+    />
     <div class="site-padding">
       <commonTitle
-        upername="Develop With Ease"
+        upername="Develop"
         title="Develop With Ease"
         subtitle="Complete account control with our RESTful API."
         mobileAlignment="start"
         pcAlignment="start"
       />
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 items-stretch ">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 items-stretch">
         <div
           class="flex flex-col gap-5 justify-between items-start order-2 lg:order-1 min-w-0"
         >
-          <div
-            @click="activeTab = 'zones'"
-            class="rounded-xl p-5 shadow-sm h-auto lg:h-[124px] cursor-pointer transition-all duration-200 flex items-center"
-            :style="{
-              borderRadius: '16px',
-              background: activeTab === 'zones' ? '#ffffff' : '#f3f4f6',
-              border:
-                activeTab === 'zones'
-                  ? '1px solid #e0e7ff'
-                  : '1px solid transparent',
-              boxShadow:
-                activeTab === 'zones'
-                  ? '0px 1px 3px 0px rgba(0, 0, 0, 0.1)'
-                  : 'none',
-            }"
-          >
+          <div class="p-5 h-auto lg:h-[124px] flex items-center">
             <div class="flex items-start gap-4 pointer-events-none w-full">
               <div class="flex-shrink-0 relative mt-1">
                 <svg
@@ -83,22 +75,7 @@
             </div>
           </div>
 
-          <div
-            @click="activeTab = 'purge'"
-            class="rounded-xl p-5 shadow-sm h-auto lg:h-[124px] cursor-pointer transition-all duration-200 flex items-center"
-            :style="{
-              borderRadius: '16px',
-              background: activeTab === 'purge' ? '#ffffff' : '#f3f4f6',
-              border:
-                activeTab === 'purge'
-                  ? '1px solid #e0e7ff'
-                  : '1px solid transparent',
-              boxShadow:
-                activeTab === 'purge'
-                  ? '0px 1px 3px 0px rgba(0, 0, 0, 0.1)'
-                  : 'none',
-            }"
-          >
+          <div class="p-5 h-auto lg:h-[124px] flex items-center">
             <div class="flex items-start gap-4 pointer-events-none w-full">
               <div class="flex-shrink-0 relative mt-1">
                 <svg
@@ -149,22 +126,7 @@
             </div>
           </div>
 
-          <div
-            @click="activeTab = 'reports'"
-            class="rounded-xl p-5 shadow-sm h-auto lg:h-[124px] cursor-pointer transition-all duration-200 flex items-center"
-            :style="{
-              borderRadius: '16px',
-              background: activeTab === 'reports' ? '#ffffff' : '#f3f4f6',
-              border:
-                activeTab === 'reports'
-                  ? '1px solid #e0e7ff'
-                  : '1px solid transparent',
-              boxShadow:
-                activeTab === 'reports'
-                  ? '0px 1px 3px 0px rgba(0, 0, 0, 0.1)'
-                  : 'none',
-            }"
-          >
+          <div class="p-5 h-auto lg:h-[124px] flex items-center">
             <div class="flex items-start gap-4 pointer-events-none w-full">
               <div class="flex-shrink-0 relative mt-1">
                 <svg
@@ -278,59 +240,8 @@
 
         <div class="flex flex-col h-full order-1 lg:order-2 min-w-0">
           <div
-            class="bg-[#2E3234] rounded-xl relative flex flex-col h-full w-full"
-            style="
-              border-radius: 16px;
-              background-color: #2e3234;
-              min-height: 320px;
-              font-family:
-                &quot;Monaco&quot;, &quot;Courier New&quot;, monospace;
-              overflow: hidden;
-            "
-          >
-            <button
-              @click="copyCode"
-              class="absolute top-4 right-4 p-2 rounded hover:bg-white/10 transition-colors group z-10"
-              title="Copy to clipboard"
-            >
-              <svg
-                v-if="copied"
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5 text-green-400"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M5 13l4 4L19 7"
-                />
-              </svg>
-              <svg
-                v-else
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5 text-gray-400 group-hover:text-white"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"
-                />
-              </svg>
-            </button>
-
-            <div class="w-full h-full p-4 sm:p-6 overflow-x-auto no-scrollbar">
-              <pre
-                class="text-xs sm:text-sm leading-relaxed whitespace-pre font-mono"
-              ><code class="language-bash" v-html="currentSnippetHtml"></code></pre>
-            </div>
-          </div>
+            class="bg-white rounded-[20px] border border-[#e7e7ea] h-full w-full min-h-[320px]"
+          ></div>
         </div>
       </div>
     </div>
@@ -338,74 +249,7 @@
 </template>
 
 <script setup lang="ts">
-import SectionsTitle from "~/components/common/Title.vue";
-import SectionsUpername from "~/components/common/Upername.vue";
 import Button from "~/components/common/Button.vue";
-import { ref, computed } from "vue";
-
-// State for active tab
-type TabType = "zones" | "purge" | "reports";
-const activeTab = ref<TabType>("zones");
-const copied = ref(false);
-
-const snippets = {
-  zones: {
-    // Matches exact screenshot content
-    raw: `curl https://api.varnish.com/zones/purgeurl/1000.json \\
-  -u sk_prod_zbSVNe8gVUMT4KjYcJWuyC86: \\
-  -X DELETE \\
-  -H "Content-Type: application/json" \\
-  --data '{"urls":["examplepull-hexid.kxcdn.com/css/style.css","examplepull-hexid.kxcdn.com/js/app.js","examplepull-hexid.kxcdn.com/img/logo.svg"]}'`,
-    html: `<span style="color:#fff">curl</span> <span style="color:#3b82f6">https://api.varnish.com/zones/purgeurl/1000.json</span> <span style="color:#6b7280">\\</span>
-  <br/><br/><span style="color:#fff">&nbsp;&nbsp;-u sk_prod_zbSVNe8gVUMT4KjYcJWuyC86:</span> <span style="color:#6b7280">\\</span>
-  <br/><br/><span style="color:#fff">&nbsp;&nbsp;-X DELETE</span> <span style="color:#6b7280">\\</span>
-  <br/><br/><span style="color:#fff">&nbsp;&nbsp;-H "Content-Type: application/json"</span> <span style="color:#6b7280">\\</span>
-  <br/><br/><span style="color:#fff">&nbsp;&nbsp;--data '{"urls":["examplepull-hexid.kxcdn.com/css/style.css",...]}'</span>`,
-  },
-  purge: {
-    raw: `curl https://api.varnish.com/zones/purge.json \\
-  -u sk_prod_zbSVNe8gVUMT4KjYcJWuyC86: \\
-  -X DELETE`,
-    html: `<span style="color:#fff">curl</span> <span style="color:#3b82f6">https://api.varnish.com/zones/purge.json</span> <span style="color:#6b7280">\\</span>
-  <br/><br/><span style="color:#fff">&nbsp;&nbsp;-u sk_prod_zbSVNe8gVUMT4KjYcJWuyC86:</span> <span style="color:#6b7280">\\</span>
-  <br/><br/><span style="color:#fff">&nbsp;&nbsp;-X DELETE</span>`,
-  },
-  reports: {
-    raw: `curl https://api.varnish.com/reports/traffic.json \\
-  -u sk_prod_zbSVNe8gVUMT4KjYcJWuyC86: \\
-  -d "start=1630454400" \\
-  -d "end=1633046400" \\
-  -d "interval=day"`,
-    html: `<span style="color:#fff">curl</span> <span style="color:#3b82f6">https://api.varnish.com/reports/traffic.json</span> <span style="color:#6b7280">\\</span>
-  <br/><br/><span style="color:#fff">&nbsp;&nbsp;-u sk_prod_zbSVNe8gVUMT4KjYcJWuyC86:</span> <span style="color:#6b7280">\\</span>
-  <br/><br/><span style="color:#fff">&nbsp;&nbsp;-d "start=1630454400"</span> <span style="color:#6b7280">\\</span>
-  <br/><br/><span style="color:#fff">&nbsp;&nbsp;-d "end=1633046400"</span> <span style="color:#6b7280">\\</span>
-  <br/><br/><span style="color:#fff">&nbsp;&nbsp;-d "interval=day"</span>`,
-  },
-};
-
-const currentSnippetHtml = computed(() => snippets[activeTab.value].html);
-
-const copyCode = async () => {
-  try {
-    await navigator.clipboard.writeText(snippets[activeTab.value].raw);
-    copied.value = true;
-    setTimeout(() => {
-      copied.value = false;
-    }, 2000);
-  } catch (err) {
-    console.error("Failed to copy: ", err);
-  }
-};
 </script>
 
-<style scoped>
-/* Utility class to hide scrollbar but keep functionality */
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
-}
-.no-scrollbar {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
-</style>
+<style scoped></style>

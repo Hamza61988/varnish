@@ -1,6 +1,12 @@
 <template>
-  <section class=" ">
-    <div class="">
+  <section class="relative">
+    <img
+      src="/images/landing/bgline.svg"
+      alt="Red Line"
+      class="absolute -top-[110px] left-0 object-contain z-0 pointer-events-none"
+    />
+
+    <div class="site-padding relative z-10">
       <SectionsTitle
         upername="Transform"
         title="Speed Up Images"
@@ -16,17 +22,10 @@
             style="
               height: 269px;
               border-radius: 20px;
-              border: 1px solid #cfcfcf;
-              background: #f9fbfb;
+              border: 1px solid #7e7e7e;
+              background: #7e7e7e;
             "
-          >
-            <img
-              src="/images/home_image.svg"
-              alt="Plant Image"
-              class="w-full h-auto"
-              style="display: block; max-width: 100%; border-radius: 20px"
-            />
-          </div>
+          ></div>
 
           <div
             class="mb-4 hidden md:flex lg:mb-0 w-full"
@@ -101,11 +100,22 @@
           </div>
 
           <div class="flex flex-row items-center justify-center md:hidden">
-            <Button
-              customClass="w-full"
-              name="API Documentation"
-              variant="secondary"
-            />
+            <h3
+              style="
+                font-family: Bricolage Grotesque;
+                font-weight: 500;
+                font-style: Medium;
+                font-size: 17px;
+                leading-trim: NONE;
+                line-height: 20px;
+                letter-spacing: -2%;
+                text-align: center;
+                text-transform: capitalize;
+                color: #1A73E8;
+              "
+            >
+              Api Documentation
+            </h3>
           </div>
         </div>
 
@@ -113,7 +123,7 @@
           class="hidden md:flex flex-col lg:justify-between w-full lg:w-[40%] order-1 lg:order-2"
         >
           <div class="grid grid-cols-1 sm:grid-cols-3 lg:flex lg:flex-col">
-            <div class="flex flex-col mb-[27px] gap-[6px]">
+            <div class="flex flex-col mb-[27px] gap-[8px]">
               <h3
                 class=""
                 style="font-weight: 600; font-size: 18px; color: #1a1925"
@@ -132,7 +142,7 @@
               </p>
             </div>
 
-            <div class="flex flex-col mb-[27px] gap-[6px]">
+            <div class="flex flex-col mb-[27px] gap-[8px]">
               <h3
                 class=""
                 style="font-weight: 600; font-size: 18px; color: #1a1925"
@@ -151,7 +161,7 @@
               </p>
             </div>
 
-            <div class="flex flex-col mb-[25px] gap-[6px]">
+            <div class="flex flex-col mb-[25px] gap-[8px]">
               <h3
                 class=""
                 style="font-weight: 600; font-size: 18px; color: #1a1925"
@@ -174,11 +184,24 @@
               class="hidden lg:flex flex-row items-center gap-2 sm:gap-3"
               style="flex-direction: row; align-items: center"
             >
-              <Button
-                customClass="w-[175px]"
-                name="API Documentation"
-                variant="secondary"
-              />
+               <h3
+              style="
+                font-family: Bricolage Grotesque;
+                font-weight: 500;
+                font-style: Medium;
+                font-size: 17px;
+                leading-trim: NONE;
+                line-height: 20px;
+                letter-spacing: -2%;
+                text-align: center;
+                text-transform: capitalize;
+                cursor: pointer;
+                color: #1A73E8;
+                
+              "
+            >
+              Api Documentation
+            </h3>
             </div>
           </div>
         </div>

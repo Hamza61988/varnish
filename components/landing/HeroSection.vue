@@ -210,7 +210,7 @@ onMounted(() => {
 }
 
 .hero-section {
-  background-color: #f7f7f8;
+
   background-image: url("/images/dots.png");
   background-repeat: repeat;
   background-position: 0 0;
